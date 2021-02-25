@@ -27,7 +27,7 @@ https://gitlab.com/cs373-group-11/project-lift-off/-/pipelines
 ## Link to website ##
 https://www.projectliftoff.me
 
-## Completion times for each member (hours: int) ##
+## Completion times for each member ##
 
 Phase | Estimated Completion time | Actual Completion time
 ------------- | ------------- | -------------
