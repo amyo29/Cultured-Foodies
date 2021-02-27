@@ -10,7 +10,7 @@ Provides information about space exploration. This is meant to educate people ab
 | Siddhesh Krishnan      | sk46827 | @siddheshkrishnan1 |
 | Lucinda Nguyen         | lon75   | @lucinda_nguyen    |
 | Tim Nguyen             | tvn387  | @nguytim           |
-| Amy Ouyang             | EID  | @amyo29            |
+| Amy Ouyang             | EID     | @amyouyang         |
 | Vishal Tak             | vt5564  | @VishalTak14       |
 
 ## Git SHA
