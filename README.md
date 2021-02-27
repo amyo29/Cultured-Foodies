@@ -1,16 +1,16 @@
 # Cultured Foodies
 
-A website that provides cultural food options from cities around the US. 
+A website that provides cultural food options from cities around the US.
 
 ## Group members
 
 | Name                   | EID     | Gitlab ID          |
 | ---------------------- | ------- | ------------------ |
-| Joshua Andrew Arrojado | EID     | @josharrojado      |
+| Joshua Andrew Arrojado | jea2876 | @josharrojado      |
 | Siddhesh Krishnan      | sk46827 | @siddheshkrishnan1 |
 | Lucinda Nguyen         | lon75   | @lucinda_nguyen    |
 | Tim Nguyen             | tvn387  | @nguytim           |
-| Amy Ouyang             | EID     | @amyouyang         |
+| Amy Ouyang             | ao24395 | @amyouyang         |
 | Vishal Tak             | vt5564  | @VishalTak14       |
 
 ## Git SHA
