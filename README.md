@@ -1,6 +1,6 @@
-# Project Lift Off
+# Cultured Foodies
 
-Provides information about space exploration. This is meant to educate people about past NASA space missions and astronomy.
+A website that provides cultural food options from cities around the US. 
 
 ## Group members
 
@@ -26,11 +26,11 @@ Provides information about space exploration. This is meant to educate people ab
 
 ## Link to GitLab pipelines
 
-https://gitlab.com/cs373-group-11/project-lift-off/-/pipelines
+https://gitlab.com/cs373-group-11/cultured-foodies/-/pipelines
 
 ## Link to website
 
-https://www.projectliftoff.me
+https://www.culturedfoodies.me
 
 ## Completion times for each member
 
