@@ -1,22 +1,79 @@
 import React from "react";
-import toolsInfo from "./AboutInfo"
-import InfoCard from "../../components/Card"
+import teamInfo from "./AboutInfo";
+import toolsInfo from "./AboutInfo";
+import InfoCard from "../../components/Card";
+import { type } from "os";
+
+const getGitlabInfo = async () => {
+  let totalCommitCount = 0,
+    totalIssueCount = 0,
+    totalTestCount = 0;
+
+  // Need to wipe member issues before calling again and calculate total tests
+  teamInfo.forEach((member:any) => {
+    totalTestCount += member.tests;
+    member.issues = 0;
+    member.commits = 0;
+  });
+
+  // Can't use a map cause Gitlab's API returns are weird :/
+  let commitList = await fetch(
+    "https://gitlab.com/api/v4/projects/24676977/repository/contributors"
+  );
+  commitList = await commitList.json();
+  // console.log(JSON.stringify(commitList))
+  for (let dict in commitList){
+    console.log(typeof(commitList))
+    // teamInfo.forEach((member:any) => {
+    //   if (
+    //     member.name === name ||
+    //     member.username === name ||
+    //     member.email === email
+    //   ) {
+    //     member.commits += commits;
+    //   }
+    // });
+    // totalCommitCount += commits;
+  }
+  // commitList.forEach((element:any) => {
+  //   const { name, email, commits } = element;
+  //   teamInfo.forEach((member:any) => {
+  //     if (
+  //       member.name === name ||
+  //       member.username === name ||
+  //       member.email === email
+  //     ) {
+  //       member.commits += commits;
+  //     }
+  //   });
+  //   totalCommitCount += commits;
+  // });
+
+  return {
+    totalCommits: totalCommitCount,
+    totalIssues: totalIssueCount,
+    totalTests: totalTestCount,
+    teamInfo: teamInfo,
+  };
+};
+
 function About() {
+  getGitlabInfo()
   return (
     <div>
       <h1>About Us</h1>
-      {toolsInfo.map((tool:any) => {
-					const { title, img, description, link } = tool
+      {toolsInfo.map((tool: any) => {
+        const { title, img, description, link } = tool;
 
-					return (
-						<InfoCard
-							title={title}
-							img={img}
-							description={description}
-							link={link}
-						/>
-					)
-				})}
+        return (
+          <InfoCard
+            title={title}
+            img={img}
+            description={description}
+            link={link}
+          />
+        );
+      })}
       <p>
         Cultured Foodies encourages its users to discover new foods from
         different cultures. We want people to explore the world of food from our

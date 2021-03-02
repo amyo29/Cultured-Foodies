@@ -43,4 +43,72 @@ const toolsInfo = [
     link: "https://www.namecheap.com/",
   },
 ];
+export const teamInfo = [
+	{
+		name: "Vishal Tak",
+		username: "VishalTak14",
+		email: "vishal.tak@shoplc.com",
+		// picture_path: LarryWinImg,
+		role: "Full-Stack",
+		bio:
+			"",
+		linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+    {
+		name: "Lucinda Nguyen",
+		username: "lucinda",
+		email: "lucinda.onguyen@gmail.com",
+		// picture_path: LarryWinImg,
+		role: "Full-Stack",
+		bio:
+			"",
+		linkedin: "",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+    {
+		name: "Siddhesh Krishnan",
+		username: "lucinda",
+		email: "siddheshkrishnan1@gmail.com",
+		// picture_path: LarryWinImg,
+		role: "Full-Stack",
+		bio:
+			"",
+		linkedin: "",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+    {
+		name: "Tim Nguyen",
+		username: "Tim Nguyen",
+		email: "nguye@MacBook-Pro-2.local",
+		// picture_path: LarryWinImg,
+		role: "Full-Stack",
+		bio:
+			"",
+		linkedin: "",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+    {
+		name: "Amy Ouyang",
+		username: "amyo29",
+		email: "yawen1999@gmail.com",
+		// picture_path: LarryWinImg,
+		role: "Full-Stack",
+		bio:
+			"",
+		linkedin: "",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+];
+
 export default toolsInfo;
