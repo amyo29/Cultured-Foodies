@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
+.footer{
+	/*background-color: #e1b7b7;*/
+    background-color: #400801;
+    color: #c7dae2;
+	text-align: center;
+	font-family: 'Abril FatFace', Georgia, Times, serif;
+}
+
+.filler{
+	background-color: #c7dae2;
+	color: #c7dae2;
+}
