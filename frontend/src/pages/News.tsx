@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 function News() {
   return (
     <div>
-      <NavBar />
       <header>News</header>
     </div>
   );

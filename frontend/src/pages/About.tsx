@@ -6,8 +6,7 @@ import NavBar from "../components/NavBar";
 function About() {
   return (
     <div>
-      <NavBar />
-      <h1>About</h1>
+      <h1>About Us</h1>
 
       <p>
         Cultured Foodies encourages its users to discover new foods from

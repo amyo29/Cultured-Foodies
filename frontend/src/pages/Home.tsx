@@ -8,7 +8,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <body id="mybody" data-background={homephoto} className="Home">
           <header className="Home-header">
             <div className="Title-summary">

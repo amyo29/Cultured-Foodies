@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 function Recipes() {
   return (
     <div>
-      <NavBar />
       <header>Recipes</header>
     </div>
   );
