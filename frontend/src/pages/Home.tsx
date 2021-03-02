@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../styles/Home.css";
-import NavBar from "../components/NavBar";
 import homephoto from "../static_resources/homephoto.jpg";
 import Footer from "../components/Footer";
 

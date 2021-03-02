@@ -1,7 +1,4 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
-import NavBar from "../components/NavBar";
-// import {Button} from 'react-bootstrap';
 
 function About() {
   return (
