@@ -11,13 +11,14 @@ import {
   Button,
 } from "react-bootstrap";
 
+import "../styles/NavBar.css"
 
 class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">
+        <Navbar expand="lg" className="navbar-custom">
+          <Navbar.Brand href="/" className="nav-link">
             <b>Cultured Foodies</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
