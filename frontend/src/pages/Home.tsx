@@ -1,14 +1,14 @@
 import React from 'react';
 // import {Button} from 'react-bootstrap';
 
-function Splash() {
+function Home() {
   return (
     <div >
-      <header >
-        Splash Page
+      <header>
+        Home Page
       </header>
     </div>
   );
 }
 
-export default Splash;
+export default Home;

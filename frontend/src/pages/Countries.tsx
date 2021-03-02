@@ -4,7 +4,7 @@ import React from 'react';
 function Countries() {
   return (
     <div >
-      <header >
+      <header>
         Countries
       </header>
     </div>

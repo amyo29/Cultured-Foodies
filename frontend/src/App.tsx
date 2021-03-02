@@ -5,11 +5,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import Home from './pages/Home'
 import About from './pages/About'
 import Country from './pages/Countries'
 import Recipes from './pages/Recipes'
 import News from './pages/News'
-import Splash from './pages/Splash'
 
 
 export default function App() {
@@ -21,6 +22,9 @@ export default function App() {
         </h1>
         <nav>
           <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
             <li>
               <Link to="/about">About</Link>
             </li>
@@ -39,6 +43,9 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/home">
+            <Home/>
+          </Route>
           <Route path="/about">
             <About />
           </Route>
@@ -50,9 +57,6 @@ export default function App() {
           </Route>
           <Route path="/news">
             <News />
-          </Route>
-          <Route path="/">
-            <Splash/>
           </Route>
         </Switch>
       </div>
