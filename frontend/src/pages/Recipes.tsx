@@ -1,14 +1,14 @@
 import React from 'react';
 // import {Button} from 'react-bootstrap';
 
-function Recipe() {
+function Recipes() {
   return (
     <div >
       <header >
-       Recipe
+       Recipes
       </header>
     </div>
   );
 }
 
-export default Recipe;
+export default Recipes;

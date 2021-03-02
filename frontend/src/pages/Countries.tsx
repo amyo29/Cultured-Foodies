@@ -1,14 +1,14 @@
 import React from 'react';
 // import {Button} from 'react-bootstrap';
 
-function Country() {
+function Countries() {
   return (
     <div >
       <header >
-        about us
+        Countries
       </header>
     </div>
   );
 }
 
-export default Country;
+export default Countries;

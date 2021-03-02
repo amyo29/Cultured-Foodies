@@ -6,9 +6,9 @@ import {
   Link
 } from "react-router-dom";
 import About from './pages/About'
-import Country from './pages/Country'
+import Country from './pages/Countries'
+import Recipes from './pages/Recipes'
 import News from './pages/News'
-import Recipe from './pages/Recipe'
 import Splash from './pages/Splash'
 
 
@@ -22,19 +22,16 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/country">Model 1</Link>
+              <Link to="/countries">Countries</Link>
             </li>
             <li>
-              <Link to="/news">Model 3</Link>
+              <Link to="/recipes">Recipes</Link>
             </li>
             <li>
-              <Link to="/recipe">Model 2</Link>
+              <Link to="/news">News</Link>
             </li>
           </ul>
         </nav>
@@ -45,14 +42,14 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/country">
+          <Route path="/countries">
             <Country/>
+          </Route>
+          <Route path="/recipes">
+            <Recipes />
           </Route>
           <Route path="/news">
             <News />
-          </Route>
-          <Route path="/recipe">
-            <Recipe />
           </Route>
           <Route path="/">
             <Splash/>

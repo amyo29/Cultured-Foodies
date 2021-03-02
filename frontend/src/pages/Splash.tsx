@@ -5,7 +5,7 @@ function Splash() {
   return (
     <div >
       <header >
-        about us
+        Splash Page
       </header>
     </div>
   );
