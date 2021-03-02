@@ -1,10 +1,22 @@
 import React from "react";
-
+import toolsInfo from "./AboutInfo"
+import InfoCard from "../../components/Card"
 function About() {
   return (
     <div>
       <h1>About Us</h1>
+      {toolsInfo.map((tool:any) => {
+					const { title, img, description, link } = tool
 
+					return (
+						<InfoCard
+							title={title}
+							img={img}
+							description={description}
+							link={link}
+						/>
+					)
+				})}
       <p>
         Cultured Foodies encourages its users to discover new foods from
         different cultures. We want people to explore the world of food from our
