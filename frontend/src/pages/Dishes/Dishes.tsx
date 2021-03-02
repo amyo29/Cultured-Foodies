@@ -2,6 +2,10 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
+const afghan_dish = require('../../data/AfghanistanDishes.json')
+const albania_dish = require('../../data/AlbaniaDishes.json')
+const  algeria_dish = require('../../data/AlgeriaDishes.json')
+
 function Dishes() {
   let rows = [
     [{ "country" :"United States", "desc": "hello, Country"}, { fake: 2 }],

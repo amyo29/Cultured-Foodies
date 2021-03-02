@@ -1,26 +1,28 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Footer from "../../components/Footer";
+
+const data = require('../../data/countries.json').slice(0,3)
 function Countries() {
-  let rows = [
-    [{ "country" :"United States", "desc": "hello, Country", "id":"fake_id"}, { fake: 2 }],
-    [{ fake: 3 }, { fake: 4 }],
-  ];
-  //  
+  var i, j;
+  var chunk = 5;
+  var rows =[] 
+  for (i=0,j=data.length; i<j; i+=chunk) {
+    rows.push(data.slice(i,i+chunk))
+  }
   return (
     <div>
       <header>Countries</header>
       <Container>
         {rows.map((cols) => (
           <Row>
-            {cols.map((col) => (
+            {cols.map((country:any) => (
               <Col>
-                <a href={"/countries/" + col['id']}>
+                <a href={"/countries/" + country['name']}>
                 <Card>
-                  {/* <Card.Img variant="top" src={img} /> */}
                   <Card.Body>
-                    <Card.Title>{col['country']}</Card.Title>
-                    <Card.Text>{col['desc']}</Card.Text>
+                    <Card.Title>{country['name']}</Card.Title>
+                    <Card.Text>{country['capital']}</Card.Text>
                   </Card.Body>
                 </Card>
                 </a>
