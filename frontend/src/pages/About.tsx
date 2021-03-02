@@ -46,7 +46,7 @@ function About() {
               <li>special focus on optional tools that were <b>not</b> required</li>
             </ul>
           </li>
-          <li>a link to the <a href="https://gitlab.com">GitLab</a> repo</li>
+          <li>a link to the <a href="https://gitlab.com/cs373-group-11/cultured-foodies">GitLab</a> repo</li>
           <li>a link to the <a href="https://www.postman.com">Postman</a> API</li>
         </ul>
       </td>
