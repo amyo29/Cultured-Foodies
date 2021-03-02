@@ -19,11 +19,11 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Country from "../pages/Countries";
-import Recipes from "../pages/Recipes";
-import News from "../pages/News";
+import Home from "../pages/Home/Home";
+import About from "../pages/About/About";
+import Country from "../pages/Countries/Countries";
+import Dishes from "../pages/Dishes/Dishes";
+import News from "../pages/News/News";
 
 class NavBar extends Component {
   render() {
@@ -38,7 +38,7 @@ class NavBar extends Component {
             <Nav className="mr-auto">
               <Nav.Link href="/about">About Us</Nav.Link>
               <Nav.Link href="/countries">Countries</Nav.Link>
-              <Nav.Link href="/recipes">Recipes</Nav.Link>
+              <Nav.Link href="/dishes">Dishes</Nav.Link>
               <Nav.Link href="/news">News</Nav.Link>
             </Nav>
             <Form inline>
@@ -65,8 +65,8 @@ class NavBar extends Component {
               <Route path="/countries">
                 <Country />
               </Route>
-              <Route path="/recipes">
-                <Recipes />
+              <Route path="/dishes">
+                <Dishes />
               </Route>
               <Route path="/news">
                 <News />
