@@ -1,6 +1,6 @@
 # Cultured Foodies
 
-A website that provides cultural food options from cities around the US.
+A website that provides cultural dishes, country information, and news from around the world.
 
 ## Group members
 
