@@ -1,12 +1,11 @@
-import React from 'react';
-// import {Button} from 'react-bootstrap';
+import React from "react";
+import NavBar from "../components/NavBar";
 
 function Recipes() {
   return (
-    <div >
-      <header>
-        Recipes
-      </header>
+    <div>
+      <NavBar />
+      <header>Recipes</header>
     </div>
   );
 }

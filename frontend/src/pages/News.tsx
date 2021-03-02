@@ -1,9 +1,10 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import NavBar from "../components/NavBar";
 
 function News() {
   return (
     <div >
+      <NavBar/>
       <header>
         News
       </header>

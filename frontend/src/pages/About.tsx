@@ -1,55 +1,60 @@
-import React from 'react';
+import React from "react";
+import { Nav } from "react-bootstrap";
+import NavBar from "../components/NavBar";
 // import {Button} from 'react-bootstrap';
 
 function About() {
   return (
     <div>
-      <h2>
-        About
-      </h2>
-      <td>
+      <NavBar />
+      <h1>About</h1>
+
+      <p>
+        Cultured Foodies encourages its users to discover new foods from
+        different cultures. We want people to explore the world of food from our
+        website and learn more about new cuisines and dishes.
+      </p>
+
+      <p>explanation of the interesting result of integrating disparate data</p>
+
+      <h2>Meet the Team</h2>
+
+      <div>
+        <h3>Name</h3>
         <p>
-          <b>one</b> page
+          <p>Bio:</p>
+          <p>Frontend or Backend</p>
+          <p>No. of commits:</p>
+          <p>No. of issues:</p>
+          <p>No. of unit tests:</p>
         </p>
-        <ul>
-          <li>description of the site, its purpose, its intended users</li>
-          <li>explanation of the interesting result of integrating disparate data</li>
-          <li>the group members</li>
-          <li>for each member
-          <ul>
-              <li>name</li>
-              <li>photo</li>
-              <li>bio</li>
-              <li>major responsibilities</li>
-              <li>no. of commits</li>
-              <li>no. of issues</li>
-              <li>no. of unit tests</li>
-            </ul>
-          </li>
-          <li>stats
-          <ul>
-              <li>total no. of commits</li>
-              <li>total no. of issues</li>
-              <li>total no. of unit tests</li>
-            </ul>
-          </li>
-          <li>data
-          <ul>
-              <li>links to the data <b>sources</b></li>
-              <li>description of <b>how</b> each was <b>scraped</b></li>
-            </ul>
-          </li>
-          <li>tools
-          <ul>
-              <li>tools used</li>
-              <li>describe their use</li>
-              <li>special focus on optional tools that were <b>not</b> required</li>
-            </ul>
-          </li>
-          <li>a link to the <a href="https://gitlab.com/cs373-group-11/cultured-foodies">GitLab</a> repo</li>
-          <li>a link to the <a href="https://www.postman.com">Postman</a> API</li>
-        </ul>
-      </td>
+      </div>
+
+      <div>
+        <h2>Stats</h2>
+        <p>total no. of commits: </p>
+        <p>total no. of issues: </p>
+        <p>total no. of unit tests: </p>
+      </div>
+
+      <div>
+        <h2>Data</h2>
+      </div>
+
+      <div>
+        <h2>Tools</h2>
+        <p>Gitlab</p>
+        <p>Postman</p>
+        <p>React</p>
+        <p>Bootstrap</p>
+        <p>AWS</p>
+        <p>NameCheap</p>
+      </div>
+
+      <div>
+        <a href="https://gitlab.com/cs373-group-11/cultured-foodies">Gitlab</a>
+        <a href="https://www.postman.com">Postman</a>
+      </div>
     </div>
   );
 }
