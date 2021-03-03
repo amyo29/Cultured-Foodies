@@ -1,6 +1,5 @@
-import React from "react";
-import teamInfo from "./AboutInfo";
-import toolsInfo from "./AboutInfo";
+import React, { useEffect } from "react";
+import {toolsInfo, teamInfo} from "./AboutInfo";
 import InfoCard from "../../components/Card";
 import { type } from "os";
 
@@ -17,37 +16,25 @@ const getGitlabInfo = async () => {
   });
 
   // Can't use a map cause Gitlab's API returns are weird :/
-  let commitList = await fetch(
+  const commitList = await fetch(
     "https://gitlab.com/api/v4/projects/24676977/repository/contributors"
-  );
-  commitList = await commitList.json();
-  // console.log(JSON.stringify(commitList))
-  for (let dict in commitList){
-    console.log(typeof(commitList))
-    // teamInfo.forEach((member:any) => {
-    //   if (
-    //     member.name === name ||
-    //     member.username === name ||
-    //     member.email === email
-    //   ) {
-    //     member.commits += commits;
-    //   }
-    // });
-    // totalCommitCount += commits;
-  }
-  // commitList.forEach((element:any) => {
-  //   const { name, email, commits } = element;
-  //   teamInfo.forEach((member:any) => {
-  //     if (
-  //       member.name === name ||
-  //       member.username === name ||
-  //       member.email === email
-  //     ) {
-  //       member.commits += commits;
-  //     }
-  //   });
-  //   totalCommitCount += commits;
-  // });
+  ).then(response => response.json());
+
+  commitList.forEach((element:any) => { 
+    let name = element.name; 
+    let email = element.email;
+    let commits = element.commits;
+    teamInfo.forEach((member:any) => {
+      if (
+        member.name === name ||
+        member.username === name ||
+        member.email === email
+      ) {
+        member.commits += commits;
+      }
+    });
+    totalCommitCount += commits;
+  })
 
   return {
     totalCommits: totalCommitCount,
@@ -58,7 +45,9 @@ const getGitlabInfo = async () => {
 };
 
 function About() {
-  getGitlabInfo()
+  useEffect(() => {
+    const gitLabInfo = getGitlabInfo();
+  })
   return (
     <div>
       <h1>About Us</h1>

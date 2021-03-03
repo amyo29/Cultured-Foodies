@@ -43,7 +43,7 @@ const toolsInfo = [
     link: "https://www.namecheap.com/",
   },
 ];
-export const teamInfo = [
+const teamInfo = [
 	{
 		name: "Vishal Tak",
 		username: "VishalTak14",
@@ -72,7 +72,7 @@ export const teamInfo = [
 	},
     {
 		name: "Siddhesh Krishnan",
-		username: "lucinda",
+		username: "Siddhesh",
 		email: "siddheshkrishnan1@gmail.com",
 		// picture_path: LarryWinImg,
 		role: "Full-Stack",
@@ -111,4 +111,4 @@ export const teamInfo = [
 	},
 ];
 
-export default toolsInfo;
+export {toolsInfo, teamInfo};
