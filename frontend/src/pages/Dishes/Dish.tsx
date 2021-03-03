@@ -1,4 +1,9 @@
 import React from "react";
+import { Jumbotron } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
+import { Container } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import { useParams } from 'react-router-dom';
 
 let data = {
@@ -726,10 +731,76 @@ let data = {
 function Dish() {
   const { id } = useParams<{ id: string }>();
   return (
-    <div>
-      <header>{data["recipe"]["uri"]}</header>
-    </div>
+    <Container fluid> 
+        <Row>
+            <Col>
+                <h1>{data["recipe"]["label"]}</h1>
+            </Col>
+        </Row>
+        <Row>
+            <Col xs={6} md={4}>
+                <Image src={data["recipe"]["image"]} fluid />
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["recipe"]["source"]}
+            </Col>
+        </Row>
+        
+        <Row>
+            <Col>
+                <h5>Dietary</h5>
+            </Col>
+            <Col>
+                <h5>Health</h5>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["recipe"]["dietLabels"]}
+            </Col>
+            <Col>
+                {data["recipe"]["healthLabels"][0]}
+                {data["recipe"]["healthLabels"][1]}
+                {data["recipe"]["healthLabels"][2]}
+            </Col>
+        </Row>
+        
+        <Row>
+            <Col>
+                <h5>Restrictions</h5>
+            </Col>
+            <Col>
+                <h5>Calories</h5>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["recipe"]["cautions"]}
+            </Col>
+            <Col>
+                {data["recipe"]["calories"]}
+            </Col>
+        </Row>
+            <h5>Ingredients</h5>
+        <Row>
+
+        </Row>
+            {data["recipe"]["ingredientLines"]}
+        <Row>
+            
+        </Row>
+    </Container>
   );
+}
+
+function GetStringOfList(list1: string[]) {
+    var str = new String("");
+    for (let entry of list1) {
+        str = str.concat(entry.toString());
+    }
+    return str;
 }
 
 export default Dish;
