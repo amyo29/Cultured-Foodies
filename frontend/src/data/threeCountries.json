@@ -1,0 +1,65 @@
+{
+    "United States of America": {
+        "IsSuccess": true,
+        "UserMessage": null,
+        "TechnicalMessage": null,
+        "TotalCount": 1,
+        "Response": [
+            {
+                "Name": "United States of America",
+                "Alpha2Code": "US",
+                "Alpha3Code": "USA",
+                "NativeName": "United States",
+                "Region": "Americas",
+                "SubRegion": "Northern America",
+                "Latitude": "38",
+                "Longitude": "-97",
+                "Area": 9629091,
+                "NumericCode": 840,
+                "NativeLanguage": "eng",
+                "CurrencyCode": "USD",
+                "CurrencyName": "United States dollar",
+                "CurrencySymbol": "$",
+                "Flag": "https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/usa.svg",
+                "FlagPng": "https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/usa.png"
+            }
+        ]
+
+    },
+    "Japan": {
+        "Name":"Japan",
+         "Alpha2Code":"JP",
+         "Alpha3Code":"JPN",
+         "NativeName":"日本",
+         "Region":"Asia",
+         "SubRegion":"Eastern Asia",
+         "Latitude":"36",
+         "Longitude":"138",
+         "Area":377930,
+         "NumericCode":392,
+         "NativeLanguage":"jpn",
+         "CurrencyCode":"JPY",
+         "CurrencyName":"Japanese yen",
+         "CurrencySymbol":"¥",
+         "Flag":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/jpn.svg",
+         "FlagPng":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/jpn.png"
+    },
+    "Algeria": {
+        "Name":"Germany",
+         "Alpha2Code":"DE",
+         "Alpha3Code":"DEU",
+         "NativeName":"Deutschland",
+         "Region":"Europe",
+         "SubRegion":"Western Europe",
+         "Latitude":"51",
+         "Longitude":"9",
+         "Area":357114,
+         "NumericCode":276,
+         "NativeLanguage":"deu",
+         "CurrencyCode":"EUR",
+         "CurrencyName":"Euro",
+         "CurrencySymbol":"€",
+         "Flag":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/deu.svg",
+         "FlagPng":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/deu.png"
+    }
+}
