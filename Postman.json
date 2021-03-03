@@ -15,10 +15,10 @@
     "paths": {
       "/countries": {
         "get": {
-          "summary": "Details about a user",
-          "operationId": "listUser",
+          "summary": "Returns list of countries",
+          "operationId": "listCountries",
           "tags": [
-            "user"
+            "countries"
           ],
           "parameters": [
             {
@@ -34,19 +34,11 @@
           ],
           "responses": {
             "200": {
-              "description": "Details about a user",
-              "headers": {
-                "x-next": {
-                  "description": "A link to the next page of responses",
-                  "schema": {
-                    "type": "string"
-                  }
-                }
-              },
+              "description": "List of all countries and corresponding details",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/User"
+                    "$ref": "#/components/schemas/Countries"
                   }
                 }
               }
