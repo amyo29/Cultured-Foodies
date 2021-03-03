@@ -56,40 +56,31 @@
           }
         }
       },
-      "/countries/{id}": {
+      "/countries/{countryName}": {
         "get": {
-          "summary": "Details about a user",
-          "operationId": "listUser",
+          "summary": "Details about a country",
+          "operationId": "listCountry",
           "tags": [
-            "user"
+            "country"
           ],
           "parameters": [
             {
-              "name": "id",
+              "name": "name",
               "in": "query",
-              "description": "ID of the user",
+              "description": "name of the country",
               "required": true,
               "schema": {
-                "type": "integer",
-                "format": "int32"
+                "type": "string"
               }
             }
           ],
           "responses": {
             "200": {
-              "description": "Details about a user",
-              "headers": {
-                "x-next": {
-                  "description": "A link to the next page of responses",
-                  "schema": {
-                    "type": "string"
-                  }
-                }
-              },
+              "description": "Details about a country",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/User"
+                    "$ref": "#/components/schemas/Country"
                   }
                 }
               }
