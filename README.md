@@ -36,7 +36,7 @@ https://www.culturedfoodies.me
 
 | Phase    | Estimated Completion time | Actual Completion time |
 | -------- | ------------------------- | ---------------------- |
-| Phase I  | X hours                   | X hours                |
+| Phase I  | 15 hours                  | X hours                |
 | Phase II | X hours                   | X hours                |
 | Phase II | X hours                   | X hours                |
 | Phase IV | X hours                   | X hours                |
