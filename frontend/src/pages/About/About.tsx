@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { toolsInfo, teamInfo } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
 
@@ -57,12 +57,25 @@ const getGitlabInfo = async () => {
 };
 
 function About() {
-  var totalCommits = 0;
-  var totalIssues = 0;
-  var totalTests = 0;
+  const [commitsSum, changeCommitsSum] = useState(-1);
+  const [issuesSum, changeIssuesSum] = useState(-1);
+  const [testsSum, changeTestsSum] = useState(-1);
+  const [teamData, changeTeamData] = useState([{}])
+  const [loaded, changeLoading] = useState(false);
+
   useEffect(() => {
-    const gitLabInfo = getGitlabInfo();
-  });
+    const fetchData = async () => {
+      if (teamData === undefined || teamData.length === 1) {
+        const gitLabInfo = await getGitlabInfo();
+        changeCommitsSum(gitLabInfo.totalCommits)
+        changeIssuesSum(gitLabInfo.totalIssues)
+        changeTestsSum(gitLabInfo.totalTests)
+        changeTeamData(gitLabInfo.teamInfo)
+        changeLoading(true)
+      }
+    }
+    fetchData()
+  }, [teamData])
   return (
     <div>
       <h1>About Us</h1>
@@ -77,27 +90,50 @@ function About() {
 
       <h2>Meet the Team</h2>
 
-      {teamInfo.map((teamMember: any) => {
-        const { name, img, role, bio, commits, issues, tests } = teamMember;
+      {loaded ? (
+        teamData.map((teamMember: any) => {
+          const { name, img, role, bio, commits, issues, tests } = teamMember;
 
-        return (
-          <ProfileCard
-            name={name}
-            img={img}
-            role={role}
-            bio={bio}
-            commits={commits}
-            issues={issues}
-            tests={tests}
-          />
-        );
-      })}
+          return (
+            <ProfileCard
+              name={name}
+              img={img}
+              role={role}
+              bio={bio}
+              commits={commits}
+              issues={issues}
+              tests={tests}
+            />
+          );
+        })
+      ) : (
+        <div>Loading</div>
+      )
+}
 
       <div>
         <h2>Stats</h2>
-        <p>total no. of commits: </p>
-        <p>total no. of issues: </p>
-        <p>total no. of unit tests: </p>
+        <div>
+          {commitsSum === -1 ? (
+            <h5>Total Commits: </h5>
+          ) : (
+            <h5>Total Commits: {commitsSum}</h5>
+          )}
+        </div>
+        <div>
+          {commitsSum === -1 ? (
+            <h5>Total Issues: </h5>
+          ) : (
+            <h5>Total Issues: {issuesSum}</h5>
+          )}
+        </div>
+        <div>
+          {commitsSum === -1 ? (
+            <h5>Total Tests: </h5>
+          ) : (
+            <h5>Total Tests: {testsSum}</h5>
+          )}
+        </div>
       </div>
 
       <div>
