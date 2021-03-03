@@ -1,11 +1,10 @@
 import React from "react";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect,
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
@@ -49,6 +48,7 @@ export default function App() {
             </Switch>
           </div>
         </Router>
+        <Footer></Footer>
     </div>
   );
 }

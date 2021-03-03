@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Footer from "../../components/Footer";
 
 const data = require('../../data/countries.json').slice(0,3)
 function Countries() {

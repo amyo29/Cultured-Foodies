@@ -1,17 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Footer from "../../components/Footer";
 
-const afghan_dish = require('../../data/AfghanistanDishes.json')
-const albania_dish = require('../../data/AlbaniaDishes.json')
-const  algeria_dish = require('../../data/AlgeriaDishes.json')
+const afghan_dish = require("../../data/AfghanistanDishes.json");
+const albania_dish = require("../../data/AlbaniaDishes.json");
+const algeria_dish = require("../../data/AlgeriaDishes.json");
 
 function Dishes() {
   let rows = [
-    [{ "country" :"United States", "desc": "hello, Country"}, { fake: 2 }],
+    [{ country: "United States", desc: "hello, Country" }, { fake: 2 }],
     [{ fake: 3 }, { fake: 4 }],
   ];
-  //  
+  //
   return (
     <div>
       <header>Countries</header>
@@ -23,8 +22,8 @@ function Dishes() {
                 <Card>
                   {/* <Card.Img variant="top" src={img} /> */}
                   <Card.Body>
-                    <Card.Title>{col['country']}</Card.Title>
-                    <Card.Text>{col['desc']}</Card.Text>
+                    <Card.Title>{col["country"]}</Card.Title>
+                    <Card.Text>{col["desc"]}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

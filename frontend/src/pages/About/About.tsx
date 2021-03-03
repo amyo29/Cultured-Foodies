@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import {toolsInfo, teamInfo} from "./AboutInfo";
 import InfoCard from "../../components/Card";
-import { type } from "os";
 
 const getGitlabInfo = async () => {
   let totalCommitCount = 0,
@@ -14,6 +13,10 @@ const getGitlabInfo = async () => {
     member.issues = 0;
     member.commits = 0;
   });
+
+  const issueList = await fetch(
+    "https://gitlab.com/api/v4/projects/24676977/issues"
+  ).then(response => response.json())
 
   // Can't use a map cause Gitlab's API returns are weird :/
   const commitList = await fetch(
@@ -36,6 +39,17 @@ const getGitlabInfo = async () => {
     totalCommitCount += commits;
   })
 
+  issueList.forEach((element:any) => { 
+    // console.log(element.author.name)
+    let name = element.author.name; 
+    teamInfo.forEach((member:any) => {
+      if (member.name === name) {
+        member.issues += 1;
+      }
+    });
+    totalIssueCount += 1;
+  })
+
   return {
     totalCommits: totalCommitCount,
     totalIssues: totalIssueCount,
@@ -47,6 +61,7 @@ const getGitlabInfo = async () => {
 function About() {
   useEffect(() => {
     const gitLabInfo = getGitlabInfo();
+    console.log(gitLabInfo)
   })
   return (
     <div>

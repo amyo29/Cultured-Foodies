@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import {
-  Container,
-  Row,
-  Col,
   Navbar,
-  NavDropdown,
   Nav,
   Form,
   FormControl,
