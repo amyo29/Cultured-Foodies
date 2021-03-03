@@ -787,20 +787,14 @@ function Dish() {
         <Row>
 
         </Row>
-            {data["recipe"]["ingredientLines"]}
+            {data["recipe"]["ingredientLines"].map((ingredient: any) => {
+                return <li>{ingredient}</li>
+            })}
         <Row>
             
         </Row>
     </Container>
   );
-}
-
-function GetStringOfList(list1: string[]) {
-    var str = new String("");
-    for (let entry of list1) {
-        str = str.concat(entry.toString());
-    }
-    return str;
 }
 
 export default Dish;
