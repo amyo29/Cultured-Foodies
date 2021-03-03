@@ -12,6 +12,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Countries from "./pages/Countries/Countries";
 import Dishes from "./pages/Dishes/Dishes";
+import Dish from "./pages/Dishes/Dish";
 import News from "./pages/News/News";
 import Country from "./pages/Countries/Country"
 
@@ -36,8 +37,11 @@ export default function App() {
               <Route path="/countries/:id">
                 <Country/>                
               </Route>
-              <Route path="/dishes">
+              <Route exact path="/dishes">
                 <Dishes />
+              </Route>
+              <Route path="/dishes/:id">
+                <Dish />
               </Route>
               <Route path="/news">
                 <News />
