@@ -1,6 +1,6 @@
 # Cultured Foodies
 
-A website that provides cultural food options from cities around the US.
+A website that provides cultural dishes, country information, and news from around the world.
 
 ## Group members
 
@@ -36,7 +36,7 @@ https://www.culturedfoodies.me
 
 | Phase    | Estimated Completion time | Actual Completion time |
 | -------- | ------------------------- | ---------------------- |
-| Phase I  | X hours                   | X hours                |
+| Phase I  | 15 hours                  | X hours                |
 | Phase II | X hours                   | X hours                |
 | Phase II | X hours                   | X hours                |
 | Phase IV | X hours                   | X hours                |

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/Home.css";
 import homephoto from "../../static_resources/homephoto.jpg";
-import Footer from "../../components/Footer";
 
 class Home extends Component {
   render() {
@@ -22,7 +21,6 @@ class Home extends Component {
             </div>
           </header>
         </body>
-        <Footer />
       </div>
     );
   }

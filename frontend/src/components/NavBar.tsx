@@ -1,36 +1,20 @@
 import React, { Component } from "react";
 import {
-  Container,
-  Row,
-  Col,
   Navbar,
-  NavDropdown,
   Nav,
   Form,
   FormControl,
   Button,
 } from "react-bootstrap";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
-
-import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
-import Country from "../pages/Countries/Countries";
-import Dishes from "../pages/Dishes/Dishes";
-import News from "../pages/News/News";
+import "../styles/NavBar.css"
 
 class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">
+        <Navbar expand="lg" className="navbar-custom">
+          <Navbar.Brand href="/" className="nav-link">
             <b>Cultured Foodies</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -51,29 +35,6 @@ class NavBar extends Component {
             </Form>
           </Navbar.Collapse>
         </Navbar>
-        <Router>
-          <div>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-            <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/countries">
-                <Country />
-              </Route>
-              <Route path="/dishes">
-                <Dishes />
-              </Route>
-              <Route path="/news">
-                <News />
-              </Route>
-            </Switch>
-          </div>
-        </Router>
       </div>
     );
   }
