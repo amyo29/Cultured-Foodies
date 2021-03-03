@@ -4,6 +4,7 @@ import PostmanLogo from "./Images/PostmanLogo.png";
 import ReactLogo from "./Images/ReactLogo.png";
 import BootStrapLogo from "./Images/Bootstrap-Logo.png";
 import NameCheapLogo from "./Images/Namecheap.png";
+
 const toolsInfo = [
   {
     title: "AWS",
@@ -48,10 +49,9 @@ const teamInfo = [
 		name: "Vishal Tak",
 		username: "VishalTak14",
 		email: "vishal.tak@shoplc.com",
-		// picture_path: LarryWinImg,
+		// img: VishalImg,
 		role: "Full-Stack",
-		bio:
-			"",
+		bio: "",
 		linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
 		commits: 0,
 		issues: 0,
@@ -61,7 +61,7 @@ const teamInfo = [
 		name: "Lucinda Nguyen",
 		username: "lucinda",
 		email: "lucinda.onguyen@gmail.com",
-		// picture_path: LarryWinImg,
+		// img: LucindaImg,
 		role: "Full-Stack",
 		bio:
 			"",
@@ -74,10 +74,9 @@ const teamInfo = [
 		name: "Siddhesh Krishnan",
 		username: "Siddhesh",
 		email: "siddheshkrishnan1@gmail.com",
-		// picture_path: LarryWinImg,
+		// img: SiddheshImg,
 		role: "Full-Stack",
-		bio:
-			"",
+		bio: "",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -87,10 +86,9 @@ const teamInfo = [
 		name: "Tim Nguyen",
 		username: "Tim Nguyen",
 		email: "nguye@MacBook-Pro-2.local",
-		// picture_path: LarryWinImg,
+		// img: TimImg,
 		role: "Full-Stack",
-		bio:
-			"",
+		bio: "",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -100,10 +98,21 @@ const teamInfo = [
 		name: "Amy Ouyang",
 		username: "amyo29",
 		email: "yawen1999@gmail.com",
-		// picture_path: LarryWinImg,
+		// img: AmyImg,
 		role: "Full-Stack",
-		bio:
-			"",
+		bio: "",
+		linkedin: "",
+		commits: 0,
+		issues: 0,
+		tests: 0,
+	},
+	{
+		name: "Joshua Andrew Arrojado",
+		username: "jea2876",
+		email: "joshuanms@gmail.com",
+		// img: JoshuaImg,
+		role: "Full-Stack",
+		bio: "",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
