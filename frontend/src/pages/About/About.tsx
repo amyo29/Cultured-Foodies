@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { toolsInfo, teamInfo } from "./AboutInfo";
+import { toolsInfo, teamInfo, apiInfo } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
+import "../../styles/About.css";
 
-const getGitlabInfo = async () => {
-  let totalCommitCount = 0,
-    totalIssueCount = 0,
-    totalTestCount = 0;
+const TOTAL_COMMITS_INDEX = 0
+const TOTAL_ISSUES_INDEX = 1
+const TOTAL_TESTS_INDEX = 2
 
-  // Need to wipe member issues before calling again and calculate total tests
+const retrieveGitLabInfo = async () => {
+  let statsInfo = [0, 0, 0]
+
   teamInfo.forEach((member: any) => {
-    totalTestCount += member.tests;
-    member.issues = 0;
     member.commits = 0;
+    member.issues = 0;
+    statsInfo[TOTAL_TESTS_INDEX] += member.tests;
   });
 
   const issueList = await fetch(
@@ -35,7 +37,7 @@ const getGitlabInfo = async () => {
         member.commits += commits;
       }
     });
-    totalCommitCount += commits;
+    statsInfo[TOTAL_COMMITS_INDEX] += commits;
   });
 
   issueList.forEach((element: any) => {
@@ -45,13 +47,11 @@ const getGitlabInfo = async () => {
         member.issues += 1;
       }
     });
-    totalIssueCount += 1;
+    statsInfo[TOTAL_ISSUES_INDEX] += 1;
   });
 
   return {
-    totalCommits: totalCommitCount,
-    totalIssues: totalIssueCount,
-    totalTests: totalTestCount,
+    statsInfo: statsInfo,
     teamInfo: teamInfo,
   };
 };
@@ -60,33 +60,37 @@ function About() {
   const [commitsSum, changeCommitsSum] = useState(-1);
   const [issuesSum, changeIssuesSum] = useState(-1);
   const [testsSum, changeTestsSum] = useState(-1);
-  const [teamData, changeTeamData] = useState([{}])
+  const [teamData, changeTeamData] = useState([{}]);
   const [loaded, changeLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       if (teamData === undefined || teamData.length === 1) {
-        const gitLabInfo = await getGitlabInfo();
-        changeCommitsSum(gitLabInfo.totalCommits)
-        changeIssuesSum(gitLabInfo.totalIssues)
-        changeTestsSum(gitLabInfo.totalTests)
-        changeTeamData(gitLabInfo.teamInfo)
-        changeLoading(true)
+        const gitLabInfo = await retrieveGitLabInfo();
+        changeCommitsSum(gitLabInfo.statsInfo[TOTAL_COMMITS_INDEX]);
+        changeIssuesSum(gitLabInfo.statsInfo[TOTAL_ISSUES_INDEX]);
+        changeTestsSum(gitLabInfo.statsInfo[TOTAL_TESTS_INDEX]);
+        changeTeamData(gitLabInfo.teamInfo);
+        changeLoading(true);
       }
-    }
-    fetchData()
-  }, [teamData])
+    };
+    fetchData();
+  }, [teamData]);
+
   return (
-    <div>
+    <div className="font-style">
       <h1>About Us</h1>
 
       <p>
-        Cultured Foodies encourages its users to discover new foods from
-        different cultures. We want people to explore the world of food from our
-        website and learn more about new cuisines and dishes.
+        Cultured Foodies is a website that encourages its users to discover new
+        foods from different cultures. We want people to explore the world of
+        food from our website and learn more about new cuisines and dishes.
       </p>
 
-      <p>explanation of the interesting result of integrating disparate data</p>
+      <p>
+        The data we've gathered highlights cuisines from various cultures and 
+        their known presence in news outlets. 
+      </p>
 
       <h2>Meet the Team</h2>
 
@@ -108,8 +112,7 @@ function About() {
         })
       ) : (
         <div>Loading</div>
-      )
-}
+      )}
 
       <div>
         <h2>Stats</h2>
@@ -140,6 +143,19 @@ function About() {
         <h2>Data</h2>
       </div>
 
+      {apiInfo.map((tool: any) => {
+        const { title, img, description, link } = tool;
+
+        return (
+          <InfoCard
+            title={title}
+            img={img}
+            description={description}
+            link={link}
+          />
+        );
+      })}
+
       <div>
         <h2>Tools</h2>
       </div>
@@ -158,11 +174,19 @@ function About() {
       })}
 
       <div>
-        <a href="https://gitlab.com/cs373-group-11/cultured-foodies">Gitlab</a>
+        <InfoCard
+          title="Gitlab Repo"
+          img={toolsInfo[1].img}
+          link="https://gitlab.com/cs373-group-11/cultured-foodies"
+        />
       </div>
 
       <div>
-        <a href="https://www.postman.com">Postman</a>
+        <InfoCard
+          title="Postman API"
+          img={toolsInfo[2].img}
+          link="https://documenter.getpostman.com/view/14740527/Tz5i9gAY"
+        />
       </div>
     </div>
   );

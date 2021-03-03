@@ -1,27 +1,59 @@
-import AWSLogo from "./Images/AWSLogo.png";
-import GitLabLogo from "./Images/GitLabLogo.png";
-import PostmanLogo from "./Images/PostmanLogo.png";
-import ReactLogo from "./Images/ReactLogo.png";
-import BootStrapLogo from "./Images/Bootstrap-Logo.png";
-import NameCheapLogo from "./Images/Namecheap.png";
+import AWSLogo from "./Images/Tools/AWSLogo.png";
+import GitLabLogo from "./Images/Tools/GitLabLogo.png";
+import PostmanLogo from "./Images/Tools/PostmanLogo.png";
+import ReactLogo from "./Images/Tools/ReactLogo.png";
+import BootStrapLogo from "./Images/Tools/BootstrapLogo.png";
+import NameCheapLogo from "./Images/Tools/Namecheap.png";
+
+import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
+import EdamamLogo from "./Images/APIs/EdamamLogo.png";
+import NewscatcherLogo from "./Images/APIs/NewscatcherLogo.png";
+
+import AmyImg from "./Images/Members/AmyImg.png";
+import JoshuaImg from "./Images/Members/JoshuaImg.png";
+import LucindaImg from "./Images/Members/LucindaImg.jpg";
+import SiddheshImg from "./Images/Members/SiddheshImg.png";
+import TimImg from "./Images/Members/TimImg.png";
+import VishalImg from "./Images/Members/VishalImg.jpg";
+
+const apiInfo = [
+	{
+		name: "REST Countries",
+		img: RestCountriesLogo,
+		description: "Used to retrieve country information",
+		link: "https://restcountries.eu/",
+	},
+	{
+		name: "Edamam",
+		img: EdamamLogo,
+		description: "Used to find dishes",
+		link: "https://developer.edamam.com/",
+	},
+	{
+		name: "Newscatcher API",
+		img: NewscatcherLogo,
+		description: "Used to retrieve food related news content",
+		link: "https://newscatcherapi.com/",
+	}
+]
 
 const toolsInfo = [
   {
     title: "AWS",
     img: AWSLogo,
-    description: "Cloud hosting platform.",
+    description: "Cloud hosting platform",
     link: "https://aws.amazon.com/",
   },
   {
     title: "GitLab",
     img: GitLabLogo,
-    description: "GitLab Repository and CI/CD platform.",
+    description: "GitLab Repository and CI/CD platform",
     link: "https://gitlab.com/",
   },
   {
     title: "Postman",
     img: PostmanLogo,
-    description: "API and streamline collaboration platform.",
+    description: "API and streamline collaboration platform",
     link: "https://www.postman.com/",
   },
   {
@@ -34,13 +66,13 @@ const toolsInfo = [
     title: "BootStrap",
     img: BootStrapLogo,
     description:
-      "A free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+      "A free and open-source CSS framework directed at responsive, mobile-first front-end web development",
     link: "https://getbootstrap.com/",
   },
   {
     title: "NameCheap",
     img: NameCheapLogo,
-    description: "Domain name registrar.",
+    description: "Domain name registrar",
     link: "https://www.namecheap.com/",
   },
 ];
@@ -49,9 +81,9 @@ const teamInfo = [
 		name: "Vishal Tak",
 		username: "VishalTak14",
 		email: "vishal.tak@shoplc.com",
-		// img: VishalImg,
+		img: VishalImg,
 		role: "Full-Stack",
-		bio: "",
+		bio: "Bio description",
 		linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
 		commits: 0,
 		issues: 0,
@@ -61,10 +93,9 @@ const teamInfo = [
 		name: "Lucinda Nguyen",
 		username: "lucinda",
 		email: "lucinda.onguyen@gmail.com",
-		// img: LucindaImg,
+		img: LucindaImg,
 		role: "Full-Stack",
-		bio:
-			"",
+		bio: "Bio description",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -74,9 +105,9 @@ const teamInfo = [
 		name: "Siddhesh Krishnan",
 		username: "Siddhesh",
 		email: "siddheshkrishnan1@gmail.com",
-		// img: SiddheshImg,
+		img: SiddheshImg,
 		role: "Full-Stack",
-		bio: "",
+		bio: "Bio description",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -86,9 +117,9 @@ const teamInfo = [
 		name: "Tim Nguyen",
 		username: "Tim Nguyen",
 		email: "nguye@MacBook-Pro-2.local",
-		// img: TimImg,
+		img: TimImg,
 		role: "Full-Stack",
-		bio: "",
+		bio: "Bio description",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -98,9 +129,9 @@ const teamInfo = [
 		name: "Amy Ouyang",
 		username: "amyo29",
 		email: "yawen1999@gmail.com",
-		// img: AmyImg,
+		img: AmyImg,
 		role: "Full-Stack",
-		bio: "",
+		bio: "Bio description",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -110,9 +141,9 @@ const teamInfo = [
 		name: "Joshua Andrew Arrojado",
 		username: "jea2876",
 		email: "joshuanms@gmail.com",
-		// img: JoshuaImg,
+		img: JoshuaImg,
 		role: "Full-Stack",
-		bio: "",
+		bio: "Bio description",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
@@ -120,4 +151,4 @@ const teamInfo = [
 	},
 ];
 
-export {toolsInfo, teamInfo};
+export {apiInfo, toolsInfo, teamInfo};
