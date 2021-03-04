@@ -380,16 +380,59 @@
       },
       "News": {
         "type": "object",
-        "required": ["id", "name"],
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "country",
+          "author",
+          "link",
+          "language",
+          "media",
+          "media_content",
+          "rights",
+          "topic",
+          "published_date"
+        ],
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "media": {
+            "type": "string"
+          },
+          "media-content": {
             "type": "string"
           },
           "tag": {
+            "type": "string"
+          },
+          "rights": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "published_date": {
             "type": "string"
           }
         }
