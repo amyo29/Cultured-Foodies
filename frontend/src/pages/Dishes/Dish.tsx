@@ -13,9 +13,12 @@ function Dish() {
   let data = dishes_data[+id];
   let countryIndex = data["countryIndex"];
   let newsIndex = data["newsIndex"];
+  let youTubeID = data["youTubeLinkID"]
 
   let country = countries_data[countryIndex];
   let article = news_data[newsIndex];
+  let youTubeURL = "https://www.youtube.com/embed/" + youTubeID
+
   return (
     <Container fluid>
       <Row>
@@ -77,7 +80,15 @@ function Dish() {
       
       <h5>Mentioned in news articles: </h5>
       <a href={"/news/" + newsIndex}>{article["title"]}</a>
-      
+
+      <iframe
+        src={youTubeURL}
+        width="50%"
+        height="300"
+        allow="fullscreen"
+        title="video"
+      />
+
     </Container>
   );
 }
