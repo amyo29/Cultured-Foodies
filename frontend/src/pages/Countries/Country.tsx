@@ -9,12 +9,17 @@ const dishes_data = require("../../data/threeDishes.json");
 function Country() {
   const { id } = useParams<{ id: string }>();
   let data = countries_data[+id];
+  let countryName = data["name"]
+
+  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8"
+  let countryMapURL = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY + "&q=" + countryName
 
   let dishIndex = data["dishIndex"];
   let newsIndex = data["newsIndex"];
-  let dishName = dishes_data[dishIndex]["recipe"]["label"]
-  let newsArticle = news_data[newsIndex]["title"]
+  let dishName = dishes_data[dishIndex]["recipe"]["label"];
+  let newsArticle = news_data[newsIndex]["title"];
   let newsLink = news_data[newsIndex];
+
   console.log(newsLink);
   return (
     <Container fluid>
@@ -71,6 +76,13 @@ function Country() {
         <h6>{newsArticle}</h6>
       </a>
       <Row></Row>
+
+      <iframe
+        src={countryMapURL}
+        width="600"
+        height="450"
+        loading="lazy"
+      ></iframe>
     </Container>
   );
 }
