@@ -1,5 +1,5 @@
-{
-    "burger": {
+[
+         {
         "recipe":{
             "uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d4433ea07d7563ac04c3490f5e364886",
             "label":"The Ultimate Burger",
@@ -668,7 +668,7 @@
         "bookmarked":false,
         "bought":false
     },
-    "sushi": {
+     {
         "recipe":{
             "uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_e2044086d8346319d6c46b4273edf586",
             "label":"Sushi Rice Recipe",
@@ -1359,7 +1359,7 @@
          "bookmarked":false,
          "bought":false
     },
-    "Bratwurst": {
+    {
         "recipe":{
             "uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_c8081b79d5afcd601b8f5305512daab8",
             "label":"Grilled Bratwurst With Beer, Mustard, and Sauerkraut Recipe",
@@ -2064,4 +2064,4 @@
          "bookmarked":false,
          "bought":false
     }
-}
+   ]

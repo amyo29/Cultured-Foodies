@@ -1,52 +1,56 @@
-{
-    "Afghanistan": {
-        "recipe": "Red Chutney",
-        "summary": "Aanchal Mathur\u00a0 | \u00a0Updated: March 02, 2021 17:53 ISTCucumber, tamarind, onion, or even fruits, one can make chutneys out of so much.One of the most popular things Indian cuisine is famous for is the chutneys. Don't you think? The rest of the world may have their own salsas or dips, Indian chutneys still rule our palates. Be it for the lip-smacking spices or the sheer versatility of them spreading over everything - from sandwiches to parathas - we are never getting over having chutneys as a staple accompaniment with all our meals! And we aren't stuck to just mint or coriander chutney.",
-        "country": "IN",
-        "clean_url": "ndtv.com",
-        "author": null,
-        "rights": "ndtv.com",
-        "link": "https://food.ndtv.com/food-drinks/5-south-indian-chutney-recipes-you-must-try-2382057",
-        "rank": "899",
-        "topic": "food",
-        "language": "en",
-        "title": "5 South Indian Chutney Recipes You Must Try",
-        "published_date": "2021-03-02 12:05:11",
-        "_id": "1c27d84d18a8450499017f6da3fa28ca",
-        "_score": 23.542746
-    },
+[
+  {
+    "summary": "Unique serving style attracts attention online.  From sushi burritos to kebab sushi rolls, we’ve tried a lot of unusual sushi in Japan. However, there’s one sushi restaurant now tempting us with an extra-special way of serving sushi that’s surprising even Japanese diners, as it involves searing fresh squid with a soldering iron. Ryu Hamasaki, Editor-in-Chief of Japanese […]",
+    "country": "JP",
+    "author": "Oona McGee",
+    "link": "https://soranews24.com/2021/03/03/japanese-restaurant-sears-sushi-with-a-soldering-iron%e3%80%90video%e3%80%91/",
+    "language": "en",
+    "media": "https://soranews24.com/wp-content/uploads/sites/3/2021/03/Sushi-no-kura-Japanese-restaurant-Hokkaido-chain-Japan-review-news-.jpg",
+    "title": "Japanese restaurant sears sushi with a soldering iron【Video】",
+    "media_content": "https://soranews24.com/wp-content/uploads/sites/3/2021/03/Sushi-no-kura-Japanese-restaurant-Hokkaido-chain-Japan-review-news-.jpg,https://soranews24.com/wp-content/uploads/sites/3/2021/03/Sushi-no-kura-Japanese-restaurant-Hokkaido-chain-Japan-review-news-.jpg?w=640",
+    "clean_url": "soranews24.com",
+    "rights": "soranews24.com",
+    "rank": "10465",
+    "topic": "news",
+    "published_date": "2021-03-02 15:00:27",
+    "_id": "7d4010d4ed0022b3f8d09b9fae122f32",
+    "_score": 24.82473
+  },
 
-    "Albania": {
-        "recipe": "papare",
-        "summary": "Jayapura (ANTARA) - Jajaran Pangkalan TNI AU (Lanud) Silas Papare Jayapura, Papua, menciptakan sebuah lagu yang dipersembahkan untuk pemuda adat Papua. Komandan Lanud (Danlanud) Silas Papare Marsma TNI Budhi Achmadi di Jayapura, Senin, mengatakan lagu berjudul \"Mars Pemuda Adat Papua\" diciptakan dengan dibantu Galih Setiawan, Wendy Dwi Aditya dalam proses aransemennya yang digarap di Studio Starlight Jakarta, sementara untuk proses edit\u00a0video dilaksanakan oleh Staf Penerangan Lanud Silas Papare Jayapura.",
-        "country": "ID",
-        "clean_url": "antaranews.com",
-        "author": "Hendrina Dian Kandipi",
-        "rights": "antaranews.com",
-        "link": "https://papua.antaranews.com/berita/620379/lanud-silas-papare-jayapura-ciptakan-lagu-daerah-mars-pemuda-adat-papua",
-        "rank": "12125",
-        "topic": "news",
-        "language": "id",
-        "title": "Lanud Silas Papare Jayapura ciptakan lagu daerah mars pemuda adat Papua",
-        "published_date": "2021-03-01 08:06:54",
-        "_id": "cd2b0811514b4a7240ed746e458a41a6",
-        "_score": 23.488579
-    },
+  {
+    "summary":"After 13 years in business, Ichiban Japanese Grill & Sushi in Tuscaloosa is closing its doors and trying to raise money for relocation costs.The longtime Japanese restaurant on 502 15th Street will close sometime before March 20, according to a post that was shared on the restaurant's Facebook page on Feb. 20.'We will update everyone on our progress in relocating Ichiban,' the restaurant page said in their post. 'We are excited to serve everyone again in our new location as soon as possible.'According to Chloe Chow, the sister of one of Ichiban's owners, the 30 day move out notice was unexpected and the owners have no idea when they will be able to re-open in a new location.",
+    "country":"US",
+    "author":"Tandra Smith | tsmith@al.com",
+    "link":"https://www.al.com/news/2021/02/ichiban-longtime-tuscaloosa-japanese-restaurant-to-close-next-month.html",
+    "language":"en",
+    "media":"https://www.al.com/resizer/V65r3EWBDcIU8YO7ZfGV7vQ9kBQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/6W6J4KWS3REPXEGTI2Q3J2OEN4.jpg",
+    "title":"Ichiban, longtime Tuscaloosa Japanese restaurant, to close next month",
+    "media_content":null,
+    "clean_url":"al.com",
+    "rights":"al.com",
+    "rank":"1784",
+    "topic":"news",
+    "published_date":"2021-02-25 20:57:08",
+    "_id":"c7922b19f87f0618a19454a78e54a12a",
+    "_score":22.895702
+  },
 
-    "Algeria": {
-            "recipe": "Serious Heat: Homemade Harissa Recipe",
-            "summary": "I cooked this for 45 minutes and it's the perfect balance between cooking the grains and not overcooking the fish. I suggest trying this with your slow cooker and adapting the cooking time accordingly. When I tried for pinker fish, the rice still had too much bite, as did the onion, so for me, 45 minutes kept everything in balance. It's\u00a0the ultimate shove-in-and-forget dish while you find the wine and the remote. Prep time: 5 minutes\u00a0| Cooking time: 50 minutes SERVES\u00a0 Two to three INGREDIENTS 1 tbsp olive oil 1 onion, finely chopped 1 tbsp coriander seeds, roughly\u00a0ground 1 tsp toasted cumin seeds, roughly ground 2 tsp rose harissa, or to taste 100g basmati rice 95g couscous 435ml vegetable stock 400g skinless salmon fillets To serve Coriander leaves, roughly chopped METHOD Set the slow cooker to the saut\u00e9 function.",
-            "country": "GB",
-            "clean_url": "telegraph.co.uk",
-            "author": "Katrina Meynink",
-            "rights": "telegraph.co.uk",
-            "link": "https://www.telegraph.co.uk/recipes/0/slow-cooker-harissa-salmon-biryani-recipe/",
-            "rank": "118",
-            "topic": "news",
-            "language": "en",
-            "title": "Slow cooker harissa salmon biryani recipe",
-            "published_date": "2021-02-27 06:00:00",
-            "_id": "217b6ad0795d2491c8a974d422c9b8da",
-            "_score": 28.843555
-    }
-}
+  {
+    "summary": "The German comfort food carryout, scheduled for Saturday, March 13 from 3-7 p.m., will feature cabbage roll and schnitzel dinners, along with individual cabbage rolls and schnitzel sandwiches. Customers can also purchase a packaged combination of specialty bratwursts and mettwursts.The cabbage roll and schnitzel dinners will also include mashed potatoes, applesauce and dessert. Each dinner is $15, while a la carte cabbage rolls are $6 apiece, schnitzel sandwiches are $7, and the package of specialty brats and metts is $10.",
+    "country": "US",
+    "author": "Ashley Moor",
+    "link": "https://www.dayton.com/what-to-do/events/dayton-club-to-host-german-comfort-food-carryout-event-next-weekend/KVGOY2ROMJAI5ELL3SSNOC3QS4/",
+    "language": "en",
+    "media": "https://www.dayton.com/resizer/0P3NiIGx0Ou6ctflhwhKJoPS2so=/1200x630/cloudfront-us-east-1.images.arcpublishing.com/coxohio/7IOLULMBCVBNFIOEMSKO3MZIGE.jpg",
+    "title": "Dayton club to host German comfort-food carryout event next weekend",
+
+    "media_content": null,
+    "clean_url": "dayton.com",
+    "rights": "dayton.com",
+    "rank": "104028",
+    "topic": "news",
+    "published_date": "2021-03-03 18:24:54",
+    "_id": "6fd718c0f81d44cd0c8f1a2d80cfc54f",
+    "_score": 22.90456
+  }
+]

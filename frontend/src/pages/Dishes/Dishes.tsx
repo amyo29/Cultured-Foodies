@@ -2,24 +2,25 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
-const afghan_dish = require("../../data/AfghanistanDishes.json")["hits"].slice(0,3);
-const albania_dish = require("../../data/AlbaniaDishes.json")["hits"].slice(0, 3);
-const algeria_dish = require("../../data/AlgeriaDishes.json")["hits"].slice(0,3);
-
+const data  = require('../../data/threeDishes.json')
 function Dishes() {
-  var rows = [[afghan_dish], [albania_dish], [algeria_dish]].reduce(
-    (accum, el) => accum.concat(el),
-    []
-  );
+
+  var i, j;
+  var chunk = 5;
+  var rows =[] 
+  for (i=0,j=data.length; i<j; i+=chunk) {
+    rows.push(data.slice(i,i+chunk))
+  }
   return (
     <div>
       <header>Countries</header>
       <Container>
         {rows.map((cols) => (
           <Row>
-            {cols.map((col: any) => (
+            {cols.map((col: any, i: any) => (
               <Col>
-              <a href= {"/dishes/"+ col["recipe"]["label"]}>
+              {/* <a href= {"/dishes/"+ col["recipe"]["label"]}> */}
+             <a href = {"/dishes/" + i}>
                 <Card>
                   {/* <Card.Img variant="top" src={img} /> */}
                   <Card.Body>

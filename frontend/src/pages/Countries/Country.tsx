@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
+const countries_data = require("../../data/threeCountries.json")
 
 var countryData = {
   "name": "Afghanistan",
@@ -92,9 +93,10 @@ var countryData = {
 
 function Country() {
   const { id } = useParams<{ id: string }>();
+  let data = countries_data[+id]
   return (
     <div>
-      <header>{countryData["flag"]}</header>
+      <header>{countryData["name"]}</header>
     </div>
   );
 }
