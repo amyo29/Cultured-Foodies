@@ -9,6 +9,7 @@ import retrieveGitLabInfo, {
 import "../../styles/About.css";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from "@material-ui/core/Grid";
+import { CardGroup } from "react-bootstrap";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -65,7 +66,7 @@ function About() {
 
       <h2>Meet the Team</h2>
 
-      <Grid container className={classes.root} spacing={2} justify="center">
+      <CardGroup>
         {loaded ? (
           teamData.map((teamMember: any) => {
             const { name, img, role, bio, commits, issues, tests } = teamMember;
@@ -85,7 +86,7 @@ function About() {
         ) : (
           <div>Loading</div>
         )}
-      </Grid>
+      </CardGroup>
 
       <div>
         <h2>Stats</h2>
