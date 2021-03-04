@@ -10,7 +10,7 @@ import EdamamLogo from "./Images/APIs/EdamamLogo.png";
 import NewscatcherLogo from "./Images/APIs/NewscatcherLogo.png";
 
 import AmyImg from "./Images/Members/AmyImg.jpg";
-import JoshuaImg from "./Images/Members/JoshuaImg.png";
+import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
 import LucindaImg from "./Images/Members/LucindaImg.jpg";
 import SiddheshImg from "./Images/Members/SiddheshImg.png";
 import TimImg from "./Images/Members/TimImg.jpg";
@@ -143,7 +143,7 @@ const teamInfo = [
 		email: "joshuanms@gmail.com",
 		img: JoshuaImg,
 		role: "Full-Stack",
-		bio: "Bio description",
+		bio: "I'm a fourth year CS student at UT Austin. I like to watch anime and kdramas in my sparetime. I also enjoy playing League!",
 		linkedin: "",
 		commits: 0,
 		issues: 0,
