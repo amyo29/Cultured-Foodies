@@ -14,6 +14,7 @@ import Dishes from "./pages/Dishes/Dishes";
 import Dish from "./pages/Dishes/Dish";
 import News from "./pages/News/News";
 import Country from "./pages/Countries/Country"
+import Article from "./pages/News/Article"
 
 export default function App() {
   return (
@@ -42,8 +43,11 @@ export default function App() {
               <Route path="/dishes/:id">
                 <Dish />
               </Route>
-              <Route path="/news">
+              <Route exact path="/news">
                 <News />
+              </Route>
+              <Route path="/news/:id">
+                <Article />
               </Route>
             </Switch>
           </div>

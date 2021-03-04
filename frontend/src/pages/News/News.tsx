@@ -5,8 +5,11 @@ function News() {
   return (
     <div>
        <header>News</header>
-      {data.map((article:any) => (
+      
+      {data.map((article:any, i :any) => (
+        <a href={"/news/" + i}>
           <div>{article['title']} </div>
+          </a>
         ))}
     </div>
   );
