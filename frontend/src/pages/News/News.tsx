@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, ListGroupItem, Table } from "react-bootstrap";
+import { ListGroup, ListGroupItem, Navbar, Table } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
@@ -23,7 +23,9 @@ function News() {
             {data.map((article: any, i: any) => (
               <tr>
                 <td>{i + 1}</td>
-                <td>{article["title"]}</td>
+                <Navbar>
+                  <td><a href={"/news/" + i}>{article["title"]}</a></td>
+                </Navbar>
                 <td>{countries_data[article["countryIndex"]]["name"]}</td>
                 <td>{article["language"]}</td>
                 <td>{article["author"]}</td>
