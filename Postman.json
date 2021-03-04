@@ -9,7 +9,7 @@
   },
   "servers": [
     {
-      "url": "https://culturedfoodies.me/api/"
+      "url": "https://culturedfoodies.me/api"
     }
   ],
   "paths": {
@@ -99,16 +99,16 @@
         }
       }
     },
-    "/countries/{countryName}": {
+    "/countries/{countryId}": {
       "get": {
         "summary": "Details about a country",
         "operationId": "listCountry",
         "tags": ["country"],
         "parameters": [
           {
-            "name": "name",
+            "name": "id",
             "in": "query",
-            "description": "name of the country",
+            "description": "id of the country",
             "required": true,
             "schema": {
               "type": "string"
@@ -187,9 +187,9 @@
         "tags": ["dish"],
         "parameters": [
           {
-            "name": "name",
+            "name": "id",
             "in": "query",
-            "description": "name of the dish",
+            "description": "id of the dish",
             "required": true,
             "schema": {
               "type": "string",
@@ -199,7 +199,7 @@
         ],
         "responses": {
           "200": {
-            "description": "List of dishes and their corresponding details",
+            "description": "Details about a dish",
             "content": {
               "application/json": {
                 "schema": {
