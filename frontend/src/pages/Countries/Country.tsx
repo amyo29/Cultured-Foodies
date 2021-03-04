@@ -10,7 +10,7 @@ function Country() {
   const { id } = useParams<{ id: string }>();
   let data = countries_data[+id]; 
 
-  let dish = data["dish"];
+  let dish_name = data["dish"];
   let article = data["article"];
   return (
     <Container fluid> 

@@ -1,7 +1,8 @@
 [
   {
-    "dish": "burger",
-    "article": "news-1",
+    "dishName": "Burger",
+    "dishIndex": 0,
+    "newsIndex": 0,
     "name": "United States of America",
         "topLevelDomain": [
             ".us"
@@ -88,8 +89,9 @@
         "cioc": "USA"
   },
   {
-    "dish": "sushi",
-    "article": "news-2",
+    "dishName": "Sushi",
+    "dishIndex": 1,
+    "newsIndex": 1,
     "name": "Japan",
         "topLevelDomain": [
             ".jp"
@@ -153,9 +155,10 @@
         "cioc": "JPN"
   },
   {
+    "dishName": "Bratwurst",
+    "dishIndex": 2,
+    "newsIndex": 2,
     "name": "Germany",
-    "dish": "bratwurst",
-    "article":"news-3",
     "topLevelDomain": [
         ".de"
     ],
