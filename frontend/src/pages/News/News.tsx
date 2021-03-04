@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, ListGroupItem } from "react-bootstrap";
+import { ListGroup, ListGroupItem, Table } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
@@ -8,17 +8,30 @@ function News() {
   return (
     <div>
       <h1>News</h1>
-      <ListGroup>
-        Title | Country | Language | Author | Published Date
-        {data.map((article: any, i: any) => (
-          <a href={"/news/" + i}>
-            <ListGroupItem className="nounderline">
-              {article["title"]} | {countries_data[article["countryIndex"]]["name"]} | {article["language"]}{" "}
-              | {article["author"]} | {article["published_date"]}
-            </ListGroupItem>
-          </a>
-        ))}
-      </ListGroup>
+      <Table responsive>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Author</th>
+            <th>Published Date</th>
+          </tr>
+        </thead>
+        <tbody>
+            {data.map((article: any, i: any) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td>{article["title"]}</td>
+                <td>{countries_data[article["countryIndex"]]["name"]}</td>
+                <td>{article["language"]}</td>
+                <td>{article["author"]}</td>
+                <td>{article["published_date"]}</td>
+              </tr>
+            ))}
+        </tbody>
+      </Table>
     </div>
   );
 }
