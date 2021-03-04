@@ -1,65 +1,237 @@
-{
-    "United States of America": {
-        "IsSuccess": true,
-        "UserMessage": null,
-        "TechnicalMessage": null,
-        "TotalCount": 1,
-        "Response": [
+[
+  {
+    "dish": "burger",
+    "article": "news-1",
+    "name": "United States of America",
+        "topLevelDomain": [
+            ".us"
+        ],
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "callingCodes": [
+            "1"
+        ],
+        "capital": "Washington, D.C.",
+        "altSpellings": [
+            "US",
+            "USA",
+            "United States of America"
+        ],
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "latlng": [
+            38.0,
+            -97.0
+        ],
+        "demonym": "American",
+        "area": 9629091.0,
+        "gini": 48.0,
+        "timezones": [
+            "UTC-12:00",
+            "UTC-11:00",
+            "UTC-10:00",
+            "UTC-09:00",
+            "UTC-08:00",
+            "UTC-07:00",
+            "UTC-06:00",
+            "UTC-05:00",
+            "UTC-04:00",
+            "UTC+10:00",
+            "UTC+12:00"
+        ],
+        "borders": [
+            "CAN",
+            "MEX"
+        ],
+        "nativeName": "United States",
+        "numericCode": "840",
+        "currencies": [
             {
-                "Name": "United States of America",
-                "Alpha2Code": "US",
-                "Alpha3Code": "USA",
-                "NativeName": "United States",
-                "Region": "Americas",
-                "SubRegion": "Northern America",
-                "Latitude": "38",
-                "Longitude": "-97",
-                "Area": 9629091,
-                "NumericCode": 840,
-                "NativeLanguage": "eng",
-                "CurrencyCode": "USD",
-                "CurrencyName": "United States dollar",
-                "CurrencySymbol": "$",
-                "Flag": "https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/usa.svg",
-                "FlagPng": "https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/usa.png"
+                "code": "USD",
+                "name": "United States dollar",
+                "symbol": "$"
             }
-        ]
-
+        ],
+        "languages": [
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }
+        ],
+        "translations": {
+            "de": "Vereinigte Staaten von Amerika",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ合衆国",
+            "it": "Stati Uniti D'America",
+            "br": "Estados Unidos",
+            "pt": "Estados Unidos",
+            "nl": "Verenigde Staten",
+            "hr": "Sjedinjene Američke Države",
+            "fa": "ایالات متحده آمریکا"
+        },
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "regionalBlocs": [
+            {
+                "acronym": "NAFTA",
+                "name": "North American Free Trade Agreement",
+                "otherAcronyms": [],
+                "otherNames": [
+                    "Tratado de Libre Comercio de América del Norte",
+                    "Accord de Libre-échange Nord-Américain"
+                ]
+            }
+        ],
+        "cioc": "USA"
+  },
+  {
+    "dish": "sushi",
+    "article": "news-2",
+    "name": "Japan",
+        "topLevelDomain": [
+            ".jp"
+        ],
+        "alpha2Code": "JP",
+        "alpha3Code": "JPN",
+        "callingCodes": [
+            "81"
+        ],
+        "capital": "Tokyo",
+        "altSpellings": [
+            "JP",
+            "Nippon",
+            "Nihon"
+        ],
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "population": 126960000,
+        "latlng": [
+            36.0,
+            138.0
+        ],
+        "demonym": "Japanese",
+        "area": 377930.0,
+        "gini": 38.1,
+        "timezones": [
+            "UTC+09:00"
+        ],
+        "borders": [],
+        "nativeName": "日本",
+        "numericCode": "392",
+        "currencies": [
+            {
+                "code": "JPY",
+                "name": "Japanese yen",
+                "symbol": "¥"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ja",
+                "iso639_2": "jpn",
+                "name": "Japanese",
+                "nativeName": "日本語 (にほんご)"
+            }
+        ],
+        "translations": {
+            "de": "Japan",
+            "es": "Japón",
+            "fr": "Japon",
+            "ja": "日本",
+            "it": "Giappone",
+            "br": "Japão",
+            "pt": "Japão",
+            "nl": "Japan",
+            "hr": "Japan",
+            "fa": "ژاپن"
+        },
+        "flag": "https://restcountries.eu/data/jpn.svg",
+        "regionalBlocs": [],
+        "cioc": "JPN"
+  },
+  {
+    "name": "Germany",
+    "dish": "bratwurst",
+    "article":"news-3",
+    "topLevelDomain": [
+        ".de"
+    ],
+    "alpha2Code": "DE",
+    "alpha3Code": "DEU",
+    "callingCodes": [
+        "49"
+    ],
+    "capital": "Berlin",
+    "altSpellings": [
+        "DE",
+        "Federal Republic of Germany",
+        "Bundesrepublik Deutschland"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 81770900,
+    "latlng": [
+        51.0,
+        9.0
+    ],
+    "demonym": "German",
+    "area": 357114.0,
+    "gini": 28.3,
+    "timezones": [
+        "UTC+01:00"
+    ],
+    "borders": [
+        "AUT",
+        "BEL",
+        "CZE",
+        "DNK",
+        "FRA",
+        "LUX",
+        "NLD",
+        "POL",
+        "CHE"
+    ],
+    "nativeName": "Deutschland",
+    "numericCode": "276",
+    "currencies": [
+        {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        }
+    ],
+    "languages": [
+        {
+            "iso639_1": "de",
+            "iso639_2": "deu",
+            "name": "German",
+            "nativeName": "Deutsch"
+        }
+    ],
+    "translations": {
+        "de": "Deutschland",
+        "es": "Alemania",
+        "fr": "Allemagne",
+        "ja": "ドイツ",
+        "it": "Germania",
+        "br": "Alemanha",
+        "pt": "Alemanha",
+        "nl": "Duitsland",
+        "hr": "Njemačka",
+        "fa": "آلمان"
     },
-    "Japan": {
-        "Name":"Japan",
-         "Alpha2Code":"JP",
-         "Alpha3Code":"JPN",
-         "NativeName":"日本",
-         "Region":"Asia",
-         "SubRegion":"Eastern Asia",
-         "Latitude":"36",
-         "Longitude":"138",
-         "Area":377930,
-         "NumericCode":392,
-         "NativeLanguage":"jpn",
-         "CurrencyCode":"JPY",
-         "CurrencyName":"Japanese yen",
-         "CurrencySymbol":"¥",
-         "Flag":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/jpn.svg",
-         "FlagPng":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/jpn.png"
-    },
-    "Algeria": {
-        "Name":"Germany",
-         "Alpha2Code":"DE",
-         "Alpha3Code":"DEU",
-         "NativeName":"Deutschland",
-         "Region":"Europe",
-         "SubRegion":"Western Europe",
-         "Latitude":"51",
-         "Longitude":"9",
-         "Area":357114,
-         "NumericCode":276,
-         "NativeLanguage":"deu",
-         "CurrencyCode":"EUR",
-         "CurrencyName":"Euro",
-         "CurrencySymbol":"€",
-         "Flag":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlags/deu.svg",
-         "FlagPng":"https://api.backendless.com/2F26DFBF-433C-51CC-FF56-830CEA93BF00/473FB5A9-D20E-8D3E-FF01-E93D9D780A00/files/CountryFlagsPng/deu.png"
-    }
-}
+    "flag": "https://restcountries.eu/data/deu.svg",
+    "regionalBlocs": [
+        {
+            "acronym": "EU",
+            "name": "European Union",
+            "otherAcronyms": [],
+            "otherNames": []
+        }
+    ],
+    "cioc": "GER"
+  }
+]
