@@ -221,25 +221,26 @@
         }
       }
     },
-    "/news/": {
+    "/news": {
       "get": {
-        "summary": "Returns list of news articles",
+        "summary": "Returns list of news article",
         "operationId": "listNews",
         "tags": ["news"],
         "parameters": [
           {
             "name": "id",
             "in": "query",
-            "description": "Query by content of news articles",
+            "description": "id of the news article",
             "required": false,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "string"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "List of all news articles and corresponding details",
+            "description": "List of articles and their corresponding details",
             "content": {
               "application/json": {
                 "schema": {
@@ -261,34 +262,26 @@
         }
       }
     },
-    "/news{NewsId}": {
+    "/news/{newsid}": {
       "get": {
         "summary": "Details about a news article",
-        "operationId": "listNews",
-        "tags": ["news"],
+        "operationId": "listNew",
+        "tags": ["new"],
         "parameters": [
           {
             "name": "id",
             "in": "query",
-            "description": "ID of the news article",
+            "description": "id of the news article",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "string"
             }
           }
         ],
         "responses": {
           "200": {
             "description": "Details about a news article",
-            "headers": {
-              "x-next": {
-                "description": "A link to the next page of responses",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
             "content": {
               "application/json": {
                 "schema": {
