@@ -138,7 +138,7 @@ const teamInfo = [
 		tests: 0,
 	},
 	{
-		name: "Joshua Andrew Arrojado",
+		name: "Joshua Arrojado",
 		username: "josharrojado",
 		email: "joshuanms@gmail.com",
 		img: JoshuaImg,
