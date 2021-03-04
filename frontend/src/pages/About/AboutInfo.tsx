@@ -144,7 +144,7 @@ const teamInfo = [
 		img: JoshuaImg,
 		role: "Full-Stack",
 		bio: "I'm a fourth year CS student at UT Austin. I like to watch anime and kdramas in my sparetime. I also enjoy playing League!",
-		linkedin: "",
+		linkedin: "https://www.linkedin.com/in/joshua-arrojado-803bb895/",
 		commits: 0,
 		issues: 0,
 		tests: 0,
