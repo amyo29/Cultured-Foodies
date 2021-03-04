@@ -1,6 +1,5 @@
 [
   {
-    "dishName": "Burger",
     "dishIndex": 0,
     "newsIndex": 0,
     "name": "United States of America",
@@ -89,7 +88,6 @@
         "cioc": "USA"
   },
   {
-    "dishName": "Sushi",
     "dishIndex": 1,
     "newsIndex": 1,
     "name": "Japan",
@@ -155,7 +153,6 @@
         "cioc": "JPN"
   },
   {
-    "dishName": "Bratwurst",
     "dishIndex": 2,
     "newsIndex": 2,
     "name": "Germany",
