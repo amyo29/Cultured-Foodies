@@ -221,16 +221,56 @@
         }
       }
     },
-    "/news": {
+    "/news/": {
       "get": {
-        "summary": "Details about a user",
-        "operationId": "listUser",
-        "tags": ["user"],
+        "summary": "Returns list of news articles",
+        "operationId": "listNews",
+        "tags": ["news"],
         "parameters": [
           {
             "name": "id",
             "in": "query",
-            "description": "ID of the user",
+            "description": "Query by content of news articles",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of all news articles and corresponding details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/News"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/news{NewsId}": {
+      "get": {
+        "summary": "Details about a news article",
+        "operationId": "listNews",
+        "tags": ["news"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "ID of the news article",
             "required": true,
             "schema": {
               "type": "integer",
@@ -240,7 +280,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Details about a user",
+            "description": "Details about a news article",
             "headers": {
               "x-next": {
                 "description": "A link to the next page of responses",
@@ -252,7 +292,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/User"
+                  "$ref": "#/components/schemas/News"
                 }
               }
             }
