@@ -139,7 +139,7 @@ const teamInfo = [
 	},
 	{
 		name: "Joshua Arrojado",
-		username: "jea2876",
+		username: "josharrojado",
 		email: "joshuanms@gmail.com",
 		img: JoshuaImg,
 		role: "Full-Stack",
