@@ -6,7 +6,10 @@ const countries_data = require("../../data/threeCountries.json")
 
 function Country() {
   const { id } = useParams<{ id: string }>();
-  let data = countries_data[+id]
+  let data = countries_data[+id]; 
+
+  let dish = data["dish"];
+  let article = data["article"];
   return (
     <Container fluid> 
         <Row>
