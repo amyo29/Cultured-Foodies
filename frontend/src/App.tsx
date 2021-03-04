@@ -7,6 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import "./styles/App.css"
+
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Countries from "./pages/Countries/Countries";
@@ -18,7 +20,7 @@ import Article from "./pages/News/Article"
 
 export default function App() {
   return (
-    <div>
+    <div className="background full-height">
       <NavBar />
       <Router>
           <div>

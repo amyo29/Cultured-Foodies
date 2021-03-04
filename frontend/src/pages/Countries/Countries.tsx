@@ -14,7 +14,7 @@ function Countries() {
   // a country will be at rows[index][index]
   return (
     <div>
-      <header>Countries</header>
+      <h1>Countries</h1>
       <Container>
         {rows.map((cols) => (
           <Row>

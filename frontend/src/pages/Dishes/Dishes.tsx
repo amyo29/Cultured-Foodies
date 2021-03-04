@@ -13,7 +13,7 @@ function Dishes() {
   }
   return (
     <div>
-      <header>Countries</header>
+      <h1>Dishes</h1>
       <Container>
         {rows.map((cols) => (
           <Row>

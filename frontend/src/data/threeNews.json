@@ -1,5 +1,8 @@
 [
   {
+    "dishName": "Burger",
+    "dishIndex": 0,
+    "countryIndex": 0,
     "summary": "Unique serving style attracts attention online.  From sushi burritos to kebab sushi rolls, we’ve tried a lot of unusual sushi in Japan. However, there’s one sushi restaurant now tempting us with an extra-special way of serving sushi that’s surprising even Japanese diners, as it involves searing fresh squid with a soldering iron. Ryu Hamasaki, Editor-in-Chief of Japanese […]",
     "country": "JP",
     "author": "Oona McGee",
@@ -18,6 +21,9 @@
   },
 
   {
+    "dishName": "Sushi",
+    "dishIndex": 1,
+    "countryIndex": 1,
     "summary":"After 13 years in business, Ichiban Japanese Grill & Sushi in Tuscaloosa is closing its doors and trying to raise money for relocation costs.The longtime Japanese restaurant on 502 15th Street will close sometime before March 20, according to a post that was shared on the restaurant's Facebook page on Feb. 20.'We will update everyone on our progress in relocating Ichiban,' the restaurant page said in their post. 'We are excited to serve everyone again in our new location as soon as possible.'According to Chloe Chow, the sister of one of Ichiban's owners, the 30 day move out notice was unexpected and the owners have no idea when they will be able to re-open in a new location.",
     "country":"US",
     "author":"Tandra Smith | tsmith@al.com",
@@ -36,6 +42,9 @@
   },
 
   {
+    "dishName": "Bratwurst",
+    "dishIndex": 2,
+    "countryIndex": 2,
     "summary": "The German comfort food carryout, scheduled for Saturday, March 13 from 3-7 p.m., will feature cabbage roll and schnitzel dinners, along with individual cabbage rolls and schnitzel sandwiches. Customers can also purchase a packaged combination of specialty bratwursts and mettwursts.The cabbage roll and schnitzel dinners will also include mashed potatoes, applesauce and dessert. Each dinner is $15, while a la carte cabbage rolls are $6 apiece, schnitzel sandwiches are $7, and the package of specialty brats and metts is $10.",
     "country": "US",
     "author": "Ashley Moor",
