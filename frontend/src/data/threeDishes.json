@@ -740,6 +740,8 @@
       "calories": 1444.9174999995912,
       "totalWeight": 477.13020833328926,
       "totalTime": 60.0,
+      "cuisineType": ["japanese"],
+      "mealType": ["lunch/dinner"],
       "totalNutrients": {
         "ENERC_KCAL": {
           "label": "Energy",
