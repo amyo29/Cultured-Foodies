@@ -2,6 +2,7 @@ import React from "react";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
+const countries_data = require("../../data/threeCountries.json");
 
 function News() {
   return (
@@ -12,7 +13,7 @@ function News() {
         {data.map((article: any, i: any) => (
           <a href={"/news/" + i}>
             <ListGroupItem className="nounderline">
-              {article["title"]} | {article["country"]} | {article["language"]}{" "}
+              {article["title"]} | {countries_data[article["countryIndex"]]["name"]} | {article["language"]}{" "}
               | {article["author"]} | {article["published_date"]}
             </ListGroupItem>
           </a>
