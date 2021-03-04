@@ -6,10 +6,16 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 const dishes_data = require("../../data/threeDishes.json");
-
+const countries_data = require("../../data/threeCountries.json");
+const news_data = require("../../data/threeNews.json")
 function Dish() {
   const { id } = useParams<{ id: string }>();
   let data = dishes_data[+id];
+  let countryIndex = data["countryIndex"]
+  let newsIndex = data["newsIndex"] 
+  
+  let country = countries_data[countryIndex]
+  let article = news_data[newsIndex]
   return (
     <Container fluid>
       <Row>
@@ -20,6 +26,9 @@ function Dish() {
       <Row>
         <Col xs={6} md={4}>
           <Image src={data["recipe"]["image"]} fluid />
+          <a href={"/countries/" + countryIndex}>Country: {country["name"]}</a>
+          <a href={"/news/" + newsIndex}>Mentioned in news articles: {article["title"]}</a>
+
         </Col>
       </Row>
       <Row>
