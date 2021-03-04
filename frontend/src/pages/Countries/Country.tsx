@@ -3,6 +3,8 @@ import { Container, Col, Row } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import { useParams } from 'react-router-dom';
 const countries_data = require("../../data/threeCountries.json")
+const news_data = require("../../data/threeNews.json");
+const dishes_data = require("../../data/threeDishes.json");
 
 function Country() {
   const { id } = useParams<{ id: string }>();
@@ -31,39 +33,27 @@ function Country() {
         <Row>
             <Col>
                 <h5>Region</h5>
-            </Col>
-            <Col>
-                <h5>Time Zones</h5>
-            </Col>
-        </Row>
-        <Row>
-            <Col>
                 {data["region"]}
             </Col>
-            <Col> 
-            
-            {data["timezones"].map((timezone: any) => {
+        
+            <Col>
+                <h5>Time Zones</h5>
+                {data["timezones"].map((timezone: any) => {
                 return <li>{timezone}</li>
             })}
-        
             </Col>
-        </Row>
         
-        <Row>
-            <Col>
+        </Row>
+            
                 <h5>Population</h5>
-            </Col>
-            <Col>
-                <h5>Capital city</h5>
-            </Col>
-        </Row>
-        <Row>
-            <Col>
                 {data["population"]}
-            </Col>
-            <Col>
+            
+            
+                <h5>Capital city</h5>
                 {data["capital"]}
-            </Col>
+            
+        <Row>
+         
         </Row>
             <h5>Translations</h5>
         <Row>
