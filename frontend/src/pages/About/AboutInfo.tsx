@@ -9,7 +9,7 @@ import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
 import EdamamLogo from "./Images/APIs/EdamamLogo.png";
 import NewscatcherLogo from "./Images/APIs/NewscatcherLogo.png";
 
-import AmyImg from "./Images/Members/AmyImg.png";
+import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.png";
 import LucindaImg from "./Images/Members/LucindaImg.jpg";
 import SiddheshImg from "./Images/Members/SiddheshImg.png";
@@ -131,8 +131,8 @@ const teamInfo = [
 		email: "yawen1999@gmail.com",
 		img: AmyImg,
 		role: "Full-Stack",
-		bio: "Bio description",
-		linkedin: "",
+		bio: "I'm a 4th year CS Honors student at UT Austin. I love food.",
+		linkedin: "https://www.linkedin.com/in/amy-o/",
 		commits: 0,
 		issues: 0,
 		tests: 0,
