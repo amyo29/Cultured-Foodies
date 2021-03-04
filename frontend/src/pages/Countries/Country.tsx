@@ -1,103 +1,79 @@
 import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
 import { useParams } from 'react-router-dom';
 const countries_data = require("../../data/threeCountries.json")
-
-var countryData = {
-  "name": "Afghanistan",
-  "topLevelDomain": [
-      ".af"
-  ],
-  "alpha2Code": "AF",
-  "alpha3Code": "AFG",
-  "callingCodes": [
-      "93"
-  ],
-  "capital": "Kabul",
-  "altSpellings": [
-      "AF",
-      "Afġānistān"
-  ],
-  "region": "Asia",
-  "subregion": "Southern Asia",
-  "population": 27657145,
-  "latlng": [
-      33.0,
-      65.0
-  ],
-  "demonym": "Afghan",
-  "area": 652230.0,
-  "gini": 27.8,
-  "timezones": [
-      "UTC+04:30"
-  ],
-  "borders": [
-      "IRN",
-      "PAK",
-      "TKM",
-      "UZB",
-      "TJK",
-      "CHN"
-  ],
-  "nativeName": "افغانستان",
-  "numericCode": "004",
-  "currencies": [
-      {
-          "code": "AFN",
-          "name": "Afghan afghani",
-          "symbol": "؋"
-      }
-  ],
-  "languages": [
-      {
-          "iso639_1": "ps",
-          "iso639_2": "pus",
-          "name": "Pashto",
-          "nativeName": "پښتو"
-      },
-      {
-          "iso639_1": "uz",
-          "iso639_2": "uzb",
-          "name": "Uzbek",
-          "nativeName": "Oʻzbek"
-      },
-      {
-          "iso639_1": "tk",
-          "iso639_2": "tuk",
-          "name": "Turkmen",
-          "nativeName": "Türkmen"
-      }
-  ],
-  "translations": {
-      "de": "Afghanistan",
-      "es": "Afganistán",
-      "fr": "Afghanistan",
-      "ja": "アフガニスタン",
-      "it": "Afghanistan",
-      "br": "Afeganistão",
-      "pt": "Afeganistão",
-      "nl": "Afghanistan",
-      "hr": "Afganistan",
-      "fa": "افغانستان"
-  },
-  "flag": "https://restcountries.eu/data/afg.svg",
-  "regionalBlocs": [
-      {
-          "acronym": "SAARC",
-          "name": "South Asian Association for Regional Cooperation",
-          "otherAcronyms": [],
-          "otherNames": []
-      }
-  ],
-  "cioc": "AFG"
-}
 
 function Country() {
   const { id } = useParams<{ id: string }>();
   let data = countries_data[+id]
   return (
-    <div>
-      <header>{countryData["name"]}</header>
-    </div>
+    <Container fluid> 
+        <Row>
+            <Col>
+                <h1>{data["name"]}</h1>
+            </Col>
+        </Row>
+        <Row>
+            <Col xs={6} md={4}>
+                <Image src={data["flag"]} fluid /> 
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["alpha3Code"]}
+            </Col>
+        </Row>
+        
+        <Row>
+            <Col>
+                <h5>Region</h5>
+            </Col>
+            <Col>
+                <h5>Time Zones</h5>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["region"]}
+            </Col>
+            <Col> 
+            
+            {data["timezones"].map((timezone: any) => {
+                return <li>{timezone}</li>
+            })}
+        
+            </Col>
+        </Row>
+        
+        <Row>
+            <Col>
+                <h5>Population</h5>
+            </Col>
+            <Col>
+                <h5>Capital city</h5>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {data["population"]}
+            </Col>
+            <Col>
+                {data["capital"]}
+            </Col>
+        </Row>
+            <h5>Translations</h5>
+        <Row>
+
+        </Row>
+          {
+            Object.keys(data["translations"]).map(k => {
+              return <li>{data["translations"][k]}</li>
+          })} 
+        <Row>
+            
+        </Row>   
+    </Container>
   );
 }
 
