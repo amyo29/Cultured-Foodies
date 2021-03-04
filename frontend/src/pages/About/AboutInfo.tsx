@@ -13,7 +13,7 @@ import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.png";
 import LucindaImg from "./Images/Members/LucindaImg.jpg";
 import SiddheshImg from "./Images/Members/SiddheshImg.png";
-import TimImg from "./Images/Members/TimImg.png";
+import TimImg from "./Images/Members/TimImg.jpg";
 import VishalImg from "./Images/Members/VishalImg.jpg";
 
 const apiInfo = [
@@ -116,11 +116,11 @@ const teamInfo = [
   {
 		name: "Tim Nguyen",
 		username: "Tim Nguyen",
-		email: "nguye@MacBook-Pro-2.local",
+		email: "nguyenmctim@gmail.com",
 		img: TimImg,
 		role: "Full-Stack",
-		bio: "Bio description",
-		linkedin: "",
+		bio: "I'm a fourth year CS major at UT Austin. I'm from a small town called Palacios, TX and I enjoy playing video games and watching anime.",
+		linkedin: "https://www.linkedin.com/in/nguyenmctim/",
 		commits: 0,
 		issues: 0,
 		tests: 0,
