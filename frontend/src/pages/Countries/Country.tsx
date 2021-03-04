@@ -10,8 +10,11 @@ function Country() {
   const { id } = useParams<{ id: string }>();
   let data = countries_data[+id]; 
 
-  let dish_name = data["dish"];
-  let article = data["article"];
+  let dishName = data["dishName"];
+  let dishIndex = data["dishIndex"];
+  let newsIndex = data["newsIndex"];
+  let newsLink = news_data[newsIndex]["link"];
+  console.log(newsLink);
   return (
     <Container fluid> 
         <Row>
@@ -64,7 +67,20 @@ function Country() {
               return <li>{data["translations"][k]}</li>
           })} 
         <Row>
-            
+        
+        <Row>
+          <h5> Dish of this country </h5>  
+          {dishName} 
+          <a href={"/dishes/" + dishIndex}></a>
+          <h6>Link to this dish: </h6> 
+          
+        </Row>
+
+        <Row>
+        <a href={newsLink}> 
+        <h6>Link to news article about this country</h6>
+      </a>
+        </Row>
         </Row>   
     </Container>
   );
