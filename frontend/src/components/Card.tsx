@@ -7,7 +7,7 @@ const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
   return (
     <a href={link}>
-      <Card style={{ width: "18rem" }}>
+      <Card bg='card h-100' style={{ width: "18rem" }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>

@@ -17,8 +17,8 @@ function Dishes() {
         {rows.map((cols) => (
           <Row>
             {cols.map((col: any, i: any) => (
-              <Col>
-                <Card bg='light'>
+              <Col className = "col-sm-4 py-2">
+                <Card bg='card h-100'>
                   <Card.Body>
                     <a href= {"/dishes/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
                     <Card.Img variant="top" src={col["recipe"]["image"]} />

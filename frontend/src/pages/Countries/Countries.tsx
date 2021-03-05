@@ -20,8 +20,8 @@ function Countries() {
         {rows.map((cols) => (
           <Row>
             {cols.map((country:any, i :any) => (
-              <Col>
-                <Card bg='light'>
+              <Col className="col-sm-4 py-2">
+                <Card bg='card light h-100'>
                   <Card.Body>
                       <a href={"/countries/" + i}>
                         <Card.Title>{country['name']}</Card.Title>

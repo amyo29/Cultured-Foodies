@@ -16,10 +16,10 @@
 
 .profile-img {
   object-fit: cover !important;
-	width: 350px !important;
-	height: 350px !important;
-	border-radius: 50% !important;
-	margin: 25px !important;
-	margin-bottom: 0px !important;
-	display: block !important;
+  width: 1 !important;
+  height: 350px !important;
+  border-radius: 50% !important;
+  /* margin: 25px !important; */
+  margin-bottom: 0px !important;
+  display: block !important;
 }
