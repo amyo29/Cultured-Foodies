@@ -1,521 +1,522 @@
 {
-  "openapi": "3.0.0",
-  "info": {
-    "version": "1.0.0",
-    "title": "CulturedFoodies",
-    "license": {
-      "name": "MIT"
-    }
-  },
-  "servers": [
-    {
-      "url": "https://culturedfoodies.me/api"
-    }
-  ],
-  "paths": {
-    "/countries": {
-      "get": {
-        "summary": "Returns list of countries",
-        "operationId": "listCountries",
-        "tags": ["countries"],
-        "parameters": [
-          {
-            "name": "language",
-            "in": "query",
-            "description": "Filter by language of the country",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "timezone",
-            "in": "query",
-            "description": "Filter by timezone of the country",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "currency",
-            "in": "query",
-            "description": "Filter by currency of the country",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "q",
-            "in": "query",
-            "description": "Any string and returns any matching countries checking based on name, id, language, timezone, and currency. E.g. q=united returns a query containing United States.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "List of all countries and corresponding details",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "CulturedFoodies",
+      "license": {
+        "name": "MIT"
       }
     },
-    "/countries/{countryId}": {
-      "get": {
-        "summary": "Details about a country",
-        "operationId": "listCountry",
-        "tags": ["country"],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "description": "id of the country",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Details about a country",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
+    "servers": [
+      {
+        "url": "https://culturedfoodies.me/api"
       }
-    },
-    "/dishes": {
-      "get": {
-        "summary": "Returns list of dishes",
-        "operationId": "listDishes",
-        "tags": ["dishes"],
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "description": "name of the dish",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "List of dishes and their corresponding details",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Dishes"
-                }
+    ],
+    "paths": {
+      "/countries": {
+        "get": {
+          "summary": "Returns list of countries",
+          "operationId": "listCountries",
+          "tags": ["countries"],
+          "parameters": [
+            {
+              "name": "language",
+              "in": "query",
+              "description": "Filter by language of the country",
+              "required": false,
+              "schema": {
+                "type": "string"
               }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/dishes/{dishid}": {
-      "get": {
-        "summary": "Details about a dish",
-        "operationId": "listDish",
-        "tags": ["dish"],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "description": "id of the dish",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Details about a dish",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Dishes"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/news": {
-      "get": {
-        "summary": "Returns list of news article",
-        "operationId": "listNews",
-        "tags": ["news"],
-        "parameters": [
-          {
-            "name": "q",
-            "in": "query",
-            "description": "A query parameter to search through the title and contents of a news article",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          },
-          {
-            "name": "language",
-            "in": "query",
-            "description": "Filter by language of the country",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order. Possible options are name and publish_date",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "country",
-            "in": "query",
-            "description": "Search for articles by country name",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "topic",
-            "in": "query",
-            "description": "search by the topic to which you want to restrict the articles. Accepted values are news, sport, tech, world, finance, politics, business, economics, entertainment, beauty, travel, music, food, science ",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "source",
-            "in": "query",
-            "description": "Comma separated string of news sources (cnn, nytimes) to filter news articles by ",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "List of articles and their corresponding details",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/News"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/news/{newsid}": {
-      "get": {
-        "summary": "Details about a news article",
-        "operationId": "listNew",
-        "tags": ["new"],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "description": "id of the news article",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Details about a news article",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/News"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Country": {
-        "type": "object",
-        "required": [
-          "id",
-          "name",
-          "code",
-          "language",
-          "population",
-          "timezone",
-          "currency",
-          "region",
-          "flagUrl",
-          "latlong"
-        ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "language": {
-            "type": "string"
-          },
-          "population": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "timezone": {
-            "type": "string"
-          },
-          "currency": {
-            "type": "string"
-          },
-          "region": {
-            "type": "string"
-          },
-          "flagUrl": {
-            "type": "string"
-          },
-          "latlong": {
-            "type": "array",
-            "items": {
-              "type": "number",
-              "minimum": -180,
-              "maximum": 180
             },
-            "minItems": 2,
-            "maxItems": 2
+            {
+              "name": "timezone",
+              "in": "query",
+              "description": "Filter by timezone of the country",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "currency",
+              "in": "query",
+              "description": "Filter by currency of the country",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "q",
+              "in": "query",
+              "description": "Any string and returns any matching countries checking based on name, id, language, timezone, and currency. E.g. q=united returns a query containing United States.",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of all countries and corresponding details",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Country"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
           }
         }
       },
-      "Dishes": {
-        "type": "object",
-        "required": [
-          "id",
-          "name",
-          "tag",
-          "url",
-          "source",
-          "healthLabels",
-          "cautions",
-          "ingredients",
-          "calories",
-          "totalWeight",
-          "totalTime",
-          "cuisineType",
-          "mealType",
-          "dishType",
-          "totalNutrients",
-          "digest"
-        ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "name": {
-            "type": "string"
-          },
-          "tag": {
-            "type": "string"
-          },
-          "url": { "type": "string" },
-          "source": { "type": "string" },
-          "healthLabels": { "type": "array" },
-          "cautions": { "type": "array" },
-          "ingredients": { "type": "array" },
-          "ingredientLines": { "type": "array" },
-          "calories": { "type": "integer" },
-          "totalWeight": { "type": "integer" },
-          "totalTime": { "type": "integer" },
-          "cuisineType": { "type": "array" },
-          "mealType": { "type": "array" },
-          "dishType": { "type": "array" },
-          "totalNutrients": { "type": "object" },
-          "digest": { "type": "array" }
-        }
-      },
-      "News": {
-        "type": "object",
-        "required": [
-          "id",
-          "title",
-          "summary",
-          "country",
-          "author",
-          "link",
-          "language",
-          "media",
-          "media_content",
-          "rights",
-          "topic",
-          "published_date"
-        ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
-            "type": "string"
-          },
-          "summary": {
-            "type": "string"
-          },
-          "country": {
-            "type": "string"
-          },
-          "author": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "language": {
-            "type": "string"
-          },
-          "media": {
-            "type": "string"
-          },
-          "media-content": {
-            "type": "string"
-          },
-          "tag": {
-            "type": "string"
-          },
-          "rights": {
-            "type": "string"
-          },
-          "topic": {
-            "type": "string"
-          },
-          "published_date": {
-            "type": "string"
+      "/countries/{countryId}": {
+        "get": {
+          "summary": "Details about a country",
+          "operationId": "listCountry",
+          "tags": ["country"],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "description": "id of the country",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Details about a country",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Country"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
           }
         }
       },
-      "Error": {
-        "type": "object",
-        "required": ["code", "message"],
-        "properties": {
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "message": {
-            "type": "string"
+      "/dishes": {
+        "get": {
+          "summary": "Returns list of dishes",
+          "operationId": "listDishes",
+          "tags": ["dishes"],
+          "parameters": [
+            {
+              "name": "name",
+              "in": "query",
+              "description": "name of the dish",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of dishes and their corresponding details",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Dishes"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/dishes/{dishid}": {
+        "get": {
+          "summary": "Details about a dish",
+          "operationId": "listDish",
+          "tags": ["dish"],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "description": "id of the dish",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Details about a dish",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Dishes"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/news": {
+        "get": {
+          "summary": "Returns list of news article",
+          "operationId": "listNews",
+          "tags": ["news"],
+          "parameters": [
+            {
+              "name": "q",
+              "in": "query",
+              "description": "A query parameter to search through the title and contents of a news article",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            },
+            {
+              "name": "language",
+              "in": "query",
+              "description": "Filter by language of the country",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order. Possible options are name and publish_date",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "country",
+              "in": "query",
+              "description": "Search for articles by country name",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "topic",
+              "in": "query",
+              "description": "search by the topic to which you want to restrict the articles. Accepted values are news, sport, tech, world, finance, politics, business, economics, entertainment, beauty, travel, music, food, science ",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "source",
+              "in": "query",
+              "description": "Comma separated string of news sources (cnn, nytimes) to filter news articles by ",
+              "required": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of articles and their corresponding details",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/News"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/news/{newsid}": {
+        "get": {
+          "summary": "Details about a news article",
+          "operationId": "listNew",
+          "tags": ["new"],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "description": "id of the news article",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Details about a news article",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/News"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Country": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "code",
+            "language",
+            "population",
+            "timezone",
+            "currency",
+            "region",
+            "flagUrl",
+            "latlong"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "name": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "population": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "timezone": {
+              "type": "string"
+            },
+            "currency": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "flagUrl": {
+              "type": "string"
+            },
+            "latlong": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        "Dishes": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "tag",
+            "url",
+            "source",
+            "healthLabels",
+            "cautions",
+            "ingredients",
+            "calories",
+            "totalWeight",
+            "totalTime",
+            "cuisineType",
+            "mealType",
+            "dishType",
+            "totalNutrients",
+            "digest"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "name": {
+              "type": "string"
+            },
+            "tag": {
+              "type": "string"
+            },
+            "url": { "type": "string" },
+            "source": { "type": "string" },
+            "healthLabels": { "type": "array" },
+            "cautions": { "type": "array" },
+            "ingredients": { "type": "array" },
+            "ingredientLines": { "type": "array" },
+            "calories": { "type": "integer" },
+            "totalWeight": { "type": "integer" },
+            "totalTime": { "type": "integer" },
+            "cuisineType": { "type": "array" },
+            "mealType": { "type": "array" },
+            "dishType": { "type": "array" },
+            "totalNutrients": { "type": "object" },
+            "digest": { "type": "array" }
+          }
+        },
+        "News": {
+          "type": "object",
+          "required": [
+            "id",
+            "title",
+            "summary",
+            "country",
+            "author",
+            "link",
+            "language",
+            "media",
+            "media_content",
+            "rights",
+            "topic",
+            "published_date"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "media": {
+              "type": "string"
+            },
+            "media-content": {
+              "type": "string"
+            },
+            "tag": {
+              "type": "string"
+            },
+            "rights": {
+              "type": "string"
+            },
+            "topic": {
+              "type": "string"
+            },
+            "published_date": {
+              "type": "string"
+            }
+          }
+        },
+        "Error": {
+          "type": "object",
+          "required": ["code", "message"],
+          "properties": {
+            "code": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "message": {
+              "type": "string"
+            }
           }
         }
       }
     }
   }
-}
+  
