@@ -38,8 +38,7 @@ A country has the following properties.
 
 Dishes
 
-A dish is the geographic area that a politician represents and which the seat is located in. The district's location and boundaries are decided by the Texas Legislature.
-
+A dish is a distinct article or variety of food that is ready to eat or to be served. A dish may be served on tableware, or may be eaten in one's hands. Instructions for preparing a dish are called recipes.
 ## Properties
 
 - ID: The long database ID of this dish object.
