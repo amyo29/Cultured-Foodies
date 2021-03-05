@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
 
 // const data = require('../../data/countries.json').slice(0,3)
 const data = require('../../data/threeCountries.json')
+
 function Countries() {
   var i, j;
   var chunk = 5;
@@ -20,14 +21,29 @@ function Countries() {
           <Row>
             {cols.map((country:any, i :any) => (
               <Col>
-                <a href={"/countries/" +i}>
-                <Card>
+                <Card bg='light'>
                   <Card.Body>
-                    <Card.Title>{country['name']}</Card.Title>
-                    <Card.Text>{country['capital']}</Card.Text>
+                    <Navbar>
+                      <a href={"/countries/" + i}>
+                        <Card.Title>{country['name']}</Card.Title>
+                      </a>
+                    </Navbar>
+                    <Card.Img variant="top" src={country['flag']}/>
+                    <Card.Text>
+                      <p>
+                        <b>Capital: </b>{country['capital']} <br />
+                        <b>Population: </b>{country['population']} <br />
+                        <b>Region: </b>{country['region']} <br />
+                        <b>Lat°Lon': </b>{country['latlng'][0]}°{country['latlng'][1]}'<br />
+                        <b>Size (sq km): </b>{country['area']} <br />
+                      </p>
+                    </Card.Text>
+                    <Card.Text>
+  
+                    </Card.Text>
                   </Card.Body>
                 </Card>
-                </a>
+
               </Col>
             ))}
           </Row>
