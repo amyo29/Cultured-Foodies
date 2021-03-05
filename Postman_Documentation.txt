@@ -1,0 +1,4 @@
+Cultured Foodies API
+
+An API dedicated to shedding light on cultural dishes, news, and countries around the world.
+
