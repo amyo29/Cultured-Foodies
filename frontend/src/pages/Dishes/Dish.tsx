@@ -39,13 +39,10 @@ function Dish() {
         <Col>
           <h5>Dietary</h5>
         </Col>
-        <Col>
-          <h5>Health</h5>
-        </Col>
       </Row>
       <Row>
-        <Col>{data["recipe"]["dietLabels"]}</Col>
-        <Col>
+        <Col>{data["recipe"]["dietLabels"]}
+          <h5>Health</h5>
           {data["recipe"]["healthLabels"].map((healthLabel: any) => {
             return <li>{healthLabel}</li>;
           })}
@@ -55,32 +52,32 @@ function Dish() {
       <Row>
         <Col>
           <h5>Restrictions</h5>
-        </Col>
-        <Col>
-          <h5>Calories</h5>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           {data["recipe"]["cautions"].map((caution: any) => {
             return <li>{caution}</li>;
           })}
+
+          <h5>Calories</h5>
+          {data["recipe"]["calories"]}
         </Col>
-        <Col>{data["recipe"]["calories"]}</Col>
       </Row>
-      <h5>Ingredients</h5>
-      <Row></Row>
-      {data["recipe"]["ingredientLines"].map((ingredient: any) => {
-        return <li>{ingredient}</li>;
-      })}
-      <Row></Row>
+      
+      <Row>
+        <Col>
+        <p>
+          <h5>Ingredients</h5> 
+        {data["recipe"]["ingredientLines"].map((ingredient: any) => {
+          return <li>{ingredient}</li>; <br />
+        })}
+        </p>
+        
+      
       
       <h5>Country: </h5>
       <a href={"/countries/" + countryIndex}>{country["name"]}</a>
       
       <h5>Mentioned in news articles: </h5>
       <a href={"/news/" + newsIndex}>{article["title"]}</a>
-
+      <br />
       <iframe
         src={youTubeURL}
         width="50%"
@@ -88,6 +85,8 @@ function Dish() {
         allow="fullscreen"
         title="video"
       />
+      </Col>
+      </Row>
 
     </Container>
   );
