@@ -76,8 +76,7 @@ function About() {
 
       <h2>Meet the Team</h2>
       <div className="row main-card">
-        <div className="col-7">
-          <CardDeck>
+        <div className="col-7 card-deck">
             {loaded ? (
               teamData1.map((teamMember: any) => {
                 const {
@@ -105,12 +104,10 @@ function About() {
             ) : (
               <div>Loading</div>
             )}
-          </CardDeck>
         </div>
       </div>
       <div className="row main-card">
-        <div className="col-7">
-          <CardDeck>
+        <div className="col-7 card-deck">
             {loaded ? (
               teamData2.map((teamMember: any) => {
                 const {
@@ -138,7 +135,6 @@ function About() {
             ) : (
               <div>Loading</div>
             )}
-          </CardDeck>
         </div>
       </div>
 
@@ -168,7 +164,7 @@ function About() {
       </div>
 
       <div>
-        <h2>Data</h2>
+        <h2>API's</h2>
       </div>
 
       <Grid container className={classes.root} spacing={2} justify="center">

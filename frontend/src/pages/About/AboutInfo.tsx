@@ -83,7 +83,7 @@ const TEAM_INFO = [
     username: "VishalTak14",
     email: "vishal.tak@shoplc.com",
     img: VishalImg,
-    role: "Back-end",
+    role: "Full-Stack",
     bio:
       "I'm a third year CS major at UT Austin. I'm from Austin, TX and in my free time I enjoy playing video games and watching movies.",
     linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
