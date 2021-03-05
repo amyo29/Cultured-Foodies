@@ -430,18 +430,52 @@
             },
             "url": { "type": "string" },
             "source": { "type": "string" },
-            "healthLabels": { "type": "array" },
-            "cautions": { "type": "array" },
-            "ingredients": { "type": "array" },
-            "ingredientLines": { "type": "array" },
+            "healthLabels": { "type": "array", "items": { "type": "string" } },
+            "cautions": { "type": "array", "items": { "type": "string" } },
+  
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "text": { "type": "string" },
+                  "weight": { "type": "integer" },
+                  "foodCategory": { "type": "string" },
+                  "foodId": { "type": "string" },
+                  "image": { "type": "string" }
+                }
+              }
+            },
+            "ingredientLines": { "type": "array", "items": { "type": "string" } },
             "calories": { "type": "integer" },
             "totalWeight": { "type": "integer" },
             "totalTime": { "type": "integer" },
-            "cuisineType": { "type": "array" },
-            "mealType": { "type": "array" },
-            "dishType": { "type": "array" },
-            "totalNutrients": { "type": "object" },
-            "digest": { "type": "array" }
+            "cuisineType": { "type": "array", "items": { "type": "string" } },
+            "mealType": { "type": "array", "items": { "type": "string" } },
+            "dishType": { "type": "array", "items": { "type": "string" } },
+            "totalNutrients": {
+              "type": "object",
+              "properties": {
+                "ENERC_KCAL": {
+                  "type": "object",
+                  "properties": {
+                    "label": { "type": "string" },
+                    "quantity": { "type": "integer" },
+                    "unit": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "digest": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": { "type": "string" },
+                  "total": {"type": "integer"}
+                }
+              }
+            }
           }
         },
         "News": {
