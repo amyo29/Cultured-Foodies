@@ -85,7 +85,7 @@ const TEAM_INFO = [
     img: VishalImg,
     role: "Full-Stack",
     bio:
-      "I'm a third year CS major at UT Austin. I'm from Austin, TX and in my free time I enjoy playing video games and watching movies.",
+      "I'm a third year CS major at UT Austin. I'm from Austin, TX and in my free time I enjoy playing video games and watching movies. All of my commits were done by these two smarties, Kiwi and Grape. 🦜",
     linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
     commits: 0,
     issues: 0,
