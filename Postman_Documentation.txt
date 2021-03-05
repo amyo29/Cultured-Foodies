@@ -41,5 +41,18 @@ Dishes
 A dish is a distinct article or variety of food that is ready to eat or to be served. A dish may be served on tableware, or may be eaten in one's hands. Instructions for preparing a dish are called recipes.
 ## Properties
 
-- ID: The long database ID of this dish object.
-- Name: The name of this dish
+- Label: The name of this dish object.
+- URL: The link to the recipe for this dish.
+- Image: The link to the image for this dish.
+- Source: The source from where the image of this dish came from.
+- Diet Labels: An array of specific diet categories that this dish falls under (Ex: Low-Fat).
+- Health Labels: An array of specific diets and health-conscious categories that this dish falls under, including labels for vegans, vegetarians, Pescatarians, etc, giving users detailed information to make more healthy choices in their diet. (Ex: Sugar-Conscious, Vegan, Vegetarian, Diary-Free, Gluten-Free).
+- Cautions: An array of cautionary labels that this dish falls under (Ex: Sulfites, FODMAP).
+- Ingredient Lines: An array of the list of ingredients necessary to make this dish combined with their amounts on separate lines.
+- Ingredients: An array of objects containing detailed information on each ingredient in this dish.
+    - Text: 
+    - Weight:
+    - Food Category:
+    - Food ID:
+    - Image:
+- 
