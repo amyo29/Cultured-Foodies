@@ -365,7 +365,21 @@
           },
           "tag": {
             "type": "string"
-          }
+          },
+          "url": { "type": "string" },
+          "source": { "type": "string" },
+          "healthLabels": { "type": "array" },
+          "cautions": {"type": "array"},
+          "ingredients": {"type" :"array"},
+          "ingredientLines": {"type": "array"},
+          "calories": {"type": "integer"},
+          "totalWeight": {"type": "integer"},
+          "totalTime": {"type": "integer"},
+          "cuisineType": {"type": "array"},
+          "mealType": {"type": "array"},
+          "dishType": {"type":"array"},
+          "totalNutrients": {"type":"object"},
+          "digest": {"type": "array"}
         }
       },
       "News": {
