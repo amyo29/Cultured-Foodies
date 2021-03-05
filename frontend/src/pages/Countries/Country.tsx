@@ -41,9 +41,7 @@ function Country() {
         <Col>
           <h5>Region</h5>
           {data["region"]}
-        </Col>
-
-        <Col>
+        
           <h5>Time Zones</h5>
           {data["timezones"].map((timezone: any) => {
             return <li>{timezone}</li>;
