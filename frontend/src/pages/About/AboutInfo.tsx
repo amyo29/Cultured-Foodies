@@ -96,7 +96,7 @@ const TEAM_INFO = [
     username: "lucinda",
     email: "lucinda.onguyen@gmail.com",
     img: LucindaImg,
-    role: "Full-Stack",
+    role: "Full-Stack | Phase 1 Project Leader",
     bio: "Bio description",
     linkedin: "",
     commits: 0,
