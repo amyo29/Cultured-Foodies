@@ -1,31 +1,35 @@
-import { teamInfo } from "./AboutInfo";
+import { TEAM_INFO } from "./AboutInfo";
 
-export const TOTAL_COMMITS_INDEX = 0
-export const TOTAL_ISSUES_INDEX = 1
-export const TOTAL_TESTS_INDEX = 2
+export const TOTAL_COMMITS_INDEX = 0;
+export const TOTAL_ISSUES_INDEX = 1;
+export const TOTAL_TESTS_INDEX = 2;
 
-const retrieveGitLabInfo = async () => {
-  let statsInfo = [0, 0, 0]
-
-  teamInfo.forEach((member: any) => {
+function resetStatsInfo(statsInfo: any) {
+  TEAM_INFO.forEach((member: any) => {
     member.commits = 0;
     member.issues = 0;
     statsInfo[TOTAL_TESTS_INDEX] += member.tests;
   });
+}
 
-  const listOfIssues = await fetch(
-    "https://gitlab.com/api/v4/projects/24676977/issues"
+const retrieveGitLabInfo = async () => {
+  let statsInfo = [0, 0, 0];
+
+  resetStatsInfo(statsInfo);
+
+  const LIST_OF_ISSUES = await fetch(
+    "https://gitlab.com/api/v4/projects/24676977/issues?per_page=100"
   ).then((response) => response.json());
 
-  const listOfCommits = await fetch(
+  const LIST_OF_COMMITS = await fetch(
     "https://gitlab.com/api/v4/projects/24676977/repository/contributors"
   ).then((response) => response.json());
 
-  listOfCommits.forEach((element: any) => {
-    let name = element.name;
-    let email = element.email;
-    let commits = element.commits;
-    teamInfo.forEach((member: any) => {
+  LIST_OF_COMMITS.forEach((commit: any) => {
+    let name = commit.name;
+    let email = commit.email;
+    let commits = commit.commits;
+    TEAM_INFO.forEach((member: any) => {
       if (
         member.name === name ||
         member.username === name ||
@@ -37,10 +41,11 @@ const retrieveGitLabInfo = async () => {
     statsInfo[TOTAL_COMMITS_INDEX] += commits;
   });
 
-  listOfIssues.forEach((element: any) => {
-    let name = element.author.name;
-    teamInfo.forEach((member: any) => {
-      if (member.name === name) {
+  LIST_OF_ISSUES.forEach((issue: any) => {
+    let name = issue.author.name;
+    let username = issue.author.username;
+    TEAM_INFO.forEach((member: any) => {
+      if (member.name === name || member.username === username) {
         member.issues += 1;
       }
     });
@@ -49,7 +54,7 @@ const retrieveGitLabInfo = async () => {
 
   return {
     statsInfo: statsInfo,
-    teamInfo: teamInfo,
+    TEAM_INFO: TEAM_INFO,
   };
 };
 

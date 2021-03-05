@@ -16,28 +16,28 @@ import SiddheshImg from "./Images/Members/SiddheshImg.png";
 import TimImg from "./Images/Members/TimImg.jpg";
 import VishalImg from "./Images/Members/VishalImg.jpg";
 
-const apiInfo = [
-	{
-		name: "REST Countries",
-		img: RestCountriesLogo,
-		description: "Used to retrieve country information",
-		link: "https://restcountries.eu/",
-	},
-	{
-		name: "Edamam",
-		img: EdamamLogo,
-		description: "Used to find dishes",
-		link: "https://developer.edamam.com/",
-	},
-	{
-		name: "Newscatcher API",
-		img: NewscatcherLogo,
-		description: "Used to retrieve food related news content",
-		link: "https://newscatcherapi.com/",
-	}
-]
+const API_INFO = [
+  {
+    name: "REST Countries",
+    img: RestCountriesLogo,
+    description: "Used to retrieve country information",
+    link: "https://restcountries.eu/",
+  },
+  {
+    name: "Edamam",
+    img: EdamamLogo,
+    description: "Used to find dishes",
+    link: "https://developer.edamam.com/",
+  },
+  {
+    name: "Newscatcher API",
+    img: NewscatcherLogo,
+    description: "Used to retrieve food related news content",
+    link: "https://newscatcherapi.com/",
+  },
+];
 
-const toolsInfo = [
+const TOOLS_INFO = [
   {
     title: "AWS",
     img: AWSLogo,
@@ -76,79 +76,84 @@ const toolsInfo = [
     link: "https://www.namecheap.com/",
   },
 ];
-const teamInfo = [
-	{
-		name: "Vishal Tak",
-		username: "VishalTak14",
-		email: "vishal.tak@shoplc.com",
-		img: VishalImg,
-		role: "Back-end",
-		bio: "I'm a third year CS major at UT Austin. I'm from Austin, TX and in my free time I enjoy playing video games and watching movies.",
-		linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
-    {
-		name: "Lucinda Nguyen",
-		username: "lucinda",
-		email: "lucinda.onguyen@gmail.com",
-		img: LucindaImg,
-		role: "Full-Stack",
-		bio: "Bio description",
-		linkedin: "",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
+
+const TEAM_INFO = [
   {
-		name: "Amy Ouyang",
-		username: "amyo29",
-		email: "yawen1999@gmail.com",
-		img: AmyImg,
-		role: "Full-Stack",
-		bio: "I'm a 4th year CS Honors student at UT Austin. I love food.",
-		linkedin: "https://www.linkedin.com/in/amy-o/",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
+    name: "Vishal Tak",
+    username: "VishalTak14",
+    email: "vishal.tak@shoplc.com",
+    img: VishalImg,
+    role: "Back-end",
+    bio:
+      "I'm a third year CS major at UT Austin. I'm from Austin, TX and in my free time I enjoy playing video games and watching movies.",
+    linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
   {
-		name: "Tim Nguyen",
-		username: "Tim Nguyen",
-		email: "nguyenmctim@gmail.com",
-		img: TimImg,
-		role: "Full-Stack",
-		bio: "I'm a fourth year CS major at UT Austin. I'm from a small town called Palacios, TX and I enjoy playing video games and watching anime.",
-		linkedin: "https://www.linkedin.com/in/nguyenmctim/",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
+    name: "Lucinda Nguyen",
+    username: "lucinda",
+    email: "lucinda.onguyen@gmail.com",
+    img: LucindaImg,
+    role: "Full-Stack",
+    bio: "Bio description",
+    linkedin: "",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
   {
-		name: "Siddhesh Krishnan",
-		username: "siddheshkrishnan1",
-		email: "siddheshkrishnan1@gmail.com",
-		img: SiddheshImg,
-		role: "Full-Stack",
-		bio: "I'm a third year CS student at UT Austin. I'm from Austin, TX and enjoy going on bike rides in my free time.",
-		linkedin: "https://www.linkedin.com/in/sidkrishlink/",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
-	{
-		name: "Joshua Arrojado",
-		username: "josharrojado",
-		email: "joshuanms@gmail.com",
-		img: JoshuaImg,
-		role: "Full-Stack",
-		bio: "I'm a fourth year CS student at UT Austin. I like to watch anime and kdramas in my sparetime. I also enjoy playing League!",
-		linkedin: "",
-		commits: 0,
-		issues: 0,
-		tests: 0,
-	},
+    name: "Amy Ouyang",
+    username: "amyo29",
+    email: "yawen1999@gmail.com",
+    img: AmyImg,
+    role: "Full-Stack",
+    bio: "I'm a 4th year CS Honors student at UT Austin. I love food.",
+    linkedin: "https://www.linkedin.com/in/amy-o/",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
+  {
+    name: "Tim Nguyen",
+    username: "Tim Nguyen",
+    email: "nguyenmctim@gmail.com",
+    img: TimImg,
+    role: "Full-Stack",
+    bio:
+      "I'm a fourth year CS major at UT Austin. I'm from a small town called Palacios, TX and I enjoy playing video games and watching anime!",
+    linkedin: "https://www.linkedin.com/in/nguyenmctim/",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
+  {
+    name: "Siddhesh Krishnan",
+    username: "siddheshkrishnan1",
+    email: "siddheshkrishnan1@gmail.com",
+    img: SiddheshImg,
+    role: "Full-Stack",
+    bio:
+      "I'm a third year CS student at UT Austin. I'm from Austin, TX and enjoy going on bike rides in my free time.",
+    linkedin: "https://www.linkedin.com/in/sidkrishlink/",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
+  {
+    name: "Joshua Arrojado",
+    username: "josharrojado",
+    email: "joshuanms@gmail.com",
+    img: JoshuaImg,
+    role: "Full-Stack",
+    bio:
+      "I'm a fourth year CS student at UT Austin. I like to watch anime and kdramas in my sparetime. I also enjoy playing League!",
+    linkedin: "",
+    commits: 0,
+    issues: 0,
+    tests: 0,
+  },
 ];
 
-export {apiInfo, toolsInfo, teamInfo};
+export { API_INFO, TOOLS_INFO, TEAM_INFO };

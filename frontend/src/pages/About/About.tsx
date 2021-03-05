@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { toolsInfo, teamInfo, apiInfo } from "./AboutInfo";
+import { API_INFO, TOOLS_INFO, TEAM_INFO } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
 import retrieveGitLabInfo, {
   TOTAL_COMMITS_INDEX,
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
+
 function About() {
   const [spacing, setSpacing] = React.useState<GridSpacing>(2);
   const classes = useStyles();
@@ -42,7 +43,7 @@ function About() {
         changeCommitsSum(gitLabInfo.statsInfo[TOTAL_COMMITS_INDEX]);
         changeIssuesSum(gitLabInfo.statsInfo[TOTAL_ISSUES_INDEX]);
         changeTestsSum(gitLabInfo.statsInfo[TOTAL_TESTS_INDEX]);
-        changeTeamData(gitLabInfo.teamInfo);
+        changeTeamData(gitLabInfo.TEAM_INFO);
         changeLoading(true);
       }
     };
@@ -118,7 +119,7 @@ function About() {
       </div>
 
       <Grid container className={classes.root} spacing={2} justify="center">
-        {apiInfo.map((api: any) => {
+        {API_INFO.map((api: any) => {
           const { title, img, description, link } = api;
 
           return (
@@ -137,7 +138,7 @@ function About() {
       </div>
 
       <Grid container className={classes.root} spacing={2} justify="center">
-        {toolsInfo.map((tool: any) => {
+        {TOOLS_INFO.map((tool: any) => {
           const { title, img, description, link } = tool;
 
           return (
@@ -154,12 +155,12 @@ function About() {
       <Grid container className={classes.root} spacing={2} justify="center">
         <InfoCard
           title="Gitlab Repo"
-          img={toolsInfo[1].img}
+          img={TOOLS_INFO[1].img}
           link="https://gitlab.com/cs373-group-11/cultured-foodies"
         />
         <InfoCard
           title="Postman API"
-          img={toolsInfo[2].img}
+          img={TOOLS_INFO[2].img}
           link="https://documenter.getpostman.com/view/14740527/Tz5i9gAY"
         />
       </Grid>
