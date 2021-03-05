@@ -15,6 +15,8 @@
 }
 
 .profile-img {
+  align-items: center;
+  justify-content: center;
   object-fit: cover !important;
   width: 1 !important;
   height: 350px !important;
