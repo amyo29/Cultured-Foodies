@@ -22,6 +22,7 @@ function Article() {
 
   // attributes and media
   let img = article["media"];
+  let authorImage = article["authorimage"];
   let title = article["title"];
   let language = article["language"];
   let author = article["author"];
@@ -34,6 +35,7 @@ function Article() {
       <img src={img} className="article-img"></img>
       <h1>{title}</h1>
       <h4>Author: {author}</h4>
+      <img src={authorImage} className="flag-img"></img>
       <p>Published: {publishedDate}</p>
       <a href={"/dishes/" + dishIndex}>
         <h5>Associated Dish: {dishName}</h5>
