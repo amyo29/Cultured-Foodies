@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
 const data = require("../../data/threeDishes.json");
@@ -18,22 +18,23 @@ function Dishes() {
           <Row>
             {cols.map((col: any, i: any) => (
               <Col>
-                {/* <a href= {"/dishes/"+ col["recipe"]["label"]}> */}
-                <a href={"/dishes/" + i}>
-                  <Card>
+                <Card bg='light'>
+                  <Card.Body>
+                    <a href= {"/dishes/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
+                    <Card.Img variant="top" src={col["recipe"]["image"]} />
                     <Card.Body>
-                      <Card.Title>{col["recipe"]["label"]}</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        {col["recipe"]["mealType"]}
-                      </Card.Subtitle>
-                      <Card.Img variant="top" src={col["recipe"]["image"]} />
-                      <ListGroup variant="flush">
-                        <ListGroup.Item>Calories: {col['recipe']['calories']}</ListGroup.Item>
-                        <ListGroup.Item>Source: {col['recipe']['source']}</ListGroup.Item>
-                      </ListGroup>
+                      <p>
+                        <b>Meal Type: </b> {col["recipe"]["mealType"]} <br />
+                        <b>Dish Type: </b> {col["recipe"]["dishType"]} <br />
+                        <b>Cuisine Type: </b> {col["recipe"]["cuisineType"]} <br />
+                        <b>Health Label: </b> {col["recipe"]["healthLabels"][0]} <br />
+                        <b>Source: </b> {col["recipe"]["source"]} <br />
+                      </p>
                     </Card.Body>
-                  </Card>
-                </a>
+                    
+                    
+                  </Card.Body>
+                </Card>
               </Col>
             ))}
           </Row>

@@ -23,9 +23,7 @@ function News() {
             {data.map((article: any, i: any) => (
               <tr>
                 <td>{i + 1}</td>
-                <Navbar>
-                  <td><a href={"/news/" + i}>{article["title"]}</a></td>
-                </Navbar>
+                <td><a href={"/news/" + i}>{article["title"]}</a></td>
                 <td>{countries_data[article["countryIndex"]]["name"]}</td>
                 <td>{article["language"]}</td>
                 <td>{article["author"]}</td>
