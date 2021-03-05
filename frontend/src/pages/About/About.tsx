@@ -9,7 +9,7 @@ import retrieveGitLabInfo, {
 import "../../styles/About.css";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from "@material-ui/core/Grid";
-import { CardGroup } from "react-bootstrap";
+import { CardDeck } from "react-bootstrap";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -50,6 +50,8 @@ function About() {
     fetchData();
   }, [teamData]);
 
+  const teamData1 = teamData.slice(0,3)
+  const teamData2 = teamData.slice(3,6)
   return (
     <div className="font-style center">
       <h1>About Us</h1>
@@ -66,14 +68,15 @@ function About() {
       </p>
 
       <h2>Meet the Team</h2>
-
-      <CardGroup>
+      <div className= "row main-card">
+      <div className="col-7">
+      <CardDeck >
         {loaded ? (
-          teamData.map((teamMember: any) => {
+          teamData1.map((teamMember: any) => {
             const { name, img, role, bio, commits, issues, tests } = teamMember;
 
             return (
-              <ProfileCard
+              <ProfileCard 
                 name={name}
                 img={img}
                 role={role}
@@ -87,7 +90,34 @@ function About() {
         ) : (
           <div>Loading</div>
         )}
-      </CardGroup>
+      </CardDeck>
+      </div>
+      </div>
+      <div className= "row main-card">
+      <div className="col-7">
+      <CardDeck >
+        {loaded ? (
+          teamData2.map((teamMember: any) => {
+            const { name, img, role, bio, commits, issues, tests } = teamMember;
+
+            return (
+              <ProfileCard 
+                name={name}
+                img={img}
+                role={role}
+                bio={bio}
+                commits={commits}
+                issues={issues}
+                tests={tests}
+              />
+            );
+          })
+        ) : (
+          <div>Loading</div>
+        )}
+      </CardDeck>
+      </div>
+      </div>
 
       <div>
         <h2>Stats</h2>
