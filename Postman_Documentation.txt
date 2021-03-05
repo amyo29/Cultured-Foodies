@@ -50,9 +50,9 @@ A dish is a distinct article or variety of food that is ready to eat or to be se
 - Cautions: An array of cautionary labels that this dish falls under (Ex: Sulfites, FODMAP).
 - Ingredient Lines: An array of the list of ingredients necessary to make this dish combined with their amounts on separate lines.
 - Ingredients: An array of objects containing detailed information on each ingredient in this dish.
-    - Text: 
-    - Weight:
-    - Food Category:
-    - Food ID:
-    - Image:
-- 
+    - Text: A string denoting the general description of the ingredient and its amount.
+    - Weight: A long denoting the weight of this ingredient.
+    - Food Category: A string denoting the food category this ingredient belongs to. (Ex: vegetables, cured meats)
+    - Food ID: A string denoting the ID of this food in the database.
+    - Image: The URL to the image of this ingredient.
+- Calories: A long denoting the number of total calories this dish contains.
