@@ -207,7 +207,9 @@ function About() {
           </Row>
         ))}
       </Container>
-
+      <div>
+        <h2>Our Data</h2>
+      </div>
       <Grid container className={classes.root} spacing={2} justify="center">
         <InfoCard
           title="Gitlab Repo"
