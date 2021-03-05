@@ -218,13 +218,58 @@
         "tags": ["news"],
         "parameters": [
           {
-            "name": "id",
+            "name": "q",
             "in": "query",
-            "description": "id of the news article",
+            "description": "A query parameter to search through the title and contents of a news article",
             "required": false,
             "schema": {
               "type": "string",
               "format": "string"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Filter by language of the country",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order. Possible options are name and publish_date",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "Search for articles by country name",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "description": "search by the topic to which you want to restrict the articles. Accepted values are news, sport, tech, world, finance, politics, business, economics, entertainment, beauty, travel, music, food, science ",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "description": "Comma separated string of news sources (cnn, nytimes) to filter news articles by ",
+            "required": false,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -354,7 +399,24 @@
       },
       "Dishes": {
         "type": "object",
-        "required": ["id", "name"],
+        "required": [
+          "id",
+          "name",
+          "tag",
+          "url",
+          "source",
+          "healthLabels",
+          "cautions",
+          "ingredients",
+          "calories",
+          "totalWeight",
+          "totalTime",
+          "cuisineType",
+          "mealType",
+          "dishType",
+          "totalNutrients",
+          "digest"
+        ],
         "properties": {
           "id": {
             "type": "integer",
@@ -369,17 +431,17 @@
           "url": { "type": "string" },
           "source": { "type": "string" },
           "healthLabels": { "type": "array" },
-          "cautions": {"type": "array"},
-          "ingredients": {"type" :"array"},
-          "ingredientLines": {"type": "array"},
-          "calories": {"type": "integer"},
-          "totalWeight": {"type": "integer"},
-          "totalTime": {"type": "integer"},
-          "cuisineType": {"type": "array"},
-          "mealType": {"type": "array"},
-          "dishType": {"type":"array"},
-          "totalNutrients": {"type":"object"},
-          "digest": {"type": "array"}
+          "cautions": { "type": "array" },
+          "ingredients": { "type": "array" },
+          "ingredientLines": { "type": "array" },
+          "calories": { "type": "integer" },
+          "totalWeight": { "type": "integer" },
+          "totalTime": { "type": "integer" },
+          "cuisineType": { "type": "array" },
+          "mealType": { "type": "array" },
+          "dishType": { "type": "array" },
+          "totalNutrients": { "type": "object" },
+          "digest": { "type": "array" }
         }
       },
       "News": {
