@@ -1,0 +1,46 @@
+Cultured Foodies API
+
+An API dedicated to shedding light on cultural dishes, news, and countries around the world.
+
+Countries
+
+A country is a nation with its own government, occupying a particular territory. It is a distinct territorial body or political entity, and is often referred to as the land of an individual's birth, residence or citizenship.
+
+## Properties
+
+A country has the following properties.
+
+- ID: A string, database id.
+- Name: The name of the country.
+- Alpha2Code: The alpha 2 code of the country (ex: Afghanistan is AF".)
+- Capital: The capital city of the country (ex: Afghanistan's capital is Kabul.)
+- Region: The region the country belongs to (ex: United States is in the region Americas)
+- Subregion: The subregion the country belongs to (ex: The United States in the subregion Northern America.)
+- Population: An integer denoting the population of the country.
+- Language: An array denoting the official language of the country and its various representations.
+    - ISO 639_1: A string denoting the language's ISO 639 code version 1.
+    - ISO 639_2: A string denoting the language's ISO 639 code version 2.
+    - Name: A string denoting the language's name in English.
+    - Native Name: A string denoting the language's name, written in its official language.
+- Time zone: An array containing all the time zones within the country.
+- Borders: An array containing the countries that this country borders.
+- Currencies:
+    - Code: A string denoting the abbreviated representation of the country's currency (ex: the United States dollar has a code of "USD".)
+    - Name: A string denoting the name of the currency.
+    - Symbol: A string containing one character denoting the symbol of the country's currency (ex: The symbol for USD is "$"). 
+- Translations: A dictionary of translations of the country name in other languages 
+- Flag: A string containing the URL of a country's flag picture in the database.
+- Regional Blocs: An array containing details about the regional blocs that the country belongs to
+    - Acronym: A string denoting the acronym of the regional bloc (ex: "NAFTA")
+    - Name: A string denoting the full written version of the regional bloc's name (ex: North American Free Trade Agreement).
+    - Other Acronyms: An array containing a full list of additional acronyms representing this regional bloc
+    - Other Names: An array containing the regional bloc's name written in other languages.
+
+Dishes
+
+A dish is the geographic area that a politician represents and which the seat is located in. The district's location and boundaries are decided by the Texas Legislature.
+
+## Properties
+
+- ID: The long database ID of this dish object.
+- Name: The name of this dish
