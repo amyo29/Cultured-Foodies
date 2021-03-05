@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, ListGroupItem, Navbar, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
@@ -8,7 +8,7 @@ function News() {
   return (
     <div>
       <h1>News</h1>
-      <Table responsive>
+      <Table responsive className="table">
         <thead>
           <tr>
             <th>#</th>
@@ -20,16 +20,18 @@ function News() {
           </tr>
         </thead>
         <tbody>
-            {data.map((article: any, i: any) => (
-              <tr>
-                <td>{i + 1}</td>
-                <td><a href={"/news/" + i}>{article["title"]}</a></td>
-                <td>{countries_data[article["countryIndex"]]["name"]}</td>
-                <td>{article["language"]}</td>
-                <td>{article["author"]}</td>
-                <td>{article["published_date"]}</td>
-              </tr>
-            ))}
+          {data.map((article: any, i: any) => (
+            <tr>
+              <td>{i + 1}</td>
+              <td>
+                <a href={"/news/" + i} className="article">{article["title"]}</a>
+              </td>
+              <td>{countries_data[article["countryIndex"]]["name"]}</td>
+              <td>{article["language"]}</td>
+              <td>{article["author"]}</td>
+              <td>{article["published_date"]}</td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </div>
