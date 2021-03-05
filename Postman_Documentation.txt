@@ -56,3 +56,8 @@ A dish is a distinct article or variety of food that is ready to eat or to be se
     - Food ID: A string denoting the ID of this food in the database.
     - Image: The URL to the image of this ingredient.
 - Calories: A long denoting the number of total calories this dish contains.
+- Total Time: A double denoting the total preparation time estimated on average to make this recipe for this dish.
+- Cuisine Type: An array denoting the categories of cuisines this dish belongs to (Ex: Central Europe, Italian).
+- Meal Type: An array denoting the categories of meals this dish falls under (Ex: Lunch/Dinner).
+- Dish type: An array denoting the categories of dishes this dish falls under (Ex: sandwiches).
+- Total Nutrients: An object (dictionary) of objects containing information on specific nutrients contained within this dish, including their labels, quantities, and units.
