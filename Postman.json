@@ -144,6 +144,36 @@
                 "type": "string",
                 "format": "string"
               }
+            },
+            {
+              "name": "diet",
+              "in": "query",
+              "description": "filter by types of diets of a dish. Options are balanced, high-protein, higher-fiber, low-fat, low-carb, low-sodium",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            },
+            {
+              "name": "mealType",
+              "in": "query",
+              "description": "filter by types of meal of a dish. Options are lunch, dinner, breakfast, and snack",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            },
+            {
+              "name": "calories",
+              "in": "query",
+              "description": "format is calories=RANGE (MIN+, MIN-MAX, MAX) to return recipes that fit the calories range",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
             }
           ],
           "responses": {
