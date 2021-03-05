@@ -22,16 +22,13 @@ function Dishes() {
                   <Card.Body>
                     <a href= {"/dishes/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
                     <Card.Img variant="top" src={col["recipe"]["image"]} />
-                    <Card.Body>
                       <p>
-                        <b>Meal Type: </b> {col["recipe"]["mealType"]} <br />
-                        <b>Dish Type: </b> {col["recipe"]["dishType"]} <br />
+                        <b>Meal Type: </b> {col["recipe"]["mealType"] ? col["recipe"]["mealType"]:"None"} <br />
+                        <b>Dish Type: </b> {col["recipe"]["dishType"] ? col["recipe"]["dishType"]:"None"} <br />
                         <b>Cuisine Type: </b> {col["recipe"]["cuisineType"]} <br />
                         <b>Health Label: </b> {col["recipe"]["healthLabels"][0]} <br />
                         <b>Source: </b> {col["recipe"]["source"]} <br />
                       </p>
-                    </Card.Body>
-                    
                     
                   </Card.Body>
                 </Card>

@@ -2,6 +2,7 @@
   {
     "dishIndex": 0,
     "countryIndex": 0,
+    "authorimage": "https://i.insider.com/603fec16b46d720018b04aed?width=300&format=jpeg&auto=webp",
     "summary": "Burger King is bringing back the Sourdough King, a fan favorite, for a limited time, the fast-food chain announced on Instagram. A post shared by Burger King (@burgerking) The Sourdough King will be available starting this week until April 19, Burger King said in an emailed statement. The Sourdough King will come as a single or double and it will feature toasted sourdough slices that include a quarter-burger patty, topped with smoked bacon and American cheese.As part of the promotion, Burger King will be giving a Sourdough King away to any individual with a silent G in their name for a limited time.",
     "country": "US",
     "author": "Fatma Khaled",
@@ -22,6 +23,7 @@
   {
     "dishIndex": 1,
     "countryIndex": 1,
+    "authorimage": "https://pbs.twimg.com/profile_images/1303083239628771328/4bKtn7kC_400x400.jpg",
     "summary": "After 13 years in business, Ichiban Japanese Grill & Sushi in Tuscaloosa is closing its doors and trying to raise money for relocation costs.The longtime Japanese restaurant on 502 15th Street will close sometime before March 20, according to a post that was shared on the restaurant's Facebook page on Feb. 20.'We will update everyone on our progress in relocating Ichiban,' the restaurant page said in their post. 'We are excited to serve everyone again in our new location as soon as possible.'According to Chloe Chow, the sister of one of Ichiban's owners, the 30 day move out notice was unexpected and the owners have no idea when they will be able to re-open in a new location.",
     "country": "US",
     "author": "Tandra Smith | tsmith@al.com",
@@ -42,9 +44,10 @@
   {
     "dishIndex": 2,
     "countryIndex": 2,
+    "authorimage": "",
     "summary": "The German comfort food carryout, scheduled for Saturday, March 13 from 3-7 p.m., will feature cabbage roll and schnitzel dinners, along with individual cabbage rolls and schnitzel sandwiches. Customers can also purchase a packaged combination of specialty bratwursts and mettwursts.The cabbage roll and schnitzel dinners will also include mashed potatoes, applesauce and dessert. Each dinner is $15, while a la carte cabbage rolls are $6 apiece, schnitzel sandwiches are $7, and the package of specialty brats and metts is $10.",
     "country": "US",
-    "author": "Ashley Moor",
+    "author": "https://s3.amazonaws.com/arc-authors/coxohio/d2154fee-14e3-49ad-a857-297241d7cbd5.jpg",
     "link": "https://www.dayton.com/what-to-do/events/dayton-club-to-host-german-comfort-food-carryout-event-next-weekend/KVGOY2ROMJAI5ELL3SSNOC3QS4/",
     "language": "en",
     "media": "https://www.dayton.com/resizer/0P3NiIGx0Ou6ctflhwhKJoPS2so=/1200x630/cloudfront-us-east-1.images.arcpublishing.com/coxohio/7IOLULMBCVBNFIOEMSKO3MZIGE.jpg",

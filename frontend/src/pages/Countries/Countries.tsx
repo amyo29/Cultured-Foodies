@@ -23,11 +23,9 @@ function Countries() {
               <Col>
                 <Card bg='light'>
                   <Card.Body>
-                    <Navbar>
                       <a href={"/countries/" + i}>
                         <Card.Title>{country['name']}</Card.Title>
                       </a>
-                    </Navbar>
                     <Card.Img variant="top" src={country['flag']}/>
                     <Card.Text>
                       <p>
