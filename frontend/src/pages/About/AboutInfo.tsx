@@ -109,7 +109,7 @@ const TEAM_INFO = [
     email: "yawen1999@gmail.com",
     img: AmyImg,
     role: "Full-Stack",
-    bio: "I'm a 4th year CS Honors student at UT Austin. I love food.",
+    bio: "I'm a 4th year CS Honors student at UT Austin. In my free time, I enjoy dancing and watching movies. I also love trying out new foods and exploring the world!",
     linkedin: "https://www.linkedin.com/in/amy-o/",
     commits: 0,
     issues: 0,
