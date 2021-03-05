@@ -31,24 +31,26 @@ function Article() {
   let link = article["link"];
 
   return (
-    <div>
+    <div className="center">
       <img src={img} className="article-img"></img>
       <h1>{title}</h1>
-      <h4>Author: {author}</h4>
-      <img src={authorImage} className="flag-img"></img>
+      <h5>Language: {language}</h5>
       <p>Published: {publishedDate}</p>
       <a href={"/dishes/" + dishIndex}>
         <h5>Associated Dish: {dishName}</h5>
       </a>
       <a href={"/countries/" + countryIndex}>
         <img src={countryFlag} className="flag-img"></img>
-        <h5>{country}</h5>
+        <h5>Dish's Origin: {country}</h5>
       </a>
-      <h5>Language: {language}</h5>
+      <div className="center">
       <h4>{summmary}</h4>
       <a href={link}>
-        <h6>Link to the article</h6>
+        <h5>Link to the article</h5>
       </a>
+      <h4>Author: {author}</h4>
+      <img src={authorImage} className="author-img center"></img>
+      </div>
     </div>
   );
 }

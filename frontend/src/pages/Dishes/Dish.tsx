@@ -8,16 +8,18 @@ import { useParams } from "react-router-dom";
 const dishes_data = require("../../data/threeDishes.json");
 const countries_data = require("../../data/threeCountries.json");
 const news_data = require("../../data/threeNews.json");
+
+
 function Dish() {
   const { id } = useParams<{ id: string }>();
   let data = dishes_data[+id];
   let countryIndex = data["countryIndex"];
   let newsIndex = data["newsIndex"];
-  let youTubeID = data["youTubeLinkID"]
+  let youTubeID = data["youTubeLinkID"];
 
   let country = countries_data[countryIndex];
   let article = news_data[newsIndex];
-  let youTubeURL = "https://www.youtube.com/embed/" + youTubeID
+  let youTubeURL = "https://www.youtube.com/embed/" + youTubeID;
 
   return (
     <Container fluid>
@@ -41,7 +43,8 @@ function Dish() {
         </Col>
       </Row>
       <Row>
-        <Col>{data["recipe"]["dietLabels"]}
+        <Col>
+          {data["recipe"]["dietLabels"]}
           <h5>Health</h5>
           {data["recipe"]["healthLabels"].map((healthLabel: any) => {
             return <li>{healthLabel}</li>;
@@ -60,34 +63,36 @@ function Dish() {
           {data["recipe"]["calories"]}
         </Col>
       </Row>
-      
+
       <Row>
         <Col>
-        <p>
-          <h5>Ingredients</h5> 
-        {data["recipe"]["ingredientLines"].map((ingredient: any) => {
-          return <li>{ingredient}</li>; <br />
-        })}
-        </p>
-        
-      
-      
-      <h5>Country: </h5>
-      <a href={"/countries/" + countryIndex}>{country["name"]}</a>
-      
-      <h5>Mentioned in news articles: </h5>
-      <a href={"/news/" + newsIndex}>{article["title"]}</a>
-      <br />
-      <iframe
-        src={youTubeURL}
-        width="50%"
-        height="300"
-        allow="fullscreen"
-        title="video"
-      />
-      </Col>
-      </Row>
+          <p>
+            <h5>Ingredients</h5>
+            {data["recipe"]["ingredientLines"].map((ingredient: any) => {
+              return <li>{ingredient}</li>;
+              <br />;
+            })}
+          </p>
 
+          <h5>Country: </h5>
+          <a href={"/countries/" + countryIndex}>{country["name"]}</a>
+
+          <h5>Mentioned in news articles: </h5>
+          <a href={"/news/" + newsIndex}>{article["title"]}</a>
+          <br />
+
+          <div className="center">
+            <h3>Recipe video</h3>
+            <iframe
+              src={youTubeURL}
+              width="50%"
+              height="400"
+              allow="fullscreen"
+              title="video"
+            />
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
