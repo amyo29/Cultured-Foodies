@@ -42,50 +42,5 @@ A dish is the geographic area that a politician represents and which the seat is
 
 ## Properties
 
-- ID: The long database ID of this district object.
-- Name: The name of this district, formatted "State-Number" (e.g. TX-1).
-- Type: Whether this is a state house, state senate, US House, US Senate district, or other.
-- Party: The one letter abbreviation for the party that currently controls this district.
-- Counties: An array of counties this district partially or fully covers.
-- Number: The number of this district.
-- Map: A link to a map showing the district boundaries.
-- Elections:
-    - Current: 
-        - ID: The ID to the current election in our database.
-    - Past: An array of IDs of past elections.
-        - ID: The ID of the past election in our database.
-- Elected Officials: Array of politicians who hold office in this district.
-    - Name: Name of this politician.
-    - ID: ID of this politician in our database.
-- Demographics:
-    - Total Population: The total population of residents living in this district.
-    - Age: 
-        - 0: Population from 0-5.
-        - 5: Population from 5-17.
-        - 18: Population from 18-64
-        - 65: Population above 65.
-    - Race:
-        - White: White population in this district.
-        - Black: African American and Black population in this district.
-        - Indigenous: Native American and Alaskan Native population in this district.
-        - Asian: Asian American population in this district.
-        - Pacific Islander: Native Hawaiian, American Samoan, and other Pacific Islander population in this district.
-    - Ethnicity:
-        - Hispanic: Hispanic population in this district.
-        - Non Hispanic: Non-hispanic population in this district.
-    - Educational Attainment:
-        - Enrollment: Object of population under 25 possibly still attending school.
-            - Preschool: Population in pre-school.
-            - Primary: Population in elementary, middle, and high school.
-            - University: Population enrolled in an undergraduate or graduate program.
-        - Attainment: Object of population at and over 25 in the district.
-            - High School: Population who only have a high school degree, GED, or lower.
-            - Some College: Population who have some college experience or have obtained an associates but not bachelors or equivalent.
-            - Bachelors: Population who have obtained a bachelors degree or higher.
-    - Income
-        - 0: Population with an income between $0 and $9,999.
-        - 10 000: Population with an income between $10,000 and $24,999.
-        - 25 000: Population with an income between $25,000 and $49,999.
-        - 50 000: Population with an income between $50,000 and $99,999.
-        - 100 000: Population with an income between $100,000 and $199,999.
-        - 200 000: Population with an income at and over $200,000.
+- ID: The long database ID of this dish object.
+- Name: The name of this dish
