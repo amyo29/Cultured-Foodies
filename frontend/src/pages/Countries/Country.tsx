@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
+import "../../styles/Country.css"
+
 const countries_data = require("../../data/threeCountries.json");
 const news_data = require("../../data/threeNews.json");
 const dishes_data = require("../../data/threeDishes.json");
@@ -75,12 +77,15 @@ function Country() {
       </a>
       <Row></Row>
 
+      <div className="center">
+      <h4>Map Location</h4>
       <iframe
         src={countryMapURL}
         width="600"
         height="450"
         loading="lazy"
       ></iframe>
+      </div>
     </Container>
   );
 }

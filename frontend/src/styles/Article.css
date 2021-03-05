@@ -5,6 +5,21 @@
   width: 75%;
 }
 
+.center {
+  text-align: center;
+}
+
 .flag-img {
   width: 5%;
+}
+
+.author-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.dish {
+  text-align: center;
 }
