@@ -64,7 +64,8 @@ A dish is a distinct article or variety of food that is ready to eat or to be se
 
 News
 
-A new article is a written work published in a print or electronic medium. It may be for the purpose of propagating news, research results, academic analysis, or debate.
+A news article is a written work published in a print or electronic medium. It may be for the purpose of propagating news, research results, academic analysis, or debate.
+
 ## Properties
 
 - Summary: Summary of the article.
