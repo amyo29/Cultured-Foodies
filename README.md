@@ -41,9 +41,9 @@ https://www.culturedfoodies.me
 | ----------------- | ------------------------- | ---------------------- |
 | Joshua Arrojado   | 10 hours                  | 40 hours               |
 | Siddhesh Krishnan | 25 hours                  | 35 hours               |
-| Lucinda Nguyen    | 15 hours                  | 50 hours               |
-| Tim Nguyen        | 15 hours                  | 50 hours               |
-| Amy Ouyang        | 20 hours                  | 55 hours               |
+| Lucinda Nguyen    | 25 hours                  | 50 hours               |
+| Tim Nguyen        | 25 hours                  | 50 hours               |
+| Amy Ouyang        | 30 hours                  | 55 hours               |
 | Vishal Tak        | 17 hours                  | 50 hours               |
 
 ## Comments
