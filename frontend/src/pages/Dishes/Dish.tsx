@@ -9,7 +9,6 @@ const dishes_data = require("../../data/threeDishes.json");
 const countries_data = require("../../data/threeCountries.json");
 const news_data = require("../../data/threeNews.json");
 
-
 function Dish() {
   const { id } = useParams<{ id: string }>();
   let data = dishes_data[+id];
@@ -23,76 +22,59 @@ function Dish() {
 
   return (
     <Container fluid>
-      <Row>
-        <Col>
-          <h1>{data["recipe"]["label"]}</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6} md={4}>
-          <Image src={data["recipe"]["image"]} fluid />
-        </Col>
-      </Row>
-      <Row>
-        <Col>{data["recipe"]["source"]}</Col>
-      </Row>
+      <h1>{data["recipe"]["label"]}</h1>
 
-      <Row>
-        <Col>
-          <h5>Dietary</h5>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          {data["recipe"]["dietLabels"]}
-          <h5>Health</h5>
-          {data["recipe"]["healthLabels"].map((healthLabel: any) => {
-            return <li>{healthLabel}</li>;
-          })}
-        </Col>
-      </Row>
+      <section>
+        <h5>Dietary</h5>
+        {data["recipe"]["dietLabels"].length == 0
+          ? "No dietary labels"
+          : data["recipe"]["dietLabels"]}
 
-      <Row>
-        <Col>
-          <h5>Restrictions</h5>
-          {data["recipe"]["cautions"].map((caution: any) => {
+        <h5>Health</h5>
+        {data["recipe"]["healthLabels"].map((healthLabel: any) => {
+          return <li>{healthLabel}</li>;
+        })}
+      </section>
+
+      <Image src={data["recipe"]["image"]} fluid />
+
+      <p>{data["recipe"]["source"]}</p>
+
+      <h5>Calories</h5>
+      {data["recipe"]["calories"]}
+
+      <p>
+        <h5>Ingredients</h5>
+        {data["recipe"]["ingredientLines"].map((ingredient: any) => {
+          return <li>{ingredient}</li>;
+        })}
+      </p>
+
+      <h5>Restrictions</h5>
+      {data["recipe"]["cautions"].length == 0
+        ? "No restrictions"
+        : data["recipe"]["cautions"].map((caution: any) => {
             return <li>{caution}</li>;
-          })}
+          })
+      }
 
-          <h5>Calories</h5>
-          {data["recipe"]["calories"]}
-        </Col>
-      </Row>
+      <h5>Country: </h5>
+      <a href={"/countries/" + countryIndex}>{country["name"]}</a>
 
-      <Row>
-        <Col>
-          <p>
-            <h5>Ingredients</h5>
-            {data["recipe"]["ingredientLines"].map((ingredient: any) => {
-              return <li>{ingredient}</li>;
-              <br />;
-            })}
-          </p>
+      <h5>Mentioned in news articles: </h5>
+      <a href={"/news/" + newsIndex}>{article["title"]}</a>
+      <br />
 
-          <h5>Country: </h5>
-          <a href={"/countries/" + countryIndex}>{country["name"]}</a>
-
-          <h5>Mentioned in news articles: </h5>
-          <a href={"/news/" + newsIndex}>{article["title"]}</a>
-          <br />
-
-          <div className="center">
-            <h3>Recipe video</h3>
-            <iframe
-              src={youTubeURL}
-              width="50%"
-              height="400"
-              allow="fullscreen"
-              title="video"
-            />
-          </div>
-        </Col>
-      </Row>
+      <div className="center">
+        <h3>Recipe video</h3>
+        <iframe
+          src={youTubeURL}
+          width="50%"
+          height="400"
+          allow="fullscreen"
+          title="video"
+        />
+      </div>
     </Container>
   );
 }
