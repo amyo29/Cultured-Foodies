@@ -17,7 +17,7 @@ A website that provides cultural dishes, country information, and news from arou
 
 | Phase   | Git SHA             |
 | ------- | ------------------- |
-| Phase I | Git SHA for Phase I |
+| Phase I | 13792ad80d69e4b97687dc459f0edde1764e8c0e |
 
 ## Project leader
 
