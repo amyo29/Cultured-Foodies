@@ -42,11 +42,12 @@ https://www.culturedfoodies.me
 
 | Name              | Estimated Completion time | Actual Completion time |
 | ----------------- | ------------------------- | ---------------------- |
-| Joshua Arrojado   | 10 hours                  | X hours                |
-| Siddhesh Krishnan | 25 hours                  | X hours                |
-| Lucinda Nguyen    | 15 hours                  | X hours                |
-| Tim Nguyen        | 15 hours                  | X hours                |
-| Amy Ouyang        | 20 hours                  | x hours                |
+| Joshua Arrojado   | 10 hours                  | 40 hours                |
+| Siddhesh Krishnan | 25 hours                  | 35 hours                |
+| Lucinda Nguyen    | 20 hours                  | 50 hours                |
+| Tim Nguyen        | 20 hours                  | X hours                |
+| Amy Ouyang        | 30 hours                  | x hours                |
 | Vishal Tak        | 17 hours                  | x hours                |
 
 ## Comments
+
