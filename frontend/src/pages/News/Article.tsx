@@ -29,13 +29,19 @@ function Article() {
   let publishedDate = article["published_date"];
   let summmary = article["summary"];
   let link = article["link"];
+  let source = article["clean_url"]
+  let topic = article["topic"]
 
   return (
     <div className="center">
       <img src={img} className="article-img"></img>
       <h1>{title}</h1>
-      <h5>Language: {language}</h5>
-      <p>Published: {publishedDate}</p>
+     
+      <p>
+      Language: {language} <br/>
+        Published: {publishedDate} <br/>
+      News source: {source}<br/></p>
+     
       <a href={"/dishes/" + dishIndex}>
         <h5>Associated Dish: {dishName}</h5>
       </a>
