@@ -15,12 +15,9 @@ A website that provides cultural dishes, country information, and news from arou
 
 ## Git SHA
 
-| Phase    | Git SHA               |
-| -------- | --------------------- |
-| Phase I  | Git SHA for Phase I   |
-| Phase II | Git SHA for Phase II  |
-| Phase II | Git SHA for Phase III |
-| Phase IV | Git SHA for Phase IV  |
+| Phase   | Git SHA             |
+| ------- | ------------------- |
+| Phase I | Git SHA for Phase I |
 
 ## Project leader
 
@@ -42,12 +39,12 @@ https://www.culturedfoodies.me
 
 | Name              | Estimated Completion time | Actual Completion time |
 | ----------------- | ------------------------- | ---------------------- |
-| Joshua Arrojado   | 10 hours                  | 40 hours                |
-| Siddhesh Krishnan | 25 hours                  | 35 hours                |
-| Lucinda Nguyen    | 20 hours                  | 50 hours                |
-| Tim Nguyen        | 20 hours                  | X hours                |
-| Amy Ouyang        | 30 hours                  | x hours                |
-| Vishal Tak        | 17 hours                  | x hours                |
+| Joshua Arrojado   | 10 hours                  | 40 hours               |
+| Siddhesh Krishnan | 25 hours                  | 35 hours               |
+| Lucinda Nguyen    | 15 hours                  | 50 hours               |
+| Tim Nguyen        | 15 hours                  | 50 hours               |
+| Amy Ouyang        | 20 hours                  | 55 hours               |
+| Vishal Tak        | 17 hours                  | 50 hours               |
 
 ## Comments
 
