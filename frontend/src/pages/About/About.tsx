@@ -219,7 +219,7 @@ function About() {
         <InfoCard
           title="Postman API"
           img={TOOLS_INFO[2].img}
-          link="https://documenter.getpostman.com/view/14740527/Tz5i9gAY"
+          link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
         />
       </Grid>
     </div>

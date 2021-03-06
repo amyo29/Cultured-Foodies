@@ -54,7 +54,7 @@ function Article() {
       </a>
       <div className="center">
       <h4>{summmary}</h4>
-      <a href={link}>
+      <a href={link} target="_blank">
         <h5>Link to the article</h5>
       </a>
       <h4>Author: {author}</h4>

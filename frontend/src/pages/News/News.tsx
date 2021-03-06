@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Table } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
@@ -6,8 +6,8 @@ const countries_data = require("../../data/threeCountries.json");
 
 function News() {
   useEffect(() => {
-    document.title = "News Article"
-  }, [])
+    document.title = "News Article";
+  }, []);
   return (
     <div>
       <h1 className="text-align center">News</h1>
@@ -27,7 +27,9 @@ function News() {
             <tr>
               <td>{i + 1}</td>
               <td>
-                <a href={"/news/" + i} className="article">{article["title"]}</a>
+                <a href={"/news/" + i} className="article">
+                  {article["title"]}
+                </a>
               </td>
               <td>{countries_data[article["countryIndex"]]["name"]}</td>
               <td>{article["language"]}</td>
