@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Table } from "react-bootstrap";
 import "../../styles/News.css";
 const data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
 
 function News() {
+  useEffect(() => {
+    document.title = "News Article"
+  }, [])
   return (
     <div>
-      <h1>News</h1>
+      <h1 className="text-align center">News</h1>
       <Table responsive className="table">
         <thead>
           <tr>

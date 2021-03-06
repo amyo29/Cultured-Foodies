@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
 
 // const data = require('../../data/countries.json').slice(0,3)
 const data = require('../../data/threeCountries.json')
 
 function Countries() {
+  useEffect(() => {
+    document.title = "Countries"
+  }, [])
   var i, j;
   var chunk = 5;
   var rows =[] 
@@ -15,7 +18,7 @@ function Countries() {
   // a country will be at rows[index][index]
   return (
     <div>
-      <h1>Countries</h1>
+      <h1 className="text-align center">Countries</h1>
       <Container>
         {rows.map((cols) => (
           <Row>

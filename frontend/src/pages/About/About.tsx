@@ -27,7 +27,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+
 function About() {
+  useEffect(() => {
+    document.title = "About"
+  }, [])
   const [spacing, setSpacing] = React.useState<GridSpacing>(2);
   const classes = useStyles();
 

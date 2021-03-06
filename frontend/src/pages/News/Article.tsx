@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import "../../styles/Article.css";
 
@@ -7,6 +7,9 @@ const countries_data = require("../../data/threeCountries.json");
 const dishes_data = require("../../data/threeDishes.json");
 
 function Article() {
+  useEffect(() => {
+    document.title = "News Article"
+  }, [])
   const { id } = useParams<{ id: string }>();
 
   let article = news_data[+id];

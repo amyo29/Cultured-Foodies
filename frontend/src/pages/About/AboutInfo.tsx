@@ -111,7 +111,7 @@ const TEAM_INFO = [
     email: "lucinda.onguyen@gmail.com",
     img: LucindaImg,
     role: "Full-Stack | Phase 1 Project Leader",
-    bio: "Bio description",
+    bio: "I'm a fourth year CS major at UT Austin from Dallas, TX. I enjoy reading manga and webtoons.",
     linkedin: "",
     commits: 0,
     issues: 0,
