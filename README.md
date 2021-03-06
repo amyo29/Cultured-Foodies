@@ -15,9 +15,9 @@ A website that provides cultural dishes, country information, and news from arou
 
 ## Git SHA
 
-| Phase   | Git SHA             |
-| ------- | ------------------- |
-| Phase I | 13792ad80d69e4b97687dc459f0edde1764e8c0e |
+| Phase   | Git SHA                                  |
+| ------- | ---------------------------------------- |
+| Phase I | 4bde46bdaf4329e224efc4b3a8db9f7eacb8aeed |
 
 ## Project leader
 
@@ -47,4 +47,3 @@ https://www.culturedfoodies.me
 | Vishal Tak        | 17 hours                  | 50 hours               |
 
 ## Comments
-
