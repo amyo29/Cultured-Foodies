@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Jumbotron } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { Container } from "react-bootstrap";
@@ -11,6 +11,9 @@ const news_data = require("../../data/threeNews.json");
 
 
 function Dish() {
+  useEffect(() => {
+    document.title = "Dish"
+  }, [])
   const { id } = useParams<{ id: string }>();
   let data = dishes_data[+id];
   let countryIndex = data["countryIndex"];

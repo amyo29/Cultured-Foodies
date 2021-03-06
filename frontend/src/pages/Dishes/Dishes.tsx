@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
 const data = require("../../data/threeDishes.json");
 function Dishes() {
+  useEffect(() => {
+    document.title = "Dishes"
+  }, [])
   var i, j;
   var chunk = 5;
   var rows = [];
@@ -12,7 +15,7 @@ function Dishes() {
   }
   return (
     <div>
-      <h1>Dishes</h1>
+      <h1 className="text-align center">Dishes</h1>
       <Container>
         {rows.map((cols) => (
           <Row>
