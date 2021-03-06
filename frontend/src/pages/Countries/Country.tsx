@@ -45,6 +45,9 @@ function Country() {
 
         <h5>Region</h5>
         {data["region"]}
+
+        <h5>Subegion</h5>
+        {data["subregion"]}
       </section>
 
       <h5>Population</h5>
