@@ -522,7 +522,10 @@
             "media_content",
             "rights",
             "topic",
-            "published_date"
+            "published_date",
+            "business_name",
+            "business_summary",
+            "rank"
           ],
           "properties": {
             "id": {
