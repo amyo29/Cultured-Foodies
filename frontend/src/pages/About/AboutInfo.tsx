@@ -8,6 +8,8 @@ import NameCheapLogo from "./Images/Tools/Namecheap.png";
 import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
 import EdamamLogo from "./Images/APIs/EdamamLogo.png";
 import NewscatcherLogo from "./Images/APIs/NewscatcherLogo.png";
+import YouTubeLogo from "./Images/APIs/YouTubeLogo.png"
+import GoogleMapsLogo from "./Images/APIs/GoogleMapsLogo.jpeg"
 
 import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
@@ -35,6 +37,18 @@ const API_INFO = [
     description: "Used to retrieve food related news content",
     link: "https://newscatcherapi.com/",
   },
+  {
+    name: "The Maps Embed API",
+    img: GoogleMapsLogo,
+    description: "Used to show the map location of a country",
+    link: "https://developers.google.com/maps/documentation/embed/get-started",
+  },
+  {
+    name: "YouTube Data API",
+    img: YouTubeLogo,
+    description: "Used to show a recipe video of a dish",
+    link: "https://developers.google.com/youtube/v3/docs",
+  }
 ];
 
 const TOOLS_INFO = [
