@@ -573,6 +573,9 @@
             },
             "business_summary": {
               "type": "string"
+            },
+            "rank": {
+              "type": "integer"
             }
           }
         },
