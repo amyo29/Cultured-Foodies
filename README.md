@@ -30,6 +30,10 @@ Lucinda Nguyen
 
 https://gitlab.com/cs373-group-11/cultured-foodies/-/pipelines
 
+## Link to Postman API
+
+https://documenter.getpostman.com/view/14712963/Tz5jczL8
+
 ## Link to website
 
 https://www.culturedfoodies.me

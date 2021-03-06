@@ -522,7 +522,10 @@
             "media_content",
             "rights",
             "topic",
-            "published_date"
+            "published_date",
+            "business_name",
+            "business_summary",
+            "rank"
           ],
           "properties": {
             "id": {
@@ -564,6 +567,15 @@
             },
             "published_date": {
               "type": "string"
+            },
+            "business_name": {
+              "type": "string"
+            },
+            "business_summary": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "integer"
             }
           }
         },
