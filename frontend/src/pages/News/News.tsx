@@ -18,7 +18,7 @@ function News() {
             <th>Title</th>
             <th>Country</th>
             <th>Language</th>
-            <th>Author</th>
+            <th>Source Popularity Rank</th>
             <th>Published Date</th>
           </tr>
         </thead>
@@ -33,7 +33,7 @@ function News() {
               </td>
               <td>{countries_data[article["countryIndex"]]["name"]}</td>
               <td>{article["language"]}</td>
-              <td>{article["author"]}</td>
+              <td>{article["rank"]}</td>
               <td>{article["published_date"]}</td>
             </tr>
           ))}

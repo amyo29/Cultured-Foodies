@@ -53,6 +53,11 @@ function Country() {
       <h5>Capital city</h5>
       {data["capital"]}
 
+      <h5>Bordering Countries</h5>
+      {data["borders"].length? data["borders"].map((timezone: any) => {
+          return <li>{timezone}</li>;
+        }) : "No bordering countries"}
+
       <section>
         <h5>Time Zones</h5>
         {data["timezones"].map((timezone: any) => {

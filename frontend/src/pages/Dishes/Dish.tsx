@@ -20,6 +20,7 @@ function Dish() {
   let youTubeID = data["youTubeLinkID"];
 
   let country = countries_data[countryIndex];
+  
   let article = news_data[newsIndex];
   let youTubeURL = "https://www.youtube.com/embed/" + youTubeID;
 
@@ -43,8 +44,9 @@ function Dish() {
 
       <p>{data["recipe"]["source"]}</p>
 
-      <h5>Calories</h5>
-      {data["recipe"]["calories"]}
+      <h5>Calories: {data["recipe"]["calories"]}</h5>
+      <h5>Total energy (kcal): {data["recipe"]["totalNutrients"]["ENERC_KCAL"]["quantity"]}</h5>
+
 
       <p>
         <h5>Ingredients</h5>

@@ -33,34 +33,44 @@ function Article() {
   let summmary = article["summary"];
   let link = article["link"];
   let source = article["clean_url"]
+  let source_business_name = article["meta_business_title"]
+  let source_desc = article["meta_business_summary"]
   let topic = article["topic"]
 
   return (
     <div className="center">
-      <img src={img} className="article-img"></img>
-      <h1>{title}</h1>
-     
-      <p>
-      Language: {language} <br/>
-        Published: {publishedDate} <br/>
-      News source: {source}<br/></p>
-     
-      <a href={"/dishes/" + dishIndex}>
-        <h5>Associated Dish: {dishName}</h5>
-      </a>
-      <a href={"/countries/" + countryIndex}>
-        <img src={countryFlag} className="flag-img"></img>
-        <h5>Dish's Origin: {country}</h5>
-      </a>
-      <div className="center">
-      <h4>{summmary}</h4>
-      <a href={link} target="_blank">
-        <h5>Link to the article</h5>
-      </a>
-      <h4>Author: {author}</h4>
-      <img src={authorImage} className="author-img center"></img>
-      </div>
+    <img src={img} className="article-img"></img>
+    <h1>{title}</h1>
+   
+    <p>
+    Language: {language} <br/>
+      Published: {publishedDate} <br/>
+    News source: {source}<br/></p>
+   
+    <a href={"/dishes/" + dishIndex}>
+      <h5>Associated Dish: {dishName}</h5>
+    </a>
+    <a href={"/countries/" + countryIndex}>
+      <img src={countryFlag} className="flag-img"></img>
+      <h5>Dish's Origin: {country}</h5>
+    </a>
+    <div className="text-left px-2">
+    <h4>{summmary}</h4>
+    <br/>
+
+    <h5><b>Source Title:</b> {source_business_name}</h5>
+    <h5><b>About the News Source:</b> {source_desc}</h5>
+
     </div>
+    <div>
+    <a href={link} target="_blank">
+      <h5>Link to the article</h5>
+    </a>
+    <h4>Author: {author}</h4>
+    <img src={authorImage} className="author-img center"></img>
+    </div>
+  </div>
+
   );
 }
 
