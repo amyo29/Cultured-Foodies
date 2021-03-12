@@ -68,13 +68,19 @@ A news article is a written work published in a print or electronic medium. It m
 
 ## Properties
 
+- Author image: Link to an image of the author of the news article.
+- Business Title: Name of the new source publishing company.
+- Business summary: String denoting a short description of the news source publishing company.
 - Summary: Summary of the article.
 - Country: Country of the publisher.
 - Author: Author of the article.
 - Link: Link to the article.
-- Language: Language of the aritcle.
+- Language: Language of the article.
+- Media: Link to image of news article.
 - Title: Title of the article.
+- Clean URL: URL of the news source which published this article.
 - Rights: Copyright information about the article.
+- Rank: Integer denoting the popularity rank of the news source (Higher rank = lower number).
 - Topic: Topic of the article.
 - Published Date: Published date & time of the article.
 - ID: Newscatcher API's unique identifier for each news article.
