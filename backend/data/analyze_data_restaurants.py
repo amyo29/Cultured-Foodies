@@ -1,6 +1,6 @@
 import json
 
-
+# load all restaurant data json files and add new cuisines to all_cuisines set
 def analyze_restaurants_dump():
     f = open("top_40_restaurants_all_cities_by_cuisinesids.json", "r")
     data1 = json.load(f, encoding="utf8")
@@ -230,7 +230,7 @@ def clean_query_json():
     except Exception as e:
         print(e)
 
-
+# merge all restaurant data json files into all_restaurants_dump.json
 def merge_files():
     f = open("top_40_restaurants_all_cities_by_cuisinesids.json", "r")
     data1 = json.load(f, encoding="utf8")
@@ -248,15 +248,16 @@ def merge_files():
     f = open("all_restaurants_dump.json", "w")
     json.dump(all_data, f)
 
-
+# create list of restaurants with only valid cuisines from all_cuisines
 def clean_restaurant_invalid_cuisines():
     f = open("all_restaurants_dump.json", "r")
     data = json.load(f, encoding="utf8")
+    # new_restaurants_2 = list(restaurant for restaurant in data for cuisine in restaurant["restaurant"]["cuisines"].split(", ") if cuisine in all_cuisines)
+    # cuisines_contained_2 = set(cuisine for restaurant in data for cuisine in restaurant["restaurant"]["cuisines"].split(", ") if cuisine in all_cuisines)
+
     new_restaurants = []
     cuisines_contained = set()
-    import pdb
-
-    # pdb.set_trace()
+   
     for restaurant in data:
         rest_cuisine = restaurant["restaurant"]["cuisines"].split(", ")
         for cuisine in rest_cuisine:
@@ -276,6 +277,9 @@ def clean_restaurant_invalid_cuisines():
 
     print("length new restaurants: ", len(new_restaurants))
     print("length data: ", len(data))
+
+    # print("restaurants == restaurants_2", new_restaurants == new_restaurants_2)
+    # print("cuisines == cuisines_2", cuisines_contained == cuisines_contained_2)
 
 # merge_files()
 # clean_query_json()
