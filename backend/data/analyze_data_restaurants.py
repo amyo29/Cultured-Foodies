@@ -198,7 +198,7 @@ all_cuisines = {
     "Saudi Arabian",
 }
 
-print(len(all_cuisines))
+print("number of all cuisines: ", len(all_cuisines))
 
 
 """
@@ -249,6 +249,34 @@ def merge_files():
     json.dump(all_data, f)
 
 
-#
-merge_files()
+def clean_restaurant_invalid_cuisines():
+    f = open("all_restaurants_dump.json", "r")
+    data = json.load(f, encoding="utf8")
+    new_restaurants = []
+    cuisines_contained = set()
+    import pdb
+
+    # pdb.set_trace()
+    for restaurant in data:
+        rest_cuisine = restaurant["restaurant"]["cuisines"].split(", ")
+        for cuisine in rest_cuisine:
+            if cuisine in all_cuisines:
+                cuisines_contained.add(cuisine)
+                new_restaurants.append(restaurant)
+    
+    f = open("all_restaurants_cleaned.json", "w")
+    json.dump(new_restaurants, f)
+
+    left_cuisines = all_cuisines - cuisines_contained
+    print("cuisines contained", cuisines_contained)
+    print("length cuisines contained", len(cuisines_contained))
+
+    print("left cuisines: ", left_cuisines)
+    print("length left cuisines: ", len(left_cuisines))
+
+    print("length new restaurants: ", len(new_restaurants))
+    print("length data: ", len(data))
+
+# merge_files()
 # clean_query_json()
+clean_restaurant_invalid_cuisines()
