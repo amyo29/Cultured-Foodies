@@ -1,0 +1,795 @@
+{
+  "Vancouver": [
+    {
+      "entity_type": "city",
+      "entity_id": 256,
+      "title": "Metro Vancouver, British Columbia",
+      "latitude": 49.280721695,
+      "longitude": -123.1177491154,
+      "city_id": 256,
+      "city_name": "Metro Vancouver",
+      "country_id": 37,
+      "country_name": "Canada"
+    }
+  ],
+  "Surprise": [
+    {
+      "entity_type": "city",
+      "entity_id": 11196,
+      "title": "Surprise, Arizona",
+      "latitude": 33.618297,
+      "longitude": -112.398004,
+      "city_id": 11196,
+      "city_name": "Surprise",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Garden Grove": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 118111,
+      "title": "Garden Grove, Orange County",
+      "latitude": 33.7744342815,
+      "longitude": -117.952774021,
+      "city_id": 484,
+      "city_name": "Orange County",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "San Juan": [
+    {
+      "entity_type": "city",
+      "entity_id": 63,
+      "title": "Metro Manila",
+      "latitude": 14.6029,
+      "longitude": 120.9838,
+      "city_id": 63,
+      "city_name": "Metro Manila",
+      "country_id": 162,
+      "country_name": "Philippines"
+    }
+  ],
+  "Hollywood": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 170849,
+      "title": "Hollywood Hills, Los Angeles",
+      "latitude": 34.124409,
+      "longitude": -118.33917,
+      "city_id": 281,
+      "city_name": "Los Angeles",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Des Moines": [
+    {
+      "entity_type": "city",
+      "entity_id": 643,
+      "title": "Des Moines, Iowa",
+      "latitude": 41.600349,
+      "longitude": -93.608971,
+      "city_id": 643,
+      "city_name": "Des Moines",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Grand Prairie": [
+    {
+      "entity_type": "city",
+      "entity_id": 10993,
+      "title": "Grand Prairie, Texas",
+      "latitude": 32.7202119881,
+      "longitude": -97.0135815084,
+      "city_id": 10993,
+      "city_name": "Grand Prairie",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Birmingham": [
+    {
+      "entity_type": "city",
+      "entity_id": 421,
+      "title": "Birmingham, Alabama",
+      "latitude": 33.51981,
+      "longitude": -86.802032,
+      "city_id": 421,
+      "city_name": "Birmingham, Alabama",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Pomona": [
+    {
+      "entity_type": "city",
+      "entity_id": 10950,
+      "title": "Pomona, California",
+      "latitude": 34.063137617,
+      "longitude": -117.7530359016,
+      "city_id": 10950,
+      "city_name": "Pomona",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Ontario": [
+    {
+      "entity_type": "city",
+      "entity_id": 8402,
+      "title": "Ontario, Oregon",
+      "latitude": 44.0061357304,
+      "longitude": -116.9835419529,
+      "city_id": 8402,
+      "city_name": "Ontario, Oregon",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Moreno Valley": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 151624,
+      "title": "Moreno Valley, Inland Empire",
+      "latitude": 33.9289709244,
+      "longitude": -117.242099099,
+      "city_id": 520,
+      "city_name": "Inland Empire",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Palmdale": [
+    {
+      "entity_type": "city",
+      "entity_id": 11265,
+      "title": "Palmdale, California",
+      "latitude": 34.594480371,
+      "longitude": -118.105786938,
+      "city_id": 11265,
+      "city_name": "Palmdale",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Pembroke Pines": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 116845,
+      "title": "Pembroke Pines, Miami",
+      "latitude": 26.0112379706,
+      "longitude": -80.3037001489,
+      "city_id": 291,
+      "city_name": "Miami",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Fort Lauderdale": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 116869,
+      "title": "Fort Lauderdale, Miami",
+      "latitude": 26.1201937807,
+      "longitude": -80.1379455836,
+      "city_id": 291,
+      "city_name": "Miami",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Frisco": [
+    {
+      "entity_type": "city",
+      "entity_id": 10991,
+      "title": "Frisco, Texas",
+      "latitude": 33.1339767605,
+      "longitude": -96.8312761257,
+      "city_id": 10991,
+      "city_name": "Frisco",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "McKinney": [
+    {
+      "entity_type": "city",
+      "entity_id": 11001,
+      "title": "McKinney, Texas",
+      "latitude": 33.1934395774,
+      "longitude": -96.6522164373,
+      "city_id": 11001,
+      "city_name": "McKinney",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Carrollton": [
+    {
+      "entity_type": "city",
+      "entity_id": 10983,
+      "title": "Carrollton, Texas",
+      "latitude": 32.9902302094,
+      "longitude": -96.8886443571,
+      "city_id": 10983,
+      "city_name": "Carrollton",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Santa Rosa": [
+    {
+      "entity_type": "zone",
+      "entity_id": 109254,
+      "title": "Santa Rosa",
+      "latitude": 14.283645,
+      "longitude": 121.088544,
+      "city_id": 11071,
+      "city_name": "Laguna",
+      "country_id": 162,
+      "country_name": "Philippines"
+    }
+  ],
+  "Miramar": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 131836,
+      "title": "Miramar Beach, Destin",
+      "latitude": 30.3798632045,
+      "longitude": -86.3639386712,
+      "city_id": 580,
+      "city_name": "Destin",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Fort Collins": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 132850,
+      "title": "Fort Collins, Northern Colorado",
+      "latitude": 40.5611438804,
+      "longitude": -105.0731316983,
+      "city_id": 541,
+      "city_name": "Northern Colorado",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Santa Clarita": [
+    {
+      "entity_type": "city",
+      "entity_id": 10963,
+      "title": "Santa Clarita, California",
+      "latitude": 34.4183586808,
+      "longitude": -118.5395238391,
+      "city_id": 10963,
+      "city_name": "Santa Clarita",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Olathe": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 121852,
+      "title": "Olathe, Kansas City, Kansas",
+      "latitude": 38.8830674525,
+      "longitude": -94.7893467417,
+      "city_id": 11171,
+      "city_name": "Kansas City, Kansas",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Denton": [
+    {
+      "entity_type": "city",
+      "entity_id": 6071,
+      "title": "Denton, Maryland",
+      "latitude": 38.9154843057,
+      "longitude": -75.84083098,
+      "city_id": 6071,
+      "city_name": "Denton, Maryland",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Round Rock": [
+    {
+      "entity_type": "city",
+      "entity_id": 10903,
+      "title": "Round Rock, Texas",
+      "latitude": 30.5086880442,
+      "longitude": -97.6786368295,
+      "city_id": 10903,
+      "city_name": "Round Rock",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Knoxville": [
+    {
+      "entity_type": "city",
+      "entity_id": 1153,
+      "title": "Knoxville, Tennessee",
+      "latitude": 35.98,
+      "longitude": -83.97,
+      "city_id": 1153,
+      "city_name": "Knoxville",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Washington, D.C.": [
+    {
+      "entity_type": "city",
+      "entity_id": 283,
+      "title": "Washington DC",
+      "latitude": 38.895222,
+      "longitude": -77.036758,
+      "city_id": 283,
+      "city_name": "Washington DC",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Metairie Terrace": [
+    {
+      "entity_type": "zone",
+      "entity_id": 95302,
+      "title": "Metairie Area, New Orleans",
+      "latitude": 29.997854462,
+      "longitude": -90.1706320405,
+      "city_id": 290,
+      "city_name": "New Orleans",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Chattanooga": [
+    {
+      "entity_type": "city",
+      "entity_id": 1141,
+      "title": "Chattanooga, Tennessee",
+      "latitude": 35.0428228978202,
+      "longitude": -85.2520610217984,
+      "city_id": 1141,
+      "city_name": "Chattanooga",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Elk Grove": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 113566,
+      "title": "Elk Grove Village, Chicago",
+      "latitude": 42.007299063,
+      "longitude": -87.9918016945,
+      "city_id": 292,
+      "city_name": "Chicago",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Huntington Beach": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 118108,
+      "title": "Huntington Beach, Orange County",
+      "latitude": 33.694034708,
+      "longitude": -118.0009026487,
+      "city_id": 484,
+      "city_name": "Orange County",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Saint Paul": [
+    {
+      "entity_type": "city",
+      "entity_id": 2851,
+      "title": "Saint Paul, Alberta",
+      "latitude": 53.9894148,
+      "longitude": -111.2953702,
+      "city_id": 2851,
+      "city_name": "Saint Paul",
+      "country_id": 37,
+      "country_name": "Canada"
+    }
+  ],
+  "New York City": [
+    {
+      "entity_type": "city",
+      "entity_id": 280,
+      "title": "New York City, New York State",
+      "latitude": 40.71463,
+      "longitude": -74.005806,
+      "city_id": 280,
+      "city_name": "New York City",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Lakewood": [
+    {
+      "entity_type": "city",
+      "entity_id": 10969,
+      "title": "Lakewood, California",
+      "latitude": 33.8454057363,
+      "longitude": -118.118209121,
+      "city_id": 10969,
+      "city_name": "Lakewood",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Alexandria": [
+    {
+      "entity_type": "city",
+      "entity_id": 11174,
+      "title": "Alexandria, Virginia",
+      "latitude": 38.807136,
+      "longitude": -77.051371,
+      "city_id": 11174,
+      "city_name": "Alexandria",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Spring Valley": [
+    {
+      "entity_type": "city",
+      "entity_id": 6548,
+      "title": "Spring Valley, Minnesota",
+      "latitude": 43.6953644937,
+      "longitude": -92.4529331125,
+      "city_id": 6548,
+      "city_name": "Spring Valley, Minnesota",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Fontana": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 151585,
+      "title": "Fontana, Inland Empire",
+      "latitude": 34.0963319272,
+      "longitude": -117.4538438003,
+      "city_id": 520,
+      "city_name": "Inland Empire",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Enterprise": [
+    {
+      "entity_type": "city",
+      "entity_id": 8375,
+      "title": "Enterprise, Oregon",
+      "latitude": 45.4251827222,
+      "longitude": -117.2806587389,
+      "city_id": 8375,
+      "city_name": "Enterprise",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Thornton": [
+    {
+      "entity_type": "city",
+      "entity_id": 3224,
+      "title": "Thornton, Ontario",
+      "latitude": 44.2705332,
+      "longitude": -79.7219027333,
+      "city_id": 3224,
+      "city_name": "Thornton, Ontario",
+      "country_id": 37,
+      "country_name": "Canada"
+    }
+  ],
+  "Eugene": [
+    {
+      "entity_type": "city",
+      "entity_id": 1063,
+      "title": "Eugene, Oregon",
+      "latitude": 44.0573483697632,
+      "longitude": -123.10332904917999,
+      "city_id": 1063,
+      "city_name": "Eugene",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Sunrise Manor": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 117766,
+      "title": "Sunrise Manor, Las Vegas",
+      "latitude": 36.1791194656,
+      "longitude": -115.0700869723,
+      "city_id": 282,
+      "city_name": "Las Vegas",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Tacoma": [
+    {
+      "entity_type": "city",
+      "entity_id": 10699,
+      "title": "Tacoma, Washington State",
+      "latitude": 47.2260103516,
+      "longitude": -122.4646076722,
+      "city_id": 10699,
+      "city_name": "Tacoma",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Paradise": [
+    {
+      "entity_type": "city",
+      "entity_id": 6277,
+      "title": "Paradise, Michigan",
+      "latitude": 46.5890245111,
+      "longitude": -85.0624432889,
+      "city_id": 6277,
+      "city_name": "Paradise, Michigan",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Peoria": [
+    {
+      "entity_type": "city",
+      "entity_id": 694,
+      "title": "Peoria, Illinois",
+      "latitude": 40.72572571557561,
+      "longitude": -89.6157530383747,
+      "city_id": 694,
+      "city_name": "Peoria",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Paterson": [
+    {
+      "entity_type": "city",
+      "entity_id": 3816,
+      "title": "Paterson, New Jersey",
+      "latitude": 40.9123807043,
+      "longitude": -74.1641017791,
+      "city_id": 3816,
+      "city_name": "Paterson",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Worcester": [
+    {
+      "entity_type": "city",
+      "entity_id": 5974,
+      "title": "Worcester, Massachusetts",
+      "latitude": 42.2624102208,
+      "longitude": -71.8033152784,
+      "city_id": 5974,
+      "city_name": "Worcester, Massachusetts",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Sunnyvale": [
+    {
+      "entity_type": "city",
+      "entity_id": 10823,
+      "title": "Sunnyvale, California",
+      "latitude": 37.3740543997,
+      "longitude": -122.0237749109,
+      "city_id": 10823,
+      "city_name": "Sunnyvale",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Joliet": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 113950,
+      "title": "Joliet, Chicago",
+      "latitude": 41.534057314,
+      "longitude": -88.1172729798,
+      "city_id": 292,
+      "city_name": "Chicago",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Oxnard": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 149932,
+      "title": "Oxnard, Ventura County",
+      "latitude": 34.1969361727,
+      "longitude": -119.183370103,
+      "city_id": 472,
+      "city_name": "Ventura County",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Pasadena": [
+    {
+      "entity_type": "city",
+      "entity_id": 10949,
+      "title": "Pasadena, California",
+      "latitude": 34.145218615,
+      "longitude": -118.1314223693,
+      "city_id": 10949,
+      "city_name": "Pasadena",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Hayward": [
+    {
+      "entity_type": "city",
+      "entity_id": 10797,
+      "title": "Hayward, California",
+      "latitude": 37.6569752359,
+      "longitude": -122.0907382023,
+      "city_id": 10797,
+      "city_name": "Hayward",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Providence": [
+    {
+      "entity_type": "city",
+      "entity_id": 1096,
+      "title": "Providence, Rhode Island",
+      "latitude": 41.823,
+      "longitude": -71.413,
+      "city_id": 1096,
+      "city_name": "Providence",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Salt Lake City": [
+    {
+      "entity_type": "city",
+      "entity_id": 1213,
+      "title": "Salt Lake City, Utah",
+      "latitude": 40.75952,
+      "longitude": -111.888229,
+      "city_id": 1213,
+      "city_name": "Salt Lake City",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Yonkers": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 160162,
+      "title": "Yonkers, Westchester County",
+      "latitude": 40.9365160515,
+      "longitude": -73.8726630016,
+      "city_id": 994,
+      "city_name": "Westchester County",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Tempe": [
+    {
+      "entity_type": "city",
+      "entity_id": 11191,
+      "title": "Tempe, Arizona",
+      "latitude": 33.379289,
+      "longitude": -111.933941,
+      "city_id": 11191,
+      "city_name": "Tempe",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Naperville": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 113782,
+      "title": "Naperville, Chicago",
+      "latitude": 41.76322026,
+      "longitude": -88.16261675,
+      "city_id": 292,
+      "city_name": "Chicago",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Overland Park": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 121849,
+      "title": "Overland Park, Kansas City, Kansas",
+      "latitude": 38.9237452379,
+      "longitude": -94.6818385812,
+      "city_id": 11171,
+      "city_name": "Kansas City, Kansas",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Rochester": [
+    {
+      "entity_type": "city",
+      "entity_id": 1003,
+      "title": "Rochester, New York, New York State",
+      "latitude": 43.154438,
+      "longitude": -77.615967,
+      "city_id": 1003,
+      "city_name": "Rochester, New York",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Cary": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 113563,
+      "title": "Cary, Chicago",
+      "latitude": 42.2131309929,
+      "longitude": -88.249058419,
+      "city_id": 292,
+      "city_name": "Chicago",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Bellevue": [
+    {
+      "entity_type": "city",
+      "entity_id": 10659,
+      "title": "Bellevue, Washington State",
+      "latitude": 47.6106708137,
+      "longitude": -122.1733496447,
+      "city_id": 10659,
+      "city_name": "Bellevue",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Corona": [
+    {
+      "entity_type": "city",
+      "entity_id": 8761,
+      "title": "Corona, South Dakota",
+      "latitude": 45.37446375,
+      "longitude": -96.6743965,
+      "city_id": 8761,
+      "city_name": "Corona",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ],
+  "Rancho Cucamonga": [
+    {
+      "entity_type": "subzone",
+      "entity_id": 151594,
+      "title": "Rancho Cucamonga, Inland Empire",
+      "latitude": 34.1063750898,
+      "longitude": -117.571330504,
+      "city_id": 520,
+      "city_name": "Inland Empire",
+      "country_id": 216,
+      "country_name": "United States"
+    }
+  ]
+}
