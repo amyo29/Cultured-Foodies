@@ -1254,7 +1254,24 @@
     ],
     "description": "The cuisine of Iceland has a long history. Important parts of Icelandic cuisine are lamb, dairy, and fish, the latter due to Iceland's being surrounded by ocean. Popular foods in Iceland include skyr, hangikj\u00f6t (smoked lamb), kleinur, laufabrau\u00f0 and bollur. \u00deorramatur is a traditional buffet served at midwinter festivals called \u00deorrabl\u00f3t; it includes a selection of traditionally cured meat and fish products served with r\u00fagbrau\u00f0 (dense dark and sweet rye bread) and brenniv\u00edn (an Icelandic akvavit). The flavours of this traditional country food originate in its preservation methods; pickling in fermented whey or brine, drying and smoking.\nhttps://en.wikipedia.org/wiki/Icelandic_cuisineThese dishes are served during Christmas in Iceland.These are the dishes you have to try when you visit Iceland."
   },
-  { "name": "Punjabi", "country": "India", "dishes": [], "description": "" },
+  {
+    "name": "Punjabi",
+    "country": "India",
+    "dishes": [
+      "Butter Chicken",
+      "Roti",
+      "Tandoori Chicken",
+      "Chole Bhature",
+      "Masala Channa",
+      "Dal Makhani",
+      "Machchli Amritsari",
+      "Dhaba Dal",
+      "Paneer Tikka",
+      "Murgh Malaiwala",
+      "Amritsari Kulcha"
+    ],
+    "description": "Punjabi cuisine is a culinary style originating in the Punjab, a region in the northern part of the Indian subcontinent, which is now divided in an Indian part and a Pakistani part. This cuisine has a rich tradition of many distinct and local ways of cooking. One is a special form of tandoori cooking that is now famous in other parts of India, UK, Canada, Hong Kong and in many parts of the world. The local cuisine of Punjab is heavily influenced by the agriculture and farming lifestyle prevalent from the times of the ancient Indus Valley Civilization. Locally grown staple foods form the major part of the local cuisine. Distinctively Punjabi cuisine is known for its rich, buttery flavours along with the extensive vegetarian and meat dishes. Main dishes include sarhon dā saâg (a stew whose main ingredient is mustard greens) and makki di roti (flatbreads made with cornmeal). https://en.wikipedia.org/wiki/Punjabi_cuisine"
+  },
   {
     "name": "Filipino",
     "country": "Philippines",
@@ -1312,8 +1329,8 @@
   {
     "name": "Cajun",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Crawfish/shrimp boil","Jambalaya","Gumbo","Po’ Boy Sandwich","Maque choux","Pain perdu", "Boudin"],
+    "description": "ajun cuisine (French: Cuisine cadienne, [kɥizin kadʒæ̃n]), (Spanish: Cocina acadia) is a style of cooking developed by the Cajun - Acadians who were deported from Acadia to Louisiana during the 18th century and who incorporated West African, French and Spanish cooking techniques into their original cuisine. Cajun cuisine is sometimes referred to as a 'rustic cuisine', meaning that it is based on locally available ingredients and that preparation is relatively simple. An authentic Cajun meal is usually a three-pot affair, with one pot dedicated to the main dish, one dedicated to steamed rice, specially made sausages, or some seafood dish, and the third containing whatever vegetable is plentiful or available. Crawfish, shrimp, and andouille sausage are staple meats used in a variety of dishes. The aromatic vegetables green bell pepper (piment doux), onion, and celery are called \"the trinity\" by Cajun chefs in Cajun and Louisiana Creole cuisines. https://en.wikipedia.org/wiki/Cajun_cuisine"
   },
   {
     "name": "Balearic",
@@ -1414,8 +1431,8 @@
   {
     "name": "Soul Food",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Fatback", "Fried Chicken", "Fried Fish","Ham hocks","Hog Jowl","Hog maw","Offal", "Ox tail", "Pork Ribs", "Sweet Potato Pie"],
+    "description": "Soul food is an ethnic cuisine traditionally prepared and eaten by African Americans, originating in the Southern United States. The cuisine originated with the foods that were given to enslaved African Americans by English Americans on southern plantations during the American colonial period; however, it was strongly influenced by the traditional practices of West Africans and Native Americans from its inception. Due to the historical presence of African Americans in the region, soul food is closely associated with the cuisine of the American South although today it has become an easily identifiable and celebrated aspect of mainstream American food culture. https://en.wikipedia.org/wiki/Soul_food"
   },
   {
     "name": "Ethiopian",
@@ -1728,7 +1745,7 @@
       "Plov",
       "Shelpek"
     ],
-    "description": "Uzbek cuisine is influenced by local agriculture, as in most nations. There is a great deal of grain farming in Uzbekistan, so breads and noodles are of importance, and Uzbek cuisine has been characterized as \"noodle-rich\".[1] Mutton is a popular variety of meat due to the abundance of sheep in the country and it is a part of various Uzbek dishes.\nUzbekistan's signature dish is palov (plov or osh or \"pilaf\"), a main course typically made with rice, pieces of meat, grated carrots and onions. It is usually cooked in a kazan (or deghi) over an open fire; chickpeas, raisins, barberries, or fruit may be added for variation. Although often prepared at home for family and guests by the head of household or the housewife, palov is made on special occasions by the oshpaz, or the osh master chef, who cooks the national dish over an open flame, sometimes serving up to 1,000 people from a single cauldron on holidays or occasions such as weddings. Oshi nahor, or \"morning plov\", is served in the early morning (between 6 and 9 am) to large gatherings of guests, typically as part of an ongoing wedding celebration.\nOther notable national dishes include: shurpa (shurva or shorva), a soup made of large pieces of fatty meat (usually mutton) and fresh vegetables; norin and lagman, noodle-based dishes that may be served as a soup or a main course; manti (also called qasqoni), chuchvara, and somsa, stuffed pockets of dough served as an appetizer or a main course; dimlama (a meat and vegetable stew) and various kebabs, usually served as a main course.\nGreen tea is the national hot beverage taken throughout the day; teahouses (chaikhanas) are of cultural importance. The more usual black tea is preferred in Tashkent. Both are typically taken without milk or sugar. Tea always accompanies a meal, but it is also a drink of hospitality, automatically offered green or black to every guest. Ayran, a chilled yogurt drink, is popular in the summer, but does not replace hot tea.\nThe use of alcohol is less widespread than in the west, but wine is comparatively popular for a Muslim nation as Uzbekistan is largely secular. Uzbekistan has 14 wineries, the oldest and most famous being the Khovrenko Winery in Samarkand (est. 1927). The Samarkand Winery produces a range of dessert wines from local grape varieties: Gulyakandoz, Shirin, Aleatiko, and Kabernet likernoe (literally Cabernet dessert wine in Russian). Uzbek wines have received international awards and are exported to Russia and other countries in Central Asia.\nhttps://en.wikipedia.org/wiki/Uzbek_cuisine"
+    "description": "Uzbek cuisine is influenced by local agriculture, as in most nations. There is a great deal of grain farming in Uzbekistan, so breads and noodles are of importance, and Uzbek cuisine has been characterized as \"noodle-rich\". Mutton is a popular variety of meat due to the abundance of sheep in the country and it is a part of various Uzbek dishes.\nUzbekistan's signature dish is palov (plov or osh or \"pilaf\"), a main course typically made with rice, pieces of meat, grated carrots and onions. It is usually cooked in a kazan (or deghi) over an open fire; chickpeas, raisins, barberries, or fruit may be added for variation. Although often prepared at home for family and guests by the head of household or the housewife, palov is made on special occasions by the oshpaz, or the osh master chef, who cooks the national dish over an open flame, sometimes serving up to 1,000 people from a single cauldron on holidays or occasions such as weddings. Oshi nahor, or \"morning plov\", is served in the early morning (between 6 and 9 am) to large gatherings of guests, typically as part of an ongoing wedding celebration.\nOther notable national dishes include: shurpa (shurva or shorva), a soup made of large pieces of fatty meat (usually mutton) and fresh vegetables; norin and lagman, noodle-based dishes that may be served as a soup or a main course; manti (also called qasqoni), chuchvara, and somsa, stuffed pockets of dough served as an appetizer or a main course; dimlama (a meat and vegetable stew) and various kebabs, usually served as a main course.\nGreen tea is the national hot beverage taken throughout the day; teahouses (chaikhanas) are of cultural importance. The more usual black tea is preferred in Tashkent. Both are typically taken without milk or sugar. Tea always accompanies a meal, but it is also a drink of hospitality, automatically offered green or black to every guest. Ayran, a chilled yogurt drink, is popular in the summer, but does not replace hot tea.\nThe use of alcohol is less widespread than in the west, but wine is comparatively popular for a Muslim nation as Uzbekistan is largely secular. Uzbekistan has 14 wineries, the oldest and most famous being the Khovrenko Winery in Samarkand (est. 1927). The Samarkand Winery produces a range of dessert wines from local grape varieties: Gulyakandoz, Shirin, Aleatiko, and Kabernet likernoe (literally Cabernet dessert wine in Russian). Uzbek wines have received international awards and are exported to Russia and other countries in Central Asia.\nhttps://en.wikipedia.org/wiki/Uzbek_cuisine"
   },
   {
     "name": "Puerto Rican",
