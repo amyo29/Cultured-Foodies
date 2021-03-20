@@ -108,12 +108,12 @@ cuisine_country_dict = {"Thai": "Thailand",
                         }
 
 
-
+options = Options()
+options.headless = True
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 def get_world_food_per_cuisine(cuisine):
-    options = Options()
-    options.headless = True
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    cuisine = cuisine.replace(" ", "_")
     driver.get("https://worldfood.guide/cuisinedishes/" + cuisine.lower() + "/" + str(1) + "/")
     elements = driver.find_elements_by_class_name("title3.color2")
     result = []
@@ -123,13 +123,20 @@ def get_world_food_per_cuisine(cuisine):
     return result
 
 def get_description(cuisine):
-    options = Options()
-    options.headless = True
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-    driver.get("https://worldfood.guide/cuisine/" + cuisine.lower() + "/")
+    # import pdb
+    # pdb.set_trace
+    # options = Options()
+    # options.headless = True
+    # driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    cuisine = cuisine.replace(" ", "_")
+    url = "https://worldfood.guide/cuisine/" + cuisine.lower() + "/"
+    print("url: ", url)
+    driver.get(url)
     elements = driver.find_elements_by_class_name("description")
-    print(elements.text)
-    return elements.text
+    description = ""
+    for item in elements:
+        description += item.text
+    return description
 
 def get_world_food_dishes():
     result = []
