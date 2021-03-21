@@ -267,8 +267,8 @@
   {
     "name": "Creole",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Jambalaya", "Shrimp Creole", "Bisque", "Gumbo", "Shrimp remoulade", "Mirliton", "Turtle soup", "Dirty rice", "Creole Baked Chicken", "Pompano en Papillote"],
+    "description": "Louisiana Creole cuisine (https://en.wikipedia.org/wiki/Louisiana_Creole_cuisine) is a style of cooking originating in Louisiana, United States, which blends West African, French, Spanish, Amerindian influences, as well as influences from the general cuisine of the Southern United States. Creole cuisine revolves around influences found in Louisiana from populations present in Louisiana before the sale of Louisiana to the United States in the Louisiana Purchase of 1803."
   },
   {
     "name": "Albanian",
@@ -449,8 +449,8 @@
   {
     "name": "Amish",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Apple butter", "Chicken and Waffles", "Chow-chow", "Potato rolls", "Cup cheese", "Pot pie", "Sauerbraten", "Dutch baby", "Sugar cookies", "Red beet eggs", "Shoofly pie"],
+    "description": "Amish cuisine (https://en.wikipedia.org/wiki/Amish#Cuisine) is noted for its simplicity and traditional qualities. Food plays an important part in Amish social life and is served at potlucks, weddings, fundraisers, farewells, and other events. Many Amish foods are sold at markets including pies, preserves, bread mixes, pickled produce, desserts, and canned goods. Many Amish communities have also established restaurants for visitors. Amish meat consumption is similar to the American average though they tend to eat more preserved meat."
   },
   {
     "name": "Canadian",
@@ -644,8 +644,8 @@
   {
     "name": "New American",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Kimchi Fries", "Pork Belly Steam Buns", "Snapping Turtle Soup", "Pok Pok Catfish Larb", "California Roll", "Lentil Miso Soup", "Banana Mochi Cake"],
+    "description": "New American cuisine (https://en.wikipedia.org/wiki/New_American_cuisine#:~:text=New%20American%20cuisine%20is%20generally,use%20of%20seasoning%20and%20sauces.), also known as Modern American cuisine, or Contemporary American cuisine, is the wave of modernized cooking predominantly served at upscale fine dining restaurants in the United States, originating in the 1980s. New American cuisine is generally a type of fusion cuisine which assimilates flavors from the melting pot of traditional American cooking techniques mixed with foreign and sometimes molecular gastronomy components."
   },
   {
     "name": "Armenian",
@@ -720,8 +720,8 @@
   {
     "name": "New Mexican",
     "country": "United States of Ammerica",
-    "dishes": [],
-    "description": ""
+    "dishes": ["Arroz Dulce", "Atole", "Biscochito", "Carne seca", "Chicharrones", "Chile con queso", "Tamale", "Quesadilla", "Frito Pie", "Flauta", "Flan", "Sopaipilla", "Posole"],
+    "description": "New Mexican cuisine is the cuisine of the Southwestern US state of New Mexico, the region is primarily known for its fusion of Pueblo Native American with Hispano Spanish and Mexican cuisine originating in Nuevo México. This cuisine had adaptations and influences throughout its history, including early on from the nearby Apache, Navajo, and throughout New Spain and the Spanish Empire, also from French, Italian, Mediterranean, Portuguese cuisine, and European cafés, furthermore during the American territorial phase from cowboy chuckwagons and Western saloons, additionally after statehood from Route 66 American diners, fast food restaurants, and global cuisine. Even so, New Mexican cuisine developed in fairly isolated circumstances, which has allowed it to maintain its indigenous, Spanish, and Mexican identity, and is therefore not like any other Latin food originating in the contiguous United States."
   },
   {
     "name": "Syrian",
