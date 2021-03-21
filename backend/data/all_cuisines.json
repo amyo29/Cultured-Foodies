@@ -2157,5 +2157,70 @@
       "Liers Vlaaike"
     ],
     "description": "Belgian cuisine is widely varied with significant regional variations while also reflecting the cuisines of neighbouring France, Germany and the Netherlands. It is sometimes said that Belgian food is served in the quantity of German cuisine but with the quality of French food. Outside the country, Belgium is best known for its chocolate, waffles, fries and beer.\nThough Belgium has many distinctive national dishes, many internationally popular foods like hamburgers and spaghetti bolognese are also popular in Belgium, and most of what Belgians eat is also eaten in neighbouring countries. 'Belgian cuisine' therefore usually refers to dishes of Belgian origin, or those considered typically Belgian.\nBelgian cuisine traditionally prizes regional and seasonal ingredients. Ingredients typical in Belgian dishes include potatoes, leeks, grey shrimp, white asparagus, Belgian endives and local beer, in addition to common European staples including meat, cheese and butter. Belgians typically eat three meals a day, with a light breakfast, medium or large-sized lunch and small dinner.\nBelgium has a plethora of dishes and products that are local to a specific area. Examples include waterzooi from Ghent, the couque biscuit from the town of Dinant, and tarte au riz from Verviers. While their local origins are acknowledged, most such dishes are enjoyed throughout Belgium.List of vegetarian Dishes From Belgian CuisineBelgian cuisine has a wide range of delicious desserts that you must try."
+  },
+  {
+    "name": "California",
+    "country": "California",
+    "dishes": [
+      "Mission Burrito",
+      "Tetrazzini",
+      "Uramaki",
+      "Cobb Salad",
+      "French Dip Sandwich",
+      "Fortune Cookie",
+      "Ranch Dressing",
+      "Avacado Toast",
+      "Burrito",
+      "Cheeseburger"
+    ],
+    "description": "California Cuisine shows the ethnical diversity of the people who make up this state. It’s a mix of fresh ingredients, vegetables, fresh cheeses, grilled meat, fish and seafood, nuts, an assortment of cross-cultural dishes influenced by other international cuisines: Mexican, Chinese, European."
+  },
+  {
+    "name": "Tibetan",
+    "country": "Tibet",
+    "dishes": [
+      "Momo",
+      "Sha Phaley",
+      "Laping",
+      "Balep Korkun"
+    ],
+    "description": "Tibetan cuisine includes the culinary traditions and practices of Tibet and its peoples, many of whom reside in India and Nepal. It reflects the Tibetan landscape of mountains and plateaus and includes influences from neighbors (including other countries India and Nepal). It is known for its use of noodles, goat, yak, mutton, dumplings, cheese (often from yak or goat milk), butter (also from animals adapted to the Tibetan climate) and soups. Grain, traditionally mostly barley, is the staple food of Tibetans. Meat and dairy products are an indispensable addition. Rice is only cultivated in the lower regions situated in the south of Tibet and is imported mainly. Vegetables and fruits were eaten rarely in Central Tibet until quite recently, because their cultivation was very difficult. Nowadays it is possible to grow these crops due to the construction of greenhouses. Following the different vegetative conditions, the Tibetan cuisine has a big variety."
+  },
+  {
+    "name": "Southern",
+    "country": "United States of America",
+    "dishes": [
+      "Sausage Gravy",
+      "Biscuits And Sausage Gravy",
+      "American Goulash",
+      "Arizona Cheese Crisp",
+      "Baked Beans",
+      "Barbecue Chicken",
+      "Biscuit",
+      "Brunswick Stew",
+      "Cactus Fries",
+      "Chicken Chimis",
+      "Chicken Fried Steak"
+    ],
+    "description": "The cuisine of the Southern United States is the historical regional culinary form of states generally south of the Mason–Dixon line dividing Pennsylvania and Delaware from Maryland as well as along the Ohio River, and extending west to southern Missouri, Oklahoma and Texas. The most notable influences come from African, English, Scottish, Irish, German, French, and Native American cuisines. Tidewater, Appalachian ,Creole, Lowcountry, and Floribbean are examples of types Southern cuisine. In recent history, elements of Southern cuisine have spread north, having an effect on the development of other types of American cuisine. Many items such as squash, tomatoes, corn (and its derivatives, including grits), as well as the practice of deep pit barbecuing were inherited from the southeastern American Indian tribes such as the Caddo, Choctaw, and Seminole. Many foods associated with sugar, flour, milk, eggs (many kinds of baking or dairy products such as breads and cheeses) are more associated with Europe. Black-eyed peas, okra, rice, eggplant, benne (sesame) seed, sorghum, and melons, as well as the spices can be attributed to peoples of African origin."
+  },
+  {
+    "name": "Caribbean",
+    "country": "",
+    "dishes": [
+      "Asham",
+      "Bahama Mama",
+      "Belize",
+      "Callaloo",
+      "Cornmeal Pudding",
+      "Crab and Calaloo",
+      "Curry Chicken",
+      "Goat Water",
+      "Jamaican Blue Draws",
+      "Martinique",
+      "Oil Down"
+    ],
+    "description": "Caribbean cuisine is a fusion of African, Creole, Cajun, Amerindian, European, Latin American, Indian/South Asian, Middle Eastern, and Chinese. These traditions were brought from many different countries when they came to the Caribbean. In addition, the population has created styles that are unique to the region."
   }
+  
 ]
