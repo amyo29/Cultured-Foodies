@@ -1492,7 +1492,27 @@
     ],
     "description": "Hong Kong cuisine is mainly influenced by Cantonese cuisine, non-Cantonese Chinese cuisine (especially Teochew, and Hakka, Hokkien and the Jiangsu & Zhejiang), the Western world, Japan, and Southeast Asia, due to Hong Kong's past as a British colony and long history of being an international city of commerce. From the roadside stalls to the most upscale restaurants, Hong Kong provides an unlimited variety of food in every class. Complex combinations and international gourmet expertise have given Hong Kong the reputable labels of \"Gourmet Paradise\" and \"World's Fair of Food\""
   },
-  { "name": "Sichuan", "country": "China", "dishes": [], "description": "" },
+  {
+    "name": "Sichuan",
+    "country": "China",
+    "dishes": [
+      "Ants climbing a tree",
+      "Bon bon chicken",
+      "Braised Pork Ribs with Konjac",
+      "Chili oil wontons",
+      "Dandan noodles",
+      "Fish with pickled mustard greens",
+      "Hot and sour noodles",
+      "Kung Pao chicken",
+      "Map tofu",
+      "Sliced beef in chili sauce",
+      "Shredded pork in garlic sauce",
+      "Sichuan hotpot",
+      "Stir-fried green beans",
+      "Twice cooked pork"
+    ],
+    "description": "Sichuan cuisine, alternatively romanized as Szechwan cuisine or Szechuan cuisine, is a style of Chinese cuisine originating from Sichuan Province. It has bold flavours, particularly the pungency and spiciness resulting from liberal use of garlic and chili peppers, as well as the unique flavour of Sichuan pepper. There are many local variations within Sichuan Province and the neighbouring Chongqing Municipality, which was part of Sichuan Province until 1997. Four sub-styles of Sichuan cuisine include Chongqing, Chengdu, Zigong and Buddhist vegetarian style. url: https://en.wikipedia.org/wiki/Sichuan_cuisine"
+  },
   {
     "name": "Tunisian",
     "country": "Tunisia",
@@ -1628,8 +1648,17 @@
   {
     "name": "Salvadorean",
     "country": "El Salvador",
-    "dishes": [],
-    "description": ""
+    "dishes": [
+      "Pupusa",
+      "Yuca frita",
+      "Panes rellenos",
+      "Sopa de pata",
+      "Pasteles",
+      "Ensalada",
+      "Quesadilla",
+      "Tres leches"
+    ],
+    "description": "Salvadoran cuisine is a style of cooking derived from the nation of El Salvador, derived from both Mesoamerican (mainly Pipil and Lenca) and Spanish origins. Many of the dishes are made with maize (corn). There is also heavy use of pork and seafood. Source: https://en.wikipedia.org/wiki/Salvadoran_cuisine"
   },
   {
     "name": "Venezuelan",
@@ -1704,7 +1733,35 @@
     ],
     "description": "Indonesian cuisine is one of the most vibrant and colorful cuisines in the world, full of intense flavor. It is diverse, in part because Indonesia is composed of approximately 6,000 populated islands of the total 18,000 in the world's largest archipelago, with more than 300 ethnic groups calling Indonesia their home. Many regional cuisines exist, often based upon indigenous culture and foreign influences. Indonesia has around 5,350 traditional recipes, with 30 of them considered the most important.\nIn 2011, Indonesian cuisine began to gain worldwide recognition, with three of its popular dishes make it to the list of 'World's 50 Most Delicious Foods (Readers' Pick)', a worldwide online poll by 35,000 people held by CNN International. Rendang top the list as the number one, followed closely by nasi goreng in number two, and satay in number fourteen.\nIndonesian cuisine varies greatly by region and has many different influences. Sumatran cuisine, for example, often has Middle Eastern and Indian influences, featuring curried meat and vegetables such as gulai and kari, while Javanese cuisine is mostly indigenous, with some hint of Chinese influence. The cuisines of Eastern Indonesia are similar to Polynesian and Melanesian cuisine. Elements of Chinese cuisine can be seen in Indonesian cuisine: foods such as bakmi (noodles), bakso (meat or fish balls), and lumpia (spring rolls) have been completely assimilated.\nAti = Chicken liver\nDaging = Beef\nGoreng = Stir-fried\nKentang = Potatoes\nKerecek = Cattle skin\nLabu Siam = Chayote\nNasi = Rice\nMee = Noodles\nSambal = Chili paste\nUdang = shrimpsEid is known in Indonesia as Hari Raya Idul Fitri, or more popularly as Lebaran, and is a national holiday. People return to their home town or city (an exodus known as mudik) to celebrate with their families and to ask forgiveness from parents, in-laws, and other elders. Festivities start the night before with chanting the Takbir and \u2026People gather with family and neighbors in traditional clothing and have a special Lebaran meal. Children are given money in colorful envelopes. Later, it is common for Muslims in Indonesia to visit the graves of relatives to ritually clean the grave. Muslims also visit the living in a special ritual called Halal bi-Halal sometime during or several days \u2026List of traditional fast food dishes that is sold at food stalls and cookshops in Indonesia.These are the dishes that are commonly eaten during Ramadan in Indonesia."
   },
-  { "name": "Cantonese", "country": "China", "dishes": [], "description": "" },
+  {
+    "name": "Cantonese",
+    "country": "China",
+    "dishes": [
+      "Chinese steamed eggs",
+      "Dim sum",
+      "Char siu",
+      "Barbecued Pork",
+      "Roast goose",
+      "Rice noodle rolls",
+      "Steamed chicken feet",
+      "White cut chicken",
+      "Preserved salted duck",
+      "Tea-smoked duck",
+      "Shark fin soup",
+      "Sea cucumber",
+      "Hainanese Chicken Rice",
+      "Xiao long bao",
+      "Cha Siu Bao",
+      "Egg tart",
+      "Beef fried noodles",
+      "Turnip cakes",
+      "Claypot rice",
+      "Hand-pulled noodles",
+      "Congee"
+
+    ],
+    "description": "Cantonese or Yue cuisine is the cuisine of the Guangdong province of China, particularly the provincial capital, Guangzhou and the surrounding regions in the Pearl River Delta, including Hong Kong and Macau. Strictly speaking, Cantonese cuisine is the cuisine of Guangzhou or of Cantonese speakers, but it often includes the cooking styles of all the speakers of Yue Chinese languages in Guangdong. On the other hand, the Teochew cuisine and Hakka cuisine of Guangdong are considered their own styles, as is neighbouring Guangxi's cuisine despite eastern Guangxi being considered culturally Cantonese due to the presence of ethnic Zhuang influences in the rest of the province. Cantonese cuisine is one of the Eight Culinary Traditions of Chinese cuisine. Its prominence outside China is due to the large number of Cantonese emigrants. Chefs trained in Cantonese cuisine are highly sought after throughout China. Until the late 20th century, most Chinese restaurants in the West served largely Cantonese dishes. Source: https://en.wikipedia.org/wiki/Cantonese_cuisine#Foods"
+  },
   {
     "name": "South African",
     "country": "South Africa",
