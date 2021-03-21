@@ -56,8 +56,23 @@
   {
     "name": "Tex-Mex",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": [
+        "Traditional Tex-Mex Fajitas",
+        "Brisket Enchiladas Nuevo Leon",
+        "South Texas Carne Guisada",
+        "Tex-Mex Street Tacos",
+        "Texas BBQ Brisket Nachos",
+        "Everyday Beef Barbacoa",
+        "Beef Picadillo Tacos",
+        "Smoked Brisket Breakfast Tacos",
+        "Authentic Beef Tamales",
+        "Carne Asada",
+        "Brisket Queso Sandwich",
+        "Jalapeño Pepper Stuffed Burgers",
+        "Grilled Adobo Beef Steak Tacos with Creamy Chipotle Salsa and Tequila Pickled Red Onions",
+        "Taco Shepherd’s Pie"
+    ],
+    "description": "Tex-Mex cuisine (from Texan and Mexican) is an American and Texan cuisine that derives from the culinary creations of the Tejano people of Texas. It has spread from border states such as Texas and others in the Southwestern United States to the rest of the country as well as Canada. Tex-Mex is most popular in Texas and neighboring areas, especially nearby states in both the US and Mexico. It is a subtype of Southwestern cuisine found in the American Southwest.\nhttps://en.wikipedia.org/wiki/Tex-Mex"
   },
   {
     "name": "Cuban",
@@ -227,15 +242,48 @@
   },
   {
     "name": "Scandinavian",
-    "country": "Norway",
-    "dishes": [],
-    "description": ""
+    "country": "Norway, Denmark, Sweden",
+    "dishes": [
+        "Biksemad",
+        "Blackcurrant Sorbet",
+        "Bøf Lindstrøm",
+        "Gulerod og Appelsinsuppe",
+        "Hvidløgssuppe",
+        "Juliennesuppe",
+        "Kanelbullar",
+        "Katrineblommekage",
+        "Lammekølle på grønsager",
+        "Rejemad",
+        "Risdessertrand",
+        "Rødkålssalat med appelsin",
+        "Scandinavian Raspberry Soup",
+        "Skinkefars med broccolifyld",
+        "Spinach-Onion-Feta Pie",
+        "Spinach-Onion-Feta Pie"
+    ],
+    "description": "The three main cuisines of Scandinavia are the Norwegian, the Danish and the Swedish.\nNorwegian – the cuisine is characterized by a sense of practicality and economy. Norwegians love their meat, whether it is Pork, Veal or fish meat, and you will notice that most of their dishes are concentrated on this main ingredient. The vast wild areas of Norway, and the abundance of fish and game, makes such natural food resources a top pick for many traditional dishes. Norwegian cuisine uses elements from various cooking traditions borrowed from their neighbors and developed from their own traditional dishes. The simplicity of the cuisine does not imply a lack of taste, but it does make life easier for the cook. Smoked salmon is probably the most famous type of food product related to Norway.\nDanish – the cuisine of Denmark is characterized by high levels of meat and animal fat and a rather low level of plants and vegetables. The long winters from the Scandinavian Peninsula shaped the face of the Danish cuisine. Although agriculture is well developed, due to the climate, game and fish are often preferred. Fresh vegetables are rare in the traditional Danish recipes, and many dishes rely on seasonal fruits or vegetables. On the other hand, the climate enables lengthy meet preservation, so smoked meat is one of the most frequently used ingredients in the Danish cuisine. The Danish cuisine is rather conservative, and the numerous islands that form Denmark helped keep the traditional, conservative cooking styles alive until modern times.\nSweden – It is considered rude not to finish the food you have on the plate, mainly because, in many cases, you serve yourself and you are responsible for the amount of food you place on your plate. The meals are not very elaborate and many will find them scarce in vegetables. Traditional recipes were influenced by the lack of plants due to the long Swedish winters and many modern dishes still include only small amounts of vegetables. rutabaga is a native turnip that was among the most popular plant types in Swedish cooking until it got replaced by the Potato. In both major inhabited regions of Sweden – Gothenburg on the west coast and Stockholm on the east – the abundance of fish, mainly Herring, had its influence on traditional cooking. Although the salted Herring, which was used as trading goods hundreds of years ago, is not part of modern Swedish dishes, we will still find it in several cookbooks as one of the national food elements.\nhttps://recipes.fandom.com/wiki/Scandinavian_Cuisine"
   },
   {
     "name": "Southwestern",
     "country": "United States of America",
-    "dishes": [],
-    "description": ""
+    "dishes": [
+        "Albondigas de pollo",
+        "Arizona/California burrito",
+        "Arizona cheese crisp",
+        "Burrito",
+        "Cactus fries",
+        "Chili con carne",
+        "Chili con queso",
+        "Chile relleno",
+        "Chimichanga",
+        "Enchilada casserole",
+        "Enchiladas",
+        "Fajitas",
+        "Flan",
+        "Huevos rancheros",
+        "Jalapeño poppers"
+    ],
+    "description": "The cuisine of the Southwestern United States is food styled after the rustic cooking of the Southwestern United States. It comprises a fusion of recipes for things that might have been eaten by Spanish colonial settlers, cowboys, Native Americans, and Mexicans throughout the post-Columbian era; there is, however, a great diversity in this kind of cuisine throughout the Southwestern states.\nSouthwestern cuisine is similar to Mexican cuisine but often involves larger cuts of meat, namely pork and beef, and less use of tripe, brain, and other parts not considered as desirable in the United States. As with Mexican cuisine, Southwestern cuisine is also largely known for its use of spices (particularly the chile, or chili pepper). Recently, several chains of casual dining restaurants specializing in Southwestern cuisine have become popular in the United States.\nNew Mexican cuisine is known for its dedication to the chile (the official 'state question' is 'Red or green?' which refers to the preferred color of chiles), most notably the Hatch chile, named for the city in New Mexico where they are grown. Part of the New Mexican cuisine is smothering each dish with either red chile, green chile or both (mixing of both is referred to as 'Christmas'). And the usage of pork or beef. The New Mexican Cuisine is most popular in the states of New Mexico, Colorado, and Utah. Texas has a version, Tex-Mex cuisine, while Arizona's style of Southwestern cuisine is often called Sonoran, since the Sonoran Desert covers a third of the state.\nhttps://en.wikipedia.org/wiki/Cuisine_of_the_Southwestern_United_States"
   },
   {
     "name": "Moroccan",
@@ -821,12 +869,6 @@
       "Humitas"
     ],
     "description": "Bolivian cuisine is very varied and stems from the combination of Spanish cuisine with Indigenous ingredients and Aymara traditions among others, with later influences from Argentinians, Germans, Italians, Basques, Russians, Poles, and Arabs due to the arrival of immigrants from those countries. The three traditional staples of Bolivian cuisine are corn, potatoes, and beans. These ingredients have been combined with a number of staples brought by the Spanish, such as rice, wheat, and meat, including beef, pork, and chicken.\nhttps://en.wikipedia.org/wiki/Bolivian_cuisineList of common, typical and traditional foods and beverages Bolivians have for breakfast.Street food you find in Bolivia"
-  },
-  {
-    "name": "California",
-    "country": "United States of America",
-    "dishes": [],
-    "description": ""
   },
   {
     "name": "Turkish",
