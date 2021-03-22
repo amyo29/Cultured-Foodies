@@ -1,20 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T23:01:29.284Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="oIPB7CnAWYBjzxIceEP3" version="14.5.0" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2021-03-22T23:01:53.087Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="CFqxj1QwKC-v3JaSiJnf" version="14.5.0" type="gitlab">
   <diagram id="JgNja9hiJComwc5C3hM6" name="Page-1">
     <mxGraphModel dx="558" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;gradientColor=#FF66B3;" vertex="1" parent="1">
-          <mxGeometry x="90" y="350" width="120" height="240" as="geometry" />
+          <mxGeometry x="90" y="350" width="200" height="250" as="geometry" />
         </mxCell>
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;gradientColor=#67AB9F;" vertex="1" parent="1">
-          <mxGeometry x="365" y="350" width="120" height="240" as="geometry" />
+          <mxGeometry x="365" y="350" width="185" height="250" as="geometry" />
         </mxCell>
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" vertex="1" parent="1">
-          <mxGeometry x="230" y="680" width="120" height="240" as="geometry" />
+          <mxGeometry x="300" y="680" width="200" height="250" as="geometry" />
         </mxCell>
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#007FFF;" vertex="1" parent="1">
-          <mxGeometry x="80" y="650" width="120" height="180" as="geometry" />
+          <mxGeometry x="80" y="650" width="170" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="G5MLiU9EDqKhmN2XC5zn-10" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="120" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
