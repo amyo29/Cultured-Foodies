@@ -10690,28 +10690,28 @@
                 "image_url": ""
             },
             {
-                "name": "Map tofu",
-                "image_url": ""
+                "name": "Mapo tofu",
+                "image_url": "https://media.istockphoto.com/photos/mapo-tofu-sichuan-style-picture-id167199918?s=612x612"
             },
             {
                 "name": "Sliced beef in chili sauce",
-                "image_url": ""
+                "image_url": "https://previews.123rf.com/images/yhh5807531/yhh58075311506/yhh5807531150600167/42076195-fuqi-feipian.jpg"
             },
             {
                 "name": "Shredded pork in garlic sauce",
-                "image_url": ""
+                "image_url": "https://static1.bigstockphoto.com/4/3/3/large2/334269430.jpg"
             },
             {
                 "name": "Sichuan hotpot",
-                "image_url": ""
+                "image_url": "https://static3.bigstockphoto.com/6/6/3/large2/366044215.jpg"
             },
             {
                 "name": "Stir-fried green beans",
-                "image_url": ""
+                "image_url": "https://static3.bigstockphoto.com/6/7/3/large2/376739455.jpg"
             },
             {
                 "name": "Twice cooked pork",
-                "image_url": ""
+                "image_url": "https://static2.bigstockphoto.com/9/0/4/large2/409744534.jpg"
             }
         ],
         "description": "Sichuan cuisine, alternatively romanized as Szechwan cuisine or Szechuan cuisine, is a style of Chinese cuisine originating from Sichuan Province. It has bold flavours, particularly the pungency and spiciness resulting from liberal use of garlic and chili peppers, as well as the unique flavour of Sichuan pepper. There are many local variations within Sichuan Province and the neighbouring Chongqing Municipality, which was part of Sichuan Province until 1997. Four sub-styles of Sichuan cuisine include Chongqing, Chengdu, Zigong and Buddhist vegetarian style. Source: https://en.wikipedia.org/wiki/Sichuan_cuisine",
@@ -11546,7 +11546,7 @@
             },
             {
                 "name": "Boudin Noir Aux Pommes",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/fried-blood-sausage-and-apples-picture-id692516940?s=612x612"
             },
             {
                 "name": "Bouillabaisse",
@@ -11659,15 +11659,11 @@
             },
             {
                 "name": "Yuca frita",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/yuca-fritas-picture-id619372858?s=612x612"
             },
             {
                 "name": "Panes rellenos",
-                "image_url": ""
-            },
-            {
-                "name": "Sopa de pata",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/chiles-rellenos-picture-id182713745?s=612x612"
             },
             {
                 "name": "Pasteles",
@@ -11675,15 +11671,15 @@
             },
             {
                 "name": "Ensalada",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/leaf-vegetable-salad-with-smoked-salmon-picture-id931135150?s=612x612"
             },
             {
                 "name": "Quesadilla",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/chicken-bell-pepper-quesadilla-picture-id804952098?s=612x612"
             },
             {
                 "name": "Tres leches",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/slice-of-tres-leche-cake-picture-id470021502?s=612x612"
             }
         ],
         "description": "Salvadoran cuisine is a style of cooking derived from the nation of El Salvador, derived from both Mesoamerican (mainly Pipil and Lenca) and Spanish origins. Many of the dishes are made with maize (corn). There is also heavy use of pork and seafood. Source: https://en.wikipedia.org/wiki/Salvadoran_cuisine",
