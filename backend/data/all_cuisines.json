@@ -10497,7 +10497,7 @@
             },
             {
                 "name": "Curry Fishball",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/207/523116439_b6a88d7d08_b.jpg"
             },
             {
                 "name": "Egg Tart",
@@ -10561,11 +10561,11 @@
             },
             {
                 "name": "Tofu pudding",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3182/2546461195_cd95ea1a59_b.jpg"
             },
             {
                 "name": "Tong yuen",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/141/329781165_5545d5e449.jpg"
             }
         ],
         "description": "Hong Kong cuisine is mainly influenced by Cantonese cuisine, non-Cantonese Chinese cuisine (especially Teochew, and Hakka, Hokkien and the Jiangsu & Zhejiang), the Western world, Japan, and Southeast Asia, due to Hong Kong's past as a British colony and long history of being an international city of commerce. From the roadside stalls to the most upscale restaurants, Hong Kong provides an unlimited variety of food in every class. Complex combinations and international gourmet expertise have given Hong Kong the reputable labels of \"Gourmet Paradise\" and \"World's Fair of Food\"",
@@ -12237,51 +12237,51 @@
         "dishes": [
             {
                 "name": "Chinese steamed eggs",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4572/38815091452_c49ed3a85c_b.jpg"
             },
             {
                 "name": "Dim sum",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/60/179189204_62c9986490_b.jpg"
             },
             {
                 "name": "Char siu",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3201/3087383373_b68e790059_b.jpg"
             },
             {
                 "name": "Barbecued Pork",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/6216/6270410687_f02c23b490_b.jpg"
             },
             {
                 "name": "Roast goose",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7030/6621139883_e6be6a217a_b.jpg"
             },
             {
                 "name": "Rice noodle rolls",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8295/7884987988_019bb94d6b_b.jpg"
             },
             {
                 "name": "Steamed chicken feet",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2852/11393864863_d94780a84a_b.jpg"
             },
             {
                 "name": "White cut chicken",
-                "image_url": ""
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/HK_food_%E7%99%BD%E5%88%87%E9%9B%9E_White_cut_chicken_%E5%A4%9A%E5%A4%9A%E9%A4%90%E5%BB%B3%E7%87%92%E8%85%8A%E9%A3%AF%E5%BA%97_More_%26_More_Restaurant_July-2011.jpg"
             },
             {
                 "name": "Preserved salted duck",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3108/2867036679_ab71307f81_b.jpg"
             },
             {
                 "name": "Tea-smoked duck",
-                "image_url": ""
+                "image_url": "https://media.istockphoto.com/photos/five-spice-duck-picture-id485411561?s=612x612"
             },
             {
                 "name": "Shark fin soup",
-                "image_url": ""
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Chinese_cuisine-Shark_fin_soup-04.jpg"
             },
             {
                 "name": "Sea cucumber",
-                "image_url": ""
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/20190905_185512_Sea_Cucumber_Dish_in_a_Restaurant_in_Zhumadian%2C_Henan%2C_China_anagoria.jpg"
             },
             {
                 "name": "Hainanese Chicken Rice",
@@ -12289,31 +12289,31 @@
             },
             {
                 "name": "Xiao long bao",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2606/4079994732_b49288eca8_b.jpg"
             },
             {
                 "name": "Cha Siu Bao",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7560/15821827481_c03437b07e_b.jpg"
             },
             {
                 "name": "Egg tart",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/1252/1116154392_c439e7d0cd_b.jpg"
             },
             {
                 "name": "Beef fried noodles",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/6157/6206777098_158650536c_b.jpg"
             },
             {
                 "name": "Turnip cakes",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2743/4287532739_19267cd435_b.jpg"
             },
             {
                 "name": "Claypot rice",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3169/2875122676_2a7b3d3810_b.jpg"
             },
             {
                 "name": "Hand-pulled noodles",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2630/3758917970_53c8b9dd34.jpg"
             },
             {
                 "name": "Congee",
@@ -14110,10 +14110,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/akki_rotti_2238.jpg"
             },
             {
-                "name": "Allam Kodi",
-                "image_url": ""
-            },
-            {
                 "name": "Almond And Amaranth Laddu",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/almond_and_amaranth_laddu_5507.jpg"
             },
@@ -14762,14 +14758,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/falafel_606.jpg"
             },
             {
-                "name": "Fatte Bel Lahm",
-                "image_url": ""
-            },
-            {
-                "name": "Fattet Makdous",
-                "image_url": ""
-            },
-            {
                 "name": "Fattoush",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/fattoush_1500.jpg"
             },
@@ -14974,10 +14962,6 @@
             {
                 "name": "Bubur Cha Cha",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bubur_cha_cha_5050.jpg"
-            },
-            {
-                "name": "Budu",
-                "image_url": ""
             }
         ],
         "description": "Malaysian cuisine consists of cooking traditions and practices found in Malaysia, and reflects the multiethnic makeup of its population. The vast majority of Malaysia's population can roughly be divided among three major ethnic groups: Malays, Chinese and Indians. The remainder consists of the indigenous peoples of Sabah and Sarawak in East Malaysia, the Orang Asli of Peninsular Malaysia, the Peranakan and Eurasian creole communities, as well as a significant number of foreign workers and expatriates.\nAs a result of historical migrations, colonisation by foreign powers, and its geographical position within its wider home region, Malaysia's culinary style in the present day is primarily a melange of traditions from its Malay, Chinese, Indian, Indonesian and ethnic Bornean citizens, with heavy to light influences from Thai, Portuguese, Dutch, and British cuisines, to name a few. This resulted in a symphony of flavours, making Malaysian cuisine highly complex and diverse.\nBecause Peninsular Malaysia shares a common history with Singapore, it is common to find versions of the same dish across both sides of the border regardless of place of origin, such as laksa and chicken rice. Also because of their proximity, historic migrations and close ethnic and cultural kinship, Malaysia shares culinary ties with Indonesia, as both nations often share certain dishes, such as satay, rendang and sambal.\nhttps://en.wikipedia.org/wiki/Malaysian_cuisine\nNasi = Rice\nHar = Prawns\nMee = Hokkien = noodles\nRoti = Bread",
@@ -15244,7 +15228,7 @@
             },
             {
                 "name": "Tetrazzini",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/121/307255661_e2c7300a94.jpg"
             },
             {
                 "name": "Uramaki",
@@ -15264,7 +15248,7 @@
             },
             {
                 "name": "Ranch Dressing",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3496/3704985018_9d0751fdbe_b.jpg"
             },
             {
                 "name": "Avocado Toast",
@@ -15554,7 +15538,7 @@
             },
             {
                 "name": "Crab and Calaloo",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3522/3220441018_bcd08de14d_b.jpg"
             },
             {
                 "name": "Curry Chicken",
