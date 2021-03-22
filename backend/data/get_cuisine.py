@@ -126,8 +126,6 @@ def get_world_food_per_cuisine(cuisine):
 
 
 def get_description(cuisine):
-    # import pdb
-    # pdb.set_trace
     options = Options()
     options.headless = True
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)

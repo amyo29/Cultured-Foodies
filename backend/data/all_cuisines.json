@@ -1649,11 +1649,11 @@
             },
             {
                 "name": "Huevos rancheros",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5284/5317589202_3d6ed1ca20_b.jpg"
             },
             {
                 "name": "Jalape\u00f1o poppers",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/1569/24385457263_8f11c468d9_b.jpg"
             }
         ],
         "description": "The cuisine of the Southwestern United States is food styled after the rustic cooking of the Southwestern United States. It comprises a fusion of recipes for things that might have been eaten by Spanish colonial settlers, cowboys, Native Americans, and Mexicans throughout the post-Columbian era; there is, however, a great diversity in this kind of cuisine throughout the Southwestern states.\nSouthwestern cuisine is similar to Mexican cuisine but often involves larger cuts of meat, namely pork and beef, and less use of tripe, brain, and other parts not considered as desirable in the United States. As with Mexican cuisine, Southwestern cuisine is also largely known for its use of spices (particularly the chile, or chili pepper). Recently, several chains of casual dining restaurants specializing in Southwestern cuisine have become popular in the United States.\nNew Mexican cuisine is known for its dedication to the chile (the official 'state question' is 'Red or green?' which refers to the preferred color of chiles), most notably the Hatch chile, named for the city in New Mexico where they are grown. Part of the New Mexican cuisine is smothering each dish with either red chile, green chile or both (mixing of both is referred to as 'Christmas'). And the usage of pork or beef. The New Mexican Cuisine is most popular in the states of New Mexico, Colorado, and Utah. Texas has a version, Tex-Mex cuisine, while Arizona's style of Southwestern cuisine is often called Sonoran, since the Sonoran Desert covers a third of the state.\nhttps://en.wikipedia.org/wiki/Cuisine_of_the_Southwestern_United_States",
@@ -1805,10 +1805,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/harissa_1_4751.jpg"
             },
             {
-                "name": "Herbel",
-                "image_url": ""
-            },
-            {
                 "name": "Kabab Maghdour",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/kabab_maghdour_6171.jpg"
             },
@@ -1943,27 +1939,15 @@
             },
             {
                 "name": "Shrimp remoulade",
-                "image_url": ""
-            },
-            {
-                "name": "Mirliton",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3886/14525308168_e2d8b07cce_b.jpg"
             },
             {
                 "name": "Turtle soup",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2726/4172286279_44e078bc5c_b.jpg"
             },
             {
                 "name": "Dirty rice",
-                "image_url": ""
-            },
-            {
-                "name": "Creole Baked Chicken",
-                "image_url": ""
-            },
-            {
-                "name": "Pompano en Papillote",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5134/5422152806_79d0f50681_b.jpg"
             }
         ],
         "description": "Louisiana Creole cuisine (https://en.wikipedia.org/wiki/Louisiana_Creole_cuisine) is a style of cooking originating in Louisiana, United States, which blends West African, French, Spanish, Amerindian influences, as well as influences from the general cuisine of the Southern United States. Creole cuisine revolves around influences found in Louisiana from populations present in Louisiana before the sale of Louisiana to the United States in the Louisiana Purchase of 1803.",
@@ -2530,10 +2514,6 @@
             {
                 "name": "Abgoosht",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/abgoosht_2636.jpg"
-            },
-            {
-                "name": "Abnabat",
-                "image_url": ""
             },
             {
                 "name": "Affogato",
@@ -3131,27 +3111,15 @@
         "dishes": [
             {
                 "name": "Apple butter",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2446/4073024972_bd2f1e0f1c_b.jpg"
             },
             {
                 "name": "Chicken and Waffles",
-                "image_url": ""
-            },
-            {
-                "name": "Chow-chow",
-                "image_url": ""
-            },
-            {
-                "name": "Potato rolls",
-                "image_url": ""
-            },
-            {
-                "name": "Cup cheese",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4038/5076305757_ca194b361b_b.jpg"
             },
             {
                 "name": "Pot pie",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8070/8232953924_1f2cf1f225_b.jpg"
             },
             {
                 "name": "Sauerbraten",
@@ -3159,19 +3127,11 @@
             },
             {
                 "name": "Dutch baby",
-                "image_url": ""
-            },
-            {
-                "name": "Sugar cookies",
-                "image_url": ""
-            },
-            {
-                "name": "Red beet eggs",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5223/5646658680_cb392c6ee3.jpg"
             },
             {
                 "name": "Shoofly pie",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7288/8807256409_e107ef8241_b.jpg"
             }
         ],
         "description": "Amish cuisine (https://en.wikipedia.org/wiki/Amish#Cuisine) is noted for its simplicity and traditional qualities. Food plays an important part in Amish social life and is served at potlucks, weddings, fundraisers, farewells, and other events. Many Amish foods are sold at markets including pies, preserves, bread mixes, pickled produce, desserts, and canned goods. Many Amish communities have also established restaurants for visitors. Amish meat consumption is similar to the American average though they tend to eat more preserved meat.",
@@ -4336,11 +4296,7 @@
             },
             {
                 "name": "B\u00fan B\u00f2 X\u00e0o",
-                "image_url": ""
-            },
-            {
-                "name": "Bun Cari Ga",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/97/211533700_b79dde765c_b.jpg"
             },
             {
                 "name": "Bun Cha",
@@ -4441,31 +4397,23 @@
         "dishes": [
             {
                 "name": "Kimchi Fries",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2804/5864475585_ab2858ef28_b.jpg"
             },
             {
                 "name": "Pork Belly Steam Buns",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5502/10064961064_642783a263_b.jpg"
             },
             {
                 "name": "Snapping Turtle Soup",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3041/3730898649_9a0df52702_b.jpg"
             },
             {
                 "name": "Pok Pok Catfish Larb",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8145/6975636234_cb4043a420_b.jpg"
             },
             {
                 "name": "California Roll",
-                "image_url": ""
-            },
-            {
-                "name": "Lentil Miso Soup",
-                "image_url": ""
-            },
-            {
-                "name": "Banana Mochi Cake",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/164/330530687_4830decda1.jpg"
             }
         ],
         "description": "New American cuisine (https://en.wikipedia.org/wiki/New_American_cuisine#:~:text=New%20American%20cuisine%20is%20generally,use%20of%20seasoning%20and%20sauces.), also known as Modern American cuisine, or Contemporary American cuisine, is the wave of modernized cooking predominantly served at upscale fine dining restaurants in the United States, originating in the 1980s. New American cuisine is generally a type of fusion cuisine which assimilates flavors from the melting pot of traditional American cooking techniques mixed with foreign and sometimes molecular gastronomy components.",
@@ -4571,10 +4519,6 @@
             {
                 "name": "Bozbash",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bozbash_3871.jpg"
-            },
-            {
-                "name": "Byorek",
-                "image_url": ""
             },
             {
                 "name": "Ghapama",
@@ -5029,27 +4973,15 @@
         "dishes": [
             {
                 "name": "Arroz Dulce",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2424/3689050013_723caaa6f1_b.jpg"
             },
             {
                 "name": "Atole",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/atole_4483.jpg"
             },
             {
-                "name": "Biscochito",
-                "image_url": ""
-            },
-            {
-                "name": "Carne seca",
-                "image_url": ""
-            },
-            {
-                "name": "Chicharrones",
-                "image_url": ""
-            },
-            {
                 "name": "Chile con queso",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3893/14604895108_6c658232d7_b.jpg"
             },
             {
                 "name": "Tamale",
