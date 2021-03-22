@@ -1538,7 +1538,188 @@
             }
         ],
         "description": "The three main cuisines of Scandinavia are the Norwegian, the Danish and the Swedish.\nNorwegian \u2013 the cuisine is characterized by a sense of practicality and economy. Norwegians love their meat, whether it is Pork, Veal or fish meat, and you will notice that most of their dishes are concentrated on this main ingredient. The vast wild areas of Norway, and the abundance of fish and game, makes such natural food resources a top pick for many traditional dishes. Norwegian cuisine uses elements from various cooking traditions borrowed from their neighbors and developed from their own traditional dishes. The simplicity of the cuisine does not imply a lack of taste, but it does make life easier for the cook. Smoked salmon is probably the most famous type of food product related to Norway.\nDanish \u2013 the cuisine of Denmark is characterized by high levels of meat and animal fat and a rather low level of plants and vegetables. The long winters from the Scandinavian Peninsula shaped the face of the Danish cuisine. Although agriculture is well developed, due to the climate, game and fish are often preferred. Fresh vegetables are rare in the traditional Danish recipes, and many dishes rely on seasonal fruits or vegetables. On the other hand, the climate enables lengthy meet preservation, so smoked meat is one of the most frequently used ingredients in the Danish cuisine. The Danish cuisine is rather conservative, and the numerous islands that form Denmark helped keep the traditional, conservative cooking styles alive until modern times.\nSweden \u2013 It is considered rude not to finish the food you have on the plate, mainly because, in many cases, you serve yourself and you are responsible for the amount of food you place on your plate. The meals are not very elaborate and many will find them scarce in vegetables. Traditional recipes were influenced by the lack of plants due to the long Swedish winters and many modern dishes still include only small amounts of vegetables. rutabaga is a native turnip that was among the most popular plant types in Swedish cooking until it got replaced by the Potato. In both major inhabited regions of Sweden \u2013 Gothenburg on the west coast and Stockholm on the east \u2013 the abundance of fish, mainly Herring, had its influence on traditional cooking. Although the salted Herring, which was used as trading goods hundreds of years ago, is not part of modern Swedish dishes, we will still find it in several cookbooks as one of the national food elements.\nhttps://recipes.fandom.com/wiki/Scandinavian_Cuisine",
-        "countryData": "no country or multiple countries"
+        "countryData": [
+            {
+                "name": "Norway",
+                "topLevelDomain": [".no"],
+                "alpha2Code": "NO",
+                "alpha3Code": "NOR",
+                "callingCodes": ["47"],
+                "capital": "Oslo",
+                "altSpellings": [
+                  "NO",
+                  "Norge",
+                  "Noreg",
+                  "Kingdom of Norway",
+                  "Kongeriket Norge",
+                  "Kongeriket Noreg"
+                ],
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 5223256,
+                "latlng": [62.0, 10.0],
+                "demonym": "Norwegian",
+                "area": 323802.0,
+                "gini": 25.8,
+                "timezones": ["UTC+01:00"],
+                "borders": ["FIN", "SWE", "RUS"],
+                "nativeName": "Norge",
+                "numericCode": "578",
+                "currencies": [
+                  { "code": "NOK", "name": "Norwegian krone", "symbol": "kr" }
+                ],
+                "languages": [
+                  {
+                    "iso639_1": "no",
+                    "iso639_2": "nor",
+                    "name": "Norwegian",
+                    "nativeName": "Norsk"
+                  },
+                  {
+                    "iso639_1": "nb",
+                    "iso639_2": "nob",
+                    "name": "Norwegian Bokm\u00e5l",
+                    "nativeName": "Norsk bokm\u00e5l"
+                  },
+                  {
+                    "iso639_1": "nn",
+                    "iso639_2": "nno",
+                    "name": "Norwegian Nynorsk",
+                    "nativeName": "Norsk nynorsk"
+                  }
+                ],
+                "translations": {
+                  "de": "Norwegen",
+                  "es": "Noruega",
+                  "fr": "Norv\u00e8ge",
+                  "ja": "\u30ce\u30eb\u30a6\u30a7\u30fc",
+                  "it": "Norvegia",
+                  "br": "Noruega",
+                  "pt": "Noruega",
+                  "nl": "Noorwegen",
+                  "hr": "Norve\u0161ka",
+                  "fa": "\u0646\u0631\u0648\u0698"
+                },
+                "flag": "https://restcountries.eu/data/nor.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "EFTA",
+                    "name": "European Free Trade Association",
+                    "otherAcronyms": [],
+                    "otherNames": []
+                  }
+                ],
+                "cioc": "NOR"
+              },
+              {
+                "name": "Denmark",
+                "topLevelDomain": [".dk"],
+                "alpha2Code": "DK",
+                "alpha3Code": "DNK",
+                "callingCodes": ["45"],
+                "capital": "Copenhagen",
+                "altSpellings": [
+                  "DK",
+                  "Danmark",
+                  "Kingdom of Denmark",
+                  "Kongeriget Danmark"
+                ],
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 5717014,
+                "latlng": [56.0, 10.0],
+                "demonym": "Danish",
+                "area": 43094.0,
+                "gini": 24.0,
+                "timezones": ["UTC-04:00", "UTC-03:00", "UTC-01:00", "UTC", "UTC+01:00"],
+                "borders": ["DEU"],
+                "nativeName": "Danmark",
+                "numericCode": "208",
+                "currencies": [{ "code": "DKK", "name": "Danish krone", "symbol": "kr" }],
+                "languages": [
+                  {
+                    "iso639_1": "da",
+                    "iso639_2": "dan",
+                    "name": "Danish",
+                    "nativeName": "dansk"
+                  }
+                ],
+                "translations": {
+                  "de": "D\u00e4nemark",
+                  "es": "Dinamarca",
+                  "fr": "Danemark",
+                  "ja": "\u30c7\u30f3\u30de\u30fc\u30af",
+                  "it": "Danimarca",
+                  "br": "Dinamarca",
+                  "pt": "Dinamarca",
+                  "nl": "Denemarken",
+                  "hr": "Danska",
+                  "fa": "\u062f\u0627\u0646\u0645\u0627\u0631\u06a9"
+                },
+                "flag": "https://restcountries.eu/data/dnk.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "EU",
+                    "name": "European Union",
+                    "otherAcronyms": [],
+                    "otherNames": []
+                  }
+                ],
+                "cioc": "DEN"
+              },
+              {
+                "name": "Sweden",
+                "topLevelDomain": [".se"],
+                "alpha2Code": "SE",
+                "alpha3Code": "SWE",
+                "callingCodes": ["46"],
+                "capital": "Stockholm",
+                "altSpellings": ["SE", "Kingdom of Sweden", "Konungariket Sverige"],
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 9894888,
+                "latlng": [62.0, 15.0],
+                "demonym": "Swedish",
+                "area": 450295.0,
+                "gini": 25.0,
+                "timezones": ["UTC+01:00"],
+                "borders": ["FIN", "NOR"],
+                "nativeName": "Sverige",
+                "numericCode": "752",
+                "currencies": [{ "code": "SEK", "name": "Swedish krona", "symbol": "kr" }],
+                "languages": [
+                  {
+                    "iso639_1": "sv",
+                    "iso639_2": "swe",
+                    "name": "Swedish",
+                    "nativeName": "svenska"
+                  }
+                ],
+                "translations": {
+                  "de": "Schweden",
+                  "es": "Suecia",
+                  "fr": "Su\u00e8de",
+                  "ja": "\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3",
+                  "it": "Svezia",
+                  "br": "Su\u00e9cia",
+                  "pt": "Su\u00e9cia",
+                  "nl": "Zweden",
+                  "hr": "\u0160vedska",
+                  "fa": "\u0633\u0648\u0626\u062f"
+                },
+                "flag": "https://restcountries.eu/data/swe.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "EU",
+                    "name": "European Union",
+                    "otherAcronyms": [],
+                    "otherNames": []
+                  }
+                ],
+                "cioc": "SWE"
+              }
+        ]
+
     },
     {
         "name": "Southwestern",
@@ -12898,7 +13079,7 @@
     },
     {
         "name": "Scottish",
-        "country": "Scotland",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
         "dishes": [
             {
                 "name": "Abernethy Biscuit",
@@ -12982,7 +13163,86 @@
             }
         ],
         "description": "Scottish cuisine is the specific set of cooking traditions, practices and cuisines associated with Scotland. It has distinctive attributes and recipes of its own, but shares much with wider British and European cuisine as a result of local and foreign influences, both ancient and modern. Traditional Scottish dishes exist alongside international foodstuffs brought about by migration.\nScotland's natural larder of game, dairy products, fish, fruit, and vegetables is the chief factor in traditional Scots cooking, with a high reliance on simplicity and a lack of spices from abroad, as these were historically rare and expensive.\nhttps://en.wikipedia.org/wiki/Scottish_cuisineScottish people are very serious for health. Always they are very conscious for food. They think about colour, flavor, taste, fresh, smell. They have many traditional dishes you should try.Scotland has a wide range of different food. Most foods contain meat, beans, cheese, etc. Below is a list of the most traditional and popular dishes you must try from Scottish cuisine.These are the comfort dishes loved in Scotland.These are the comfort dishes loved in Scotland.",
-        "countryData": "no country or multiple countries"
+        "countryData": {
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "topLevelDomain": [
+                ".uk"
+            ],
+            "alpha2Code": "GB",
+            "alpha3Code": "GBR",
+            "callingCodes": [
+                "44"
+            ],
+            "capital": "London",
+            "altSpellings": [
+                "GB",
+                "UK",
+                "Great Britain"
+            ],
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "population": 65110000,
+            "latlng": [
+                54.0,
+                -2.0
+            ],
+            "demonym": "British",
+            "area": 242900.0,
+            "gini": 34.0,
+            "timezones": [
+                "UTC-08:00",
+                "UTC-05:00",
+                "UTC-04:00",
+                "UTC-03:00",
+                "UTC-02:00",
+                "UTC",
+                "UTC+01:00",
+                "UTC+02:00",
+                "UTC+06:00"
+            ],
+            "borders": [
+                "IRL"
+            ],
+            "nativeName": "United Kingdom",
+            "numericCode": "826",
+            "currencies": [
+                {
+                    "code": "GBP",
+                    "name": "British pound",
+                    "symbol": "\u00a3"
+                }
+            ],
+            "languages": [
+                {
+                    "iso639_1": "en",
+                    "iso639_2": "eng",
+                    "name": "English",
+                    "nativeName": "English"
+                }
+            ],
+            "translations": {
+                "de": "Vereinigtes K\u00f6nigreich",
+                "es": "Reino Unido",
+                "fr": "Royaume-Uni",
+                "ja": "\u30a4\u30ae\u30ea\u30b9",
+                "it": "Regno Unito",
+                "br": "Reino Unido",
+                "pt": "Reino Unido",
+                "nl": "Verenigd Koninkrijk",
+                "hr": "Ujedinjeno Kraljevstvo",
+                "fa": "\u0628\u0631\u06cc\u062a\u0627\u0646\u06cc\u0627\u06cc \u06a9\u0628\u06cc\u0631 \u0648 \u0627\u06cc\u0631\u0644\u0646\u062f \u0634\u0645\u0627\u0644\u06cc"
+            },
+            "flag": "https://restcountries.eu/data/gbr.svg",
+            "regionalBlocs": [
+                {
+                    "acronym": "EU",
+                    "name": "European Union",
+                    "otherAcronyms": [],
+                    "otherNames": []
+                }
+            ],
+            "cioc": "GBR"
+        }
     },
     {
         "name": "Italian",
@@ -14912,7 +15172,7 @@
     },
     {
         "name": "Tibetan",
-        "country": "Tibet",
+        "country": "China",
         "dishes": [
             {
                 "name": "Momo",
@@ -14932,7 +15192,89 @@
             }
         ],
         "description": "Tibetan cuisine includes the culinary traditions and practices of Tibet and its peoples, many of whom reside in India and Nepal. It reflects the Tibetan landscape of mountains and plateaus and includes influences from neighbors (including other countries India and Nepal). It is known for its use of noodles, goat, yak, mutton, dumplings, cheese (often from yak or goat milk), butter (also from animals adapted to the Tibetan climate) and soups. Grain, traditionally mostly barley, is the staple food of Tibetans. Meat and dairy products are an indispensable addition. Rice is only cultivated in the lower regions situated in the south of Tibet and is imported mainly. Vegetables and fruits were eaten rarely in Central Tibet until quite recently, because their cultivation was very difficult. Nowadays it is possible to grow these crops due to the construction of greenhouses. Following the different vegetative conditions, the Tibetan cuisine has a big variety.",
-        "countryData": "no country or multiple countries"
+        "countryData": {
+            "name": "China",
+            "topLevelDomain": [
+                ".cn"
+            ],
+            "alpha2Code": "CN",
+            "alpha3Code": "CHN",
+            "callingCodes": [
+                "86"
+            ],
+            "capital": "Beijing",
+            "altSpellings": [
+                "CN",
+                "Zh\u014dnggu\u00f3",
+                "Zhongguo",
+                "Zhonghua",
+                "People's Republic of China",
+                "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd",
+                "Zh\u014dnghu\u00e1 R\u00e9nm\u00edn G\u00f2ngh\u00e9gu\u00f3"
+            ],
+            "region": "Asia",
+            "subregion": "Eastern Asia",
+            "population": 1377422166,
+            "latlng": [
+                35.0,
+                105.0
+            ],
+            "demonym": "Chinese",
+            "area": 9640011.0,
+            "gini": 47.0,
+            "timezones": [
+                "UTC+08:00"
+            ],
+            "borders": [
+                "AFG",
+                "BTN",
+                "MMR",
+                "HKG",
+                "IND",
+                "KAZ",
+                "PRK",
+                "KGZ",
+                "LAO",
+                "MAC",
+                "MNG",
+                "PAK",
+                "RUS",
+                "TJK",
+                "VNM"
+            ],
+            "nativeName": "\u4e2d\u56fd",
+            "numericCode": "156",
+            "currencies": [
+                {
+                    "code": "CNY",
+                    "name": "Chinese yuan",
+                    "symbol": "\u00a5"
+                }
+            ],
+            "languages": [
+                {
+                    "iso639_1": "zh",
+                    "iso639_2": "zho",
+                    "name": "Chinese",
+                    "nativeName": "\u4e2d\u6587 (Zh\u014dngw\u00e9n)"
+                }
+            ],
+            "translations": {
+                "de": "China",
+                "es": "China",
+                "fr": "Chine",
+                "ja": "\u4e2d\u56fd",
+                "it": "Cina",
+                "br": "China",
+                "pt": "China",
+                "nl": "China",
+                "hr": "Kina",
+                "fa": "\u0686\u06cc\u0646"
+            },
+            "flag": "https://restcountries.eu/data/chn.svg",
+            "regionalBlocs": [],
+            "cioc": "CHN"
+        }
     },
     {
         "name": "Southern",
@@ -15073,7 +15415,7 @@
     },
     {
         "name": "Caribbean",
-        "country": "Belize",
+        "country": "Cuba, Haiti, Dominican Republic, Puerto Rico, Jamaica",
         "dishes": [
             {
                 "name": "Asham",
@@ -15121,6 +15463,292 @@
             }
         ],
         "description": "Caribbean cuisine is a fusion of African, Creole, Cajun, Amerindian, European, Latin American, Indian/South Asian, Middle Eastern, and Chinese. These traditions were brought from many different countries when they came to the Caribbean. In addition, the population has created styles that are unique to the region.",
-        "countryData": "no country or multiple countries"
+        "countryData":[
+            {
+                "name": "Cuba",
+                "topLevelDomain": [".cu"],
+                "alpha2Code": "CU",
+                "alpha3Code": "CUB",
+                "callingCodes": ["53"],
+                "capital": "Havana",
+                "altSpellings": ["CU", "Republic of Cuba", "Rep\u00fablica de Cuba"],
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 11239004,
+                "latlng": [21.5, -80.0],
+                "demonym": "Cuban",
+                "area": 109884.0,
+                "gini": null,
+                "timezones": ["UTC-05:00"],
+                "borders": [],
+                "nativeName": "Cuba",
+                "numericCode": "192",
+                "currencies": [
+                  { "code": "CUC", "name": "Cuban convertible peso", "symbol": "$" },
+                  { "code": "CUP", "name": "Cuban peso", "symbol": "$" }
+                ],
+                "languages": [
+                  {
+                    "iso639_1": "es",
+                    "iso639_2": "spa",
+                    "name": "Spanish",
+                    "nativeName": "Espa\u00f1ol"
+                  }
+                ],
+                "translations": {
+                  "de": "Kuba",
+                  "es": "Cuba",
+                  "fr": "Cuba",
+                  "ja": "\u30ad\u30e5\u30fc\u30d0",
+                  "it": "Cuba",
+                  "br": "Cuba",
+                  "pt": "Cuba",
+                  "nl": "Cuba",
+                  "hr": "Kuba",
+                  "fa": "\u06a9\u0648\u0628\u0627"
+                },
+                "flag": "https://restcountries.eu/data/cub.svg",
+                "regionalBlocs": [],
+                "cioc": "CUB"
+              },
+              {
+                "name": "Haiti",
+                "topLevelDomain": [".ht"],
+                "alpha2Code": "HT",
+                "alpha3Code": "HTI",
+                "callingCodes": ["509"],
+                "capital": "Port-au-Prince",
+                "altSpellings": [
+                  "HT",
+                  "Republic of Haiti",
+                  "R\u00e9publique d'Ha\u00efti",
+                  "Repiblik Ayiti"
+                ],
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 11078033,
+                "latlng": [19.0, -72.41666666],
+                "demonym": "Haitian",
+                "area": 27750.0,
+                "gini": 59.2,
+                "timezones": ["UTC-05:00"],
+                "borders": ["DOM"],
+                "nativeName": "Ha\u00efti",
+                "numericCode": "332",
+                "currencies": [{ "code": "HTG", "name": "Haitian gourde", "symbol": "G" }],
+                "languages": [
+                  {
+                    "iso639_1": "fr",
+                    "iso639_2": "fra",
+                    "name": "French",
+                    "nativeName": "fran\u00e7ais"
+                  },
+                  {
+                    "iso639_1": "ht",
+                    "iso639_2": "hat",
+                    "name": "Haitian",
+                    "nativeName": "Krey\u00f2l ayisyen"
+                  }
+                ],
+                "translations": {
+                  "de": "Haiti",
+                  "es": "Haiti",
+                  "fr": "Ha\u00efti",
+                  "ja": "\u30cf\u30a4\u30c1",
+                  "it": "Haiti",
+                  "br": "Haiti",
+                  "pt": "Haiti",
+                  "nl": "Ha\u00efti",
+                  "hr": "Haiti",
+                  "fa": "\u0647\u0627\u0626\u06cc\u062a\u06cc"
+                },
+                "flag": "https://restcountries.eu/data/hti.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "CARICOM",
+                    "name": "Caribbean Community",
+                    "otherAcronyms": [],
+                    "otherNames": [
+                      "Comunidad del Caribe",
+                      "Communaut\u00e9 Carib\u00e9enne",
+                      "Caribische Gemeenschap"
+                    ]
+                  }
+                ],
+                "cioc": "HAI"
+              },
+              {
+                "name": "Dominican Republic",
+                "topLevelDomain": [".do"],
+                "alpha2Code": "DO",
+                "alpha3Code": "DOM",
+                "callingCodes": ["1809", "1829", "1849"],
+                "capital": "Santo Domingo",
+                "altSpellings": ["DO"],
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 10075045,
+                "latlng": [19.0, -70.66666666],
+                "demonym": "Dominican",
+                "area": 48671.0,
+                "gini": 47.2,
+                "timezones": ["UTC-04:00"],
+                "borders": ["HTI"],
+                "nativeName": "Rep\u00fablica Dominicana",
+                "numericCode": "214",
+                "currencies": [{ "code": "DOP", "name": "Dominican peso", "symbol": "$" }],
+                "languages": [
+                  {
+                    "iso639_1": "es",
+                    "iso639_2": "spa",
+                    "name": "Spanish",
+                    "nativeName": "Espa\u00f1ol"
+                  }
+                ],
+                "translations": {
+                  "de": "Dominikanische Republik",
+                  "es": "Rep\u00fablica Dominicana",
+                  "fr": "R\u00e9publique dominicaine",
+                  "ja": "\u30c9\u30df\u30cb\u30ab\u5171\u548c\u56fd",
+                  "it": "Repubblica Dominicana",
+                  "br": "Rep\u00fablica Dominicana",
+                  "pt": "Rep\u00fablica Dominicana",
+                  "nl": "Dominicaanse Republiek",
+                  "hr": "Dominikanska Republika",
+                  "fa": "\u062c\u0645\u0647\u0648\u0631\u06cc \u062f\u0648\u0645\u06cc\u0646\u06cc\u06a9\u0646"
+                },
+                "flag": "https://restcountries.eu/data/dom.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "CARICOM",
+                    "name": "Caribbean Community",
+                    "otherAcronyms": [],
+                    "otherNames": [
+                      "Comunidad del Caribe",
+                      "Communaut\u00e9 Carib\u00e9enne",
+                      "Caribische Gemeenschap"
+                    ]
+                  },
+                  {
+                    "acronym": "CAIS",
+                    "name": "Central American Integration System",
+                    "otherAcronyms": ["SICA"],
+                    "otherNames": ["Sistema de la Integraci\u00f3n Centroamericana,"]
+                  }
+                ],
+                "cioc": "DOM"
+              },
+              {
+                "name": "Puerto Rico",
+                "topLevelDomain": [".pr"],
+                "alpha2Code": "PR",
+                "alpha3Code": "PRI",
+                "callingCodes": ["1787", "1939"],
+                "capital": "San Juan",
+                "altSpellings": [
+                  "PR",
+                  "Commonwealth of Puerto Rico",
+                  "Estado Libre Asociado de Puerto Rico"
+                ],
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 3474182,
+                "latlng": [18.25, -66.5],
+                "demonym": "Puerto Rican",
+                "area": 8870.0,
+                "gini": null,
+                "timezones": ["UTC-04:00"],
+                "borders": [],
+                "nativeName": "Puerto Rico",
+                "numericCode": "630",
+                "currencies": [
+                  { "code": "USD", "name": "United States dollar", "symbol": "$" }
+                ],
+                "languages": [
+                  {
+                    "iso639_1": "es",
+                    "iso639_2": "spa",
+                    "name": "Spanish",
+                    "nativeName": "Espa\u00f1ol"
+                  },
+                  {
+                    "iso639_1": "en",
+                    "iso639_2": "eng",
+                    "name": "English",
+                    "nativeName": "English"
+                  }
+                ],
+                "translations": {
+                  "de": "Puerto Rico",
+                  "es": "Puerto Rico",
+                  "fr": "Porto Rico",
+                  "ja": "\u30d7\u30a8\u30eb\u30c8\u30ea\u30b3",
+                  "it": "Porto Rico",
+                  "br": "Porto Rico",
+                  "pt": "Porto Rico",
+                  "nl": "Puerto Rico",
+                  "hr": "Portoriko",
+                  "fa": "\u067e\u0648\u0631\u062a\u0648 \u0631\u06cc\u06a9\u0648"
+                },
+                "flag": "https://restcountries.eu/data/pri.svg",
+                "regionalBlocs": [],
+                "cioc": "PUR"
+              },
+              {
+                "name": "Jamaica",
+                "topLevelDomain": [".jm"],
+                "alpha2Code": "JM",
+                "alpha3Code": "JAM",
+                "callingCodes": ["1876"],
+                "capital": "Kingston",
+                "altSpellings": ["JM"],
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 2723246,
+                "latlng": [18.25, -77.5],
+                "demonym": "Jamaican",
+                "area": 10991.0,
+                "gini": 45.5,
+                "timezones": ["UTC-05:00"],
+                "borders": [],
+                "nativeName": "Jamaica",
+                "numericCode": "388",
+                "currencies": [{ "code": "JMD", "name": "Jamaican dollar", "symbol": "$" }],
+                "languages": [
+                  {
+                    "iso639_1": "en",
+                    "iso639_2": "eng",
+                    "name": "English",
+                    "nativeName": "English"
+                  }
+                ],
+                "translations": {
+                  "de": "Jamaika",
+                  "es": "Jamaica",
+                  "fr": "Jama\u00efque",
+                  "ja": "\u30b8\u30e3\u30de\u30a4\u30ab",
+                  "it": "Giamaica",
+                  "br": "Jamaica",
+                  "pt": "Jamaica",
+                  "nl": "Jamaica",
+                  "hr": "Jamajka",
+                  "fa": "\u062c\u0627\u0645\u0627\u0626\u06cc\u06a9\u0627"
+                },
+                "flag": "https://restcountries.eu/data/jam.svg",
+                "regionalBlocs": [
+                  {
+                    "acronym": "CARICOM",
+                    "name": "Caribbean Community",
+                    "otherAcronyms": [],
+                    "otherNames": [
+                      "Comunidad del Caribe",
+                      "Communaut\u00e9 Carib\u00e9enne",
+                      "Caribische Gemeenschap"
+                    ]
+                  }
+                ],
+                "cioc": "JAM"
+              }
+        ]
     }
 ]
