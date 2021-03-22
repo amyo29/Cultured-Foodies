@@ -4985,11 +4985,11 @@
             },
             {
                 "name": "Tamale",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3060/2770081854_e487e479e4_b.jpg"
             },
             {
                 "name": "Quesadilla",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8505/8436108109_8ba785924e_b.jpg"
             },
             {
                 "name": "Frito Pie",
@@ -4997,7 +4997,7 @@
             },
             {
                 "name": "Flauta",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7129/7030816493_03400dd36d_b.jpg"
             },
             {
                 "name": "Flan",
@@ -5008,8 +5008,8 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/sopaipilla_2330.jpg"
             },
             {
-                "name": "Posole",
-                "image_url": ""
+                "name": "Pozole",
+                "image_url": "https://live.staticflickr.com/7032/6513765861_2d86dc470e_b.jpg"
             }
         ],
         "description": "New Mexican cuisine is the cuisine of the Southwestern US state of New Mexico, the region is primarily known for its fusion of Pueblo Native American with Hispano Spanish and Mexican cuisine originating in Nuevo M\u00e9xico. This cuisine had adaptations and influences throughout its history, including early on from the nearby Apache, Navajo, and throughout New Spain and the Spanish Empire, also from French, Italian, Mediterranean, Portuguese cuisine, and European caf\u00e9s, furthermore during the American territorial phase from cowboy chuckwagons and Western saloons, additionally after statehood from Route 66 American diners, fast food restaurants, and global cuisine. Even so, New Mexican cuisine developed in fairly isolated circumstances, which has allowed it to maintain its indigenous, Spanish, and Mexican identity, and is therefore not like any other Latin food originating in the contiguous United States.",
@@ -6581,7 +6581,7 @@
             },
             {
                 "name": "Anju",
-                "image_url": ""
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Korean.cuisine-Anju-nogari.and.nuts.jpg"
             },
             {
                 "name": "Banchan",
@@ -6731,8 +6731,8 @@
         "country": "Nepal",
         "dishes": [
             {
-                "name": "Baji",
-                "image_url": ""
+                "name": "Bhaji",
+                "image_url": "https://live.staticflickr.com/3344/3183238128_81af44b754_b.jpg"
             },
             {
                 "name": "Chaku",
@@ -6741,10 +6741,6 @@
             {
                 "name": "Chhurpi",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/chhurpi_1786.jpg"
-            },
-            {
-                "name": "Chhurpi Soup",
-                "image_url": ""
             },
             {
                 "name": "Choila",
@@ -6920,7 +6916,7 @@
             },
             {
                 "name": "Bayon Beer",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/89/251361573_2f4cfcb2ac_b.jpg"
             },
             {
                 "name": "Bok Lahong",
@@ -6965,10 +6961,6 @@
             {
                 "name": "Khmer Red Curry",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/khmer_red_curry_1334.jpg"
-            },
-            {
-                "name": "Klang Beer",
-                "image_url": ""
             }
         ],
         "description": "Traditional cuisine of the people of Cambodia. Average meals typically consists of more than one dish and ideally contrasts flavours, textures and temperatures within the meal using plenty of herbs, leaves, pickled vegetables, dipping sauces, edible flowers and other garnishes and condiments.\nThe staple food for Cambodians is rice. Today rice is consumed by most Cambodians daily and with all meals, using a great number of cooking styles and techniques. There are hundreds of varieties of indigenous Khmer rice, from the fragrant jasmine-scented malis rice to countless types of wild, brown and sticky rice. Sticky rice is most often consumed as a dessert, often with slices of tropical fruit like mango or durian and coconut milk.\nRice is eaten throughout the day in the form of street-side snacks, such as deep-fried rice cakes with chives and spinach, for breakfast, as in Cambodia's famous rice noodle soup kuyteav or rice porridge, and in many desserts. Plain white rice is served with nearly every family meal, typically served with grilled freshwater fish, a samlor or soup, and an assortment of seasonal herbs, salad leaves and vegetables.Common street food you normally find on the streets of Cambodia",
@@ -8435,10 +8427,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/danish_pastry_4624.jpg"
             },
             {
-                "name": "Denmark vs France",
-                "image_url": ""
-            },
-            {
                 "name": "Elephant Beer",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/elephant_beer_4775.jpg"
             },
@@ -8726,31 +8714,23 @@
             },
             {
                 "name": "Masala Channa",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/87/245247963_55a5fa046f_b.jpg"
             },
             {
                 "name": "Dal Makhani",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/dal_makhani_329.jpg"
             },
             {
-                "name": "Machchli Amritsari",
-                "image_url": ""
-            },
-            {
                 "name": "Dhaba Dal",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5134/30065852941_76d1d0a157_b.jpg"
             },
             {
                 "name": "Paneer Tikka",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/paneer_tikka_6599.jpg"
             },
             {
-                "name": "Murgh Malaiwala",
-                "image_url": ""
-            },
-            {
                 "name": "Amritsari Kulcha",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/2829/9372107453_e48b085694_b.jpg"
             }
         ],
         "description": "Punjabi cuisine is a culinary style originating in the Punjab, a region in the northern part of the Indian subcontinent, which is now divided in an Indian part and a Pakistani part. This cuisine has a rich tradition of many distinct and local ways of cooking. One is a special form of tandoori cooking that is now famous in other parts of India, UK, Canada, Hong Kong and in many parts of the world. The local cuisine of Punjab is heavily influenced by the agriculture and farming lifestyle prevalent from the times of the ancient Indus Valley Civilization. Locally grown staple foods form the major part of the local cuisine. Distinctively Punjabi cuisine is known for its rich, buttery flavours along with the extensive vegetarian and meat dishes. Main dishes include sarhon d\u0101 sa\u00e2g (a stew whose main ingredient is mustard greens) and makki di roti (flatbreads made with cornmeal). https://en.wikipedia.org/wiki/Punjabi_cuisine",
@@ -9023,10 +9003,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/cazuela_752.jpg"
             },
             {
-                "name": "Cazuela Nogada",
-                "image_url": ""
-            },
-            {
                 "name": "Chacarero",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/chacarero_3351.jpg"
             },
@@ -9041,10 +9017,6 @@
             {
                 "name": "Chapalele",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/chapalele_2320.jpg"
-            },
-            {
-                "name": "Charqui De Caballo",
-                "image_url": ""
             },
             {
                 "name": "Chilenitos",
@@ -9171,7 +9143,7 @@
         "dishes": [
             {
                 "name": "Crawfish/shrimp boil",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3541/3453999513_93992ce2ea_b.jpg"
             },
             {
                 "name": "Jambalaya",
@@ -9183,19 +9155,15 @@
             },
             {
                 "name": "Po\u2019 Boy Sandwich",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7378/16406236629_2986230ded_b.jpg"
             },
             {
                 "name": "Maque choux",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4036/4585702382_3d0029b863_b.jpg"
             },
             {
                 "name": "Pain perdu",
-                "image_url": ""
-            },
-            {
-                "name": "Boudin",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3851/33411586840_24e1d5b640_b.jpg"
             }
         ],
         "description": "ajun cuisine (French: Cuisine cadienne, [k\u0265izin kad\u0292\u00e6\u0303n]), (Spanish: Cocina acadia) is a style of cooking developed by the Cajun - Acadians who were deported from Acadia to Louisiana during the 18th century and who incorporated West African, French and Spanish cooking techniques into their original cuisine. Cajun cuisine is sometimes referred to as a 'rustic cuisine', meaning that it is based on locally available ingredients and that preparation is relatively simple. An authentic Cajun meal is usually a three-pot affair, with one pot dedicated to the main dish, one dedicated to steamed rice, specially made sausages, or some seafood dish, and the third containing whatever vegetable is plentiful or available. Crawfish, shrimp, and andouille sausage are staple meats used in a variety of dishes. The aromatic vegetables green bell pepper (piment doux), onion, and celery are called \"the trinity\" by Cajun chefs in Cajun and Louisiana Creole cuisines. https://en.wikipedia.org/wiki/Cajun_cuisine",
@@ -9465,10 +9433,6 @@
             {
                 "name": "Cabidela",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/cabidela_2087.jpg"
-            },
-            {
-                "name": "Cachorro",
-                "image_url": ""
             },
             {
                 "name": "Caldo Verde",
@@ -9855,10 +9819,6 @@
         "country": "Myanmar",
         "dishes": [
             {
-                "name": "Burmese Biryani",
-                "image_url": ""
-            },
-            {
                 "name": "Burmese Khowsuey",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/burmese_khowsuey_1703.jpg"
             },
@@ -9995,40 +9955,36 @@
         "country": "United States of America",
         "dishes": [
             {
-                "name": "Fatback",
-                "image_url": ""
-            },
-            {
                 "name": "Fried Chicken",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/fried_chicken_253.jpg"
             },
             {
                 "name": "Fried Fish",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3266/3199200846_e421cfdf2d_b.jpg"
             },
             {
                 "name": "Ham hocks",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/197/510281703_740fd52ee0.jpg"
             },
             {
                 "name": "Hog Jowl",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/38/83913088_6d19f6de2a_b.jpg"
             },
             {
                 "name": "Hog maw",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4055/4581448703_cebbe64b89_b.jpg"
             },
             {
                 "name": "Offal",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3032/2449126252_0e0f475c2c_b.jpg"
             },
             {
                 "name": "Ox tail",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4002/4434576648_f7409955de_b.jpg"
             },
             {
                 "name": "Pork Ribs",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/74/223729056_eea6fb4908_b.jpg"
             },
             {
                 "name": "Sweet Potato Pie",
@@ -10428,10 +10384,6 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/cifantuan_2701.jpg"
             },
             {
-                "name": "Curry Fishball",
-                "image_url": ""
-            },
-            {
                 "name": "Egg Tart",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/egg_tart_2150.jpg"
             },
@@ -10490,14 +10442,6 @@
             {
                 "name": "Sweet Potato Soup",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/sweet_potato_soup_2353.jpg"
-            },
-            {
-                "name": "Tofu pudding",
-                "image_url": ""
-            },
-            {
-                "name": "Tong yuen",
-                "image_url": ""
             }
         ],
         "description": "Hong Kong cuisine is mainly influenced by Cantonese cuisine, non-Cantonese Chinese cuisine (especially Teochew, and Hakka, Hokkien and the Jiangsu & Zhejiang), the Western world, Japan, and Southeast Asia, due to Hong Kong's past as a British colony and long history of being an international city of commerce. From the roadside stalls to the most upscale restaurants, Hong Kong provides an unlimited variety of food in every class. Complex combinations and international gourmet expertise have given Hong Kong the reputable labels of \"Gourmet Paradise\" and \"World's Fair of Food\"",
@@ -10591,35 +10535,35 @@
         "dishes": [
             {
                 "name": "Ants climbing a tree",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4008/4686639644_84b14fbac1_b.jpg"
             },
             {
                 "name": "Bon bon chicken",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/42/77078607_7ea23f6c41.jpg"
             },
             {
                 "name": "Braised Pork Ribs with Konjac",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/3187/2283778476_afda9416c9_b.jpg"
             },
             {
                 "name": "Chili oil wontons",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/7353/16226707468_a79f1295e9_b.jpg"
             },
             {
                 "name": "Dandan noodles",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8448/7823059800_7eb88891b7_b.jpg"
             },
             {
                 "name": "Fish with pickled mustard greens",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/5597/15338132518_2415d56912_b.jpg"
             },
             {
                 "name": "Hot and sour noodles",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/8114/8657741365_a495086f7e_b.jpg"
             },
             {
                 "name": "Kung Pao chicken",
-                "image_url": ""
+                "image_url": "https://live.staticflickr.com/4034/4348328931_cb766718e5_b.jpg"
             },
             {
                 "name": "Mapo tofu",
