@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T23:02:35.410Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cdO-zpSyfvGPYv7Ydm6K" version="14.5.0" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2021-03-22T23:03:33.667Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ls0CVYdETh5wljH4Td3X" version="14.5.0" type="gitlab">
   <diagram id="JgNja9hiJComwc5C3hM6" name="Page-1">
     <mxGraphModel dx="558" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -16,10 +16,10 @@
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#007FFF;" vertex="1" parent="1">
           <mxGeometry x="80" y="650" width="170" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="G5MLiU9EDqKhmN2XC5zn-10" value="&lt;h1&gt;Cuisine&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="G5MLiU9EDqKhmN2XC5zn-10" value="&lt;h1&gt;Cuisine&lt;/h1&gt;&lt;p&gt;Cuisine Table Attributes&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="100" y="360" width="180" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="G5MLiU9EDqKhmN2XC5zn-11" value="&lt;h1&gt;City&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="G5MLiU9EDqKhmN2XC5zn-11" value="&lt;h1&gt;City&lt;/h1&gt;&lt;div&gt;City Table Attributes&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="367.5" y="360" width="180" height="220" as="geometry" />
         </mxCell>
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-12" value="&lt;h1&gt;Restaurant&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
