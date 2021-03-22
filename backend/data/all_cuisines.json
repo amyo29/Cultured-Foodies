@@ -6105,95 +6105,6 @@
         }
     },
     {
-        "name": "Tibetan",
-        "country": "China",
-        "dishes": [],
-        "description": "",
-        "countryData": {
-            "name": "China",
-            "topLevelDomain": [
-                ".cn"
-            ],
-            "alpha2Code": "CN",
-            "alpha3Code": "CHN",
-            "callingCodes": [
-                "86"
-            ],
-            "capital": "Beijing",
-            "altSpellings": [
-                "CN",
-                "Zh\u014dnggu\u00f3",
-                "Zhongguo",
-                "Zhonghua",
-                "People's Republic of China",
-                "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd",
-                "Zh\u014dnghu\u00e1 R\u00e9nm\u00edn G\u00f2ngh\u00e9gu\u00f3"
-            ],
-            "region": "Asia",
-            "subregion": "Eastern Asia",
-            "population": 1377422166,
-            "latlng": [
-                35.0,
-                105.0
-            ],
-            "demonym": "Chinese",
-            "area": 9640011.0,
-            "gini": 47.0,
-            "timezones": [
-                "UTC+08:00"
-            ],
-            "borders": [
-                "AFG",
-                "BTN",
-                "MMR",
-                "HKG",
-                "IND",
-                "KAZ",
-                "PRK",
-                "KGZ",
-                "LAO",
-                "MAC",
-                "MNG",
-                "PAK",
-                "RUS",
-                "TJK",
-                "VNM"
-            ],
-            "nativeName": "\u4e2d\u56fd",
-            "numericCode": "156",
-            "currencies": [
-                {
-                    "code": "CNY",
-                    "name": "Chinese yuan",
-                    "symbol": "\u00a5"
-                }
-            ],
-            "languages": [
-                {
-                    "iso639_1": "zh",
-                    "iso639_2": "zho",
-                    "name": "Chinese",
-                    "nativeName": "\u4e2d\u6587 (Zh\u014dngw\u00e9n)"
-                }
-            ],
-            "translations": {
-                "de": "China",
-                "es": "China",
-                "fr": "Chine",
-                "ja": "\u4e2d\u56fd",
-                "it": "Cina",
-                "br": "China",
-                "pt": "China",
-                "nl": "China",
-                "hr": "Kina",
-                "fa": "\u0686\u06cc\u0646"
-            },
-            "flag": "https://restcountries.eu/data/chn.svg",
-            "regionalBlocs": [],
-            "cioc": "CHN"
-        }
-    },
-    {
         "name": "Chinese",
         "country": "China",
         "dishes": [
@@ -7155,195 +7066,6 @@
                 }
             ],
             "cioc": "SRI"
-        }
-    },
-    {
-        "name": "Southern",
-        "country": "United States of America",
-        "dishes": [],
-        "description": "",
-        "countryData": {
-            "name": "United States of America",
-            "topLevelDomain": [
-                ".us"
-            ],
-            "alpha2Code": "US",
-            "alpha3Code": "USA",
-            "callingCodes": [
-                "1"
-            ],
-            "capital": "Washington, D.C.",
-            "altSpellings": [
-                "US",
-                "USA",
-                "United States of America"
-            ],
-            "region": "Americas",
-            "subregion": "Northern America",
-            "population": 323947000,
-            "latlng": [
-                38.0,
-                -97.0
-            ],
-            "demonym": "American",
-            "area": 9629091.0,
-            "gini": 48.0,
-            "timezones": [
-                "UTC-12:00",
-                "UTC-11:00",
-                "UTC-10:00",
-                "UTC-09:00",
-                "UTC-08:00",
-                "UTC-07:00",
-                "UTC-06:00",
-                "UTC-05:00",
-                "UTC-04:00",
-                "UTC+10:00",
-                "UTC+12:00"
-            ],
-            "borders": [
-                "CAN",
-                "MEX"
-            ],
-            "nativeName": "United States",
-            "numericCode": "840",
-            "currencies": [
-                {
-                    "code": "USD",
-                    "name": "United States dollar",
-                    "symbol": "$"
-                }
-            ],
-            "languages": [
-                {
-                    "iso639_1": "en",
-                    "iso639_2": "eng",
-                    "name": "English",
-                    "nativeName": "English"
-                }
-            ],
-            "translations": {
-                "de": "Vereinigte Staaten von Amerika",
-                "es": "Estados Unidos",
-                "fr": "\u00c9tats-Unis",
-                "ja": "\u30a2\u30e1\u30ea\u30ab\u5408\u8846\u56fd",
-                "it": "Stati Uniti D'America",
-                "br": "Estados Unidos",
-                "pt": "Estados Unidos",
-                "nl": "Verenigde Staten",
-                "hr": "Sjedinjene Ameri\u010dke Dr\u017eave",
-                "fa": "\u0627\u06cc\u0627\u0644\u0627\u062a \u0645\u062a\u062d\u062f\u0647 \u0622\u0645\u0631\u06cc\u06a9\u0627"
-            },
-            "flag": "https://restcountries.eu/data/usa.svg",
-            "regionalBlocs": [
-                {
-                    "acronym": "NAFTA",
-                    "name": "North American Free Trade Agreement",
-                    "otherAcronyms": [],
-                    "otherNames": [
-                        "Tratado de Libre Comercio de Am\u00e9rica del Norte",
-                        "Accord de Libre-\u00e9change Nord-Am\u00e9ricain"
-                    ]
-                }
-            ],
-            "cioc": "USA"
-        }
-    },
-    {
-        "name": "Caribbean",
-        "country": "Belize",
-        "dishes": [],
-        "description": "",
-        "countryData": {
-            "name": "Belize",
-            "topLevelDomain": [
-                ".bz"
-            ],
-            "alpha2Code": "BZ",
-            "alpha3Code": "BLZ",
-            "callingCodes": [
-                "501"
-            ],
-            "capital": "Belmopan",
-            "altSpellings": [
-                "BZ"
-            ],
-            "region": "Americas",
-            "subregion": "Central America",
-            "population": 370300,
-            "latlng": [
-                17.25,
-                -88.75
-            ],
-            "demonym": "Belizean",
-            "area": 22966.0,
-            "gini": 53.1,
-            "timezones": [
-                "UTC-06:00"
-            ],
-            "borders": [
-                "GTM",
-                "MEX"
-            ],
-            "nativeName": "Belize",
-            "numericCode": "084",
-            "currencies": [
-                {
-                    "code": "BZD",
-                    "name": "Belize dollar",
-                    "symbol": "$"
-                }
-            ],
-            "languages": [
-                {
-                    "iso639_1": "en",
-                    "iso639_2": "eng",
-                    "name": "English",
-                    "nativeName": "English"
-                },
-                {
-                    "iso639_1": "es",
-                    "iso639_2": "spa",
-                    "name": "Spanish",
-                    "nativeName": "Espa\u00f1ol"
-                }
-            ],
-            "translations": {
-                "de": "Belize",
-                "es": "Belice",
-                "fr": "Belize",
-                "ja": "\u30d9\u30ea\u30fc\u30ba",
-                "it": "Belize",
-                "br": "Belize",
-                "pt": "Belize",
-                "nl": "Belize",
-                "hr": "Belize",
-                "fa": "\u0628\u0644\u06cc\u0632"
-            },
-            "flag": "https://restcountries.eu/data/blz.svg",
-            "regionalBlocs": [
-                {
-                    "acronym": "CARICOM",
-                    "name": "Caribbean Community",
-                    "otherAcronyms": [],
-                    "otherNames": [
-                        "Comunidad del Caribe",
-                        "Communaut\u00e9 Carib\u00e9enne",
-                        "Caribische Gemeenschap"
-                    ]
-                },
-                {
-                    "acronym": "CAIS",
-                    "name": "Central American Integration System",
-                    "otherAcronyms": [
-                        "SICA"
-                    ],
-                    "otherNames": [
-                        "Sistema de la Integraci\u00f3n Centroamericana,"
-                    ]
-                }
-            ],
-            "cioc": "BIZ"
         }
     },
     {
@@ -10333,13 +10055,10 @@
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/cifantuan_2701.jpg"
             },
             {
-<<<<<<< HEAD
                 "name": "Curry Fishball",
                 "image_url": "https://live.staticflickr.com/207/523116439_b6a88d7d08_b.jpg"
             },
             {
-=======
->>>>>>> 65544bb401df357c53cd87a3c4fdb47b4330a0b1
                 "name": "Egg Tart",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/egg_tart_2150.jpg"
             },
@@ -10398,7 +10117,6 @@
             {
                 "name": "Sweet Potato Soup",
                 "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/sweet_potato_soup_2353.jpg"
-<<<<<<< HEAD
             },
             {
                 "name": "Tofu pudding",
@@ -10407,8 +10125,6 @@
             {
                 "name": "Tong yuen",
                 "image_url": "https://live.staticflickr.com/141/329781165_5545d5e449.jpg"
-=======
->>>>>>> 65544bb401df357c53cd87a3c4fdb47b4330a0b1
             }
         ],
         "description": "Hong Kong cuisine is mainly influenced by Cantonese cuisine, non-Cantonese Chinese cuisine (especially Teochew, and Hakka, Hokkien and the Jiangsu & Zhejiang), the Western world, Japan, and Southeast Asia, due to Hong Kong's past as a British colony and long history of being an international city of commerce. From the roadside stalls to the most upscale restaurants, Hong Kong provides an unlimited variety of food in every class. Complex combinations and international gourmet expertise have given Hong Kong the reputable labels of \"Gourmet Paradise\" and \"World's Fair of Food\"",
@@ -15357,7 +15073,7 @@
     },
     {
         "name": "Caribbean",
-        "country": "",
+        "country": "Belize",
         "dishes": [
             {
                 "name": "Asham",
