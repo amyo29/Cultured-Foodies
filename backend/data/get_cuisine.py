@@ -231,7 +231,7 @@ def get_cuisines_in_a_city():
         json.dump(cities, file)
 
 
-all_cuisines = {
+all_cuisines_names = {
     "Afghan": 1,
     "Albanian": 2,
     "American": 3,
@@ -335,146 +335,111 @@ all_cuisines = {
     "Yemeni": 101,
 }
 
-all_cities = {
-    "Albuquerque": 1,
-    "Alexandria": 2,
-    "Anaheim": 3,
-    "Anchorage": 4,
-    "Arlington": 6,
-    "Atlanta": 7,
-    "Aurora": 9,
-    "Austin": 10,
-    "Baltimore": 11,
-    "Bellevue": 12,
-    "Birmingham": 13,
-    "Boise": 14,
-    "Boston": 15,
-    "Buffalo": 16,
-    "Carrollton": 17,
-    "Cary": 18,
-    "Chandler": 19,
-    "Charlotte": 20,
-    "Chattanooga": 21,
-    "Chicago": 22,
-    "Chula Vista": 23,
-    "Cincinnati": 24,
-    "Cleveland": 25,
-    "Colorado Springs": 26,
-    "Columbus": 27,
-    "Corona": 28,
-    "Dallas": 29,
-    "Denton": 30,
-    "Denver": 31,
-    "Des Moines": 32,
-    "Detroit": 33,
-    "Durham": 34,
-    "Elk Grove": 35,
-    "Enterprise": 36,
-    "Eugene": 37,
-    "Fontana": 38,
-    "Fort Collins": 39,
-    "Fort Lauderdale": 40,
-    "Fort Worth": 41,
-    "Fremont": 42,
-    "Frisco": 43,
-    "Garden Grove": 44,
-    "Garland": 45,
-    "Gilbert": 46,
-    "Glendale": 48,
-    "Grand Prairie": 49,
-    "Hayward": 50,
-    "Henderson": 51,
-    "Hialeah": 52,
-    "Hollywood": 53,
-    "Honolulu": 54,
-    "Houston": 55,
-    "Huntington Beach": 56,
-    "Indianapolis": 57,
-    "Irvine": 58,
-    "Irving": 59,
-    "Jacksonville": 60,
-    "Jersey City": 61,
-    "Joliet": 62,
-    "Kansas City": 64,
-    "Knoxville": 65,
-    "Lakewood": 66,
-    "Las Vegas": 67,
-    "Long Beach": 68,
-    "Los Angeles": 69,
-    "Louisville": 70,
-    "Madison": 71,
-    "McKinney": 72,
-    "Memphis": 73,
-    "Mesa": 74,
-    "Metairie Terrace": 75,
-    "Miami": 76,
-    "Milwaukee": 77,
-    "Minneapolis": 78,
-    "Miramar": 79,
-    "Moreno Valley": 80,
-    "Naperville": 81,
-    "Nashville": 82,
-    "New Orleans": 83,
-    "New York City": 84,
-    "Newark": 85,
-    "North Las Vegas": 86,
-    "Oakland": 87,
-    "Oklahoma City": 88,
-    "Olathe": 89,
-    "Omaha": 90,
-    "Ontario": 91,
-    "Orlando": 92,
-    "Overland Park": 93,
-    "Oxnard": 94,
-    "Palmdale": 95,
-    "Paradise": 96,
-    "Pasadena": 97,
-    "Paterson": 98,
-    "Pembroke Pines": 99,
-    "Peoria": 100,
-    "Philadelphia": 101,
-    "Phoenix": 102,
-    "Pittsburgh": 103,
-    "Plano": 104,
-    "Pomona": 105,
-    "Portland": 106,
-    "Providence": 107,
-    "Raleigh": 108,
-    "Rancho Cucamonga": 109,
-    "Richmond": 110,
-    "Riverside": 111,
-    "Rochester": 112,
-    "Round Rock": 113,
-    "Sacramento": 114,
-    "Saint Paul": 115,
-    "Salt Lake City": 116,
-    "San Antonio": 117,
-    "San Bernardino": 118,
-    "San Diego": 119,
-    "San Francisco": 120,
-    "San Jose": 121,
-    "San Juan": 122,
-    "Santa Ana": 123,
-    "Santa Clarita": 124,
-    "Santa Rosa": 125,
-    "Scottsdale": 126,
-    "Seattle": 127,
-    "Spring Valley": 128,
-    "St. Louis": 129,
-    "St. Petersburg": 130,
-    "Stockton": 131,
-    "Sunnyvale": 132,
-    "Sunrise Manor": 133,
-    "Surprise": 134,
-    "Tacoma": 135,
-    "Tampa": 136,
-    "Tempe": 137,
-    "Thornton": 138,
-    "Vancouver": 139,
-    "Washington, D.C.": 140,
-    "Worcester": 141,
-    "Yonkers": 142,
+all_cuisines_ids = {
+    1: "Afghan",
+    2: "Albanian",
+    3: "American",
+    4: "Amish",
+    5: "Argentine",
+    6: "Armenian",
+    7: "Australian",
+    8: "Austrian",
+    9: "Balearic",
+    10: "Bangladeshi",
+    11: "Belgian",
+    12: "Bolivian",
+    13: "Brazilian",
+    14: "British",
+    15: "Burmese",
+    16: "Cajun",
+    17: "California",
+    18: "Cambodian",
+    19: "Canadian",
+    20: "Cantonese",
+    21: "Caribbean",
+    22: "Chilean",
+    23: "Chinese",
+    24: "Colombian",
+    25: "Creole",
+    26: "Cuban",
+    27: "Danish",
+    28: "Dominican",
+    29: "Ecuadorian",
+    30: "Ethiopian",
+    31: "Filipino",
+    32: "French",
+    33: "Georgian",
+    34: "German",
+    35: "Greek",
+    36: "Guyanese",
+    37: "Haitian",
+    38: "Hawaiian",
+    39: "Hong Kong",
+    40: "Hungarian",
+    41: "Icelandic",
+    42: "Indian",
+    43: "Indonesian",
+    44: "Iranian",
+    45: "Irish",
+    46: "Israeli",
+    47: "Italian",
+    48: "Jamaican",
+    49: "Japanese",
+    50: "Jewish",
+    51: "Korean",
+    52: "Lebanese",
+    53: "Malaysian",
+    54: "Mexican",
+    55: "Moldovan",
+    56: "Mongolian",
+    57: "Moroccan",
+    58: "Nepalese",
+    59: "New American",
+    60: "New Mexican",
+    61: "New Zealand",
+    62: "Nicaraguan",
+    63: "Nigerian",
+    64: "Pakistani",
+    65: "Paraguayan",
+    66: "Peruvian",
+    67: "Polish",
+    68: "Portuguese",
+    69: "Puerto Rican",
+    70: "Punjabi",
+    71: "Russian",
+    72: "Salvadorean",
+    73: "Saudi Arabian",
+    74: "Scandinavian",
+    75: "Scottish",
+    76: "Sichuan",
+    77: "Singaporean",
+    78: "Somali",
+    79: "Soul Food",
+    80: "South African",
+    81: "Southern",
+    82: "Southwestern",
+    83: "Spanish",
+    84: "Sri Lankan",
+    85: "Swedish",
+    86: "Swiss",
+    87: "Syrian",
+    88: "Taiwanese",
+    89: "Tex-Mex",
+    90: "Thai",
+    91: "Tibetan",
+    92: "Trinidad And Tobago",
+    93: "Tunisian",
+    94: "Turkish",
+    95: "Ukrainian",
+    96: "Uruguayan",
+    97: "Uzbek",
+    98: "Venezuelan",
+    99: "Vietnamese",
+    100: "Welsh",
+    101: "Yemeni",
 }
+
+all_cities = {}
 
 
 def get_cuisines_and_id():
@@ -483,7 +448,7 @@ def get_cuisines_and_id():
 
     result = dict()
     for cuisine in cuisines:
-        result[cuisine["name"]] = cuisine["id"]
+        result[cuisine["id"]] = cuisine["name"]
     print(result)
 
 
@@ -493,7 +458,7 @@ def get_cities_and_id():
 
     result = dict()
     for city in cities:
-        result[city["name"]] = city["id"]
+        result[city["id"]] = city["name"]
     print(result)
 
 
@@ -514,7 +479,7 @@ def get_cuisines_in_a_city_from_restaurants():
                 # print(cities[city_id]["cuisines"])
                 if (
                     not (str(cuisine) in cities[city_id]["cuisines"])
-                    and str(cuisine) in all_cuisines
+                    and str(cuisine) in all_cuisines_names
                 ):
                     # print(restaurant["name"])
                     # print(city)
@@ -530,14 +495,92 @@ def remove_cuisines_data_from_cities():
     f = open("all_cities.json")
     cities = json.load(f)
 
+    id = 1
     for city in cities:
-        city.pop("cuisines", None)
+        city["id"] = id
+        id += 1
 
     with open("all_cities.json", "w") as file:
         json.dump(cities, file)
 
 
 remove_cuisines_data_from_cities()
+
+
+def insert_city_id():
+    f = open("cities_zomato_id.json")
+    cities_zomato = json.load(f)
+
+    f = open("all_cities.json")
+    cities = json.load(f)
+
+    count = 1
+    for city in cities:
+        city_name = city["full_name"]
+        found = False
+        for city_zomato in cities_zomato:
+            city_zomato_full_name = city_zomato + ", United States"
+            if city_name == city_zomato_full_name:
+                count += 1
+                found = True
+        if not found:
+            print("city: ", city_name)
+    print("valid cities count: ", count)
+
+
+def check_if_we_have_enough_cuisines_dammit():
+    f = open("all_restaurants.json")
+    restaurants = json.load(f)
+
+    for restaurant in restaurants:
+        # city_id = restaurant["location"]["city_id"]
+        # country_id = restaurant["location"]["country_id"]
+        # if country_id == 216:
+        for cuisine in restaurant["cuisines"].split(", "):
+            if cuisine in all_cuisines_names:
+                all_cuisines_names.pop(cuisine)
+
+    print("remaining cuisines: ", all_cuisines_names)
+
+
+def remove_restaurants_not_in_US():
+    f = open("all_restaurants.json")
+    restaurants = json.load(f)
+
+    print("len: ", len(restaurants))
+
+    result = []
+    for restaurant in restaurants:
+        country_id = restaurant["location"]["country_id"]
+        if country_id == 216:
+            result.append(restaurant)
+
+    with open("all_restaurants.json", "w") as file:
+        json.dump(result, file)
+
+    print("len: ", len(result))
+
+
+def check_for_duplicate_city_ids():
+    f = open("cities_zomato_id.json")
+    cities = json.load(f)
+
+    city_ids = {}  # id: name
+    for city in cities:
+        city_id = city[city]["city_id"]
+        if city_id in city_ids:
+            print("Duplicate FOUND")
+            print(city)
+            print(city_ids[city_id])
+        else:
+            city_ids[city_id] = city
+
+
+check_for_duplicate_city_ids()
+# remove_restaurants_not_in_US()
+# check_if_we_have_enough_cuisines_dammit()
+# insert_city_id()
+# remove_cuisines_data_from_cities()
 # remove_cuisines_not_in_list()
 # get_cuisines_in_a_city_from_restaurants()
 # get_cities_and_id()

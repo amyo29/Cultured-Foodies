@@ -2131,7 +2131,7 @@
       "country_name": "United States"
     }
   ],
-  "Washington, D.C.": [
+  "Washington, D.C., Washington, D.C.": [
     {
       "entity_type": "city",
       "entity_id": 283,
@@ -2144,7 +2144,7 @@
       "country_name": "United States"
     }
   ],
-  "Metairie Terrace": [
+  "Metairie Terrace, Louisiana": [
     {
       "entity_type": "zone",
       "entity_id": 95302,
@@ -2196,7 +2196,7 @@
       "country_name": "United States"
     }
   ],
-  "Saint Paul": [
+  "Saint Paul, Minnesota": [
     {
       "entity_type": "city",
       "entity_id": 2851,
