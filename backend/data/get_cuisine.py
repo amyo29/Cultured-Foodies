@@ -202,6 +202,22 @@ def sort_cuisines():
     with open("all_cuisines.json", "w") as file:
         json.dump(cuisines_data, file)
 
+def insert_ids():
+    f = open("all_valid_cities.json")
+    cities = json.load(f)
+
+    # cities_sorted_data = sorted(cities, key=lambda k: k["name"])
+    city_list = []
+    id = 1
+    for city in cities:
+        city_dict = dict()
+        city_dict["id"] = id
+        city_dict.update(city)
+        city_list.append(city_dict)
+        id += 1
+
+    with open("all_valid_cities.json", "w") as file:
+        json.dump(city_list, file)
 
 def get_cuisines_in_a_city():
     f = open("all_cities.json")
@@ -622,7 +638,7 @@ def combine_json_files():
 # check_len()
 # check_for_duplicate_city_ids()
 # remove_restaurants_not_in_US()
-check_if_we_have_enough_cuisines_dammit()
+# check_if_we_have_enough_cuisines_dammit()
 # insert_city_id()
 # remove_cuisines_data_from_cities()
 # remove_cuisines_not_in_list()
