@@ -749,7 +749,7 @@ def get_city_data():
     # generate unique id for each city for our sql database
     id = 0
     base_url = "https://api.teleport.org/api/cities/?search="
-    for city in top_cities_by_population:
+    for city in valid_cities:
         search_city_url = base_url + city
         r = requests.get(search_city_url).json()
         body = r["_embedded"]["city:search-results"][0]
@@ -786,11 +786,9 @@ def get_city_data():
         cities_data.append(city_obj)
 
     f_cities = open(
-        "/Users/aouyang/Downloads/College/2020-21/Spring-2021/CS-373/cultured-foodies/backend/data/cities_data.json",
-        "w",
+        "all_valid_cities.json", "w"
     )
     json.dump(cities_data, f_cities)
-
 
 # get the cityID for each city   ZOMATO
 def zomato_cityid():
@@ -1156,5 +1154,5 @@ def get_valid_restaurants_from_valid_cities():
 # get_diff_on_restaurants()
 # get_cities_from_restaurants()
 # get_valid_cities()
-check_if_we_have_enough_cuisines_dammit()
+# check_if_we_have_enough_cuisines_dammit()
 # get_valid_restaurants_from_valid_cities()
