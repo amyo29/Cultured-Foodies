@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T01:42:55.690Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="XSaf_lFBVIz1cB9amvC3" version="14.5.0" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2021-03-23T02:02:24.229Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="-NaSbYKyTZDd_evxZCul" version="14.5.0" type="gitlab">
   <diagram id="JgNja9hiJComwc5C3hM6" name="Page-1">
-    <mxGraphModel dx="1892" dy="1226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1120" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,10 +22,10 @@
         <mxCell id="G5MLiU9EDqKhmN2XC5zn-11" value="&lt;h1&gt;City&lt;/h1&gt;&lt;div&gt;City Table Attributes&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;id = Integer&lt;/li&gt;&lt;li&gt;leisure_and_culture = Float&lt;/li&gt;&lt;li&gt;cost_of_living = Float&lt;/li&gt;&lt;li&gt;environmental_quality = Float&lt;/li&gt;&lt;li&gt;safety = Float&lt;/li&gt;&lt;li&gt;travel_connectivity = Float&lt;/li&gt;&lt;li&gt;tolerance = Float&lt;/li&gt;&lt;li&gt;population = Integer&lt;/li&gt;&lt;li&gt;summary = String&lt;/li&gt;&lt;li&gt;name = String&lt;/li&gt;&lt;li&gt;state = String&lt;/li&gt;&lt;li&gt;time_zone = String&lt;/li&gt;&lt;li&gt;latitude = Float&lt;/li&gt;&lt;li&gt;longitude = Float&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="370" y="360" width="220" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="G5MLiU9EDqKhmN2XC5zn-12" value="&lt;h1&gt;Restaurant&lt;/h1&gt;&lt;div&gt;Restaurant Table Attributes&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;id = Integer&lt;/li&gt;&lt;li&gt;city = String&lt;/li&gt;&lt;li&gt;user_rating[“aggregate_rating”] = Float&lt;/li&gt;&lt;li&gt;price_range = Integer&lt;/li&gt;&lt;li&gt;zip_code = Integer&lt;/li&gt;&lt;li&gt;average_cost_for_two = Integer&lt;/li&gt;&lt;li&gt;timings = String&lt;/li&gt;&lt;li&gt;address = String&lt;/li&gt;&lt;li&gt;cuisines = String&lt;/li&gt;&lt;li&gt;name = String&lt;/li&gt;&lt;li&gt;highlights = String&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="G5MLiU9EDqKhmN2XC5zn-12" value="&lt;h1&gt;Restaurant&lt;/h1&gt;&lt;div&gt;Restaurant Table Attributes&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="310" y="696" width="260" height="245" as="geometry" />
         </mxCell>
-        <mxCell id="G5MLiU9EDqKhmN2XC5zn-13" value="&lt;h1&gt;CountryData&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="G5MLiU9EDqKhmN2XC5zn-13" value="&lt;h1&gt;CountryData&lt;/h1&gt;&lt;div&gt;CountryData Attributes (within Cuisine Table)&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="80" y="660" width="160" height="170" as="geometry" />
         </mxCell>
       </root>
