@@ -185,7 +185,7 @@ def get_city_data():
         city_data_urban_scores = requests.get(city_data_urban_scores_link).json()
         for category in city_data_urban_scores["categories"]:
             city_obj[category["name"]] = category["score_out_of_10"]
-        
+
         id += 1
         cities_data.append(city_obj)
 
@@ -195,6 +195,7 @@ def get_city_data():
     )
     json.dump(cities_data, f_cities)
 
+
 # get the cityID for each city   ZOMATO
 def zomato_cityid():
     base_url = "https://developers.zomato.com/api/v2.1/locations?query="
@@ -202,16 +203,82 @@ def zomato_cityid():
     city_dict = {}
     import pdb
 
-   # pdb.set_trace()
+    # pdb.set_trace()
     for city_name in top_cities_by_population:
         url = base_url + city_name
         r = requests.request("GET", url, headers=headers).json()
         city_dict[city_name] = r["location_suggestions"]
 
     print(city_dict)
-    f_cities = open("/Users/aouyang/Downloads/College/2020-21/Spring-2021/CS-373/cultured-foodies/backend/data/cities_zomato_id.json", "w")
+    f_cities = open(
+        "/Users/aouyang/Downloads/College/2020-21/Spring-2021/CS-373/cultured-foodies/backend/data/cities_zomato_id.json",
+        "w",
+    )
     json.dump(city_dict, f_cities)
 
-# get_city_data()
-# zomato_cityid()
 
+# get all the cities in restaurant.json
+
+
+def ping_request(url):
+    r = None
+
+    while r is None:
+        try:
+            # get
+            r = requests.get(url).json()
+        except:
+            pass
+    return r
+
+
+def get_zomato_cities_in_restaurant_file():
+    f = open("all_restaurants.json", "r")
+    data = json.load(f, encoding="utf8")
+    count = 0
+    city_state = set()
+    list_restaurants = []
+    url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&fields=formatted_address&key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&input="
+
+    restaurant_list = []
+    count = 0
+
+    for restaurant in data[140:]:
+        print(restaurant["name"])
+        restaurant_address = restaurant["location"]["address"]
+        restaurant_city = restaurant["location"]["city"]
+        print(restaurant_city)
+        if restaurant_city not in restaurant_address:
+            restaurant_address += " , " + restaurant_city
+        req_url = url + restaurant_address
+
+        res = ping_request(req_url)
+        if len(res["candidates"]) == 0:
+            print("THIS HAS TO BE HARDCODED", restaurant_address)
+            continue
+        formatted_address = res["candidates"][0]["formatted_address"]
+        parts = formatted_address.split(", ")
+        state_abbrev = parts[2].split(" ")[0]
+        restaurant["location"]["address"] = formatted_address
+        restaurant["location"]["state_abbrev"] = state_abbrev
+        city_state.add(restaurant_city + ", " + state_abbrev)
+        restaurant_list.append(restaurant)
+        if count % 20 == 0:
+            f = open("all_restaurants_better_address" + str(count) + ".json", "w")
+            json.dump(restaurant_list, f)
+        count += 1
+        print("count", count)
+    f = open("all_restaurants_better_address.json", "w")
+    json.dump(restaurant_list, f)
+    print(city_state)
+
+
+"""
+{'Danville, California', 'Palo Alto, California', 'Alameda, California', 'Saratoga, California', 'Corona, South Dakota', 'Los Gatos, California', 'Fremont, California', 'Albany, California', 'Denton, Texas', 'New York City, New York', 'Mountain View, California', 'Alvarado, Texas', 'Campbell, California', 'Castro Valley, California', 'Houston, Texas', 'Florida Keys, Florida', 'Nashville, Tennessee', 'Reidsville, Georgia', 'Statesboro, Georgia', 'Mc Cormick, South Carolina', 'Menlo Park, California', 'Oakland, California', 'Pittsburgh, Pennsylvania', 'Cincinnati, Kentucky', 'Hillsboro, Texas', 'Cleburne, Texas', 'Tampa Bay, Florida', 'Dublin, California', 'Palmdale, California', 'Oklahoma City, Oklahoma', 'Sweet Home, Oregon', 'San Jose, California', 'Hinesville, Georgia', 'Redwood City, California', 'Providence, Rhode Island', 'Sunnyvale, California', 'Milbank, South Dakota', 'Jacksonville, Florida', 'San Francisco, California', 'Eugene, Oregon', 'Whitney, Texas', 'Hoboken, New Jersey', 'Hayward, California', 'Santa Clara, California', 'Pleasanton, California', 'Belmont, California', 'Cincinnati, Ohio', 'Colorado Springs, Colorado', 'Orlando, Florida', 'San Leandro, California', 'Greensboro, Georgia', 'Fort Myers, Florida', 'Cleveland, Ohio'}
+
+
+"""
+
+""" handle restaurants that don't have a zipcode"""
+
+get_zomato_cities_in_restaurant_file()
