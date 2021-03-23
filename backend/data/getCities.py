@@ -872,9 +872,6 @@ def get_zomato_cities_in_restaurant_file():
     json.dump(restaurant_list, f)
     print(city_state)
 
-get_zomato_cities_in_restaurant_file()
-
-
 def get_diff_on_restaurants():
     f = open("all_restaurants.json", "r")
     old = json.load(f, encoding="utf8")
@@ -1091,6 +1088,19 @@ def check_cities():
             + restaurant["location"]["state_abbrev"]
         )
 
+def check_address_ampersands():
+    f = open("oldRestaurantFiles/all_restaurants.json", "r")
+    old = json.load(f, encoding="utf8")
+
+    count = 1
+    for restaurant in old:
+        address = restaurant["location"]["address"]
+        if "&" in address:
+            print(address)
+            print("count: ", count)
+            count += 1
+
+check_address_ampersands()
 
 """ handle restaurants that don't have a zipcode"""
 
