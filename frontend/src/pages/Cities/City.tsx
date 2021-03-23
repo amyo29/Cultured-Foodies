@@ -9,7 +9,7 @@ const dishes_data = require("../../data/threeDishes.json");
 const countries_data = require("../../data/threeCountries.json");
 const news_data = require("../../data/threeNews.json");
 
-function Dish() {
+function City() {
   useEffect(() => {
     document.title = "Dish"
   }, [])
@@ -84,4 +84,4 @@ function Dish() {
   );
 }
 
-export default Dish;
+export default City;

@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
-import "../../styles/Article.css";
+import "../../styles/Restaurant.css";
 
 const news_data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
 const dishes_data = require("../../data/threeDishes.json");
 
-function Article() {
+function Restaurant() {
   useEffect(() => {
     document.title = "News Article"
   }, [])
@@ -74,4 +74,4 @@ function Article() {
   );
 }
 
-export default Article;
+export default Restaurant;

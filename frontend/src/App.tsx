@@ -11,12 +11,12 @@ import "./styles/App.css"
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Countries from "./pages/Countries/Countries";
-import Dishes from "./pages/Dishes/Dishes";
-import Dish from "./pages/Dishes/Dish";
-import News from "./pages/News/News";
-import Country from "./pages/Countries/Country"
-import Article from "./pages/News/Article"
+import Cuisines from "./pages/Cuisines/Cuisines";
+import Cuisine from "./pages/Cuisines/Cuisine"
+import Cities from "./pages/Cities/Cities";
+import City from "./pages/Cities/City";
+import Restaurants from "./pages/Restaurants/Restaurants";
+import Restaurant from "./pages/Restaurants/Restaurant"
 
 export default function App() {
   return (
@@ -33,23 +33,23 @@ export default function App() {
               <Route path="/about">
                 <About />
               </Route>
-              <Route exact path="/countries">
-                <Countries />
+              <Route exact path="/cuisines">
+                <Cuisines />
               </Route> 
-              <Route path="/countries/:id">
-                <Country/>                
+              <Route path="/cuisines/:id">
+                <Cuisine/>                
               </Route>
-              <Route exact path="/dishes">
-                <Dishes />
+              <Route exact path="/cities">
+                <Cities />
               </Route>
-              <Route path="/dishes/:id">
-                <Dish />
+              <Route path="/cities/:id">
+                <City />
               </Route>
-              <Route exact path="/news">
-                <News />
+              <Route exact path="/restaurants">
+                <Restaurants />
               </Route>
-              <Route path="/news/:id">
-                <Article />
+              <Route path="/restaurants/:id">
+                <Restaurant />
               </Route>
             </Switch>
           </div>

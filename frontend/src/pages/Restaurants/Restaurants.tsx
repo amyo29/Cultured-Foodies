@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { Table } from "react-bootstrap";
-import "../../styles/News.css";
+import "../../styles/Restaurants.css";
 const data = require("../../data/threeNews.json");
 const countries_data = require("../../data/threeCountries.json");
 
-function News() {
+function Restaurants() {
   useEffect(() => {
-    document.title = "News Article";
+    document.title = "Restaurants";
   }, []);
   return (
     <div>
-      <h1 className="text-align center">News</h1>
+      <h1 className="text-align center">Restaurants</h1>
       <Table responsive className="table">
         <thead>
           <tr>
@@ -27,7 +27,7 @@ function News() {
             <tr>
               <td>{i + 1}</td>
               <td>
-                <a href={"/news/" + i} className="article">
+                <a href={"/restaurants/" + i} className="article">
                   {article["title"]}
                 </a>
               </td>
@@ -43,4 +43,4 @@ function News() {
   );
 }
 
-export default News;
+export default Restaurants;

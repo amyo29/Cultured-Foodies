@@ -6,7 +6,7 @@ const data = require('../../data/threeCountries.json')
 
 function Countries() {
   useEffect(() => {
-    document.title = "Countries"
+    document.title = "Cuisines"
   }, [])
   var i, j;
   var chunk = 5;
@@ -18,7 +18,7 @@ function Countries() {
   // a country will be at rows[index][index]
   return (
     <div>
-      <h1 className="text-align center">Countries</h1>
+      <h1 className="text-align center">Cuisines</h1>
       <Container>
         {rows.map((cols) => (
           <Row>
@@ -26,7 +26,7 @@ function Countries() {
               <Col className="col-sm-4 py-2">
                 <Card bg='card light h-100'>
                   <Card.Body>
-                      <a href={"/countries/" + i}>
+                      <a href={"/cuisines/" + i}>
                         <Card.Title>{country['name']}</Card.Title>
                       </a>
                     <Card.Img variant="top" src={country['flag']}/>
