@@ -2,7 +2,9 @@ import React, {useEffect} from "react";
 import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
 
 // const data = require('../../data/countries.json').slice(0,3)
-const data = require('../../data/threeCountries.json')
+// const data = require('../../data/threeCountries.json')
+const data = require('../../data/newData/cuisines.json')
+const countries_data = require('../../data/newData/countries.json')
 
 function Countries() {
   useEffect(() => {
@@ -15,28 +17,29 @@ function Countries() {
     rows.push(data.slice(i,i+chunk))
   }
   console.log(JSON.stringify(rows[0][0]))
-  // a country will be at rows[index][index]
+  // a cuisine will be at rows[index][index]
   return (
     <div>
       <h1 className="text-align center">Cuisines</h1>
       <Container>
         {rows.map((cols) => (
           <Row>
-            {cols.map((country:any, i :any) => (
+            {cols.map((cuisine:any, i :any) => (
               <Col className="col-sm-4 py-2">
                 <Card bg='card light h-100'>
                   <Card.Body>
                       <a href={"/cuisines/" + i}>
-                        <Card.Title>{country['name']}</Card.Title>
+                        <Card.Title>{cuisine['name']}</Card.Title>
                       </a>
-                    <Card.Img variant="top" src={country['flag']}/>
+                    <Card.Img variant="top" src={cuisine['dishes'][0]['image_url']}/>
                     <Card.Text>
                       <p>
-                        <b>Capital: </b>{country['capital']} <br />
-                        <b>Population: </b>{country['population']} <br />
-                        <b>Region: </b>{country['region']} <br />
-                        <b>Lat°Lon': </b>{country['latlng'][0]}°{country['latlng'][1]}'<br />
-                        <b>Size (sq km): </b>{country['area']} <br />
+                        <b>Country: </b>{cuisine['country']} <br />
+                        <b>Capital: </b>{countries_data[i]['capital']} <br />
+                        <b>Region: </b>{countries_data[i]['region']} <br />
+                        <b>Population: </b>{countries_data[i]['population']} <br />
+                        <b>Latitude: </b>{countries_data[i]['latlng'][0]} <br />
+                        <b>Longitude: </b>{countries_data[i]['latlng'][1]} <br />
                       </p>
                     </Card.Text>
                     <Card.Text>

@@ -1,0 +1,182 @@
+[
+  {
+    "cuisineIndexes": [0, 1],
+    "cityIndex": 0,
+    "average_cost_for_two": 50,
+    "cuisines": "European, French, German",
+    "currency": "$",
+    "featured_image": "",
+    "has_online_delivery": 0,
+    "has_table_booking": 0,
+    "highlights": [
+      "Credit Card",
+      "Delivery",
+      "Breakfast",
+      "Lunch",
+      "Serves Alcohol",
+      "Takeaway Available",
+      "Dinner",
+      "Indoor Seating",
+      "Nightlife",
+      "Outdoor Seating",
+      "Private Dining Area Available",
+      "Lunch Menu",
+      "Fullbar"
+    ],
+    "include_bogo_offers": true,
+    "is_delivering_now": 0,
+    "is_table_reservation_supported": 0,
+    "location": {
+      "address": "212 Lafayette St, New York, NY 10012, USA",
+      "city": "New York City",
+      "city_id": 280,
+      "country_id": 216,
+      "latitude": "40.7217222222",
+      "locality": "Soho",
+      "locality_verbose": "Soho",
+      "longitude": "-73.9976500000",
+      "state_abbrev": "NY",
+      "zipcode": "10012"
+    },
+    "menu_url": "https://www.zomato.com/new-york-city/caf\u00e9-select-soho/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+    "name": "Caf\u00e9 Select",
+    "phone_numbers": "(212) 925-9322",
+    "price_range": 3,
+    "restaurant_image": "https://lh3.googleusercontent.com/p/AF1QipPCI1OhDDrdzGAWywdBTS266bIRPoDyiDAM1bhO=s1600-w4000",
+    "store_type": "",
+    "thumb": "",
+    "timings": "8 AM to 1:30 AM (Mon-Fri),9 AM to 2 AM (Sat-Sun)",
+    "url": "https://www.zomato.com/new-york-city/caf\u00e9-select-soho?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+    "user_rating": {
+      "aggregate_rating": "3.8",
+      "rating_color": "9ACD32",
+      "rating_obj": {
+        "bg_color": {
+          "tint": "600",
+          "type": "lime"
+        },
+        "title": {
+          "text": "3.8"
+        }
+      },
+      "rating_text": "Good",
+      "votes": 57
+    }
+  },
+  {
+    "cuisineIndexes": [2, 3],
+    "cityIndex": 1,
+    "average_cost_for_two": 50,
+    "cuisines": "Moroccan, Tunisian",
+    "currency": "$",
+    "featured_image": "",
+    "has_online_delivery": 0,
+    "has_table_booking": 0,
+    "highlights": [
+      "Credit Card",
+      "Delivery",
+      "Lunch",
+      "Takeaway Available",
+      "Breakfast",
+      "Dinner",
+      "Vegetarian Friendly",
+      "Indoor Seating"
+    ],
+    "include_bogo_offers": true,
+    "is_delivering_now": 0,
+    "is_table_reservation_supported": 0,
+    "location": {
+      "address": "1201 Sutter St, San Francisco, CA 94109, USA",
+      "city": "San Francisco",
+      "city_id": 306,
+      "country_id": 216,
+      "latitude": "37.7877000000",
+      "locality": "Nob Hill",
+      "locality_verbose": "Nob Hill, San Francisco",
+      "longitude": "-122.4203111111",
+      "state_abbrev": "CA",
+      "zipcode": "94109"
+    },
+    "menu_url": "https://www.zomato.com/san-francisco/cafe-zituona-nob-hill/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+    "name": "Cafe Zituona",
+    "phone_numbers": "(415) 673-2622",
+    "price_range": 2,
+    "restaurant_image": "https://lh3.googleusercontent.com/p/AF1QipOK_en1lRJh2kMYGpHxAhZ8nLI-LmrMaaNgnmE=s1600-w2858",
+    "store_type": "",
+    "thumb": "",
+    "timings": "Closed (Mon),11:30 AM to 9 PM (Tue, Wed, Thu, Sat, Sun), 2 PM to 9 PM (Fri)",
+    "url": "https://www.zomato.com/san-francisco/cafe-zituona-nob-hill?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+    "user_rating": {
+      "aggregate_rating": "3.8",
+      "rating_color": "9ACD32",
+      "rating_obj": {
+        "bg_color": {
+          "tint": "600",
+          "type": "lime"
+        },
+        "title": {
+          "text": "3.8"
+        }
+      },
+      "rating_text": "Good",
+      "votes": 18
+    }
+  },
+  {
+    "cuisineIndexes": [4],
+    "cityIndex": 2,
+    "average_cost_for_two": 40,
+    "cuisines": "Sandwich, Deli, Italian",
+    "currency": "$",
+    "featured_image": "https://b.zmtcdn.com/data/res_imagery/16718605_RESTAURANT_2b04a62138fc7909cbc00b9e97c85c4b_c.jpg",
+    "has_online_delivery": 0,
+    "has_table_booking": 0,
+    "highlights": [
+      "Takeaway Available",
+      "Lunch",
+      "Credit Card",
+      "Wine",
+      "Indoor Seating",
+      "Beer"
+    ],
+    "include_bogo_offers": true,
+    "is_delivering_now": 0,
+    "is_table_reservation_supported": 0,
+    "location": {
+      "address": "404 Occidental Ave S, Seattle, WA 98104, USA",
+      "city": "Seattle",
+      "city_id": 279,
+      "country_id": 216,
+      "latitude": "47.5997588000",
+      "locality": "Pioneer Square",
+      "locality_verbose": "Pioneer Square, Seattle",
+      "longitude": "-122.3304516000",
+      "state_abbrev": "WA",
+      "zipcode": "98104"
+    },
+    "menu_url": "https://www.zomato.com/seattle/salumi-pioneer-square/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+    "name": "Salumi",
+    "phone_numbers": "(206) 621-8772",
+    "price_range": 2,
+    "restaurant_image": "https://lh3.googleusercontent.com/p/AF1QipNY3j2rmf2OK-YTwgQ8IxlesHMQGzNCwfnGC8p0=s1600-w1024",
+    "store_type": "",
+    "thumb": "https://b.zmtcdn.com/data/res_imagery/16718605_RESTAURANT_2b04a62138fc7909cbc00b9e97c85c4b_c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+    "timings": "11 AM to 1:30 PM (Mon),11 AM to 3:30 PM (Tue-Fri),Closed (Sat-Sun)",
+    "url": "https://www.zomato.com/seattle/salumi-pioneer-square?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+    "user_rating": {
+      "aggregate_rating": "4.5",
+      "rating_color": "3F7E00",
+      "rating_obj": {
+        "bg_color": {
+          "tint": "700",
+          "type": "lime"
+        },
+        "title": {
+          "text": "4.5"
+        }
+      },
+      "rating_text": "Excellent",
+      "votes": 1082
+    }
+  }
+]

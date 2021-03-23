@@ -2,7 +2,9 @@ import React, {useEffect} from "react";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
-const data = require("../../data/threeDishes.json");
+// const data = require("../../data/threeDishes.json");
+const data = require("../../data/newData/threeCities.json");
+
 function Cities() {
   useEffect(() => {
     document.title = "Cities"
@@ -23,16 +25,15 @@ function Cities() {
               <Col className = "col-sm-4 py-2">
                 <Card bg='card h-100'>
                   <Card.Body>
-                    <a href= {"/cities/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
-                    <Card.Img variant="top" src={col["recipe"]["image"]} />
+                    <a href= {"/cities/"+ i}><Card.Title>{col["name"]}</Card.Title></a>
+                    <Card.Img variant="top" src={col["images"]["mobile"]} />
                       <p>
-                        <b>Meal Type: </b> {col["recipe"]["mealType"] ? col["recipe"]["mealType"]:"None"} <br />
-                        <b>Dish Type: </b> {col["recipe"]["dishType"] ? col["recipe"]["dishType"]:"None"} <br />
-                        <b>Cuisine Type: </b> {col["recipe"]["cuisineType"]} <br />
-                        <b>Health Label: </b> {col["recipe"]["healthLabels"][0]} <br />
-                        <b>Source: </b> {col["recipe"]["source"]} <br />
+                        <b>State: </b> {col["state"]} <br />
+                        <b>Population: </b> {col["population"]} <br />
+                        <b>Latitude: </b> {col["latitude"]} <br />
+                        <b>Longitude: </b> {col["longitude"]} <br />
+                        <b>Timezone: </b> {col["timezone"]} <br />
                       </p>
-                    
                   </Card.Body>
                 </Card>
               </Col>

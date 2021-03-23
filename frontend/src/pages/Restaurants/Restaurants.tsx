@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
-const data = require("../../data/threeNews.json");
-const countries_data = require("../../data/threeCountries.json");
+// const data = require("../../data/threeNews.json");
+// const countries_data = require("../../data/threeCountries.json");
+const data = require("../../data/newData/threeRestaurants.json");
 
 function Restaurants() {
   useEffect(() => {
@@ -15,26 +16,26 @@ function Restaurants() {
         <thead>
           <tr>
             <th>#</th>
-            <th>Title</th>
-            <th>Country</th>
-            <th>Language</th>
-            <th>Source Popularity Rank</th>
-            <th>Published Date</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Rating</th>
+            <th>Price Range</th>
+            <th>Average Cost for Two</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((article: any, i: any) => (
+          {data.map((restaurant: any, i: any) => (
             <tr>
               <td>{i + 1}</td>
               <td>
                 <a href={"/restaurants/" + i} className="article">
-                  {article["title"]}
+                  {restaurant["name"]}
                 </a>
               </td>
-              <td>{countries_data[article["countryIndex"]]["name"]}</td>
-              <td>{article["language"]}</td>
-              <td>{article["rank"]}</td>
-              <td>{article["published_date"]}</td>
+              <td>{restaurant["location"]["city"]}</td>
+              <td>{restaurant["user_rating"]["aggregate_rating"]}</td>
+              <td>{restaurant["price_range"]}</td>
+              <td>${restaurant["average_cost_for_two"]}</td>
             </tr>
           ))}
         </tbody>
