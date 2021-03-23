@@ -697,6 +697,27 @@ valid_cities = {
     "Wilsonville, OR",
 }
 
+def filter_restaurants_by_valid_cities():
+    f = open("final_all_restaurants.json", "r")
+    data = json.load(f, encoding="utf8")
+
+    print('original num restaurants: ', len(data))
+
+    valid_restaurants = []
+
+    for restaurant in data:
+        city_name = restaurant["location"]["city"]
+        state_abbrev = restaurant["location"]["state_abbrev"]
+        city_and_state = city_name + ", " + state_abbrev
+        if city_and_state in valid_cities:
+            valid_restaurants.append(restaurant)
+
+    print('new num restaurants: ', len(valid_restaurants))
+    
+    f = open("final_all_restaurants_with_valid_cities.json", "w")
+    json.dump(valid_restaurants, f)
+
+
 def get_valid_cities():
     invalid_cities = set()
     base_url = "https://api.teleport.org/api/cities/?search="
@@ -807,7 +828,7 @@ def ping_request(url):
 
 
 def get_zomato_cities_in_restaurant_file():
-    f = open("missing_restaurants.json", "r")
+    f = open("temp_cuisines.json", "r")
     data = json.load(f, encoding="utf8")
     count = 0
     city_state = set()
@@ -822,9 +843,13 @@ def get_zomato_cities_in_restaurant_file():
         restaurant_address = restaurant["location"]["address"]
         restaurant_city = restaurant["location"]["city"]
         print(restaurant_city)
-        # if restaurant_city not in restaurant_address:
-        #     restaurant_address += " " + restaurant_city
+        if restaurant_city not in restaurant_address:
+            restaurant_address += " " + restaurant_city
         req_url = url + restaurant_address
+
+        print('restaurant_address: ', restaurant_address)
+
+        print('req_url', req_url)
 
         res = ping_request(req_url)
         print(res)
@@ -833,7 +858,7 @@ def get_zomato_cities_in_restaurant_file():
             continue
         formatted_address = res["candidates"][0]["formatted_address"]
         parts = formatted_address.split(", ")
-        state_abbrev = parts[2].split(" ")[0]
+        state_abbrev = parts[-2].split(" ")[0]
         restaurant["location"]["address"] = formatted_address
         restaurant["location"]["state_abbrev"] = state_abbrev
         city_state.add(restaurant_city + ", " + state_abbrev)
@@ -843,9 +868,11 @@ def get_zomato_cities_in_restaurant_file():
             json.dump(restaurant_list, f)
         count += 1
         print("count", count)
-    f = open("missing_restaurants_better_address.json", "w")
+    f = open("temp_cuisines_better_1_address.json", "w")
     json.dump(restaurant_list, f)
     print(city_state)
+
+get_zomato_cities_in_restaurant_file()
 
 
 def get_diff_on_restaurants():
@@ -1069,4 +1096,5 @@ def check_cities():
 
 # get_zomato_cities_in_restaurant_file()
 # get_diff_on_restaurants()
-get_valid_cities()
+# get_valid_cities()
+
