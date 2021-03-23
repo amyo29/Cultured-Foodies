@@ -233,7 +233,7 @@ def ping_request(url):
 
 
 def get_zomato_cities_in_restaurant_file():
-    f = open("all_restaurants.json", "r")
+    f = open("missing_restaurants.json", "r")
     data = json.load(f, encoding="utf8")
     count = 0
     city_state = set()
@@ -243,16 +243,17 @@ def get_zomato_cities_in_restaurant_file():
     restaurant_list = []
     count = 0
 
-    for restaurant in data[0:]:
+    for restaurant in data:
         print(restaurant["name"])
         restaurant_address = restaurant["location"]["address"]
         restaurant_city = restaurant["location"]["city"]
         print(restaurant_city)
-        if restaurant_city not in restaurant_address:
-            restaurant_address += " , " + restaurant_city
+        # if restaurant_city not in restaurant_address:
+        #     restaurant_address += " " + restaurant_city
         req_url = url + restaurant_address
 
         res = ping_request(req_url)
+        print(res)
         if len(res["candidates"]) == 0:
             print("THIS HAS TO BE HARDCODED", restaurant_address)
             continue
@@ -268,17 +269,205 @@ def get_zomato_cities_in_restaurant_file():
             json.dump(restaurant_list, f)
         count += 1
         print("count", count)
-    f = open("all_restaurants_better_address.json", "w")
+    f = open("missing_restaurants_better_address.json", "w")
     json.dump(restaurant_list, f)
     print(city_state)
 
+def get_diff_on_restaurants():
+    f = open("all_restaurants.json", "r")
+    old = json.load(f, encoding="utf8")
+    f2 = open("all_restaurants_improved.json", "r")
+    improved = json.load(f2, encoding="utf8")
+    old_restaurants = set()
+    improved_restaurants = set()
 
+    for restaurant in old:
+        restaurant_name = restaurant["name"]
+        restaurant_phone = restaurant["phone_numbers"]
+        old_restaurants.add(restaurant_name + ": " + restaurant_phone)
+    for restaurant in improved:
+        restaurant_name = restaurant["name"]
+        restaurant_phone = restaurant["phone_numbers"]
+        improved_restaurants.add(restaurant_name + ": " + restaurant_phone)
+    print("Old- ", len(old_restaurants))
+    print("Improved- ", len(improved_restaurants))
+    diff = old_restaurants - improved_restaurants
+    print("Diff - ", len(diff))
+    print(diff)
+    missing_restaurants = []
+    # import pdb
+    # pdb.set_trace()
+    # temp = []
+    for restaurant in diff:
+        name = restaurant.split(": ")[0]
+        phone = restaurant.split(": ")[1]
+        for restaurant in old:
+            if restaurant["name"] == name and restaurant["phone_numbers"] == phone:
+                missing_restaurants.append(restaurant)
+                # bef_rest = len(missing_restaurants)
+                # missing_restaurants.add(name + phone)
+                # aft_rest = len(missing_restaurants)
+                # if(bef_rest == aft_rest):
+                #     temp.append(name)
+    # print("missing- ", missing_restaurants)
+    print("Len of missing- ", len(missing_restaurants))
+    f = open("missing_restaurants.json", "w")
+    json.dump(missing_restaurants, f)
+
+    # print("Len of temp- ", len(temp))
+    # print(temp)
+    
+"""Merging the missing restaurants with the improved address restaurants"""
+# f = open("all_restaurants_improved.json", "r")
+# old = json.load(f, encoding="utf8")
+# f2 = open("missing_restaurants_better_address.json", "r")
+# improved = json.load(f2, encoding="utf8")
+# final = old + improved
+# f3 = open("all_improved_restaurants.json", "w")
+# json.dump(final, f3)
 """
 {'Danville, California', 'Palo Alto, California', 'Alameda, California', 'Saratoga, California', 'Corona, South Dakota', 'Los Gatos, California', 'Fremont, California', 'Albany, California', 'Denton, Texas', 'New York City, New York', 'Mountain View, California', 'Alvarado, Texas', 'Campbell, California', 'Castro Valley, California', 'Houston, Texas', 'Florida Keys, Florida', 'Nashville, Tennessee', 'Reidsville, Georgia', 'Statesboro, Georgia', 'Mc Cormick, South Carolina', 'Menlo Park, California', 'Oakland, California', 'Pittsburgh, Pennsylvania', 'Cincinnati, Kentucky', 'Hillsboro, Texas', 'Cleburne, Texas', 'Tampa Bay, Florida', 'Dublin, California', 'Palmdale, California', 'Oklahoma City, Oklahoma', 'Sweet Home, Oregon', 'San Jose, California', 'Hinesville, Georgia', 'Redwood City, California', 'Providence, Rhode Island', 'Sunnyvale, California', 'Milbank, South Dakota', 'Jacksonville, Florida', 'San Francisco, California', 'Eugene, Oregon', 'Whitney, Texas', 'Hoboken, New Jersey', 'Hayward, California', 'Santa Clara, California', 'Pleasanton, California', 'Belmont, California', 'Cincinnati, Ohio', 'Colorado Springs, Colorado', 'Orlando, Florida', 'San Leandro, California', 'Greensboro, Georgia', 'Fort Myers, Florida', 'Cleveland, Ohio'}
 
-
 """
+def remove_duplicate_restaurants():
+    f = open("all_improved_restaurants.json", "r")
+    improved = json.load(f, encoding="utf8")
+    new_restaurants = []
+    improved_restaurants = set()
+    for restaurant in improved:
+        restaurant_name = restaurant["name"]
+        restaurant_phone = restaurant["phone_numbers"]
+        improved_restaurants.add(restaurant_name + ": " + restaurant_phone)
+
+    for unique_rest in improved_restaurants:
+        name = unique_rest.split(": ")[0]
+        phone = unique_rest.split(": ")[1]
+        for restaurant in improved:
+            if restaurant["name"] == name and restaurant["phone_numbers"] == phone:
+                new_restaurants.append(restaurant)
+                break
+
+    f = open("Final_all_improved_restaurants.json", "w")
+    json.dump(new_restaurants, f)
+
+all_cuisines_names = {
+    "Afghan": 1,
+    "Albanian": 2,
+    "American": 3,
+    "Amish": 4,
+    "Argentine": 5,
+    "Armenian": 6,
+    "Australian": 7,
+    "Austrian": 8,
+    "Balearic": 9,
+    "Bangladeshi": 10,
+    "Belgian": 11,
+    "Bolivian": 12,
+    "Brazilian": 13,
+    "British": 14,
+    "Burmese": 15,
+    "Cajun": 16,
+    "California": 17,
+    "Cambodian": 18,
+    "Canadian": 19,
+    "Cantonese": 20,
+    "Caribbean": 21,
+    "Chilean": 22,
+    "Chinese": 23,
+    "Colombian": 24,
+    "Creole": 25,
+    "Cuban": 26,
+    "Danish": 27,
+    "Dominican": 28,
+    "Ecuadorian": 29,
+    "Ethiopian": 30,
+    "Filipino": 31,
+    "French": 32,
+    "Georgian": 33,
+    "German": 34,
+    "Greek": 35,
+    "Guyanese": 36,
+    "Haitian": 37,
+    "Hawaiian": 38,
+    "Hong Kong": 39,
+    "Hungarian": 40,
+    "Icelandic": 41,
+    "Indian": 42,
+    "Indonesian": 43,
+    "Iranian": 44,
+    "Irish": 45,
+    "Israeli": 46,
+    "Italian": 47,
+    "Jamaican": 48,
+    "Japanese": 49,
+    "Jewish": 50,
+    "Korean": 51,
+    "Lebanese": 52,
+    "Malaysian": 53,
+    "Mexican": 54,
+    "Moldovan": 55,
+    "Mongolian": 56,
+    "Moroccan": 57,
+    "Nepalese": 58,
+    "New American": 59,
+    "New Mexican": 60,
+    "New Zealand": 61,
+    "Nicaraguan": 62,
+    "Nigerian": 63,
+    "Pakistani": 64,
+    "Paraguayan": 65,
+    "Peruvian": 66,
+    "Polish": 67,
+    "Portuguese": 68,
+    "Puerto Rican": 69,
+    "Punjabi": 70,
+    "Russian": 71,
+    "Salvadorean": 72,
+    "Saudi Arabian": 73,
+    "Scandinavian": 74,
+    "Scottish": 75,
+    "Sichuan": 76,
+    "Singaporean": 77,
+    "Somali": 78,
+    "Soul Food": 79,
+    "South African": 80,
+    "Southern": 81,
+    "Southwestern": 82,
+    "Spanish": 83,
+    "Sri Lankan": 84,
+    "Swedish": 85,
+    "Swiss": 86,
+    "Syrian": 87,
+    "Taiwanese": 88,
+    "Tex-Mex": 89,
+    "Thai": 90,
+    "Tibetan": 91,
+    "Trinidad And Tobago": 92,
+    "Tunisian": 93,
+    "Turkish": 94,
+    "Ukrainian": 95,
+    "Uruguayan": 96,
+    "Uzbek": 97,
+    "Venezuelan": 98,
+    "Vietnamese": 99,
+    "Welsh": 100,
+    "Yemeni": 101,
+}
+def check_if_we_have_enough_cuisines_dammit():
+    f = open("Final_all_improved_restaurants.json")
+    restaurants = json.load(f)
+
+    for restaurant in restaurants:
+        # city_id = restaurant["location"]["city_id"]
+        # country_id = restaurant["location"]["country_id"]
+        # if country_id == 216:
+        for cuisine in restaurant["cuisines"].split(", "):
+            if cuisine in all_cuisines_names:
+                all_cuisines_names.pop(cuisine)
+
+    print("remaining cuisines: ", all_cuisines_names)
 
 """ handle restaurants that don't have a zipcode"""
 
-get_zomato_cities_in_restaurant_file()
+# get_zomato_cities_in_restaurant_file()
+# get_diff_on_restaurants()
