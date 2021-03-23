@@ -529,7 +529,7 @@ def insert_city_id():
 
 
 def check_if_we_have_enough_cuisines_dammit():
-    f = open("all_restaurants.json")
+    f = open("temp.json")
     restaurants = json.load(f)
 
     for restaurant in restaurants:
@@ -588,10 +588,41 @@ def check_len():
     print("part num of restaurants: ", len(part))
 
 
-check_len()
+def remove_attributes_from_restaurants():
+    f = open("missing_cuisine_restaurants.json")
+    data = json.load(f)
+
+    things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers", 
+    "opentable_support", "is_zomato_book_res", "mezzo_provider", "is_book_form_web_view", "book_form_web_view_url", "book_again_url",
+    "all_reviews_count", "photos_url", "photo_count", "medio_provider", "deeplink", "events_url", "all_reviews", "establishment", "establishment_types"]
+
+    for restaurant in data:
+        for pop in things_to_pop:
+            restaurant.pop(pop)
+
+    with open("missing_cuisine_restaurants.json", "w") as file:
+        json.dump(data, file,sort_keys=True)
+
+def combine_json_files():
+    f = open("final_all_restaurants.json")
+    orig_rest = json.load(f)
+
+    f = open("missing_cuisine_restaurants.json")
+    cuisines = json.load(f)
+
+    print('num: ', len(cuisines))
+
+    data = orig_rest + cuisines
+
+    with open("final_restaurants.json", "w") as file:
+        json.dump(data, file,sort_keys=True)
+
+# combine_json_files()
+# remove_attributes_from_restaurants()
+# check_len()
 # check_for_duplicate_city_ids()
 # remove_restaurants_not_in_US()
-# check_if_we_have_enough_cuisines_dammit()
+check_if_we_have_enough_cuisines_dammit()
 # insert_city_id()
 # remove_cuisines_data_from_cities()
 # remove_cuisines_not_in_list()

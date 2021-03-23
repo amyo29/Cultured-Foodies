@@ -2,7 +2,7 @@ import json
 import requests
 
 def get_restaurant_image():
-    f = open('all_restaurants.json')
+    f = open('final_restaurants.json')
     restaurants_data = json.load(f)
     base_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&inputtype=textquery&fields=photos&input='
     base_url_image = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&maxwidth=4000&photoreference='
@@ -23,6 +23,9 @@ def get_restaurant_image():
                     r = requests.get(url).json()
                 except:
                     pass
+
+            if len(r['candidates']) == 0:
+                print("NO CANDIDATE")
             for candidate in r['candidates']:
                 if 'photos' in candidate:
                     for photo in candidate['photos']:
@@ -41,7 +44,7 @@ def get_restaurant_image():
                     print('UH OH :((')
         count += 1
         
-    with open("all_restaurants.json", "w") as file:
-                json.dump(restaurants_data, file)
+    with open("final_restaurants.json", "w") as file:
+        json.dump(restaurants_data, file)
 
 get_restaurant_image()
