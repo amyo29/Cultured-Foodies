@@ -203,7 +203,7 @@ def sort_cuisines():
         json.dump(cuisines_data, file)
 
 def insert_ids():
-    f = open("all_valid_cities.json")
+    f = open("all_restaurants.json")
     cities = json.load(f)
 
     # cities_sorted_data = sorted(cities, key=lambda k: k["name"])
@@ -216,7 +216,7 @@ def insert_ids():
         city_list.append(city_dict)
         id += 1
 
-    with open("all_valid_cities.json", "w") as file:
+    with open("all_restaurants.json", "w") as file:
         json.dump(city_list, file)
 
 def get_cuisines_in_a_city():
