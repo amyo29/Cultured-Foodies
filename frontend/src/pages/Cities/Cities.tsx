@@ -3,9 +3,9 @@ import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
 
 const data = require("../../data/threeDishes.json");
-function Dishes() {
+function Cities() {
   useEffect(() => {
-    document.title = "Dishes"
+    document.title = "Cities"
   }, [])
   var i, j;
   var chunk = 5;
@@ -15,7 +15,7 @@ function Dishes() {
   }
   return (
     <div>
-      <h1 className="text-align center">Dishes</h1>
+      <h1 className="text-align center">Cities</h1>
       <Container>
         {rows.map((cols) => (
           <Row>
@@ -23,7 +23,7 @@ function Dishes() {
               <Col className = "col-sm-4 py-2">
                 <Card bg='card h-100'>
                   <Card.Body>
-                    <a href= {"/dishes/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
+                    <a href= {"/cities/"+ i}><Card.Title>{col["recipe"]["label"]}</Card.Title></a>
                     <Card.Img variant="top" src={col["recipe"]["image"]} />
                       <p>
                         <b>Meal Type: </b> {col["recipe"]["mealType"] ? col["recipe"]["mealType"]:"None"} <br />
@@ -45,4 +45,4 @@ function Dishes() {
   );
 }
 
-export default Dishes;
+export default Cities;

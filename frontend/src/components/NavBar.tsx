@@ -21,9 +21,9 @@ class NavBar extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/countries">Countries</Nav.Link>
-              <Nav.Link href="/dishes">Dishes</Nav.Link>
-              <Nav.Link href="/news">News</Nav.Link>
+              <Nav.Link href="/cuisines">Cuisines</Nav.Link>
+              <Nav.Link href="/cities">Cities</Nav.Link>
+              <Nav.Link href="/restaurants">Restaurants</Nav.Link>
             </Nav>
             <Form inline>
               <FormControl

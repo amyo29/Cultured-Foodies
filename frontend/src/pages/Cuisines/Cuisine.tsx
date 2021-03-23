@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
-import "../../styles/Country.css";
+import "../../styles/Cuisine.css";
 
 const countries_data = require("../../data/threeCountries.json");
 const news_data = require("../../data/threeNews.json");
 const dishes_data = require("../../data/threeDishes.json");
 
-function Country() {
+function Cuisine() {
   const { id } = useParams<{ id: string }>();
   let data = countries_data[+id];
   let countryName = data["name"];
@@ -102,4 +102,4 @@ function Country() {
   );
 }
 
-export default Country;
+export default Cuisine;
