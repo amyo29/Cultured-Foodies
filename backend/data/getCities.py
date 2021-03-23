@@ -243,7 +243,7 @@ def get_zomato_cities_in_restaurant_file():
     restaurant_list = []
     count = 0
 
-    for restaurant in data[140:]:
+    for restaurant in data[0:]:
         print(restaurant["name"])
         restaurant_address = restaurant["location"]["address"]
         restaurant_city = restaurant["location"]["city"]

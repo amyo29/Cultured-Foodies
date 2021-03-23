@@ -576,7 +576,20 @@ def check_for_duplicate_city_ids():
             city_ids[city_id] = city
 
 
-check_for_duplicate_city_ids()
+def check_len():
+    f = open("all_restaurants.json")
+    orig_rest = json.load(f)
+
+    print("total num of restaurants: ", len(orig_rest))
+
+    f = open("all_restaurants_improved.json")
+    part = json.load(f)
+
+    print("part num of restaurants: ", len(part))
+
+
+check_len()
+# check_for_duplicate_city_ids()
 # remove_restaurants_not_in_US()
 # check_if_we_have_enough_cuisines_dammit()
 # insert_city_id()
