@@ -1,19 +1,34 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
-
+import useAxios from 'axios-hooks'
 // const data = require("../../data/threeDishes.json");
-const data = require("../../data/newData/threeCities.json");
+const data1 = require("../../data/newData/threeCities.json");
 
 function Cities() {
   useEffect(() => {
     document.title = "Cities"
   }, [])
+  const [cities, setCities] = useState([]);
+  const [{ data, loading, error }] = useAxios('/api/cities')
+  useEffect(() => {
+    document.title = "Cities"
+
+  }, [])
+  useEffect(() => {
+    if (data) {
+      setCities(data.cities)
+      console.log(data.cities)
+    }
+  },[data])
+
+
+
   var i, j;
   var chunk = 5;
   var rows = [];
-  for (i = 0, j = data.length; i < j; i += chunk) {
-    rows.push(data.slice(i, i + chunk));
+  for (i = 0, j = data1.length; i < j; i += chunk) {
+    rows.push(data1.slice(i, i + chunk));
   }
   return (
     <div>
