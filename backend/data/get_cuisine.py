@@ -675,18 +675,18 @@ def remove_dict_keys():
 
 
 def arrayToOneString():
-    f = open("newCountryData.json")
+    f = open("all_cuisines.json")
     data = json.load(f)
 
-    for country in data:
-        borders = ", ".join(country["borders"])
-        timezones = ", ".join(country["timezones"])
+    for cuisine in data:
+        # countries = "".join(str(cuisine["countryID"]))
 
-        country["borders"] = borders
-        country["timezones"] = timezones
+        cuisine["countryID"] = cuisine["countryID"][1:-1]
 
-    f = open("newCountryData2.json", "w")
+    f = open("all_cuisines.json", "w")
     json.dump(data, f)
+
+arrayToOneString()
 
 
 def dictToOneString():
