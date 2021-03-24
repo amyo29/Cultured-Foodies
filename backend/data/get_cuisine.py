@@ -203,7 +203,7 @@ def sort_cuisines():
         json.dump(cuisines_data, file)
 
 def insert_ids():
-    f = open("all_restaurants.json")
+    f = open("new_restaurants.json")
     cities = json.load(f)
 
     # cities_sorted_data = sorted(cities, key=lambda k: k["name"])
@@ -520,8 +520,6 @@ def remove_cuisines_data_from_cities():
         json.dump(cities, file)
 
 
-remove_cuisines_data_from_cities()
-
 
 def insert_city_id():
     f = open("cities_zomato_id.json")
@@ -608,16 +606,78 @@ def remove_attributes_from_restaurants():
     f = open("all_restaurants.json")
     data = json.load(f)
 
-    things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers", 
-    "opentable_support", "is_zomato_book_res", "mezzo_provider", "is_book_form_web_view", "book_form_web_view_url", "book_again_url",
-    "all_reviews_count", "photos_url", "photo_count", "medio_provider", "deeplink", "events_url", "all_reviews", "establishment", "establishment_types"]
+    # things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers", 
+    # "opentable_support", "is_zomato_book_res", "mezzo_provider", "is_book_form_web_view", "book_form_web_view_url", "book_again_url",
+    # "all_reviews_count", "photos_url", "photo_count", "medio_provider", "deeplink", "events_url", "all_reviews", "establishment", "establishment_types",
+    
+    things_to_pop = ["currency", "featured_image", "has_online_delivery",
+    "has_table_booking", "include_bogo_offers", "is_delivering_now", "is_table_reservation_supported",
+    "store_type", "thumb", "user_rating"]
 
     for restaurant in data:
         for pop in things_to_pop:
-            restaurant.pop(pop)
+            restaurant.pop(pop)                
 
     with open("all_restaurants.json", "w") as file:
         json.dump(data, file,sort_keys=True)
+
+def use_keys_as_attributes():
+    f = open("all_restaurants.json")
+    data = json.load(f)
+
+    for restaurant in data:
+        address = restaurant["location"]["address"]
+        city = restaurant["location"]["city"]
+        latitude = restaurant["location"]["latitude"]
+        longitude = restaurant["location"]["longitude"]
+        state_abbrev = restaurant["location"]["state_abbrev"]
+        zipcode = restaurant["location"]["zipcode"]
+
+        restaurant["address"] = address
+        restaurant["city"] = city
+        restaurant["latitude"] = latitude
+        restaurant["longitude"] = longitude
+        restaurant["state_abbrev"] = state_abbrev
+        restaurant["zipcode"] = zipcode
+
+        restaurant.pop("location")
+
+    f = open("new_restaurants.json", "w")
+    json.dump(data, f)
+
+def get_aggregate_rating():
+    f = open("all_restaurants.json")
+    data = json.load(f)
+
+    for restaurant in data:
+        rating = restaurant["user_rating"]["aggregate_rating"]
+        restaurant["aggregate_rating"] = rating
+
+    f = open("all_restaurants.json", "w")
+    json.dump(data, f)
+
+def remove_dict_keys():
+    f = open("all_restaurants.json")
+    data = json.load(f)
+
+    for restaurant in data:
+        del restaurant["location"]["locality"]
+        del restaurant["location"]["locality_verbose"]
+
+    f = open("all_restaurants.json", "w")
+    json.dump(data, f)
+
+def arrayToOneString():
+    f = open("all_restaurants.json")
+    data = json.load(f)
+
+    for restaurant in data:
+        highlights =  ", ".join(restaurant["highlights"])
+
+        restaurant["highlights"] = highlights
+
+    f = open("new_restaurants.json", "w")
+    json.dump(data, f)
 
 def combine_json_files():
     f = open("final_all_restaurants.json")
