@@ -103,13 +103,89 @@ class Tests(TestCase):
             "zipcode": "94123"
         }
 
-  def test_not_found_restaurant(self):
+    def test_not_found_restaurant(self):
         result = requests.get("https://culturedfoodies.me/api/restaurants/id=5555")
         assert result.status_code == 404
         jsonRes = result.json()
         assert jsonRes == {"error": "5555 not found"}
 
 
-    
-if __name__ == "__main__":  # pragma: no cover
+    def test_num_cities(self):
+        result = requests.get("https://culturedfoodies.me/api/cities")
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert len(jsonRes["cities"]) == 206
+
+    def test_all_cities(self):
+        result = requests.get("https://culturedfoodies.me/api/cities")
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert len(jsonRes["cities"]) > 0
+        assert jsonRes["cities"][0] == {
+            "business_freedom": 8.574666666666667, 
+            "commute": 3.6770000000000005, 
+            "cost_of_living": 4.556000000000001, 
+            "economy": 6.5145, 
+            "education": 8.6245, 
+            "environmental_quality": 4.7315000000000005, 
+            "full_name": "Agoura Hills, California, United States", 
+            "healthcare": 8.439666666666666, 
+            "housing": 1.5274999999999999, 
+            "id": 1, 
+            "imagesmobile": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/los-angeles-f5b60deb04.jpg", 
+            "imagesweb": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/los-angeles_web-2eedb2a83e.jpg", 
+            "internet_access": 5.496500000000001, 
+            "latitude": 34, 
+            "leisure_culture": 9.196, 
+            "longitude": -118, 
+            "name": "Agoura Hills", 
+            "outdoors": 6.747, 
+            "population": 20915, 
+            "safety": 5.705, 
+            "state": "California", 
+            "taxation": 4.7675, 
+            "timezone": "America/Los_Angeles", 
+            "travel_connectivity": 3.9585000000000004, 
+            "venture_capital": 10.0
+        }
+
+    def test_one_city(self):
+        result = requests.get("https://culturedfoodies.me/api/cities/id=111")
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert jsonRes == {
+            "business_freedom": 8.671, 
+            "commute": 4.4704999999999995, 
+            "cost_of_living": 6.090999999999999, 
+            "economy": 6.5145, 
+            "education": 4.284, 
+            "environmental_quality": 6.693, 
+            "full_name": "McKinney, Texas, United States", 
+            "healthcare": 8.439333333333332, 
+            "housing": 5.259000000000001, 
+            "id": 111, 
+            "imagesmobile": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/dallas-a55f677457.jpg", 
+            "imagesweb": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/dallas_web-1b0ab83512.jpg", 
+            "internet_access": 6.4609999999999985, 
+            "latitude": 33, 
+            "leisure_culture": 7.1685, 
+            "longitude": -96, 
+            "name": "McKinney", 
+            "outdoors": 4.501999999999999, 
+            "population": 162898, 
+            "safety": 4.3389999999999995, 
+            "state": "Texas", 
+            "taxation": 4.772, 
+            "timezone": "America/Chicago", 
+            "travel_connectivity": 4.746499999999999, 
+            "venture_capital": 4.9159999999999995
+        }
+
+    def test_not_found_city(self):
+        result = requests.get("https://culturedfoodies.me/api/cities/id=-1")
+        assert result.status_code == 404
+        jsonRes = result.json()
+        assert jsonRes == {"error": "-1 not found"}
+
+if __name__ == "__main__":  
     main()
