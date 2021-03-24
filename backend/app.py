@@ -142,15 +142,15 @@ countries_schema = CountrySchema(many=True)
 # ENDPOINTS
 
 # NOTE: This route is needed for the default EB health check route
-@app.route("/")
-def home():
-    return "ok"
+# @app.route("/")
+# def home():
+#     return "ok"
 
 
-# @app.route("/", defaults={"path": ""})
-# @app.route("/<path:path>")
-# def get_index(path):
-#     return render_template("index.html")
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def get_index(path):
+    return render_template("index.html")
 
 
 # Retrieve all cuisines
@@ -237,10 +237,10 @@ def get_country_id(id):
     return country_schema.jsonify(country)
 
 
-if __name__ == "__main__":
-    db.init_app(app)
-    app.run(port=8080)
-
 # if __name__ == "__main__":
 #     db.init_app(app)
-#     app.run(host="0.0.0.0", port=5000, threaded=True, debug=True)
+#     app.run(port=8080)
+
+if __name__ == "__main__":
+    db.init_app(app)
+    app.run(host="0.0.0.0", port=5000, threaded=True, debug=True)
