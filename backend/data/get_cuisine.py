@@ -605,7 +605,7 @@ def check_len():
 
 
 def remove_attributes_from_restaurants():
-    f = open("missing_cuisine_restaurants.json")
+    f = open("all_restaurants.json")
     data = json.load(f)
 
     things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers", 
@@ -616,7 +616,7 @@ def remove_attributes_from_restaurants():
         for pop in things_to_pop:
             restaurant.pop(pop)
 
-    with open("missing_cuisine_restaurants.json", "w") as file:
+    with open("all_restaurants.json", "w") as file:
         json.dump(data, file,sort_keys=True)
 
 def combine_json_files():
