@@ -719,7 +719,7 @@ def dictToOneString():
     # json.dump(data, f)
 
 
-dictToOneString()
+# dictToOneString()
 
 
 def combine_json_files():
