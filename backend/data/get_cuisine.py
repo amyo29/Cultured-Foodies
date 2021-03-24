@@ -202,6 +202,7 @@ def sort_cuisines():
     with open("all_cuisines.json", "w") as file:
         json.dump(cuisines_data, file)
 
+
 def insert_ids():
     f = open("new_restaurants.json")
     cities = json.load(f)
@@ -218,6 +219,7 @@ def insert_ids():
 
     with open("all_restaurants.json", "w") as file:
         json.dump(city_list, file)
+
 
 def get_cuisines_in_a_city():
     f = open("all_cities.json")
@@ -520,7 +522,6 @@ def remove_cuisines_data_from_cities():
         json.dump(cities, file)
 
 
-
 def insert_city_id():
     f = open("cities_zomato_id.json")
     cities_zomato = json.load(f)
@@ -602,24 +603,27 @@ def check_len():
     print("part num of restaurants: ", len(part))
 
 
-def remove_attributes_from_restaurants():
-    f = open("all_restaurants.json")
+def remove_attributes_from_json():
+    f = open("countryData.json")
     data = json.load(f)
 
-    # things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers", 
+    # things_to_pop = ["R", "apikey", "id", "switch_to_order_menu", "offers",
     # "opentable_support", "is_zomato_book_res", "mezzo_provider", "is_book_form_web_view", "book_form_web_view_url", "book_again_url",
     # "all_reviews_count", "photos_url", "photo_count", "medio_provider", "deeplink", "events_url", "all_reviews", "establishment", "establishment_types",
-    
-    things_to_pop = ["currency", "featured_image", "has_online_delivery",
-    "has_table_booking", "include_bogo_offers", "is_delivering_now", "is_table_reservation_supported",
-    "store_type", "thumb", "user_rating"]
 
-    for restaurant in data:
+    # things_to_pop = ["currency", "featured_image", "has_online_delivery",
+    # "has_table_booking", "include_bogo_offers", "is_delivering_now", "is_table_reservation_supported",
+    # "store_type", "thumb", "user_rating"]
+
+    things_to_pop = ["topLevelDomain", "callingCodes", "altSpellings", "cioc"]
+
+    for one in data:
         for pop in things_to_pop:
-            restaurant.pop(pop)                
+            one.pop(pop)
 
-    with open("all_restaurants.json", "w") as file:
-        json.dump(data, file,sort_keys=True)
+    with open("newCountryData.json", "w") as file:
+        json.dump(data, file)
+
 
 def use_keys_as_attributes():
     f = open("all_restaurants.json")
@@ -645,6 +649,7 @@ def use_keys_as_attributes():
     f = open("new_restaurants.json", "w")
     json.dump(data, f)
 
+
 def get_aggregate_rating():
     f = open("all_restaurants.json")
     data = json.load(f)
@@ -655,6 +660,7 @@ def get_aggregate_rating():
 
     f = open("all_restaurants.json", "w")
     json.dump(data, f)
+
 
 def remove_dict_keys():
     f = open("all_restaurants.json")
@@ -667,17 +673,54 @@ def remove_dict_keys():
     f = open("all_restaurants.json", "w")
     json.dump(data, f)
 
+
 def arrayToOneString():
-    f = open("all_restaurants.json")
+    f = open("newCountryData.json")
     data = json.load(f)
 
-    for restaurant in data:
-        highlights =  ", ".join(restaurant["highlights"])
+    for country in data:
+        borders = ", ".join(country["borders"])
+        timezones = ", ".join(country["timezones"])
 
-        restaurant["highlights"] = highlights
+        country["borders"] = borders
+        country["timezones"] = timezones
 
-    f = open("new_restaurants.json", "w")
+    f = open("newCountryData2.json", "w")
     json.dump(data, f)
+
+
+def dictToOneString():
+    f = open("newCountryData2.json")
+    data = json.load(f)
+
+    for country in data:
+        currencies = (
+            country["currencies"][0]["code"] + "-" + country["currencies"][0]["name"]
+        )
+
+        if country["currencies"][0]["symbol"]:
+            currencies += "-" + country["currencies"][0]["symbol"]
+
+        for i in range(1, len(country["currencies"]) - 1):
+            currency = (
+                country["currencies"][i]["code"]
+                + "-"
+                + country["currencies"][i]["name"]
+            )
+
+            if country["currencies"][i]["symbol"]:
+                currency += "-" + country["currencies"][i]["symbol"]
+
+            currencies += ", " + currency
+
+        country["currencies"] = currencies
+
+    # f = open("newCountryData.json", "w")
+    # json.dump(data, f)
+
+
+dictToOneString()
+
 
 def combine_json_files():
     f = open("final_all_restaurants.json")
@@ -686,12 +729,13 @@ def combine_json_files():
     f = open("missing_cuisine_restaurants.json")
     cuisines = json.load(f)
 
-    print('num: ', len(cuisines))
+    print("num: ", len(cuisines))
 
     data = orig_rest + cuisines
 
     with open("final_restaurants.json", "w") as file:
-        json.dump(data, file,sort_keys=True)
+        json.dump(data, file, sort_keys=True)
+
 
 # combine_json_files()
 # remove_attributes_from_restaurants()
