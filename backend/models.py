@@ -23,9 +23,9 @@ class Cuisine(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String())
     country = db.Column(db.String())
-    # dishes = db.Column()
+    dishes = db.Column(JSON)
     description = db.Column(db.String())
-    # countryID =
+    countryID = db.Column(db.String())
 
 
 class City(db.Model):

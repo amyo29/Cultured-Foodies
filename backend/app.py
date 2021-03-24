@@ -42,13 +42,18 @@ ma = Marshmallow(app)
 # SCHEMAS
 
 
+class DishSchema(ma.Schema):
+    name = fields.Str(required=False)
+    image_url = fields.Str(required=False)
+
+
 class CuisineSchema(ma.Schema):
     id = fields.Int(required=True)
     name = fields.Str(required=False)
     country = fields.Str(required=False)
-    # cuisine_dishes =
+    dishes = fields.List(fields.Nested(DishSchema))
     description = fields.Str(required=False)
-    # cuisine_countryIDs =
+    countryID = fields.Str(required=False)
 
 
 class CitySchema(ma.Schema):
