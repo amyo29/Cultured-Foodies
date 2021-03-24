@@ -14,6 +14,7 @@
 
 # db.metadata.create_all(engine)
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.dialects.postgresql import JSON
 
 db = SQLAlchemy()
 
@@ -87,16 +88,16 @@ class Country(db.Model):
     region = db.Column(db.String())
     subregion = db.Column(db.String())
     population = db.Column(db.Integer)
-    latlng0 = db.Column(db.Integer)
-    latlng1 = db.Column(db.Integer)
+    latitude = db.Column(db.Integer)
+    longitude = db.Column(db.Integer)
     demonym = db.Column(db.String())
     area = db.Column(db.Integer)
     gini = db.Column(db.Integer)
     timezones = db.Column(db.String())
     borders = db.Column(db.String())
-    nativename = db.Column(db.String())
-    numericcode = db.Column(db.Integer)
+    native_name = db.Column(db.String())
+    numeric_code = db.Column(db.Integer)
     currencies = db.Column(db.String())
     languages = db.Column(db.String())
-    # translations
+    translations = db.Column(JSON)
     flag = db.Column(db.String())

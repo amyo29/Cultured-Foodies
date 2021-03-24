@@ -111,18 +111,18 @@ class CountrySchema(ma.Schema):
     region = fields.Str(required=False)
     subregion = fields.Str(required=False)
     population = fields.Int(required=False)
-    latlng0 = fields.Int(required=False)
-    latlng1 = fields.Int(required=False)
+    latitude = fields.Int(required=False)
+    longitude = fields.Int(required=False)
     demonym = fields.Str(required=False)
     area = fields.Int(required=False)
     gini = fields.Int(required=False)
     timezones = fields.Str(required=False)
     borders = fields.Str(required=False)
-    nativename = fields.Str(required=False)
-    numericcode = fields.Int(required=False)
+    native_name = fields.Str(required=False)
+    numeric_code = fields.Int(required=False)
     currencies = fields.Str(required=False)
     languages = fields.Str(required=False)
-    # translations
+    translations = fields.Dict(required=False)
     flag = fields.Str(required=False)
 
 
