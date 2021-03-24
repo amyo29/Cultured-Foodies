@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-//import { expect } from "chai";
+var expect = require("chai");
 var jsdom = require("mocha-jsdom");
 
 import About from "./About";
@@ -15,6 +15,13 @@ TODO: Things to test (once each):
 3) Stats
  */
 
+global.document = jsdom({
+    url: "http://localhost:3000"
+})
+
+/*WHY NO WORK??
+./node_modules/.bin/mocha --require babel-register ./src/App.test.js
+*/
 let rootContainer : any; 
 
 beforeEach(() => {
@@ -33,6 +40,7 @@ describe("", () => {
         act(() => {
             ReactDOM.render(<About />, rootContainer);
         }) 
-
+        //TODO: test things
+        expect(rootContainer.textContent).not.toBe(null);
     });
 });
