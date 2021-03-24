@@ -44,6 +44,71 @@ class Tests(TestCase):
 
     
 
+    def test_num_restaurants(self):
+        result = requests.get("https://culturedfoodies.me/api/restaurants")
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert len(jsonRes["restaurants"]) == 5395
+
+    # asserts expected first object in all years response
+    def test_all_restaurants(self):
+        
+        result = requests.get("https://culturedfoodies.me/api/restaurants")
+        assert result.status_code == 200
+        jsonRes = result.json()
+        assert len(jsonRes["restaurants"]) > 0
+        assert jsonRes["restaurants"][0] == {
+                 "address": "9249 W Union Hills Dr, Peoria, AZ 85382, USA", 
+      "aggregate_rating": "2.6", 
+      "average_cost_for_two": 10, 
+      "city": "Peoria", 
+      "cuisines": "Italian, Pizza, Sandwich", 
+      "highlights": "Delivery, Dinner, Takeaway Available, Lunch, Outdoor Seating, Gluten Free Options, Kid Friendly", 
+      "id": 1, 
+      "latitude": "33.6515100000", 
+      "longitude": "-112.2572600000", 
+      "menu_url": "https://www.zomato.com/peoria-az/streets-of-new-york-1-peoria/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop", 
+      "name": "Streets of New York", 
+      "phone_numbers": "(623) 875-6600", 
+      "price_range": 1, 
+      "restaurant_image": "https://lh3.googleusercontent.com/p/AF1QipPNs02sOBccaIpI5DZdDRuUEGWv3t5rAyFSlAgW=s1600-w2048", 
+      "state_abbrev": "AZ", 
+      "timings": "10:30 AM to 9 PM (Mon-Thu), 10:30 AM to 10 PM (Fri-Sat), 11 AM to 9 PM (Sun)", 
+      "url": "https://www.zomato.com/peoria-az/streets-of-new-york-1-peoria?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1", 
+      "zipcode": "85382"
+        }
+
+    def test_one_restaurant(self):
+        result = requests.get("https://culturedfoodies.me/api/restaurants/id=111")
+        assert result.status_code == 200
+        jsonRes = result.json()
+         assert jsonRes == {
+            "address": "2355 Chestnut St, San Francisco, CA 94123, USA", 
+      "aggregate_rating": "4.2", 
+      "average_cost_for_two": 75, 
+      "city": "San Francisco", 
+      "cuisines": "Italian, Pizza", 
+      "highlights": "Dinner, Credit Card, Lunch, Takeaway Available, Lunch Menu, Wine, Wifi, Gluten Free Options, Outdoor Seating, Dog Friendly, Vegetarian Friendly, Brunch", 
+      "id": 111, 
+      "latitude": "37.8000444444", 
+      "longitude": "-122.4421611111", 
+      "menu_url": "https://www.zomato.com/san-francisco/a16-marina-presidio/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop", 
+      "name": "A16", 
+      "phone_numbers": "(415) 771-2216", 
+      "price_range": 3, 
+      "restaurant_image": "https://lh3.googleusercontent.com/p/AF1QipMl5AALZMeoY-JyshZjP14aq6pHQJUZr-ZcbBMg=s1600-w4000", 
+      "state_abbrev": "CA", 
+      "timings": "5:30 PM to 10 PM (Mon-Tue),11:30 AM to 2 PM, 5:30 PM to 10 PM (Wed-Thu),11:30 AM to 2 PM (Fri),11:30 AM to 2 PM, 5 PM to 11 PM (Sat),11:30 AM to 2 PM, 5 PM to 10 PM (Sun)", 
+      "url": "https://www.zomato.com/san-francisco/a16-marina-presidio?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1", 
+      "zipcode": "94123"
+        }
+
+  def test_not_found_restaurant(self):
+        result = requests.get("https://culturedfoodies.me/api/restaurants/id=5555")
+        assert result.status_code == 404
+        jsonRes = result.json()
+        assert jsonRes == {"error": "5555 not found"}
+
 
 if __name__ == "__main__":  # pragma: no cover
     main()
