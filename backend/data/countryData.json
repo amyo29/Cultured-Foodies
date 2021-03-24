@@ -1097,7 +1097,7 @@
     "region": "Americas",
     "subregion": "Northern America",
     "population": 300,
-    "latlng": [],
+    "latlng": [19.2823, 166.6470],
     "demonym": "American",
     "area": null,
     "gini": null,
