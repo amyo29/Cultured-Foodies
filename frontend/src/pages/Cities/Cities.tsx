@@ -54,7 +54,7 @@ function Cities() {
                 
                 <Card bg='card h-100'>
                   <Card.Body>
-                    <a href= {"/cities/"+ i}><Card.Title>{city["name"]}</Card.Title></a>
+                    <a href= {"/cities/"+ city["id"]}><Card.Title>{city["name"]}</Card.Title></a>
                     <Card.Img variant="top" src={city["imagesmobile"]} />
                       <p>
                         <b>State: </b> {city["state"]} <br />
