@@ -18,7 +18,7 @@ function City() {
   }, []);
   const { id } = useParams<{ id: string }>();
   const [{ data, loading, error }] = useAxios('/api/cities/id='+id) 
-  const [city, setCity] = useState<City>();
+  const [city, setCity] = useState<CityInstance>();
   const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
   const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
 
@@ -30,7 +30,7 @@ function matchesCityRestaurants(element:any, index: number, array: any){
   return city?.restaurant_ids.split(", ").includes(element?.id.toString())
 } 
   useEffect(() => {
-    const cityObj: City = data as City;
+    const cityObj: CityInstance = data as CityInstance;
     if (cityObj) {
       setCity(cityObj);
     }
@@ -128,9 +128,9 @@ function matchesCityRestaurants(element:any, index: number, array: any){
       </section>
       <section>
       <h5>Restauarants in {city?.name}</h5>
-      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}</a>))}
+      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
       <h5>Cuisines {city?.name}</h5>
-      {cuisines?.map((c) => (<a href={"/restaurants/" + c.id}>{c.name}</a>))}
+      {cuisines?.map((c) => (<a href={"/restaurants/" + c.id}>{c.name}<br/></a>))}
       </section>
       
 
@@ -184,7 +184,7 @@ function matchesCityRestaurants(element:any, index: number, array: any){
 }
 
 
-export interface City {
+export interface CityInstance {
   business_freedom: number;
   commute: number;
   cost_of_living: number;
