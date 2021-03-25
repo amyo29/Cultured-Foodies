@@ -752,7 +752,7 @@ def insert_city_id_for_restaurants():
         json.dump(restaurants, file)
 
 
-insert_city_id_for_restaurants()
+# insert_city_id_for_restaurants()
 
 us_state_abbrev = {
     "Alabama": "AL",

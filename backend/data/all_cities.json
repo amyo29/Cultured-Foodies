@@ -30,7 +30,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "34"
+    "cuisine_ids": "34",
+    "restaurant_ids": "3373"
   },
   {
     "id": 2,
@@ -63,7 +64,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "58, 91"
+    "cuisine_ids": "58, 91",
+    "restaurant_ids": "1888, 2708"
   },
   {
     "id": 3,
@@ -96,7 +98,8 @@
     "tolerance": 7.028499999999999,
     "outdoors": 3.5155,
     "summary": "<p>Albuquerque, New Mexico, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "54, 60, 17, 16, 21, 47, 3, 32, 23, 99, 59, 90, 81, 83, 66, 67, 13, 49, 82"
+    "cuisine_ids": "54, 60, 17, 16, 21, 47, 3, 32, 23, 99, 59, 90, 81, 83, 66, 67, 13, 49, 82",
+    "restaurant_ids": "45, 59, 208, 307, 366, 418, 640, 808, 813, 916, 937, 991, 1194, 1336, 1398, 1654, 1679, 1734, 1789, 1826, 1905, 1920, 1928, 1993, 2152, 2202, 2231, 2278, 2397, 2419, 2474, 2685, 2710, 2744, 2781, 3168, 3171, 3275, 3376, 3417, 3559, 3569, 3635, 3754, 3781, 3962, 4106, 4297, 4490, 4512, 4778, 4832, 4962, 5229, 5257, 5272, 5320, 5337"
   },
   {
     "id": 4,
@@ -129,7 +132,8 @@
     "tolerance": 6.5495,
     "outdoors": 5.023499999999999,
     "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 89, 47, 3, 32, 23, 59, 11, 35, 45, 68, 42, 81, 16, 90, 14, 49"
+    "cuisine_ids": "54, 89, 47, 3, 32, 23, 59, 11, 35, 45, 68, 42, 81, 16, 90, 14, 49",
+    "restaurant_ids": "51, 189, 313, 655, 707, 745, 789, 1166, 1225, 1306, 1319, 1413, 1445, 1474, 1495, 1698, 1889, 1954, 2075, 2240, 2400, 2451, 2564, 2628, 2663, 2692, 2916, 2988, 3032, 3044, 3053, 3062, 3194, 3211, 3438, 3454, 3462, 3609, 3663, 3728, 3778, 3982, 3992, 4018, 4028, 4123, 4127, 4154, 4302, 4312, 4313, 4361, 4474, 4475, 4480, 4739, 4758, 4792, 4799, 4924, 4948, 5053, 5164, 5329"
   },
   {
     "id": 5,
@@ -162,7 +166,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "20, 23, 51, 53, 90, 99"
+    "cuisine_ids": "20, 23, 51, 53, 90, 99",
+    "restaurant_ids": "4267"
   },
   {
     "id": 6,
@@ -195,7 +200,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 32"
+    "cuisine_ids": "47, 32",
+    "restaurant_ids": "12, 483, 988, 1208, 2687, 3706, 3876, 4870"
   },
   {
     "id": 7,
@@ -228,7 +234,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 54"
+    "cuisine_ids": "3, 47, 54",
+    "restaurant_ids": "1658"
   },
   {
     "id": 8,
@@ -261,7 +268,8 @@
     "tolerance": 7.093,
     "outdoors": 5.3580000000000005,
     "summary": "<p>Anchorage, Alaska, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>healthcare</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 42, 3, 35, 49, 34, 32, 16, 23, 54, 89, 59"
+    "cuisine_ids": "47, 42, 3, 35, 49, 34, 32, 16, 23, 54, 89, 59",
+    "restaurant_ids": "64, 298, 326, 453, 509, 524, 539, 784, 904, 1581, 1649, 1666, 1718, 1796, 1805, 1930, 2119, 2300, 2393, 2537, 2626, 2717, 2726, 2729, 2797, 2829, 2866, 2882, 2904, 3197, 3405, 3589, 3591, 3619, 3646, 3770, 4073, 4119, 4189, 4305, 4401, 4564, 4566, 4570, 4575, 4890, 4941, 4965, 4970, 5076, 5104, 5121, 5135"
   },
   {
     "id": 9,
@@ -294,7 +302,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "260, 4240"
   },
   {
     "id": 10,
@@ -327,7 +336,8 @@
     "tolerance": 6.5495,
     "outdoors": 5.023499999999999,
     "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
-    "cuisine_ids": ""
+    "cuisine_ids": "32",
+    "restaurant_ids": "4745"
   },
   {
     "id": 11,
@@ -360,7 +370,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 99, 42, 89, 52, 32, 3, 45, 81, 54, 34, 71, 16, 35, 94, 21, 48, 14, 49, 90"
+    "cuisine_ids": "47, 99, 42, 89, 52, 32, 3, 45, 81, 54, 34, 71, 16, 35, 94, 21, 48, 14, 49, 90",
+    "restaurant_ids": "41, 122, 126, 174, 206, 233, 273, 295, 302, 423, 546, 561, 622, 1066, 1090, 1146, 1268, 1281, 1355, 1567, 1617, 1627, 1692, 1809, 1825, 1831, 1845, 1903, 2000, 2104, 2267, 2328, 2406, 2505, 2551, 2569, 2580, 2828, 2872, 2928, 2963, 3120, 3155, 3181, 3437, 3464, 3512, 3566, 3605, 3745, 3835, 3875, 4015, 4176, 4222, 4239, 4343, 4407, 4415, 4506, 4514, 5031, 5098, 5173, 5255"
   },
   {
     "id": 12,
@@ -393,7 +404,8 @@
     "tolerance": 4.062,
     "outdoors": 5.0095,
     "summary": "<p>Atlanta, Georgia, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Atlanta is one of the top ten city matches for 6.5% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 83, 3, 13, 81, 98, 49, 47, 26, 11, 82, 21, 32, 16, 28, 89, 14, 45, 80, 59, 71"
+    "cuisine_ids": "54, 83, 3, 13, 81, 98, 49, 47, 26, 11, 82, 21, 32, 16, 28, 89, 14, 45, 80, 59, 71",
+    "restaurant_ids": "92, 112, 128, 226, 274, 406, 473, 519, 567, 638, 868, 887, 1237, 1252, 1254, 1341, 1423, 1498, 1510, 1529, 1549, 1570, 1601, 1608, 1615, 1749, 1757, 1759, 1892, 1902, 2013, 2030, 2070, 2081, 2199, 2243, 2249, 2277, 2314, 2396, 2425, 2709, 2876, 3069, 3107, 3186, 3201, 3451, 3458, 3565, 3581, 3596, 3994, 4093, 4433, 4441, 4448, 5094, 5111, 5247"
   },
   {
     "id": 13,
@@ -426,7 +438,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 81, 54, 32, 89, 14, 90, 98, 49, 34, 59, 39, 42, 13, 99"
+    "cuisine_ids": "47, 3, 81, 54, 32, 89, 14, 90, 98, 49, 34, 59, 39, 42, 13, 99",
+    "restaurant_ids": "102, 248, 256, 525, 526, 553, 617, 681, 690, 840, 877, 997, 1079, 1089, 1103, 1120, 1156, 1215, 1344, 1364, 1506, 1555, 1683, 1820, 1910, 2029, 2052, 2067, 2251, 2332, 2338, 2371, 2414, 2524, 2671, 2696, 2960, 3028, 3078, 3400, 3492, 3508, 3590, 3600, 3604, 3643, 3658, 3675, 3695, 3784, 3859, 4065, 4085, 4160, 4261, 4357, 4517, 4677, 5009, 5144, 5178, 5327"
   },
   {
     "id": 14,
@@ -459,7 +472,8 @@
     "tolerance": 5.755,
     "outdoors": 3.9795,
     "summary": "<p>\n\n    \n        This urban area is consistently ahead in <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "49, 47, 32, 35, 38, 3, 83, 54, 17, 1, 98, 14, 13, 82"
+    "cuisine_ids": "49, 47, 32, 35, 38, 3, 83, 54, 17, 1, 98, 14, 13, 82",
+    "restaurant_ids": "96, 163, 264, 292, 388, 680, 726, 756, 1094, 1122, 1152, 1367, 1442, 1485, 1536, 1715, 1832, 1882, 2040, 2163, 2539, 2846, 2868, 2965, 3092, 3668, 3772, 3785, 3842, 4149, 4256, 4324, 4398, 4425, 4527, 4546, 4554, 4623, 4634, 4794, 4836, 4932, 4934, 5067, 5219, 5241, 5300"
   },
   {
     "id": 15,
@@ -492,7 +506,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2591"
   },
   {
     "id": 16,
@@ -525,7 +540,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "45, 47, 32, 3"
+    "cuisine_ids": "45, 47, 32, 3",
+    "restaurant_ids": "444, 1283, 1924, 2404, 2431, 3023, 3026"
   },
   {
     "id": 17,
@@ -558,7 +574,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 49, 23, 3, 34, 59, 13, 14, 32, 76, 99, 42, 90, 88"
+    "cuisine_ids": "47, 49, 23, 3, 34, 59, 13, 14, 32, 76, 99, 42, 90, 88",
+    "restaurant_ids": "6, 187, 247, 330, 669, 802, 825, 828, 979, 1021, 1025, 1048, 1076, 1136, 1161, 1263, 1380, 1405, 1450, 1484, 1487, 1490, 1586, 1746, 1750, 2053, 2386, 2647, 2804, 2858, 2888, 3000, 3369, 3731, 3746, 3747, 3894, 3918, 4008, 4148, 4183, 4230, 4484, 4715, 5047, 5252, 5315, 5338"
   },
   {
     "id": 18,
@@ -591,7 +608,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 83"
+    "cuisine_ids": "47, 83",
+    "restaurant_ids": "514, 4508"
   },
   {
     "id": 19,
@@ -624,7 +642,8 @@
     "tolerance": 4.881500000000002,
     "outdoors": 1.2660000000000002,
     "summary": "<p>Birmingham, Alabama, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 54, 81, 35, 3, 90, 32, 23, 21, 17, 89, 83, 68, 96, 5, 42, 99, 49"
+    "cuisine_ids": "47, 54, 81, 35, 3, 90, 32, 23, 21, 17, 89, 83, 68, 96, 5, 42, 99, 49",
+    "restaurant_ids": "168, 180, 219, 397, 484, 518, 570, 576, 601, 615, 641, 897, 1205, 1212, 1235, 1265, 1451, 1590, 1669, 1737, 1800, 1830, 1865, 2034, 2092, 2186, 2252, 2271, 2355, 2359, 2413, 2536, 2701, 2815, 2873, 2896, 2936, 3064, 3103, 3172, 3208, 3388, 3459, 3618, 3757, 3796, 3989, 4004, 4030, 4232, 4290, 4399, 4553, 4603, 4840, 4882, 4922, 5113, 5159, 5232, 5259, 5324"
   },
   {
     "id": 20,
@@ -657,7 +676,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "17, 3"
+    "cuisine_ids": "17, 3",
+    "restaurant_ids": "599, 899, 2215"
   },
   {
     "id": 21,
@@ -690,7 +710,8 @@
     "tolerance": 6.9275,
     "outdoors": 5.221,
     "summary": "<p>Boise, Idaho, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 35, 49, 32, 26, 3, 90, 83, 23, 34, 54, 42, 13"
+    "cuisine_ids": "47, 35, 49, 32, 26, 3, 90, 83, 23, 34, 54, 42, 13",
+    "restaurant_ids": "52, 62, 65, 84, 229, 294, 452, 649, 675, 732, 989, 1247, 1250, 1270, 1334, 1479, 1534, 1545, 1661, 1969, 1977, 2097, 2159, 2440, 2550, 2565, 2651, 2799, 2961, 3262, 3307, 3447, 3453, 3533, 3538, 3554, 3576, 3630, 3661, 3692, 3738, 3766, 3862, 3958, 4161, 4278, 4289, 4354, 4380, 4442, 4481, 4596, 4643, 4999, 5218, 5292, 5326"
   },
   {
     "id": 22,
@@ -723,7 +744,8 @@
     "tolerance": 8.4815,
     "outdoors": 5.659999999999999,
     "summary": "<p>\n    One of the oldest and most historic cities in the US, Boston is\u00a0a center of higher education with some of the <b>top universities</b> in the world. It has also developed a vibrant technology scene and is home to numerous <b>venture capital</b> firms, all supporting high rates of innovation and entrepreneurship. Add its\u00a0<b>tolerant</b> environment, great quality of <b>healthcare</b> and beautiful New England nature, and you've got an enticing city that attracts talent from around the world.\n</p>\n\n\n    <p>Boston is one of the top ten city matches for 12.8% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 91, 83, 32, 47, 3, 81, 16, 45, 94, 23, 49, 34, 50, 22, 28, 7, 59, 98"
+    "cuisine_ids": "54, 91, 83, 32, 47, 3, 81, 16, 45, 94, 23, 49, 34, 50, 22, 28, 7, 59, 98",
+    "restaurant_ids": "409, 528, 597, 613, 637, 807, 898, 1019, 1127, 1183, 1207, 1233, 1533, 1560, 1861, 1927, 1963, 1974, 2071, 2113, 2200, 2322, 2330, 2403, 2462, 2730, 2757, 2770, 2864, 2966, 3087, 3116, 3302, 3472, 3579, 3735, 3804, 3822, 4024, 4059, 4095, 4150, 4155, 4486, 4584, 4719, 4796, 4828, 4841, 5059, 5149, 5161"
   },
   {
     "id": 23,
@@ -756,7 +778,8 @@
     "tolerance": 7.404000000000001,
     "outdoors": 4.6465,
     "summary": "<p>Buffalo, New York, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 3, 35, 54, 89, 83, 81, 32, 17, 16, 34, 90, 99, 42, 23"
+    "cuisine_ids": "47, 3, 35, 54, 89, 83, 81, 32, 17, 16, 34, 90, 99, 42, 23",
+    "restaurant_ids": "15, 221, 249, 632, 768, 788, 917, 995, 996, 1013, 1098, 1219, 1320, 1483, 1576, 1620, 1711, 1720, 1810, 1918, 1998, 2005, 2123, 2181, 2281, 2339, 2436, 2783, 2957, 3040, 3055, 3066, 3189, 3243, 3285, 3434, 3517, 3724, 3798, 3858, 3935, 3943, 3986, 4125, 4182, 4214, 4296, 4318, 4540, 4735, 4743, 4788, 4816, 4862, 4901, 5019, 5176, 5177, 5295"
   },
   {
     "id": 24,
@@ -789,7 +812,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "20, 23"
+    "cuisine_ids": "20, 23",
+    "restaurant_ids": "4692"
   },
   {
     "id": 25,
@@ -822,7 +846,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47"
+    "cuisine_ids": "3, 47",
+    "restaurant_ids": "334"
   },
   {
     "id": 26,
@@ -855,7 +880,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "5195"
   },
   {
     "id": 27,
@@ -888,7 +914,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 34"
+    "cuisine_ids": "47, 34",
+    "restaurant_ids": "348, 374, 754, 2714, 3118, 4918"
   },
   {
     "id": 28,
@@ -921,7 +948,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "23, 3, 90, 54"
+    "cuisine_ids": "23, 3, 90, 54",
+    "restaurant_ids": "417, 1563, 2323, 3737, 4194, 4859, 4959"
   },
   {
     "id": 29,
@@ -954,7 +982,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "23, 47, 35, 89, 44, 21, 81, 49, 3, 54, 24, 90, 51, 42, 66, 26, 83, 99, 64"
+    "cuisine_ids": "23, 47, 35, 89, 44, 21, 81, 49, 3, 54, 24, 90, 51, 42, 66, 26, 83, 99, 64",
+    "restaurant_ids": "169, 278, 386, 499, 503, 785, 795, 810, 981, 990, 1230, 1280, 1473, 1702, 1812, 2015, 2187, 2374, 2405, 2521, 2929, 3175, 3404, 3644, 3689, 3721, 4133, 4351, 4404, 4503, 4521, 4615, 4666, 4968, 5069, 5150, 5215, 5274, 5289"
   },
   {
     "id": 30,
@@ -987,7 +1016,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "4899"
   },
   {
     "id": 31,
@@ -1020,7 +1050,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "4635"
   },
   {
     "id": 32,
@@ -1053,7 +1084,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47"
+    "cuisine_ids": "3, 47",
+    "restaurant_ids": "8, 504"
   },
   {
     "id": 33,
@@ -1086,7 +1118,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1564"
   },
   {
     "id": 34,
@@ -1119,7 +1152,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 23, 3, 14, 54, 49, 90, 99, 51, 35, 83, 82, 32, 38"
+    "cuisine_ids": "47, 23, 3, 14, 54, 49, 90, 99, 51, 35, 83, 82, 32, 38",
+    "restaurant_ids": "272, 360, 439, 454, 585, 665, 866, 901, 976, 1154, 1326, 1349, 1544, 1587, 1964, 1965, 2020, 2122, 2133, 2139, 2331, 2422, 2608, 2636, 2646, 2659, 3160, 3252, 3390, 3403, 3422, 3837, 3883, 3892, 3898, 4175, 4193, 4197, 4260, 4342, 4369, 4382, 4392, 4454, 4542, 4616, 4777, 5004, 5180, 5282, 5309, 5319, 5321"
   },
   {
     "id": 35,
@@ -1152,7 +1186,8 @@
     "tolerance": 6.7895,
     "outdoors": 1.3114999999999999,
     "summary": "<p>Charlotte, North Carolina, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n\n    <p>Charlotte is one of the top ten city matches for 2.6% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 49, 83, 3, 32, 13, 54, 82, 21, 35, 34, 99, 90, 59, 81, 23, 85, 14, 45, 16, 79"
+    "cuisine_ids": "47, 49, 83, 3, 32, 13, 54, 82, 21, 35, 34, 99, 90, 59, 81, 23, 85, 14, 45, 16, 79",
+    "restaurant_ids": "33, 78, 103, 179, 251, 254, 338, 623, 674, 720, 781, 800, 852, 1057, 1181, 1204, 1267, 1321, 1348, 1402, 1670, 1841, 1901, 1935, 1947, 2055, 2238, 2461, 2603, 2750, 2760, 2796, 2907, 3111, 3271, 3386, 3616, 3624, 3701, 3732, 3751, 3952, 4072, 4092, 4121, 4292, 4383, 4403, 4499, 4589, 4594, 4619, 4637, 4680, 4780, 4943, 4961, 5056, 5162, 5205, 5217"
   },
   {
     "id": 36,
@@ -1185,7 +1220,8 @@
     "tolerance": 4.7925,
     "outdoors": 3.908,
     "summary": "<p>Chattanooga, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 3, 32, 29, 90, 81, 34, 35, 54, 89, 83"
+    "cuisine_ids": "47, 3, 32, 29, 90, 81, 34, 35, 54, 89, 83",
+    "restaurant_ids": "39, 50, 87, 107, 268, 303, 381, 583, 824, 1009, 1116, 1223, 1619, 1754, 1821, 1909, 1932, 1979, 2102, 2144, 2212, 2244, 2410, 2529, 2625, 2689, 2721, 2813, 2861, 2924, 3004, 3278, 3309, 3351, 3354, 3366, 3442, 3452, 3555, 3601, 3687, 3856, 3860, 4172, 4218, 4453, 4541, 4565, 4650, 4657, 4707, 4754, 4775, 4843, 4886, 4937, 5045, 5213, 5234"
   },
   {
     "id": 37,
@@ -1218,7 +1254,8 @@
     "tolerance": 6.1339999999999995,
     "outdoors": 5.4155,
     "summary": "<p>Chicago, Illinois, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Chicago is one of the top ten city matches for 5.5% of Teleport users.</p>\n",
-    "cuisine_ids": "39, 47, 34, 67, 12, 54, 3, 82, 20, 23, 85, 11, 92, 59, 60, 29, 70, 8, 32, 13, 98, 83, 74, 80, 26, 37, 101"
+    "cuisine_ids": "39, 47, 34, 67, 12, 54, 3, 82, 20, 23, 85, 11, 92, 59, 60, 29, 70, 8, 32, 13, 98, 83, 74, 80, 26, 37, 101",
+    "restaurant_ids": "5, 120, 125, 165, 175, 207, 279, 331, 375, 398, 489, 490, 554, 592, 593, 646, 725, 758, 777, 806, 812, 905, 975, 1104, 1325, 1412, 1428, 1497, 1508, 1521, 1528, 1562, 1571, 1575, 1688, 1747, 1804, 1815, 1834, 1844, 1849, 1884, 1895, 1936, 1994, 2023, 2162, 2174, 2228, 2232, 2336, 2399, 2509, 2605, 2731, 2867, 2918, 2932, 3038, 3063, 3075, 3164, 3335, 3358, 3383, 3385, 3392, 3485, 3510, 3542, 3571, 3608, 3620, 3672, 3714, 3884, 4005, 4042, 4080, 4087, 4134, 4144, 4166, 4394, 4444, 4450, 4606, 4681, 4717, 4753, 4850, 4913, 5172, 5181, 5193, 5226, 5334"
   },
   {
     "id": 38,
@@ -1251,7 +1288,8 @@
     "tolerance": 5.2989999999999995,
     "outdoors": 3.6075,
     "summary": "<p>Cincinnati, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Cincinnati is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 11, 47, 23, 54, 17, 35, 29, 81, 90, 99, 3, 42, 64, 34, 16"
+    "cuisine_ids": "32, 11, 47, 23, 54, 17, 35, 29, 81, 90, 99, 3, 42, 64, 34, 16",
+    "restaurant_ids": "82, 159, 172, 287, 311, 324, 364, 373, 379, 412, 435, 440, 582, 814, 826, 1354, 1403, 1459, 1542, 1591, 1792, 1836, 1996, 2260, 2498, 2878, 2921, 3018, 3553, 3729, 3904, 3913, 3937, 4491, 4835, 5099, 5122, 5147, 5264"
   },
   {
     "id": 39,
@@ -1284,7 +1322,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "34"
+    "cuisine_ids": "34",
+    "restaurant_ids": "4806"
   },
   {
     "id": 40,
@@ -1317,7 +1356,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 83"
+    "cuisine_ids": "47, 83",
+    "restaurant_ids": "896, 2077, 4200"
   },
   {
     "id": 41,
@@ -1350,7 +1390,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47"
+    "cuisine_ids": "3, 47",
+    "restaurant_ids": "21, 2906, 3979"
   },
   {
     "id": 42,
@@ -1383,7 +1424,8 @@
     "tolerance": 4.775499999999999,
     "outdoors": 4.669,
     "summary": "<p>Cleveland, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "34, 47, 3, 96, 32, 49, 21, 24, 54, 26, 91"
+    "cuisine_ids": "34, 47, 3, 96, 32, 49, 21, 24, 54, 26, 91",
+    "restaurant_ids": "259, 508, 714, 801, 1010, 1228, 1256, 1294, 1454, 1606, 1612, 1618, 2022, 2261, 2369, 2604, 2905, 2959, 3011, 3072, 3104, 3224, 3314, 3909, 4467, 4630, 4658, 4768, 4781, 5096, 5212"
   },
   {
     "id": 43,
@@ -1416,7 +1458,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2441"
   },
   {
     "id": 44,
@@ -1449,7 +1492,8 @@
     "tolerance": 9.206,
     "outdoors": 7.356499999999999,
     "summary": "<p>Colorado Springs, Colorado, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 3, 49, 32, 45, 34, 16, 83, 90, 35, 54, 30, 13, 14"
+    "cuisine_ids": "47, 3, 49, 32, 45, 34, 16, 83, 90, 35, 54, 30, 13, 14",
+    "restaurant_ids": "222, 240, 507, 890, 1020, 1074, 1227, 1266, 1269, 1284, 1397, 1414, 1488, 1494, 1499, 1648, 1713, 1723, 1728, 1808, 1985, 2060, 2078, 2149, 2364, 2472, 2558, 2761, 2849, 2967, 3025, 3100, 3217, 3289, 3362, 3371, 3558, 3789, 3791, 3824, 4100, 4159, 4185, 4321, 4478, 4829, 4855, 4902, 4933, 4947, 4978, 4998"
   },
   {
     "id": 45,
@@ -1482,7 +1526,8 @@
     "tolerance": 5.9215,
     "outdoors": 4.544999999999999,
     "summary": "<p>Columbus, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Columbus is one of the top ten city matches for 0.9% of Teleport users.</p>\n",
-    "cuisine_ids": "90, 47, 17, 3, 14, 54, 34, 35, 26, 49, 51, 83, 32, 58, 91, 16, 42, 21"
+    "cuisine_ids": "90, 47, 17, 3, 14, 54, 34, 35, 26, 49, 51, 83, 32, 58, 91, 16, 42, 21",
+    "restaurant_ids": "7, 280, 346, 462, 540, 1187, 1201, 1240, 1264, 1359, 1482, 1568, 1680, 2039, 2061, 2143, 2207, 2258, 2327, 2447, 2507, 2508, 2590, 2738, 2753, 2835, 3083, 3318, 3374, 3461, 3479, 3674, 3707, 3832, 4033, 4153, 4184, 4262, 4300, 4308, 4430, 4470, 4673, 4682, 4980, 5148, 5197"
   },
   {
     "id": 46,
@@ -1515,7 +1560,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3"
+    "cuisine_ids": "3",
+    "restaurant_ids": "678, 4787"
   },
   {
     "id": 47,
@@ -1548,7 +1594,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1827"
   },
   {
     "id": 48,
@@ -1581,7 +1628,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "59, 47, 32, 83, 3, 89, 39, 81, 16, 54, 27, 34, 85, 14, 42, 90"
+    "cuisine_ids": "59, 47, 32, 83, 3, 89, 39, 81, 16, 54, 27, 34, 85, 14, 42, 90",
+    "restaurant_ids": "74, 154, 164, 167, 299, 317, 671, 738, 871, 973, 998, 1015, 1033, 1443, 1706, 1778, 1885, 2049, 2059, 2105, 2136, 2150, 2266, 2432, 2490, 2496, 2500, 2601, 2653, 2661, 2675, 2830, 2920, 3256, 3407, 3650, 3653, 3727, 3767, 3936, 3972, 3987, 4002, 4181, 4188, 4225, 4358, 4498, 4628, 4663, 4667, 4679, 4687, 4877, 4881, 4982, 5223, 5253, 5280, 5328, 5355"
   },
   {
     "id": 49,
@@ -1614,7 +1662,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "970"
   },
   {
     "id": 50,
@@ -1647,7 +1696,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 90, 3, 34, 81, 49, 23, 54, 16, 89, 35, 45, 32, 99"
+    "cuisine_ids": "47, 90, 3, 34, 81, 49, 23, 54, 16, 89, 35, 45, 32, 99",
+    "restaurant_ids": "73, 94, 266, 586, 787, 1040, 1061, 1271, 1333, 1346, 1580, 1989, 2131, 2427, 2523, 2895, 2971, 3098, 3139, 3313, 3355, 3368, 3522, 3625, 3779, 3797, 4283, 4417, 4591, 4647, 4791, 4826, 4874, 4975, 4977, 5103, 5151, 5284, 5341"
   },
   {
     "id": 51,
@@ -1680,7 +1730,8 @@
     "tolerance": 7.860499999999999,
     "outdoors": 7.932999999999999,
     "summary": "<p>Denver, Colorado, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Denver is one of the top ten city matches for 4.1% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 34, 47, 54, 67, 42, 58, 91, 45, 98, 16, 32, 49, 80, 59, 83, 14"
+    "cuisine_ids": "3, 34, 47, 54, 67, 42, 58, 91, 45, 98, 16, 32, 49, 80, 59, 83, 14",
+    "restaurant_ids": "76, 105, 114, 176, 201, 215, 270, 305, 377, 400, 463, 486, 710, 843, 894, 949, 982, 1295, 1305, 1328, 1332, 1369, 1427, 1539, 1676, 1689, 1699, 1870, 1904, 1978, 2072, 2236, 2385, 2503, 2557, 2593, 2641, 2741, 2787, 2807, 2955, 3051, 3091, 3218, 3265, 3272, 3584, 3741, 3790, 4140, 4329, 4359, 4469, 4649, 4683, 4716, 4866, 4971, 5014, 5202, 5206"
   },
   {
     "id": 52,
@@ -1713,7 +1764,8 @@
     "tolerance": 8.4765,
     "outdoors": 3.299500000000001,
     "summary": "<p>Des Moines, Iowa, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>business freedom</b> and <b>safety</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 3, 32, 54, 49, 21, 16, 23, 99, 14, 90, 34"
+    "cuisine_ids": "47, 3, 32, 54, 49, 21, 16, 23, 99, 14, 90, 34",
+    "restaurant_ids": "27, 66, 197, 205, 238, 342, 511, 552, 572, 820, 1022, 1093, 1108, 1433, 1466, 1532, 1664, 1915, 1938, 2080, 2117, 2166, 2227, 2292, 2412, 2445, 2448, 2449, 2767, 2938, 3209, 3244, 3428, 3465, 3556, 3595, 3705, 3873, 4012, 4036, 4107, 4136, 4174, 4263, 4671, 4749, 4765, 4827, 4898, 4946, 5066, 5105, 5335"
   },
   {
     "id": 53,
@@ -1746,7 +1798,8 @@
     "tolerance": 3.678,
     "outdoors": 5.387499999999999,
     "summary": "<p>Detroit, Michigan, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Detroit is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
-    "cuisine_ids": "49, 3, 47, 82, 81, 98, 54, 89, 16, 23, 59, 40, 34, 90, 99, 32, 21, 26, 13, 67, 35"
+    "cuisine_ids": "49, 3, 47, 82, 81, 98, 54, 89, 16, 23, 59, 40, 34, 90, 99, 32, 21, 26, 13, 67, 35",
+    "restaurant_ids": "11, 19, 419, 465, 977, 1006, 1059, 1135, 1259, 1343, 1365, 1418, 1501, 1782, 1783, 1900, 2127, 2179, 2340, 2366, 2468, 2514, 2619, 2684, 2719, 2769, 2985, 3016, 3102, 3231, 3296, 3507, 3906, 3916, 3977, 4016, 4255, 4368, 4397, 4438, 4497, 4559, 4605, 4660, 4991, 5071, 5155, 5200, 5227, 5311"
   },
   {
     "id": 54,
@@ -1779,7 +1832,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3130"
   },
   {
     "id": 55,
@@ -1812,7 +1866,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "723"
   },
   {
     "id": 56,
@@ -1845,7 +1900,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "85, 74"
+    "cuisine_ids": "85, 74",
+    "restaurant_ids": "4878"
   },
   {
     "id": 57,
@@ -1878,7 +1934,8 @@
     "tolerance": 8.9695,
     "outdoors": 3.533,
     "summary": "<p>Eugene, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "49, 47, 14, 75, 45, 3, 32, 34, 35, 42, 99, 11, 40, 54, 83, 90, 38"
+    "cuisine_ids": "49, 47, 14, 75, 45, 3, 32, 34, 35, 42, 99, 11, 40, 54, 83, 90, 38",
+    "restaurant_ids": "49, 53, 173, 265, 394, 420, 487, 532, 629, 699, 790, 876, 921, 1189, 1296, 1430, 1561, 1911, 1946, 2082, 2135, 2176, 2221, 2460, 2527, 2581, 2899, 3357, 3411, 3900, 4000, 4011, 4055, 4083, 4115, 4186, 4220, 4356, 4381, 4593, 4622, 4930, 4985, 5020, 5035, 5050, 5303"
   },
   {
     "id": 58,
@@ -1911,7 +1968,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2751"
   },
   {
     "id": 59,
@@ -1944,7 +2002,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3719"
   },
   {
     "id": 60,
@@ -1977,7 +2036,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "59, 32, 3, 81, 47, 89, 52, 13, 49, 34, 82"
+    "cuisine_ids": "59, 32, 3, 81, 47, 89, 52, 13, 49, 34, 82",
+    "restaurant_ids": "81, 110, 131, 203, 253, 350, 356, 451, 700, 913, 924, 1024, 1028, 1041, 1054, 1102, 1158, 1366, 1509, 1557, 1622, 1721, 1730, 1856, 1970, 1984, 2160, 2203, 2211, 2356, 2442, 2516, 2993, 3002, 3076, 3080, 3133, 3135, 3140, 3184, 3299, 3305, 3336, 3375, 3382, 3543, 3716, 3720, 3744, 3829, 3843, 3971, 4023, 4027, 4157, 4167, 4277, 4339, 4797, 4856, 4903, 5107, 5201, 5256"
   },
   {
     "id": 61,
@@ -2010,7 +2070,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "23, 54, 3, 42, 64, 90, 47, 32, 1, 14, 49, 89"
+    "cuisine_ids": "23, 54, 3, 42, 64, 90, 47, 32, 1, 14, 49, 89",
+    "restaurant_ids": "29, 428, 505, 517, 555, 724, 831, 1002, 1008, 1026, 1096, 1112, 1391, 1400, 1537, 1596, 1623, 1646, 2185, 2234, 2345, 2455, 2504, 2697, 2715, 2742, 2842, 2883, 3800, 3821, 4145, 4293, 4303, 4414, 5070, 5077, 5299"
   },
   {
     "id": 62,
@@ -2043,7 +2104,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 49, 32, 3, 45, 89, 81, 42, 35, 13, 90, 54"
+    "cuisine_ids": "47, 49, 32, 3, 45, 89, 81, 42, 35, 13, 90, 54",
+    "restaurant_ids": "90, 329, 367, 427, 443, 466, 607, 688, 753, 760, 1004, 1047, 1145, 1169, 1203, 1307, 1429, 1492, 2175, 2208, 2226, 2320, 2484, 2589, 2618, 2637, 2827, 3007, 3250, 3274, 3409, 3419, 3817, 3866, 4078, 4081, 4109, 4270, 4322, 4560, 4639, 4640, 4694, 4772, 4833, 4865, 4994, 5062, 5134, 5186"
   },
   {
     "id": 63,
@@ -2076,7 +2138,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 23, 49, 81, 3, 95, 54, 89, 90, 45, 56, 99"
+    "cuisine_ids": "47, 23, 49, 81, 3, 95, 54, 89, 90, 45, 56, 99",
+    "restaurant_ids": "328, 482, 659, 773, 815, 869, 1144, 1327, 1572, 1573, 1705, 1770, 1933, 1958, 2001, 2171, 2192, 2471, 2533, 3342, 3484, 3679, 3685, 3702, 3870, 4101, 4273, 4285, 4473, 4582, 4935, 4940, 5153, 5187"
   },
   {
     "id": 64,
@@ -2109,7 +2172,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 34"
+    "cuisine_ids": "47, 34",
+    "restaurant_ids": "1352, 3536, 4266"
   },
   {
     "id": 65,
@@ -2142,7 +2206,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 49, 42, 54, 82, 38, 23, 17, 90, 81"
+    "cuisine_ids": "3, 47, 49, 42, 54, 82, 38, 23, 17, 90, 81",
+    "restaurant_ids": "61, 127, 296, 404, 736, 943, 945, 950, 1153, 1460, 1624, 1725, 1838, 2416, 2510, 2513, 2562, 2652, 2816, 2863, 2892, 2989, 3071, 3157, 3230, 3233, 3691, 3867, 3897, 4032, 4132, 4248, 4449, 4479, 4686, 4810, 4925, 4986, 5079"
   },
   {
     "id": 66,
@@ -2175,7 +2240,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": ""
+    "cuisine_ids": "47, 49, 54, 99, 3, 44, 42, 83, 51, 90, 14, 26, 23, 34",
+    "restaurant_ids": "136, 145, 345, 376, 551, 571, 577, 1036, 1051, 1520, 1558, 1602, 1724, 2011, 2156, 2415, 2848, 3024, 3222, 3384, 3413, 3493, 3526, 3545, 3641, 3670, 3833, 3965, 3973, 4110, 4191, 4294, 4418, 4569, 4713, 4807, 4945, 5101, 5170, 5204, 5250, 5317"
   },
   {
     "id": 67,
@@ -2208,7 +2274,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 49, 54, 3, 32, 99, 31, 44, 6, 42, 14, 83, 23, 51, 90, 17, 38, 26, 13, 35, 81, 34"
+    "cuisine_ids": "54, 3, 47, 32, 31, 49, 6, 14, 23, 17, 38, 83, 13, 35, 26, 81",
+    "restaurant_ids": "363, 372, 434, 441, 717, 772, 845, 1277, 1444, 1543, 1594, 1764, 2014, 2201, 2250, 2296, 2530, 2723, 2734, 2853, 2939, 2958, 2964, 3030, 3058, 3112, 3200, 3241, 3396, 3445, 3487, 3577, 3662, 3773, 3793, 3794, 3815, 3869, 3924, 4040, 4066, 4118, 4235, 4310, 4510, 4516, 4558, 4581, 4789, 4990, 5003, 5235, 5258, 5310"
   },
   {
     "id": 68,
@@ -2241,7 +2308,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 23, 54, 89, 56, 99, 90, 81"
+    "cuisine_ids": "3, 47, 23, 54, 89, 56, 99, 90, 81",
+    "restaurant_ids": "31, 202, 450, 595, 627, 667, 722, 863, 875, 902, 910, 1330, 2299, 2446, 2826, 3093, 3332, 3463, 3639, 3654, 3717, 3814, 3853, 3863, 4242, 4627, 4939, 4979, 5146, 5214, 5251"
   },
   {
     "id": 69,
@@ -2274,7 +2342,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 3, 47"
+    "cuisine_ids": "32, 3, 47",
+    "restaurant_ids": "2098, 5000"
   },
   {
     "id": 70,
@@ -2307,7 +2376,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 17"
+    "cuisine_ids": "3, 17",
+    "restaurant_ids": "3203, 4984"
   },
   {
     "id": 71,
@@ -2340,7 +2410,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "17, 32, 3, 54"
+    "cuisine_ids": "17, 32, 3, 54",
+    "restaurant_ids": "1671, 2599, 4987, 5023"
   },
   {
     "id": 72,
@@ -2373,7 +2444,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 54, 49, 23, 42, 64, 47, 81, 68, 90, 99, 17, 14"
+    "cuisine_ids": "3, 54, 49, 23, 42, 64, 47, 81, 68, 90, 99, 17, 14",
+    "restaurant_ids": "23, 153, 447, 492, 548, 660, 971, 1143, 1200, 1231, 1411, 1584, 1685, 1859, 1906, 1907, 2639, 3105, 3229, 3254, 3764, 4044, 4311, 4336, 4371, 4439, 4458, 4505, 4580, 4638, 4709, 4756, 5330"
   },
   {
     "id": 73,
@@ -2406,7 +2478,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "40"
   },
   {
     "id": 74,
@@ -2439,7 +2512,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 17"
+    "cuisine_ids": "3, 47, 17",
+    "restaurant_ids": "255, 2395, 3917, 4413"
   },
   {
     "id": 75,
@@ -2472,7 +2546,8 @@
     "tolerance": 5.34,
     "outdoors": 5.385999999999999,
     "summary": "<p>Houston, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Houston is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
-    "cuisine_ids": "16, 3, 47, 59, 20, 39, 54, 63, 13, 98, 27, 32, 80, 83, 11, 14, 45, 23, 99, 35, 81, 89, 84, 62, 49, 37, 42, 21, 28"
+    "cuisine_ids": "16, 3, 47, 59, 20, 39, 54, 63, 13, 98, 27, 32, 80, 83, 11, 14, 45, 23, 99, 35, 81, 89, 84, 62, 49, 37, 42, 21, 28",
+    "restaurant_ids": "35, 58, 137, 198, 237, 425, 477, 580, 616, 626, 639, 775, 816, 883, 944, 947, 952, 984, 993, 1042, 1050, 1055, 1081, 1091, 1106, 1114, 1124, 1186, 1198, 1331, 1550, 1551, 1693, 1739, 1741, 1743, 1766, 1768, 1874, 1912, 1942, 1991, 2164, 2189, 2270, 2275, 2367, 2388, 2423, 2454, 2457, 2494, 2566, 2638, 2953, 2981, 3094, 3115, 3121, 3132, 3144, 3248, 3429, 3537, 3896, 3933, 3959, 3961, 3981, 4003, 4029, 4054, 4126, 4163, 4209, 4345, 4524, 4552, 4590, 4604, 4624, 4708, 4769, 4808, 4817, 4838, 4993, 5115"
   },
   {
     "id": 76,
@@ -2505,7 +2580,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 90, 49, 47, 3, 83"
+    "cuisine_ids": "54, 90, 49, 47, 3, 83",
+    "restaurant_ids": "129, 214, 1248, 1605, 1795, 1853, 2091, 2130, 2773, 2852, 2859, 3046, 3073, 3195, 3709, 3845, 3908, 4090, 4387, 4390, 4411, 4577"
   },
   {
     "id": 77,
@@ -2538,7 +2614,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1635"
   },
   {
     "id": 78,
@@ -2571,7 +2648,8 @@
     "tolerance": 6.869999999999999,
     "outdoors": 3.9650000000000003,
     "summary": "<p>Indianapolis, Indiana, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "81, 90, 38, 47, 32, 14, 16, 3, 49, 54, 34, 8, 13, 75, 59"
+    "cuisine_ids": "81, 90, 38, 47, 32, 14, 16, 3, 49, 54, 34, 8, 13, 75, 59",
+    "restaurant_ids": "157, 200, 515, 538, 628, 731, 889, 968, 1046, 1077, 1184, 1222, 1312, 1407, 1424, 1446, 1456, 1603, 2076, 2158, 2194, 2224, 2375, 2401, 2417, 2437, 2574, 2582, 2666, 2678, 2777, 3035, 3187, 3235, 3269, 3387, 3519, 3524, 3678, 3755, 3889, 3990, 4208, 4325, 4375, 4423, 4464, 4519, 4613, 4861, 5084, 5140, 5249"
   },
   {
     "id": 79,
@@ -2604,7 +2682,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "23, 3, 45, 68, 47, 32, 42, 82, 54, 81, 49, 58, 13, 79, 89, 51, 99, 90, 57, 16, 83, 59, 64"
+    "cuisine_ids": "23, 3, 45, 68, 47, 32, 42, 82, 54, 81, 49, 58, 13, 79, 89, 51, 99, 90, 57, 16, 83, 59, 64",
+    "restaurant_ids": "68, 143, 171, 210, 368, 533, 805, 999, 1133, 1172, 1175, 1361, 1368, 1535, 1652, 1681, 1726, 1817, 1855, 1864, 1941, 2006, 2103, 2491, 2567, 2629, 2630, 3034, 3145, 3158, 3268, 3273, 3298, 3391, 3408, 3426, 3439, 3448, 3480, 3733, 3742, 3763, 3811, 3901, 3911, 3923, 3954, 4151, 4406, 4428, 4496, 4509, 4917, 5027, 5089, 5211, 5222"
   },
   {
     "id": 80,
@@ -2637,7 +2716,8 @@
     "tolerance": 5.6785000000000005,
     "outdoors": 5.013,
     "summary": "<p>Jacksonville, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "3, 83, 47, 54, 16, 90, 32, 49, 98, 17, 89, 81, 99, 82, 23, 45, 34"
+    "cuisine_ids": "3, 83, 47, 54, 16, 90, 32, 49, 98, 17, 89, 81, 99, 82, 23, 45, 34",
+    "restaurant_ids": "42, 135, 244, 297, 390, 442, 481, 600, 693, 782, 938, 1045, 1049, 1241, 1257, 1315, 1378, 1467, 1475, 1687, 1753, 1771, 1802, 1922, 2036, 2182, 2489, 2617, 2622, 2668, 2679, 2746, 2912, 2999, 3070, 3124, 3196, 3221, 3242, 3456, 3477, 3648, 3666, 3704, 3826, 3976, 4170, 4203, 4246, 4421, 4426, 4858, 4988, 5102"
   },
   {
     "id": 81,
@@ -2670,7 +2750,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 28, 90, 59, 42, 32, 31, 49, 23, 54, 34, 68, 94, 99, 83"
+    "cuisine_ids": "3, 47, 28, 90, 59, 42, 32, 31, 49, 23, 54, 34, 68, 94, 99, 83",
+    "restaurant_ids": "13, 101, 106, 130, 194, 196, 262, 269, 322, 495, 527, 536, 631, 882, 914, 961, 1273, 1282, 1357, 1465, 1481, 1714, 1883, 2031, 2069, 2110, 2463, 2546, 2677, 2776, 2821, 2840, 2911, 2979, 3086, 3173, 3183, 3210, 3247, 3317, 3331, 3341, 3393, 3786, 3847, 3915, 3970, 4041, 4146, 4537, 4561, 4685, 4699, 4702, 4770, 4783, 4818, 4849, 5016, 5074, 5136, 5138"
   },
   {
     "id": 82,
@@ -2703,7 +2784,8 @@
     "tolerance": 5.0205,
     "outdoors": 4.161500000000001,
     "summary": "<p>Kansas City, Missouri, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Kansas City is one of the top ten city matches for 2.0% of Teleport users.</p>\n",
-    "cuisine_ids": "83, 72"
+    "cuisine_ids": "83, 72",
+    "restaurant_ids": "1677"
   },
   {
     "id": 83,
@@ -2736,7 +2818,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "85"
+    "cuisine_ids": "85",
+    "restaurant_ids": "1347"
   },
   {
     "id": 84,
@@ -2769,7 +2852,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1600"
   },
   {
     "id": 85,
@@ -2802,7 +2886,8 @@
     "tolerance": 5.4025,
     "outdoors": 1.7525,
     "summary": "<p>Knoxville, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "32, 47, 81, 3, 54, 83, 35, 34, 21, 48, 13, 26, 23, 90, 82"
+    "cuisine_ids": "32, 47, 81, 3, 54, 83, 35, 34, 21, 48, 13, 26, 23, 90, 82",
+    "restaurant_ids": "284, 355, 391, 467, 516, 578, 654, 694, 761, 796, 1178, 1246, 1297, 1324, 1329, 1448, 1716, 1788, 1873, 2028, 2035, 2063, 2188, 2209, 2216, 2263, 2287, 2304, 2380, 2517, 2592, 2633, 2822, 2838, 2922, 2974, 3207, 3232, 3416, 3421, 3425, 3568, 3617, 3816, 3899, 3949, 4207, 4252, 4576, 4651, 4718, 4812, 4851, 4966, 5046, 5088, 5143, 5314"
   },
   {
     "id": 86,
@@ -2835,7 +2920,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2553"
   },
   {
     "id": 87,
@@ -2868,7 +2954,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "300, 4271, 5261"
   },
   {
     "id": 88,
@@ -2901,7 +2988,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "32"
+    "cuisine_ids": "32",
+    "restaurant_ids": "4477, 4518"
   },
   {
     "id": 89,
@@ -2934,7 +3022,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "931"
   },
   {
     "id": 90,
@@ -2967,7 +3056,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": ""
+    "cuisine_ids": "47, 34, 67",
+    "restaurant_ids": "411, 559"
   },
   {
     "id": 91,
@@ -3000,7 +3090,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 49, 47, 90, 34, 67, 23, 54, 38, 51, 21, 17, 35, 32"
+    "cuisine_ids": "3, 49, 90, 23, 54, 47, 38, 51, 21, 17, 35, 32",
+    "restaurant_ids": "34, 121, 147, 438, 765, 822, 880, 885, 1163, 1432, 1493, 1684, 1793, 2024, 2065, 2129, 2329, 2360, 2621, 2634, 2656, 2695, 2933, 3257, 3466, 3573, 3807, 4130, 4367, 4443, 4644, 5344"
   },
   {
     "id": 92,
@@ -3033,7 +3124,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "685"
   },
   {
     "id": 93,
@@ -3066,7 +3158,8 @@
     "tolerance": 7.275,
     "outdoors": 5.385,
     "summary": "<p>Las Vegas, Nevada, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>startups</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Las Vegas is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 59, 83, 13, 47, 16, 81, 14, 3, 34, 90, 82, 49, 17"
+    "cuisine_ids": "32, 59, 83, 13, 47, 16, 81, 14, 3, 34, 90, 82, 49, 17",
+    "restaurant_ids": "38, 225, 230, 306, 384, 446, 644, 766, 1005, 1300, 1436, 1523, 1565, 1639, 1667, 1673, 1837, 1878, 2043, 2121, 2197, 2305, 2343, 2358, 2485, 2506, 2699, 2763, 2768, 2774, 2902, 2931, 2956, 3109, 3304, 3330, 3825, 3828, 3844, 3993, 4268, 4281, 4335, 4578, 4601, 4956, 5036, 5179"
   },
   {
     "id": 94,
@@ -3099,7 +3192,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 90, 14, 17, 32, 35, 54, 81, 49, 83, 16, 59, 42, 13"
+    "cuisine_ids": "3, 47, 90, 14, 17, 32, 35, 54, 81, 49, 83, 16, 59, 42, 13",
+    "restaurant_ids": "54, 152, 218, 227, 327, 407, 848, 873, 959, 1007, 1221, 1409, 1525, 1588, 1637, 1690, 1704, 1762, 1773, 1775, 1850, 1857, 1939, 1988, 2155, 2235, 2351, 2384, 2443, 2475, 2561, 2606, 2707, 2732, 2869, 2894, 2982, 2986, 3216, 3238, 3259, 3276, 3346, 3348, 3503, 3628, 4135, 4330, 4526, 4547, 4588, 4664, 4726, 4852, 4972, 5049, 5106, 5142, 5184, 5196, 5246, 5270, 5294, 5354"
   },
   {
     "id": 95,
@@ -3132,7 +3226,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 81, 32, 42, 84, 39, 49, 17, 26, 83, 54, 90, 34, 8, 13"
+    "cuisine_ids": "47, 3, 81, 32, 42, 84, 39, 49, 17, 26, 83, 54, 90, 34, 8, 13",
+    "restaurant_ids": "18, 75, 191, 232, 352, 478, 479, 501, 844, 874, 909, 920, 1023, 1032, 1202, 1371, 1438, 1524, 1582, 1655, 1819, 1829, 2002, 2128, 2142, 2169, 2256, 2276, 2334, 2418, 2488, 2538, 2588, 2631, 2654, 2820, 2935, 2940, 2972, 3180, 3215, 3389, 3494, 3598, 3758, 3820, 3877, 3880, 3988, 4229, 4337, 4379, 4435, 4513, 4695, 4763, 4839, 4900, 4952, 5125, 5165"
   },
   {
     "id": 96,
@@ -3165,7 +3260,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "32"
+    "cuisine_ids": "32",
+    "restaurant_ids": "1420"
   },
   {
     "id": 97,
@@ -3198,7 +3294,8 @@
     "tolerance": 5.778499999999999,
     "outdoors": 1.3,
     "summary": "<p>Louisville, Kentucky, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 26, 81, 32, 34, 14, 49, 54, 99, 3, 17, 16, 58, 83, 89, 59"
+    "cuisine_ids": "47, 26, 81, 32, 34, 14, 49, 54, 99, 3, 17, 16, 58, 83, 89, 59",
+    "restaurant_ids": "36, 241, 558, 566, 691, 742, 841, 1056, 1147, 1518, 1599, 1614, 1717, 1880, 1966, 1981, 2056, 2269, 2294, 2350, 2531, 2532, 2658, 2724, 2771, 2772, 2795, 2870, 2891, 3057, 3126, 3204, 3310, 3440, 3471, 3636, 3637, 3782, 3920, 3945, 4007, 4048, 4141, 4275, 4315, 4365, 4388, 4410, 4535, 4539, 4773, 4779, 5108, 5116, 5154"
   },
   {
     "id": 98,
@@ -3231,7 +3328,8 @@
     "tolerance": 7.9005,
     "outdoors": 4.3759999999999994,
     "summary": "<p>Madison, Wisconsin, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Madison is one of the top ten city matches for 2.7% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 32, 45, 34, 13, 43, 90, 99, 42, 1, 16, 54, 94, 49"
+    "cuisine_ids": "47, 3, 32, 45, 34, 13, 43, 90, 99, 42, 1, 16, 54, 94, 49",
+    "restaurant_ids": "267, 476, 579, 647, 849, 850, 906, 908, 940, 1168, 1304, 1458, 1469, 1491, 1556, 1645, 1659, 1839, 1868, 1983, 2264, 2309, 2758, 2793, 2824, 2973, 3096, 3178, 3192, 3279, 3423, 3443, 3482, 3488, 3613, 3696, 3803, 3840, 3996, 4001, 4047, 4060, 4062, 4171, 4221, 4254, 4476, 4585, 4672, 4727, 4911, 5090, 5120, 5216, 5291"
   },
   {
     "id": 99,
@@ -3264,7 +3362,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2766"
   },
   {
     "id": 100,
@@ -3297,7 +3396,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3205"
   },
   {
     "id": 101,
@@ -3330,7 +3430,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "89, 56, 45, 3, 47, 32, 49, 16, 90, 54, 81"
+    "cuisine_ids": "89, 56, 45, 3, 47, 32, 49, 16, 90, 54, 81",
+    "restaurant_ids": "119, 149, 301, 312, 339, 652, 702, 965, 1100, 1323, 1887, 1921, 2245, 2361, 2458, 2818, 3006, 3156, 3698, 3771, 4017, 4070, 4180, 4332, 4462, 4583, 4653, 5114, 5302, 5312"
   },
   {
     "id": 102,
@@ -3363,7 +3464,8 @@
     "tolerance": 4.040500000000001,
     "outdoors": 3.5694999999999997,
     "summary": "<p>Memphis, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 32, 3, 81, 16, 51, 45, 54, 98, 13, 17, 90"
+    "cuisine_ids": "47, 32, 3, 81, 16, 51, 45, 54, 98, 13, 17, 90",
+    "restaurant_ids": "104, 115, 133, 156, 216, 335, 424, 455, 500, 648, 704, 711, 821, 1129, 1170, 1190, 1439, 1453, 1772, 1852, 1872, 2050, 2167, 2180, 2301, 2392, 2495, 2518, 2747, 2879, 2900, 3085, 3143, 3199, 3219, 3297, 3301, 3501, 3688, 3948, 4416, 4600, 4659, 4676, 4701, 4863, 4958, 5037, 5052, 5117, 5118, 5131, 5288, 5313, 5349"
   },
   {
     "id": 103,
@@ -3396,7 +3498,8 @@
     "tolerance": 8.454,
     "outdoors": 1.7500000000000002,
     "summary": "<p>\n    Palo Alto, California, is among the top cities with a <b>high quality of education</b>. According to our data, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>economy</b>.<br /><br />Palo Alto is part of Silicon Valley and the wider San Francisco Bay Area. For more information on scores and rankings, check <a href=\"/cities/san-francisco-bay-area/\">San Francisco Bay Area</a>'s Teleport profile.\n</p>\n\n",
-    "cuisine_ids": "32"
+    "cuisine_ids": "32",
+    "restaurant_ids": "4534"
   },
   {
     "id": 104,
@@ -3429,7 +3532,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 35, 47, 21, 38, 32, 54, 82, 16, 99, 14, 90, 34, 42, 49"
+    "cuisine_ids": "3, 35, 47, 21, 38, 32, 54, 82, 16, 99, 14, 90, 34, 42, 49",
+    "restaurant_ids": "9, 148, 320, 354, 385, 449, 653, 672, 716, 743, 747, 811, 830, 1001, 1039, 1073, 1214, 1322, 1653, 1733, 1971, 2101, 2151, 2253, 2844, 2856, 3110, 3113, 3114, 3206, 3337, 3415, 3530, 3535, 3681, 3711, 3743, 3879, 3921, 4019, 4061, 4286, 4346, 4376, 4436, 4501, 4611, 4646, 4733, 4854, 4879, 4919, 5061, 5124, 5157, 5171, 5220, 5356"
   },
   {
     "id": 105,
@@ -3462,7 +3566,8 @@
     "tolerance": 6.043500000000001,
     "outdoors": 5.3845,
     "summary": "<p>Miami, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Miami is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
-    "cuisine_ids": "69, 28, 62, 98, 49, 66, 3, 54, 22, 83, 59, 32, 34, 89, 96, 26, 13, 47, 24, 81, 42, 21, 16, 25, 35, 90"
+    "cuisine_ids": "69, 28, 62, 98, 49, 66, 3, 54, 22, 83, 59, 32, 34, 89, 96, 26, 13, 47, 24, 81, 42, 21, 16, 25, 35, 90",
+    "restaurant_ids": "204, 243, 304, 309, 496, 522, 573, 664, 673, 737, 770, 895, 1014, 1027, 1075, 1111, 1142, 1157, 1177, 1239, 1390, 1410, 1426, 1503, 1691, 1701, 1742, 1824, 1919, 2041, 2362, 2522, 2740, 2785, 2819, 2850, 3117, 3188, 3270, 3300, 3372, 3450, 3564, 3575, 3893, 4026, 4043, 4152, 4204, 4257, 4511, 4652, 4742, 4752, 4790, 4805, 4872, 4953, 5041, 5265"
   },
   {
     "id": 106,
@@ -3495,7 +3600,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1786"
   },
   {
     "id": 107,
@@ -3528,7 +3634,8 @@
     "tolerance": 4.844,
     "outdoors": 5.064000000000001,
     "summary": "<p>Milwaukee, Wisconsin, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "3, 81, 47, 54, 49, 42, 34, 32, 90, 35, 16"
+    "cuisine_ids": "3, 81, 47, 54, 49, 42, 34, 32, 90, 35, 16",
+    "restaurant_ids": "47, 89, 541, 1132, 1148, 1236, 1309, 1417, 1504, 1526, 1598, 1784, 1975, 2100, 2157, 2650, 2712, 2733, 2923, 2930, 3089, 3099, 3148, 3234, 3540, 4117, 4128, 4199, 4338, 4447, 4457, 4502, 4555, 4571, 4617, 4736, 4751, 4811, 4921, 4926, 5051, 5057, 5065, 5072, 5145, 5244, 5245, 5268, 5273"
   },
   {
     "id": 108,
@@ -3561,7 +3668,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3"
+    "cuisine_ids": "3",
+    "restaurant_ids": "3849, 4485"
   },
   {
     "id": 109,
@@ -3594,7 +3702,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 17, 47"
+    "cuisine_ids": "32, 17, 47",
+    "restaurant_ids": "3153, 4460, 4815, 5174"
   },
   {
     "id": 110,
@@ -3627,7 +3736,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3449"
   },
   {
     "id": 111,
@@ -3660,7 +3770,8 @@
     "tolerance": 6.807500000000001,
     "outdoors": 1.2734999999999999,
     "summary": "<p>Nashville, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Nashville is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 81, 32, 54, 89, 14, 90, 34"
+    "cuisine_ids": "47, 3, 81, 32, 54, 89, 14, 90, 34",
+    "restaurant_ids": "80, 199, 220, 250, 319, 371, 603, 697, 757, 763, 780, 1003, 1029, 1088, 1644, 1732, 1765, 1807, 2254, 2365, 2473, 2497, 2512, 2545, 2602, 2613, 2616, 2635, 2645, 2680, 2786, 2834, 2854, 2890, 2954, 2990, 3185, 3352, 3478, 3498, 3499, 3607, 3787, 4099, 4198, 4211, 4347, 4377, 4408, 4412, 4633, 4642, 4645, 4675, 4688, 4831, 4844, 4905, 5042, 5044, 5055, 5127, 5160, 5185, 5340"
   },
   {
     "id": 112,
@@ -3693,7 +3804,8 @@
     "tolerance": 5.1240000000000006,
     "outdoors": 1.0,
     "summary": "<p>New Orleans, Louisiana, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "32, 81, 16, 3, 47, 83, 54, 89, 21, 59"
+    "cuisine_ids": "32, 81, 16, 3, 47, 83, 54, 89, 21, 59",
+    "restaurant_ids": "79, 99, 116, 134, 513, 574, 619, 1031, 1083, 1245, 1251, 1415, 1589, 1818, 1847, 1858, 1898, 1925, 1967, 1987, 2010, 2068, 2115, 2170, 2219, 2368, 2456, 2483, 2704, 2736, 2782, 2839, 2884, 2992, 3277, 3380, 3394, 3401, 3414, 3505, 3750, 3861, 3890, 4114, 4241, 4288, 4353, 4362, 4400, 4504, 4574, 4629, 4734, 5029, 5048"
   },
   {
     "id": 113,
@@ -3726,7 +3838,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "84, 47, 10, 98, 70, 32, 20, 23, 39, 74, 58, 91, 11, 36, 2, 92, 3, 59, 34, 66, 22, 54, 5, 12, 55, 37, 7, 9, 50, 57, 101, 61, 33, 85, 80, 81, 65, 69, 28, 46, 95, 41, 49, 21, 73, 76, 18, 19, 77, 53, 86, 87, 100"
+    "cuisine_ids": "84, 47, 10, 98, 70, 32, 20, 23, 39, 74, 58, 91, 11, 36, 2, 92, 3, 59, 34, 66, 22, 54, 5, 12, 55, 37, 7, 9, 50, 57, 101, 61, 33, 85, 80, 81, 65, 69, 28, 46, 95, 41, 49, 21, 73, 76, 18, 19, 77, 53, 86, 87, 100",
+    "restaurant_ids": "55, 71, 109, 212, 276, 283, 333, 365, 369, 396, 460, 470, 530, 549, 587, 703, 706, 786, 839, 842, 856, 929, 955, 967, 1000, 1037, 1044, 1092, 1095, 1117, 1180, 1192, 1199, 1216, 1285, 1299, 1337, 1342, 1389, 1462, 1511, 1512, 1554, 1613, 1628, 1678, 1710, 1752, 1755, 1758, 1776, 1803, 1869, 1891, 1972, 1976, 2008, 2009, 2026, 2145, 2154, 2177, 2191, 2198, 2237, 2265, 2297, 2311, 2319, 2352, 2381, 2470, 2492, 2499, 2511, 2667, 2702, 2759, 2837, 2903, 2970, 2995, 3010, 3022, 3033, 3067, 3137, 3165, 3280, 3356, 3370, 3418, 3497, 3560, 3563, 3567, 3792, 3851, 3931, 3974, 3997, 4038, 4049, 4129, 4137, 4168, 4173, 4224, 4233, 4250, 4301, 4349, 4355, 4461, 4536, 4538, 4556, 4579, 4598, 4674, 4721, 4766, 4824, 4864, 4897, 4928, 4954, 5013, 5039, 5082, 5097, 5190, 5233, 5236, 5277, 5304, 5325, 5345, 5358, 5359, 5360, 5361, 5362, 5363, 5364, 5365, 5366, 5367, 5368, 5369"
   },
   {
     "id": 114,
@@ -3759,7 +3872,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "13, 83, 68, 47, 69, 21, 3, 82, 26"
+    "cuisine_ids": "13, 83, 68, 47, 69, 21, 3, 82, 26",
+    "restaurant_ids": "186, 310, 387, 456, 534, 718, 729, 974, 980, 1109, 1110, 1258, 1421, 1616, 1629, 1957, 2118, 2137, 2193, 2291, 2541, 2549, 2917, 3003, 3214, 3379, 3406, 3532, 3881, 3927, 4006, 4067, 4088, 4219, 4327, 4384, 4572, 4608, 4705, 4857, 4876, 4880, 4885, 5192, 5207, 5230, 5297"
   },
   {
     "id": 115,
@@ -3792,7 +3906,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2315, 2669"
   },
   {
     "id": 116,
@@ -3825,7 +3940,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "99, 3, 79, 17, 47, 81, 32, 11, 49, 30, 50, 46, 14, 34, 54, 59, 83, 94, 21, 45"
+    "cuisine_ids": "99, 3, 79, 17, 47, 81, 32, 11, 49, 30, 50, 46, 14, 34, 54, 59, 83, 94, 21, 45",
+    "restaurant_ids": "93, 161, 271, 314, 556, 594, 611, 696, 721, 855, 891, 930, 1196, 1375, 1785, 1814, 1916, 1982, 2004, 2057, 2210, 2408, 2544, 2547, 2694, 2718, 2754, 2808, 2843, 2980, 3056, 3077, 3079, 3334, 3398, 3547, 3703, 3715, 3760, 3761, 3882, 3888, 3964, 3967, 4063, 4120, 4238, 4396, 4434, 4609, 4712, 4741, 4825, 4989, 5063, 5083, 5092, 5283, 5322, 5331, 5332"
   },
   {
     "id": 117,
@@ -3858,7 +3974,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3"
+    "cuisine_ids": "47, 3",
+    "restaurant_ids": "2379, 2841, 3694"
   },
   {
     "id": 118,
@@ -3891,7 +4008,8 @@
     "tolerance": 6.022,
     "outdoors": 4.1290000000000004,
     "summary": "<p>Oklahoma City, Oklahoma, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Oklahoma City is one of the top ten city matches for 1.6% of Teleport users.</p>\n",
-    "cuisine_ids": "99, 3, 47, 54, 49, 82, 81, 23, 32, 13, 89, 35, 34, 16"
+    "cuisine_ids": "99, 3, 47, 54, 49, 82, 81, 23, 32, 13, 89, 35, 34, 16",
+    "restaurant_ids": "155, 290, 431, 485, 602, 670, 727, 919, 1078, 1082, 1119, 1137, 1182, 1396, 1447, 1505, 1593, 1675, 1697, 1731, 1835, 1877, 1929, 1931, 2420, 2482, 2693, 2764, 2908, 3027, 3047, 3162, 3286, 3293, 3345, 3603, 3660, 3699, 3808, 3838, 3855, 3955, 3975, 4206, 4265, 4276, 4314, 4360, 4386, 4532, 4689, 4714, 4720, 4942, 5032, 5040, 5091, 5243, 5276, 5279"
   },
   {
     "id": 119,
@@ -3924,7 +4042,8 @@
     "tolerance": 5.800999999999999,
     "outdoors": 4.181,
     "summary": "<p>Omaha, Nebraska, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 52, 3, 32, 45, 42, 49, 50, 99, 23, 34, 59, 81, 35, 54, 89"
+    "cuisine_ids": "47, 52, 3, 32, 45, 42, 49, 50, 99, 23, 34, 59, 81, 35, 54, 89",
+    "restaurant_ids": "70, 88, 341, 636, 656, 779, 915, 1043, 1067, 1160, 1291, 1377, 1486, 1630, 1761, 1913, 1952, 2094, 2190, 2213, 2554, 2682, 2735, 2789, 2898, 2945, 2978, 2983, 3012, 3052, 3128, 3377, 3544, 3622, 3722, 3753, 3846, 3929, 3950, 4052, 4226, 4227, 4328, 4500, 4520, 4545, 4550, 4621, 4725, 4873, 4907, 5022, 5078, 5093, 5123, 5228, 5352"
   },
   {
     "id": 120,
@@ -3957,7 +4076,8 @@
     "tolerance": 6.9275,
     "outdoors": 5.221,
     "summary": "<p>Boise, Idaho, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "47, 35, 49, 32, 26, 3, 90, 83, 23, 34, 54, 42, 13"
+    "cuisine_ids": "54, 3, 23, 14, 81",
+    "restaurant_ids": "132, 819, 946, 1087, 1155, 1363, 1923, 2664, 3125, 3433, 3574, 3671, 3809, 4202, 4245, 4323, 4592, 4748, 5112"
   },
   {
     "id": 121,
@@ -3990,7 +4110,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "474"
   },
   {
     "id": 122,
@@ -4023,7 +4144,8 @@
     "tolerance": 5.784000000000002,
     "outdoors": 4.492999999999999,
     "summary": "<p>Orlando, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Orlando is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 47, 3, 67, 26, 28, 54, 21, 80, 98, 69, 24, 34, 94, 13, 83, 38, 90, 35, 62, 29, 23, 16, 49, 50, 59, 11, 45, 81, 79"
+    "cuisine_ids": "32, 47, 3, 67, 26, 28, 54, 21, 80, 98, 69, 24, 34, 94, 13, 83, 38, 90, 35, 62, 29, 23, 16, 49, 50, 59, 11, 45, 81, 79",
+    "restaurant_ids": "282, 415, 448, 677, 809, 963, 964, 1316, 1470, 1507, 1522, 1538, 1574, 1851, 2481, 2487, 2493, 2542, 2583, 2627, 2673, 2784, 2790, 2801, 2943, 3019, 3043, 3225, 3245, 3315, 3340, 3468, 3475, 3509, 3534, 3599, 3627, 3736, 3850, 3872, 4079, 4111, 4243, 4306, 4334, 4352, 4389, 4487, 4528, 4597, 4599, 4614, 4632, 4648, 4800, 4908, 5008, 5017, 5025, 5139, 5167, 5209, 5318"
   },
   {
     "id": 123,
@@ -4056,7 +4178,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 38, 54, 49, 90, 23, 83, 26, 81, 16, 35"
+    "cuisine_ids": "3, 47, 38, 54, 49, 90, 23, 83, 26, 81, 16, 35",
+    "restaurant_ids": "818, 923, 966, 1063, 1833, 1862, 1960, 2124, 2248, 2298, 2341, 2348, 2480, 2596, 2683, 2743, 3061, 3500, 3593, 3841, 4319, 4344, 4698, 4723, 5194, 5260"
   },
   {
     "id": 124,
@@ -4089,7 +4212,8 @@
     "tolerance": 8.454,
     "outdoors": 1.7500000000000002,
     "summary": "<p>\n    Palo Alto, California, is among the top cities with a <b>high quality of education</b>. According to our data, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>economy</b>.<br /><br />Palo Alto is part of Silicon Valley and the wider San Francisco Bay Area. For more information on scores and rankings, check <a href=\"/cities/san-francisco-bay-area/\">San Francisco Bay Area</a>'s Teleport profile.\n</p>\n\n",
-    "cuisine_ids": "85, 83"
+    "cuisine_ids": "85, 83",
+    "restaurant_ids": "3642, 4279"
   },
   {
     "id": 125,
@@ -4122,7 +4246,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 32, 99, 3, 90, 49, 17, 81, 6, 54, 14, 83, 42, 5"
+    "cuisine_ids": "47, 32, 99, 3, 90, 49, 17, 81, 6, 54, 14, 83, 42, 5",
+    "restaurant_ids": "170, 188, 211, 308, 325, 332, 347, 392, 575, 625, 708, 730, 735, 744, 746, 926, 941, 1128, 1274, 1290, 1335, 1373, 1404, 1477, 1517, 1546, 1642, 1875, 1948, 1990, 2019, 2255, 2373, 2424, 2563, 2698, 2765, 2800, 2887, 2968, 3264, 3424, 3446, 3552, 3586, 3587, 3651, 3839, 4020, 4021, 4058, 4082, 4269, 4274, 4317, 4493, 4620, 4700, 4728, 4891, 4923, 5281, 5301, 5348, 5351"
   },
   {
     "id": 126,
@@ -4155,7 +4280,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "26, 69, 28"
+    "cuisine_ids": "26, 69, 28",
+    "restaurant_ids": "4654"
   },
   {
     "id": 127,
@@ -4188,7 +4314,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "66, 47, 21, 94, 54, 3, 83, 24, 23, 81, 28, 68"
+    "cuisine_ids": "66, 47, 21, 94, 54, 3, 83, 24, 23, 81, 28, 68",
+    "restaurant_ids": "275, 382, 410, 416, 589, 604, 608, 643, 837, 922, 972, 1243, 1345, 1374, 1401, 1461, 1476, 1516, 1609, 1651, 1863, 1866, 1959, 2088, 2153, 2214, 2337, 2555, 2584, 2780, 2946, 3236, 3491, 3623, 4009, 4089, 4437, 4466, 4472, 4655, 4669, 4821, 4936, 4951, 4983, 5034, 5182, 5298, 5308"
   },
   {
     "id": 128,
@@ -4221,7 +4348,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47"
+    "cuisine_ids": "3, 47",
+    "restaurant_ids": "2875, 4259"
   },
   {
     "id": 129,
@@ -4254,7 +4382,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 38, 54, 49, 23, 3, 32, 35, 99"
+    "cuisine_ids": "47, 38, 54, 49, 23, 3, 32, 35, 99",
+    "restaurant_ids": "1, 430, 493, 520, 547, 750, 1113, 1191, 1435, 1452, 1566, 1579, 2222, 2274, 2290, 2326, 2534, 2535, 2657, 2711, 2749, 2860, 3166, 3435, 3444, 3561, 3611, 3831, 3932, 4037, 4177, 4455, 4684, 4759, 4784"
   },
   {
     "id": 130,
@@ -4287,7 +4416,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "83, 3, 47, 32, 42, 58, 91"
+    "cuisine_ids": "83, 3, 47, 32, 42, 58, 91",
+    "restaurant_ids": "14, 1068, 1339, 1515, 1621, 2089, 2389, 3281, 3467"
   },
   {
     "id": 131,
@@ -4320,7 +4450,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "4446"
   },
   {
     "id": 132,
@@ -4353,7 +4484,8 @@
     "tolerance": 5.864500000000001,
     "outdoors": 4.115,
     "summary": "<p>Philadelphia, Pennsylvania, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Philadelphia is one of the top ten city matches for 0.4% of Teleport users.</p>\n",
-    "cuisine_ids": "26, 83, 71, 97, 3, 39, 47, 32, 54, 20, 23, 11, 13, 34, 49, 85, 98, 14, 73"
+    "cuisine_ids": "26, 83, 71, 97, 3, 39, 47, 32, 54, 20, 23, 11, 13, 34, 49, 85, 98, 14, 73",
+    "restaurant_ids": "17, 25, 77, 123, 144, 236, 343, 565, 606, 668, 698, 939, 960, 1030, 1162, 1338, 1386, 1388, 1394, 1406, 1441, 1449, 1489, 1657, 1712, 2099, 2307, 2353, 2382, 2465, 2609, 2716, 2802, 2832, 2975, 3036, 3154, 3161, 3212, 3255, 3321, 3347, 3427, 3562, 3621, 3634, 3819, 3827, 3868, 3963, 4091, 4124, 4142, 4366, 4374, 4427, 4494, 4782, 4869, 4974, 5006, 5210, 5290"
   },
   {
     "id": 133,
@@ -4386,7 +4518,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 59, 49, 82, 14, 28, 29, 69, 54, 39, 16, 32, 38, 90, 81, 21, 23"
+    "cuisine_ids": "3, 47, 59, 49, 82, 14, 28, 29, 69, 54, 39, 16, 32, 38, 90, 81, 21, 23",
+    "restaurant_ids": "178, 263, 506, 542, 689, 713, 719, 829, 878, 912, 1070, 1084, 1302, 1660, 1700, 1722, 1794, 1886, 1951, 2032, 2138, 2168, 2178, 2220, 2333, 2344, 2349, 2372, 2409, 2586, 2614, 2713, 2727, 2752, 2926, 2951, 2962, 3017, 3359, 3610, 3708, 3895, 3903, 3951, 4164, 4210, 4563, 4755, 4760, 4809, 4883, 4892, 4938, 5030, 5086, 5307, 5347"
   },
   {
     "id": 134,
@@ -4419,7 +4552,8 @@
     "tolerance": 7.390000000000001,
     "outdoors": 4.0685,
     "summary": "<p>Pittsburgh, Pennsylvania, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Pittsburgh is one of the top ten city matches for 1.0% of Teleport users.</p>\n",
-    "cuisine_ids": "90, 47, 99, 3, 34, 83, 54, 89, 21, 98, 32, 23, 40, 17, 11, 81, 16"
+    "cuisine_ids": "90, 47, 99, 3, 34, 83, 54, 89, 21, 98, 32, 23, 40, 17, 11, 81, 16",
+    "restaurant_ids": "24, 44, 228, 537, 684, 858, 872, 886, 1115, 1121, 1220, 1224, 1288, 1393, 1604, 1767, 1897, 1973, 2051, 2225, 2283, 2317, 2642, 2805, 2915, 3312, 3339, 3455, 3557, 3734, 3848, 3902, 3957, 3968, 4035, 4103, 4234, 4282, 4402, 4405, 4483, 5080, 5152, 5254, 5269"
   },
   {
     "id": 135,
@@ -4452,7 +4586,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 35, 47, 34, 32, 49, 23, 14, 90, 54, 89, 38, 81, 79, 59, 26, 45, 82"
+    "cuisine_ids": "3, 35, 47, 34, 32, 49, 23, 14, 90, 54, 89, 38, 81, 79, 59, 26, 45, 82",
+    "restaurant_ids": "16, 162, 281, 323, 408, 560, 740, 835, 867, 925, 986, 1053, 1126, 1262, 1287, 1356, 1383, 1395, 1455, 1514, 1631, 1632, 1806, 2172, 2229, 2257, 2387, 2501, 2594, 2611, 2705, 2722, 2792, 2877, 2991, 3182, 3258, 3323, 3325, 3457, 3470, 3481, 3588, 4215, 4287, 4432, 4459, 4489, 4523, 4618, 4626, 4690, 4762, 4820, 4909, 4992, 5012, 5073, 5085, 5095, 5158, 5163, 5221"
   },
   {
     "id": 136,
@@ -4485,7 +4620,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "2391, 2798, 3284, 3320"
   },
   {
     "id": 137,
@@ -4518,7 +4654,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "90, 54, 3, 14, 49, 47, 17, 23, 26, 99, 38, 51"
+    "cuisine_ids": "90, 54, 3, 14, 49, 47, 17, 23, 26, 99, 38, 51",
+    "restaurant_ids": "46, 98, 246, 581, 832, 846, 928, 1035, 1286, 1437, 1650, 2655, 2756, 2865, 3060, 3101, 3338, 3546, 3647, 3756, 4236, 4320, 4732, 4957, 5028, 5081"
   },
   {
     "id": 138,
@@ -4551,7 +4688,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "34, 74, 81, 32, 47, 3, 35, 83, 66, 90, 54, 59, 38, 16, 79, 26, 5, 22"
+    "cuisine_ids": "34, 74, 81, 32, 47, 3, 35, 83, 66, 90, 54, 59, 38, 16, 79, 26, 5, 22",
+    "restaurant_ids": "289, 336, 461, 494, 510, 591, 610, 614, 657, 695, 701, 733, 759, 1174, 1179, 1440, 1553, 1578, 1822, 2016, 2217, 2230, 2370, 2383, 2426, 2434, 3122, 3131, 3147, 3177, 3412, 3570, 3594, 3726, 3969, 4178, 4244, 4291, 4295, 4304, 4471, 4795, 4801, 4896, 5001, 5010, 5058, 5168, 5339"
   },
   {
     "id": 139,
@@ -4584,7 +4722,8 @@
     "tolerance": 7.49,
     "outdoors": 1.084,
     "summary": "<p>Providence, Rhode Island, is among the leading cities with a <b>speedy internet access</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "49, 99, 47, 17, 3, 32, 42, 21, 83, 68"
+    "cuisine_ids": "49, 99, 47, 17, 3, 32, 42, 21, 83, 68",
+    "restaurant_ids": "3, 72, 277, 344, 353, 426, 642, 799, 936, 1012, 1210, 1419, 1425, 1431, 1464, 1540, 1552, 1751, 1791, 2038, 2196, 2204, 2284, 2295, 2306, 2357, 2378, 2600, 2644, 2948, 3015, 3253, 3410, 3495, 3521, 3527, 3748, 3801, 3836, 3864, 3922, 4249, 4284, 4341, 4451, 4463, 4543, 4747, 4894, 4912, 4949, 5119, 5129, 5285, 5316"
   },
   {
     "id": 140,
@@ -4617,7 +4756,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "23, 47, 3, 17, 54, 49, 31, 90"
+    "cuisine_ids": "23, 47, 3, 17, 54, 49, 31, 90",
+    "restaurant_ids": "362, 432, 562, 749, 864, 1105, 1130, 1777, 1896, 1962, 2054, 2223, 2421, 2775, 3395, 4053, 4258, 4693, 5133"
   },
   {
     "id": 141,
@@ -4650,7 +4790,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "4976"
   },
   {
     "id": 142,
@@ -4683,7 +4824,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 32, 14, 17"
+    "cuisine_ids": "47, 32, 14, 17",
+    "restaurant_ids": "774, 2017, 2857, 3344, 3602, 4641, 5026"
   },
   {
     "id": 143,
@@ -4716,7 +4858,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 14, 27"
+    "cuisine_ids": "47, 14, 27",
+    "restaurant_ids": "992, 1890, 4331"
   },
   {
     "id": 144,
@@ -4749,7 +4892,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3"
+    "cuisine_ids": "47, 3",
+    "restaurant_ids": "1311, 2885, 4094, 4845"
   },
   {
     "id": 145,
@@ -4782,7 +4926,8 @@
     "tolerance": 7.151,
     "outdoors": 1.0350000000000001,
     "summary": "<p>Richmond, Virginia, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": "23, 3, 47, 35, 21, 28, 32, 34, 81, 89, 26, 99, 49, 17, 45, 14"
+    "cuisine_ids": "23, 3, 47, 35, 21, 28, 32, 34, 81, 89, 26, 99, 49, 17, 45, 14",
+    "restaurant_ids": "22, 26, 139, 223, 224, 285, 433, 512, 544, 564, 676, 985, 1034, 1097, 1139, 1151, 1272, 1379, 1696, 1756, 1799, 1867, 1894, 2042, 2083, 2268, 2390, 2402, 2464, 2662, 2941, 3134, 3159, 3169, 3191, 3283, 3288, 3328, 3657, 3713, 3806, 3871, 3925, 3946, 3956, 3985, 4046, 4364, 4395, 4431, 4602, 4703, 4944, 5100, 5191, 5231, 5248, 5346"
   },
   {
     "id": 146,
@@ -4815,7 +4960,8 @@
     "tolerance": 5.9014999999999995,
     "outdoors": 4.404,
     "summary": "<p>Rochester, New York, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>housing</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
-    "cuisine_ids": ""
+    "cuisine_ids": "47, 49, 54, 3, 32, 21, 83, 89, 42, 34, 35, 81, 23, 90, 28",
+    "restaurant_ids": "146, 185, 293, 315, 378, 389, 488, 621, 755, 764, 934, 1261, 1289, 1350, 1548, 1559, 1636, 1745, 1763, 1787, 1940, 2107, 2289, 2308, 2316, 2438, 2476, 2477, 2519, 2812, 2886, 2910, 2913, 3021, 3068, 3106, 3136, 3190, 3292, 3476, 3667, 3697, 4074, 4105, 4116, 4378, 4696, 4785, 4822, 4893, 4910, 4914, 4920, 5024, 5189, 5275"
   },
   {
     "id": 147,
@@ -4848,7 +4994,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1171, 5242"
   },
   {
     "id": 148,
@@ -4881,7 +5028,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "49, 47"
+    "cuisine_ids": "49, 47",
+    "restaurant_ids": "57, 2725, 3013, 3939"
   },
   {
     "id": 149,
@@ -4914,7 +5062,8 @@
     "tolerance": 6.7895,
     "outdoors": 3.9090000000000003,
     "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
-    "cuisine_ids": "49, 54, 16, 3, 23, 99, 47, 89, 32, 90, 53, 35, 82, 42"
+    "cuisine_ids": "49, 54, 16, 3, 23, 99, 47, 89, 32, 90, 53, 35, 82, 42",
+    "restaurant_ids": "361, 645, 712, 870, 933, 1038, 1131, 1382, 1879, 1992, 2073, 2112, 2116, 2120, 2242, 2439, 2806, 2976, 3228, 3432, 3436, 3469, 3645, 3683, 3712, 3960, 3966, 4084, 4190, 4842, 4997"
   },
   {
     "id": 150,
@@ -4947,7 +5096,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "34, 47"
+    "cuisine_ids": "34, 47",
+    "restaurant_ids": "888, 1881, 3108, 3367"
   },
   {
     "id": 151,
@@ -4980,7 +5130,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 17, 47, 54, 3, 14, 49, 83, 35"
+    "cuisine_ids": "32, 17, 47, 54, 3, 14, 49, 83, 35",
+    "restaurant_ids": "181, 239, 242, 261, 318, 321, 402, 584, 630, 715, 1065, 1085, 1279, 1293, 1313, 1372, 1569, 1665, 1736, 1846, 1917, 1995, 2021, 2324, 2466, 2525, 2552, 2570, 2572, 2597, 2672, 2778, 2855, 2934, 3037, 3041, 3059, 3149, 3319, 3489, 3580, 3592, 3788, 4131, 4326, 4419, 4533, 4710, 4722, 4764, 4904, 5018, 5263"
   },
   {
     "id": 152,
@@ -5013,7 +5164,8 @@
     "tolerance": 8.6225,
     "outdoors": 6.641000000000002,
     "summary": "<p>Salt Lake City, Utah, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Salt Lake City is one of the top ten city matches for 2.4% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 54, 47, 81, 49, 99, 42, 90, 83, 22, 23, 34, 82, 17, 32, 11"
+    "cuisine_ids": "3, 54, 47, 81, 49, 99, 42, 90, 83, 22, 23, 34, 82, 17, 32, 11",
+    "restaurant_ids": "10, 234, 245, 252, 471, 498, 687, 705, 739, 794, 962, 1052, 1123, 1708, 1926, 2047, 2074, 2286, 2528, 2674, 2919, 3097, 3119, 3129, 3483, 3752, 3765, 3776, 3834, 3905, 3995, 4112, 4340, 4409, 4557, 4704, 4750, 4830, 4884, 4973, 5002, 5064, 5239, 5333, 5343"
   },
   {
     "id": 153,
@@ -5046,7 +5198,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "231, 2755"
   },
   {
     "id": 154,
@@ -5079,7 +5232,8 @@
     "tolerance": 6.254,
     "outdoors": 3.4185000000000003,
     "summary": "<p>San Antonio, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>cost of living</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>San Antonio is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 32, 11, 16, 54, 35, 90, 12, 34, 49, 39, 59, 89, 57, 82, 23"
+    "cuisine_ids": "47, 3, 32, 11, 16, 54, 35, 90, 12, 34, 49, 39, 59, 89, 57, 82, 23",
+    "restaurant_ids": "97, 209, 413, 472, 475, 502, 618, 661, 666, 771, 1141, 1159, 1244, 1255, 1468, 1634, 1748, 1801, 1823, 2085, 2093, 2165, 2183, 2218, 2302, 2577, 2607, 2643, 2700, 2889, 3048, 3054, 3213, 3227, 3363, 3364, 3431, 3548, 3682, 3693, 3759, 3777, 3910, 3934, 3991, 4025, 4045, 4076, 4108, 4156, 4205, 4237, 4391, 4625, 4661, 4670, 4767, 4867, 4931, 4967, 5015"
   },
   {
     "id": 155,
@@ -5112,7 +5266,8 @@
     "tolerance": 8.5395,
     "outdoors": 6.396000000000002,
     "summary": "<p>San Diego, California, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>safety</b>.\n    \n\n    \n</p>\n\n\n    <p>San Diego is one of the top ten city matches for 1.4% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 80, 3, 32, 39, 83, 54, 70, 17, 37, 49, 34, 14, 45, 13"
+    "cuisine_ids": "47, 80, 3, 32, 39, 83, 54, 70, 17, 37, 49, 34, 14, 45, 13",
+    "restaurant_ids": "91, 100, 217, 340, 403, 464, 543, 857, 951, 956, 957, 969, 978, 1058, 1071, 1138, 1209, 1275, 1303, 1317, 1340, 1496, 1633, 1672, 1694, 1813, 1934, 2027, 2161, 2259, 2285, 2325, 2342, 2411, 2452, 2612, 2624, 2632, 2649, 2880, 2881, 3049, 3179, 3226, 3365, 3490, 3615, 3638, 3673, 3907, 4039, 4071, 4096, 4280, 4440, 4488, 4586, 4607, 4668, 4711, 4737, 4823, 4871, 5007, 5068, 5109, 5238, 5267, 5353"
   },
   {
     "id": 156,
@@ -5145,7 +5300,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 32, 58, 3, 39, 99, 35, 73, 17, 26, 21, 83, 54, 36, 23, 34, 70, 16, 81, 57, 93, 15, 101, 22"
+    "cuisine_ids": "47, 32, 58, 3, 39, 99, 35, 73, 17, 26, 21, 83, 54, 36, 23, 34, 70, 16, 81, 57, 93, 15, 101, 22",
+    "restaurant_ids": "86, 111, 183, 286, 783, 900, 927, 983, 1125, 1150, 1292, 1500, 1663, 1674, 1709, 1769, 1798, 1860, 1893, 1999, 2086, 2206, 2233, 2280, 2303, 2450, 2459, 2502, 2598, 2690, 2691, 2748, 2845, 2851, 2987, 3090, 3239, 3251, 3287, 3514, 3520, 3551, 3612, 3632, 3680, 3718, 3723, 3740, 3823, 3878, 4098, 4187, 4195, 4298, 4424, 4531, 4549, 4573, 4740, 4798, 4804, 4848, 4887, 5021, 5033, 5110, 5266"
   },
   {
     "id": 157,
@@ -5178,7 +5334,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "45, 47, 99, 43, 53, 3, 30, 39, 14, 54, 90, 83, 17, 42, 81, 34, 32, 70, 49, 23, 51, 89, 35, 59, 13, 68"
+    "cuisine_ids": "45, 47, 99, 43, 53, 3, 30, 39, 14, 54, 90, 83, 17, 42, 81, 34, 32, 70, 49, 23, 51, 89, 35, 59, 13, 68",
+    "restaurant_ids": "20, 48, 95, 177, 358, 370, 421, 521, 590, 620, 624, 767, 804, 817, 893, 954, 1167, 1234, 1370, 1668, 1840, 1908, 1943, 1997, 2090, 2095, 2125, 2184, 2376, 2579, 2706, 2794, 2901, 2950, 2977, 2996, 3088, 3141, 3333, 3343, 3360, 3402, 3502, 3529, 3659, 3953, 3984, 4031, 4247, 4385, 4420, 4456, 4482, 4507, 4530, 4610, 4612, 4631, 4665, 4875, 4929, 4955, 4963, 5183, 5286, 5336"
   },
   {
     "id": 158,
@@ -5211,7 +5368,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "14, 47, 58, 23"
+    "cuisine_ids": "14, 47, 58, 23",
+    "restaurant_ids": "1842, 2874, 4729"
   },
   {
     "id": 159,
@@ -5244,7 +5402,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1069, 1953, 2433"
   },
   {
     "id": 160,
@@ -5277,7 +5436,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "17, 47, 49, 1, 42, 3, 26, 54, 32, 14, 66, 82"
+    "cuisine_ids": "17, 47, 49, 1, 42, 3, 26, 54, 32, 14, 66, 82",
+    "restaurant_ids": "37, 56, 235, 612, 663, 682, 752, 776, 778, 1165, 1176, 1232, 1298, 1314, 1385, 1434, 1727, 2313, 2318, 2321, 2377, 2435, 2453, 2640, 2745, 2779, 3039, 3202, 3282, 3669, 4022, 4069, 4075, 4086, 4272, 4363, 4492, 4786, 4915, 5132, 5188, 5305, 5357"
   },
   {
     "id": 161,
@@ -5310,7 +5470,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 34, 38, 11, 32, 57, 49, 54, 16, 90, 74"
+    "cuisine_ids": "47, 3, 34, 38, 11, 32, 57, 49, 54, 16, 90, 74",
+    "restaurant_ids": "30, 150, 568, 658, 798, 865, 1072, 1118, 1541, 1547, 1595, 1662, 1729, 1780, 1781, 1899, 1956, 2346, 2543, 2548, 2559, 2568, 2573, 2670, 2825, 2909, 2937, 3081, 3151, 3193, 3246, 3260, 3290, 3322, 3361, 3496, 3516, 3549, 3656, 3865, 3944, 4010, 4113, 4143, 4223, 4251, 4465, 4731, 4761, 5038, 5130, 5240, 5342"
   },
   {
     "id": 162,
@@ -5343,7 +5504,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 99, 47, 49, 23, 54, 30, 90, 81, 32, 14, 42, 58, 69, 38, 17"
+    "cuisine_ids": "3, 99, 47, 49, 23, 54, 30, 90, 81, 32, 14, 42, 58, 69, 38, 17",
+    "restaurant_ids": "142, 445, 497, 523, 692, 847, 1080, 1086, 1164, 1173, 1213, 1253, 1502, 1597, 1610, 1719, 1790, 1811, 1871, 2044, 2045, 2247, 2354, 2595, 2648, 2686, 2688, 3008, 3084, 3220, 3578, 3626, 3655, 3664, 3700, 3769, 3774, 3799, 3830, 3891, 3930, 3978, 4201, 4217, 4551, 4697, 4724, 4746, 4793, 4888, 4927, 4969, 5087, 5350"
   },
   {
     "id": 163,
@@ -5376,7 +5538,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 83, 32"
+    "cuisine_ids": "47, 3, 83, 32",
+    "restaurant_ids": "184, 1531, 5175"
   },
   {
     "id": 164,
@@ -5409,7 +5572,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "82, 47, 90, 59, 14, 3, 32, 83, 54, 49, 34, 13, 81"
+    "cuisine_ids": "82, 47, 90, 59, 14, 3, 32, 83, 54, 49, 34, 13, 81",
+    "restaurant_ids": "43, 138, 337, 399, 401, 405, 480, 491, 634, 709, 728, 861, 1060, 1101, 1140, 1351, 1399, 1463, 1577, 1583, 1592, 1643, 1944, 1945, 1955, 2087, 2106, 2141, 2429, 2486, 2515, 2809, 2925, 2952, 2969, 2984, 3020, 3291, 3295, 3353, 3474, 3614, 3739, 3795, 3818, 4138, 4348, 4373, 4656, 4771, 4774, 4814, 4834, 4960, 5203"
   },
   {
     "id": 165,
@@ -5442,7 +5606,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "83, 21, 26, 27, 74, 85, 32, 3, 49, 80, 47, 54, 51, 28, 71, 42, 14, 59, 16, 7, 99, 23, 35"
+    "cuisine_ids": "83, 21, 26, 27, 74, 85, 32, 3, 49, 80, 47, 54, 51, 28, 71, 42, 14, 59, 16, 7, 99, 23, 35",
+    "restaurant_ids": "32, 193, 258, 288, 349, 633, 679, 741, 823, 827, 851, 881, 911, 1011, 1099, 1134, 1471, 1480, 1611, 1625, 1695, 1797, 1843, 1854, 1986, 2064, 2079, 2173, 2279, 2407, 2428, 2560, 2623, 2703, 2833, 2862, 2871, 2997, 3163, 3585, 3597, 3640, 3762, 3919, 3942, 4253, 4350, 4544, 4568, 4678, 4691, 4889, 5262"
   },
   {
     "id": 166,
@@ -5475,7 +5640,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 68, 32"
+    "cuisine_ids": "47, 68, 32",
+    "restaurant_ids": "113, 3174, 3805"
   },
   {
     "id": 167,
@@ -5508,7 +5674,8 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3082"
   },
   {
     "id": 168,
@@ -5541,7 +5708,8 @@
     "tolerance": 4.3759999999999994,
     "outdoors": 4.8285,
     "summary": "<p>St. Louis, Missouri, is among the leading cities with a <b>speedy internet access</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>St. Louis is one of the top ten city matches for 1.4% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 3, 34, 47, 83, 14, 99, 17, 75, 81, 16, 23, 35, 66, 54"
+    "cuisine_ids": "32, 3, 34, 47, 83, 14, 99, 17, 75, 81, 16, 23, 35, 66, 54",
+    "restaurant_ids": "69, 117, 151, 160, 192, 383, 395, 414, 436, 588, 854, 907, 935, 1016, 1062, 1238, 1249, 1353, 1408, 1478, 1607, 1626, 1816, 2037, 2058, 2262, 2272, 2312, 2347, 2587, 2817, 2944, 2947, 2994, 3001, 3349, 3441, 3606, 3631, 3677, 3780, 3857, 3887, 3983, 4192, 4309, 4370, 4567, 4662, 4757, 4996, 5126, 5169"
   },
   {
     "id": 169,
@@ -5574,7 +5742,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 49, 35, 47, 32, 99, 23, 54, 16, 83, 90"
+    "cuisine_ids": "3, 49, 35, 47, 32, 99, 23, 54, 16, 83, 90",
+    "restaurant_ids": "2, 140, 158, 213, 458, 569, 598, 609, 650, 1278, 1360, 1381, 1519, 1585, 1641, 1707, 1779, 1828, 1937, 1949, 2033, 2066, 2146, 2293, 2363, 2575, 2576, 2615, 2676, 2681, 2831, 3029, 3042, 3150, 3237, 3249, 3329, 3350, 3399, 3460, 3550, 3629, 3633, 3652, 3690, 3874, 3886, 3928, 4097, 4104, 4212, 4393, 4515, 4522, 4847, 4906, 5060, 5166, 5287, 5306"
   },
   {
     "id": 170,
@@ -5607,7 +5776,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1647"
   },
   {
     "id": 171,
@@ -5640,7 +5810,8 @@
     "tolerance": 8.012500000000001,
     "outdoors": 7.014,
     "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
-    "cuisine_ids": "17, 90, 42, 23, 3, 89, 47, 43, 45, 34, 1, 64"
+    "cuisine_ids": "17, 90, 42, 23, 3, 89, 47, 43, 45, 34, 1, 64",
+    "restaurant_ids": "257, 531, 557, 834, 1018, 1308, 1703, 1735, 2003, 2062, 2109, 2134, 2288, 2444, 2526, 2811, 2949, 3045, 3123, 3146, 3167, 3263, 3324, 3486, 3513, 3539, 3813, 4014, 4102, 4264, 4525, 4636, 4706, 4776, 4802"
   },
   {
     "id": 172,
@@ -5673,7 +5844,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 49, 99, 54, 32, 35, 90, 23"
+    "cuisine_ids": "47, 3, 49, 99, 54, 32, 35, 90, 23",
+    "restaurant_ids": "28, 85, 166, 190, 316, 351, 422, 437, 791, 879, 892, 953, 1188, 1226, 1638, 1740, 1848, 2084, 2147, 2205, 2467, 3009, 3095, 3142, 3223, 3267, 3327, 3397, 3515, 3525, 3582, 3783, 4050, 4064, 4196, 4837, 4846, 4860, 4950, 5011, 5156, 5199, 5237, 5271"
   },
   {
     "id": 173,
@@ -5706,7 +5878,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 90, 3, 14, 23, 64, 42, 34, 49, 81, 54, 35, 11, 32, 5, 89"
+    "cuisine_ids": "47, 90, 3, 14, 23, 64, 42, 34, 49, 81, 54, 35, 11, 32, 5, 89",
+    "restaurant_ids": "4, 60, 67, 83, 393, 686, 748, 769, 797, 838, 942, 958, 1017, 1149, 1185, 1193, 1301, 1416, 1422, 1686, 1774, 1876, 2239, 2469, 2660, 2762, 2847, 2998, 3031, 3138, 3240, 3306, 3541, 3572, 3649, 3686, 4056, 4077, 4162, 4333, 4429, 4445, 4981, 4995, 5054, 5293, 5323"
   },
   {
     "id": 174,
@@ -5739,7 +5912,8 @@
     "tolerance": 5.360000000000001,
     "outdoors": 5.497,
     "summary": "<p>Tampa Bay Area, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Tampa Bay Area is one of the top ten city matches for 1.2% of Teleport users.</p>\n",
-    "cuisine_ids": "34, 49, 54, 82, 47, 3, 16, 23, 26, 69, 28, 21, 83, 59, 35, 32, 14, 4, 81"
+    "cuisine_ids": "34, 49, 54, 82, 47, 3, 16, 23, 26, 69, 28, 21, 83, 59, 35, 32, 14, 4, 81",
+    "restaurant_ids": "108, 118, 459, 469, 550, 651, 662, 792, 803, 853, 860, 1064, 1310, 1318, 1362, 1457, 1682, 1950, 2126, 2540, 2814, 2836, 2942, 3065, 3074, 3152, 3170, 3261, 3266, 3473, 3523, 3768, 3912, 3999, 4158, 4165, 4179, 4213, 4216, 4299, 4316, 4495, 4529, 4853, 4895, 4964, 5225"
   },
   {
     "id": 175,
@@ -5772,7 +5946,8 @@
     "tolerance": 5.5649999999999995,
     "outdoors": 6.7355,
     "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 17, 90, 49, 30, 45, 59, 89, 14, 42, 64"
+    "cuisine_ids": "3, 47, 17, 90, 49, 30, 45, 59, 89, 14, 42, 64",
+    "restaurant_ids": "596, 762, 903, 932, 994, 1107, 1206, 1229, 1744, 2007, 2096, 2114, 2132, 2195, 2335, 2394, 2430, 2478, 2665, 2803, 2897, 3198, 3308, 3316, 3326, 3504, 3518, 3854, 4122, 4147, 4231, 4452, 4468, 4595, 5005, 5141, 5278"
   },
   {
     "id": 176,
@@ -5805,7 +5980,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47, 34"
+    "cuisine_ids": "3, 47, 34",
+    "restaurant_ids": "605, 862, 3926"
   },
   {
     "id": 177,
@@ -5838,7 +6014,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3"
+    "cuisine_ids": "47, 3",
+    "restaurant_ids": "529, 2823, 3511, 3528"
   },
   {
     "id": 178,
@@ -5871,7 +6048,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "859"
   },
   {
     "id": 179,
@@ -5904,7 +6082,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "78"
+    "cuisine_ids": "78",
+    "restaurant_ids": "563"
   },
   {
     "id": 180,
@@ -5937,7 +6116,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": ""
+    "cuisine_ids": "54, 81, 47, 90, 34, 3, 42, 23, 49, 82",
+    "restaurant_ids": "195, 357, 468, 833, 836, 884, 1384, 1738, 2246, 2282, 2310, 2520, 2578, 2739, 2788, 2914, 3381, 3420, 3710, 3802, 3914, 4068, 4139, 4372, 4422, 4548, 4730, 4819, 5208"
   },
   {
     "id": 181,
@@ -5970,7 +6150,8 @@
     "tolerance": 8.0895,
     "outdoors": 7.2094999999999985,
     "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
-    "cuisine_ids": "32, 47"
+    "cuisine_ids": "32, 47",
+    "restaurant_ids": "2273"
   },
   {
     "id": 182,
@@ -6003,7 +6184,8 @@
     "tolerance": 6.5495,
     "outdoors": 5.023499999999999,
     "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 3, 32, 11, 42, 81, 48, 34, 83, 54, 89, 68, 13, 49, 35, 94, 8"
+    "cuisine_ids": "47, 3, 32, 11, 42, 81, 48, 34, 83, 54, 89, 68, 13, 49, 35, 94, 8",
+    "restaurant_ids": "141, 182, 359, 457, 734, 793, 918, 948, 987, 1197, 1211, 1217, 1218, 1276, 1387, 1392, 1527, 1530, 1656, 1914, 1961, 2012, 2025, 2048, 2241, 2398, 2585, 2620, 2737, 2791, 2893, 3005, 3014, 3294, 3311, 3378, 3531, 3583, 3676, 3725, 3730, 3810, 3947, 4169, 4228, 4587, 4738, 4744, 5043, 5075, 5128, 5137"
   },
   {
     "id": 183,
@@ -6036,7 +6218,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "45"
+    "cuisine_ids": "45",
+    "restaurant_ids": "2610"
   },
   {
     "id": 184,
@@ -6069,7 +6252,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "3, 47"
+    "cuisine_ids": "3, 47",
+    "restaurant_ids": "429, 1980"
   },
   {
     "id": 185,
@@ -6102,7 +6286,8 @@
     "tolerance": 6.959999999999999,
     "outdoors": 6.747,
     "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "32"
+    "cuisine_ids": "32",
+    "restaurant_ids": "2556"
   },
   {
     "id": 186,
@@ -6135,7 +6320,8 @@
     "tolerance": 8.1595,
     "outdoors": 6.303999999999999,
     "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
-    "cuisine_ids": "47, 90, 3, 57, 54, 89"
+    "cuisine_ids": "47, 90, 3, 57, 54, 89",
+    "restaurant_ids": "1242, 1760, 2479, 3050, 3998, 4307"
   },
   {
     "id": 187,
@@ -6168,7 +6354,8 @@
     "tolerance": 6.7125,
     "outdoors": 5.7475,
     "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "3938"
   },
   {
     "id": 188,
@@ -6201,7 +6388,8 @@
     "tolerance": 8.4815,
     "outdoors": 5.659999999999999,
     "summary": "<p>\n    One of the oldest and most historic cities in the US, Boston is\u00a0a center of higher education with some of the <b>top universities</b> in the world. It has also developed a vibrant technology scene and is home to numerous <b>venture capital</b> firms, all supporting high rates of innovation and entrepreneurship. Add its\u00a0<b>tolerant</b> environment, great quality of <b>healthcare</b> and beautiful New England nature, and you've got an enticing city that attracts talent from around the world.\n</p>\n\n\n    <p>Boston is one of the top ten city matches for 12.8% of Teleport users.</p>\n",
-    "cuisine_ids": "83, 3, 13, 81, 32, 47, 90, 35, 54, 49, 23, 82, 99, 21, 69"
+    "cuisine_ids": "83, 3, 13, 81, 32, 47, 90, 35, 54, 49, 23, 82, 99, 21, 69",
+    "restaurant_ids": "63, 124, 291, 380, 535, 545, 635, 683, 751, 1195, 1358, 1376, 1472, 1513, 1640, 1968, 2018, 2046, 2108, 2111, 2140, 2148, 2571, 2720, 2728, 2927, 3127, 3176, 3303, 3430, 3506, 3665, 3684, 3749, 3775, 3812, 3852, 3885, 3940, 3941, 3980, 4013, 4034, 4051, 4057, 4562, 4803, 4813, 4868, 4916, 5198, 5224, 5296"
   },
   {
     "id": 189,
@@ -6234,6 +6422,7 @@
     "tolerance": 5.294,
     "outdoors": 4.501999999999999,
     "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
-    "cuisine_ids": "47"
+    "cuisine_ids": "47",
+    "restaurant_ids": "1260, 2810"
   }
 ]
