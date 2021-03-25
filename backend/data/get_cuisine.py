@@ -204,7 +204,7 @@ def sort_cuisines():
 
 
 def insert_ids():
-    f = open("all_restaurants_with_city_id.json")
+    f = open("all_restaurants.json")
     cities = json.load(f)
 
     # cities_sorted_data = sorted(cities, key=lambda k: k["name"])
@@ -222,7 +222,41 @@ def insert_ids():
         json.dump(cities, file)
 
 
-insert_ids()
+# insert_ids()
+
+
+def get_restaurant_ids_into_cuisines():
+    f = open("all_restaurants.json")
+    restaurants = json.load(f)
+
+    f = open("all_cuisines.json")
+    cuisines = json.load(f)
+
+    # numCuisines = 0
+
+    for cuisine in cuisines:
+        cuisine["restaurant_ids"] = ""
+        # ids = cuisine["restaurant_ids"].split(", ")
+        # numCuisines += len(ids)
+
+    # print("num cuisines in cuisines: ", numCuisines)
+    # print("num restaurants: ", len(restaurants))
+
+    # numCuisines = 0
+    for restaurant in restaurants:
+        cuisineIDs = restaurant["cuisine_ids"].split(", ")
+        for cuisineID in cuisineIDs:
+            if int(cuisineID) != -1:
+                id = int(cuisineID) - 1
+                cuisine = cuisines[id]
+                cuisine["restaurant_ids"] += str(restaurant["id"]) + ", "
+
+    with open("all_cuisines.json", "w") as file:
+        json.dump(cuisines, file)
+
+
+# get_restaurant_ids_into_cuisines()
+# insert_ids()
 
 
 def get_cuisines_in_a_city():
