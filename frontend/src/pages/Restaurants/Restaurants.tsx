@@ -46,7 +46,7 @@ function Restaurants() {
             <tr>
               <td>{i + 1}</td>
               <td>
-                <a href={"/restaurants/" + i} className="article">
+                <a href={"/restaurants/" + restaurant['id']} className="article">
                   {restaurant["name"]}
                 </a>
               </td>

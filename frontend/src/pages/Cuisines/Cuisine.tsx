@@ -1,33 +1,45 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
-
-// const countries_data = require("../../data/threeCountries.json");
-// const news_data = require("../../data/threeNews.json");
-// const dishes_data = require("../../data/threeDishes.json");
-
-const cities_data = require("../../data/newData/threeCities.json");
-const countries_data = require("../../data/newData/countries.json");
-const cuisines_data = require("../../data/newData/cuisines.json");
-const restaurants_data = require("../../data/newData/threeRestaurants.json");
+import useAxios from 'axios-hooks';
+import axios from "axios";
 
 function Cuisine() {
   const { id } = useParams<{ id: string }>();
-  // let data = countries_data[+id];
-  // let countryName = data["name"];
+  useEffect(() => {
+    document.title = "City";
+  }, []);
 
-  let city = cuisines_data[+id];
-  let country = countries_data[+id];
-  let countryName = country["name"];
-
-  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
-  let countryMapURL =
-    "https://www.google.com/maps/embed/v1/place?key=" +
-    API_KEY +
-    "&q=" +
-    countryName;
+  const [{ data, loading, error }] = useAxios('/api/cuisines/id='+id) 
+  const [cuisine, setCuisine] = useState<CuisineInstance>();
+  const [country, setCountry] = useState<CountryInstance>()
+  /* set city data */
+  useEffect(() => {
+    const cuisineObj: CuisineInstance = data as CuisineInstance;
+    if (cuisineObj) {
+      setCuisine(cuisineObj)
+      let countryUrl = cuisineObj?.countryID
+      console.log(countryUrl)
+      console.log('here',cuisineObj)
+      axios.get('/api/countries/id=' + cuisineObj?.countryID).then((value)=>
+      {
+        
+        const countryObj: CountryInstance = value["data"] as CountryInstance;
+        setCountry(countryObj)
+        console.log(country)
+      });
+    
+    }
+  }, [data]);
+  
+  // let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+  // let countryMapURL =
+  //   "https://www.google.com/maps/embed/v1/place?key=" +
+  //   API_KEY +
+  //   "&q=" +
+  //   countryName;
 
   // let dishIndex = data["dishIndex"];
   // let newsIndex = data["newsIndex"];
@@ -37,93 +49,129 @@ function Cuisine() {
 
   // console.log(newsLink);
   return (
+
+//       <div className="center">
+//         <h4>Map Location</h4>
+//         <iframe
+//           src={countryMapURL}
+//           width="600"
+//           height="450"
+//           loading="lazy"
+//         ></iframe>
+//       </div> 
+
     <Container fluid>
       <header>
-        <h1>{city["name"]}</h1>
+        <h1>{cuisine?.name}</h1>
+        Country: {country?.name}
       </header>
 
-      <div className="center">
+      <p></p>
+      <Row>
+        <Col xs={6} md={4}>
+          <Image src={country?.flag} fluid />
+        </Col>
+      </Row>
+      <section>
+        <h5>Alpha 3 Code:</h5>
+        {country?.alpha3code}
+
+        <h5>Region</h5>
+        {country?.region}
+
+        <h5>Subregion</h5>
+        {country?.subregion}
+      </section>
+
+      <h5>Population</h5>
+      {country?.population}
+
+      <h5>Capital city</h5>
+      {country?.capital}
+
+      <h5>Bordering Countries</h5>
+      {country?.borders.split(", ").map((border: any) => {
+          return <li>{border}</li>;
+        }) }
+
+      <section>
+        <h5>Time Zones</h5>
+        {country?.timezones}
+      </section>
+      <h5>Translations</h5>
+      {
+        Object.keys(country?.translations).map((key, index) => ( 
+          <p key={index}> {key} : {country?.translations[key]}</p> 
+        ))
+      }
+        
+
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+
+      {/* <div className="center">
         <h4>Map Location</h4>
         <iframe
           src={countryMapURL}
           width="600"
           height="450"
           loading="lazy"
-        ></iframe>
-      </div>
+        ></iframe> */}
+       {/* </div> */}
     </Container>
-    // <Container fluid>
-    //   <header>
-    //     <h1>{data["name"]}</h1>
-    //   </header>
-
-    //   <p></p>
-    //   <Row>
-    //     <Col xs={6} md={4}>
-    //       <Image src={data["flag"]} fluid />
-    //     </Col>
-    //   </Row>
-    //   <section>
-    //     <h5>Alpha 3 Code:</h5>
-    //     {data["alpha3Code"]}
-
-    //     <h5>Region</h5>
-    //     {data["region"]}
-
-    //     <h5>Subregion</h5>
-    //     {data["subregion"]}
-    //   </section>
-
-    //   <h5>Population</h5>
-    //   {data["population"].toLocaleString("en", { useGrouping: true })}
-
-    //   <h5>Capital city</h5>
-    //   {data["capital"]}
-
-    //   <h5>Bordering Countries</h5>
-    //   {data["borders"].length? data["borders"].map((timezone: any) => {
-    //       return <li>{timezone}</li>;
-    //     }) : "No bordering countries"}
-
-    //   <section>
-    //     <h5>Time Zones</h5>
-    //     {data["timezones"].map((timezone: any) => {
-    //       return <li>{timezone}</li>;
-    //     })}
-    //   </section>
-
-    //   <h5>Translations</h5>
-
-    //   {Object.keys(data["translations"]).map((k) => {
-    //     return <li>{data["translations"][k]}</li>;
-    //   })}
-
-    //   <p></p>
-    //   <p></p>
-    //   <p></p>
-    //   <p></p>
-
-    //   <h5>Dishes from this country:</h5>
-    //   <a href={"/dishes/" + dishIndex}>
-    //     <h6>{dishName}</h6>
-    //   </a>
-
-    //   <h5>News articles:</h5>
-    //   <a href={"/news/" + newsIndex}>
-    //     <h6>{newsArticle}</h6>
-    //   </a>
-
-      // <div className="center">
-      //   <h4>Map Location</h4>
-      //   <iframe
-      //     src={countryMapURL}
-      //     width="600"
-      //     height="450"
-      //     loading="lazy"
-      //   ></iframe>
-      // </div>
-    // </Container>
   );
 }
 
+interface Dish {
+  image_url: string;
+  name: string; 
+}
+
+export interface CuisineInstance {
+  country:string;
+  countryID: string;
+  description:string;
+  dishes: Array<Dish>;
+  name:string;
+}
+export interface translation{
+  br:string,
+  de: string,
+  es: string,
+  fa:string,
+  fr:string,
+  hr: string,
+  it: string,
+  ja: string,
+  nl:string,
+  pt: string
+}
+
+export interface CountryInstance{
+  alpha2code: string,
+  alpha3code: string,
+  area:number,
+  borders: string,
+  capital: string,
+  currencies: string,
+  demonym: string,
+  flag:string;
+  gini: number,
+  id: number,
+  languages: string,
+  latitude: number,
+  longitude: number,
+  name: string,
+  native_name: string,
+  numeric_code: number,
+  population: number,
+  region: string,
+  subregion: string,
+  timezones: string,
+  translations: any
+
+}
 export default Cuisine;

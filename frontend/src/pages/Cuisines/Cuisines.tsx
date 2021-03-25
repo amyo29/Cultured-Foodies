@@ -51,7 +51,7 @@ function Countries() {
               <Col className="col-sm-4 py-2">
                 <Card bg='card light h-100'>
                   <Card.Body>
-                      <a href={"/cuisines/" + i}>
+                      <a href={"/cuisines/" + cuisine['id']}>
                         <Card.Title>{cuisine['name']}</Card.Title>
                       </a>
                     <Card.Text>
