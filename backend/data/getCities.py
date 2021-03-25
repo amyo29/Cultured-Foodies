@@ -1183,6 +1183,26 @@ def get_valid_restaurants_from_valid_cities():
     json.dump(valid_restaurants, f)
 
 
+def get_cuisine_ids_in_each_city():
+    f = open("all_restaurants.json", "r")
+    restaurants = json.load(f, encoding="utf8")
+
+    f = open("all_cities.json", "r")
+    cities = json.load(f, encoding="utf8")
+
+    for city in cities:
+        city["cuisine_ids"] = []
+
+    for restaurant in restaurants:
+        cuisineIDs = restaurant["cuisine_ids"].split(", ")
+        for id in cuisineIDs:
+            if not (id in cities[int(restaurant["city_id"]) - 1]["cuisine_ids"]):
+                cities[int(restaurant["city_id"]) - 1]["cuisine_ids"].add(id)
+
+    f = open("all_cities_with_cuisine_ids.json", "w")
+    json.dump(cities, f)
+
+
 def get_restaurant_ids_in_each_city():
     f = open("all_restaurants.json", "r")
     restaurants = json.load(f, encoding="utf8")
@@ -1191,18 +1211,18 @@ def get_restaurant_ids_in_each_city():
     cities = json.load(f, encoding="utf8")
 
     for city in cities:
-        city["restaurant_ids"] = []
+        city["restaurant_ids"] = ""
 
     for restaurant in restaurants:
-        cuisineIDs = restaurant["cuisine_ids"].split(", ")
-        for id in cuisineIDs:
-            if not (id in cities[int(restaurant["city_id"]) - 1]["restaurant_ids"]):
-                cities[int(restaurant["city_id"]) - 1]["restaurant_ids"].add(id)
+        cities[restaurant["city_id"] - 1]["restaurant_ids"] += (
+            str(restaurant["id"]) + ", "
+        )
 
     f = open("all_cities_with_restaurant_ids.json", "w")
     json.dump(cities, f)
 
 
+# get_cuisine_ids_in_each_city()
 # get_restaurant_ids_in_each_city()
 # get_zomato_cities_in_restaurant_file()
 # get_diff_on_restaurants()

@@ -222,7 +222,7 @@ def insert_ids():
         json.dump(cities, file)
 
 
-# insert_ids()
+insert_ids()
 
 
 def get_restaurant_ids_into_cuisines():
@@ -678,7 +678,7 @@ all_cities = {
     "Tukwila": 184,
     "Vancouver": 186,
     "Vashon": 187,
-    "Washington DC": 188,
+    "Washington, D.C.": 188,
     "Washougal": 189,
     "West Linn": 190,
     "Whittier": 191,
@@ -748,11 +748,70 @@ def insert_city_id_for_restaurants():
         if city in all_cities:
             restaurant["city_id"] = all_cities[city]
 
-    with open("all_restaurants_with_city_id.json", "w") as file:
+    with open("all_restaurants.json", "w") as file:
         json.dump(restaurants, file)
 
 
 # insert_city_id_for_restaurants()
+
+us_state_abbrev = {
+    "Alabama": "AL",
+    "Alaska": "AK",
+    "American Samoa": "AS",
+    "Arizona": "AZ",
+    "Arkansas": "AR",
+    "California": "CA",
+    "Colorado": "CO",
+    "Connecticut": "CT",
+    "Delaware": "DE",
+    "District of Columbia": "DC",
+    "Florida": "FL",
+    "Georgia": "GA",
+    "Guam": "GU",
+    "Hawaii": "HI",
+    "Idaho": "ID",
+    "Illinois": "IL",
+    "Indiana": "IN",
+    "Iowa": "IA",
+    "Kansas": "KS",
+    "Kentucky": "KY",
+    "Louisiana": "LA",
+    "Maine": "ME",
+    "Maryland": "MD",
+    "Massachusetts": "MA",
+    "Michigan": "MI",
+    "Minnesota": "MN",
+    "Mississippi": "MS",
+    "Missouri": "MO",
+    "Montana": "MT",
+    "Nebraska": "NE",
+    "Nevada": "NV",
+    "New Hampshire": "NH",
+    "New Jersey": "NJ",
+    "New Mexico": "NM",
+    "New York": "NY",
+    "North Carolina": "NC",
+    "North Dakota": "ND",
+    "Northern Mariana Islands": "MP",
+    "Ohio": "OH",
+    "Oklahoma": "OK",
+    "Oregon": "OR",
+    "Pennsylvania": "PA",
+    "Puerto Rico": "PR",
+    "Rhode Island": "RI",
+    "South Carolina": "SC",
+    "South Dakota": "SD",
+    "Tennessee": "TN",
+    "Texas": "TX",
+    "Utah": "UT",
+    "Vermont": "VT",
+    "Virgin Islands": "VI",
+    "Virginia": "VA",
+    "Washington": "WA",
+    "West Virginia": "WV",
+    "Wisconsin": "WI",
+    "Wyoming": "WY",
+}
 
 
 def get_city_ids():
@@ -761,8 +820,16 @@ def get_city_ids():
 
     result = dict()
     for city in cities:
-        result[city["name"]] = city["id"]
+        name = city["name"]
+        state = city["state"]
+        if name == "Washington, D.C.":
+            name = "Washington DC"
+            state = "DC"
+        else:
+            state = us_state_abbrev[state]
+        result[name + ", " + state] = city["id"]
     print(result)
+    print(len(result))
 
 
 # get_city_ids()
