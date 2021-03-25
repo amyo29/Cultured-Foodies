@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component 1`] = `
+<div
+  className="font-style center"
+>
+  <h1>
+    About Us
+  </h1>
+  <p>
+    Cultured Foodies is a website that encourages its users to discover new foods from different cultures. We want people to explore the world of food from our website and learn more about new cuisines and dishes.
+  </p>
+  <p>
+    The data we've gathered highlights cuisines from various cultures and their known presence in news outlets.
+  </p>
+  <h2>
+    Meet the Team
+  </h2>
+  <div
+    className="row main-card"
+  >
+    <div
+      className="col-7 card-deck"
+    >
+      <div>
+        Loading
+      </div>
+    </div>
+  </div>
+  <div
+    className="row main-card"
+  >
+    <div
+      className="col-7 card-deck"
+    >
+      <div>
+        Loading
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>
+      Stats
+    </h2>
+    <div>
+      <h5>
+        Total Commits: 
+      </h5>
+    </div>
+    <div>
+      <h5>
+        Total Issues: 
+      </h5>
+    </div>
+    <div>
+      <h5>
+        Total Tests: 
+      </h5>
+    </div>
+  </div>
+  <div>
+    <h2>
+      API's
+    </h2>
+  </div>
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-root-1"
+    container={true}
+    justify="center"
+    spacing={2}
+  >
+    <InfoCard
+      description="Used to retrieve country information"
+      img="RestCountriesLogo.png"
+      link="https://restcountries.eu/"
+    />
+    <InfoCard
+      description="Used to find dishes"
+      img="EdamamLogo.png"
+      link="https://developer.edamam.com/"
+    />
+    <InfoCard
+      description="Used to retrieve food related news content"
+      img="NewscatcherLogo.png"
+      link="https://newscatcherapi.com/"
+    />
+    <InfoCard
+      description="Used to show the map location of a country"
+      img="GoogleMapsLogo.jpeg"
+      link="https://developers.google.com/maps/documentation/embed/get-started"
+    />
+    <InfoCard
+      description="Used to show a recipe video of a dish"
+      img="YouTubeLogo.png"
+      link="https://developers.google.com/youtube/v3/docs"
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <div>
+    <h2>
+      Tools
+    </h2>
+  </div>
+  <Container
+    fluid={false}
+  >
+    <Row
+      noGutters={false}
+    >
+      <Col>
+        <InfoCard
+          description="Cloud hosting platform"
+          img="AWSLogo.png"
+          link="https://aws.amazon.com/"
+          title="AWS"
+        />
+      </Col>
+      <Col>
+        <InfoCard
+          description="GitLab Repository and CI/CD platform"
+          img="GitLabLogo.png"
+          link="https://gitlab.com/"
+          title="GitLab"
+        />
+      </Col>
+      <Col>
+        <InfoCard
+          description="API and streamline collaboration platform"
+          img="PostmanLogo.png"
+          link="https://www.postman.com/"
+          title="Postman"
+        />
+      </Col>
+    </Row>
+    <Row
+      noGutters={false}
+    >
+      <Col>
+        <InfoCard
+          description="A JavaScript library for building user interfaces"
+          img="ReactLogo.png"
+          link="https://reactjs.org/"
+          title="React"
+        />
+      </Col>
+      <Col>
+        <InfoCard
+          description="A free and open-source CSS framework directed at responsive, mobile-first front-end web development"
+          img="BootstrapLogo.png"
+          link="https://getbootstrap.com/"
+          title="BootStrap"
+        />
+      </Col>
+      <Col>
+        <InfoCard
+          description="Domain name registrar"
+          img="Namecheap.png"
+          link="https://www.namecheap.com/"
+          title="NameCheap"
+        />
+      </Col>
+    </Row>
+  </Container>
+  <div>
+    <h2>
+      Our Data
+    </h2>
+  </div>
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-root-1"
+    container={true}
+    justify="center"
+    spacing={2}
+  >
+    <InfoCard
+      img="GitLabLogo.png"
+      link="https://gitlab.com/cs373-group-11/cultured-foodies"
+      title="Gitlab Repo"
+    />
+    <InfoCard
+      img="PostmanLogo.png"
+      link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
+      title="Postman API"
+    />
+  </WithStyles(ForwardRef(Grid))>
+</div>
+`;
