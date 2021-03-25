@@ -1882,39 +1882,6 @@
   },
   {
     "id": 58,
-    "name": "Enterprise",
-    "full_name": "Enterprise, Nevada, United States",
-    "population": 108481,
-    "latitude": 36.02525,
-    "longitude": -115.24194,
-    "state": "Nevada",
-    "timezone": "America/Los_Angeles",
-    "images": {
-      "mobile": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/las-vegas-6acb21a1fe.jpg",
-      "web": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/las-vegas_web-7dc177ab7c.jpg"
-    },
-    "housing": 7.0009999999999994,
-    "cost of living": 5.7589999999999995,
-    "startups": 7.515,
-    "venture capital": 2.022,
-    "travel connectivity": 3.5285,
-    "commute": 4.807499999999999,
-    "business freedom": 8.671,
-    "safety": 2.385,
-    "healthcare": 7.984666666666667,
-    "education": 3.6245,
-    "environmental quality": 5.556500000000001,
-    "economy": 6.5145,
-    "taxation": 4.772,
-    "internet access": 5.3035,
-    "leisure & culture": 6.3685,
-    "tolerance": 7.275,
-    "outdoors": 5.385,
-    "summary": "<p>Las Vegas, Nevada, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>startups</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Las Vegas is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 3, 23"
-  },
-  {
-    "id": 59,
     "name": "Eugene",
     "full_name": "Eugene, Oregon, United States",
     "population": 163460,
@@ -1947,7 +1914,7 @@
     "cuisine_ids": "49, 47, 14, 75, 45, 3, 32, 34, 35, 42, 99, 11, 40, 54, 83, 90, 38"
   },
   {
-    "id": 60,
+    "id": 59,
     "name": "Euless",
     "full_name": "Euless, Texas, United States",
     "population": 54219,
@@ -1980,7 +1947,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 61,
+    "id": 60,
     "name": "Fife",
     "full_name": "Fife, Washington, United States",
     "population": 9970,
@@ -2013,7 +1980,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 62,
+    "id": 61,
     "name": "Fort Worth",
     "full_name": "Fort Worth, Texas, United States",
     "population": 833319,
@@ -2046,7 +2013,7 @@
     "cuisine_ids": "59, 32, 3, 81, 47, 89, 52, 13, 49, 34, 82"
   },
   {
-    "id": 63,
+    "id": 62,
     "name": "Fremont",
     "full_name": "Fremont, California, United States",
     "population": 232206,
@@ -2079,7 +2046,7 @@
     "cuisine_ids": "23, 54, 3, 42, 64, 90, 47, 32, 1, 14, 49, 89"
   },
   {
-    "id": 64,
+    "id": 63,
     "name": "Frisco",
     "full_name": "Frisco, Texas, United States",
     "population": 154407,
@@ -2112,7 +2079,7 @@
     "cuisine_ids": "47, 49, 32, 3, 45, 89, 81, 42, 35, 13, 90, 54"
   },
   {
-    "id": 65,
+    "id": 64,
     "name": "Garland",
     "full_name": "Garland, Texas, United States",
     "population": 236897,
@@ -2145,7 +2112,7 @@
     "cuisine_ids": "47, 23, 49, 81, 3, 95, 54, 89, 90, 45, 56, 99"
   },
   {
-    "id": 66,
+    "id": 65,
     "name": "Georgetown",
     "full_name": "Georgetown, Texas, United States",
     "population": 63716,
@@ -2178,7 +2145,7 @@
     "cuisine_ids": "47, 34"
   },
   {
-    "id": 67,
+    "id": 66,
     "name": "Gilbert",
     "full_name": "Gilbert, Arizona, United States",
     "population": 247542,
@@ -2211,7 +2178,7 @@
     "cuisine_ids": "3, 47, 49, 42, 54, 82, 38, 23, 17, 90, 81"
   },
   {
-    "id": 68,
+    "id": 67,
     "name": "Glendale",
     "full_name": "Glendale, Arizona, United States",
     "population": 240126,
@@ -2244,7 +2211,7 @@
     "cuisine_ids": ""
   },
   {
-    "id": 69,
+    "id": 68,
     "name": "Glendale",
     "full_name": "Glendale, California, United States",
     "population": 201020,
@@ -2277,7 +2244,7 @@
     "cuisine_ids": "47, 49, 54, 3, 32, 99, 31, 44, 6, 42, 14, 83, 23, 51, 90, 17, 38, 26, 13, 35, 81, 34"
   },
   {
-    "id": 70,
+    "id": 69,
     "name": "Grand Prairie",
     "full_name": "Grand Prairie, Texas, United States",
     "population": 187809,
@@ -2310,7 +2277,7 @@
     "cuisine_ids": "3, 47, 23, 54, 89, 56, 99, 90, 81"
   },
   {
-    "id": 71,
+    "id": 70,
     "name": "Grapevine",
     "full_name": "Grapevine, Texas, United States",
     "population": 51404,
@@ -2343,7 +2310,7 @@
     "cuisine_ids": "32, 3, 47"
   },
   {
-    "id": 72,
+    "id": 71,
     "name": "Graton",
     "full_name": "Graton, California, United States",
     "population": 1707,
@@ -2376,7 +2343,7 @@
     "cuisine_ids": "3, 17"
   },
   {
-    "id": 73,
+    "id": 72,
     "name": "Guerneville",
     "full_name": "Guerneville, California, United States",
     "population": 4534,
@@ -2409,7 +2376,7 @@
     "cuisine_ids": "17, 32, 3, 54"
   },
   {
-    "id": 74,
+    "id": 73,
     "name": "Hayward",
     "full_name": "Hayward, California, United States",
     "population": 158289,
@@ -2442,7 +2409,7 @@
     "cuisine_ids": "3, 54, 49, 23, 42, 64, 47, 81, 68, 90, 99, 17, 14"
   },
   {
-    "id": 75,
+    "id": 74,
     "name": "Healdsburg",
     "full_name": "Healdsburg, California, United States",
     "population": 11742,
@@ -2475,7 +2442,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 76,
+    "id": 75,
     "name": "Hermosa Beach",
     "full_name": "Hermosa Beach, California, United States",
     "population": 19860,
@@ -2508,7 +2475,7 @@
     "cuisine_ids": "3, 47, 17"
   },
   {
-    "id": 77,
+    "id": 76,
     "name": "Houston",
     "full_name": "Houston, Texas, United States",
     "population": 2296224,
@@ -2541,7 +2508,7 @@
     "cuisine_ids": "16, 3, 47, 59, 20, 39, 54, 63, 13, 98, 27, 32, 80, 83, 11, 14, 45, 23, 99, 35, 81, 89, 84, 62, 49, 37, 42, 21, 28"
   },
   {
-    "id": 78,
+    "id": 77,
     "name": "Huntington Park",
     "full_name": "Huntington Park, California, United States",
     "population": 59430,
@@ -2574,7 +2541,7 @@
     "cuisine_ids": "54, 90, 49, 47, 3, 83"
   },
   {
-    "id": 79,
+    "id": 78,
     "name": "Hurst",
     "full_name": "Hurst, Texas, United States",
     "population": 39016,
@@ -2607,7 +2574,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 80,
+    "id": 79,
     "name": "Indianapolis",
     "full_name": "Indianapolis, Indiana, United States",
     "population": 829718,
@@ -2640,7 +2607,7 @@
     "cuisine_ids": "81, 90, 38, 47, 32, 14, 16, 3, 49, 54, 34, 8, 13, 75, 59"
   },
   {
-    "id": 81,
+    "id": 80,
     "name": "Irving",
     "full_name": "Irving, Texas, United States",
     "population": 236607,
@@ -2673,7 +2640,7 @@
     "cuisine_ids": "23, 3, 45, 68, 47, 32, 42, 82, 54, 81, 49, 58, 13, 79, 89, 51, 99, 90, 57, 16, 83, 59, 64"
   },
   {
-    "id": 82,
+    "id": 81,
     "name": "Jacksonville",
     "full_name": "Jacksonville, Florida, United States",
     "population": 868031,
@@ -2706,7 +2673,7 @@
     "cuisine_ids": "3, 83, 47, 54, 16, 90, 32, 49, 98, 17, 89, 81, 99, 82, 23, 45, 34"
   },
   {
-    "id": 83,
+    "id": 82,
     "name": "Jersey City",
     "full_name": "Jersey City, New Jersey, United States",
     "population": 264290,
@@ -2739,7 +2706,7 @@
     "cuisine_ids": "3, 47, 28, 90, 59, 42, 32, 31, 49, 23, 54, 34, 68, 94, 99, 83"
   },
   {
-    "id": 84,
+    "id": 83,
     "name": "Kansas City",
     "full_name": "Kansas City, Kansas, United States",
     "population": 151306,
@@ -2772,7 +2739,7 @@
     "cuisine_ids": "83, 72"
   },
   {
-    "id": 85,
+    "id": 84,
     "name": "Kent",
     "full_name": "Kent, Washington, United States",
     "population": 126952,
@@ -2805,7 +2772,7 @@
     "cuisine_ids": "85"
   },
   {
-    "id": 86,
+    "id": 85,
     "name": "Kenwood",
     "full_name": "Kenwood, California, United States",
     "population": 1028,
@@ -2838,7 +2805,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 87,
+    "id": 86,
     "name": "Knoxville",
     "full_name": "Knoxville, Tennessee, United States",
     "population": 185291,
@@ -2871,7 +2838,7 @@
     "cuisine_ids": "32, 47, 81, 3, 54, 83, 35, 34, 21, 48, 13, 26, 23, 90, 82"
   },
   {
-    "id": 88,
+    "id": 87,
     "name": "La Verne",
     "full_name": "La Verne, California, United States",
     "population": 32681,
@@ -2904,7 +2871,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 89,
+    "id": 88,
     "name": "Lake Dallas",
     "full_name": "Lake Dallas, Texas, United States",
     "population": 7892,
@@ -2937,7 +2904,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 90,
+    "id": 89,
     "name": "Lake Oswego",
     "full_name": "Lake Oswego, Oregon, United States",
     "population": 38496,
@@ -2970,7 +2937,7 @@
     "cuisine_ids": "32"
   },
   {
-    "id": 91,
+    "id": 90,
     "name": "Lakeway",
     "full_name": "Lakeway, Texas, United States",
     "population": 14217,
@@ -3003,7 +2970,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 92,
+    "id": 91,
     "name": "Lakewood",
     "full_name": "Lakewood, Washington, United States",
     "population": 59829,
@@ -3036,7 +3003,7 @@
     "cuisine_ids": ""
   },
   {
-    "id": 93,
+    "id": 92,
     "name": "Lakewood",
     "full_name": "Lakewood, California, United States",
     "population": 81611,
@@ -3069,7 +3036,7 @@
     "cuisine_ids": "3, 49, 47, 90, 34, 67, 23, 54, 38, 51, 21, 17, 35, 32"
   },
   {
-    "id": 94,
+    "id": 93,
     "name": "Lancaster",
     "full_name": "Lancaster, Texas, United States",
     "population": 38801,
@@ -3102,7 +3069,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 95,
+    "id": 94,
     "name": "Las Vegas",
     "full_name": "Las Vegas, Nevada, United States",
     "population": 623747,
@@ -3135,7 +3102,7 @@
     "cuisine_ids": "32, 59, 83, 13, 47, 16, 81, 14, 3, 34, 90, 82, 49, 17"
   },
   {
-    "id": 96,
+    "id": 95,
     "name": "Laurel",
     "full_name": "Laurel, Maryland, United States",
     "population": 26215,
@@ -3168,7 +3135,7 @@
     "cuisine_ids": "47, 3"
   },
   {
-    "id": 97,
+    "id": 96,
     "name": "Long Beach",
     "full_name": "Long Beach, California, United States",
     "population": 474140,
@@ -3201,7 +3168,7 @@
     "cuisine_ids": "3, 47, 90, 14, 17, 32, 35, 54, 81, 49, 83, 16, 59, 42, 13"
   },
   {
-    "id": 98,
+    "id": 97,
     "name": "Los Angeles",
     "full_name": "Los Angeles, California, United States",
     "population": 3971883,
@@ -3234,7 +3201,7 @@
     "cuisine_ids": "47, 3, 81, 32, 42, 84, 39, 49, 17, 26, 83, 54, 90, 34, 8, 13"
   },
   {
-    "id": 99,
+    "id": 98,
     "name": "Los Gatos",
     "full_name": "Los Gatos, California, United States",
     "population": 30705,
@@ -3267,7 +3234,7 @@
     "cuisine_ids": "32"
   },
   {
-    "id": 100,
+    "id": 99,
     "name": "Louisville",
     "full_name": "Louisville, Kentucky, United States",
     "population": 243639,
@@ -3300,7 +3267,7 @@
     "cuisine_ids": "47, 26, 81, 32, 34, 14, 49, 54, 99, 3, 17, 16, 58, 83, 89, 59"
   },
   {
-    "id": 101,
+    "id": 100,
     "name": "Madison",
     "full_name": "Madison, Wisconsin, United States",
     "population": 248951,
@@ -3333,7 +3300,7 @@
     "cuisine_ids": "47, 3, 32, 45, 34, 13, 43, 90, 99, 42, 1, 16, 54, 94, 49"
   },
   {
-    "id": 102,
+    "id": 101,
     "name": "Manhattan Beach",
     "full_name": "Manhattan Beach, California, United States",
     "population": 35818,
@@ -3366,7 +3333,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 103,
+    "id": 102,
     "name": "Mansfield",
     "full_name": "Mansfield, Texas, United States",
     "population": 64274,
@@ -3399,7 +3366,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 104,
+    "id": 103,
     "name": "McKinney",
     "full_name": "McKinney, Texas, United States",
     "population": 162898,
@@ -3432,7 +3399,7 @@
     "cuisine_ids": "89, 56, 45, 3, 47, 32, 49, 16, 90, 54, 81"
   },
   {
-    "id": 105,
+    "id": 104,
     "name": "Memphis",
     "full_name": "Memphis, Tennessee, United States",
     "population": 655770,
@@ -3465,7 +3432,7 @@
     "cuisine_ids": "47, 32, 3, 81, 16, 51, 45, 54, 98, 13, 17, 90"
   },
   {
-    "id": 106,
+    "id": 105,
     "name": "Menlo Park",
     "full_name": "Menlo Park, California, United States",
     "population": 33449,
@@ -3498,7 +3465,7 @@
     "cuisine_ids": "32"
   },
   {
-    "id": 107,
+    "id": 106,
     "name": "Mesa",
     "full_name": "Mesa, Arizona, United States",
     "population": 471825,
@@ -3531,7 +3498,7 @@
     "cuisine_ids": "3, 35, 47, 21, 38, 32, 54, 82, 16, 99, 14, 90, 34, 42, 49"
   },
   {
-    "id": 108,
+    "id": 107,
     "name": "Miami",
     "full_name": "Miami, Florida, United States",
     "population": 441003,
@@ -3564,7 +3531,7 @@
     "cuisine_ids": "69, 28, 62, 98, 49, 66, 3, 54, 22, 83, 59, 32, 34, 89, 96, 26, 13, 47, 24, 81, 42, 21, 16, 25, 35, 90"
   },
   {
-    "id": 109,
+    "id": 108,
     "name": "Midlothian",
     "full_name": "Midlothian, Texas, United States",
     "population": 22318,
@@ -3597,7 +3564,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 110,
+    "id": 109,
     "name": "Milwaukee",
     "full_name": "Milwaukee, Wisconsin, United States",
     "population": 600155,
@@ -3630,7 +3597,7 @@
     "cuisine_ids": "3, 81, 47, 54, 49, 42, 34, 32, 90, 35, 16"
   },
   {
-    "id": 111,
+    "id": 110,
     "name": "Monte Rio",
     "full_name": "Monte Rio, California, United States",
     "population": 1152,
@@ -3663,7 +3630,7 @@
     "cuisine_ids": "3"
   },
   {
-    "id": 112,
+    "id": 111,
     "name": "Mountain View",
     "full_name": "Mountain View, California, United States",
     "population": 80435,
@@ -3696,7 +3663,7 @@
     "cuisine_ids": "32, 17, 47"
   },
   {
-    "id": 113,
+    "id": 112,
     "name": "Murphy",
     "full_name": "Murphy, Texas, United States",
     "population": 20610,
@@ -3729,7 +3696,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 114,
+    "id": 113,
     "name": "Nashville",
     "full_name": "Nashville, Tennessee, United States",
     "population": 530852,
@@ -3762,7 +3729,7 @@
     "cuisine_ids": "47, 3, 81, 32, 54, 89, 14, 90, 34"
   },
   {
-    "id": 115,
+    "id": 114,
     "name": "New Orleans",
     "full_name": "New Orleans, Louisiana, United States",
     "population": 389617,
@@ -3795,7 +3762,7 @@
     "cuisine_ids": "32, 81, 16, 3, 47, 83, 54, 89, 21, 59"
   },
   {
-    "id": 116,
+    "id": 115,
     "name": "New York City",
     "full_name": "New York City, New York, United States",
     "population": 8175133,
@@ -3828,7 +3795,7 @@
     "cuisine_ids": "84, 47, 10, 98, 70, 32, 20, 23, 39, 74, 58, 91, 11, 36, 2, 92, 3, 59, 34, 66, 22, 54, 5, 12, 55, 37, 7, 9, 50, 57, 101, 61, 33, 85, 80, 81, 65, 69, 28, 46, 95, 41, 49, 21, 73, 76, 18, 19, 77, 53, 86, 87, 100"
   },
   {
-    "id": 117,
+    "id": 116,
     "name": "Newark",
     "full_name": "Newark, New Jersey, United States",
     "population": 281944,
@@ -3861,7 +3828,7 @@
     "cuisine_ids": "13, 83, 68, 47, 69, 21, 3, 82, 26"
   },
   {
-    "id": 118,
+    "id": 117,
     "name": "Novato",
     "full_name": "Novato, California, United States",
     "population": 55530,
@@ -3894,7 +3861,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 119,
+    "id": 118,
     "name": "Oakland",
     "full_name": "Oakland, California, United States",
     "population": 419267,
@@ -3927,7 +3894,7 @@
     "cuisine_ids": "99, 3, 79, 17, 47, 81, 32, 11, 49, 30, 50, 46, 14, 34, 54, 59, 83, 94, 21, 45"
   },
   {
-    "id": 120,
+    "id": 119,
     "name": "Occidental",
     "full_name": "Occidental, California, United States",
     "population": 1115,
@@ -3960,7 +3927,7 @@
     "cuisine_ids": "47, 3"
   },
   {
-    "id": 121,
+    "id": 120,
     "name": "Oklahoma City",
     "full_name": "Oklahoma City, Oklahoma, United States",
     "population": 631346,
@@ -3993,7 +3960,7 @@
     "cuisine_ids": "99, 3, 47, 54, 49, 82, 81, 23, 32, 13, 89, 35, 34, 16"
   },
   {
-    "id": 122,
+    "id": 121,
     "name": "Omaha",
     "full_name": "Omaha, Nebraska, United States",
     "population": 443885,
@@ -4026,40 +3993,40 @@
     "cuisine_ids": "47, 52, 3, 32, 45, 42, 49, 50, 99, 23, 34, 59, 81, 35, 54, 89"
   },
   {
-    "id": 123,
+    "id": 122,
     "name": "Ontario",
-    "full_name": "Ontario, California, United States",
-    "population": 171214,
-    "latitude": 34.06334,
-    "longitude": -117.65089,
-    "state": "California",
-    "timezone": "America/Los_Angeles",
+    "full_name": "Ontario, Oregon, United States",
+    "population": 10999,
+    "latitude": 44.02655,
+    "longitude": -116.96294,
+    "state": "Oregon",
+    "timezone": "America/Boise",
     "images": {
-      "mobile": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/los-angeles-f5b60deb04.jpg",
-      "web": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/los-angeles_web-2eedb2a83e.jpg"
+      "mobile": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/boise-d105b2e947.jpg",
+      "web": "https://d13k13wj6adfdf.cloudfront.net/urban_areas/boise_web-ab609d8f2f.jpg"
     },
-    "housing": 1.5274999999999999,
-    "cost of living": 4.556000000000001,
-    "startups": 10.0,
-    "venture capital": 10.0,
-    "travel connectivity": 3.9585000000000004,
-    "commute": 3.6770000000000005,
-    "business freedom": 8.574666666666667,
-    "safety": 5.705,
-    "healthcare": 8.439666666666666,
-    "education": 8.6245,
-    "environmental quality": 4.7315000000000005,
+    "housing": 6.9635,
+    "cost of living": 6.578,
+    "startups": 4.205,
+    "venture capital": 2.5960000000000005,
+    "travel connectivity": 1.3235,
+    "commute": 5.2250000000000005,
+    "business freedom": 8.671,
+    "safety": 4.3605,
+    "healthcare": 8.881,
+    "education": 3.6245,
+    "environmental quality": 8.069500000000001,
     "economy": 6.5145,
-    "taxation": 4.7675,
-    "internet access": 5.496500000000001,
-    "leisure & culture": 9.196,
-    "tolerance": 6.959999999999999,
-    "outdoors": 6.747,
-    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
-    "cuisine_ids": "54, 3, 23, 14, 81"
+    "taxation": 4.062,
+    "internet access": 3.442,
+    "leisure & culture": 4.1995,
+    "tolerance": 6.9275,
+    "outdoors": 5.221,
+    "summary": "<p>Boise, Idaho, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "cuisine_ids": "47, 35, 49, 32, 26, 3, 90, 83, 23, 34, 54, 42, 13"
   },
   {
-    "id": 124,
+    "id": 123,
     "name": "Oregon City",
     "full_name": "Oregon City, Oregon, United States",
     "population": 35831,
@@ -4092,7 +4059,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 125,
+    "id": 124,
     "name": "Orlando",
     "full_name": "Orlando, Florida, United States",
     "population": 270934,
@@ -4125,7 +4092,7 @@
     "cuisine_ids": "32, 47, 3, 67, 26, 28, 54, 21, 80, 98, 69, 24, 34, 94, 13, 83, 38, 90, 35, 62, 29, 23, 16, 49, 50, 59, 11, 45, 81, 79"
   },
   {
-    "id": 126,
+    "id": 125,
     "name": "Palmdale",
     "full_name": "Palmdale, California, United States",
     "population": 158351,
@@ -4158,7 +4125,7 @@
     "cuisine_ids": "3, 47, 38, 54, 49, 90, 23, 83, 26, 81, 16, 35"
   },
   {
-    "id": 127,
+    "id": 126,
     "name": "Palo Alto",
     "full_name": "Palo Alto, California, United States",
     "population": 66853,
@@ -4191,7 +4158,7 @@
     "cuisine_ids": "85, 83"
   },
   {
-    "id": 128,
+    "id": 127,
     "name": "Pasadena",
     "full_name": "Pasadena, California, United States",
     "population": 142250,
@@ -4224,7 +4191,7 @@
     "cuisine_ids": "47, 32, 99, 3, 90, 49, 17, 81, 6, 54, 14, 83, 42, 5"
   },
   {
-    "id": 129,
+    "id": 128,
     "name": "Passaic",
     "full_name": "Passaic, New Jersey, United States",
     "population": 71085,
@@ -4257,7 +4224,7 @@
     "cuisine_ids": "26, 69, 28"
   },
   {
-    "id": 130,
+    "id": 129,
     "name": "Paterson",
     "full_name": "Paterson, New Jersey, United States",
     "population": 147754,
@@ -4290,7 +4257,7 @@
     "cuisine_ids": "66, 47, 21, 94, 54, 3, 83, 24, 23, 81, 28, 68"
   },
   {
-    "id": 131,
+    "id": 130,
     "name": "Penngrove",
     "full_name": "Penngrove, California, United States",
     "population": 2522,
@@ -4323,7 +4290,7 @@
     "cuisine_ids": "3, 47"
   },
   {
-    "id": 132,
+    "id": 131,
     "name": "Peoria",
     "full_name": "Peoria, Arizona, United States",
     "population": 171237,
@@ -4356,7 +4323,7 @@
     "cuisine_ids": "47, 38, 54, 49, 23, 3, 32, 35, 99"
   },
   {
-    "id": 133,
+    "id": 132,
     "name": "Petaluma",
     "full_name": "Petaluma, California, United States",
     "population": 60438,
@@ -4389,7 +4356,7 @@
     "cuisine_ids": "83, 3, 47, 32, 42, 58, 91"
   },
   {
-    "id": 134,
+    "id": 133,
     "name": "Pflugerville",
     "full_name": "Pflugerville, Texas, United States",
     "population": 57122,
@@ -4422,7 +4389,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "Philadelphia",
     "full_name": "Philadelphia, Pennsylvania, United States",
     "population": 1567442,
@@ -4455,7 +4422,7 @@
     "cuisine_ids": "26, 83, 71, 97, 3, 39, 47, 32, 54, 20, 23, 11, 13, 34, 49, 85, 98, 14, 73"
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "Phoenix",
     "full_name": "Phoenix, Arizona, United States",
     "population": 1563025,
@@ -4488,7 +4455,7 @@
     "cuisine_ids": "3, 47, 59, 49, 82, 14, 28, 29, 69, 54, 39, 16, 32, 38, 90, 81, 21, 23"
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "Pittsburgh",
     "full_name": "Pittsburgh, Pennsylvania, United States",
     "population": 304391,
@@ -4521,7 +4488,7 @@
     "cuisine_ids": "90, 47, 99, 3, 34, 83, 54, 89, 21, 98, 32, 23, 40, 17, 11, 81, 16"
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "Plano",
     "full_name": "Plano, Texas, United States",
     "population": 283558,
@@ -4554,7 +4521,7 @@
     "cuisine_ids": "3, 35, 47, 34, 32, 49, 23, 14, 90, 54, 89, 38, 81, 79, 59, 26, 45, 82"
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "Pleasanton",
     "full_name": "Pleasanton, California, United States",
     "population": 79510,
@@ -4587,7 +4554,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "Pomona",
     "full_name": "Pomona, California, United States",
     "population": 153266,
@@ -4620,7 +4587,7 @@
     "cuisine_ids": "90, 54, 3, 14, 49, 47, 17, 23, 26, 99, 38, 51"
   },
   {
-    "id": 141,
+    "id": 140,
     "name": "Portland",
     "full_name": "Portland, Oregon, United States",
     "population": 632309,
@@ -4653,7 +4620,7 @@
     "cuisine_ids": "34, 74, 81, 32, 47, 3, 35, 83, 66, 90, 54, 59, 38, 16, 79, 26, 5, 22"
   },
   {
-    "id": 142,
+    "id": 141,
     "name": "Providence",
     "full_name": "Providence, Rhode Island, United States",
     "population": 179207,
@@ -4686,7 +4653,7 @@
     "cuisine_ids": "49, 99, 47, 17, 3, 32, 42, 21, 83, 68"
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "Rancho Palos Verdes",
     "full_name": "Rancho Palos Verdes, California, United States",
     "population": 42732,
@@ -4719,7 +4686,7 @@
     "cuisine_ids": "23, 47, 3, 17, 54, 49, 31, 90"
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "Redmond",
     "full_name": "Redmond, Washington, United States",
     "population": 60598,
@@ -4752,7 +4719,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "Redondo Beach",
     "full_name": "Redondo Beach, California, United States",
     "population": 68166,
@@ -4785,7 +4752,7 @@
     "cuisine_ids": "47, 32, 14, 17"
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "Redwood City",
     "full_name": "Redwood City, California, United States",
     "population": 85288,
@@ -4818,7 +4785,7 @@
     "cuisine_ids": "47, 14, 27"
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "Richardson",
     "full_name": "Richardson, Texas, United States",
     "population": 110815,
@@ -4851,7 +4818,7 @@
     "cuisine_ids": "47, 3"
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "Richmond",
     "full_name": "Richmond, Virginia, United States",
     "population": 220289,
@@ -4884,7 +4851,7 @@
     "cuisine_ids": "23, 3, 47, 35, 21, 28, 32, 34, 81, 89, 26, 99, 49, 17, 45, 14"
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "Rochester",
     "full_name": "Rochester, New York, United States",
     "population": 209802,
@@ -4917,7 +4884,7 @@
     "cuisine_ids": ""
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "Rockwall",
     "full_name": "Rockwall, Texas, United States",
     "population": 42566,
@@ -4950,7 +4917,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "Rohnert Park",
     "full_name": "Rohnert Park, California, United States",
     "population": 42407,
@@ -4983,7 +4950,7 @@
     "cuisine_ids": "49, 47"
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "Round Rock",
     "full_name": "Round Rock, Texas, United States",
     "population": 115997,
@@ -5016,7 +4983,7 @@
     "cuisine_ids": "49, 54, 16, 3, 23, 99, 47, 89, 32, 90, 53, 35, 82, 42"
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "Rowlett",
     "full_name": "Rowlett, Texas, United States",
     "population": 60236,
@@ -5049,7 +5016,7 @@
     "cuisine_ids": "34, 47"
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "Sacramento",
     "full_name": "Sacramento, California, United States",
     "population": 490712,
@@ -5082,7 +5049,7 @@
     "cuisine_ids": "32, 17, 47, 54, 3, 14, 49, 83, 35"
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "Salt Lake City",
     "full_name": "Salt Lake City, Utah, United States",
     "population": 192672,
@@ -5115,7 +5082,7 @@
     "cuisine_ids": "3, 54, 47, 81, 49, 99, 42, 90, 83, 22, 23, 34, 82, 17, 32, 11"
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "San Anselmo",
     "full_name": "San Anselmo, California, United States",
     "population": 12653,
@@ -5148,7 +5115,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "San Antonio",
     "full_name": "San Antonio, Texas, United States",
     "population": 1469845,
@@ -5181,7 +5148,7 @@
     "cuisine_ids": "47, 3, 32, 11, 16, 54, 35, 90, 12, 34, 49, 39, 59, 89, 57, 82, 23"
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "San Diego",
     "full_name": "San Diego, California, United States",
     "population": 1394928,
@@ -5214,7 +5181,7 @@
     "cuisine_ids": "47, 80, 3, 32, 39, 83, 54, 70, 17, 37, 49, 34, 14, 45, 13"
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "San Francisco",
     "full_name": "San Francisco, California, United States",
     "population": 864816,
@@ -5247,7 +5214,7 @@
     "cuisine_ids": "47, 32, 58, 3, 39, 99, 35, 73, 17, 26, 21, 83, 54, 36, 23, 34, 70, 16, 81, 57, 93, 15, 101, 22"
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "San Jose",
     "full_name": "San Jose, California, United States",
     "population": 1026908,
@@ -5280,7 +5247,7 @@
     "cuisine_ids": "45, 47, 99, 43, 53, 3, 30, 39, 14, 54, 90, 83, 17, 42, 81, 34, 32, 70, 49, 23, 51, 89, 35, 59, 13, 68"
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "San Leandro",
     "full_name": "San Leandro, California, United States",
     "population": 90712,
@@ -5313,7 +5280,7 @@
     "cuisine_ids": "14, 47, 58, 23"
   },
   {
-    "id": 162,
+    "id": 161,
     "name": "Santa Clara",
     "full_name": "Santa Clara, California, United States",
     "population": 126215,
@@ -5346,7 +5313,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 163,
+    "id": 162,
     "name": "Santa Clarita",
     "full_name": "Santa Clarita, California, United States",
     "population": 182371,
@@ -5379,7 +5346,7 @@
     "cuisine_ids": "17, 47, 49, 1, 42, 3, 26, 54, 32, 14, 66, 82"
   },
   {
-    "id": 164,
+    "id": 163,
     "name": "Santa Maria",
     "full_name": "Santa Maria, California, United States",
     "population": 105093,
@@ -5412,7 +5379,7 @@
     "cuisine_ids": "47, 3, 34, 38, 11, 32, 57, 49, 54, 16, 90, 74"
   },
   {
-    "id": 165,
+    "id": 164,
     "name": "Santa Rosa",
     "full_name": "Santa Rosa, California, United States",
     "population": 174972,
@@ -5445,7 +5412,7 @@
     "cuisine_ids": "3, 99, 47, 49, 23, 54, 30, 90, 81, 32, 14, 42, 58, 69, 38, 17"
   },
   {
-    "id": 166,
+    "id": 165,
     "name": "Saratoga",
     "full_name": "Saratoga, California, United States",
     "population": 30968,
@@ -5478,7 +5445,7 @@
     "cuisine_ids": "47, 3, 83, 32"
   },
   {
-    "id": 167,
+    "id": 166,
     "name": "Scottsdale",
     "full_name": "Scottsdale, Arizona, United States",
     "population": 236839,
@@ -5511,7 +5478,7 @@
     "cuisine_ids": "82, 47, 90, 59, 14, 3, 32, 83, 54, 49, 34, 13, 81"
   },
   {
-    "id": 168,
+    "id": 167,
     "name": "Seattle",
     "full_name": "Seattle, Washington, United States",
     "population": 684451,
@@ -5544,7 +5511,7 @@
     "cuisine_ids": "83, 21, 26, 27, 74, 85, 32, 3, 49, 80, 47, 54, 51, 28, 71, 42, 14, 59, 16, 7, 99, 23, 35"
   },
   {
-    "id": 169,
+    "id": 168,
     "name": "Smyrna",
     "full_name": "Smyrna, Georgia, United States",
     "population": 56146,
@@ -5577,7 +5544,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 170,
+    "id": 169,
     "name": "Sonoma",
     "full_name": "Sonoma, California, United States",
     "population": 11037,
@@ -5610,7 +5577,7 @@
     "cuisine_ids": "47, 68, 32"
   },
   {
-    "id": 171,
+    "id": 170,
     "name": "Southlake",
     "full_name": "Southlake, Texas, United States",
     "population": 29941,
@@ -5643,7 +5610,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 172,
+    "id": 171,
     "name": "St. Louis",
     "full_name": "St. Louis, Missouri, United States",
     "population": 315685,
@@ -5676,7 +5643,7 @@
     "cuisine_ids": "32, 3, 34, 47, 83, 14, 99, 17, 75, 81, 16, 23, 35, 66, 54"
   },
   {
-    "id": 173,
+    "id": 172,
     "name": "Stockton",
     "full_name": "Stockton, California, United States",
     "population": 305658,
@@ -5709,7 +5676,7 @@
     "cuisine_ids": "3, 49, 35, 47, 32, 99, 23, 54, 16, 83, 90"
   },
   {
-    "id": 174,
+    "id": 173,
     "name": "Sumner",
     "full_name": "Sumner, Washington, United States",
     "population": 9700,
@@ -5742,7 +5709,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 175,
+    "id": 174,
     "name": "Sunnyvale",
     "full_name": "Sunnyvale, California, United States",
     "population": 151754,
@@ -5775,7 +5742,7 @@
     "cuisine_ids": "17, 90, 42, 23, 3, 89, 47, 43, 45, 34, 1, 64"
   },
   {
-    "id": 176,
+    "id": 175,
     "name": "Surprise",
     "full_name": "Surprise, Arizona, United States",
     "population": 128422,
@@ -5808,7 +5775,7 @@
     "cuisine_ids": "47, 3, 49, 99, 54, 32, 35, 90, 23"
   },
   {
-    "id": 177,
+    "id": 176,
     "name": "Tacoma",
     "full_name": "Tacoma, Washington, United States",
     "population": 207948,
@@ -5841,7 +5808,7 @@
     "cuisine_ids": "47, 90, 3, 14, 23, 64, 42, 34, 49, 81, 54, 35, 11, 32, 5, 89"
   },
   {
-    "id": 178,
+    "id": 177,
     "name": "Tampa",
     "full_name": "Tampa, Florida, United States",
     "population": 369075,
@@ -5874,7 +5841,7 @@
     "cuisine_ids": "34, 49, 54, 82, 47, 3, 16, 23, 26, 69, 28, 21, 83, 59, 35, 32, 14, 4, 81"
   },
   {
-    "id": 179,
+    "id": 178,
     "name": "Tempe",
     "full_name": "Tempe, Arizona, United States",
     "population": 175826,
@@ -5907,7 +5874,7 @@
     "cuisine_ids": "3, 47, 17, 90, 49, 30, 45, 59, 89, 14, 42, 64"
   },
   {
-    "id": 180,
+    "id": 179,
     "name": "Tigard",
     "full_name": "Tigard, Oregon, United States",
     "population": 51253,
@@ -5940,7 +5907,7 @@
     "cuisine_ids": "3, 47, 34"
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "Torrance",
     "full_name": "Torrance, California, United States",
     "population": 148475,
@@ -5973,7 +5940,7 @@
     "cuisine_ids": "47, 3"
   },
   {
-    "id": 182,
+    "id": 181,
     "name": "Tualatin",
     "full_name": "Tualatin, Oregon, United States",
     "population": 27154,
@@ -6006,7 +5973,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 183,
+    "id": 182,
     "name": "Tukwila",
     "full_name": "Tukwila, Washington, United States",
     "population": 20018,
@@ -6039,7 +6006,7 @@
     "cuisine_ids": "78"
   },
   {
-    "id": 184,
+    "id": 183,
     "name": "Vancouver",
     "full_name": "Vancouver, Washington, United States",
     "population": 172860,
@@ -6072,7 +6039,7 @@
     "cuisine_ids": ""
   },
   {
-    "id": 185,
+    "id": 184,
     "name": "Vashon",
     "full_name": "Vashon, Washington, United States",
     "population": 10624,
@@ -6105,7 +6072,7 @@
     "cuisine_ids": "32, 47"
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "Washington, D.C.",
     "full_name": "Washington, D.C., Washington, D.C., United States",
     "population": 601723,
@@ -6138,7 +6105,7 @@
     "cuisine_ids": "47, 3, 32, 11, 42, 81, 48, 34, 83, 54, 89, 68, 13, 49, 35, 94, 8"
   },
   {
-    "id": 187,
+    "id": 186,
     "name": "Washougal",
     "full_name": "Washougal, Washington, United States",
     "population": 15288,
@@ -6171,7 +6138,7 @@
     "cuisine_ids": "45"
   },
   {
-    "id": 188,
+    "id": 187,
     "name": "West Linn",
     "full_name": "West Linn, Oregon, United States",
     "population": 26593,
@@ -6204,7 +6171,7 @@
     "cuisine_ids": "3, 47"
   },
   {
-    "id": 189,
+    "id": 188,
     "name": "Whittier",
     "full_name": "Whittier, California, United States",
     "population": 87438,
@@ -6237,7 +6204,7 @@
     "cuisine_ids": "32"
   },
   {
-    "id": 190,
+    "id": 189,
     "name": "Wilsonville",
     "full_name": "Wilsonville, Oregon, United States",
     "population": 22729,
@@ -6270,7 +6237,7 @@
     "cuisine_ids": "47, 90, 3, 57, 54, 89"
   },
   {
-    "id": 191,
+    "id": 190,
     "name": "Woodland Park",
     "full_name": "Woodland Park, New Jersey, United States",
     "population": 12518,
@@ -6303,7 +6270,7 @@
     "cuisine_ids": "47"
   },
   {
-    "id": 192,
+    "id": 191,
     "name": "Worcester",
     "full_name": "Worcester, Massachusetts, United States",
     "population": 184815,
@@ -6336,7 +6303,7 @@
     "cuisine_ids": "83, 3, 13, 81, 32, 47, 90, 35, 54, 49, 23, 82, 99, 21, 69"
   },
   {
-    "id": 193,
+    "id": 192,
     "name": "Wylie",
     "full_name": "Wylie, Texas, United States",
     "population": 46708,
