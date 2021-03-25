@@ -89,6 +89,8 @@ function Restaurant() {
     // </div>
   );
 }
+
+
 export interface RestaurantInstance{
   address: string;
   aggregate_rating: string;

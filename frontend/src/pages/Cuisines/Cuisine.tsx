@@ -136,6 +136,7 @@ export interface CuisineInstance {
   description:string;
   dishes: Array<Dish>;
   name:string;
+  id: number;
 }
 export interface translation{
   br:string,

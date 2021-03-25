@@ -6,6 +6,11 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import useAxios from 'axios-hooks';
+import axios from 'axios';
+import {RestaurantInstance} from "../Restaurants/Restaurant";
+import {CuisineInstance} from "../Cuisines/Cuisine";
+
+
 
 function City() {
   useEffect(() => {
@@ -14,12 +19,38 @@ function City() {
   const { id } = useParams<{ id: string }>();
   const [{ data, loading, error }] = useAxios('/api/cities/id='+id) 
   const [city, setCity] = useState<City>();
+  const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
+  const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
 
   /* set city data */
+  function matchesCityCuisines(element:any, index: number, array: any){ 
+    return city?.cuisine_ids.split(", ").includes(element?.id.toString())
+} 
+function matchesCityRestaurants(element:any, index: number, array: any){ 
+  return city?.restaurant_ids.split(", ").includes(element?.id.toString())
+} 
   useEffect(() => {
     const cityObj: City = data as City;
-    if (cityObj) {setCity(cityObj);}
+    if (cityObj) {
+      setCity(cityObj);
+    }
   }, [data]);
+
+
+  useEffect(() => {
+    axios.get("/api/cuisines").then((value) => {
+      let all_cuisines = value["data"]["cuisines"]
+      let filtered_cuisines = all_cuisines.filter(matchesCityCuisines)
+      console.log('cuisine', filtered_cuisines)
+      setCuisines(filtered_cuisines)
+    });
+    axios.get("/api/restaurants").then((value) => {
+      let all_restaurants = value["data"]["restaurants"]
+      let filtered_restaurants = all_restaurants.filter(matchesCityRestaurants)
+      setRestaurants(filtered_restaurants)
+      console.log('rest', filtered_restaurants)
+    });
+  }, [city])
   
   
   return (
@@ -30,7 +61,7 @@ function City() {
       <h1>{city?.name}</h1> 
 
       <section>
-        <h3>Full Name</h3>
+        <h2>About the City</h2>
         {city?.full_name}
 
         <h5>State</h5>
@@ -95,7 +126,12 @@ function City() {
         {city?.venture_capital}
 
       </section>
-
+      <section>
+      <h5>Restauarants in {city?.name}</h5>
+      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}</a>))}
+      <h5>Cuisines {city?.name}</h5>
+      {cuisines?.map((c) => (<a href={"/restaurants/" + c.id}>{c.name}</a>))}
+      </section>
       
 
         {/* <h5>Health</h5>
@@ -147,6 +183,7 @@ function City() {
   );
 }
 
+
 export interface City {
   business_freedom: number;
   commute: number;
@@ -173,6 +210,9 @@ export interface City {
   timezone: string;
   travel_connectivity: number;
   venture_capital: number;
+  cuisine_ids: string;
+  restaurant_ids: string;
+
 }
 
 
