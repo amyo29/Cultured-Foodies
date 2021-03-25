@@ -2,6 +2,9 @@ import React, { useEffect , useState} from "react";
 import { useParams } from "react-router-dom";
 import "../../styles/Restaurant.css";
 import useAxios from 'axios-hooks';
+import axios from 'axios';
+import {CuisineInstance} from '../Cuisines/Cuisine';
+import {CityInstance} from '../Cities/City';
 function Restaurant() {
   useEffect(() => {
     document.title = "News Article";
@@ -9,11 +12,26 @@ function Restaurant() {
   const { id } = useParams<{ id: string }>();
   const [{ data, loading, error }] = useAxios('/api/restaurants/id='+id) 
   const [restaurant, setRestaurant] = useState<RestaurantInstance>();
-
+  const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
+  function matchesRestaurantCuisines(element:any, index: number, array: any){ 
+    return restaurant?.cuisine_ids.split(", ").includes(element?.id.toString())
+  } 
+ 
   useEffect(() => {
     const restaurantObj: RestaurantInstance = data as RestaurantInstance;
     if (restaurantObj) {setRestaurant(restaurantObj);}
   }, [data]);
+  useEffect(() => {
+    axios.get("/api/cuisines").then((value) => {
+      let all_cuisines = value["data"]["cuisines"]
+      let filtered_cuisines = all_cuisines.filter(matchesRestaurantCuisines)
+      setCuisines(filtered_cuisines)
+    });
+  }, [restaurant])
+  
+  
+
+
   // // model navigation
   // let countryIndex = article["countryIndex"];
   // let dishIndex = article["dishIndex"];
@@ -54,7 +72,17 @@ function Restaurant() {
     <div className="center">
       {/* <img src={img} className="article-img"></img> */}
       <h1>{restaurant?.name}</h1>
+
+      <section>
+    <h5>City Locations</h5>
+     <a href={"/cities/" + restaurant?.city_id}>{restaurant?.city}<br/></a>
+    <h5>Cuisines of {restaurant?.name}</h5>
+    {cuisines?.map((c) => (<a href={"/cuisines/" + c.id}>{c.name}<br/></a>))}
+    </section>
     </div>
+
+
+
     //   <div className="center">
     //   <img src={img} className="article-img"></img>
     //   <h1>{title}</h1>
@@ -110,6 +138,8 @@ export interface RestaurantInstance{
   timings: string;
   url: string;
   zipcode: string;
+  city_id: string;
+  cuisine_ids: string;
 
 
 }
