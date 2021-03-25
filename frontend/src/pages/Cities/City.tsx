@@ -52,7 +52,16 @@ function matchesCityRestaurants(element:any, index: number, array: any){
     });
   }, [city])
   
-  
+  //render: map long/lat or city names to render map
+  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+  let cityMapURL =
+    "https://www.google.com/maps/embed/v1/place?key=" +
+    API_KEY +
+    "&q=" +
+    city?.full_name;
+
+
+
   return (
 
     <Container > 
@@ -132,7 +141,13 @@ function matchesCityRestaurants(element:any, index: number, array: any){
       <h5>Cuisines {city?.name}</h5>
       {cuisines?.map((c) => (<a href={"/restaurants/" + c.id}>{c.name}<br/></a>))}
       </section>
-      
+
+
+        <div className="center">
+          <h4>Map Location</h4>
+          <iframe src={cityMapURL} width="600" height="450" loading="lazy">
+          </iframe>
+        </div> 
 
         {/* <h5>Health</h5>
         {data["recipe"]["healthLabels"].map((healthLabel: any) => {

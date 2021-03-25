@@ -60,12 +60,13 @@ function Cuisine() {
       setRestaurants(filtered_restaurants)
     });
   }, [cuisine])
-  // let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
-  // let countryMapURL =
-  //   "https://www.google.com/maps/embed/v1/place?key=" +
-  //   API_KEY +
-  //   "&q=" +
-  //   countryName;
+
+  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+  let countryMapURL =
+    "https://www.google.com/maps/embed/v1/place?key=" +
+    API_KEY +
+    "&q=" +
+    country?.name;
 
   // let dishIndex = data["dishIndex"];
   // let newsIndex = data["newsIndex"];
@@ -75,16 +76,6 @@ function Cuisine() {
 
   // console.log(newsLink);
   return (
-
-//       <div className="center">
-//         <h4>Map Location</h4>
-//         <iframe
-//           src={countryMapURL}
-//           width="600"
-//           height="450"
-//           loading="lazy"
-//         ></iframe>
-//       </div> 
 
     <Container fluid>
       <header>
@@ -141,16 +132,16 @@ function Cuisine() {
       <p></p>
       <p></p>
 
+        <div className="center">
+          <h4>Map Location</h4>
+          <iframe
+            src={countryMapURL}
+            width="600"
+            height="450"
+            loading="lazy"
+          ></iframe>
+        </div> 
 
-      {/* <div className="center">
-        <h4>Map Location</h4>
-        <iframe
-          src={countryMapURL}
-          width="600"
-          height="450"
-          loading="lazy"
-        ></iframe> */}
-       {/* </div> */}
     </Container>
   );
 }
