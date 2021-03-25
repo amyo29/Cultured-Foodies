@@ -5,18 +5,31 @@ import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
 import useAxios from 'axios-hooks';
 import axios from "axios";
+import {RestaurantInstance} from "../Restaurants/Restaurant";
+import {CityInstance} from "../Cities/City";
 
 function Cuisine() {
   const { id } = useParams<{ id: string }>();
   useEffect(() => {
-    document.title = "City";
+    document.title = "Cuisine";
   }, []);
 
   const [{ data, loading, error }] = useAxios('/api/cuisines/id='+id) 
   const [cuisine, setCuisine] = useState<CuisineInstance>();
   const [country, setCountry] = useState<CountryInstance>()
+  const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
+  const [cities, setCities] = useState<Array<CityInstance>>();
+
+  function matchesCuisineCities(element:any, index: number, array: any){ 
+    return cuisine?.city_ids.split(", ").includes(element?.id.toString())
+  }
+  
+  function matchesCuisineRestaurants(element: any, index: number, array:any){
+    return cuisine?.restaurant_ids.split(", ").includes(element?.id.toString())
+  }
   /* set city data */
   useEffect(() => {
+    
     const cuisineObj: CuisineInstance = data as CuisineInstance;
     if (cuisineObj) {
       setCuisine(cuisineObj)
@@ -34,6 +47,19 @@ function Cuisine() {
     }
   }, [data]);
   
+
+  useEffect(() => {
+    axios.get("/api/cities").then((value) => {
+      let all_cities = value["data"]["cities"]
+      let filtered_cities = all_cities.filter(matchesCuisineCities)
+      setCities(filtered_cities)
+    });
+    axios.get("/api/restaurants").then((value) => {
+      let all_restaurants = value["data"]["restaurants"]
+      let filtered_restaurants = all_restaurants.filter(matchesCuisineRestaurants)
+      setRestaurants(filtered_restaurants)
+    });
+  }, [cuisine])
   // let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
   // let countryMapURL =
   //   "https://www.google.com/maps/embed/v1/place?key=" +
@@ -99,13 +125,17 @@ function Cuisine() {
         {country?.timezones}
       </section>
       <h5>Translations</h5>
-      {
-        Object.keys(country?.translations).map((key, index) => ( 
+      {country? (Object.keys(country?.translations).map((key, index) => ( 
           <p key={index}> {key} : {country?.translations[key]}</p> 
-        ))
-      }
-        
+        ))) : (<p>he</p>)
 
+      }
+      <section>
+      <h5>Restaurants with this cuisines</h5>
+      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
+      <h5>Cities with this cuisine</h5>
+      {cities?.map((c) => (<a href={"/cities/" + c.id}>{c.name}<br/></a>))}
+      </section>
       <p></p>
       <p></p>
       <p></p>
@@ -133,6 +163,8 @@ interface Dish {
 export interface CuisineInstance {
   country:string;
   countryID: string;
+  city_ids: string;
+  restaurant_ids: string;
   description:string;
   dishes: Array<Dish>;
   name:string;
