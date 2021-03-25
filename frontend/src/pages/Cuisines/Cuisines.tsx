@@ -1,23 +1,37 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
-
-// const data = require('../../data/countries.json').slice(0,3)
-// const data = require('../../data/threeCountries.json')
-const data = require('../../data/newData/cuisines.json')
-const countries_data = require('../../data/newData/countries.json')
+import useAxios from 'axios-hooks'
+import { Pagination } from '@material-ui/lab';
 
 function Countries() {
   useEffect(() => {
     document.title = "Cuisines"
   }, [])
+  const [cuisines, setCuisines] = useState([]);
+  const [pageNumber, setPageNumber] = useState(0);
+  const handleChange = (event:any, value:number) => {
+    setPageNumber(value);
+  };
+  const [{ data, loading, error }] = useAxios('/api/cuisines')
+  useEffect(() => {
+    if (data) {
+      setCuisines(data.cuisines)
+      console.log(data.cuisines)
+    }
+  },[data])
+
+  const numPerPage = 12;
+  const startIndex= numPerPage*pageNumber;
+  const currentData = cuisines.slice(startIndex, startIndex+numPerPage);
   var i, j;
-  var chunk = 5;
-  var rows =[] 
-  for (i=0,j=data.length; i<j; i+=chunk) {
-    rows.push(data.slice(i,i+chunk))
+  var chunk = 3;
+  var rows = [];
+  for (i = 0, j = currentData.length; i < j; i += chunk) {
+    rows.push(currentData.slice(i, i + chunk));
   }
-  console.log(JSON.stringify(rows[0][0]))
-  // a cuisine will be at rows[index][index]
+
+
+
   return (
     <div>
       <h1 className="text-align center">Cuisines</h1>
@@ -31,15 +45,10 @@ function Countries() {
                       <a href={"/cuisines/" + i}>
                         <Card.Title>{cuisine['name']}</Card.Title>
                       </a>
-                    <Card.Img variant="top" src={cuisine['dishes'][0]['image_url']}/>
                     <Card.Text>
                       <p>
                         <b>Country: </b>{cuisine['country']} <br />
-                        <b>Capital: </b>{countries_data[i]['capital']} <br />
-                        <b>Region: </b>{countries_data[i]['region']} <br />
-                        <b>Population: </b>{countries_data[i]['population']} <br />
-                        <b>Latitude: </b>{countries_data[i]['latlng'][0]} <br />
-                        <b>Longitude: </b>{countries_data[i]['latlng'][1]} <br />
+
                       </p>
                     </Card.Text>
                     <Card.Text>
@@ -53,9 +62,11 @@ function Countries() {
           </Row>
         ))}
       </Container>
+      <Pagination count = {parseInt((cuisines.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
+
       {/* <Footer></Footer> */}
     </div>
   );
 }
-
+//mobile for card, web for instance page
 export default Countries;
