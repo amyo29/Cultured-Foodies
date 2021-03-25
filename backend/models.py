@@ -26,6 +26,8 @@ class Cuisine(db.Model):
     dishes = db.Column(JSON)
     description = db.Column(db.String())
     countryID = db.Column(db.String())
+    restaurant_ids = db.Column(db.String())
+    city_ids = db.Column(db.String())
 
 
 class City(db.Model):
@@ -56,6 +58,8 @@ class City(db.Model):
     leisure_culture = db.Column(db.Float)
     tolerance = db.Column(db.Float)
     outdoors = db.Column(db.Float)
+    cuisine_ids = db.Column(db.String())
+    restaurant_ids = db.Column(db.String())
 
 
 class Restaurant(db.Model):
@@ -77,6 +81,8 @@ class Restaurant(db.Model):
     longitude = db.Column(db.String())
     state_abbrev = db.Column(db.String())
     zipcode = db.Column(db.String())
+    cuisine_ids = db.Column(db.String())
+    city_id = db.Column(db.Integer)
 
 
 class Country(db.Model):

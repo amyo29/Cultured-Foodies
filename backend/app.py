@@ -54,6 +54,8 @@ class CuisineSchema(ma.Schema):
     dishes = fields.List(fields.Nested(DishSchema))
     description = fields.Str(required=False)
     countryID = fields.Str(required=False)
+    restaurant_ids = fields.Str(required=False)
+    city_ids = fields.Str(required=False)
 
 
 class CitySchema(ma.Schema):
@@ -84,6 +86,8 @@ class CitySchema(ma.Schema):
     leisure_culture = fields.Float(required=False)
     tolerence = fields.Float(required=False)
     outdoors = fields.Float(required=False)
+    cuisine_ids = fields.Str(required=False)
+    restaurant_ids = fields.Str(required=False)
 
 
 class RestaurantSchema(ma.Schema):
@@ -105,6 +109,8 @@ class RestaurantSchema(ma.Schema):
     longitude = fields.Str(required=False)
     state_abbrev = fields.Str(required=False)
     zipcode = fields.Str(required=False)
+    cuisine_ids = fields.Str(required=False)
+    city_id = fields.Int(required=False)
 
 
 class CountrySchema(ma.Schema):

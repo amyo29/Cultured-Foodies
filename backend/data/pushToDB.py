@@ -78,6 +78,8 @@ class Cuisine(db.Model):
     dishes = db.Column(JSON)
     description = db.Column(db.String())
     countryID = db.Column(db.String())
+    restaurant_ids = db.Column(db.String())
+    city_ids = db.Column(db.String())
 
 
 def insert_data():
@@ -91,6 +93,8 @@ def insert_data():
             dishes=cuisine["dishes"],
             description=cuisine["description"],
             countryID=cuisine["countryID"],
+            restaurant_ids=cuisine["restaurant_ids"],
+            city_ids=cuisine["city_ids"],
         )
         db.session.add(country_db)
         db.session.commit()
