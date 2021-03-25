@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
-import useAxios from 'axios-hooks'
+import useAxios from 'axios-hooks';
+import axios from 'axios';
 import { Pagination } from '@material-ui/lab';
 
 function Countries() {
@@ -8,20 +9,30 @@ function Countries() {
     document.title = "Cuisines"
   }, [])
   const [cuisines, setCuisines] = useState([]);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [pageNumber, setPageNumber] = useState(1);
   const handleChange = (event:any, value:number) => {
-    setPageNumber(value);
+    setPageNumber(value );
   };
   const [{ data, loading, error }] = useAxios('/api/cuisines')
+
   useEffect(() => {
     if (data) {
       setCuisines(data.cuisines)
       console.log(data.cuisines)
     }
+
+    axios.get("/api/countries").then((value) => {
+      let countries = value["data"]["countries"]
+      console.log('countries', countries)
+      // let filtered = countries.filter(country:any => country['id'] ==1)
+      // console.log('country', filtered)
+    });
+    
   },[data])
 
+
   const numPerPage = 12;
-  const startIndex= numPerPage*pageNumber;
+  const startIndex= numPerPage* (pageNumber-1);
   const currentData = cuisines.slice(startIndex, startIndex+numPerPage);
   var i, j;
   var chunk = 3;
@@ -29,9 +40,7 @@ function Countries() {
   for (i = 0, j = currentData.length; i < j; i += chunk) {
     rows.push(currentData.slice(i, i + chunk));
   }
-
-
-
+  
   return (
     <div>
       <h1 className="text-align center">Cuisines</h1>
