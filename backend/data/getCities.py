@@ -1223,6 +1223,27 @@ def get_restaurant_ids_in_each_city():
     json.dump(cities, f)
 
 
+def get_cities_ids_for_each_cuisine():
+    f = open("all_cities.json", "r")
+    cities = json.load(f, encoding="utf8")
+
+    f = open("all_cuisines_with_city_ids.json", "r")
+    cuisines = json.load(f, encoding="utf8")
+
+    for cuisine in cuisines:
+        # cuisine["cities_ids"] = []
+        cuisine["cities_ids"] = ", ".join(cuisine["cities_ids"])
+
+    # for city in cities:
+    #     cuisine_ids = city["cuisine_ids"].split(", ")
+    #     for id in cuisine_ids:
+    #         cuisines[int(id) - 1]["cities_ids"].append(str(city["id"]))
+
+    f = open("all_cuisines.json", "w")
+    json.dump(cuisines, f)
+
+
+# get_cities_ids_for_each_cuisine()
 # get_cuisine_ids_in_each_city()
 # get_restaurant_ids_in_each_city()
 # get_zomato_cities_in_restaurant_file()

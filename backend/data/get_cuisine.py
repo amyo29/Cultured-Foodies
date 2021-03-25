@@ -251,7 +251,7 @@ def get_restaurant_ids_into_cuisines():
                 cuisine = cuisines[id]
                 cuisine["restaurant_ids"] += str(restaurant["id"]) + ", "
 
-    with open("all_cuisines.json", "w") as file:
+    with open("all_cuisines_with_rest_ids.json", "w") as file:
         json.dump(cuisines, file)
 
 
