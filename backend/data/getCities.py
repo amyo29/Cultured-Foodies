@@ -785,6 +785,44 @@ def get_city_data():
     json.dump(cities_data, f_cities)
 
 
+# get city data
+def get_city_summary():
+    f = open("all_cities.json")
+    cities = json.load(f, encoding="utf8")
+
+    base_url = "https://api.teleport.org/api/cities/?search="
+    count = 1
+    for city in cities:
+        print("city num: ", count)
+        count += 1
+        if city["name"] == "Santa Maria":
+            continue
+        search_city_url = base_url + city["full_name"]
+        if city["name"] == "Washington, D.C.":
+            search_city_url = base_url + "Washington, D.C., United States"
+        r = requests.get(search_city_url).json()
+        body = r["_embedded"]["city:search-results"][0]
+        # get general city data
+        city_data_general_link = body["_links"]["city:item"]["href"]
+        city_data_general = requests.get(city_data_general_link).json()
+        # get urban area city data - mayor, link to images, link to quality of life scores, link to salaries
+        city_data_urban_link = city_data_general["_links"]["city:urban_area"]["href"]
+        city_data_urban = requests.get(city_data_urban_link).json()
+        # get city mayor
+        # city_obj["mayor"] = city_data_urban["mayor"]
+        city_data_urban_image_link = city_data_urban["_links"]["ua:images"]["href"]
+        city_data_urban_scores_link = city_data_urban["_links"]["ua:scores"]["href"]
+        city_data_image = requests.get(city_data_urban_image_link).json()
+        # get city images = web + mobile
+        # city_obj["images"] = city_data_image["photos"][0]["image"]
+        # get city urban quality of life category scores, add to city data object
+        city_data_urban_scores = requests.get(city_data_urban_scores_link).json()
+        city["summary"] = city_data_urban_scores["summary"]
+
+    f_cities = open("all_cities_with_summaries.json", "w")
+    json.dump(cities, f_cities)
+
+
 # get the cityID for each city   ZOMATO
 def zomato_cityid():
     base_url = "https://developers.zomato.com/api/v2.1/locations?query="
@@ -1145,7 +1183,27 @@ def get_valid_restaurants_from_valid_cities():
     json.dump(valid_restaurants, f)
 
 
-print(len(valid_cities))
+def get_restaurant_ids_in_each_city():
+    f = open("all_restaurants.json", "r")
+    restaurants = json.load(f, encoding="utf8")
+
+    f = open("all_cities.json", "r")
+    cities = json.load(f, encoding="utf8")
+
+    for city in cities:
+        city["restaurant_ids"] = []
+
+    for restaurant in restaurants:
+        cuisineIDs = restaurant["cuisine_ids"].split(", ")
+        for id in cuisineIDs:
+            if not (id in cities[int(restaurant["city_id"]) - 1]["restaurant_ids"]):
+                cities[int(restaurant["city_id"]) - 1]["restaurant_ids"].add(id)
+
+    f = open("all_cities_with_restaurant_ids.json", "w")
+    json.dump(cities, f)
+
+
+# get_restaurant_ids_in_each_city()
 # get_zomato_cities_in_restaurant_file()
 # get_diff_on_restaurants()
 # get_cities_from_restaurants()

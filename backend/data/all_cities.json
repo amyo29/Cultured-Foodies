@@ -28,7 +28,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "34"
   },
   {
     "id": 2,
@@ -59,7 +61,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "58, 91"
   },
   {
     "id": 3,
@@ -90,7 +94,9 @@
     "internet access": 5.396000000000001,
     "leisure & culture": 4.890000000000001,
     "tolerance": 7.028499999999999,
-    "outdoors": 3.5155
+    "outdoors": 3.5155,
+    "summary": "<p>Albuquerque, New Mexico, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "54, 60, 17, 16, 21, 47, 3, 32, 23, 99, 59, 90, 81, 83, 66, 67, 13, 49, 82"
   },
   {
     "id": 4,
@@ -121,7 +127,9 @@
     "internet access": 3.825500000000001,
     "leisure & culture": 10.0,
     "tolerance": 6.5495,
-    "outdoors": 5.023499999999999
+    "outdoors": 5.023499999999999,
+    "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 89, 47, 3, 32, 23, 59, 11, 35, 45, 68, 42, 81, 16, 90, 14, 49"
   },
   {
     "id": 5,
@@ -152,7 +160,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "20, 23, 51, 53, 90, 99"
   },
   {
     "id": 6,
@@ -183,7 +193,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 32"
   },
   {
     "id": 7,
@@ -214,7 +226,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 54"
   },
   {
     "id": 8,
@@ -245,7 +259,9 @@
     "internet access": 4.9645,
     "leisure & culture": 3.2660000000000005,
     "tolerance": 7.093,
-    "outdoors": 5.3580000000000005
+    "outdoors": 5.3580000000000005,
+    "summary": "<p>Anchorage, Alaska, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>healthcare</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 42, 3, 35, 49, 34, 32, 16, 23, 54, 89, 59"
   },
   {
     "id": 9,
@@ -276,7 +292,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 10,
@@ -307,7 +325,9 @@
     "internet access": 3.825500000000001,
     "leisure & culture": 10.0,
     "tolerance": 6.5495,
-    "outdoors": 5.023499999999999
+    "outdoors": 5.023499999999999,
+    "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
+    "restaurant_ids": ""
   },
   {
     "id": 11,
@@ -338,7 +358,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 99, 42, 89, 52, 32, 3, 45, 81, 54, 34, 71, 16, 35, 94, 21, 48, 14, 49, 90"
   },
   {
     "id": 12,
@@ -369,7 +391,9 @@
     "internet access": 6.4805,
     "leisure & culture": 7.765499999999999,
     "tolerance": 4.062,
-    "outdoors": 5.0095
+    "outdoors": 5.0095,
+    "summary": "<p>Atlanta, Georgia, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Atlanta is one of the top ten city matches for 6.5% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 83, 3, 13, 81, 98, 49, 47, 26, 11, 82, 21, 32, 16, 28, 89, 14, 45, 80, 59, 71"
   },
   {
     "id": 13,
@@ -400,7 +424,9 @@
     "internet access": 5.418500000000001,
     "leisure & culture": 6.2235,
     "tolerance": 7.860499999999999,
-    "outdoors": 7.932999999999999
+    "outdoors": 7.932999999999999,
+    "summary": "<p>Denver, Colorado, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Denver is one of the top ten city matches for 4.1% of Teleport users.</p>\n",
+    "restaurant_ids": "51, 3"
   },
   {
     "id": 14,
@@ -431,7 +457,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 81, 54, 32, 89, 14, 90, 98, 49, 34, 59, 39, 42, 13, 99"
   },
   {
     "id": 15,
@@ -462,7 +490,9 @@
     "internet access": 4.988,
     "leisure & culture": 0.0,
     "tolerance": 5.755,
-    "outdoors": 3.9795
+    "outdoors": 3.9795,
+    "summary": "<p>\n\n    \n        This urban area is consistently ahead in <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "49, 47, 32, 35, 38, 3, 83, 54, 17, 1, 98, 14, 13, 82"
   },
   {
     "id": 16,
@@ -493,7 +523,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 17,
@@ -524,7 +556,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "45, 47, 32, 3"
   },
   {
     "id": 18,
@@ -555,7 +589,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 49, 23, 3, 34, 59, 13, 14, 32, 76, 99, 42, 90, 88"
   },
   {
     "id": 19,
@@ -586,7 +622,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 83"
   },
   {
     "id": 20,
@@ -617,7 +655,9 @@
     "internet access": 5.1605,
     "leisure & culture": 5.3835,
     "tolerance": 4.881500000000002,
-    "outdoors": 1.2660000000000002
+    "outdoors": 1.2660000000000002,
+    "summary": "<p>Birmingham, Alabama, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 54, 81, 35, 3, 90, 32, 23, 21, 17, 89, 83, 68, 96, 5, 42, 99, 49"
   },
   {
     "id": 21,
@@ -648,7 +688,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "17, 3"
   },
   {
     "id": 22,
@@ -679,7 +721,9 @@
     "internet access": 3.442,
     "leisure & culture": 4.1995,
     "tolerance": 6.9275,
-    "outdoors": 5.221
+    "outdoors": 5.221,
+    "summary": "<p>Boise, Idaho, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 35, 49, 32, 26, 3, 90, 83, 23, 34, 54, 42, 13"
   },
   {
     "id": 23,
@@ -710,7 +754,9 @@
     "internet access": 5.700500000000001,
     "leisure & culture": 8.564,
     "tolerance": 8.4815,
-    "outdoors": 5.659999999999999
+    "outdoors": 5.659999999999999,
+    "summary": "<p>\n    One of the oldest and most historic cities in the US, Boston is\u00a0a center of higher education with some of the <b>top universities</b> in the world. It has also developed a vibrant technology scene and is home to numerous <b>venture capital</b> firms, all supporting high rates of innovation and entrepreneurship. Add its\u00a0<b>tolerant</b> environment, great quality of <b>healthcare</b> and beautiful New England nature, and you've got an enticing city that attracts talent from around the world.\n</p>\n\n\n    <p>Boston is one of the top ten city matches for 12.8% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 91, 83, 32, 47, 3, 81, 16, 45, 94, 23, 49, 34, 50, 22, 28, 7, 59, 98"
   },
   {
     "id": 24,
@@ -741,7 +787,9 @@
     "internet access": 6.757999999999999,
     "leisure & culture": 4.32,
     "tolerance": 7.404000000000001,
-    "outdoors": 4.6465
+    "outdoors": 4.6465,
+    "summary": "<p>Buffalo, New York, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 3, 35, 54, 89, 83, 81, 32, 17, 16, 34, 90, 99, 42, 23"
   },
   {
     "id": 25,
@@ -772,7 +820,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "20, 23"
   },
   {
     "id": 26,
@@ -803,7 +853,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47"
   },
   {
     "id": 27,
@@ -834,7 +886,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 28,
@@ -865,7 +919,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 34"
   },
   {
     "id": 29,
@@ -896,7 +952,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "23, 3, 90, 54"
   },
   {
     "id": 30,
@@ -927,7 +985,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "23, 47, 35, 89, 44, 21, 81, 49, 3, 54, 24, 90, 51, 42, 66, 26, 83, 99, 64"
   },
   {
     "id": 31,
@@ -958,7 +1018,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 32,
@@ -989,7 +1051,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 33,
@@ -1020,7 +1084,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47"
   },
   {
     "id": 34,
@@ -1051,7 +1117,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 35,
@@ -1082,7 +1150,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 23, 3, 14, 54, 49, 90, 99, 51, 35, 83, 82, 32, 38"
   },
   {
     "id": 36,
@@ -1113,7 +1183,9 @@
     "internet access": 6.3870000000000005,
     "leisure & culture": 5.606,
     "tolerance": 6.7895,
-    "outdoors": 1.3114999999999999
+    "outdoors": 1.3114999999999999,
+    "summary": "<p>Charlotte, North Carolina, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n\n    <p>Charlotte is one of the top ten city matches for 2.6% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 49, 83, 3, 32, 13, 54, 82, 21, 35, 34, 99, 90, 59, 81, 23, 85, 14, 45, 16, 79"
   },
   {
     "id": 37,
@@ -1144,7 +1216,9 @@
     "internet access": 8.365,
     "leisure & culture": 4.1625,
     "tolerance": 4.7925,
-    "outdoors": 3.908
+    "outdoors": 3.908,
+    "summary": "<p>Chattanooga, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 3, 32, 29, 90, 81, 34, 35, 54, 89, 83"
   },
   {
     "id": 38,
@@ -1175,7 +1249,9 @@
     "internet access": 6.599499999999999,
     "leisure & culture": 8.193,
     "tolerance": 6.1339999999999995,
-    "outdoors": 5.4155
+    "outdoors": 5.4155,
+    "summary": "<p>Chicago, Illinois, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Chicago is one of the top ten city matches for 5.5% of Teleport users.</p>\n",
+    "restaurant_ids": "39, 47, 34, 67, 12, 54, 3, 82, 20, 23, 85, 11, 92, 59, 60, 29, 70, 8, 32, 13, 98, 83, 74, 80, 26, 37, 101"
   },
   {
     "id": 39,
@@ -1206,7 +1282,9 @@
     "internet access": 6.512000000000001,
     "leisure & culture": 6.118000000000001,
     "tolerance": 5.2989999999999995,
-    "outdoors": 3.6075
+    "outdoors": 3.6075,
+    "summary": "<p>Cincinnati, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Cincinnati is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 11, 47, 23, 54, 17, 35, 29, 81, 90, 99, 3, 42, 64, 34, 16"
   },
   {
     "id": 40,
@@ -1237,7 +1315,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "34"
   },
   {
     "id": 41,
@@ -1268,7 +1348,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 83"
   },
   {
     "id": 42,
@@ -1299,7 +1381,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47"
   },
   {
     "id": 43,
@@ -1330,7 +1414,9 @@
     "internet access": 5.476500000000001,
     "leisure & culture": 5.696500000000001,
     "tolerance": 4.775499999999999,
-    "outdoors": 4.669
+    "outdoors": 4.669,
+    "summary": "<p>Cleveland, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "34, 47, 3, 96, 32, 49, 21, 24, 54, 26, 91"
   },
   {
     "id": 44,
@@ -1361,7 +1447,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 45,
@@ -1392,7 +1480,9 @@
     "internet access": 5.9225,
     "leisure & culture": 3.8120000000000003,
     "tolerance": 9.206,
-    "outdoors": 7.356499999999999
+    "outdoors": 7.356499999999999,
+    "summary": "<p>Colorado Springs, Colorado, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 3, 49, 32, 45, 34, 16, 83, 90, 35, 54, 30, 13, 14"
   },
   {
     "id": 46,
@@ -1423,7 +1513,9 @@
     "internet access": 4.5535,
     "leisure & culture": 6.465999999999999,
     "tolerance": 5.9215,
-    "outdoors": 4.544999999999999
+    "outdoors": 4.544999999999999,
+    "summary": "<p>Columbus, Ohio, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Columbus is one of the top ten city matches for 0.9% of Teleport users.</p>\n",
+    "restaurant_ids": "90, 47, 17, 3, 14, 54, 34, 35, 26, 49, 51, 83, 32, 58, 91, 16, 42, 21"
   },
   {
     "id": 47,
@@ -1454,7 +1546,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3"
   },
   {
     "id": 48,
@@ -1485,7 +1579,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 49,
@@ -1516,7 +1612,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "59, 47, 32, 83, 3, 89, 39, 81, 16, 54, 27, 34, 85, 14, 42, 90"
   },
   {
     "id": 50,
@@ -1547,7 +1645,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 51,
@@ -1578,7 +1678,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 90, 3, 34, 81, 49, 23, 54, 16, 89, 35, 45, 32, 99"
   },
   {
     "id": 52,
@@ -1609,7 +1711,9 @@
     "internet access": 5.418500000000001,
     "leisure & culture": 6.2235,
     "tolerance": 7.860499999999999,
-    "outdoors": 7.932999999999999
+    "outdoors": 7.932999999999999,
+    "summary": "<p>Denver, Colorado, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Denver is one of the top ten city matches for 4.1% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 34, 47, 54, 67, 42, 58, 91, 45, 98, 16, 32, 49, 80, 59, 83, 14"
   },
   {
     "id": 53,
@@ -1640,7 +1744,9 @@
     "internet access": 5.6979999999999995,
     "leisure & culture": 6.0665000000000004,
     "tolerance": 8.4765,
-    "outdoors": 3.299500000000001
+    "outdoors": 3.299500000000001,
+    "summary": "<p>Des Moines, Iowa, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>business freedom</b> and <b>safety</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 3, 32, 54, 49, 21, 16, 23, 99, 14, 90, 34"
   },
   {
     "id": 54,
@@ -1671,7 +1777,9 @@
     "internet access": 6.167000000000002,
     "leisure & culture": 7.478,
     "tolerance": 3.678,
-    "outdoors": 5.387499999999999
+    "outdoors": 5.387499999999999,
+    "summary": "<p>Detroit, Michigan, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Detroit is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
+    "restaurant_ids": "49, 3, 47, 82, 81, 98, 54, 89, 16, 23, 59, 40, 34, 90, 99, 32, 21, 26, 13, 67, 35"
   },
   {
     "id": 55,
@@ -1702,7 +1810,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 56,
@@ -1733,7 +1843,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 57,
@@ -1764,7 +1876,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "85, 74"
   },
   {
     "id": 58,
@@ -1795,7 +1909,9 @@
     "internet access": 5.3035,
     "leisure & culture": 6.3685,
     "tolerance": 7.275,
-    "outdoors": 5.385
+    "outdoors": 5.385,
+    "summary": "<p>Las Vegas, Nevada, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>startups</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Las Vegas is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 3, 23"
   },
   {
     "id": 59,
@@ -1826,7 +1942,9 @@
     "internet access": 4.756000000000001,
     "leisure & culture": 2.9560000000000004,
     "tolerance": 8.9695,
-    "outdoors": 3.533
+    "outdoors": 3.533,
+    "summary": "<p>Eugene, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "49, 47, 14, 75, 45, 3, 32, 34, 35, 42, 99, 11, 40, 54, 83, 90, 38"
   },
   {
     "id": 60,
@@ -1857,7 +1975,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 61,
@@ -1888,7 +2008,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 62,
@@ -1919,7 +2041,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "59, 32, 3, 81, 47, 89, 52, 13, 49, 34, 82"
   },
   {
     "id": 63,
@@ -1950,7 +2074,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "23, 54, 3, 42, 64, 90, 47, 32, 1, 14, 49, 89"
   },
   {
     "id": 64,
@@ -1981,7 +2107,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 49, 32, 3, 45, 89, 81, 42, 35, 13, 90, 54"
   },
   {
     "id": 65,
@@ -2012,7 +2140,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 23, 49, 81, 3, 95, 54, 89, 90, 45, 56, 99"
   },
   {
     "id": 66,
@@ -2043,7 +2173,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 34"
   },
   {
     "id": 67,
@@ -2074,7 +2206,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 49, 42, 54, 82, 38, 23, 17, 90, 81"
   },
   {
     "id": 68,
@@ -2105,7 +2239,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": ""
   },
   {
     "id": 69,
@@ -2136,7 +2272,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 49, 54, 3, 32, 99, 31, 44, 6, 42, 14, 83, 23, 51, 90, 17, 38, 26, 13, 35, 81, 34"
   },
   {
     "id": 70,
@@ -2167,7 +2305,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 23, 54, 89, 56, 99, 90, 81"
   },
   {
     "id": 71,
@@ -2198,7 +2338,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 3, 47"
   },
   {
     "id": 72,
@@ -2229,7 +2371,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 17"
   },
   {
     "id": 73,
@@ -2260,7 +2404,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "17, 32, 3, 54"
   },
   {
     "id": 74,
@@ -2291,7 +2437,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 54, 49, 23, 42, 64, 47, 81, 68, 90, 99, 17, 14"
   },
   {
     "id": 75,
@@ -2322,7 +2470,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 76,
@@ -2353,7 +2503,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 17"
   },
   {
     "id": 77,
@@ -2384,7 +2536,9 @@
     "internet access": 6.248499999999999,
     "leisure & culture": 7.144,
     "tolerance": 5.34,
-    "outdoors": 5.385999999999999
+    "outdoors": 5.385999999999999,
+    "summary": "<p>Houston, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Houston is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
+    "restaurant_ids": "16, 3, 47, 59, 20, 39, 54, 63, 13, 98, 27, 32, 80, 83, 11, 14, 45, 23, 99, 35, 81, 89, 84, 62, 49, 37, 42, 21, 28"
   },
   {
     "id": 78,
@@ -2415,7 +2569,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 90, 49, 47, 3, 83"
   },
   {
     "id": 79,
@@ -2446,7 +2602,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 80,
@@ -2477,7 +2635,9 @@
     "internet access": 5.875500000000001,
     "leisure & culture": 7.2989999999999995,
     "tolerance": 6.869999999999999,
-    "outdoors": 3.9650000000000003
+    "outdoors": 3.9650000000000003,
+    "summary": "<p>Indianapolis, Indiana, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>tolerance</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "81, 90, 38, 47, 32, 14, 16, 3, 49, 54, 34, 8, 13, 75, 59"
   },
   {
     "id": 81,
@@ -2508,7 +2668,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "23, 3, 45, 68, 47, 32, 42, 82, 54, 81, 49, 58, 13, 79, 89, 51, 99, 90, 57, 16, 83, 59, 64"
   },
   {
     "id": 82,
@@ -2539,7 +2701,9 @@
     "internet access": 6.157500000000001,
     "leisure & culture": 5.6545000000000005,
     "tolerance": 5.6785000000000005,
-    "outdoors": 5.013
+    "outdoors": 5.013,
+    "summary": "<p>Jacksonville, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "3, 83, 47, 54, 16, 90, 32, 49, 98, 17, 89, 81, 99, 82, 23, 45, 34"
   },
   {
     "id": 83,
@@ -2570,7 +2734,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 28, 90, 59, 42, 32, 31, 49, 23, 54, 34, 68, 94, 99, 83"
   },
   {
     "id": 84,
@@ -2601,7 +2767,9 @@
     "internet access": 8.188500000000001,
     "leisure & culture": 6.674500000000001,
     "tolerance": 5.0205,
-    "outdoors": 4.161500000000001
+    "outdoors": 4.161500000000001,
+    "summary": "<p>Kansas City, Missouri, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Kansas City is one of the top ten city matches for 2.0% of Teleport users.</p>\n",
+    "restaurant_ids": "83, 72"
   },
   {
     "id": 85,
@@ -2632,7 +2800,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "85"
   },
   {
     "id": 86,
@@ -2663,7 +2833,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 87,
@@ -2694,7 +2866,9 @@
     "internet access": 7.092499999999999,
     "leisure & culture": 4.495500000000001,
     "tolerance": 5.4025,
-    "outdoors": 1.7525
+    "outdoors": 1.7525,
+    "summary": "<p>Knoxville, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "32, 47, 81, 3, 54, 83, 35, 34, 21, 48, 13, 26, 23, 90, 82"
   },
   {
     "id": 88,
@@ -2725,7 +2899,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 89,
@@ -2756,7 +2932,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 90,
@@ -2787,7 +2965,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "32"
   },
   {
     "id": 91,
@@ -2818,7 +2998,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 92,
@@ -2849,7 +3031,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": ""
   },
   {
     "id": 93,
@@ -2880,7 +3064,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 49, 47, 90, 34, 67, 23, 54, 38, 51, 21, 17, 35, 32"
   },
   {
     "id": 94,
@@ -2911,7 +3097,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 95,
@@ -2942,7 +3130,9 @@
     "internet access": 5.3035,
     "leisure & culture": 6.3685,
     "tolerance": 7.275,
-    "outdoors": 5.385
+    "outdoors": 5.385,
+    "summary": "<p>Las Vegas, Nevada, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>startups</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Las Vegas is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 59, 83, 13, 47, 16, 81, 14, 3, 34, 90, 82, 49, 17"
   },
   {
     "id": 96,
@@ -2973,7 +3163,9 @@
     "internet access": 3.825500000000001,
     "leisure & culture": 10.0,
     "tolerance": 6.5495,
-    "outdoors": 5.023499999999999
+    "outdoors": 5.023499999999999,
+    "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3"
   },
   {
     "id": 97,
@@ -3004,7 +3196,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 90, 14, 17, 32, 35, 54, 81, 49, 83, 16, 59, 42, 13"
   },
   {
     "id": 98,
@@ -3035,7 +3229,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 81, 32, 42, 84, 39, 49, 17, 26, 83, 54, 90, 34, 8, 13"
   },
   {
     "id": 99,
@@ -3066,7 +3262,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "32"
   },
   {
     "id": 100,
@@ -3097,7 +3295,9 @@
     "internet access": 5.526999999999999,
     "leisure & culture": 5.6935,
     "tolerance": 5.778499999999999,
-    "outdoors": 1.3
+    "outdoors": 1.3,
+    "summary": "<p>Louisville, Kentucky, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 26, 81, 32, 34, 14, 49, 54, 99, 3, 17, 16, 58, 83, 89, 59"
   },
   {
     "id": 101,
@@ -3128,7 +3328,9 @@
     "internet access": 4.9925,
     "leisure & culture": 4.422000000000001,
     "tolerance": 7.9005,
-    "outdoors": 4.3759999999999994
+    "outdoors": 4.3759999999999994,
+    "summary": "<p>Madison, Wisconsin, is characterized by a <b>clean environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Madison is one of the top ten city matches for 2.7% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 32, 45, 34, 13, 43, 90, 99, 42, 1, 16, 54, 94, 49"
   },
   {
     "id": 102,
@@ -3159,7 +3361,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 103,
@@ -3190,7 +3394,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 104,
@@ -3221,7 +3427,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "89, 56, 45, 3, 47, 32, 49, 16, 90, 54, 81"
   },
   {
     "id": 105,
@@ -3252,7 +3460,9 @@
     "internet access": 6.07,
     "leisure & culture": 6.860499999999999,
     "tolerance": 4.040500000000001,
-    "outdoors": 3.5694999999999997
+    "outdoors": 3.5694999999999997,
+    "summary": "<p>Memphis, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 32, 3, 81, 16, 51, 45, 54, 98, 13, 17, 90"
   },
   {
     "id": 106,
@@ -3283,7 +3493,9 @@
     "internet access": 7.142,
     "leisure & culture": 0.0,
     "tolerance": 8.454,
-    "outdoors": 1.7500000000000002
+    "outdoors": 1.7500000000000002,
+    "summary": "<p>\n    Palo Alto, California, is among the top cities with a <b>high quality of education</b>. According to our data, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>economy</b>.<br /><br />Palo Alto is part of Silicon Valley and the wider San Francisco Bay Area. For more information on scores and rankings, check <a href=\"/cities/san-francisco-bay-area/\">San Francisco Bay Area</a>'s Teleport profile.\n</p>\n\n",
+    "restaurant_ids": "32"
   },
   {
     "id": 107,
@@ -3314,7 +3526,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 35, 47, 21, 38, 32, 54, 82, 16, 99, 14, 90, 34, 42, 49"
   },
   {
     "id": 108,
@@ -3345,7 +3559,9 @@
     "internet access": 5.824,
     "leisure & culture": 6.7675,
     "tolerance": 6.043500000000001,
-    "outdoors": 5.3845
+    "outdoors": 5.3845,
+    "summary": "<p>Miami, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Miami is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
+    "restaurant_ids": "69, 28, 62, 98, 49, 66, 3, 54, 22, 83, 59, 32, 34, 89, 96, 26, 13, 47, 24, 81, 42, 21, 16, 25, 35, 90"
   },
   {
     "id": 109,
@@ -3376,7 +3592,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 110,
@@ -3407,7 +3625,9 @@
     "internet access": 4.346,
     "leisure & culture": 6.8375,
     "tolerance": 4.844,
-    "outdoors": 5.064000000000001
+    "outdoors": 5.064000000000001,
+    "summary": "<p>Milwaukee, Wisconsin, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "3, 81, 47, 54, 49, 42, 34, 32, 90, 35, 16"
   },
   {
     "id": 111,
@@ -3438,7 +3658,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3"
   },
   {
     "id": 112,
@@ -3469,7 +3691,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 17, 47"
   },
   {
     "id": 113,
@@ -3500,7 +3724,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 114,
@@ -3531,7 +3757,9 @@
     "internet access": 6.6370000000000005,
     "leisure & culture": 7.0200000000000005,
     "tolerance": 6.807500000000001,
-    "outdoors": 1.2734999999999999
+    "outdoors": 1.2734999999999999,
+    "summary": "<p>Nashville, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Nashville is one of the top ten city matches for 0.3% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 81, 32, 54, 89, 14, 90, 34"
   },
   {
     "id": 115,
@@ -3562,7 +3790,9 @@
     "internet access": 6.453000000000001,
     "leisure & culture": 7.1985,
     "tolerance": 5.1240000000000006,
-    "outdoors": 1.0
+    "outdoors": 1.0,
+    "summary": "<p>New Orleans, Louisiana, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "32, 81, 16, 3, 47, 83, 54, 89, 21, 59"
   },
   {
     "id": 116,
@@ -3593,7 +3823,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "84, 47, 10, 98, 70, 32, 20, 23, 39, 74, 58, 91, 11, 36, 2, 92, 3, 59, 34, 66, 22, 54, 5, 12, 55, 37, 7, 9, 50, 57, 101, 61, 33, 85, 80, 81, 65, 69, 28, 46, 95, 41, 49, 21, 73, 76, 18, 19, 77, 53, 86, 87, 100"
   },
   {
     "id": 117,
@@ -3624,7 +3856,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "13, 83, 68, 47, 69, 21, 3, 82, 26"
   },
   {
     "id": 118,
@@ -3655,7 +3889,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 119,
@@ -3686,7 +3922,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "99, 3, 79, 17, 47, 81, 32, 11, 49, 30, 50, 46, 14, 34, 54, 59, 83, 94, 21, 45"
   },
   {
     "id": 120,
@@ -3717,7 +3955,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3"
   },
   {
     "id": 121,
@@ -3748,7 +3988,9 @@
     "internet access": 7.689,
     "leisure & culture": 5.376000000000001,
     "tolerance": 6.022,
-    "outdoors": 4.1290000000000004
+    "outdoors": 4.1290000000000004,
+    "summary": "<p>Oklahoma City, Oklahoma, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Oklahoma City is one of the top ten city matches for 1.6% of Teleport users.</p>\n",
+    "restaurant_ids": "99, 3, 47, 54, 49, 82, 81, 23, 32, 13, 89, 35, 34, 16"
   },
   {
     "id": 122,
@@ -3779,7 +4021,9 @@
     "internet access": 6.3065,
     "leisure & culture": 4.942,
     "tolerance": 5.800999999999999,
-    "outdoors": 4.181
+    "outdoors": 4.181,
+    "summary": "<p>Omaha, Nebraska, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "47, 52, 3, 32, 45, 42, 49, 50, 99, 23, 34, 59, 81, 35, 54, 89"
   },
   {
     "id": 123,
@@ -3810,7 +4054,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 3, 23, 14, 81"
   },
   {
     "id": 124,
@@ -3841,7 +4087,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 125,
@@ -3872,7 +4120,9 @@
     "internet access": 4.886,
     "leisure & culture": 5.9295,
     "tolerance": 5.784000000000002,
-    "outdoors": 4.492999999999999
+    "outdoors": 4.492999999999999,
+    "summary": "<p>Orlando, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Orlando is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 47, 3, 67, 26, 28, 54, 21, 80, 98, 69, 24, 34, 94, 13, 83, 38, 90, 35, 62, 29, 23, 16, 49, 50, 59, 11, 45, 81, 79"
   },
   {
     "id": 126,
@@ -3903,7 +4153,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 38, 54, 49, 90, 23, 83, 26, 81, 16, 35"
   },
   {
     "id": 127,
@@ -3934,7 +4186,9 @@
     "internet access": 7.142,
     "leisure & culture": 0.0,
     "tolerance": 8.454,
-    "outdoors": 1.7500000000000002
+    "outdoors": 1.7500000000000002,
+    "summary": "<p>\n    Palo Alto, California, is among the top cities with a <b>high quality of education</b>. According to our data, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>economy</b>.<br /><br />Palo Alto is part of Silicon Valley and the wider San Francisco Bay Area. For more information on scores and rankings, check <a href=\"/cities/san-francisco-bay-area/\">San Francisco Bay Area</a>'s Teleport profile.\n</p>\n\n",
+    "restaurant_ids": "85, 83"
   },
   {
     "id": 128,
@@ -3965,7 +4219,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 32, 99, 3, 90, 49, 17, 81, 6, 54, 14, 83, 42, 5"
   },
   {
     "id": 129,
@@ -3996,7 +4252,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "26, 69, 28"
   },
   {
     "id": 130,
@@ -4027,7 +4285,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "66, 47, 21, 94, 54, 3, 83, 24, 23, 81, 28, 68"
   },
   {
     "id": 131,
@@ -4058,7 +4318,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47"
   },
   {
     "id": 132,
@@ -4089,7 +4351,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 38, 54, 49, 23, 3, 32, 35, 99"
   },
   {
     "id": 133,
@@ -4120,7 +4384,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "83, 3, 47, 32, 42, 58, 91"
   },
   {
     "id": 134,
@@ -4151,7 +4417,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 135,
@@ -4182,7 +4450,9 @@
     "internet access": 7.443,
     "leisure & culture": 8.492,
     "tolerance": 5.864500000000001,
-    "outdoors": 4.115
+    "outdoors": 4.115,
+    "summary": "<p>Philadelphia, Pennsylvania, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Philadelphia is one of the top ten city matches for 0.4% of Teleport users.</p>\n",
+    "restaurant_ids": "26, 83, 71, 97, 3, 39, 47, 32, 54, 20, 23, 11, 13, 34, 49, 85, 98, 14, 73"
   },
   {
     "id": 136,
@@ -4213,7 +4483,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 59, 49, 82, 14, 28, 29, 69, 54, 39, 16, 32, 38, 90, 81, 21, 23"
   },
   {
     "id": 137,
@@ -4244,7 +4516,9 @@
     "internet access": 8.669500000000001,
     "leisure & culture": 6.859,
     "tolerance": 7.390000000000001,
-    "outdoors": 4.0685
+    "outdoors": 4.0685,
+    "summary": "<p>Pittsburgh, Pennsylvania, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Pittsburgh is one of the top ten city matches for 1.0% of Teleport users.</p>\n",
+    "restaurant_ids": "90, 47, 99, 3, 34, 83, 54, 89, 21, 98, 32, 23, 40, 17, 11, 81, 16"
   },
   {
     "id": 138,
@@ -4275,7 +4549,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 35, 47, 34, 32, 49, 23, 14, 90, 54, 89, 38, 81, 79, 59, 26, 45, 82"
   },
   {
     "id": 139,
@@ -4306,7 +4582,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 140,
@@ -4337,7 +4615,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "90, 54, 3, 14, 49, 47, 17, 23, 26, 99, 38, 51"
   },
   {
     "id": 141,
@@ -4368,7 +4648,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "34, 74, 81, 32, 47, 3, 35, 83, 66, 90, 54, 59, 38, 16, 79, 26, 5, 22"
   },
   {
     "id": 142,
@@ -4399,7 +4681,9 @@
     "internet access": 8.9345,
     "leisure & culture": 3.9185000000000008,
     "tolerance": 7.49,
-    "outdoors": 1.084
+    "outdoors": 1.084,
+    "summary": "<p>Providence, Rhode Island, is among the leading cities with a <b>speedy internet access</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>business freedom</b>, <b>safety</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "49, 99, 47, 17, 3, 32, 42, 21, 83, 68"
   },
   {
     "id": 143,
@@ -4430,7 +4714,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "23, 47, 3, 17, 54, 49, 31, 90"
   },
   {
     "id": 144,
@@ -4461,7 +4747,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 145,
@@ -4492,7 +4780,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 32, 14, 17"
   },
   {
     "id": 146,
@@ -4523,7 +4813,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 14, 27"
   },
   {
     "id": 147,
@@ -4554,7 +4846,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3"
   },
   {
     "id": 148,
@@ -4585,7 +4879,9 @@
     "internet access": 7.645499999999999,
     "leisure & culture": 6.3385,
     "tolerance": 7.151,
-    "outdoors": 1.0350000000000001
+    "outdoors": 1.0350000000000001,
+    "summary": "<p>Richmond, Virginia, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": "23, 3, 47, 35, 21, 28, 32, 34, 81, 89, 26, 99, 49, 17, 45, 14"
   },
   {
     "id": 149,
@@ -4616,7 +4912,9 @@
     "internet access": 5.551,
     "leisure & culture": 5.335,
     "tolerance": 5.9014999999999995,
-    "outdoors": 4.404
+    "outdoors": 4.404,
+    "summary": "<p>Rochester, New York, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>housing</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n",
+    "restaurant_ids": ""
   },
   {
     "id": 150,
@@ -4647,7 +4945,9 @@
     "internet access": 5.8455,
     "leisure & culture": 9.4555,
     "tolerance": 6.573,
-    "outdoors": 5.374499999999999
+    "outdoors": 5.374499999999999,
+    "summary": "<p>\n    <i>By Matteo Pozzi</i><br><br>London is packed with endless opportunities: it is one of the world's most inviting cities for <b>startups</b>, as well as home to world-class <b>schools, universities and museums</b>. There is a robust transport network offering <b>fast and easy commuting</b> around London. With its vibrant <b>multicultural environment</b>, London offers an enormous variety of cuisines, recreational opportunities and cultural activities that appeal to virtually any interest.\n</p>\n\n\n    <p>London is one of the top ten city matches for 17.3% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 49, 54, 3, 32, 21, 83, 89, 42, 34, 35, 81, 23, 90, 28"
   },
   {
     "id": 151,
@@ -4678,7 +4978,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 152,
@@ -4709,7 +5011,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "49, 47"
   },
   {
     "id": 153,
@@ -4740,7 +5044,9 @@
     "internet access": 9.049,
     "leisure & culture": 6.6979999999999995,
     "tolerance": 6.7895,
-    "outdoors": 3.9090000000000003
+    "outdoors": 3.9090000000000003,
+    "summary": "<p>Austin, Texas, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Austin is one of the top ten city matches for 9.0% of Teleport users.</p>\n",
+    "restaurant_ids": "49, 54, 16, 3, 23, 99, 47, 89, 32, 90, 53, 35, 82, 42"
   },
   {
     "id": 154,
@@ -4771,7 +5077,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "34, 47"
   },
   {
     "id": 155,
@@ -4802,7 +5110,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 17, 47, 54, 3, 14, 49, 83, 35"
   },
   {
     "id": 156,
@@ -4833,7 +5143,9 @@
     "internet access": 6.810500000000001,
     "leisure & culture": 5.932,
     "tolerance": 8.6225,
-    "outdoors": 6.641000000000002
+    "outdoors": 6.641000000000002,
+    "summary": "<p>Salt Lake City, Utah, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Salt Lake City is one of the top ten city matches for 2.4% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 54, 47, 81, 49, 99, 42, 90, 83, 22, 23, 34, 82, 17, 32, 11"
   },
   {
     "id": 157,
@@ -4864,7 +5176,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 158,
@@ -4895,7 +5209,9 @@
     "internet access": 8.0745,
     "leisure & culture": 6.6955,
     "tolerance": 6.254,
-    "outdoors": 3.4185000000000003
+    "outdoors": 3.4185000000000003,
+    "summary": "<p>San Antonio, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>cost of living</b>, <b>healthcare</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>San Antonio is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 32, 11, 16, 54, 35, 90, 12, 34, 49, 39, 59, 89, 57, 82, 23"
   },
   {
     "id": 159,
@@ -4926,7 +5242,9 @@
     "internet access": 5.999,
     "leisure & culture": 8.21,
     "tolerance": 8.5395,
-    "outdoors": 6.396000000000002
+    "outdoors": 6.396000000000002,
+    "summary": "<p>San Diego, California, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>safety</b>.\n    \n\n    \n</p>\n\n\n    <p>San Diego is one of the top ten city matches for 1.4% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 80, 3, 32, 39, 83, 54, 70, 17, 37, 49, 34, 14, 45, 13"
   },
   {
     "id": 160,
@@ -4957,7 +5275,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 32, 58, 3, 39, 99, 35, 73, 17, 26, 21, 83, 54, 36, 23, 34, 70, 16, 81, 57, 93, 15, 101, 22"
   },
   {
     "id": 161,
@@ -4988,7 +5308,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "45, 47, 99, 43, 53, 3, 30, 39, 14, 54, 90, 83, 17, 42, 81, 34, 32, 70, 49, 23, 51, 89, 35, 59, 13, 68"
   },
   {
     "id": 162,
@@ -5019,7 +5341,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "14, 47, 58, 23"
   },
   {
     "id": 163,
@@ -5050,7 +5374,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 164,
@@ -5081,7 +5407,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "17, 47, 49, 1, 42, 3, 26, 54, 32, 14, 66, 82"
   },
   {
     "id": 165,
@@ -5112,7 +5440,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 34, 38, 11, 32, 57, 49, 54, 16, 90, 74"
   },
   {
     "id": 166,
@@ -5143,7 +5473,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 99, 47, 49, 23, 54, 30, 90, 81, 32, 14, 42, 58, 69, 38, 17"
   },
   {
     "id": 167,
@@ -5174,7 +5506,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 83, 32"
   },
   {
     "id": 168,
@@ -5205,7 +5539,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "82, 47, 90, 59, 14, 3, 32, 83, 54, 49, 34, 13, 81"
   },
   {
     "id": 169,
@@ -5236,7 +5572,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "83, 21, 26, 27, 74, 85, 32, 3, 49, 80, 47, 54, 51, 28, 71, 42, 14, 59, 16, 7, 99, 23, 35"
   },
   {
     "id": 170,
@@ -5267,7 +5605,9 @@
     "internet access": 6.4805,
     "leisure & culture": 7.765499999999999,
     "tolerance": 4.062,
-    "outdoors": 5.0095
+    "outdoors": 5.0095,
+    "summary": "<p>Atlanta, Georgia, is among the best cities with a <b>vibrant startup scene</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>venture capital</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Atlanta is one of the top ten city matches for 6.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 171,
@@ -5298,7 +5638,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 68, 32"
   },
   {
     "id": 172,
@@ -5329,7 +5671,9 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 173,
@@ -5360,7 +5704,9 @@
     "internet access": 8.909,
     "leisure & culture": 7.642500000000001,
     "tolerance": 4.3759999999999994,
-    "outdoors": 4.8285
+    "outdoors": 4.8285,
+    "summary": "<p>St. Louis, Missouri, is among the leading cities with a <b>speedy internet access</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>housing</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>St. Louis is one of the top ten city matches for 1.4% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 3, 34, 47, 83, 14, 99, 17, 75, 81, 16, 23, 35, 66, 54"
   },
   {
     "id": 174,
@@ -5391,7 +5737,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 49, 35, 47, 32, 99, 23, 54, 16, 83, 90"
   },
   {
     "id": 175,
@@ -5422,7 +5770,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 176,
@@ -5453,7 +5803,9 @@
     "internet access": 5.605500000000001,
     "leisure & culture": 9.407,
     "tolerance": 8.012500000000001,
-    "outdoors": 7.014
+    "outdoors": 7.014,
+    "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>\n",
+    "restaurant_ids": "17, 90, 42, 23, 3, 89, 47, 43, 45, 34, 1, 64"
   },
   {
     "id": 177,
@@ -5484,7 +5836,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 49, 99, 54, 32, 35, 90, 23"
   },
   {
     "id": 178,
@@ -5515,7 +5869,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 90, 3, 14, 23, 64, 42, 34, 49, 81, 54, 35, 11, 32, 5, 89"
   },
   {
     "id": 179,
@@ -5546,7 +5902,9 @@
     "internet access": 7.195,
     "leisure & culture": 6.433999999999999,
     "tolerance": 5.360000000000001,
-    "outdoors": 5.497
+    "outdoors": 5.497,
+    "summary": "<p>Tampa Bay Area, Florida, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Tampa Bay Area is one of the top ten city matches for 1.2% of Teleport users.</p>\n",
+    "restaurant_ids": "34, 49, 54, 82, 47, 3, 16, 23, 26, 69, 28, 21, 83, 59, 35, 32, 14, 4, 81"
   },
   {
     "id": 180,
@@ -5577,7 +5935,9 @@
     "internet access": 6.178,
     "leisure & culture": 6.8100000000000005,
     "tolerance": 5.5649999999999995,
-    "outdoors": 6.7355
+    "outdoors": 6.7355,
+    "summary": "<p>Phoenix, Arizona, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>leisure & culture</b> and <b>outdoors</b>.\n    \n\n    \n</p>\n\n\n    <p>Phoenix is one of the top ten city matches for 0.2% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 17, 90, 49, 30, 45, 59, 89, 14, 42, 64"
   },
   {
     "id": 181,
@@ -5608,7 +5968,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47, 34"
   },
   {
     "id": 182,
@@ -5639,7 +6001,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3"
   },
   {
     "id": 183,
@@ -5670,7 +6034,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 184,
@@ -5701,7 +6067,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "78"
   },
   {
     "id": 185,
@@ -5732,7 +6100,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": ""
   },
   {
     "id": 186,
@@ -5763,7 +6133,9 @@
     "internet access": 4.550500000000001,
     "leisure & culture": 5.7170000000000005,
     "tolerance": 8.295,
-    "outdoors": 7.4
+    "outdoors": 7.4,
+    "summary": "<p>\n    Vancouver is a city with high-rise buildings, <b>picturesque mountains</b> and easily distinguishable ethnic neighborhoods. The city ranks high in <b>cleanliness</b> and quality of living, but is also one of the most expensive cities in Canada. Besides forestry, Vancouver is becoming an influencer in industries like software, <b>film</b> and biotechnology. For those interested in <b>being in the open air</b>, there are plenty of opportunities from boating to mountain skiing.\n</p>\n\n\n    <p>Vancouver is one of the top ten city matches for 26.4% of Teleport users.</p>\n",
+    "restaurant_ids": "54, 81, 47, 90, 34, 3, 42, 23, 49, 82"
   },
   {
     "id": 187,
@@ -5794,7 +6166,9 @@
     "internet access": 4.940499999999999,
     "leisure & culture": 8.1155,
     "tolerance": 8.0895,
-    "outdoors": 7.2094999999999985
+    "outdoors": 7.2094999999999985,
+    "summary": "<p>Seattle, Washington, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>Seattle is one of the top ten city matches for 3.2% of Teleport users.</p>\n",
+    "restaurant_ids": "32, 47"
   },
   {
     "id": 188,
@@ -5825,7 +6199,9 @@
     "internet access": 3.825500000000001,
     "leisure & culture": 10.0,
     "tolerance": 6.5495,
-    "outdoors": 5.023499999999999
+    "outdoors": 5.023499999999999,
+    "summary": "<p>Washington, District of Columbia, features a wide variety of <b>free time activities</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>venture capital</b> and <b>business freedom</b>.\n    \n\n    \n</p>\n\n\n    <p>Washington, D.C. is one of the top ten city matches for 3.4% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 3, 32, 11, 42, 81, 48, 34, 83, 54, 89, 68, 13, 49, 35, 94, 8"
   },
   {
     "id": 189,
@@ -5856,7 +6232,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "45"
   },
   {
     "id": 190,
@@ -5887,7 +6265,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "3, 47"
   },
   {
     "id": 191,
@@ -5918,7 +6298,9 @@
     "internet access": 5.496500000000001,
     "leisure & culture": 9.196,
     "tolerance": 6.959999999999999,
-    "outdoors": 6.747
+    "outdoors": 6.747,
+    "summary": "<p>\n    Los Angeles is a sprawling city of 500 square miles and the heart of a metropolitan area with 18 million residents. It is a fabled California region, home to Hollywood and America's <b>entertainment industry</b> with <b>year-round sunshine</b>, world-famous beaches, and an intense <b>car culture</b>. The \"City of Angels\" is a magnet to people from around the world and a uniquely exciting environment.\n</p>\n\n\n    <p>Los Angeles is one of the top ten city matches for 11.5% of Teleport users.</p>\n",
+    "restaurant_ids": "32"
   },
   {
     "id": 192,
@@ -5949,7 +6331,9 @@
     "internet access": 5.968500000000001,
     "leisure & culture": 6.2195,
     "tolerance": 8.1595,
-    "outdoors": 6.303999999999999
+    "outdoors": 6.303999999999999,
+    "summary": "<p>Portland, Oregon, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Portland, OR is one of the top ten city matches for 0.7% of Teleport users.</p>\n",
+    "restaurant_ids": "47, 90, 3, 57, 54, 89"
   },
   {
     "id": 193,
@@ -5980,7 +6364,9 @@
     "internet access": 6.167000000000002,
     "leisure & culture": 7.478,
     "tolerance": 3.678,
-    "outdoors": 5.387499999999999
+    "outdoors": 5.387499999999999,
+    "summary": "<p>Detroit, Michigan, is among the top cities with a <b>free business environment</b>.\n\n    \n        Our data reflects that this city has a good ranking in <b>healthcare</b> and <b>leisure & culture</b>.\n    \n\n    \n</p>\n\n\n    <p>Detroit is one of the top ten city matches for 0.5% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 194,
@@ -6011,7 +6397,9 @@
     "internet access": 7.0985,
     "leisure & culture": 10.0,
     "tolerance": 6.7125,
-    "outdoors": 5.7475
+    "outdoors": 5.7475,
+    "summary": "<p>\n    The New York metropolitan area is one of the most populated cities in the world. New York City itself is an <b>international center for numerous industries</b> including finance, theater, television, film, arts, and technology. It is also home to an astonishing 37% of foreign-born residents. Costs are high, but so are the energy levels and <b>ambitious spirit</b>. Whether you're visiting or planning to move, the \"Big Apple\" has <b>something to offer for everyone</b>.\n</p>\n\n\n    <p>New York is one of the top ten city matches for 13.9% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   },
   {
     "id": 195,
@@ -6042,7 +6430,9 @@
     "internet access": 5.700500000000001,
     "leisure & culture": 8.564,
     "tolerance": 8.4815,
-    "outdoors": 5.659999999999999
+    "outdoors": 5.659999999999999,
+    "summary": "<p>\n    One of the oldest and most historic cities in the US, Boston is\u00a0a center of higher education with some of the <b>top universities</b> in the world. It has also developed a vibrant technology scene and is home to numerous <b>venture capital</b> firms, all supporting high rates of innovation and entrepreneurship. Add its\u00a0<b>tolerant</b> environment, great quality of <b>healthcare</b> and beautiful New England nature, and you've got an enticing city that attracts talent from around the world.\n</p>\n\n\n    <p>Boston is one of the top ten city matches for 12.8% of Teleport users.</p>\n",
+    "restaurant_ids": "83, 3, 13, 81, 32, 47, 90, 35, 54, 49, 23, 82, 99, 21, 69"
   },
   {
     "id": 196,
@@ -6073,6 +6463,8 @@
     "internet access": 6.4609999999999985,
     "leisure & culture": 7.1685,
     "tolerance": 5.294,
-    "outdoors": 4.501999999999999
+    "outdoors": 4.501999999999999,
+    "summary": "<p>Dallas, Texas, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>healthcare</b> and <b>environmental quality</b>.\n    \n\n    \n</p>\n\n\n    <p>Dallas is one of the top ten city matches for 6.0% of Teleport users.</p>\n",
+    "restaurant_ids": "47"
   }
 ]
