@@ -1145,6 +1145,7 @@ def get_valid_restaurants_from_valid_cities():
     json.dump(valid_restaurants, f)
 
 
+print(len(valid_cities))
 # get_zomato_cities_in_restaurant_file()
 # get_diff_on_restaurants()
 # get_cities_from_restaurants()

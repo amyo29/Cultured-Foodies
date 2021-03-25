@@ -204,21 +204,25 @@ def sort_cuisines():
 
 
 def insert_ids():
-    f = open("new_restaurants.json")
+    f = open("all_restaurants_with_city_id.json")
     cities = json.load(f)
 
     # cities_sorted_data = sorted(cities, key=lambda k: k["name"])
-    city_list = []
+    # city_list = []
     id = 1
     for city in cities:
-        city_dict = dict()
-        city_dict["id"] = id
-        city_dict.update(city)
-        city_list.append(city_dict)
+        city["id"] = id
+        # city_dict = dict()
+        # city_dict["id"] = id
+        # city_dict.update(city)
+        # city_list.append(city_dict)
         id += 1
 
     with open("all_restaurants.json", "w") as file:
-        json.dump(city_list, file)
+        json.dump(cities, file)
+
+
+insert_ids()
 
 
 def get_cuisines_in_a_city():
@@ -457,7 +461,199 @@ all_cuisines_ids = {
     101: "Yemeni",
 }
 
-all_cities = {}
+all_cities = {
+    "Alameda": 1,
+    "Albany": 2,
+    "Albuquerque": 3,
+    "Alexandria": 4,
+    "Alhambra": 5,
+    "Allen": 6,
+    "Alvarado": 7,
+    "Anchorage": 8,
+    "Anna": 9,
+    "Arlington": 11,
+    "Atlanta": 12,
+    "Aurora": 13,
+    "Austin": 14,
+    "Baltimore": 15,
+    "Bedford": 16,
+    "Bee Cave": 17,
+    "Bellevue": 18,
+    "Belmont": 19,
+    "Birmingham": 20,
+    "Bodega Bay": 21,
+    "Boise": 22,
+    "Boston": 23,
+    "Buffalo": 24,
+    "Burbank": 25,
+    "Calistoga": 26,
+    "Camas": 27,
+    "Campbell": 28,
+    "Canby": 29,
+    "Carrollton": 30,
+    "Castro Valley": 31,
+    "Cedar Hill": 32,
+    "Cedar Park": 33,
+    "Cerritos": 34,
+    "Chandler": 35,
+    "Charlotte": 36,
+    "Chattanooga": 37,
+    "Chicago": 38,
+    "Cincinnati": 39,
+    "Clackamas": 40,
+    "Claremont": 41,
+    "Cleburne": 42,
+    "Cleveland": 43,
+    "Colleyville": 44,
+    "Colorado Springs": 45,
+    "Columbus": 46,
+    "Cotati": 47,
+    "Covina": 48,
+    "Dallas": 49,
+    "Danville": 50,
+    "Denton": 51,
+    "Denver": 52,
+    "Des Moines": 53,
+    "Detroit": 54,
+    "Diamond Bar": 55,
+    "Dublin": 56,
+    "Emeryville": 57,
+    "Enterprise": 58,
+    "Eugene": 59,
+    "Euless": 60,
+    "Fife": 61,
+    "Fort Worth": 62,
+    "Fremont": 63,
+    "Frisco": 64,
+    "Garland": 65,
+    "Georgetown": 66,
+    "Gilbert": 67,
+    "Glendale": 69,
+    "Grand Prairie": 70,
+    "Grapevine": 71,
+    "Graton": 72,
+    "Guerneville": 73,
+    "Hayward": 74,
+    "Healdsburg": 75,
+    "Hermosa Beach": 76,
+    "Houston": 77,
+    "Huntington Park": 78,
+    "Hurst": 79,
+    "Indianapolis": 80,
+    "Irving": 81,
+    "Jacksonville": 82,
+    "Jersey City": 83,
+    "Kansas City": 84,
+    "Kent": 85,
+    "Kenwood": 86,
+    "Knoxville": 87,
+    "La Verne": 88,
+    "Lake Dallas": 89,
+    "Lake Oswego": 90,
+    "Lakeway": 91,
+    "Lakewood": 93,
+    "Lancaster": 94,
+    "Las Vegas": 95,
+    "Laurel": 96,
+    "Long Beach": 97,
+    "Los Angeles": 98,
+    "Los Gatos": 99,
+    "Louisville": 100,
+    "Madison": 101,
+    "Manhattan Beach": 102,
+    "Mansfield": 103,
+    "McKinney": 104,
+    "Memphis": 105,
+    "Menlo Park": 106,
+    "Mesa": 107,
+    "Miami": 108,
+    "Midlothian": 109,
+    "Milwaukee": 110,
+    "Monte Rio": 111,
+    "Mountain View": 112,
+    "Murphy": 113,
+    "Nashville": 114,
+    "New Orleans": 115,
+    "New York City": 116,
+    "Newark": 117,
+    "Novato": 118,
+    "Oakland": 119,
+    "Occidental": 120,
+    "Oklahoma City": 121,
+    "Omaha": 122,
+    "Ontario": 123,
+    "Oregon City": 124,
+    "Orlando": 125,
+    "Palmdale": 126,
+    "Palo Alto": 127,
+    "Pasadena": 128,
+    "Passaic": 129,
+    "Paterson": 130,
+    "Penngrove": 131,
+    "Peoria": 132,
+    "Petaluma": 133,
+    "Pflugerville": 134,
+    "Philadelphia": 135,
+    "Phoenix": 136,
+    "Pittsburgh": 137,
+    "Plano": 138,
+    "Pleasanton": 139,
+    "Pomona": 140,
+    "Portland": 141,
+    "Providence": 142,
+    "Rancho Palos Verdes": 143,
+    "Redmond": 144,
+    "Redondo Beach": 145,
+    "Redwood City": 146,
+    "Richardson": 147,
+    "Richmond": 148,
+    "Rochester": 150,
+    "Rockwall": 151,
+    "Rohnert Park": 152,
+    "Round Rock": 153,
+    "Rowlett": 154,
+    "Sacramento": 155,
+    "Salt Lake City": 156,
+    "San Anselmo": 157,
+    "San Antonio": 158,
+    "San Diego": 159,
+    "San Francisco": 160,
+    "San Jose": 161,
+    "San Leandro": 162,
+    "Santa Clara": 163,
+    "Santa Clarita": 164,
+    "Santa Maria": 165,
+    "Santa Rosa": 166,
+    "Saratoga": 167,
+    "Scottsdale": 168,
+    "Seattle": 169,
+    "Smyrna": 170,
+    "Sonoma": 171,
+    "Southlake": 172,
+    "St. Louis": 173,
+    "Stockton": 174,
+    "Sumner": 175,
+    "Sunnyvale": 176,
+    "Surprise": 177,
+    "Tacoma": 178,
+    "Tampa": 179,
+    "Tempe": 180,
+    "Tigard": 181,
+    "Torrance": 182,
+    "Tualatin": 183,
+    "Tukwila": 184,
+    "Vancouver": 186,
+    "Vashon": 187,
+    "Washington DC": 188,
+    "Washougal": 189,
+    "West Linn": 190,
+    "Whittier": 191,
+    "Wilsonville": 192,
+    "Windsor": 193,
+    "Woodland Park": 194,
+    "Worcester": 195,
+    "Wylie": 196,
+}
 
 
 def get_cuisines_and_id():
@@ -490,7 +686,7 @@ def get_cuisines_in_a_city_from_restaurants():
     # val = False
 
     for restaurant in restaurants:
-        city = restaurant["location"]["city"]
+        city = restaurant["city"]
         if city in all_cities:
             city_id = all_cities[city] - 1
             for cuisine in restaurant["cuisines"].split(", "):
@@ -505,11 +701,56 @@ def get_cuisines_in_a_city_from_restaurants():
                     # print(cities[city_id]["cuisines"])
                     cities[city_id]["cuisines"].append(cuisine)
 
-    with open("all_cities_with_cuisines.json", "w") as file:
+    with open("all_restaurants_with_city_id.json", "w") as file:
         json.dump(cities, file)
 
 
-# get_cuisines_in_a_city_from_restaurants
+def insert_city_id_for_restaurants():
+    f = open("all_restaurants.json")
+    restaurants = json.load(f)
+    print(len(restaurants))
+    for restaurant in restaurants:
+        city = restaurant["city"]
+        if city in all_cities:
+            restaurant["city_id"] = all_cities[city]
+
+    with open("all_restaurants_with_city_id.json", "w") as file:
+        json.dump(restaurants, file)
+
+
+# insert_city_id_for_restaurants()
+
+
+def get_city_ids():
+    f = open("all_cities.json")
+    cities = json.load(f)
+
+    result = dict()
+    for city in cities:
+        result[city["name"]] = city["id"]
+    print(result)
+
+
+# get_city_ids()
+# get_cuisines_in_a_city_from_restaurants()
+
+
+def add_cuisine_ids():
+    f = open("all_restaurants.json")
+    restaurants = json.load(f)
+    for restaurant in restaurants:
+        cuisines = restaurant["cuisines"].split(", ")
+        cuisineIDs = list()
+        for cuisine in cuisines:
+            if cuisine in all_cuisines_names:
+                cuisineIDs.append(all_cuisines_names[cuisine])
+            else:
+                cuisineIDs.append(-1)
+        # print(cuisineIDs)
+        restaurant["cuisineIDs"] = cuisineIDs
+
+    with open("all_restaurants.json", "w") as file:
+        json.dump(restaurants, file)
 
 
 def remove_cuisines_data_from_cities():
@@ -547,7 +788,7 @@ def insert_city_id():
 
 
 def check_if_we_have_enough_cuisines_dammit():
-    f = open("temp.json")
+    f = open("all_restaurants_with_city_id.json")
     restaurants = json.load(f)
 
     for restaurant in restaurants:
@@ -688,9 +929,6 @@ def arrayToOneString():
 
     f = open("all_cuisines.json", "w")
     json.dump(data, f)
-
-
-arrayToOneString()
 
 
 def dictToOneString():
