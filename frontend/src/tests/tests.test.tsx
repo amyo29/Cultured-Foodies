@@ -12,7 +12,7 @@ Enzyme.configure({
     adapter: new Adapter(),
 })
 
-test('renders the component', () => {
+test('About', () => {
 	const component = shallow(<About />);
 	expect(component).toMatchSnapshot();
 });
