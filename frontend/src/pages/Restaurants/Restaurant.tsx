@@ -1,23 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState} from "react";
 import { useParams } from "react-router-dom";
 import "../../styles/Restaurant.css";
-
-// const news_data = require("../../data/threeNews.json");
-// const countries_data = require("../../data/threeCountries.json");
-// const dishes_data = require("../../data/threeDishes.json");
-
-const cities_data = require("../../data/newData/threeCities.json");
-const cuisines_data = require("../../data/newData/cuisines.json");
-const restaurants_data = require("../../data/newData/threeRestaurants.json");
-
+import useAxios from 'axios-hooks';
 function Restaurant() {
   useEffect(() => {
     document.title = "News Article";
   }, []);
   const { id } = useParams<{ id: string }>();
+  const [{ data, loading, error }] = useAxios('/api/restaurants/id='+id) 
+  const [restaurant, setRestaurant] = useState<RestaurantInstance>();
 
-  let restaurant = restaurants_data[+id];
-
+  useEffect(() => {
+    const restaurantObj: RestaurantInstance = data as RestaurantInstance;
+    if (restaurantObj) {setRestaurant(restaurantObj);}
+  }, [data]);
   // // model navigation
   // let countryIndex = article["countryIndex"];
   // let dishIndex = article["dishIndex"];
@@ -41,9 +37,9 @@ function Restaurant() {
   // let source_desc = article["meta_business_summary"]
   // let topic = article["topic"]
 
-  let img = restaurant["restaurant_image"];
+  // let img = restaurant["restaurant_image"];
   // let authorImage = article["authorimage"];
-  let name = restaurant["name"];
+  // let name = restaurant["name"];
   // let language = article["language"];
   // let author = article["author"];
   // let publishedDate = article["published_date"];
@@ -56,8 +52,8 @@ function Restaurant() {
 
   return (
     <div className="center">
-      <img src={img} className="article-img"></img>
-      <h1>{name}</h1>
+      {/* <img src={img} className="article-img"></img> */}
+      <h1>{restaurant?.name}</h1>
     </div>
     //   <div className="center">
     //   <img src={img} className="article-img"></img>
@@ -93,5 +89,26 @@ function Restaurant() {
     // </div>
   );
 }
+export interface RestaurantInstance{
+  address: string;
+  aggregate_rating: string;
+  average_cost_for_two: number;
+  city: string;
+  cuisines: string;
+  highlights: string;
+  id: number;
+  latitude: string;
+  longitude: string;
+  menu_url: string;
+  name: string;
+  phone_numbers: string;
+  price_range: number;
+  restaurant_image: string;
+  state_abbrev: string;
+  timings: string;
+  url: string;
+  zipcode: string;
 
+
+}
 export default Restaurant;
