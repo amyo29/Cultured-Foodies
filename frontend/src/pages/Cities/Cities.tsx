@@ -3,8 +3,6 @@ import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import useAxios from 'axios-hooks'
 import { Pagination } from '@material-ui/lab';
-// const data = require("../../data/threeDishes.json");
-const data1 = require("../../data/newData/threeCities.json");
 
 function Cities() {
   useEffect(() => {
@@ -57,7 +55,7 @@ function Cities() {
                 <Card bg='card h-100'>
                   <Card.Body>
                     <a href= {"/cities/"+ i}><Card.Title>{city["name"]}</Card.Title></a>
-                    {/* <Card.Img variant="top" src={city["images"]["mobile"]} />*/}
+                    <Card.Img variant="top" src={city["imagesmobile"]} />
                       <p>
                         <b>State: </b> {city["state"]} <br />
                         <b>Leisure and Culture: </b> {city["leisure_culture"]} <br />
