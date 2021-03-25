@@ -505,8 +505,11 @@ def get_cuisines_in_a_city_from_restaurants():
                     # print(cities[city_id]["cuisines"])
                     cities[city_id]["cuisines"].append(cuisine)
 
-    with open("all_cities.json", "w") as file:
+    with open("all_cities_with_cuisines.json", "w") as file:
         json.dump(cities, file)
+
+
+# get_cuisines_in_a_city_from_restaurants
 
 
 def remove_cuisines_data_from_cities():
@@ -685,6 +688,7 @@ def arrayToOneString():
 
     f = open("all_cuisines.json", "w")
     json.dump(data, f)
+
 
 arrayToOneString()
 
