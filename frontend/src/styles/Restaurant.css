@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
+
 .article-img {
   display: block;
   margin-left: auto;
@@ -28,3 +30,50 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.Instance-header{
+	font-family: 'Abril Fatface', Georgia, Times, serif;
+	text-align: center;
+	margin: auto;
+	align-items: center;
+	padding-top : 5%;
+}
+
+.Instance{
+	background-color: #C7DAE2;
+	margin: auto;
+	justify-content: center;
+}
+h5{
+	font-family: 'Josefin Sans', Georgia, Times, serif;
+}
+
+.info{
+	align-items: center;
+	padding: 6%;
+}
+
+.instance-photo{
+	height: 10%;
+	width: 50%;
+	padding-bottom: 10%;
+	align-items: center;
+	margin: auto;
+}
+
+.instance-text{
+	height: 10%;
+	width: 50%;
+	padding-bottom: 10%;
+	align-items: center;
+	margin: auto;
+}
+
+
+.RelatedDeck{
+	font-family: 'Josefin Sans', Georgia, Times, serif;
+	padding: 6%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}   
