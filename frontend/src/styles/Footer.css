@@ -5,6 +5,10 @@
     color: #c7dae2;
 	text-align: center;
 	font-family: 'Abril FatFace', Georgia, Times, serif;
+	position:fixed;
+	left:0;
+	bottom:0;
+	right:0;
 }
 
 .filler{
