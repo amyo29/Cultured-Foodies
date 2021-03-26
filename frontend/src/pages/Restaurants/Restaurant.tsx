@@ -94,7 +94,7 @@ function Restaurant() {
                         Address: {restaurant?.address}
                     </Card.Text>
                     <Card.Text>
-                        Average Rating: ${restaurant?.aggregate_rating}
+                        Average Rating: {restaurant?.aggregate_rating}
                     </Card.Text>
                     <Card.Text>
                         Highlights: {restaurant?.highlights}
