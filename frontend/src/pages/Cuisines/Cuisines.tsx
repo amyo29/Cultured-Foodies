@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from "react";
 import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
 import useAxios from 'axios-hooks';
-import axios from 'axios';
 import { Pagination } from '@material-ui/lab';
-
+import {CountryInstance, CuisineInstance} from './Cuisine'
+import axios from 'axios'
 function Countries() {
   useEffect(() => {
     document.title = "Cuisines"
   }, [])
   const [cuisines, setCuisines] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
+  const [countries, setCountries]:any = useState({})
   const handleChange = (event:any, value:number) => {
     setPageNumber(value );
   };
@@ -29,6 +30,32 @@ function Countries() {
     });
     
   },[data])
+/// {"id": countryObject}
+
+  useEffect(() => {
+    axios.get("/api/countries").then((value) => {
+
+      let all_countries = value["data"]["countries"]
+      let dict_countries:any = {};
+      all_countries.forEach(function(country: any) {
+            let id: number = country["id"]
+            dict_countries[id] = country
+      });
+      console.log("here", dict_countries)
+      setCountries(dict_countries)
+      cuisines.forEach(function(cuisine: any) {
+        
+        let id: string = cuisine["countryID"]
+        let countries_string = id.split(", ")
+        console.log('countries Id', countries_string)
+        countries_string.forEach(function(cID: string){
+          console.log('here123', dict_countries[parseInt(cID)])
+        } );
+  });
+
+    });
+  }, [cuisines])
+
 
 
   const numPerPage = 12;
@@ -57,7 +84,20 @@ function Countries() {
                     <Card.Text>
                       <p>
                         <b>Country: </b>{cuisine['country']} <br />
+                        {cuisine?.countryID.split(', ').map((cID: string) =>(
+                            // <p>{ cID} </p>
+// <p>{countries[cID]?.name} </p>
+                          <>
 
+                          <p><b>Capital: </b>{countries[parseInt(cID)].capital} <br/>
+                          <b>Region: </b>{countries[parseInt(cID)].region} <br/>
+                          <b>Population:</b>{countries[parseInt(cID)].population}<br/>
+                          <b>Timezones:</b>{countries[parseInt(cID)].timezones}
+
+                           </p>
+
+                          </>
+                        ))}
                       </p>
                     </Card.Text>
                     <Card.Text>
