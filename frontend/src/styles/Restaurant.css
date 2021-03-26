@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
 
-.article-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
-.center {
-  text-align: center;
-}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 
-.flag-img {
-  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+  height: 100%; 
+  max-width: 100%;
 }
-
-.author-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-
-.dish {
-  text-align: center;
-}
-
-.px-2 {
-  padding-left: 10px;
-  padding-right: 10px;
+.card-text {
+  word-wrap: break-word;
 }
 
 .Instance-header{
@@ -37,12 +32,17 @@
 	margin: auto;
 	align-items: center;
 	padding-top : 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .Instance{
-	background-color: #C7DAE2;
-	margin: auto;
+  background-color: bisque;
+  margin: auto;
 	justify-content: center;
+  
 }
 h5{
 	font-family: 'Josefin Sans', Georgia, Times, serif;
@@ -51,6 +51,10 @@ h5{
 .info{
 	align-items: center;
 	padding: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .instance-photo{
@@ -59,20 +63,31 @@ h5{
 	padding-bottom: 10%;
 	align-items: center;
 	margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .instance-text{
-	height: 10%;
-	width: 50%;
-	padding-bottom: 10%;
+	/**height: 10%;**/  
+	/**width: 50%;**/
+	padding-bottom: 10%;      
 	align-items: center;
 	margin: auto;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
-
+    
 
 .RelatedDeck{
 	font-family: 'Josefin Sans', Georgia, Times, serif;
 	padding: 6%;
+  align-items: center;
+  word-wrap: break-word;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5%;

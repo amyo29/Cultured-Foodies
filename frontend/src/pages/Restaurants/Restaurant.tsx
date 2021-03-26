@@ -1,6 +1,6 @@
 import React, { useEffect , useState, Component} from "react";
 import { useParams } from "react-router-dom";
-import "../../styles/Restaurant.css";
+import "../../styles/Restaurant.css";  
 import Card from "react-bootstrap/Card";
 import useAxios from 'axios-hooks';
 import axios from 'axios';
@@ -85,16 +85,16 @@ function Restaurant() {
     <div>
         <body className="Instance center-div">
         <h2 className="Instance-header">{restaurant?.name}</h2>
-        <div className="info" text-align= "center">
-            <img className="instance-photo row" src={restaurant?.restaurant_image} alt=""/>
-            <Card className="instance-text row" style={{width: '34rem'}}>
+        <div className="info" align-items= "center">
+            <img className="row instance-photo" src={restaurant?.restaurant_image} alt=""/>
+            <Card className="row instance-text" style={{width: '55rem'}}>
                 <Card.Body>
                     <Card.Title>{restaurant?.name}</Card.Title>
                     <Card.Text>
                         Address: {restaurant?.address}
                     </Card.Text>
                     <Card.Text>
-                        Average Rating: ${restaurant?.aggregate_rating}
+                        Average Rating: {restaurant?.aggregate_rating}
                     </Card.Text>
                     <Card.Text>
                         Highlights: {restaurant?.highlights}
@@ -120,7 +120,7 @@ function Restaurant() {
                 </Card.Body>
             </Card>
         </div>
-        </body>
+        </body>  
     </div>
 
     //   <div className="center">
