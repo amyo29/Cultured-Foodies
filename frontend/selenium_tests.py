@@ -98,6 +98,40 @@ class Selenium_Tests(unittest.TestCase):
          assert "https://www.culturedfoodies.me/cuisines/61" in self.driver.current_url
 
 
+    def test_citiespage(self):
+        self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.implicitly_wait(30)
+        assert self.driver.title == "Cities"
+
+        self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/div[4]/div[2]/div/div/a"
+        )[0].click()
+         assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
+
+        self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/div[2]/div[1]/div/div/a"
+        )[0].click()
+         assert "https://www.culturedfoodies.me/cities/4" in self.driver.current_url
+
+
+        self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/nav/ul/li[5]/button"
+        )[0].click()
+
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/div[4]/div[1]/div/div/a""
+        )[0].click()
+         assert "https://www.culturedfoodies.me/cities/57" in self.driver.current_url
+
+
+
+    def test_restaurantspage(self):
+  
+
+
 
 if __name__ == '__main__':
 	unittest.main()
