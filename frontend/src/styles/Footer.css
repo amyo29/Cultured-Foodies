@@ -2,9 +2,9 @@
 .footer{
 	/*background-color: #e1b7b7;*/
     background-color: #400801;
-    color: #c7dae2;
+    color: white;
 	text-align: center;
-	font-family: 'Abril FatFace', Georgia, Times, serif;
+	font-family: 'Josefin Sans', Georgia, Times, serif;
 	position:fixed;
 	left:0;
 	bottom:0;
