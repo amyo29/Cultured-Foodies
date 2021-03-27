@@ -84,7 +84,7 @@ function About() {
 
       <h2>Meet the Team</h2>
       <Container>
-        <div className="row">
+        <div className="row mb-4">
             {loaded ? (
               teamData1.map((teamMember: any) => {
                 const {
@@ -116,7 +116,7 @@ function About() {
         </div>
       </Container>
       <Container>
-        <div className="row">
+        <div className="row mb-4">
             {loaded ? (
               teamData2.map((teamMember: any) => {
                 const {
@@ -177,7 +177,7 @@ function About() {
       </div>
       <Container>
         {APIRows.map((cols) => (
-          <div className="row">
+          <div className="row mb-4">
             {cols.map((col: any, i: any) => (
               <InfoCard
                 title={col.name}
@@ -194,7 +194,7 @@ function About() {
       </div>
       <Container>
         {toolRows.map((cols) => (
-          <div className="row">
+          <div className="row mb-4">
             {cols.map((col: any, i: any) => (
               <InfoCard
                 title={col.title}
