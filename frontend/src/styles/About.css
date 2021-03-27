@@ -56,3 +56,9 @@ h2{
 p{
 	font-family: 'Josefin Sans', Georgia, Times, serif;
 }
+a.card-block { color: inherit; }
+a.card,
+a.card:hover {
+  color: black;
+  text-decoration: none;
+}

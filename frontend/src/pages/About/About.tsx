@@ -92,6 +92,7 @@ function About() {
                   commits,
                   issues,
                   tests,
+                  linkedin
                 } = teamMember;
                 return (
                   <div className="col-md-4">
@@ -103,6 +104,7 @@ function About() {
                       commits={commits}
                       issues={issues}
                       tests={tests}
+                      linkedin = {linkedin}
                     />
                   </div>
                 );
@@ -124,6 +126,7 @@ function About() {
                   commits,
                   issues,
                   tests,
+                  linkedin
                 } = teamMember;
                 return (
                   <div className="col-md-4">
@@ -135,6 +138,7 @@ function About() {
                       commits={commits}
                       issues={issues}
                       tests={tests}
+                      linkedin = {linkedin}
                     />
                   </div>
                 );

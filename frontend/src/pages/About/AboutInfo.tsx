@@ -126,7 +126,7 @@ const TEAM_INFO = [
     img: LucindaImg,
     role: "Full-Stack | Phase 1 Project Leader",
     bio: "I'm a fourth year CS major at UT Austin from Dallas, TX. I enjoy reading manga and webtoons.",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/lucindanguyen/",
     commits: 0,
     issues: 0,
     tests: 0,
@@ -177,7 +177,7 @@ const TEAM_INFO = [
     role: "Full-Stack",
     bio:
       "I'm a fourth year CS student at UT Austin. I like to watch anime and kdramas in my sparetime. I also enjoy playing League!",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/joshua-arrojado/",
     commits: 0,
     issues: 0,
     tests: 0,
