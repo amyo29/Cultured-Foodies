@@ -72,11 +72,9 @@ function About() {
       <h1>About Us</h1>
 
       <p>
-        Cultured Foodies is a website that encourages its users to discover new
-        foods from different cultures. We want people to explore the world of
-        food from our website and learn more about new cuisines and dishes.
-        The data we've gathered highlights cuisines from various cultures and
-        their known presence in news outlets.
+        Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
+        With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, 
+        Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
       </p>
 
       <h2>Meet the Team</h2>
@@ -92,7 +90,6 @@ function About() {
                   commits,
                   issues,
                   tests,
-                  linkedin
                 } = teamMember;
                 return (
                   <div className="col-md-4">
@@ -104,7 +101,6 @@ function About() {
                       commits={commits}
                       issues={issues}
                       tests={tests}
-                      linkedin = {linkedin}
                     />
                   </div>
                 );
@@ -126,7 +122,6 @@ function About() {
                   commits,
                   issues,
                   tests,
-                  linkedin
                 } = teamMember;
                 return (
                   <div className="col-md-4">
@@ -138,7 +133,6 @@ function About() {
                       commits={commits}
                       issues={issues}
                       tests={tests}
-                      linkedin = {linkedin}
                     />
                   </div>
                 );

@@ -30,7 +30,13 @@ function Restaurant() {
     });
   }, [restaurant])
   
-  
+    //render: map long/lat or city names to render map
+    let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+    let cityMapURL =
+      "https://www.google.com/maps/embed/v1/place?key=" +
+      API_KEY +
+      "&q=" +
+      restaurant?.name;
 
   // // model navigation
   // let countryIndex = article["countryIndex"];
@@ -120,7 +126,12 @@ function Restaurant() {
                 </Card.Body>
             </Card>
         </div>
-        </body>  
+        </body>
+        <div className="center">
+          <h4>Map Location</h4>
+          <iframe src={cityMapURL} width="600" height="450" loading="lazy">
+          </iframe>
+        </div>   
     </div>
 
     //   <div className="center">
