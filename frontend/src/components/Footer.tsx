@@ -6,7 +6,7 @@ class Footer extends React.Component {
     return (
       <body>
         <div className="filler">hi</div>
-        <div className="footer">Get Cultured with CulturedFoodies</div>
+        <div className="footer">Explore the Intersection of Cuisine and Culture</div>
       </body>
     );
   }
