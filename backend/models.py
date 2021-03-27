@@ -1,18 +1,3 @@
-# from sqlalchemy.ext.declarative import declarative_base
-# from sqlalchemy import Column, Integer, String, Date
-# from sqlalchemy import create_engine
-# from flask_sqlalchemy import SQLAlchemy
-
-# # Base = declarative_base()
-# db = SQLAlchemy()
-
-# # City Model
-# class City(db.Model):
-
-# DATABASE_URI = 'postgres+psycopg2://foodies:XxiV76kTiB0p2CiNtnz8@cultured-foodies-database.csbdff6vqmka.us-east-2.rds.amazonaws.com:5432/foodiesdatabase'
-# engine = create_engine(DATABASE_URI)
-
-# db.metadata.create_all(engine)
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.postgresql import JSON
 
@@ -28,6 +13,8 @@ class Cuisine(db.Model):
     countryID = db.Column(db.String())
     restaurant_ids = db.Column(db.String())
     city_ids = db.Column(db.String())
+    restaurants = db.Column(db.String())
+    cities = db.Column(db.String())
 
 
 class City(db.Model):
@@ -60,6 +47,8 @@ class City(db.Model):
     outdoors = db.Column(db.Float)
     cuisine_ids = db.Column(db.String())
     restaurant_ids = db.Column(db.String())
+    cuisines = db.Column(db.String())
+    restaurants = db.Column(db.String())
 
 
 class Restaurant(db.Model):

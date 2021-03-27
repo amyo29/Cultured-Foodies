@@ -1,16 +1,3 @@
-# import json
-# from flask import Flask, request
-# from flask_cors import CORS
-# app = Flask(__name__)
-# CORS(app)
-# # NOTE: This route is needed for the default EB health check route
-# @app.route('/')
-# def home():
-#     return "ok"
-
-# if __name__ == '__main__':
-#     app.run(port=8080)
-
 from models import City, Cuisine, Restaurant, Country
 from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
@@ -22,7 +9,6 @@ import json
 import flask_marshmallow as marshmallow
 from models import *
 
-# Create flask app
 app = Flask(
     __name__,
     static_folder="../frontend/build/static",
@@ -56,6 +42,8 @@ class CuisineSchema(ma.Schema):
     countryID = fields.Str(required=False)
     restaurant_ids = fields.Str(required=False)
     city_ids = fields.Str(required=False)
+    restaurants = fields.Str(required=False)
+    cities = fields.Str(required=False)
 
 
 class CitySchema(ma.Schema):
@@ -88,6 +76,8 @@ class CitySchema(ma.Schema):
     outdoors = fields.Float(required=False)
     cuisine_ids = fields.Str(required=False)
     restaurant_ids = fields.Str(required=False)
+    cuisines = fields.Str(required=False)
+    restaurants = fields.Str(required=False)
 
 
 class RestaurantSchema(ma.Schema):
@@ -151,11 +141,6 @@ countries_schema = CountrySchema(many=True)
 
 
 # ENDPOINTS
-
-# NOTE: This route is needed for the default EB health check route
-# @app.route("/")
-# def home():
-#     return "ok"
 
 
 @app.route("/", defaults={"path": ""})
@@ -247,10 +232,6 @@ def get_country_id(id):
         return response
     return country_schema.jsonify(country)
 
-
-# if __name__ == "__main__":
-#     db.init_app(app)
-#     app.run(port=8080)
 
 if __name__ == "__main__":
     db.init_app(app)

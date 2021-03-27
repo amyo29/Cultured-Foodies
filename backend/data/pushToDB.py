@@ -80,6 +80,8 @@ class Cuisine(db.Model):
     countryID = db.Column(db.String())
     restaurant_ids = db.Column(db.String())
     city_ids = db.Column(db.String())
+    restaurants = db.Column(db.String())
+    cities = db.Column(db.String())
 
 
 def insert_data():
@@ -95,6 +97,8 @@ def insert_data():
             countryID=cuisine["countryID"],
             restaurant_ids=cuisine["restaurant_ids"],
             city_ids=cuisine["city_ids"],
+            restaurants=cuisine["restaurants"],
+            cities=cuisine["cities"],
         )
         db.session.add(country_db)
         db.session.commit()
