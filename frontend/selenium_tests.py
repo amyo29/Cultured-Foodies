@@ -48,6 +48,25 @@ class Selenium_Tests(unittest.TestCase):
         assert "https://www.culturedfoodies.me/restaurants" in self.driver.current_url
 
 
+    def test_aboutpage(self):
+        self.driver.get("https://www.culturedfoodies.me/about")
+        self.driver.implicitly_wait(30)
+        assert self.driver.title == "About"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/h2"
+        )[0].text
+        assert textVal == "Meet the Team"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div[3]/h2"
+        )[0].text
+        assert textVal == "Stats"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div[6]/h2"
+        )[0].text
+        assert textVal == "Tools"
 
 
 
