@@ -129,7 +129,32 @@ class Selenium_Tests(unittest.TestCase):
 
 
     def test_restaurantspage(self):
-  
+        self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.implicitly_wait(30)
+        assert self.driver.title == "Restaurants"
+
+        self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/table/tbody/tr[7]/td[2]/a"
+        )[0].click()
+         assert "https://www.culturedfoodies.me/restaurants/7" in self.driver.current_url
+
+        self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/a"
+        )[0].click()
+         assert "https://www.culturedfoodies.me/restaurants/1" in self.driver.current_url
+
+
+        self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
+        )[0].click()
+
+        self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/table/tbody/tr[5]/td[2]/a""
+        )[0].click()
+         assert "https://www.culturedfoodies.me/restaurants/64" in self.driver.current_url
 
 
 
