@@ -25,7 +25,6 @@ describe("Render views", () => {
 		const component = shallow(<Home />);
 		expect(component).toMatchSnapshot();
 	});
-	
 	test('About', () => {
 		const component = shallow(<About />);
 		expect(component).toMatchSnapshot();

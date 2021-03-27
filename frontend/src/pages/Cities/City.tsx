@@ -138,8 +138,11 @@ function matchesCityRestaurants(element:any, index: number, array: any){
       <section>
       <h5>Restauarants in {city?.name}</h5>
       {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
-      <h5>Cuisines {city?.name}</h5>
-      {cuisines?.map((c) => (<a href={"/cuisines/" + c.id}>{c.name}<br/></a>))}
+      <h5>Cuisines of {city?.name}</h5>
+      {cuisines?.map((c) => (
+      <a href={"/cuisines/" + c.id}>{c.name}<br/> <img src={c.dishes[0].image_url} width="200" height="200"></img></a>
+      ))}
+
       </section>
 
 
