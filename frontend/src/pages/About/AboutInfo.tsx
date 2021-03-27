@@ -9,9 +9,9 @@ import PostgreSQL from "./Images/Tools/PostgreSQL.png";
 import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
 import ZomatoLogo from "./Images/APIs/zomato.png";
 import WorldFoodLogo from "./Images/APIs/WorldFood.png";
-import TeleportLogo from "./Images/APIs/teleport.png"
+import TeleportLogo from "./Images/APIs/teleportAPI.png"
 import GoogleMapsLogo from "./Images/APIs/GoogleMapsLogo.jpeg"
-import GooglePlaceLogo from "./Image/APIs/GooglePlaceLogo.jpg"
+import GooglePlaceLogo from "./Images/APIs/GooglePlaceLogo.jpg"
 
 import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
