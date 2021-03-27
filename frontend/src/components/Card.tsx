@@ -7,8 +7,8 @@ const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
   return (
     <a href={link} target="_blank">
-      <Card bg='card h-100' style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={img} />
+      <Card className = "embed-responsive embed-responsive-21by9" >
+        <Card.Img className="card-img-top embed-responsive-item" src={img} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>

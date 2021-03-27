@@ -11,6 +11,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from "@material-ui/core/Grid";
 import { CardDeck } from "react-bootstrap";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
+import ZomatoLogo from "./Images/APIs/zomato.png"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,11 +28,10 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-
 function About() {
   useEffect(() => {
-    document.title = "About"
-  }, [])
+    document.title = "About";
+  }, []);
   const [spacing, setSpacing] = React.useState<GridSpacing>(2);
   const classes = useStyles();
 
@@ -63,6 +63,10 @@ function About() {
   for (i = 0, j = TOOLS_INFO.length; i < j; i += chunk) {
     toolRows.push(TOOLS_INFO.slice(i, i + chunk));
   }
+  var APIRows = [];
+  for (i = 0, j = API_INFO.length; i < j; i += chunk) {
+    APIRows.push(API_INFO.slice(i, i + chunk));
+  }
   return (
     <div className="font-style center">
       <h1>About Us</h1>
@@ -81,64 +85,64 @@ function About() {
       <h2>Meet the Team</h2>
       <div className="row main-card">
         <div className="col-7 card-deck">
-            {loaded ? (
-              teamData1.map((teamMember: any) => {
-                const {
-                  name,
-                  img,
-                  role,
-                  bio,
-                  commits,
-                  issues,
-                  tests,
-                } = teamMember;
+          {loaded ? (
+            teamData1.map((teamMember: any) => {
+              const {
+                name,
+                img,
+                role,
+                bio,
+                commits,
+                issues,
+                tests,
+              } = teamMember;
 
-                return (
-                  <ProfileCard
-                    name={name}
-                    img={img}
-                    role={role}
-                    bio={bio}
-                    commits={commits}
-                    issues={issues}
-                    tests={tests}
-                  />
-                );
-              })
-            ) : (
-              <div>Loading</div>
-            )}
+              return (
+                <ProfileCard
+                  name={name}
+                  img={img}
+                  role={role}
+                  bio={bio}
+                  commits={commits}
+                  issues={issues}
+                  tests={tests}
+                />
+              );
+            })
+          ) : (
+            <div>Loading</div>
+          )}
         </div>
       </div>
       <div className="row main-card">
         <div className="col-7 card-deck">
-            {loaded ? (
-              teamData2.map((teamMember: any) => {
-                const {
-                  name,
-                  img,
-                  role,
-                  bio,
-                  commits,
-                  issues,
-                  tests,
-                } = teamMember;
+          {loaded ? (
+            teamData2.map((teamMember: any) => {
+              const {
+                name,
+                img,
+                role,
+                bio,
+                commits,
+                issues,
+                tests,
+              } = teamMember;
 
-                return (
-                  <ProfileCard
-                    name={name}
-                    img={img}
-                    role={role}
-                    bio={bio}
-                    commits={commits}
-                    issues={issues}
-                    tests={tests}
-                  />
-                );
-              })
-            ) : (
-              <div>Loading</div>
-            )}
+              return (
+                <ProfileCard
+                  name={name}
+                  img={img}
+                  role={role}
+                  bio={bio}
+                  commits={commits}
+                  issues={issues}
+                  tests={tests}
+                />
+              );
+            })
+          ) : (
+            <div>Loading</div>
+          )}
         </div>
       </div>
 
@@ -170,28 +174,47 @@ function About() {
       <div>
         <h2>API's</h2>
       </div>
-
-      <Grid container className={classes.root} spacing={2} justify="center">
-        {API_INFO.map((api: any) => {
-          const { title, img, description, link } = api;
-
-          return (
-            <InfoCard
-              title={title}
-              img={img}
-              description={description}
-              link={link}
-            />
-          );
-        })}
-      </Grid>
+      <Container>
+        {APIRows.map((cols) => (
+          <div className="row">
+            {cols.map((col: any, i: any) => (
+              <div className="col-md-4">
+                <div className="card text-center">
+                  <a href={col.link} target="_blank">
+                      <img src={col.img} className = "card-img-top"/>
+                      <div className="card-body">
+                        <h5 className = "card-title">{col.title}</h5>
+                        <p className= "card-text"> {col.description}</p>
+                      </div>
+                    </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </Container>
+      {/* <Container>
+        {APIRows.map((cols) => (
+          <Row>
+            {cols.map((col: any, i: any) => (
+              <Col>
+                  <InfoCard
+                    title={col.title}
+                    img={col.img}
+                    description={col.description}
+                    link={col.link}
+                  />
+              </Col>
+            ))}
+          </Row>
+        ))}
+      </Container> */}
 
       <div>
         <h2>Tools</h2>
       </div>
 
-
-       <Container>
+      <Container>
         {toolRows.map((cols) => (
           <Row>
             {cols.map((col: any, i: any) => (
