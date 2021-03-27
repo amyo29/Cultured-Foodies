@@ -67,6 +67,7 @@ class CitySchema(ma.Schema):
     leisure_culture = fields.Float(required=False)
     tolerence = fields.Float(required=False)
     outdoors = fields.Float(required=False)
+    summary = fields.Str(required=False)
     cuisine_ids = fields.Str(required=False)
     restaurant_ids = fields.Str(required=False)
     cuisines = fields.Str(required=False)
