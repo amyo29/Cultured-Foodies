@@ -16,17 +16,17 @@ from schemas import (
 
 # ENDPOINTS
 
-# NOTE: This route is needed for the default EB health check route
-@app.route("/")
-def home():
-    return "ok"
+# # NOTE: This route is needed for the default EB health check route
+# @app.route("/")
+# def home():
+#     return "ok"
 
 
-# # routing for frontend
-# @app.route("/", defaults={"path": ""})
-# @app.route("/<path:path>")
-# def get_index(path):
-#     return render_template("index.html")
+# routing for frontend
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def get_index(path):
+    return render_template("index.html")
 
 
 # Fetch all cuisines

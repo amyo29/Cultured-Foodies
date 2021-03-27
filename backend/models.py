@@ -45,6 +45,7 @@ class City(db.Model):
     leisure_culture = db.Column(db.Float)
     tolerance = db.Column(db.Float)
     outdoors = db.Column(db.Float)
+    summary = db.Column(db.String())
     cuisine_ids = db.Column(db.String())
     restaurant_ids = db.Column(db.String())
     cuisines = db.Column(db.String())
