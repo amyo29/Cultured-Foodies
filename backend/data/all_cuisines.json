@@ -175,16 +175,8 @@
     "country": "United States of America",
     "dishes": [
       {
-        "name": "35th Anniversary Expedition Stout Reserve Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/35th-anniversary-expedition-stout-reserve-beer_6914.png"
-      },
-      {
-        "name": "60 Minute IPA Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/60_minute_ipa_beer_6875.jpg"
-      },
-      {
-        "name": "Abita Select Amber Ale",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/abita_select_amber_ale_6872.jpg"
+        "name": "Sliders",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/sliders_110.jpg"
       },
       {
         "name": "Ahi Tuna Poke Bowls",
@@ -201,18 +193,6 @@
       {
         "name": "Algonquin Cocktail",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/algonquin_cocktail_5849.jpg"
-      },
-      {
-        "name": "A Little Sumpin' Sumpin' Ale Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/a_little_sumpin_sumpin_ale_beer_4803.jpg"
-      },
-      {
-        "name": "All Day IPA Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/all-day-ipa-beer_7103.jpg"
-      },
-      {
-        "name": "Almond Bark",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/almond_bark_3262.jpg"
       },
       {
         "name": "Amaretto Colada",
@@ -243,16 +223,8 @@
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/anadama_bread_5669.jpg"
       },
       {
-        "name": "Angel City Ipa Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/angel_city_ipa_beer_4123.jpg"
-      },
-      {
         "name": "Angel Food Cake",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/angel_food_cake_3387.jpg"
-      },
-      {
-        "name": "Apple",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/apple_5626.jpg"
       }
     ],
     "description": "The cuisine of the United States reflects its history. The European colonization of the Americas yielded the introduction of a number of ingredients and cooking styles to the latter. The various styles continued expanding well into the 19th and 20th centuries, proportional to the influx of immigrants from many foreign nations; such influx developed a rich diversity in food preparation throughout the country.\nEarly Native Americans utilized a number of cooking methods in early american cuisine that have been blended with early European cooking methods to form the basis of american cuisine. When the colonists came to Virginia, Massachusetts, or any of the other English colonies on the eastern seaboard of north america, they farmed animals for clothing and meat in a similar fashion to what they had done in Europe. They had cuisine similar to their previous British cuisine. the american colonial diet varied depending on the settled region in which someone lived. Commonly hunted game included deer, bear, buffalo and wild turkey. A number of fats and oils made from animals served to cook much of the colonial foods. Prior to the revolution, New Englanders consumed large quantities of rum and beer, as maritime trade provided them relatively easy access to the goods needed to produce these items: rum was the distilled spirit of choice, as the main ingredient, molasses, was readily available from trade with the west indies. In comparison to the northern colonies, the southern colonies were quite diverse in their agricultural diet and did not have a central region of culture.\nhttp://en.wikipedia.org/wiki/cuisine_of_the_united_statesBeer is a favorite alcoholic beverage of Americans. The alcohol content of beers can vary widely, from a light weak beer with a low alcohol percentage to beers with a high alcohol percentage. Most places that sell beer and other alcohol often don't give you the alcohol percentage so this list can help you figure out what you \u2026This is a list of the most common hard seltzers sold in the US organized by calories from lowest to highest.Most common dishes consumed for breakfast in the United States of America.Common dishes you find in a restaurant diner in the US7% ABV and up",
@@ -305,16 +277,12 @@
     "country": "Argentina",
     "dishes": [
       {
-        "name": "Alfajor",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/alfajor_13.jpg"
-      },
-      {
-        "name": "Argentina vs Nigeria",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/argentina_vs_nigeria_4864.jpg"
-      },
-      {
         "name": "Asado",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/asado_144.jpg"
+      },
+      {
+        "name": "Alfajor",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/alfajor_13.jpg"
       },
       {
         "name": "Baked Quinoa Empanadas",
@@ -1053,14 +1021,6 @@
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brazilian_coconut_fish_stew_3777.jpg"
       },
       {
-        "name": "Brazil vs Mexico",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brazil_vs_mexico_4900.jpg"
-      },
-      {
-        "name": "Brazil vs Serbia",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brazil_vs_serbia_4867.jpg"
-      },
-      {
         "name": "Brigadeiro",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brigadeiro_1483.jpg"
       },
@@ -1414,10 +1374,6 @@
     "name": "Canadian",
     "country": "Canada",
     "dishes": [
-      {
-        "name": "Ace Hill Pilsner Beer",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/ace_hill_pilsner_beer_5077.jpg"
-      },
       {
         "name": "Bannocks",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bannocks_6072.jpg"
@@ -2516,12 +2472,12 @@
     "country": "France",
     "dishes": [
       {
-        "name": "Aioli",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aioli_4160.jpg"
-      },
-      {
         "name": "Aligot",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aligot_4367.jpg"
+      },
+      {
+        "name": "Aioli",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aioli_4160.jpg"
       },
       {
         "name": "Alsace Onion Tart",
@@ -2701,10 +2657,6 @@
     "name": "German",
     "country": "Germany",
     "dishes": [
-      {
-        "name": "Aachener Printen",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aachener_printen_1889.jpg"
-      },
       {
         "name": "Apple Strudel",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/apple_strudel_2996.jpeg"
@@ -3201,14 +3153,6 @@
     "country": "Iceland",
     "dishes": [
       {
-        "name": "Brennivin",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brennivin_5387.jpg"
-      },
-      {
-        "name": "Croatia vs Iceland",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/croatia_vs_iceland_4865.jpg"
-      },
-      {
         "name": "Dark Rye Bread",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/dark_rye_bread_4247.jpg"
       },
@@ -3278,6 +3222,10 @@
     "country": "India",
     "dishes": [
       {
+        "name": "Achari Chicken",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/achari_chicken_1494.jpg"
+      },
+      {
         "name": "Aam Panna",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aam_panna_6416.jpg"
       },
@@ -3292,10 +3240,6 @@
       {
         "name": "Achari Arbi",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/achari_arbi_6574.jpg"
-      },
-      {
-        "name": "Achari Chicken",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/achari_chicken_1494.jpg"
       },
       {
         "name": "Achari Murgh",
@@ -4406,10 +4350,6 @@
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bolillo_4937.jpg"
       },
       {
-        "name": "Brazil vs Mexico",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/brazil_vs_mexico_4900.jpg"
-      },
-      {
         "name": "Bu\u00f1uelo",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bunuelo_653.jpg"
       },
@@ -4450,10 +4390,6 @@
     "name": "Moldovan",
     "country": "Moldova",
     "dishes": [
-      {
-        "name": "Bors",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bors_4540.jpg"
-      },
       {
         "name": "Bor\u0219 De Burechiu\u0219e",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/bors-de-burechiuse_4552.jpg"
@@ -4914,10 +4850,6 @@
     "country": "Nicaragua",
     "dishes": [
       {
-        "name": "Coyol Wine",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/coyol_wine_4525.jpg"
-      },
-      {
         "name": "Guirila",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/guirila_4520.jpg"
       },
@@ -4977,10 +4909,6 @@
       {
         "name": "Akara",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/akara_4852.jpg"
-      },
-      {
-        "name": "Argentina vs Nigeria",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/argentina_vs_nigeria_4864.jpg"
       },
       {
         "name": "Boli",
@@ -5667,20 +5595,16 @@
     "country": "Russia",
     "dishes": [
       {
+        "name": "Beef Stroganoff",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/beef_stroganoff_1094.jpg"
+      },
+      {
         "name": "Aspic",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aspic_2894.jpg"
       },
       {
         "name": "Baked Apple",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/baked_apple_2919.jpeg"
-      },
-      {
-        "name": "Baltika 6",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/baltika_6_5019.jpg"
-      },
-      {
-        "name": "Beef Stroganoff",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/beef_stroganoff_1094.jpg"
       },
       {
         "name": "Blachinda",
@@ -6435,12 +6359,12 @@
     "country": "Spain",
     "dishes": [
       {
-        "name": "Aioli",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aioli_4160.jpg"
-      },
-      {
         "name": "Ajoarriero",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/ajoarriero_6713.jpg"
+      },
+      {
+        "name": "Aioli",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aioli_4160.jpg"
       },
       {
         "name": "Ajoblanco",
@@ -6620,10 +6544,6 @@
     "name": "Swedish",
     "country": "Sweden",
     "dishes": [
-      {
-        "name": "Absolut Vodka",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/absolut_vodka_3975.jpg"
-      },
       {
         "name": "Appelkaka",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/appelkaka_4634.jpg"
@@ -7315,6 +7235,10 @@
     "country": "Ukraine",
     "dishes": [
       {
+        "name": "Deruny",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/deruny_7178.jpg"
+      },
+      {
         "name": "Aspic",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/aspic_2894.jpg"
       },
@@ -7329,10 +7253,6 @@
       {
         "name": "Chicken Kiev",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/chicken_kiev_1847.jpg"
-      },
-      {
-        "name": "Deruny",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/deruny_7178.jpg"
       },
       {
         "name": "Holubtsi",
@@ -7408,12 +7328,12 @@
     "country": "Uruguay",
     "dishes": [
       {
-        "name": "Alfajor",
-        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/alfajor_13.jpg"
-      },
-      {
         "name": "Asado De Tira",
         "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/asado-de-tira_7055.jpg"
+      },
+      {
+        "name": "Alfajor",
+        "image_url": "https://wfg22p.s3.amazonaws.com/media/dishes/alfajor_13.jpg"
       },
       {
         "name": "Chaja",
