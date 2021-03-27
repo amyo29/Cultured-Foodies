@@ -4,12 +4,14 @@ import PostmanLogo from "./Images/Tools/PostmanLogo.png";
 import ReactLogo from "./Images/Tools/ReactLogo.png";
 import BootStrapLogo from "./Images/Tools/BootstrapLogo.png";
 import NameCheapLogo from "./Images/Tools/Namecheap.png";
+import PostgreSQL from "./Images/Tools/PostgreSQL.png";
 
 import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
-import EdamamLogo from "./Images/APIs/EdamamLogo.png";
-import NewscatcherLogo from "./Images/APIs/NewscatcherLogo.png";
-import YouTubeLogo from "./Images/APIs/YouTubeLogo.png"
+import ZomatoLogo from "./Images/APIs/zomato.png";
+import WorldFoodLogo from "./Images/APIs/WorldFood.png";
+import TeleportLogo from "./Images/APIs/teleport.png"
 import GoogleMapsLogo from "./Images/APIs/GoogleMapsLogo.jpeg"
+import GooglePlaceLogo from "./Image/APIs/GooglePlaceLogo.jpg"
 
 import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
@@ -26,16 +28,16 @@ const API_INFO = [
     link: "https://restcountries.eu/",
   },
   {
-    name: "Edamam",
-    img: EdamamLogo,
-    description: "Used to find dishes",
-    link: "https://developer.edamam.com/",
+    name: "Zomato API",
+    img: ZomatoLogo,
+    description: "Used to find restaurant data.",
+    link: "https://rapidapi.com/blog/how-to-use-zomato-api/",
   },
   {
-    name: "Newscatcher API",
-    img: NewscatcherLogo,
-    description: "Used to retrieve food related news content",
-    link: "https://newscatcherapi.com/",
+    name: "WorldFood API",
+    img: WorldFoodLogo,
+    description: "Used to retrieve cuisine and dishes data.",
+    link: "https://worldfood.guide/api/",
   },
   {
     name: "The Maps Embed API",
@@ -44,10 +46,16 @@ const API_INFO = [
     link: "https://developers.google.com/maps/documentation/embed/get-started",
   },
   {
-    name: "YouTube Data API",
-    img: YouTubeLogo,
-    description: "Used to show a recipe video of a dish",
-    link: "https://developers.google.com/youtube/v3/docs",
+    name: "Google Places Photos API",
+    img: GooglePlaceLogo,
+    description: "Used to retrieve images of restaurants.",
+    link: "https://developers.google.com/maps/documentation/places/web-service/photos",
+  },
+  {
+    name: "Teleport API",
+    img: TeleportLogo,
+    description: "Used to retrieve city data.",
+    link: "https://developers.teleport.org/api/",
   }
 ];
 
@@ -89,6 +97,12 @@ const TOOLS_INFO = [
     description: "Domain name registrar",
     link: "https://www.namecheap.com/",
   },
+  {
+    title: "PostgreSQL",
+    img: PostgreSQL,
+    description: "Open-source relational database management system.",
+    link: "https://postgresql.org",
+  }
 ];
 
 const TEAM_INFO = [
