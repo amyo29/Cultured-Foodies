@@ -7,23 +7,21 @@ const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
   return (
     <div className="col-md-4">
-      <div className="card text-center">
-        <a href={link} target="_blank">
+      <a href = {link} className="card text-center">
           <img src={img} className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text-center"> {description}</p>
           </div>
-        </a>
-      </div>
+      </a>
     </div>
   );
 };
 
 const ProfileCard = (props: any) => {
-  const { name, img, role, bio, commits, issues, tests } = props;
+  const { name, img, role, bio, commits, issues, tests, linkedin} = props;
   return (
-      <div className="card text-center">
+      <a href = {linkedin} className="card text-center">
           <img src={img} className="card-img-top profile-img img-fluid" />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
@@ -33,7 +31,7 @@ const ProfileCard = (props: any) => {
             <p className="card-text">Issues: {issues}</p>
             <p className="card-text">Tests: {tests}</p>
           </div>
-      </div>
+      </a>
   );
 };
 
