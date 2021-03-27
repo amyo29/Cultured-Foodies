@@ -75,9 +75,6 @@ function About() {
         Cultured Foodies is a website that encourages its users to discover new
         foods from different cultures. We want people to explore the world of
         food from our website and learn more about new cuisines and dishes.
-      </p>
-
-      <p>
         The data we've gathered highlights cuisines from various cultures and
         their known presence in news outlets.
       </p>
