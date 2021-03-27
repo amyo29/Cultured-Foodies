@@ -136,7 +136,7 @@ function matchesCityRestaurants(element:any, index: number, array: any){
 
       </section>
       <section>
-      <h5>Restauarants in {city?.name}</h5>
+      <h5>Restaurants in {city?.name}</h5>
       {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
       <h5>Cuisines {city?.name}</h5>
       {cuisines?.map((c) => (<a href={"/cuisines/" + c.id}>{c.name}<br/></a>))}
