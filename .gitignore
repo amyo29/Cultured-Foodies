@@ -12,6 +12,7 @@ frontend/coverage
 frontend/build
 
 # misc
+backend/models.pyc
 backend/__pycache__
 *.DS_Store
 frontend/.env.local

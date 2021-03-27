@@ -1,25 +1,23 @@
-# Sets up a python and linux environment
-#FROM python:alpine3.11
+# Sets up a Python and Linux environment
 FROM nikolaik/python-nodejs
 
-# Creates the docker directory
+# Create Docker directory
 COPY . /app
 RUN ls
 WORKDIR /app
 
-# Installs python packages
+# Install Python packages
 RUN pip install -r ./backend/requirements.txt
 RUN pip3 install psycopg2
 
-#### Need to write npm run build ####
+# Run frontend server
 RUN cd ./frontend && npm install && npm run build
 
-# Exposes port 5000 which Flask app will use to the container
-# so that later it can be mapped with the system’s port
+# Expose port 5000 for Flask app
 EXPOSE 5000
 
 COPY . /app
 
-# Runs <python main.py> when we start our terminal
+# Runs <python app.py>
 ENTRYPOINT [ "python" ]
 CMD [ "./backend/app.py" ]
