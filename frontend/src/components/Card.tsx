@@ -8,7 +8,7 @@ const InfoCard = (props: any) => {
   return (
     <div className="col-md-4">
       <a href = {link} className="card text-center">
-          <img src={img} className="card-img-top" />
+          <img src={img} className="card-img-top info-card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text-center"> {description}</p>

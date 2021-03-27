@@ -2,7 +2,7 @@ import AWSLogo from "./Images/Tools/AWSLogo.png";
 import GitLabLogo from "./Images/Tools/GitLabLogo.png";
 import PostmanLogo from "./Images/Tools/PostmanLogo.png";
 import ReactLogo from "./Images/Tools/ReactLogo.png";
-import BootStrapLogo from "./Images/Tools/BootstrapLogo.png";
+import BootStrapLogo from "./Images/Tools/BootstrapLogo.jpg";
 import NameCheapLogo from "./Images/Tools/Namecheap.png";
 import PostgreSQL from "./Images/Tools/PostgreSQL.png";
 
@@ -11,7 +11,7 @@ import ZomatoLogo from "./Images/APIs/zomato.png";
 import WorldFoodLogo from "./Images/APIs/WorldFood.png";
 import TeleportLogo from "./Images/APIs/teleportAPI.png"
 import GoogleMapsLogo from "./Images/APIs/GoogleMapsLogo.jpeg"
-import GooglePlaceLogo from "./Images/APIs/GooglePlaceLogo.jpg"
+import GooglePlaceLogo from "./Images/APIs/GooglePlaceLogo.png"
 
 import AmyImg from "./Images/Members/AmyImg.jpg";
 import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
@@ -40,7 +40,7 @@ const API_INFO = [
     link: "https://worldfood.guide/api/",
   },
   {
-    name: "The Maps Embed API",
+    name: "Google Maps Embed API",
     img: GoogleMapsLogo,
     description: "Used to show the map location of a country",
     link: "https://developers.google.com/maps/documentation/embed/get-started",

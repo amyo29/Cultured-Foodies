@@ -174,7 +174,7 @@ function About() {
       </div>
 
       <div>
-        <h2>API's</h2>
+        <h2>APIs</h2>
       </div>
       <Container>
         {APIRows.map((cols) => (
