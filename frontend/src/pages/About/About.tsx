@@ -11,7 +11,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from "@material-ui/core/Grid";
 import { CardDeck } from "react-bootstrap";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
-import ZomatoLogo from "./Images/APIs/zomato.png"
+import ZomatoLogo from "./Images/APIs/zomato.png";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -178,56 +178,31 @@ function About() {
         {APIRows.map((cols) => (
           <div className="row">
             {cols.map((col: any, i: any) => (
-              <div className="col-md-4">
-                <div className="card text-center">
-                  <a href={col.link} target="_blank">
-                      <img src={col.img} className = "card-img-top"/>
-                      <div className="card-body">
-                        <h5 className = "card-title">{col.title}</h5>
-                        <p className= "card-text"> {col.description}</p>
-                      </div>
-                    </a>
-                </div>
-              </div>
+              <InfoCard
+                title={col.name}
+                img={col.img}
+                description={col.description}
+                link={col.link}
+              />
             ))}
           </div>
         ))}
       </Container>
-      {/* <Container>
-        {APIRows.map((cols) => (
-          <Row>
-            {cols.map((col: any, i: any) => (
-              <Col>
-                  <InfoCard
-                    title={col.title}
-                    img={col.img}
-                    description={col.description}
-                    link={col.link}
-                  />
-              </Col>
-            ))}
-          </Row>
-        ))}
-      </Container> */}
-
       <div>
         <h2>Tools</h2>
       </div>
-
       <Container>
         {toolRows.map((cols) => (
-          <Row>
+          <div className="row">
             {cols.map((col: any, i: any) => (
-              <Col>
-                <InfoCard
-                  title={col.title}
-                  img={col.img}
-                  description={col.description}
-                  link={col.link}
-                />
-              </Col>
+              <InfoCard
+                title={col.title}
+                img={col.img}
+                description={col.description}
+                link={col.link}
+              />
             ))}
-          </Row>
+          </div>
         ))}
       </Container>
       <div>
