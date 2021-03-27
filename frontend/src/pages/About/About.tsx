@@ -83,69 +83,70 @@ function About() {
       </p>
 
       <h2>Meet the Team</h2>
-      <div className="row main-card">
-        <div className="col-7 card-deck">
-          {loaded ? (
-            teamData1.map((teamMember: any) => {
-              const {
-                name,
-                img,
-                role,
-                bio,
-                commits,
-                issues,
-                tests,
-              } = teamMember;
-
-              return (
-                <ProfileCard
-                  name={name}
-                  img={img}
-                  role={role}
-                  bio={bio}
-                  commits={commits}
-                  issues={issues}
-                  tests={tests}
-                />
-              );
-            })
-          ) : (
-            <div>Loading</div>
-          )}
+      <Container>
+        <div className="row">
+            {loaded ? (
+              teamData1.map((teamMember: any) => {
+                const {
+                  name,
+                  img,
+                  role,
+                  bio,
+                  commits,
+                  issues,
+                  tests,
+                } = teamMember;
+                return (
+                  <div className="col-md-4">
+                    <ProfileCard
+                      name={name}
+                      img={img}
+                      role={role}
+                      bio={bio}
+                      commits={commits}
+                      issues={issues}
+                      tests={tests}
+                    />
+                  </div>
+                );
+              })
+            ) : (
+              <div>Loading</div>
+            )}
         </div>
-      </div>
-      <div className="row main-card">
-        <div className="col-7 card-deck">
-          {loaded ? (
-            teamData2.map((teamMember: any) => {
-              const {
-                name,
-                img,
-                role,
-                bio,
-                commits,
-                issues,
-                tests,
-              } = teamMember;
-
-              return (
-                <ProfileCard
-                  name={name}
-                  img={img}
-                  role={role}
-                  bio={bio}
-                  commits={commits}
-                  issues={issues}
-                  tests={tests}
-                />
-              );
-            })
-          ) : (
-            <div>Loading</div>
-          )}
+      </Container>
+      <Container>
+        <div className="row">
+            {loaded ? (
+              teamData2.map((teamMember: any) => {
+                const {
+                  name,
+                  img,
+                  role,
+                  bio,
+                  commits,
+                  issues,
+                  tests,
+                } = teamMember;
+                return (
+                  <div className="col-md-4">
+                    <ProfileCard
+                      name={name}
+                      img={img}
+                      role={role}
+                      bio={bio}
+                      commits={commits}
+                      issues={issues}
+                      tests={tests}
+                    />
+                  </div>
+                );
+              })
+            ) : (
+              <div>Loading</div>
+            )}
         </div>
-      </div>
-
+      </Container>
       <div>
         <h2>Stats</h2>
         <div>
@@ -208,18 +209,20 @@ function About() {
       <div>
         <h2>Our Data</h2>
       </div>
-      <Grid container className={classes.root} spacing={2} justify="center">
-        <InfoCard
-          title="Gitlab Repo"
-          img={TOOLS_INFO[1].img}
-          link="https://gitlab.com/cs373-group-11/cultured-foodies"
-        />
-        <InfoCard
-          title="Postman API"
-          img={TOOLS_INFO[2].img}
-          link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
-        />
-      </Grid>
+      <Container>
+        <div className="row justify-content-center">
+          <InfoCard
+            title="Gitlab Repo"
+            img={TOOLS_INFO[1].img}
+            link="https://gitlab.com/cs373-group-11/cultured-foodies"
+          />
+          <InfoCard
+            title="Postman API"
+            img={TOOLS_INFO[2].img}
+            link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
+          />
+        </div>
+      </Container>
     </div>
   );
 }

@@ -12,7 +12,7 @@ const InfoCard = (props: any) => {
           <img src={img} className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
-            <p className="card-text"> {description}</p>
+            <p className="card-text-center"> {description}</p>
           </div>
         </a>
       </div>
@@ -23,18 +23,6 @@ const InfoCard = (props: any) => {
 const ProfileCard = (props: any) => {
   const { name, img, role, bio, commits, issues, tests } = props;
   return (
-    // <Card style={{ width: "18rem" }}>
-    //   <Card.Body className="center">
-    //     <Card.Img variant="top" src={img} className="profile-img img-fluid" />
-    //     <Card.Title>{name}</Card.Title>
-    //     <Card.Text>{role}</Card.Text>
-    //     <Card.Text>{bio}</Card.Text>
-    //     <Card.Text>Commits: {commits}</Card.Text>
-    //     <Card.Text>Issues: {issues}</Card.Text>
-    //     <Card.Text>Tests: {tests}</Card.Text>
-    //   </Card.Body>
-    // </Card>
-    <div className="col-md-4">
       <div className="card text-center">
           <img src={img} className="card-img-top profile-img img-fluid" />
           <div className="card-body">
@@ -46,7 +34,6 @@ const ProfileCard = (props: any) => {
             <p className="card-text">Tests: {tests}</p>
           </div>
       </div>
-    </div>
   );
 };
 
