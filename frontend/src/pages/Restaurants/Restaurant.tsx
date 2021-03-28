@@ -118,16 +118,24 @@ function Restaurant() {
               </Card.Text>
               Cuisines for this restaurant: <br />
               {restaurant?.cuisines ? (
-                restaurant?.cuisines?.split(", ").map((c, index) => (
-                  <a
-                    href={
-                      "/cuisines/" + restaurant?.cuisine_ids.split(", ")[index]
-                    }
-                  >
-                    {c}
-                    <br />
-                  </a>
-                ))
+                restaurant?.cuisines?.split(", ").map((c, index) =>
+                  restaurant?.cuisine_ids.split(", ")[index] !== "-1" ? (
+                    <a
+                      href={
+                        "/cuisines/" +
+                        restaurant?.cuisine_ids.split(", ")[index]
+                      }
+                    >
+                      {c}
+                      <br />
+                    </a>
+                  ) : (
+                    <a>
+                      {c}
+                      <br />
+                    </a>
+                  )
+                )
               ) : (
                 <p>loading</p>
               )}
