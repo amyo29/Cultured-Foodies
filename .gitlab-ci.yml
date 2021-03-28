@@ -4,9 +4,11 @@
 #     - echo "Hello, $GITLAB_USER_LOGIN!"
 
 python-unit-tests:
+  image: python:3.6
   stage: test
   script:
     - echo "This job runs the Python unit tests in the backend."
+    - pip install -r backend/requirements.txt
     - make python-unit-tests
 
 # test-job2:
