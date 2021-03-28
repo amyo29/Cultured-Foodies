@@ -1,4 +1,3 @@
-image: node:latest
 # test-job:
 #   stage: build
 #   script:
@@ -8,7 +7,6 @@ python-unit-tests:
   stage: test
   script:
     - echo "This job runs the Python unit tests in the backend."
-    - pip install -r backend/requirements.txt
     - make python-unit-tests
 
 # test-job2:
