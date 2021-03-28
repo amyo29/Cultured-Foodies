@@ -1,5 +1,6 @@
 import flask
 import json
+from jinja2 import TemplateNotFound
 from flask import jsonify, render_template
 from models import db, City, Cuisine, Restaurant, Country
 from schemas import (
@@ -15,18 +16,17 @@ from schemas import (
 )
 
 # ENDPOINTS
+#
 
 # NOTE: This route is needed for the default EB health check route
-@app.route("/")
-def home():
-    return "ok"
-
-
-# # routing for frontend
-# @app.route("/", defaults={"path": ""})
-# @app.route("/<path:path>")
-# def get_index(path):
-#     return render_template("index.html")
+# Routing to frontend/build/index.html
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def home(path):
+    try:
+        return render_template("index.html")
+    except TemplateNotFound:
+        return "Looking for index.html here..."
 
 
 # Fetch all cuisines
