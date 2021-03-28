@@ -35,6 +35,7 @@ function Restaurants() {
             <th>#</th>
             <th>Name</th>
             <th>City</th>
+            <th>Cuisines</th>
             <th>Rating</th>
             <th>Price Range</th>
             <th>Average Cost for Two</th>
@@ -53,6 +54,7 @@ function Restaurants() {
                 </a>
               </td>
               <td>{restaurant["city"]}</td>
+              <td>{restaurant["cuisines"]}</td>
               <td>{restaurant["aggregate_rating"]}</td>
               <td>{restaurant["price_range"]}</td>
               <td>${restaurant["average_cost_for_two"]}</td>
