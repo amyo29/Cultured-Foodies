@@ -31,7 +31,7 @@ def home(path):
 # Fetch all cuisines
 @app.route("/api/cuisines", methods=["GET"])
 def get_cuisines():
-    all_cuisines = Cuisine.query.all()
+    all_cuisines = Cuisine.query.order_by(Cuisine.id).all()
     result = cuisines_schema.dump(all_cuisines)
     return jsonify({"cuisines": result})
 
@@ -52,7 +52,7 @@ def get_cuisine_id(id):
 # Fetch all cities
 @app.route("/api/cities", methods=["GET"])
 def get_cities():
-    all_cities = City.query.all()
+    all_cities = City.query.order_by(City.id).all()
     result = cities_schema.dump(all_cities)
     return jsonify({"cities": result})
 
@@ -73,7 +73,7 @@ def get_city_id(id):
 # Fetch all restaurants
 @app.route("/api/restaurants", methods=["GET"])
 def get_restaurants():
-    all_restaurants = Restaurant.query.all()
+    all_restaurants = Restaurant.query.order_by(Restaurant.id).all()
     result = restaurants_schema.dump(all_restaurants)
     return jsonify({"restaurants": result})
 
@@ -94,7 +94,7 @@ def get_restaurant_id(id):
 # Fetch all countries
 @app.route("/api/countries", methods=["GET"])
 def get_countries():
-    all_countries = Country.query.all()
+    all_countries = Country.query.order_by(Country.id).all()
     result = countries_schema.dump(all_countries)
     return jsonify({"countries": result})
 
