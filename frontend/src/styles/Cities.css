@@ -14,3 +14,10 @@ a:hover {
 a:active {
     color: green;
 }
+
+.row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}

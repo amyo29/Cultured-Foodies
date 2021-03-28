@@ -113,12 +113,14 @@ function Countries() {
           </Row>
         ))}
       </Container>
-      <Pagination
-        count={parseInt(cuisines.length / numPerPage + "")}
+      <div className="row pagination">
+      <Pagination   
+        count={Math.ceil(cuisines.length / numPerPage )}
         page={pageNumber}
         onChange={handleChange}
-        className="pagination"
       ></Pagination>
+      {startIndex+1 } - {Math.min(startIndex + numPerPage, cuisines?.length)} of {cuisines?.length}
+      </div>
 
       {/* <Footer></Footer> */}
     </div>

@@ -1,34 +1,33 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import Footer from "../../components/Footer";
-import useAxios from 'axios-hooks'
-import { Pagination } from '@material-ui/lab';
+import useAxios from "axios-hooks";
+import { Pagination } from "@material-ui/lab";
 
 function Cities() {
   useEffect(() => {
-    document.title = "Cities"
-  }, [])
+    document.title = "Cities";
+  }, []);
   const [cities, setCities] = useState([]);
-  const [pageNumber, setPageNumber] = useState(0);
-  const handleChange = (event:any, value:number) => {
+  const [pageNumber, setPageNumber] = useState(1);
+  const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
-  const [{ data, loading, error }] = useAxios('/api/cities')
+  const [{ data, loading, error }] = useAxios("/api/cities");
   useEffect(() => {
-    document.title = "Cities"
-
-  }, [])
+    document.title = "Cities";
+  }, []);
   useEffect(() => {
     if (data) {
-      setCities(data.cities)
-      console.log(data.cities)
+      setCities(data.cities);
+      console.log(data.cities);
     }
-  },[data])
-
+  }, [data]);
 
   const numPerPage = 12;
-  const startIndex= numPerPage*pageNumber;
-  const currentData = cities.slice(startIndex, startIndex+numPerPage);
+  const startIndex = numPerPage * (pageNumber-1);
+  console.log(startIndex)
+  const currentData = cities.slice(startIndex, startIndex + numPerPage);
   console.log("Cities", cities);
   var i, j;
   var chunk = 3;
@@ -38,7 +37,7 @@ function Cities() {
   }
 
   return (
-    <div>
+    <div style={{display: 'inline-block', justifyContent: 'horizontal', alignItems:"center"}}>
       <h1 className="text-align center">Cities</h1>
       <Container>
         {/* {currentData.map((city) => (
@@ -49,33 +48,40 @@ function Cities() {
         {rows.map((cols) => (
           <Row>
             {cols.map((city: any, i: any) => (
-              <Col className = "col-sm-4 py-2">
-         
-                
-                <Card bg='card h-100'>
+              <Col className="col-sm-4 py-2">
+                <Card bg="card h-100">
                   <Card.Body>
-                    <a href= {"/cities/"+ city["id"]}><Card.Title>{city["name"]}</Card.Title></a>
+                    <a href={"/cities/" + city["id"]}>
+                      <Card.Title>{city["name"]}</Card.Title>
+                    </a>
                     <Card.Img variant="top" src={city["imagesmobile"]} />
-                      <p>
-                        <b>State: </b> {city["state"]} <br />
-                        <b>Leisure and Culture: </b> {city["leisure_culture"]} <br />
-                        <b>Cost of Living: </b> {city["cost_of_living"]} <br />
-                        <b>Environmental Quality: </b> {city["environmental_quality"]} <br />
-                        <b>Travel Connectivity: </b> {city["travel_connectivity"]} <br />
-                        <b>Population: </b> {city["population"]} <br />
-                      </p> 
+                    <p>
+                      <b>State: </b> {city["state"]} <br />
+                      <b>Leisure and Culture: </b> {city["leisure_culture"]}{" "}
+                      <br />
+                      <b>Cost of Living: </b> {city["cost_of_living"]} <br />
+                      <b>Environmental Quality: </b>{" "}
+                      {city["environmental_quality"]} <br />
+                      <b>Travel Connectivity: </b> {city["travel_connectivity"]}{" "}
+                      <br />
+                      <b>Population: </b> {city["population"]} <br />
+                    </p>
                   </Card.Body>
-                </Card> 
-                
-                
+                </Card>
               </Col>
             ))}
           </Row>
         ))}
-
       </Container>
-      <Pagination className="pagination" count = {parseInt((cities.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
-      {/* <Footer></Footer> */}
+      <div className="row pagination">
+      <Pagination   
+        count={Math.ceil(cities.length / numPerPage )}
+        page={pageNumber}
+        onChange={handleChange}
+      ></Pagination>
+      {startIndex+1 } - {Math.min(startIndex + numPerPage, cities?.length)} of {cities?.length}
+      </div>
+
     </div>
   );
 }
