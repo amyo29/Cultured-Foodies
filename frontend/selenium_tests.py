@@ -14,7 +14,7 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_homepage(self):
         self.driver.get("https://www.culturedfoodies.me")
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(30)
         assert self.driver.title == "Cultured Foodies"
 
         summary = self.driver.find_elements_by_xpath("//div[@class = 'Title-summary']")[
@@ -25,45 +25,45 @@ class Selenium_Tests(unittest.TestCase):
     def test_navbar(self):
         self.driver.get("https://www.culturedfoodies.me")
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Toggle navigation']"
         )[0].click()
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath("//a[@href = '/about']")[0].click()
         assert "https://www.culturedfoodies.me/about" in self.driver.current_url
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Toggle navigation']"
         )[0].click()
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath("//a[@href = '/cuisines']")[0].click()
         assert "https://www.culturedfoodies.me/cuisines" in self.driver.current_url
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Toggle navigation']"
         )[0].click()
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath("//a[@href = '/cities']")[0].click()
         assert "https://www.culturedfoodies.me/cities" in self.driver.current_url
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Toggle navigation']"
         )[0].click()
 
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath("//a[@href = '/restaurants']")[0].click()
         assert "https://www.culturedfoodies.me/restaurants" in self.driver.current_url
 
     def test_about_page(self):
         self.driver.get("https://www.culturedfoodies.me/about")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         assert self.driver.title == "About"
 
         textVal = self.driver.find_elements_by_xpath(
@@ -83,25 +83,25 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_cuisines_page(self):
         self.driver.get("https://www.culturedfoodies.me/cuisines")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         assert self.driver.title == "Cuisines"
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath("//a[@href = '/cuisines/2']")[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert "https://www.culturedfoodies.me/cuisines/2" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath("//a[@href = '/cuisines/10']")[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert "https://www.culturedfoodies.me/cuisines/10" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Go to page 5']"
         )[0]
@@ -115,25 +115,25 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_cities_page(self):
         self.driver.get("https://www.culturedfoodies.me/cities")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         assert self.driver.title == "Cities"
 
         self.driver.get("https://www.culturedfoodies.me/cities")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath("//a[@href = '/cities/11']")[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cities")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath("//a[@href = '/cities/4']")[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert "https://www.culturedfoodies.me/cities/4" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cities")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Go to page 5']"
         )[0]
@@ -147,25 +147,29 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_restaurants_page(self):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         assert self.driver.title == "Restaurants"
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath("//a[@href = '/restaurants/7']")[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert "https://www.culturedfoodies.me/restaurants/7" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
-        self.driver.implicitly_wait(20)
-        element = self.driver.find_elements_by_xpath("//a[@href = '/restaurants/1']")[0]
+        self.driver.implicitly_wait(30)
+        element = self.driver.find_elements_by_xpath("//a[@href = '/restaurants/10']")[
+            0
+        ]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
-        assert "https://www.culturedfoodies.me/restaurants/1" in self.driver.current_url
+        assert (
+            "https://www.culturedfoodies.me/restaurants/10" in self.driver.current_url
+        )
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
             "//button[@aria-label = 'Go to page 5']"
         )[0]
@@ -183,7 +187,7 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_cuisine_instance_page(self):
         self.driver.get("https://www.culturedfoodies.me/cuisines/51")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/section[1]/h5[1]"
@@ -202,7 +206,7 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_city_instance_page(self):
         self.driver.get("https://www.culturedfoodies.me/cities/133")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/section[1]/h2"
@@ -221,7 +225,7 @@ class Selenium_Tests(unittest.TestCase):
 
     def test_restaurant_instance_page(self):
         self.driver.get("https://www.culturedfoodies.me/restaurants/3263")
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/body/div/div/div/div"
