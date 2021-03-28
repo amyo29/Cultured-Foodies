@@ -43,7 +43,7 @@ function Restaurants() {
         <tbody>
           {currentData.map((restaurant: any, i: any) => (
             <tr>
-              <td>{i + 1}</td>
+              <td>{startIndex + i + 1}</td>
               <td>
                 <a
                   href={"/restaurants/" + restaurant["id"]}
