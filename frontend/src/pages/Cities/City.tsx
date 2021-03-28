@@ -5,30 +5,28 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import useAxios from 'axios-hooks';
-import axios from 'axios';
-import {RestaurantInstance} from "../Restaurants/Restaurant";
-import {CuisineInstance} from "../Cuisines/Cuisine";
-
-
+import useAxios from "axios-hooks";
+import axios from "axios";
+import { RestaurantInstance } from "../Restaurants/Restaurant";
+import { CuisineInstance } from "../Cuisines/Cuisine";
 
 function City() {
   useEffect(() => {
     document.title = "City";
   }, []);
   const { id } = useParams<{ id: string }>();
-  const [{ data, loading, error }] = useAxios('/api/cities/id='+id) 
+  const [{ data, loading, error }] = useAxios("/api/cities/id=" + id);
   const [city, setCity] = useState<CityInstance>();
   const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
   const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
 
   /* set city data */
-  function matchesCityCuisines(element:any, index: number, array: any){ 
-    return city?.cuisine_ids.split(", ").includes(element?.id.toString())
-} 
-function matchesCityRestaurants(element:any, index: number, array: any){ 
-  return city?.restaurant_ids.split(", ").includes(element?.id.toString())
-} 
+  function matchesCityCuisines(element: any, index: number, array: any) {
+    return city?.cuisine_ids.split(", ").includes(element?.id.toString());
+  }
+  function matchesCityRestaurants(element: any, index: number, array: any) {
+    return city?.restaurant_ids.split(", ").includes(element?.id.toString());
+  }
   useEffect(() => {
     const cityObj: CityInstance = data as CityInstance;
     if (cityObj) {
@@ -36,22 +34,21 @@ function matchesCityRestaurants(element:any, index: number, array: any){
     }
   }, [data]);
 
-
   useEffect(() => {
     axios.get("/api/cuisines").then((value) => {
-      let all_cuisines = value["data"]["cuisines"]
-      let filtered_cuisines = all_cuisines.filter(matchesCityCuisines)
-      console.log('cuisine', filtered_cuisines)
-      setCuisines(filtered_cuisines)
+      let all_cuisines = value["data"]["cuisines"];
+      let filtered_cuisines = all_cuisines.filter(matchesCityCuisines);
+      console.log("cuisine", filtered_cuisines);
+      setCuisines(filtered_cuisines);
     });
     axios.get("/api/restaurants").then((value) => {
-      let all_restaurants = value["data"]["restaurants"]
-      let filtered_restaurants = all_restaurants.filter(matchesCityRestaurants)
-      setRestaurants(filtered_restaurants)
-      console.log('rest', filtered_restaurants)
+      let all_restaurants = value["data"]["restaurants"];
+      let filtered_restaurants = all_restaurants.filter(matchesCityRestaurants);
+      setRestaurants(filtered_restaurants);
+      console.log("rest", filtered_restaurants);
     });
-  }, [city])
-  
+  }, [city]);
+
   //render: map long/lat or city names to render map
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
   let cityMapURL =
@@ -60,18 +57,18 @@ function matchesCityRestaurants(element:any, index: number, array: any){
     "&q=" +
     city?.full_name;
 
-
-
   return (
-
-    <Container > 
+    <Container>
       <Image src={city?.imagesweb} fluid />
 
-      <h1>{city?.name}</h1> 
+      <h1>{city?.name}</h1>
 
       <section>
         <h2>About the City</h2>
         {city?.full_name}
+
+        <h5>Summary</h5>
+        {city?.summary}
 
         <h5>State</h5>
         {city?.state}
@@ -84,10 +81,9 @@ function matchesCityRestaurants(element:any, index: number, array: any){
         {city?.latitude}
         <h6>Longitude</h6>
         {city?.longitude}
-
       </section>
 
-      <section style={{alignItems:"left", paddingLeft:"1px"}}>  
+      <section style={{ alignItems: "left", paddingLeft: "1px" }}>
         <h5>Scores</h5>
         <h6>Business Freedom</h6>
         {city?.business_freedom}
@@ -133,26 +129,36 @@ function matchesCityRestaurants(element:any, index: number, array: any){
 
         <h6>Venture Capital</h6>
         {city?.venture_capital}
-
       </section>
       <section>
-      <h5>Restaurants in {city?.name}</h5>
-      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
-      <h5>Cuisines of {city?.name}</h5>
-      {cuisines?.map((c) => (
-      <a href={"/cuisines/" + c.id}>{c.name}<br/> <img src={c.dishes[0].image_url} width="200" height="200"></img></a>
-      ))}
-
+        <h5>Restaurants in {city?.name}</h5>
+        {restaurants?.map((r) => (
+          <a href={"/restaurants/" + r.id}>
+            {r.name}
+            <br />
+          </a>
+        ))}
+        <h5>Cuisines of {city?.name}</h5>
+        {cuisines?.map((c) => (
+          <a href={"/cuisines/" + c.id}>
+            {c.name}
+            <br />{" "}
+            <img src={c.dishes[0].image_url} width="200" height="200"></img>
+          </a>
+        ))}
       </section>
 
+      <div className="center">
+        <h4>Map Location</h4>
+        <iframe
+          src={cityMapURL}
+          width="600"
+          height="450"
+          loading="lazy"
+        ></iframe>
+      </div>
 
-        <div className="center">
-          <h4>Map Location</h4>
-          <iframe src={cityMapURL} width="600" height="450" loading="lazy">
-          </iframe>
-        </div> 
-
-        {/* <h5>Health</h5>
+      {/* <h5>Health</h5>
         {data["recipe"]["healthLabels"].map((healthLabel: any) => {
           return <li>{healthLabel}</li>;
         })}
@@ -201,7 +207,6 @@ function matchesCityRestaurants(element:any, index: number, array: any){
   );
 }
 
-
 export interface CityInstance {
   business_freedom: number;
   commute: number;
@@ -228,10 +233,11 @@ export interface CityInstance {
   timezone: string;
   travel_connectivity: number;
   venture_capital: number;
+  summary: string;
   cuisine_ids: string;
   restaurant_ids: string;
-
+  cuisines: string;
+  restaurants: string;
 }
-
 
 export default City;
