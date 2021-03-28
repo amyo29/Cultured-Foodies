@@ -117,6 +117,7 @@ function Countries() {
         count={parseInt(cuisines.length / numPerPage + "")}
         page={pageNumber}
         onChange={handleChange}
+        className="pagination"
       ></Pagination>
 
       {/* <Footer></Footer> */}

@@ -74,7 +74,7 @@ function Cities() {
         ))}
 
       </Container>
-      <Pagination count = {parseInt((cities.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
+      <Pagination className="pagination" count = {parseInt((cities.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
       {/* <Footer></Footer> */}
     </div>
   );

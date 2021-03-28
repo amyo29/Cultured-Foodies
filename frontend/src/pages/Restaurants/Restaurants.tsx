@@ -58,7 +58,7 @@ function Restaurants() {
           ))}
         </tbody>
       </Table>
-      <Pagination count = {parseInt((restaurants.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
+      <Pagination className="pagination" count = {parseInt((restaurants.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
 
     </div>
   );

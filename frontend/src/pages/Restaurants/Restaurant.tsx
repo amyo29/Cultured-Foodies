@@ -8,7 +8,7 @@ import { CuisineInstance } from "../Cuisines/Cuisine";
 import { CityInstance } from "../Cities/City";
 function Restaurant() {
   useEffect(() => {
-    document.title = "News Article";
+    document.title = "Restaurant";
   }, []);
   const { id } = useParams<{ id: string }>();
   const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id);
