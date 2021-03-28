@@ -3,12 +3,12 @@
 #   script:
 #     - echo "Hello, $GITLAB_USER_LOGIN!"
 
-# python-unit-tests:
-#   image: python:3.7
-#   stage: test
-#   script:
-#     - pip install -r backend/requirements.txt
-#     - make python-unit-tests
+python-unit-tests:
+  image: python:3.7
+  stage: test
+  script:
+    - pip install -r backend/requirements.txt
+    - make python-unit-tests
 
 selenium-tests:
   image: python:3.7
@@ -16,7 +16,7 @@ selenium-tests:
   script:
     - pip install selenium
     - cd frontend
-    
+
     # code from texas votes
     # Dependencies for chromedriver, 
     # https://gist.github.com/mikesmullin/2636776#gistcomment-1742414
@@ -41,7 +41,7 @@ selenium-tests:
     - apt-get install -y google-chrome-stable
     - npm install
 
-    - make selenium-tests
+    - python3 selenium_tests.py
 
 # deploy-prod:
 #   stage: deploy
