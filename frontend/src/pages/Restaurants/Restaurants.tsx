@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
-import useAxios from 'axios-hooks'
-import { Pagination } from '@material-ui/lab';
+import useAxios from "axios-hooks";
+import { Pagination } from "@material-ui/lab";
 
 function Restaurants() {
   useEffect(() => {
@@ -10,22 +10,21 @@ function Restaurants() {
   }, []);
 
   const [restaurants, setResetaurants] = useState([]);
-  const [pageNumber, setPageNumber] = useState(0);
-  const handleChange = (event:any, value:number) => {
+  const [pageNumber, setPageNumber] = useState(1);
+  const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
-  const [{ data, loading, error }] = useAxios('/api/restaurants')
+  const [{ data, loading, error }] = useAxios("/api/restaurants");
 
   useEffect(() => {
     if (data) {
-      setResetaurants(data.restaurants)
+      setResetaurants(data.restaurants);
     }
-  },[data])
-
+  }, [data]);
 
   const numPerPage = 12;
-  const startIndex= numPerPage*pageNumber;
-  const currentData = restaurants.slice(startIndex, startIndex+numPerPage);
+  const startIndex = numPerPage * (pageNumber-1);
+  const currentData = restaurants.slice(startIndex, startIndex + numPerPage);
 
   return (
     <div>
@@ -44,9 +43,12 @@ function Restaurants() {
         <tbody>
           {currentData.map((restaurant: any, i: any) => (
             <tr>
-              <td>{i + 1}</td>
+              <td>{startIndex + i + 1}</td>
               <td>
-                <a href={"/restaurants/" + restaurant['id']} className="article">
+                <a
+                  href={"/restaurants/" + restaurant["id"]}
+                  className="article"
+                >
                   {restaurant["name"]}
                 </a>
               </td>
@@ -58,8 +60,14 @@ function Restaurants() {
           ))}
         </tbody>
       </Table>
-      <Pagination count = {parseInt((restaurants.length/numPerPage)+"")} page={pageNumber} onChange={handleChange}></Pagination>
-
+      <div className="row pagination">
+      <Pagination   
+        count={Math.ceil(restaurants.length / numPerPage )}
+        page={pageNumber}
+        onChange={handleChange}
+      ></Pagination>
+      {startIndex+1 } - {Math.min(startIndex + numPerPage, restaurants?.length)} of {restaurants?.length}
+      </div>
     </div>
   );
 }
