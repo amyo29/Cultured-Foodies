@@ -16,7 +16,6 @@ from schemas import (
 )
 
 # ENDPOINTS
-#
 
 # NOTE: This route is needed for the default EB health check route
 # Routing to frontend/build/index.html
