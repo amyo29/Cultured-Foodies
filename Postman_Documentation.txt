@@ -103,25 +103,29 @@ Note: All urban area scores are determined by Teleport API.
 - Venture Capital:  A float denoting the city's urban area venture capital score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 10).
 
 
-News
+Restaurant
 
-A news article is a written work published in a print or electronic medium. It may be for the purpose of propagating news, research results, academic analysis, or debate.
+A restaurant is a business established where meals or refreshments can be purchased.
 
 ## Properties
 
-- Author image: Link to an image of the author of the news article.
-- Business Title: Name of the new source publishing company.
-- Business summary: String denoting a short description of the news source publishing company.
-- Summary: Summary of the article.
-- Country: Country of the publisher.
-- Author: Author of the article.
-- Link: Link to the article.
-- Language: Language of the article.
-- Media: Link to image of news article.
-- Title: Title of the article.
-- Clean URL: URL of the news source which published this article.
-- Rights: Copyright information about the article.
-- Rank: Integer denoting the popularity rank of the news source (Higher rank = lower number).
-- Topic: Topic of the article.
-- Published Date: Published date & time of the article.
-- ID: Newscatcher API's unique identifier for each news article.
+- Address: A string denoting the address of this restaurant.
+- Aggregate Rating: A float denoting the average rating of this restaurant, from 1-5 where 5 is the highest rating.
+- Average cost for two: An integer denoting the average cost in dollars that two people would spend at this restaurant.
+- City: A string listing the cities that have this restaurant.
+- City id: An integer denoting the city that this restaurant is located.
+- Cuisine ids: A string of the database id's for cuisines that this restaurant serves.
+- Cuisines: A string containing the names of cuisines that this restaurant serves (Ex: "Italian, Pizza, Sandwich)".
+- Highlights: A string listing the highlights of this restaurant (Ex: "Delivery, Dinner, Takeaway Available, Lunch, Outdoor Seating, Gluten Free Options, Kid Friendly").
+- Id: The database id of this restaurant.
+- Latitude: An integer denoting the latitudinal coordinates of this country.
+- Longitude: An integer denoting the longitudinal coordinates of this country.
+- Menu URL: A string, the link to the menu for this restaurant.
+- Name: A string, the name of this restaurant.
+- Phone Numbers: A string, the phone numbers of this restaurant.
+- Price Range: An integer denoting the price range of this restaurant from 1-4, with 1 being the lowest cost and 4 being the highest cost.
+- Restaurant Image: A string with the link to an image of this restaurant.
+- State Abbrev: A string denoting the state abbreviation of the state that this city is located in (Ex: Arizona is "AZ").
+- Timings: A string containing the opening hours of this restaurant (Ex: (10:30 AM to 9 PM (Mon-Thu), 10:30 AM to 10 PM (Fri-Sat), 11 AM to 9 PM (Sun))".
+- URL: A string, the URL to the restaurant page.
+- Zipcode: A string, the zipcode that the address of this restaurant is located.
