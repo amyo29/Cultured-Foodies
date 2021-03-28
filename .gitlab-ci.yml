@@ -47,6 +47,25 @@ selenium-tests:
     # test the website
     - python3 selenium_tests.py
 
+# postman_tests:
+#   stage: test
+#   image:
+#     name: postman/newman_alpine33
+#     entrypoint: [""]
+#   script:
+#     - cd backend
+#     - newman run Postman.json
+
+# jest_tests:
+#   stage: test
+#   image:
+#     name: mcgenius/pp_mocha
+#     entrypoint: [""]
+#   script:
+#     - cd frontend
+#     - npm install
+#     - npm run test
+
 # deploy-prod:
 #   stage: deploy
 #   script:
