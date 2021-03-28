@@ -191,6 +191,28 @@ class Selenium_Tests(unittest.TestCase):
         assert textVal == "Business Freedom"
 
 
+
+    def test_cuisineinstancepage(self):
+        self.driver.get("https://www.culturedfoodies.me/cuisines/51")
+        self.driver.implicitly_wait(30)
+        
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/section[1]/h5[1]"
+        )[0].text
+        assert textVal == "Alpha 3 Code:"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/h5[4]"
+        )[0].text
+        assert textVal == "Translations"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/section[3]/h5[1]"
+        )[0].text
+        assert textVal == "Restaurants with this cuisines"
+
+
         
 
 
