@@ -21,6 +21,7 @@ selenium-tests:
     # Update apt-get and install pip
     - apt-get update
     - apt-get install -y python3-pip
+    - pip install selenium
      # Install the chrome and chrome webdriver
     - apt-get install -y xvfb
     - apt-get install -y zip
