@@ -17,16 +17,8 @@ function Cuisine() {
   const [{ data, loading, error }] = useAxios('/api/cuisines/id='+id) 
   const [cuisine, setCuisine] = useState<CuisineInstance>();
   const [country, setCountry] = useState<CountryInstance>()
-  const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
-  const [cities, setCities] = useState<Array<CityInstance>>();
 
-  function matchesCuisineCities(element:any, index: number, array: any){ 
-    return cuisine?.city_ids.split(", ").includes(element?.id.toString())
-  }
-  
-  function matchesCuisineRestaurants(element: any, index: number, array:any){
-    return cuisine?.restaurant_ids.split(", ").includes(element?.id.toString())
-  }
+
   /* set city data */
   useEffect(() => {
     
@@ -46,20 +38,6 @@ function Cuisine() {
     
     }
   }, [data]);
-  
-
-  useEffect(() => {
-    axios.get("/api/cities").then((value) => {
-      let all_cities = value["data"]["cities"]
-      let filtered_cities = all_cities.filter(matchesCuisineCities)
-      setCities(filtered_cities)
-    });
-    axios.get("/api/restaurants").then((value) => {
-      let all_restaurants = value["data"]["restaurants"]
-      let filtered_restaurants = all_restaurants.filter(matchesCuisineRestaurants)
-      setRestaurants(filtered_restaurants)
-    });
-  }, [cuisine])
 
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
   let countryMapURL =
@@ -68,13 +46,7 @@ function Cuisine() {
     "&q=" +
     country?.name;
 
-  // let dishIndex = data["dishIndex"];
-  // let newsIndex = data["newsIndex"];
-  // let dishName = dishes_data[dishIndex]["recipe"]["label"];
-  // let newsArticle = news_data[newsIndex]["title"];
-  // let newsLink = news_data[newsIndex];
 
-  // console.log(newsLink);
   return (
 
     <Container fluid>
@@ -121,11 +93,21 @@ function Cuisine() {
         ))) : (<p>he</p>)
 
       }
-      <section>
-      <h5>Restaurants with this cuisines</h5>
-      {restaurants?.map((r) => (<a href={"/restaurants/" + r.id}>{r.name}<br/></a>))}
-      <h5>Cities with this cuisine</h5>
-      {cities?.map((c) => (<a href={"/cities/" + c.id}>{c.name}<br/></a>))}
+
+    <section>
+        <h5>Restaurants with {cuisine?.name} food</h5>
+        {cuisine?.restaurants?  cuisine?.restaurants?.split(", ").map((r,index) => (
+            <a href={"/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]}>{r}<br/></a> 
+          )):
+        <p>loading</p>
+        }
+
+        <h5>Cities with {cuisine?.name} food</h5>
+        {cuisine?.cities?  cuisine?.cities?.split(", ").map((c,index) => (
+            <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]}>{c}<br/></a> 
+          )):
+        <p>loading</p>
+        }
       </section>
       <p></p>
       <p></p>
@@ -155,7 +137,9 @@ export interface CuisineInstance {
   country:string;
   countryID: string;
   city_ids: string;
+  cities: string;
   restaurant_ids: string;
+  restaurants: string;
   description:string;
   dishes: Array<Dish>;
   name:string;
@@ -196,6 +180,7 @@ export interface CountryInstance{
   subregion: string,
   timezones: string,
   translations: any
+
 
 }
 export default Cuisine;

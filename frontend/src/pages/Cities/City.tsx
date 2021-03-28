@@ -17,16 +17,16 @@ function City() {
   const { id } = useParams<{ id: string }>();
   const [{ data, loading, error }] = useAxios("/api/cities/id=" + id);
   const [city, setCity] = useState<CityInstance>();
-  const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
+  // const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
   const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
 
   /* set city data */
   function matchesCityCuisines(element: any, index: number, array: any) {
     return city?.cuisine_ids.split(", ").includes(element?.id.toString());
   }
-  function matchesCityRestaurants(element: any, index: number, array: any) {
-    return city?.restaurant_ids.split(", ").includes(element?.id.toString());
-  }
+  // function matchesCityRestaurants(element: any, index: number, array: any) {
+  //   return city?.restaurant_ids.split(", ").includes(element?.id.toString());
+  // }
   useEffect(() => {
     const cityObj: CityInstance = data as CityInstance;
     if (cityObj) {
@@ -38,16 +38,11 @@ function City() {
     axios.get("/api/cuisines").then((value) => {
       let all_cuisines = value["data"]["cuisines"];
       let filtered_cuisines = all_cuisines.filter(matchesCityCuisines);
-      console.log("cuisine", filtered_cuisines);
       setCuisines(filtered_cuisines);
     });
-    axios.get("/api/restaurants").then((value) => {
-      let all_restaurants = value["data"]["restaurants"];
-      let filtered_restaurants = all_restaurants.filter(matchesCityRestaurants);
-      setRestaurants(filtered_restaurants);
-      console.log("rest", filtered_restaurants);
-    });
+
   }, [city]);
+  console.log(city)
 
   //render: map long/lat or city names to render map
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
@@ -68,7 +63,7 @@ function City() {
         {city?.full_name}
 
         <h5>Summary</h5>
-        {city?.summary}
+        {city?.summary.replace( /(<([^>]+)>)/ig, '')}
 
         <h5>State</h5>
         {city?.state}
@@ -132,12 +127,12 @@ function City() {
       </section>
       <section>
         <h5>Restaurants in {city?.name}</h5>
-        {restaurants?.map((r) => (
-          <a href={"/restaurants/" + r.id}>
-            {r.name}
-            <br />
-          </a>
-        ))}
+        {city?.restaurants?  city?.restaurants?.split(", ").map((r,index) => (
+            <a href={"/restaurants/" + city?.restaurant_ids.split(", ")[index]}>{r}<br/></a> 
+          )):
+        <p>loading</p>
+        }
+
         <h5>Cuisines of {city?.name}</h5>
         {cuisines?.map((c) => (
           <a href={"/cuisines/" + c.id}>
@@ -145,7 +140,7 @@ function City() {
             <br />{" "}
             <img src={c.dishes[0].image_url} width="200" height="200"></img>
           </a>
-        ))}
+        ))} 
       </section>
 
       <div className="center">
