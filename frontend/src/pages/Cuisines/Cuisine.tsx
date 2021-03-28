@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Figure } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
@@ -16,6 +16,7 @@ function Cuisine() {
   const [{ data, loading, error }] = useAxios("/api/cuisines/id=" + id);
   const [cuisine, setCuisine] = useState<CuisineInstance>();
   const [countries, setCountries] = useState<Array<CountryInstance>>();
+  const [dishes, setDishes] = useState<any>();
 
   function matchesCuisineCountries(element: any, index: number, array: any) {
     return cuisine?.countryID.split(", ").includes(element?.id.toString());
@@ -25,6 +26,14 @@ function Cuisine() {
     const cuisineObj: CuisineInstance = data as CuisineInstance;
     if (cuisineObj) {
       setCuisine(cuisineObj);
+      var chunk = 3;
+      var rows = [];
+      var i,
+        j = 0;
+      for (i = 0, j = cuisineObj.dishes.length; i < j; i += chunk) {
+        rows.push(cuisineObj.dishes.slice(i, i + chunk));
+      }
+      setDishes(rows);
     }
   }, [data]);
 
@@ -42,7 +51,7 @@ function Cuisine() {
 
   return (
     <Container fluid>
-      {cuisine? cuisine.name: loading}
+      {cuisine ? cuisine.name : loading}
       {countries?.map((country) => (
         <div>
           <header>Country: {country?.name}</header>
@@ -51,12 +60,17 @@ function Cuisine() {
               <Image src={country?.flag} fluid />
             </Col>
             <Col xs={6} md={4}>
-                      <iframe
-            src={"https://www.google.com/maps/embed/v1/place?key=" +API_KEY +"&q=" +country?.name}
-            width="450"
-            height="300"
-            loading="lazy"
-          ></iframe>
+              <iframe
+                src={
+                  "https://www.google.com/maps/embed/v1/place?key=" +
+                  API_KEY +
+                  "&q=" +
+                  country?.name
+                }
+                width="450"
+                height="300"
+                loading="lazy"
+              ></iframe>
             </Col>
           </Row>
           <section>
@@ -94,6 +108,32 @@ function Cuisine() {
             ))
           ) : (
             <p>he</p>
+          )}
+
+          <h5>Dishes</h5>
+
+          {dishes ? (
+            dishes.map((cols: any) => (
+              <Row>
+                {cols.map((dish: any, i: any) => (
+                  <Col className="col-sm-4 py-2">
+                    <Figure>
+                      <Figure.Image
+                        width={170}
+                        height={180}
+                        alt="171x180"
+                        src={dish.image_url}
+                      />
+                      <Figure.Caption>
+                        {dish.name}
+                      </Figure.Caption>
+                    </Figure>
+                  </Col>
+                ))}
+              </Row>
+            ))
+          ) : (
+            <p>loading</p>
           )}
         </div>
       ))}
@@ -139,7 +179,7 @@ function Cuisine() {
       <p></p>
       <p></p>
 
-     
+
     </Container>
   );
 }
