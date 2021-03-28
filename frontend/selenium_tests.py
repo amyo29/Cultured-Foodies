@@ -213,6 +213,27 @@ class Selenium_Tests(unittest.TestCase):
         assert textVal == "Restaurants with this cuisines"
 
 
+    def test_restaurantinstancepage(self):
+        self.driver.get("https://www.culturedfoodies.me/restaurants/3263")
+        self.driver.implicitly_wait(30)
+        
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/body/div/div/div/div"
+        )[0].text
+        assert textVal == "Indian Street Cafe"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/body/div/div/div/p[2]"
+        )[0].text
+        assert textVal == "Average Rating: 3.1"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/body/div/div/div/p[1]"
+        )[0].text
+        assert textVal == "Address: 927 E Arques Ave #141, Sunnyvale, CA 94085, USA"
+
+
         
 
 
