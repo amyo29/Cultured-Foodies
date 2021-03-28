@@ -54,15 +54,6 @@
               "schema": {
                 "type": "string"
               }
-            },
-            {
-              "name": "q",
-              "in": "query",
-              "description": "Any string and returns any matching countries checking based on name, id, language, timezone, and currency. E.g. q=united returns a query containing United States.",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
             }
           ],
           "responses": {
@@ -129,60 +120,56 @@
           }
         }
       },
-      "/dishes": {
+      "/cities": {
         "get": {
-          "summary": "Returns list of dishes",
-          "operationId": "listDishes",
-          "tags": ["dishes"],
+          "summary": "Returns list of cities in the USA",
+          "operationId": "listCities",
+          "tags": ["cities"],
           "parameters": [
             {
-              "name": "name",
+              "name": "language",
               "in": "query",
-              "description": "name of the dish",
+              "description": "Filter by state of the city",
               "required": false,
               "schema": {
-                "type": "string",
-                "format": "string"
+                "type": "string"
               }
             },
             {
-              "name": "diet",
+              "name": "timezone",
               "in": "query",
-              "description": "filter by types of diets of a dish. Options are balanced, high-protein, higher-fiber, low-fat, low-carb, low-sodium",
+              "description": "Filter by timezone of the city",
               "required": false,
               "schema": {
-                "type": "string",
-                "format": "string"
+                "type": "string"
               }
             },
             {
-              "name": "mealType",
+              "name": "currency",
               "in": "query",
-              "description": "filter by types of meal of a dish. Options are lunch, dinner, breakfast, and snack",
+              "description": "Filter by population of the city",
               "required": false,
               "schema": {
-                "type": "string",
-                "format": "string"
+                "type": "number"
               }
             },
             {
-              "name": "calories",
+              "name": "sort",
               "in": "query",
-              "description": "format is calories=RANGE (MIN+, MIN-MAX, MAX) to return recipes that fit the calories range",
+              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order",
               "required": false,
               "schema": {
-                "type": "string",
-                "format": "string"
+                "type": "string"
               }
             }
           ],
           "responses": {
             "200": {
-              "description": "List of dishes and their corresponding details",
+              "description": "List of all cities and corresponding details",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/Dishes"
+                    "$ref": "#/components/schemas/City"
                   }
                 }
               }
@@ -200,11 +187,112 @@
           }
         }
       },
-      "/dishes/{dishid}": {
+      "/cities/{cityId}": {
         "get": {
-          "summary": "Details about a dish",
-          "operationId": "listDish",
-          "tags": ["dish"],
+          "summary": "Details about a city",
+          "operationId": "listCity",
+          "tags": ["city"],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "description": "id of the city",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Details about a city",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/City"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/restaurants": {
+        "get": {
+          "summary": "Returns list of restaurants",
+          "operationId": "listRestaurants",
+          "tags": ["restaurants"],
+          "parameters": [
+            {
+              "name": "city",
+              "in": "query",
+              "description": "filter by city that restaurant is in",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            },
+            {
+              "name": "cuisines",
+              "in": "query",
+              "description": "filter by cuisines for this restaurant",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            },
+            {
+              "name": "price range",
+              "in": "query",
+              "description": "sort by price range of restaurant",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "format": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of restaurants and their corresponding details",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Restaurant"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/restaurants/{restaurantid}": {
+        "get": {
+          "summary": "Details about a restaurant",
+          "operationId": "listRestaurant",
+          "tags": ["restaurant"],
           "parameters": [
             {
               "name": "id",
@@ -219,11 +307,11 @@
           ],
           "responses": {
             "200": {
-              "description": "Details about a dish",
+              "description": "Details about a restaurant",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/Dishes"
+                    "$ref": "#/components/schemas/Restaurant"
                   }
                 }
               }
@@ -241,75 +329,19 @@
           }
         }
       },
-      "/news": {
+      "/cuisines": {
         "get": {
-          "summary": "Returns list of news article",
-          "operationId": "listNews",
-          "tags": ["news"],
-          "parameters": [
-            {
-              "name": "q",
-              "in": "query",
-              "description": "A query parameter to search through the title and contents of a news article",
-              "required": false,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            },
-            {
-              "name": "language",
-              "in": "query",
-              "description": "Filter by language of the country",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "sort",
-              "in": "query",
-              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order. Possible options are name and publish_date",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "country",
-              "in": "query",
-              "description": "Search for articles by country name",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "topic",
-              "in": "query",
-              "description": "search by the topic to which you want to restrict the articles. Accepted values are news, sport, tech, world, finance, politics, business, economics, entertainment, beauty, travel, music, food, science ",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "source",
-              "in": "query",
-              "description": "Comma separated string of news sources (cnn, nytimes) to filter news articles by ",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
+          "summary": "Returns list of cultural cuisines",
+          "operationId": "listCuisines",
+          "tags": ["cuisines"],
+          "parameters": [],
           "responses": {
             "200": {
-              "description": "List of articles and their corresponding details",
+              "description": "List of cuisines and their corresponding details",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/News"
+                    "$ref": "#/components/schemas/Cuisine"
                   }
                 }
               }
@@ -327,16 +359,16 @@
           }
         }
       },
-      "/news/{newsid}": {
+      "/cuisines/{cuisineid}": {
         "get": {
-          "summary": "Details about a news article",
-          "operationId": "listNew",
-          "tags": ["new"],
+          "summary": "Details about a cultural cuisine",
+          "operationId": "listCuisine",
+          "tags": ["cuisine"],
           "parameters": [
             {
               "name": "id",
               "in": "query",
-              "description": "id of the news article",
+              "description": "id of the cuisine",
               "required": true,
               "schema": {
                 "type": "string",
@@ -346,11 +378,11 @@
           ],
           "responses": {
             "200": {
-              "description": "Details about a news article",
+              "description": "Details about a cultural cuisine",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/News"
+                    "$ref": "#/components/schemas/Cuisine"
                   }
                 }
               }
@@ -427,155 +459,223 @@
             }
           }
         },
-        "Dishes": {
+        "City": {
           "type": "object",
           "required": [
             "id",
+            "business_freedom",
+            "commute",
+            "cost_of_living",
+            "cuisine_ids",
+            "cuisines",
+            "economy",
+            "education",
+            "environmental_quality",
+            "full_name",
+            "healthcare",
+            "housing",
+            "imagesmobile",
+            "imagesweb",
+            "internet_access",
+            "latitude",
+            "leisure_culture",
+            "longitude",
             "name",
-            "tag",
-            "url",
-            "source",
-            "healthLabels",
-            "cautions",
-            "ingredients",
-            "calories",
-            "totalWeight",
-            "totalTime",
-            "cuisineType",
-            "mealType",
-            "dishType",
-            "totalNutrients",
-            "digest"
+            "outdoors",
+            "population",
+            "restaurant_ids",
+            "restaurants",
+            "safety",
+            "state",
+            "summary",
+            "taxation",
+            "timezone",
+            "travel_connectivity",
+            "venture_capital"
+          
           ],
           "properties": {
             "id": {
               "type": "integer",
               "format": "int64"
             },
+            "business_freedom": {
+              "type": "number"
+            },
+            "commute": {
+              "type": "number"
+            },
+            "cost_of_living": {
+              "type": "number"
+            },
+            "cuisine_ids": {
+              "type": "string"
+            },
+            "cuisines": {
+              "type": "string"
+            },
+            "economy": {
+              "type": "number"
+            },
+            "education": {
+              "type": "number"
+            },
+            "environmental_quality": {
+              "type": "number"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "healthcare": {
+              "type": "number"
+            },
+            "housing": {
+              "type": "number"
+            },
+            "imagesmobile": {
+              "type": "string"
+            },
+            "imagesweb": {
+              "type": "string"
+            },
+            "internet_access": {
+              "type": "number"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "leisure_culture": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
             "name": {
               "type": "string"
             },
-            "tag": {
+            "outdoors": {
+              "type": "number"
+            },
+            "population": {
+              "type": "integer",
+              "format": "int32"   
+            },
+            "restaurant_ids":{
               "type": "string"
             },
-            "url": { "type": "string" },
-            "source": { "type": "string" },
-            "healthLabels": { "type": "array", "items": { "type": "string" } },
-            "cautions": { "type": "array", "items": { "type": "string" } },
-  
-            "ingredients": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "text": { "type": "string" },
-                  "weight": { "type": "integer" },
-                  "foodCategory": { "type": "string" },
-                  "foodId": { "type": "string" },
-                  "image": { "type": "string" }
-                }
-              }
+            "restaurants":{
+              "type": "string"
             },
-            "ingredientLines": { "type": "array", "items": { "type": "string" } },
-            "calories": { "type": "integer" },
-            "totalWeight": { "type": "integer" },
-            "totalTime": { "type": "integer" },
-            "cuisineType": { "type": "array", "items": { "type": "string" } },
-            "mealType": { "type": "array", "items": { "type": "string" } },
-            "dishType": { "type": "array", "items": { "type": "string" } },
-            "totalNutrients": {
-              "type": "object",
-              "properties": {
-                "ENERC_KCAL": {
-                  "type": "object",
-                  "properties": {
-                    "label": { "type": "string" },
-                    "quantity": { "type": "integer" },
-                    "unit": { "type": "string" }
-                  }
-                }
-              }
+            "safety":{
+              "type": "number"
             },
-            "digest": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "label": { "type": "string" },
-                  "total": {"type": "integer"}
-                }
-              }
+            "state":{
+              "type": "string"
+            },
+            "summary":{
+              "type": "string"
+            },
+            "taxation":{
+              "type": "number"
+            },
+            "timezone":{
+              "type": "string"
+            },
+            "travel_connectivity":{
+              "type": "number"
+            },
+            "venture_capital":{
+              "type": "number"
             }
           }
         },
-        "News": {
+        "Restaurant": {
           "type": "object",
           "required": [
             "id",
-            "title",
-            "summary",
-            "country",
-            "author",
-            "link",
-            "language",
-            "media",
-            "media_content",
-            "rights",
-            "topic",
-            "published_date",
-            "business_name",
-            "business_summary",
-            "rank"
+            "address",
+            "aggregate_rating",
+            "average_cost_for_two",
+            "city",
+            "city_id",
+            "cuisine_ids",
+            "cuisines",
+            "highlights",
+            "latitude",
+            "longitude",
+            "menu_url",
+            "name",
+            "phone_numbers",
+            "price_range",
+            "restaurant_image",
+            "state_abbrev",
+            "timings",
+            "url",
+            "zipcode"
           ],
           "properties": {
             "id": {
               "type": "integer",
               "format": "int32"
             },
-            "title": {
+            "address": {
               "type": "string"
             },
-            "summary": {
+            "aggregate_rating":{
               "type": "string"
             },
-            "country": {
+            "average_cost_for_two":{
+              "type": "number"
+            },
+            "city":{
               "type": "string"
             },
-            "author": {
+            "city_id":{
+              "type": "integer",
+              "format": "int32"
+            },
+            "cuisine_ids":{
               "type": "string"
             },
-            "link": {
+            "cuisines":{
               "type": "string"
             },
-            "language": {
+            "highlights":{
               "type": "string"
             },
-            "media": {
+            "latitude":{
               "type": "string"
             },
-            "media-content": {
+            "longitude":{
               "type": "string"
             },
-            "tag": {
+            "menu_url":{
               "type": "string"
             },
-            "rights": {
+            "name":{
               "type": "string"
             },
-            "topic": {
+            "phone_numbers":{
               "type": "string"
             },
-            "published_date": {
+            "price_range":{
+              "type": "integer",
+              "format": "int32"
+            },
+            "restaurant_image":{
               "type": "string"
             },
-            "business_name": {
+            "state_abbrev":{
               "type": "string"
             },
-            "business_summary": {
+            "timings":{
               "type": "string"
             },
-            "rank": {
-              "type": "integer"
+            "url":{
+              "type": "string"
+            },
+            "zipcode":{
+              "type": "string"
             }
           }
         },
@@ -588,6 +688,57 @@
               "format": "int32"
             },
             "message": {
+              "type": "string"
+            }
+          }
+        },
+        "Cuisine": {
+          "type": "object",
+          "required": [
+            "id",
+            "city_ids",
+            "country",
+            "countryID",
+            "description",
+            "dishes",
+            "name",
+            "restaurant_ids",
+            "restaurants"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "city_ids": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "countryID": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "dishes": {
+              "type": "array",
+              "items": {
+                "type":"object",
+                "properties": {
+                  "image_url": {"type":"string"},
+                  "name": {"type": "string"}
+                }
+              }            
+            },
+            "name":{
+              "type": "string"
+            },
+            "restaurant_ids":{
+              "type": "string"
+            },
+            "restaurants":{
               "type": "string"
             }
           }

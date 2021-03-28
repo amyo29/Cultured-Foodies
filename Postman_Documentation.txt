@@ -1,6 +1,27 @@
 Cultured Foodies API
 
-An API dedicated to shedding light on cultural dishes, news, and countries around the world.
+An API dedicated to shedding light on cuisines, countries, cities, and restaurants around the world.
+
+Cuisines
+
+A cuisine is a style of cooking that is characteristic of a particular country or region.
+
+## Properties
+
+A cuisine has the following properties.
+
+- ID: An integer, database id.
+- Name: The name of the cuisine, e.g.: "American".
+- Cities: A list of cities that have this cuisine.
+- City ID's: A list of the corresponding database city ID's of cities which have this cuisine.
+- Dishes: A list of objects containing information on noteworthy dishes particular to this cuisine.
+    - Image URL: A string denoting a link to an image of this dish.
+    - Name: A string denoting the dish's name in English.
+- Country: A string, the country or countries associated with this cuisine.
+- Country ID: A string, the database id of the country or countries associated with this cuisine.
+- Description: A general description about this cuisine. Can include information on its origin, history, dishes and highlights.
+- Restaurant IDs: A string, list of the database id's of restaurants which serve this cuisine.
+- Restaurants: A string, list of names of restaurants which serve this cuisine.
 
 Countries
 
