@@ -43,52 +43,65 @@ A country has the following properties.
 - Flag: A string containing the URL of a country's flag picture in the database.
 - Gini: An integer denoting the country's Gini coefficient (a statistical measure of a country's income or wealth inequality).
 - Languages: An array denoting the official language or languages of the country in English.
-- Latitude: 
-- Longitude: An integer
+- Latitude: An integer denoting the latitudinal coordinates of this country.
+- Longitude: An integer denoting the longitudinal coordinates of this country.
 - Native name: A string denoting the country's name in its official native language.
-- Numeric code: A integer 
+- Numeric code: A integer denoting the numeric code of this country.
 - Population: An integer denoting the population of the country.
 - Region: The region the country belongs to (ex: United States is in the region Americas)
 - Subregion: The subregion the country belongs to (ex: The United States in the subregion Northern America.)
 - Time zone: A string containing all the time zones within the country.
 - Translations: A dictionary of translations of the country name in other languages. 
-    - BR: A string denoting the cuisine's name in Breton.
-    - DE: A string denoting the dish's name in German.
-    - ES: A string denoting the dish's name in Spanish.
-    - FA: A string denoting the dish's name in Persian.
-    - FR: A string denoting the dish's name in French.
-    - HR: A string denoting the dish's name in Croatian.
-    - IT: A string denoting the dish's name in Italian.
-    - JA: A string denoting the dish's name in Japanese.
-    - NL: A string denoting the dish's name in Dutch.
-    - PT: A string denoting the dish's name in Portuguese.
+    - BR: A string denoting the country's name in Breton.
+    - DE: A string denoting the country's name in German.
+    - ES: A string denoting the country's name in Spanish.
+    - FA: A string denoting the country's name in Persian.
+    - FR: A string denoting the country's name in French.
+    - HR: A string denoting the country's name in Croatian.
+    - IT: A string denoting the country's name in Italian.
+    - JA: A string denoting the country's name in Japanese.
+    - NL: A string denoting the country's name in Dutch.
+    - PT: A string denoting the country's name in Portuguese.
     
 
-Dishes
+City
 
-A dish is a distinct article or variety of food that is ready to eat or to be served. A dish may be served on tableware, or may be eaten in one's hands. Instructions for preparing a dish are called recipes.
+A city is an inhabited place that is larger in size, population or importance than a town or a villance. It is a permanent and densely settled place with administratively defined boundaries.
+
 ## Properties
 
-- Label: The name of this dish object.
-- URL: The link to the recipe for this dish.
-- Image: The link to the image for this dish.
-- Source: The source from where the image of this dish came from.
-- Diet Labels: An array of specific diet categories that this dish falls under (Ex: Low-Fat).
-- Health Labels: An array of specific diets and health-conscious categories that this dish falls under, including labels for vegans, vegetarians, Pescatarians, etc, giving users detailed information to make more healthy choices in their diet. (Ex: Sugar-Conscious, Vegan, Vegetarian, Diary-Free, Gluten-Free).
-- Cautions: An array of cautionary labels that this dish falls under (Ex: Sulfites, FODMAP).
-- Ingredient Lines: An array of the list of ingredients necessary to make this dish combined with their amounts on separate lines.
-- Ingredients: An array of objects containing detailed information on each ingredient in this dish.
-    - Text: A string denoting the general description of the ingredient and its amount.
-    - Weight: A long denoting the weight of this ingredient.
-    - Food Category: A string denoting the food category this ingredient belongs to. (Ex: vegetables, cured meats)
-    - Food ID: A string denoting the ID of this food in the database.
-    - Image: The URL to the image of this ingredient.
-- Calories: A long denoting the number of total calories this dish contains.
-- Total Time: A double denoting the total preparation time estimated on average to make this recipe for this dish.
-- Cuisine Type: An array denoting the categories of cuisines this dish belongs to (Ex: Central Europe, Italian).
-- Meal Type: An array denoting the categories of meals this dish falls under (Ex: Lunch/Dinner).
-- Dish type: An array denoting the categories of dishes this dish falls under (Ex: sandwiches).
-- Total Nutrients: An object (dictionary) of objects containing information on specific nutrients contained within this dish, including their labels, quantities, and units.
+Note: All urban area scores are determined by Teleport API.
+- Business Freedom: A float denoting the city's urban area business freedom score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 8.671).
+- Commute: A float denoting the city's urban area commute score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 4.687250000000001).
+- Cost of living:  A float denoting the city's urban area cost of living score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 2.618).
+- Cuisine ids: A string listing the database id's of the cuisines available in this city (Ex: "34").
+- Cuisines: A string listing the cuisines available in this city (Ex: "German").
+- Economy:  A float denoting the city's urban area economy score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 6.5145).
+- Education:  A float denoting the city's urban area education score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 8.6245).
+- Environmental_quality:  A float denoting the city's urban area environmental quality score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 6.4815000000000005).
+- Full_name:  A string denoting the full name of this city (Ex: "Alameda, California, United States").
+- Healthcare:  A float denoting the city's urban area healthcare score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 8.748).
+- Housing:  A float denoting the city's urban area housing score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 1).
+- Id: An integer, the database id of this city.
+- Images mobile:  A string containing the URL to an image adapted for mobile view for this city.
+- Images web:  A string containing the URL to an image adapted for desktop web view for this city.
+- Internet_access:  A float denoting the city's urban area internet access score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 5.605500000000001).
+- Latitude:  An integer denoting the latitudinal coordinates of this city.
+- Leisure and Culture:  A float denoting the city's urban area leisure and culture score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 
+- Longitude:  An integer denoting the longitudinal coordinates of this city.
+- Name:  A string denoting the name of this city.
+- Outdoors:  A float denoting the city's urban area outdoors score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 7.014).
+- Population:  An integer denoting the population of this city.
+- Restaurant_ids:  A string listing the database id's of the restaurants that are in this city.
+- Restaurants:  A string listing the names of the database restaurants that are in this city.
+- Safety:  A float denoting the city's urban area safety score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 5.7155000000000005).
+- State:  A string denoting the name of this city.
+- Summary: A description of the city and what it has to offer.
+- Taxation:  A float denoting the city's urban area taxation score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 4.488).
+- Timezone:  A string denoting the time zone(s) of this city.
+- Travel Connectivity:  A float denoting the city's urban area travel connectivity score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 3.6545000000000005).
+- Venture Capital:  A float denoting the city's urban area venture capital score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 10).
+
 
 News
 
