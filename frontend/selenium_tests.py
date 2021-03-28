@@ -24,24 +24,28 @@ class Selenium_Tests(unittest.TestCase):
         assert header == "Welcome fellow Foodie!"
 
         self.driver.get("https://www.culturedfoodies.me")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[1]/nav/div/div/a[1]"
         )[0].click()
         assert "https://www.culturedfoodies.me/about" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[1]/nav/div/div/a[2]"
         )[0].click()
         assert "https://www.culturedfoodies.me/cuisines" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[1]/nav/div/div/a[3]"
         )[0].click()
         assert "https://www.culturedfoodies.me/cities" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[1]/nav/div/div/a[4]"
         )[0].click()
@@ -75,27 +79,30 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "Cuisines"
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/div[1]/div[2]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cuisines/2" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cuisines/2" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/div[4]/div[1]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cuisines/10" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cuisines/10" in self.driver.current_url
 
 
         self.driver.get("https://www.culturedfoodies.me/cuisines")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
         )[0].click()
 
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[4]/div[3]/div/div/a""
+            "/html/body/div/div/div[2]/div/div/div[4]/div[3]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cuisines/61" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cuisines/61" in self.driver.current_url
 
 
     def test_citiespage(self):
@@ -104,27 +111,30 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "Cities"
 
         self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/div[4]/div[2]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/div[2]/div[1]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cities/4" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cities/4" in self.driver.current_url
 
 
         self.driver.get("https://www.culturedfoodies.me/cities")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/nav/ul/li[5]/button"
         )[0].click()
 
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[4]/div[1]/div/div/a""
+            "/html/body/div/div/div[2]/div/div/div[4]/div[1]/div/div/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/cities/57" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cities/57" in self.driver.current_url
 
 
 
@@ -134,27 +144,54 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "Restaurants"
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/table/tbody/tr[7]/td[2]/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/restaurants/7" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/restaurants/7" in self.driver.current_url
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/restaurants/1" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/restaurants/1" in self.driver.current_url
 
 
         self.driver.get("https://www.culturedfoodies.me/restaurants")
+        self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
             "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
         )[0].click()
 
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/table/tbody/tr[5]/td[2]/a""
+            "/html/body/div/div/div[2]/div/div/table/tbody/tr[5]/td[2]/a"
         )[0].click()
-         assert "https://www.culturedfoodies.me/restaurants/64" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/restaurants/64" in self.driver.current_url
+
+
+    def test_cityinstancepage(self):
+        self.driver.get("https://www.culturedfoodies.me/cities/133")
+        self.driver.implicitly_wait(30)
+        
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/section[1]/h2"
+        )[0].text
+        assert textVal == "About the City"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/div/h4"
+        )[0].text
+        assert textVal == "Map Location"
+
+        textVal = self.driver.find_elements_by_xpath(
+            "/html/body/div/div/div[2]/div/section[2]/h6[1]"
+        )[0].text
+        assert textVal == "Business Freedom"
+
+
+        
 
 
 
