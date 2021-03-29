@@ -1,12 +1,7 @@
 
-import React from 'react';
 import ReactDOM from 'react-dom';
-
-//import { expect } from 'chai';
-import * as Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16';
-import { mount, shallow, configure } from 'enzyme';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { shallow, configure } from 'enzyme';
 
 import App from "../App";
 import NavBar from "../components/NavBar";  
@@ -22,12 +17,14 @@ import Cuisine from "../pages/Cuisines/Cuisine";
   
 configure({ adapter: new Adapter() });
 
+// test App
 it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
 });
 
+// test Nav Bar component
 describe('<Navigation />', () => {
 	it('renders a Navigation Bar', () => {
 	  const nav = shallow(<NavBar />);
@@ -36,43 +33,29 @@ describe('<Navigation />', () => {
 	  
 	});
 });
-
-// it('Cities', async () => {
-//     const component = shallow(<Cities/>);
-//     const data = component.instance();
-//     data.componentDidMount();
-//     expect(component).toMatchSnapshot();	
   
-//   });
-  
-// it('City', async () => {
-//     const component = shallow(<City/>);
-//     const data = component.instance();
-//     await data.componentDidMount();
-//     expect(component).toMatchSnapshot();
-// });
-  
-
+// test Views
 describe("Render views", () => {
-	// test for Splash and About
+	// test Splash page
 	test('Splash Page', () => {
 		const component = shallow(<Home />);
 		expect(component).toMatchSnapshot();
 	});
+	// test About page
 	test('About Page', () => {
 		const component = shallow(<About />);
 		expect(component).toMatchSnapshot();
 	});
 	// tests for model pages
-	test('Restaurants', () => {
+	test('Restaurants model page', () => {
 		const component = shallow(<Restaurants />);
 		expect(component).toMatchSnapshot();
 	});
-	test('Cities', () => {
+	test('Cities model page', () => {
 		const component = shallow(<Cities />);
 		expect(component).toMatchSnapshot();
 	});
-	test('Cuisines', () => {
+	test('Cuisines model page', () => {
 		const component = shallow(<Cuisines />);
 		expect(component).toMatchSnapshot();
 	});
@@ -95,11 +78,3 @@ describe("Render views", () => {
 	// });
 })
 
-/* about page test 
-it('Get About Page', async () => {
-	const copy = shallow(<About />);
-	expect(copy).to.not.be.undefined;
-	expect(copy).to.have.length(1);
-	expect(copy.find("div")).to.have.length(11);
-});
-*/
