@@ -1,5 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Navigation /> renders a Navigation Bar 1`] = `
+<div>
+  <Navbar
+    className="navbar-custom"
+    collapseOnSelect={false}
+    expand="lg"
+    variant="light"
+  >
+    <NavbarBrand
+      className="nav-link"
+      href="/"
+    >
+      <b>
+        Cultured Foodies
+      </b>
+    </NavbarBrand>
+    <NavbarToggle
+      aria-controls="basic-navbar-nav"
+      label="Toggle navigation"
+    />
+    <NavbarCollapse
+      id="basic-navbar-nav"
+    >
+      <Nav
+        className="mr-auto"
+        fill={false}
+        justify={false}
+      >
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/about"
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/cuisines"
+        >
+          Cuisines
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/cities"
+        >
+          Cities
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/restaurants"
+        >
+          Restaurants
+        </NavLink>
+      </Nav>
+      <Form
+        inline={true}
+      >
+        <FormControl
+          className="mr-sm-2"
+          placeholder="Search"
+          type="text"
+        />
+        <Button
+          active={false}
+          disabled={false}
+          variant="outline-success"
+        >
+          Search
+        </Button>
+      </Form>
+    </NavbarCollapse>
+  </Navbar>
+</div>
+`;
+
 exports[`Render views About 1`] = `
 <div
   className="font-style center"
@@ -8,10 +106,7 @@ exports[`Render views About 1`] = `
     About Us
   </h1>
   <p>
-    Cultured Foodies is a website that encourages its users to discover new foods from different cultures. We want people to explore the world of food from our website and learn more about new cuisines and dishes.
-  </p>
-  <p>
-    The data we've gathered highlights cuisines from various cultures and their known presence in news outlets.
+    Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas. With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
   </p>
   <h2>
     Meet the Team
@@ -20,7 +115,7 @@ exports[`Render views About 1`] = `
     fluid={false}
   >
     <div
-      className="row"
+      className="row mb-4"
     >
       <div>
         Loading
@@ -31,7 +126,7 @@ exports[`Render views About 1`] = `
     fluid={false}
   >
     <div
-      className="row"
+      className="row mb-4"
     >
       <div>
         Loading
@@ -60,14 +155,14 @@ exports[`Render views About 1`] = `
   </div>
   <div>
     <h2>
-      API's
+      APIs
     </h2>
   </div>
   <Container
     fluid={false}
   >
     <div
-      className="row"
+      className="row mb-4"
     >
       <InfoCard
         description="Used to retrieve country information"
@@ -89,17 +184,17 @@ exports[`Render views About 1`] = `
       />
     </div>
     <div
-      className="row"
+      className="row mb-4"
     >
       <InfoCard
         description="Used to show the map location of a country"
         img="GoogleMapsLogo.jpeg"
         link="https://developers.google.com/maps/documentation/embed/get-started"
-        title="The Maps Embed API"
+        title="Google Maps Embed API"
       />
       <InfoCard
         description="Used to retrieve images of restaurants."
-        img="GooglePlaceLogo.jpg"
+        img="GooglePlaceLogo.png"
         link="https://developers.google.com/maps/documentation/places/web-service/photos"
         title="Google Places Photos API"
       />
@@ -120,7 +215,7 @@ exports[`Render views About 1`] = `
     fluid={false}
   >
     <div
-      className="row"
+      className="row mb-4"
     >
       <InfoCard
         description="Cloud hosting platform"
@@ -142,7 +237,7 @@ exports[`Render views About 1`] = `
       />
     </div>
     <div
-      className="row"
+      className="row mb-4"
     >
       <InfoCard
         description="A JavaScript library for building user interfaces"
@@ -152,7 +247,7 @@ exports[`Render views About 1`] = `
       />
       <InfoCard
         description="A free and open-source CSS framework directed at responsive, mobile-first front-end web development"
-        img="BootstrapLogo.png"
+        img="BootstrapLogo.jpg"
         link="https://getbootstrap.com/"
         title="BootStrap"
       />
@@ -164,7 +259,7 @@ exports[`Render views About 1`] = `
       />
     </div>
     <div
-      className="row"
+      className="row mb-4"
     >
       <InfoCard
         description="Open-source relational database management system."
@@ -201,7 +296,15 @@ exports[`Render views About 1`] = `
 `;
 
 exports[`Render views Cities 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-block",
+      "justifyContent": "horizontal",
+    }
+  }
+>
   <h1
     className="text-align center"
   >
@@ -210,11 +313,20 @@ exports[`Render views Cities 1`] = `
   <Container
     fluid={false}
   />
-  <WithStyles(ForwardRef(Pagination))
-    count={0}
-    onChange={[Function]}
-    page={0}
-  />
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
 </div>
 `;
 
@@ -228,11 +340,103 @@ exports[`Render views Cuisines 1`] = `
   <Container
     fluid={false}
   />
-  <WithStyles(ForwardRef(Pagination))
-    count={0}
-    onChange={[Function]}
-    page={1}
-  />
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
+</div>
+`;
+
+exports[`Render views Restaurant 1`] = `
+<div>
+  <body
+    className="Instance center-div"
+  >
+    <h2
+      className="Instance-header"
+    />
+    <div
+      align-items="center"
+      className="info"
+    >
+      <img
+        alt=""
+        className="row instance-photo"
+      />
+      <Card
+        body={false}
+        className="row instance-text"
+        style={
+          Object {
+            "width": "55rem",
+          }
+        }
+      >
+        <CardBody>
+          <CardTitle />
+          <CardText>
+            Address: 
+          </CardText>
+          <CardText>
+            Average Rating: 
+          </CardText>
+          <CardText>
+            Highlights: 
+          </CardText>
+          <CardText>
+            Price Range: 
+          </CardText>
+          <CardText>
+            Timings: 
+          </CardText>
+          <CardText>
+            Menu:
+            <a>
+              <br />
+            </a>
+          </CardText>
+          <CardText>
+            Cities which have this restaurant:
+            <a
+              href="/cities/undefined"
+            >
+               
+              <br />
+            </a>
+          </CardText>
+          Cuisines for this restaurant: 
+          <br />
+          <p>
+            loading
+          </p>
+          <CardText />
+        </CardBody>
+      </Card>
+    </div>
+  </body>
+  <div
+    className="center"
+  >
+    <h4>
+      Map Location
+    </h4>
+    <iframe
+      height="450"
+      loading="lazy"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefined"
+      width="600"
+    />
+  </div>
 </div>
 `;
 
@@ -259,6 +463,9 @@ exports[`Render views Restaurants 1`] = `
           City
         </th>
         <th>
+          Cuisines
+        </th>
+        <th>
           Rating
         </th>
         <th>
@@ -271,11 +478,20 @@ exports[`Render views Restaurants 1`] = `
     </thead>
     <tbody />
   </ForwardRef>
-  <WithStyles(ForwardRef(Pagination))
-    count={0}
-    onChange={[Function]}
-    page={0}
-  />
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
 </div>
 `;
 

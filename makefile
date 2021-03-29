@@ -50,4 +50,11 @@ selenium-tests:
 
 postman-tests:
 	echo "Running Postman tests..."
+	cd frontend
+	npm install -g newman
+	newman run Postman_Tests.json
+
+jest-tests:
+	echo "Running Jest tests..."
+	cd frontend && npm run test
 
