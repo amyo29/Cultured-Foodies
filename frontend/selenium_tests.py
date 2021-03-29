@@ -97,7 +97,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cuisines")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[1]/div[2]/div/div/a"
+            "/html/body/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -106,7 +106,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cuisines")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[4]/div[1]/div/div/a"
+            "/html/body/div/div/div[2]/div/div[1]/div[4]/div[1]/div/div/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -116,13 +116,13 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.implicitly_wait(30)
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
+            "/html/body/div/div/div[2]/div/div[2]/nav/ul/li[6]/button"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[4]/div[3]/div/div/a"
+            "/html/body/div/div/div[2]/div/div[1]/div[4]/div[3]/div/div/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -154,17 +154,17 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cities")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
+            "/html/body/div/div/div[2]/div/div[2]/nav/ul/li[6]/button"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div[1]/div[3]/div/div/a"
+            "/html/body/div/div/div[2]/div/div[1]/div[4]/div[3]/div/div/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
-        assert "https://www.culturedfoodies.me/cities/63" in self.driver.current_url
+        assert "https://www.culturedfoodies.me/cities/60" in self.driver.current_url
 
     def test_restaurants_page(self):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
@@ -192,18 +192,18 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/nav/ul/li[6]/button"
+            "/html/body/div/div/div[2]/div/div[2]/nav/ul/li[6]/button"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/table/tbody/tr[4]/td[2]/a"
+            "/html/body/div/div/div[2]/div/div[1]/table/tbody/tr[10]/td[2]/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert (
-            "https://www.culturedfoodies.me/restaurants/64" in self.driver.current_url
+            "https://www.culturedfoodies.me/restaurants/58" in self.driver.current_url
         )
 
     def test_cuisine_instance_page(self):
@@ -211,36 +211,36 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/section[1]/h5[1]"
+            "/html/body/div/div/div[2]/div/div/section[1]/h5[1]"
         )[0].text
         assert textVal == "Alpha 3 Code:"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/h5[4]"
+            "/html/body/div/div/div[2]/div/div/h5[4]"
         )[0].text
         assert textVal == "Translations"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/section[3]/h5[1]"
+            "/html/body/div/div/div[2]/div/div/h5[5]"
         )[0].text
-        assert textVal == "Restaurants with this cuisines"
+        assert textVal == "Dishes"
 
     def test_city_instance_page(self):
         self.driver.get("https://www.culturedfoodies.me/cities/133")
         self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/section[1]/h2"
+            "/html/body/div/div/div[2]/div/div/section[1]/h2"
         )[0].text
         assert textVal == "About the City"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/h4"
+            "/html/body/div/div/div[2]/div/div/div/h4"
         )[0].text
         assert textVal == "Map Location"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/section[2]/h6[1]"
+            "/html/body/div/div/div[2]/div/div/section[2]/h6[1]"
         )[0].text
         assert textVal == "Business Freedom"
 
@@ -249,17 +249,17 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/body/div/div/div/div"
+            "/html/body/div/div/div[2]/div/body/div/div/div[2]/div/div/div"
         )[0].text
         assert textVal == "Indian Street Cafe"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/body/div/div/div/p[2]"
+            "/html/body/div/div/div[2]/div/body/div/div/div[2]/div/div/p[5]"
         )[0].text
         assert textVal == "Average Rating: 3.1"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/body/div/div/div/p[1]"
+            "/html/body/div/div/div[2]/div/body/div/div/div[2]/div/div/p[2]"
         )[0].text
         assert textVal == "Address: 927 E Arques Ave #141, Sunnyvale, CA 94085, USA"
 
