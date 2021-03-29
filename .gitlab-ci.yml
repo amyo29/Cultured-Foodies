@@ -47,14 +47,13 @@ selenium-tests:
     # test the website
     - python3 selenium_tests.py
 
-# postman_tests:
-#   stage: test
-#   image:
-#     name: postman/newman_alpine33
-#     entrypoint: [""]
-#   script:
-#     - cd backend
-#     - newman run Postman.json
+postman_tests:
+  stage: test
+  image:
+    name: postman/newman_alpine33
+    entrypoint: [""]
+  script:
+    - newman run Postman_Tests.json
 
 # jest_tests:
 #   stage: test
