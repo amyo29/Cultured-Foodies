@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2ceb284e-7fe6-42c9-8ff9-1f4add70cddf",
+		"_postman_id": "2f0b988b-1621-461c-bfde-1f78f313a585",
 		"name": "Testing API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -72,7 +72,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": null,
+									"value": "",
 									"disabled": true
 								}
 							]
@@ -341,33 +341,6 @@
 					},
 					"response": [
 						{
-							"name": "unexpected error",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/cities",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cities"
-									]
-								}
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"code\": -32681924,\n \"message\": \"aliquip ut labore adipisicing\"\n}"
-						},
-						{
 							"name": "List of all cities and corresponding details",
 							"originalRequest": {
 								"method": "GET",
@@ -393,6 +366,33 @@
 							],
 							"cookie": [],
 							"body": "{\n \"id\": -88785651,\n \"business_freedom\": 1923028.5569237918,\n \"commute\": -97568903.74116617,\n \"cost_of_living\": 29063124.33224097,\n \"cuisine_ids\": \"quis Lorem\",\n \"cuisines\": \"cupidatat velit ut sit\",\n \"economy\": 94700.79958541691,\n \"education\": 17959376.069525808,\n \"environmental_quality\": 58245400.37928507,\n \"full_name\": \"adipisicing labore\",\n \"healthcare\": -72002550.57257277,\n \"housing\": 75971717.07571623,\n \"imagesmobile\": \"ad minim\",\n \"imagesweb\": \"ea minim enim\",\n \"internet_access\": 74393496.20836517,\n \"latitude\": 48933710.61418262,\n \"leisure_culture\": -27250453.248851642,\n \"longitude\": -64276748.77925193,\n \"name\": \"velit in mollit\",\n \"outdoors\": -92609717.68897867,\n \"population\": -22003786,\n \"restaurant_ids\": \"commodo aliqua\",\n \"restaurants\": \"qui amet\",\n \"safety\": -16719879.624597937,\n \"state\": \"nisi\",\n \"summary\": \"ut occaecat\",\n \"taxation\": 82107633.2872208,\n \"timezone\": \"ex pariatur nostrud\",\n \"travel_connectivity\": 55370289.95962903,\n \"venture_capital\": -15092184.339051113\n}"
+						},
+						{
+							"name": "unexpected error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cities",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"code\": -32681924,\n \"message\": \"aliquip ut labore adipisicing\"\n}"
 						}
 					]
 				},
@@ -465,39 +465,6 @@
 					},
 					"response": [
 						{
-							"name": "Details about a city",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/cities/:cityId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cities",
-										":cityId"
-									],
-									"variable": [
-										{
-											"key": "cityId"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"id\": -88785651,\n \"business_freedom\": 1923028.5569237918,\n \"commute\": -97568903.74116617,\n \"cost_of_living\": 29063124.33224097,\n \"cuisine_ids\": \"quis Lorem\",\n \"cuisines\": \"cupidatat velit ut sit\",\n \"economy\": 94700.79958541691,\n \"education\": 17959376.069525808,\n \"environmental_quality\": 58245400.37928507,\n \"full_name\": \"adipisicing labore\",\n \"healthcare\": -72002550.57257277,\n \"housing\": 75971717.07571623,\n \"imagesmobile\": \"ad minim\",\n \"imagesweb\": \"ea minim enim\",\n \"internet_access\": 74393496.20836517,\n \"latitude\": 48933710.61418262,\n \"leisure_culture\": -27250453.248851642,\n \"longitude\": -64276748.77925193,\n \"name\": \"velit in mollit\",\n \"outdoors\": -92609717.68897867,\n \"population\": -22003786,\n \"restaurant_ids\": \"commodo aliqua\",\n \"restaurants\": \"qui amet\",\n \"safety\": -16719879.624597937,\n \"state\": \"nisi\",\n \"summary\": \"ut occaecat\",\n \"taxation\": 82107633.2872208,\n \"timezone\": \"ex pariatur nostrud\",\n \"travel_connectivity\": 55370289.95962903,\n \"venture_capital\": -15092184.339051113\n}"
-						},
-						{
 							"name": "unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -529,6 +496,39 @@
 							],
 							"cookie": [],
 							"body": "{\n \"code\": -32681924,\n \"message\": \"aliquip ut labore adipisicing\"\n}"
+						},
+						{
+							"name": "Details about a city",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cities/:cityId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cities",
+										":cityId"
+									],
+									"variable": [
+										{
+											"key": "cityId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -88785651,\n \"business_freedom\": 1923028.5569237918,\n \"commute\": -97568903.74116617,\n \"cost_of_living\": 29063124.33224097,\n \"cuisine_ids\": \"quis Lorem\",\n \"cuisines\": \"cupidatat velit ut sit\",\n \"economy\": 94700.79958541691,\n \"education\": 17959376.069525808,\n \"environmental_quality\": 58245400.37928507,\n \"full_name\": \"adipisicing labore\",\n \"healthcare\": -72002550.57257277,\n \"housing\": 75971717.07571623,\n \"imagesmobile\": \"ad minim\",\n \"imagesweb\": \"ea minim enim\",\n \"internet_access\": 74393496.20836517,\n \"latitude\": 48933710.61418262,\n \"leisure_culture\": -27250453.248851642,\n \"longitude\": -64276748.77925193,\n \"name\": \"velit in mollit\",\n \"outdoors\": -92609717.68897867,\n \"population\": -22003786,\n \"restaurant_ids\": \"commodo aliqua\",\n \"restaurants\": \"qui amet\",\n \"safety\": -16719879.624597937,\n \"state\": \"nisi\",\n \"summary\": \"ut occaecat\",\n \"taxation\": 82107633.2872208,\n \"timezone\": \"ex pariatur nostrud\",\n \"travel_connectivity\": 55370289.95962903,\n \"venture_capital\": -15092184.339051113\n}"
 						}
 					]
 				}
@@ -716,39 +716,6 @@
 					},
 					"response": [
 						{
-							"name": "Details about a restaurant",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/restaurants/:restaurantid",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"restaurants",
-										":restaurantid"
-									],
-									"variable": [
-										{
-											"key": "restaurantid"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"id\": -34447429,\n \"address\": \"dol\",\n \"aggregate_rating\": \"dolor nulla dolore\",\n \"average_cost_for_two\": -49707973.59117873,\n \"city\": \"magna commodo culpa eu\",\n \"city_id\": -10743616,\n \"cuisine_ids\": \"eu irure\",\n \"cuisines\": \"conse\",\n \"highlights\": \"ad dolor ve\",\n \"latitude\": \"consequat temp\",\n \"longitude\": \"nulla id\",\n \"menu_url\": \"tempor exercitation\",\n \"name\": \"proident veniam qui eu\",\n \"phone_numbers\": \"id non\",\n \"price_range\": 39834695,\n \"restaurant_image\": \"cillum voluptate\",\n \"state_abbrev\": \"aute irure qui\",\n \"timings\": \"ipsum velit\",\n \"url\": \"adipisicing officia tempor\",\n \"zipcode\": \"magna ipsum\"\n}"
-						},
-						{
 							"name": "unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -780,6 +747,39 @@
 							],
 							"cookie": [],
 							"body": "{\n \"code\": -32681924,\n \"message\": \"aliquip ut labore adipisicing\"\n}"
+						},
+						{
+							"name": "Details about a restaurant",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/restaurants/:restaurantid",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"restaurants",
+										":restaurantid"
+									],
+									"variable": [
+										{
+											"key": "restaurantid"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -34447429,\n \"address\": \"dol\",\n \"aggregate_rating\": \"dolor nulla dolore\",\n \"average_cost_for_two\": -49707973.59117873,\n \"city\": \"magna commodo culpa eu\",\n \"city_id\": -10743616,\n \"cuisine_ids\": \"eu irure\",\n \"cuisines\": \"conse\",\n \"highlights\": \"ad dolor ve\",\n \"latitude\": \"consequat temp\",\n \"longitude\": \"nulla id\",\n \"menu_url\": \"tempor exercitation\",\n \"name\": \"proident veniam qui eu\",\n \"phone_numbers\": \"id non\",\n \"price_range\": 39834695,\n \"restaurant_image\": \"cillum voluptate\",\n \"state_abbrev\": \"aute irure qui\",\n \"timings\": \"ipsum velit\",\n \"url\": \"adipisicing officia tempor\",\n \"zipcode\": \"magna ipsum\"\n}"
 						}
 					]
 				}
