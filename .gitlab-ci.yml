@@ -56,22 +56,22 @@ postman_tests:
   # - newman --version
     - newman run Postman_Tests.json
 
-jest_tests:
-  stage: test
-  script:
-    - cd frontend
-    - npm install
-    - npm test
-
 # jest_tests:
 #   stage: test
-#   image:
-#     name: mcgenius/pp_mocha
-#     entrypoint: [""]
 #   script:
 #     - cd frontend
 #     - npm install
-#     - npm run test
+#     - npm test
+
+jest_tests:
+  stage: test
+  image:
+    name: mcgenius/pp_mocha
+    entrypoint: [""]
+  script:
+    - cd frontend
+    - npm install
+    - npm run test
 
 # deploy-prod:
 #   stage: deploy
