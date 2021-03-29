@@ -1,7 +1,12 @@
 
+import React from 'react';
 import ReactDOM from 'react-dom';
+
+//import { expect } from 'chai';
+import * as Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, shallow, configure } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from "../App";
 import NavBar from "../components/NavBar";  
@@ -59,15 +64,15 @@ describe("Render views", () => {
 		expect(component).toMatchSnapshot();
 	});
 	// tests for model pages
-	test('Restaurants model page', () => {
+	test('Restaurants', () => {
 		const component = shallow(<Restaurants />);
 		expect(component).toMatchSnapshot();
 	});
-	test('Cities model page', () => {
+	test('Cities', () => {
 		const component = shallow(<Cities />);
 		expect(component).toMatchSnapshot();
 	});
-	test('Cuisines model page', () => {
+	test('Cuisines', () => {
 		const component = shallow(<Cuisines />);
 		expect(component).toMatchSnapshot();
 	});
@@ -90,3 +95,11 @@ describe("Render views", () => {
 	// });
 })
 
+/* about page test 
+it('Get About Page', async () => {
+	const copy = shallow(<About />);
+	expect(copy).to.not.be.undefined;
+	expect(copy).to.have.length(1);
+	expect(copy.find("div")).to.have.length(11);
+});
+*/
