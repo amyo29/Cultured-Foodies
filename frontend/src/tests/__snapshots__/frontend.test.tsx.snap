@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation /> renders a Navigation Bar 1`] = `
+<div>
+  <Navbar
+    className="navbar-custom"
+    collapseOnSelect={false}
+    expand="lg"
+    variant="light"
+  >
+    <NavbarBrand
+      className="nav-link"
+      href="/"
+    >
+      <b>
+        Cultured Foodies
+      </b>
+    </NavbarBrand>
+    <NavbarToggle
+      aria-controls="basic-navbar-nav"
+      label="Toggle navigation"
+    />
+    <NavbarCollapse
+      id="basic-navbar-nav"
+    >
+      <Nav
+        className="mr-auto"
+        fill={false}
+        justify={false}
+      >
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/about"
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/cuisines"
+        >
+          Cuisines
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/cities"
+        >
+          Cities
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/restaurants"
+        >
+          Restaurants
+        </NavLink>
+      </Nav>
+      <Form
+        inline={true}
+      >
+        <FormControl
+          className="mr-sm-2"
+          placeholder="Search"
+          type="text"
+        />
+        <Button
+          active={false}
+          disabled={false}
+          variant="outline-success"
+        >
+          Search
+        </Button>
+      </Form>
+    </NavbarCollapse>
+  </Navbar>
+</div>
+`;
+
+exports[`Render views About 1`] = `
+<div
+  className="font-style center"
+>
+  <h1>
+    About Us
+  </h1>
+  <p>
+    Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas. With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
+  </p>
+  <h2>
+    Meet the Team
+  </h2>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="row mb-4"
+    >
+      <div>
+        Loading
+      </div>
+    </div>
+  </Container>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="row mb-4"
+    >
+      <div>
+        Loading
+      </div>
+    </div>
+  </Container>
+  <div>
+    <h2>
+      Stats
+    </h2>
+    <div>
+      <h5>
+        Total Commits: 
+      </h5>
+    </div>
+    <div>
+      <h5>
+        Total Issues: 
+      </h5>
+    </div>
+    <div>
+      <h5>
+        Total Tests: 
+      </h5>
+    </div>
+  </div>
+  <div>
+    <h2>
+      APIs
+    </h2>
+  </div>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="row mb-4"
+    >
+      <InfoCard
+        description="Used to retrieve country information"
+        img="RestCountriesLogo.png"
+        link="https://restcountries.eu/"
+        title="REST Countries"
+      />
+      <InfoCard
+        description="Used to find restaurant data."
+        img="zomato.png"
+        link="https://rapidapi.com/blog/how-to-use-zomato-api/"
+        title="Zomato API"
+      />
+      <InfoCard
+        description="Used to retrieve cuisine and dishes data."
+        img="WorldFood.png"
+        link="https://worldfood.guide/api/"
+        title="WorldFood API"
+      />
+    </div>
+    <div
+      className="row mb-4"
+    >
+      <InfoCard
+        description="Used to show the map location of a country"
+        img="GoogleMapsLogo.jpeg"
+        link="https://developers.google.com/maps/documentation/embed/get-started"
+        title="Google Maps Embed API"
+      />
+      <InfoCard
+        description="Used to retrieve images of restaurants."
+        img="GooglePlaceLogo.png"
+        link="https://developers.google.com/maps/documentation/places/web-service/photos"
+        title="Google Places Photos API"
+      />
+      <InfoCard
+        description="Used to retrieve city data."
+        img="teleportAPI.png"
+        link="https://developers.teleport.org/api/"
+        title="Teleport API"
+      />
+    </div>
+  </Container>
+  <div>
+    <h2>
+      Tools
+    </h2>
+  </div>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="row mb-4"
+    >
+      <InfoCard
+        description="Cloud hosting platform"
+        img="AWSLogo.png"
+        link="https://aws.amazon.com/"
+        title="AWS"
+      />
+      <InfoCard
+        description="GitLab Repository and CI/CD platform"
+        img="GitLabLogo.png"
+        link="https://gitlab.com/"
+        title="GitLab"
+      />
+      <InfoCard
+        description="API and streamline collaboration platform"
+        img="PostmanLogo.png"
+        link="https://www.postman.com/"
+        title="Postman"
+      />
+    </div>
+    <div
+      className="row mb-4"
+    >
+      <InfoCard
+        description="A JavaScript library for building user interfaces"
+        img="ReactLogo.png"
+        link="https://reactjs.org/"
+        title="React"
+      />
+      <InfoCard
+        description="A free and open-source CSS framework directed at responsive, mobile-first front-end web development"
+        img="BootstrapLogo.jpg"
+        link="https://getbootstrap.com/"
+        title="BootStrap"
+      />
+      <InfoCard
+        description="Domain name registrar"
+        img="Namecheap.png"
+        link="https://www.namecheap.com/"
+        title="NameCheap"
+      />
+    </div>
+    <div
+      className="row mb-4"
+    >
+      <InfoCard
+        description="Open-source relational database management system."
+        img="PostgreSQL.png"
+        link="https://postgresql.org"
+        title="PostgreSQL"
+      />
+    </div>
+  </Container>
+  <div>
+    <h2>
+      Our Data
+    </h2>
+  </div>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="row justify-content-center"
+    >
+      <InfoCard
+        img="GitLabLogo.png"
+        link="https://gitlab.com/cs373-group-11/cultured-foodies"
+        title="Gitlab Repo"
+      />
+      <InfoCard
+        img="PostmanLogo.png"
+        link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
+        title="Postman API"
+      />
+    </div>
+  </Container>
+</div>
+`;
+
+exports[`Render views Cities 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-block",
+      "justifyContent": "horizontal",
+    }
+  }
+>
+  <h1
+    className="text-align center"
+  >
+    Cities
+  </h1>
+  <Container
+    fluid={false}
+  />
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
+</div>
+`;
+
+exports[`Render views Cuisines 1`] = `
+<div>
+  <h1
+    className="text-align center"
+  >
+    Cuisines
+  </h1>
+  <Container
+    fluid={false}
+  />
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
+</div>
+`;
+
+exports[`Render views Restaurants 1`] = `
+<div>
+  <h1
+    className="text-align center"
+  >
+    Restaurants
+  </h1>
+  <ForwardRef
+    className="table"
+    responsive={true}
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          City
+        </th>
+        <th>
+          Cuisines
+        </th>
+        <th>
+          Rating
+        </th>
+        <th>
+          Price Range
+        </th>
+        <th>
+          Average Cost for Two
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </ForwardRef>
+  <div
+    className="row pagination"
+  >
+    <WithStyles(ForwardRef(Pagination))
+      count={0}
+      onChange={[Function]}
+      page={1}
+    />
+    1
+     - 
+    0
+     of 
+    0
+  </div>
+</div>
+`;
+
+exports[`Render views Splash Page 1`] = `
+<div>
+  <body
+    className="Home"
+    data-background="homephoto.jpg"
+    id="mybody"
+  >
+    <header
+      className="Home-header"
+    >
+      <div
+        className="Title-summary"
+      >
+        Welcome fellow Foodie!
+        <div
+          className="summary"
+        >
+          Whether you are looking for cultural dishes
+          <br />
+          around the world, country information, dishes 
+          <br />
+          or global news, Cultured Foodies 
+          <br />
+          can help you find what you're looking for!
+          <br />
+        </div>
+      </div>
+    </header>
+  </body>
+</div>
+`;
