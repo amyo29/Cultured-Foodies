@@ -92,10 +92,10 @@ function Countries() {
                                 {countries[parseInt(cID)].capital} <br />
                                 <b>Region: </b>
                                 {countries[parseInt(cID)].region} <br />
-                                <b>Population:</b>
-                                {countries[parseInt(cID)].population}
+                                <b>Population: </b>
+                                {countries[parseInt(cID)].population.toLocaleString()}
                                 <br />
-                                <b>Timezones:</b>
+                                <b>Timezones: </b>
                                 {countries[parseInt(cID)].timezones}
                               </p>
                             ) : (

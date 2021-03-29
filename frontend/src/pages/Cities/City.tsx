@@ -39,9 +39,8 @@ function City(id: any) {
       let filtered_cuisines = all_cuisines.filter(matchesCityCuisines);
       setCuisines(filtered_cuisines);
     });
-
   }, [city]);
-  console.log(city)
+  console.log(city);
 
   //render: map long/lat or city names to render map
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
@@ -52,107 +51,117 @@ function City(id: any) {
     city?.full_name;
 
   return (
-    <Container>
+    <div>
       <Image src={city?.imagesweb} fluid />
+      <Container>
+        <h1>{city?.name}</h1>
 
-      <h1>{city?.name}</h1>
+        <section>
+          <h2>About the City</h2>
+          {city?.full_name}
 
-      <section>
-        <h2>About the City</h2>
-        {city?.full_name}
+          <h5>Summary</h5>
+          {city?.summary.replace(/(<([^>]+)>)/gi, "")}
 
-        <h5>Summary</h5>
-        {city?.summary.replace( /(<([^>]+)>)/ig, '')}
+          <h5>State</h5>
+          {city?.state}
 
-        <h5>State</h5>
-        {city?.state}
+          <h5>Population</h5>
+          {city?.population.toLocaleString()}
 
-        <h5>Population</h5>
-        {city?.population}
+          <h5>Location</h5>
+          <h6>Latitude</h6>
+          {city?.latitude}
+          <h6>Longitude</h6>
+          {city?.longitude}
 
-        <h5>Location</h5>
-        <h6>Latitude</h6>
-        {city?.latitude}
-        <h6>Longitude</h6>
-        {city?.longitude}
-      </section>
+          <h5>Timezone</h5>
+          {city?.timezone}
+        </section>
 
-      <section style={{ alignItems: "left", paddingLeft: "1px" }}>
-        <h5>Scores</h5>
-        <h6>Business Freedom</h6>
-        {city?.business_freedom}
+        <section style={{ alignItems: "left", paddingLeft: "1px" }}>
+          <h5>Scores</h5>
+          <h6>Business Freedom</h6>
+          {city?.business_freedom}
 
-        <h6>Cost of Living</h6>
-        {city?.cost_of_living}
+          <h6>Cost of Living</h6>
+          {city?.cost_of_living}
 
-        <h6>Economy</h6>
-        {city?.economy}
+          <h6>Economy</h6>
+          {city?.economy}
 
-        <h6>Housing</h6>
-        {city?.housing}
+          <h6>Housing</h6>
+          {city?.housing}
 
-        <h6>Commute</h6>
-        {city?.commute}
+          <h6>Commute</h6>
+          {city?.commute}
 
-        <h6>Education</h6>
-        {city?.education}
+          <h6>Education</h6>
+          {city?.education}
 
-        <h6>Environmental Quality</h6>
-        {city?.environmental_quality}
+          <h6>Environmental Quality</h6>
+          {city?.environmental_quality}
 
-        <h6>Healthcare</h6>
-        {city?.healthcare}
+          <h6>Healthcare</h6>
+          {city?.healthcare}
 
-        <h6>Leisure and Culture</h6>
-        {city?.leisure_culture}
+          <h6>Leisure and Culture</h6>
+          {city?.leisure_culture}
 
-        <h6>Outdoors</h6>
-        {city?.outdoors}
+          <h6>Outdoors</h6>
+          {city?.outdoors}
 
-        <h6>Safety</h6>
-        {city?.safety}
+          <h6>Safety</h6>
+          {city?.safety}
 
-        <h6>Taxation</h6>
-        {city?.taxation}
+          <h6>Taxation</h6>
+          {city?.taxation}
 
-        <h6>Travel and Connectivity</h6>
-        {city?.travel_connectivity}
+          <h6>Travel and Connectivity</h6>
+          {city?.travel_connectivity}
 
-        <h6>Internet Access</h6>
-        {city?.internet_access}
+          <h6>Internet Access</h6>
+          {city?.internet_access}
 
-        <h6>Venture Capital</h6>
-        {city?.venture_capital}
-      </section>
-      <section>
-        <h5>Restaurants in {city?.name}</h5>
-        {city?.restaurants?  city?.restaurants?.split(", ").map((r,index) => (
-            <a href={"/restaurants/" + city?.restaurant_ids.split(", ")[index]}>{r}<br/></a> 
-          )):
-        <p>loading</p>
-        }
+          <h6>Venture Capital</h6>
+          {city?.venture_capital}
+        </section>
+        <section>
+          <h5>Restaurants in {city?.name}</h5>
+          {city?.restaurants ? (
+            city?.restaurants?.split(", ").map((r, index) => (
+              <a
+                href={"/restaurants/" + city?.restaurant_ids.split(", ")[index]}
+              >
+                {r}
+                <br />
+              </a>
+            ))
+          ) : (
+            <p>loading</p>
+          )}
 
-        <h5>Cuisines of {city?.name}</h5>
-        {cuisines?.map((c) => (
-          <a href={"/cuisines/" + c.id}>
-            {c.name}
-            <br />{" "}
-            <img src={c.dishes[0].image_url} width="200" height="200"></img>
-          </a>
-        ))} 
-      </section>
+          <h5>Cuisines of {city?.name}</h5>
+          {cuisines?.map((c) => (
+            <a href={"/cuisines/" + c.id}>
+              {c.name}
+              <br />{" "}
+              <img src={c.dishes[0].image_url} width="200" height="200"></img>
+            </a>
+          ))}
+        </section>
 
-      <div className="center">
-        <h4>Map Location</h4>
-        <iframe
-          src={cityMapURL}
-          width="600"
-          height="450"
-          loading="lazy"
-        ></iframe>
-      </div>
+        <div className="center">
+          <iframe
+            src={cityMapURL}
+            width="600"
+            height="450"
+            loading="lazy"
+          ></iframe>
+          <h4>Map Location</h4>
+        </div>
 
-      {/* <h5>Health</h5>
+        {/* <h5>Health</h5>
         {data["recipe"]["healthLabels"].map((healthLabel: any) => {
           return <li>{healthLabel}</li>;
         })}
@@ -197,7 +206,8 @@ function City(id: any) {
           title="video"
         />
       </div> */}
-    </Container>
+      </Container>
+    </div>
   );
 }
 

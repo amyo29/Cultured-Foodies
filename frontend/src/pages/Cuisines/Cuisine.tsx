@@ -6,8 +6,7 @@ import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
 import axios from "axios";
 
-
-function Cuisine(id:any) {
+function Cuisine(id: any) {
   useEffect(() => {
     document.title = "Cuisine";
   }, []);
@@ -47,13 +46,13 @@ function Cuisine(id:any) {
 
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
 
-
   return (
     <Container fluid>
-      {cuisine ? cuisine.name : loading}
+      <h1>{cuisine ? cuisine.name : loading}</h1>
+      <h5>{cuisine ? cuisine.description : loading}</h5>
       {countries?.map((country) => (
         <div>
-          <header>Country: {country?.name}</header>
+          <h4>Country: {country?.name}</h4>
           <Row>
             <Col xs={6} md={4}>
               <Image src={country?.flag} fluid />
@@ -75,15 +74,17 @@ function Cuisine(id:any) {
           <section>
             <h5>Alpha 3 Code:</h5>
             {country?.alpha3code}
-
             <h5>Region</h5>
             {country?.region}
-
             <h5>Subregion</h5>
             {country?.subregion}
+            <h5>Latitude/Longitude</h5>
+            {country?.latitude}, {country?.longitude}
+            <h5>Area</h5>
+            {country?.area.toLocaleString()} km<sup>2</sup>
           </section>
           <h5>Population</h5>
-          {country?.population}
+          {country?.population.toLocaleString()}
 
           <h5>Capital city</h5>
           {country?.capital}
@@ -123,9 +124,7 @@ function Cuisine(id:any) {
                         alt="171x180"
                         src={dish.image_url}
                       />
-                      <Figure.Caption>
-                        {dish.name}
-                      </Figure.Caption>
+                      <Figure.Caption>{dish.name}</Figure.Caption>
                     </Figure>
                   </Col>
                 ))}
@@ -144,41 +143,35 @@ function Cuisine(id:any) {
    
     */}
 
-      <section>
-        <h5>Restaurants with {cuisine?.name} food</h5>
-        {cuisine?.restaurants ? (
-          cuisine?.restaurants?.split(", ").map((r, index) => (
-            <a
-              href={
-                "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-              }
-            >
-              {r}
-              <br />
-            </a>
-          ))
-        ) : (
-          <p>loading</p>
-        )}
+      <h5>Restaurants with {cuisine?.name} food</h5>
+      {cuisine?.restaurants ? (
+        cuisine?.restaurants?.split(", ").map((r, index) => (
+          <a
+            href={"/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]}
+          >
+            {r}
+            <br />
+          </a>
+        ))
+      ) : (
+        <p>loading</p>
+      )}
 
-        <h5>Cities with {cuisine?.name} food</h5>
-        {cuisine?.cities ? (
-          cuisine?.cities?.split(", ").map((c, index) => (
-            <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]}>
-              {c}
-              <br />
-            </a>
-          ))
-        ) : (
-          <p>loading</p>
-        )}
-      </section>
+      <h5>Cities with {cuisine?.name} food</h5>
+      {cuisine?.cities ? (
+        cuisine?.cities?.split(", ").map((c, index) => (
+          <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]}>
+            {c}
+            <br />
+          </a>
+        ))
+      ) : (
+        <p>loading</p>
+      )}
       <p></p>
       <p></p>
       <p></p>
       <p></p>
-
-
     </Container>
   );
 }

@@ -93,12 +93,16 @@ function Restaurant(id: any) {
             <Card className="instance-text" style={{ width: "55rem" }}>
               <Card.Body>
                 <Card.Title>{restaurant?.name}</Card.Title>
+                <Card.Text>Phone Number: {restaurant?.phone_numbers}</Card.Text>
                 <Card.Text>Address: {restaurant?.address}</Card.Text>
+                <Card.Text>City: {restaurant?.city}</Card.Text>
+                <Card.Text>Zipcode: {restaurant?.zipcode}</Card.Text>
                 <Card.Text>
                   Average Rating: {restaurant?.aggregate_rating}
                 </Card.Text>
                 <Card.Text>Highlights: {restaurant?.highlights}</Card.Text>
                 <Card.Text>Price Range: {restaurant?.price_range}</Card.Text>
+                <Card.Text>Average Cost for Two: ${restaurant?.average_cost_for_two}</Card.Text>
                 <Card.Text>Timings: {restaurant?.timings}</Card.Text>
                 <Card.Text>
                   Menu: 

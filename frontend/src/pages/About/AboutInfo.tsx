@@ -124,7 +124,7 @@ const TEAM_INFO = [
     username: "lucinda",
     email: "lucinda.onguyen@gmail.com",
     img: LucindaImg,
-    role: "Full-Stack | Phase 1 Project Leader",
+    role: "Full-Stack | Phase I Project Leader",
     bio: "I'm a fourth year CS major at UT Austin from Dallas, TX. I enjoy reading manga and webtoons.",
     linkedin: "https://www.linkedin.com/in/lucindanguyen/",
     commits: 0,
@@ -161,7 +161,7 @@ const TEAM_INFO = [
     username: "siddheshkrishnan1",
     email: "siddheshkrishnan1@gmail.com",
     img: SiddheshImg,
-    role: "Full-Stack",
+    role: "Full-Stack | Phase II Project Leader",
     bio:
       "I'm a third year CS student at UT Austin. I'm from Austin, TX and enjoy going on bike rides in my free time.",
     linkedin: "https://www.linkedin.com/in/sidkrishlink/",

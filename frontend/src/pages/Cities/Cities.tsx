@@ -37,7 +37,7 @@ function Cities() {
   }
 
   return (
-    <div style={{display: 'inline-block', justifyContent: 'horizontal', alignItems:"center"}}>
+    <div>
       <h1 className="text-align center">Cities</h1>
       <Container>
         {/* {currentData.map((city) => (
@@ -64,7 +64,7 @@ function Cities() {
                       {city["environmental_quality"]} <br />
                       <b>Travel Connectivity: </b> {city["travel_connectivity"]}{" "}
                       <br />
-                      <b>Population: </b> {city["population"]} <br />
+                      <b>Population: </b> {city["population"].toLocaleString()} <br />
                     </p>
                   </Card.Body>
                 </Card>
