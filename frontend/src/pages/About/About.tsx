@@ -218,7 +218,7 @@ function About() {
           <InfoCard
             title="Postman API"
             img={TOOLS_INFO[2].img}
-            link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
+            link="https://documenter.getpostman.com/view/15165948/TzCL9UDZ"
           />
         </div>
       </Container>
