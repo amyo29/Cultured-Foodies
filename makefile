@@ -42,7 +42,7 @@ run-website:
 # TESTS
 python-unit-tests:
 	echo "Running Python unit tests..."
-	python3 backend/unit_tests.py
+	python3 backend/tests.py
 
 selenium-tests:
 	echo "Running Selenium tests..."
