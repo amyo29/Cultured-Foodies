@@ -1,3 +1,6 @@
+Old Postman API Documentation link: https://documenter.getpostman.com/view/14712963/Tz5jczL8
+
+
 Cultured Foodies API
 
 An API dedicated to shedding light on cuisines, countries, cities, and restaurants around the world.
