@@ -64,17 +64,26 @@ describe("Render views", () => {
 	//     TypeError: Cannot read property 'match' of undefined
 	// this error is due to using useParams from react-router (see https://stackoverflow.com/questions/59153898/typeerror-cannot-read-property-match-of-undefined-when-using-useparams-from-r)
 	
-	// test('Restaurant', () => {
-	// 	const component = shallow(<Restaurant/>);
-	// 	expect(component).toMatchSnapshot();
-	// });
-	// test('City', () => {
-	// 	const component = shallow(<City/>);
-	// 	expect(component).toMatchSnapshot();
-	// });
-	// test('Cuisine', () => {
-	// 	const component = shallow(<Cuisine/>);
-	// 	expect(component).toMatchSnapshot();
-	// });
+	test('Restaurant instance page', () => {
+		const component = shallow(<Restaurant/>);
+		expect(component).toMatchSnapshot();
+	});
+	test('City instance page', () => {
+		const component = shallow(<City/>);
+		expect(component).toMatchSnapshot();
+	});
+	test('Cuisine instance page', () => {
+		const component = shallow(<Cuisine/>);
+		expect(component).toMatchSnapshot();
+	});
+
+	// jest.mock("react-router-dom", () => ({
+	// 	...jest.requireActual("react-router-dom"),
+	// 	useParams: () => ({
+	// 	  id: 590
+	// 	})
+	//   }));
+
+
 })
 
