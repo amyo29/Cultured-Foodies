@@ -6,14 +6,13 @@ import useAxios from "axios-hooks";
 import axios from "axios";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import { CityInstance } from "../Cities/City";
-function Restaurant() {
+function Restaurant(id:any) {
   useEffect(() => {
     document.title = "Restaurant";
   }, []);
-  const { id } = useParams<{ id: string }>();
-  const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id);
+  const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id.id);
   const [restaurant, setRestaurant] = useState<RestaurantInstance>();
-
+  console.log('here', id)
   useEffect(() => {
     const restaurantObj: RestaurantInstance = data as RestaurantInstance;
     if (restaurantObj) {
@@ -27,7 +26,7 @@ function Restaurant() {
     "https://www.google.com/maps/embed/v1/place?key=" +
     API_KEY +
     "&q=" +
-    restaurant?.name;
+    restaurant?.name.replace("&", "%20");
 
   // // model navigation
   // let countryIndex = article["countryIndex"];

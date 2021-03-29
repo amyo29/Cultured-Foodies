@@ -10,12 +10,11 @@ import axios from "axios";
 import { RestaurantInstance } from "../Restaurants/Restaurant";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 
-function City() {
+function City(id: any) {
   useEffect(() => {
     document.title = "City";
   }, []);
-  const { id } = useParams<{ id: string }>();
-  const [{ data, loading, error }] = useAxios("/api/cities/id=" + id);
+  const [{ data, loading, error }] = useAxios("/api/cities/id=" + id.id);
   const [city, setCity] = useState<CityInstance>();
   // const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
   const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();

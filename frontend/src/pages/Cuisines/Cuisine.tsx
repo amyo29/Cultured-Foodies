@@ -7,13 +7,12 @@ import useAxios from "axios-hooks";
 import axios from "axios";
 
 
-function Cuisine() {
-  const { id } = useParams<{ id: string }>();
+function Cuisine(id:any) {
   useEffect(() => {
     document.title = "Cuisine";
   }, []);
 
-  const [{ data, loading, error }] = useAxios("/api/cuisines/id=" + id);
+  const [{ data, loading, error }] = useAxios("/api/cuisines/id=" + id.id);
   const [cuisine, setCuisine] = useState<CuisineInstance>();
   const [countries, setCountries] = useState<Array<CountryInstance>>();
   const [dishes, setDishes] = useState<any>();
