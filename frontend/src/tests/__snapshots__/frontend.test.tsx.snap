@@ -515,59 +515,63 @@ exports[`Render views Restaurant instance page 1`] = `
       align-items="center"
       className="info"
     >
-      <img
-        alt=""
-        className="row instance-photo"
-      />
-      <Card
-        body={false}
-        className="row instance-text"
-        style={
-          Object {
-            "width": "55rem",
-          }
-        }
+      <div
+        className="row"
       >
-        <CardBody>
-          <CardTitle />
-          <CardText>
-            Address: 
-          </CardText>
-          <CardText>
-            Average Rating: 
-          </CardText>
-          <CardText>
-            Highlights: 
-          </CardText>
-          <CardText>
-            Price Range: 
-          </CardText>
-          <CardText>
-            Timings: 
-          </CardText>
-          <CardText>
-            Menu:
-            <a>
-              <br />
-            </a>
-          </CardText>
-          <CardText>
-            Cities which have this restaurant:
-            <a
-              href="/cities/undefined"
-            >
-               
-              <br />
-            </a>
-          </CardText>
-          Cuisines for this restaurant: 
-          <br />
-          <p>
-            loading
-          </p>
-          <CardText />
-        </CardBody>
-      </Card>
+        <img
+          alt=""
+          className="col instance-photo"
+        />
+        <Card
+          body={false}
+          className="col instance-text"
+          style={
+            Object {
+              "width": "55rem",
+            }
+          }
+        >
+          <CardBody>
+            <CardTitle />
+            <CardText>
+              Address: 
+            </CardText>
+            <CardText>
+              Average Rating: 
+            </CardText>
+            <CardText>
+              Highlights: 
+            </CardText>
+            <CardText>
+              Price Range: 
+            </CardText>
+            <CardText>
+              Timings: 
+            </CardText>
+            <CardText>
+              Menu:
+              <a>
+                <br />
+              </a>
+            </CardText>
+            <CardText>
+              Cities which have this restaurant:
+              <a
+                href="/cities/undefined"
+              >
+                 
+                <br />
+              </a>
+            </CardText>
+            Cuisines for this restaurant: 
+            <br />
+            <p>
+              loading
+            </p>
+            <CardText />
+          </CardBody>
+        </Card>
+      </div>
     </div>
   </body>
   <div
