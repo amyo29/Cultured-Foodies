@@ -161,7 +161,7 @@ const TEAM_INFO = [
     username: "siddheshkrishnan1",
     email: "siddheshkrishnan1@gmail.com",
     img: SiddheshImg,
-    role: "Full-Stack",
+    role: "Full-Stack | Phase 2 Project Leader",
     bio:
       "I'm a third year CS student at UT Austin. I'm from Austin, TX and enjoy going on bike rides in my free time.",
     linkedin: "https://www.linkedin.com/in/sidkrishlink/",
