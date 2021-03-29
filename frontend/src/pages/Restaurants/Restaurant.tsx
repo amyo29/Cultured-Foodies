@@ -81,12 +81,13 @@ function Restaurant(id:any) {
       <body className="Instance center-div">
         <h2 className="Instance-header">{restaurant?.name}</h2>
         <div className="info" align-items="center">
+          <div className="row">
           <img
-            className="row instance-photo"
+            className="col instance-photo"
             src={restaurant?.restaurant_image}
             alt=""
           />
-          <Card className="row instance-text" style={{ width: "55rem" }}>
+          <Card className="col instance-text" style={{ width: "55rem" }}>
             <Card.Body>
               <Card.Title>{restaurant?.name}</Card.Title>
               <Card.Text>Address: {restaurant?.address}</Card.Text>
@@ -141,6 +142,7 @@ function Restaurant(id:any) {
               <Card.Text></Card.Text>
             </Card.Body>
           </Card>
+          </div>
         </div>
       </body>
       <div className="center">
