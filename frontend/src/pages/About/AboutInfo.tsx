@@ -117,7 +117,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/vishal-tak-898181163/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 37,
   },
   {
     name: "Lucinda Nguyen",
@@ -129,7 +129,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/lucindanguyen/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 3,
   },
   {
     name: "Amy Ouyang",
@@ -141,7 +141,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/amy-o/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 10,
   },
   {
     name: "Tim Nguyen",
@@ -154,7 +154,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/nguyenmctim/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 10,
   },
   {
     name: "Siddhesh Krishnan",
@@ -167,7 +167,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/sidkrishlink/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 21,
   },
   {
     name: "Joshua Arrojado",
@@ -180,7 +180,7 @@ const TEAM_INFO = [
     linkedin: "https://www.linkedin.com/in/joshua-arrojado/",
     commits: 0,
     issues: 0,
-    tests: 0,
+    tests: 9,
   },
 ];
 

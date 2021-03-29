@@ -287,7 +287,7 @@ exports[`Render views About Page 1`] = `
       />
       <InfoCard
         img="PostmanLogo.png"
-        link="https://documenter.getpostman.com/view/14712963/Tz5jczL8"
+        link="https://documenter.getpostman.com/view/15165948/TzCL9UDZ"
         title="Postman API"
       />
     </div>

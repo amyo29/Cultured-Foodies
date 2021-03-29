@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  cultured-foodies:
+    build: ./
+    container_name: cultured-foodies-container
+    ports:
+      - 5000:5000
+    expose:
+      - 5000

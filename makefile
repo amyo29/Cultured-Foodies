@@ -5,6 +5,9 @@ docker-build:
 docker-run:
 	docker run -p 5000:5000 culturedfoodies-backend
 
+docker-compose:
+	docker-compose up --build --force-recreate
+
 # FORMAT
 format:
 	python3 -m black ./backend/*.py
@@ -50,9 +53,7 @@ selenium-tests:
 
 postman-tests:
 	echo "Running Postman tests..."
-	cd frontend
-	npm install -g newman
-	newman run Postman_Tests.json
+	newman run Postman.json
 
 jest-tests:
 	echo "Running Jest tests..."
