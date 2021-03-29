@@ -25,8 +25,11 @@ Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journ
 ## Project leader
 
 Phase I: Lucinda Nguyen
+
 Phase II: Siddhesh Krishnan
+
 Phase III:
+
 Phase IV:
 
 ## Link to GitLab pipelines

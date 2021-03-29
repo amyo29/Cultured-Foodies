@@ -6,13 +6,13 @@ import useAxios from "axios-hooks";
 import axios from "axios";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import { CityInstance } from "../Cities/City";
-function Restaurant(id:any) {
+function Restaurant(id: any) {
   useEffect(() => {
     document.title = "Restaurant";
   }, []);
   const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id.id);
   const [restaurant, setRestaurant] = useState<RestaurantInstance>();
-  console.log('here', id)
+  console.log("here", id);
   useEffect(() => {
     const restaurantObj: RestaurantInstance = data as RestaurantInstance;
     if (restaurantObj) {
@@ -82,66 +82,70 @@ function Restaurant(id:any) {
         <h2 className="Instance-header">{restaurant?.name}</h2>
         <div className="info" align-items="center">
           <div className="row">
-          <img
-            className="col instance-photo"
-            src={restaurant?.restaurant_image}
-            alt=""
-          />
-          <Card className="col instance-text" style={{ width: "55rem" }}>
-            <Card.Body>
-              <Card.Title>{restaurant?.name}</Card.Title>
-              <Card.Text>Address: {restaurant?.address}</Card.Text>
-              <Card.Text>
-                Average Rating: {restaurant?.aggregate_rating}
-              </Card.Text>
-              <Card.Text>Highlights: {restaurant?.highlights}</Card.Text>
-              <Card.Text>Price Range: {restaurant?.price_range}</Card.Text>
-              <Card.Text>Timings: {restaurant?.timings}</Card.Text>
-              <Card.Text>
-                Menu:
-                {
-                  <a href={restaurant?.menu_url}>
-                    {restaurant?.menu_url}
-                    <br />
-                  </a>
-                }
-              </Card.Text>
-              <Card.Text>
-                Cities which have this restaurant:
-                {
-                  <a href={"/cities/" + restaurant?.city_id}>
-                    {" "}
-                    {restaurant?.city}
-                    <br />
-                  </a>
-                }
-              </Card.Text>
-              Cuisines for this restaurant: <br />
-              {restaurant?.cuisines ? (
-                restaurant?.cuisines?.split(", ").map((c, index) =>
-                  restaurant?.cuisine_ids.split(", ")[index] !== "-1" ? (
-                    <a
-                      href={
-                        "/cuisines/" +
-                        restaurant?.cuisine_ids.split(", ")[index]
-                      }
-                    >
-                      {c}
+            <div className="col">
+              <img
+                src={restaurant?.restaurant_image}
+                alt=""
+                width="450"
+              />
+            </div>
+            <div className="col">
+            <Card className="instance-text" style={{ width: "55rem" }}>
+              <Card.Body>
+                <Card.Title>{restaurant?.name}</Card.Title>
+                <Card.Text>Address: {restaurant?.address}</Card.Text>
+                <Card.Text>
+                  Average Rating: {restaurant?.aggregate_rating}
+                </Card.Text>
+                <Card.Text>Highlights: {restaurant?.highlights}</Card.Text>
+                <Card.Text>Price Range: {restaurant?.price_range}</Card.Text>
+                <Card.Text>Timings: {restaurant?.timings}</Card.Text>
+                <Card.Text>
+                  Menu: 
+                  {
+                    <a href={restaurant?.menu_url}>
+                      {restaurant?.menu_url}
                       <br />
                     </a>
-                  ) : (
-                    <a>
-                      {c}
+                  }
+                </Card.Text>
+                <Card.Text>
+                  Cities which have this restaurant:
+                  {
+                    <a href={"/cities/" + restaurant?.city_id}>
+                      {" "}
+                      {restaurant?.city}
                       <br />
                     </a>
+                  }
+                </Card.Text>
+                Cuisines for this restaurant: <br />
+                {restaurant?.cuisines ? (
+                  restaurant?.cuisines?.split(", ").map((c, index) =>
+                    restaurant?.cuisine_ids.split(", ")[index] !== "-1" ? (
+                      <a
+                        href={
+                          "/cuisines/" +
+                          restaurant?.cuisine_ids.split(", ")[index]
+                        }
+                      >
+                        {c}
+                        <br />
+                      </a>
+                    ) : (
+                      <a>
+                        {c}
+                        <br />
+                      </a>
+                    )
                   )
-                )
-              ) : (
-                <p>loading</p>
-              )}
-              <Card.Text></Card.Text>
-            </Card.Body>
-          </Card>
+                ) : (
+                  <p>loading</p>
+                )}
+                <Card.Text></Card.Text>
+              </Card.Body>
+            </Card>
+            </div>
           </div>
         </div>
       </body>
