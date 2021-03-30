@@ -18,7 +18,7 @@ Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journ
 | Phase     | Git SHA                                  |
 | --------- | ---------------------------------------- |
 | Phase I   | 4bde46bdaf4329e224efc4b3a8db9f7eacb8aeed |
-| Phase II  | 66c3cfec256248f3563d05eabff58f5260cfc199 |
+| Phase II  | 4fbf2dfd585fa3c90df9ae846b13d681cebb804c |
 | Phase III |                                          |
 | Phase IV  |                                          |
 
