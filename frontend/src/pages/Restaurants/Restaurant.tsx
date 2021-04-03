@@ -108,6 +108,7 @@ function Restaurant(id: any) {
                   Menu: 
                   {
                     <a href={restaurant?.menu_url}>
+                      {" "} 
                       {restaurant?.menu_url}
                       <br />
                     </a>
