@@ -39,23 +39,60 @@ const CitiesCard = (props: any) => {
   const { city } = props;
   return (
     <a href={"/cities/" + city["id"]} className="card">
-      <h5 className = "card-title mt-3" >{city["name"]}</h5>
-      <img
-        src={city["imagesmobile"]}
-        className="city-card-img-top"
-      />
+      <h5 className="card-title mt-3">{city["name"]}</h5>
+      <img src={city["imagesmobile"]} className="city-card-img-top" />
       <div className="card-body text-left">
         <p>
           <b>State: </b> {city["state"]} <br />
-          <b>Leisure and Culture: </b> {parseFloat(city["leisure_culture"].toFixed(4))} <br />
-          <b>Cost of Living: </b> {parseFloat(city["cost_of_living"].toFixed(4))} <br />
-          <b>Environmental Quality: </b> {parseFloat(city["environmental_quality"].toFixed(4))} <br />
-          <b>Travel Connectivity: </b> {parseFloat(city["travel_connectivity"].toFixed(4))} <br />
+          <b>Leisure and Culture: </b>{" "}
+          {parseFloat(city["leisure_culture"].toFixed(4))} <br />
+          <b>Cost of Living: </b>{" "}
+          {parseFloat(city["cost_of_living"].toFixed(4))} <br />
+          <b>Environmental Quality: </b>{" "}
+          {parseFloat(city["environmental_quality"].toFixed(4))} <br />
+          <b>Travel Connectivity: </b>{" "}
+          {parseFloat(city["travel_connectivity"].toFixed(4))} <br />
           <b>Population: </b> {city["population"].toLocaleString()} <br />
         </p>
       </div>
     </a>
   );
 };
+const CuisinesCard = (props: any) => {
+  const { cuisine, countries, loaded } = props;
+  return (
+    <a href={"/cuisines/" + cuisine["id"]} className="card">
+      <h5 className="card-title mt-3">{cuisine["name"]}</h5>
+      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" />
+      <div className="card-body text-left">
+        <p>
+          <b>Country: </b>
+          {cuisine["country"]} <br />
+          {cuisine?.countryID.split(", ").map((cID: string) => (
+            // <p>{ cID} </p>
+            // <p>{countries[cID]?.name} </p>
+            <>
+              {loaded ? (
+                <p>
+                  <b>Capital: </b>
+                  {countries[parseInt(cID)].capital} <br />
+                  <b>Region: </b>
+                  {countries[parseInt(cID)].region} <br />
+                  <b>Population: </b>
+                  {countries[parseInt(cID)].population.toLocaleString()}
+                  <br />
+                  <b>Timezones: </b>
+                  {countries[parseInt(cID)].timezones}
+                </p>
+              ) : (
+                <></>
+              )}
+            </>
+          ))}
+        </p>
+      </div>
+    </a>
+  );
+};
 
-export { InfoCard, ProfileCard, CitiesCard };
+export { InfoCard, ProfileCard, CitiesCard, CuisinesCard };
