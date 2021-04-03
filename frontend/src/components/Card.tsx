@@ -51,7 +51,7 @@ const CitiesCard = (props: any) => {
           <b>Cost of Living: </b> {parseFloat(city["cost_of_living"].toFixed(4))} <br />
           <b>Environmental Quality: </b> {parseFloat(city["environmental_quality"].toFixed(4))} <br />
           <b>Travel Connectivity: </b> {parseFloat(city["travel_connectivity"].toFixed(4))} <br />
-          <b>Population: </b> {city["population"].toLocaleString().toFixed(4)} <br />
+          <b>Population: </b> {city["population"].toLocaleString()} <br />
         </p>
       </div>
     </a>
