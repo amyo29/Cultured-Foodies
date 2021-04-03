@@ -9,13 +9,15 @@ class Home extends Component {
         <body id="mybody" data-background={homephoto} className="Home">
           <header className="Home-header">
             <div className="Title-summary">
-              Welcome fellow Foodie!
+              Welcome!
               <div className="summary">
-                Whether you are looking for cultural dishes
-                <br />
-                around the world, country information, dishes <br />
-                or global news, Cultured Foodies <br />
-                can help you find what you're looking for!
+              Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? <br /> 
+              Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
+              <br />
+              With information on delectable cuisines from around the world and where you can experience them in your city, 
+              <br />
+              as well as highlights on worldwide countries and U.S cities, <br />
+              Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
                 <br />
               </div>
             </div>
