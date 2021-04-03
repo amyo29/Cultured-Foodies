@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Navbar, Button } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import {CitiesCard } from "../../components/Card";
-// import "../../styles/Cities.css";
+import { CityInstance } from "../Cities/City";
 
 function Cities() {
   useEffect(() => {
     document.title = "Cities";
   }, []);
   const [cities, setCities] = useState([]);
+  const [chunkedCities, setChunkedCities] = useState<Array<Array<CityInstance>>>([])
   const [pageNumber, setPageNumber] = useState(1);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
@@ -25,29 +26,35 @@ function Cities() {
       console.log(data.cities);
     }
   }, [data]);
-
   const numPerPage = 12;
-  const startIndex = numPerPage * (pageNumber - 1);
-  console.log(startIndex);
-  const currentData = cities.slice(startIndex, startIndex + numPerPage);
-  console.log("Cities", cities);
-  var i, j;
-  var chunk = 3;
-  var rows = [];
-  for (i = 0, j = currentData.length; i < j; i += chunk) {
-    rows.push(currentData.slice(i, i + chunk));
+  const startIndex = numPerPage * (pageNumber-1);
+
+  useEffect(() => {
+    console.log('entering useEffect', cities)
+    const currentData = cities.slice(startIndex, startIndex + numPerPage);
+    var i, j;
+    var chunk = 3;
+    var rows = [];
+    for (i = 0, j = currentData.length; i < j; i += chunk) {
+      rows.push(currentData.slice(i, i + chunk));
+    }
+    setChunkedCities(rows)
+
+  }, [cities])
+
+  let onSort = (sortableField: string) => {
+    var copy = cities.slice(0)
+    copy.sort(function(a:any, b:any){return a[sortableField]-b[sortableField]})
+    setCities(copy)
   }
 
-  return (
+  return (    
     <div>
       <h1 className="text-align center">Cities</h1>
       <Container>
-        {/* {currentData.map((city) => (
-          <div>
-            {city["name"]}
-          </div>
-        ))} */}
-        {rows.map((cols) => (
+      <Button onClick={() => onSort('population')}>sorting by population</Button>
+
+        {chunkedCities.map((cols) => (
           <Row>
             {cols.map((city: any, i: any) => (
               <Col className="col-sm-4 py-2">
