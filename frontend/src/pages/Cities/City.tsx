@@ -82,49 +82,50 @@ function City(id: any) {
         <section style={{ alignItems: "left", paddingLeft: "1px" }}>
           <h5>Scores</h5>
           <h6>Business Freedom</h6>
-          {parseFloat(city?.business_freedom.toFixed(4))}
+          {city?.business_freedom ? parseFloat(city?.business_freedom.toFixed(4)) : " "}  
+          {/* {city?.business_freedom && <div>here</div>} */}
 
           <h6>Cost of Living</h6>
-          {parseFloat(city?.cost_of_living.toFixed(4))}
+          {city?.cost_of_living ? parseFloat(city?.cost_of_living.toFixed(4)) : " "}   
 
           <h6>Economy</h6>
-          {parseFloat(city?.economy.toFixed(4))}
+          {city?.economy ? parseFloat(city?.economy.toFixed(4)) : " "}
 
           <h6>Housing</h6>
-          {parseFloat(city?.housing.toFixed(4))}
+          {city?.housing ? parseFloat(city?.housing.toFixed(4)) : " "}
 
           <h6>Commute</h6>
-          {parseFloat(city?.commute.toFixed(4))}
+          {city?.commute ? parseFloat(city?.commute.toFixed(4)) : " "}
 
           <h6>Education</h6>
-          {parseFloat(city?.education.toFixed(4))}
+          {city?.education ? parseFloat(city?.education.toFixed(4)) : " "}
 
           <h6>Environmental Quality</h6>
-          {parseFloat(city?.environmental_quality.toFixed(4))}
+          {city?.environmental_quality ? parseFloat(city?.environmental_quality.toFixed(4)) : " "}
 
           <h6>Healthcare</h6>
-          {parseFloat(city?.healthcare.toFixed(4))}
+          {city?.healthcare ? parseFloat(city?.healthcare.toFixed(4)) : " "}  
 
           <h6>Leisure and Culture</h6>
-          {parseFloat(city?.leisure_culture.toFixed(4))}
+          {city?.leisure_culture ? parseFloat(city?.leisure_culture.toFixed(4)) : " "}
 
           <h6>Outdoors</h6>
-          {parseFloat(city?.outdoors.toFixed(4))}
+          {city?.outdoors ? parseFloat(city?.outdoors.toFixed(4)) : " "}
 
           <h6>Safety</h6>
-          {parseFloat(city?.safety.toFixed(4))}
+          {city?.safety ? parseFloat(city?.safety.toFixed(4)) : " "}
 
           <h6>Taxation</h6>
-          {parseFloat(ity?.taxation.toFixed(4))}
+          {city?.taxation ? parseFloat(city?.taxation.toFixed(4)) : " "}
 
           <h6>Travel and Connectivity</h6>
-          {parseFloat(city?.travel_connectivity.toFixed(4))}
+          {city?.travel_connectivity ? parseFloat(city?.travel_connectivity.toFixed(4)) : " "}
 
           <h6>Internet Access</h6>
-          {parseFloat(city?.internet_access.toFixed(4))}
+          {city?.internet_access ? parseFloat(city?.internet_access.toFixed(4)) : " "}
 
           <h6>Venture Capital</h6>
-          {parseFloat(city?.venture_capital.toFixed(4))}
+          {city?.venture_capital ? parseFloat(city?.venture_capital.toFixed(4)) : " "}   
         </section>
         <section>
           <h5>Restaurants in {city?.name}</h5>
