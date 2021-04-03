@@ -4,6 +4,7 @@ import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
+import {CuisinesCard} from "../../components/Card";
 function Countries() {
   useEffect(() => {
     document.title = "Cuisines";
@@ -72,42 +73,7 @@ function Countries() {
           <Row>
             {cols.map((cuisine: any, i: any) => (
               <Col className="col-sm-4 py-2">
-                <Card bg="card light h-100">
-                  <Card.Body>
-                    <img src={cuisine.dishes[0].image_url} width="200" height="200"></img>
-                    <a href={"/cuisines/" + cuisine["id"]}>
-                      <Card.Title>{cuisine["name"]}</Card.Title>
-                    </a>
-                    <Card.Text>
-                      <p>
-                        <b>Country: </b>
-                        {cuisine["country"]} <br />
-                        {cuisine?.countryID.split(", ").map((cID: string) => (
-                          // <p>{ cID} </p>
-                          // <p>{countries[cID]?.name} </p>
-                          <>
-                            {loaded ? (
-                              <p>
-                                <b>Capital: </b>
-                                {countries[parseInt(cID)].capital} <br />
-                                <b>Region: </b>
-                                {countries[parseInt(cID)].region} <br />
-                                <b>Population: </b>
-                                {countries[parseInt(cID)].population.toLocaleString()}
-                                <br />
-                                <b>Timezones: </b>
-                                {countries[parseInt(cID)].timezones}
-                              </p>
-                            ) : (
-                              <></>
-                            )}
-                          </>
-                        ))}
-                      </p>
-                    </Card.Text>
-                    <Card.Text></Card.Text>
-                  </Card.Body>
-                </Card>
+                <CuisinesCard cuisine={cuisine} countries = {countries} loaded = {loaded}></CuisinesCard>
               </Col>
             ))}
           </Row>

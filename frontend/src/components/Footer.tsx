@@ -5,8 +5,10 @@ class Footer extends React.Component {
   render() {
     return (
       <body>
-        <div className="filler">hi</div>
-        <div className="footer">Explore the Intersection of Cuisine and Culture</div>
+        <div className="footer">
+          Explore the Intersection of Cuisine and Culture
+          <h2> Cultured Foodies. est. 2021</h2>
+        </div>
       </body>
     );
   }
