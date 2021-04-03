@@ -82,49 +82,49 @@ function City(id: any) {
         <section style={{ alignItems: "left", paddingLeft: "1px" }}>
           <h5>Scores</h5>
           <h6>Business Freedom</h6>
-          {city?.business_freedom}
+          {parseFloat(city?.business_freedom.toFixed(4))}
 
           <h6>Cost of Living</h6>
-          {city?.cost_of_living}
+          {parseFloat(city?.cost_of_living.toFixed(4))}
 
           <h6>Economy</h6>
-          {city?.economy}
+          {parseFloat(city?.economy.toFixed(4))}
 
           <h6>Housing</h6>
-          {city?.housing}
+          {parseFloat(city?.housing.toFixed(4))}
 
           <h6>Commute</h6>
-          {city?.commute}
+          {parseFloat(city?.commute.toFixed(4))}
 
           <h6>Education</h6>
-          {city?.education}
+          {parseFloat(city?.education.toFixed(4))}
 
           <h6>Environmental Quality</h6>
-          {city?.environmental_quality}
+          {parseFloat(city?.environmental_quality.toFixed(4))}
 
           <h6>Healthcare</h6>
-          {city?.healthcare}
+          {parseFloat(city?.healthcare.toFixed(4))}
 
           <h6>Leisure and Culture</h6>
-          {city?.leisure_culture}
+          {parseFloat(city?.leisure_culture.toFixed(4))}
 
           <h6>Outdoors</h6>
-          {city?.outdoors}
+          {parseFloat(city?.outdoors.toFixed(4))}
 
           <h6>Safety</h6>
-          {city?.safety}
+          {parseFloat(city?.safety.toFixed(4))}
 
           <h6>Taxation</h6>
-          {city?.taxation}
+          {parseFloat(ity?.taxation.toFixed(4))}
 
           <h6>Travel and Connectivity</h6>
-          {city?.travel_connectivity}
+          {parseFloat(city?.travel_connectivity.toFixed(4))}
 
           <h6>Internet Access</h6>
-          {city?.internet_access}
+          {parseFloat(city?.internet_access.toFixed(4))}
 
           <h6>Venture Capital</h6>
-          {city?.venture_capital}
+          {parseFloat(city?.venture_capital.toFixed(4))}
         </section>
         <section>
           <h5>Restaurants in {city?.name}</h5>
