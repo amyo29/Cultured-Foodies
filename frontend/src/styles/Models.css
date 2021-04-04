@@ -3,7 +3,7 @@
     font-size: 50vh;
 }
 
-.college-image{
+/* .college-image{
     padding-top: 10px;
     margin-right: 50px;  
     background-size: 50px;
@@ -13,19 +13,26 @@
     text-align: left;
     font-size: 40px;
     margin-left: 90px;
+} */
+
+.models-text {
+    /* text-align: center; */
+    color: #400801;
+    font-size: 40px;
+    margin-left: 200px;
+    /* margin-right: 200px; */
 }
 
 .cities-text {
-    text-align: center;
+    /* text-align: left; */
+    color: #400801;
     font-size: 40px;
-    margin-left: 90px;
-}
-
-.counties-text {
-    text-align: center;
-    font-size: 40px;
+    /* margin-left: 100; */
     margin-right: 90px;
 }
+
+
+
 
 .image-content {
     overflow: hidden;
@@ -40,7 +47,7 @@
 }
   
 .heading {
-    color:black;
+    color:#400801;
     padding-top: 2rem;
     /* padding-right: 5rem; */
     padding-bottom: 1rem;
@@ -92,20 +99,3 @@
     color: red;
     text-decoration: none;
 }
-
-.navbar-custom .navbar-brand,
-  .navbar-custom .navbar-text {
-    color: rgba(236, 84, 71, 0.5);
-  }
-  
- 
-  
-  /* change the link color */
-  .navbar-custom .navbar-nav .nav-link {
-    color: rgba(170, 109, 79, 0.9)
-  } /* change the color of active or hovered links */
-  .navbar-custom .nav-item .nav-link.active,
-  .navbar-custom .nav-item:hover .nav-link {
-    color:rgba(163, 183, 175, 1)
-  }
-    

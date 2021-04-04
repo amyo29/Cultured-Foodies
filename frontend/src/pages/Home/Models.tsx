@@ -26,7 +26,7 @@ function Models() {
           </NavLink>
         </div>
         <div className="col-lg-5" style={{ marginTop: "5rem" }}>
-          <h1 className="cities-text">
+          <h1 className="models-text">
            Explore worldwide cuisines
           </h1>
         </div>
@@ -39,7 +39,7 @@ function Models() {
           <h1 className="font-weight-bold text-center p-4">
             
           </h1>
-          <h5 className="counties-text">
+          <h5 className="cities-text">
             Learn about your city
           </h5>
         </div>
@@ -68,7 +68,7 @@ function Models() {
           </NavLink>
         </div>
         <div className="col-lg-5" style={{ marginTop: "5rem" }}>
-          <h1 className="cities-text">
+          <h1 className="models-text">
             Find restaurants
           </h1>  
         </div>
