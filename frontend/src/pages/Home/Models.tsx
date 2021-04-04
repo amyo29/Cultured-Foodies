@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 import Cuisines from "../../static_resources/cuisineModel.jpg"       
 import Cities from "../../static_resources/cityModel.jpg"
-import Restaurants from "../../static_resources/restaurantModel.jpg"
+import Restaurants from "../../static_resources/restaurantModel4.jpg"
 import "../../styles/Models.css";
 
 /* used to display model page buttons
