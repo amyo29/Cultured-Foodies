@@ -56,7 +56,7 @@ export default function App() {
           </Switch>
         </div>
       </Router>
-      <FooterLarge></FooterLarge>   
+      {/* <FooterLarge></FooterLarge>    */}
 
     </div>
   );
