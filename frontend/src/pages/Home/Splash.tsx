@@ -96,7 +96,7 @@ class Splash extends Component {
 						to="/cities/"
 						className={styles.card}
 					>
-						<Card.Meta
+						<Card
 							// bordered={true}
 							className={styles.card}
 							cover={
@@ -114,14 +114,14 @@ class Splash extends Component {
 							<Paragraph>
 								Which city are you in? Learn about your city as well as cities across the U.S.!
 							</Paragraph>
-						</Card.Meta>
+						</Card>
 					</Link>
 					<Link
 						id="restaurantCard"
 						to="/restaurants/"
 						className={styles.card}
 					>
-						<Card.Meta
+						<Card
 							// bordered={true}
 							className={styles.card}
 							cover={
@@ -139,7 +139,7 @@ class Splash extends Component {
 							<Paragraph>
 								Find nearby restaurants which serve your favourite cuisines!   
 							</Paragraph>
-						</Card.Meta>      
+						</Card>      
 					</Link>
 				</div>
 			</div>
