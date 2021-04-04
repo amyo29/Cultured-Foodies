@@ -4,9 +4,10 @@
 
 import React from "react"
 import styles from "../styles/FooterLarge.module.css"  
-import { BrowserRouter as Router, Route, Link, BrowserRouter  } from "react-router-dom"
+// import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Link, BrowserRouter  } from "react-router-dom"
 
-const FooterLarge = () => {
+function FooterLarge() {
 	return (
 		<div className={styles.footer}>
 			{/* Container with 3 columns */}
@@ -23,17 +24,17 @@ const FooterLarge = () => {
 					<h1 className={styles.modelHeader}>Models</h1>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-							<Link to="/cuisines">Cuisines</Link>
+							<NavLink to="/cuisines">Cuisines</NavLink>
 						</BrowserRouter>
 					</div>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-							<Link to="/cities">Cities</Link>
+							<NavLink to="/cities">Cities</NavLink>
 						</BrowserRouter>
 					</div>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-							<Link to="/restaurants">Restaurants</Link>
+							<NavLink to="/restaurants">Restaurants</NavLink>
 						</BrowserRouter>
 					</div>
 				</div>
@@ -42,17 +43,17 @@ const FooterLarge = () => {
 					<h1 className={styles.otherLinksHeader}>Other Links</h1>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-							<Link to="/">Home</Link>
+							<NavLink to="/">Home</NavLink>
 						</BrowserRouter>
 					</div>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-							<Link to="/about">About</Link>
+							<NavLink to="/about">About</NavLink>
 						</BrowserRouter>
 					</div>
 					<div className={styles.footerLinkContainer}>
 						<BrowserRouter>
-						<Link to="/">Visualizations</Link>
+						<NavLink to="/">Visualizations</NavLink>
 						</BrowserRouter>
 					</div>
 				</div>
