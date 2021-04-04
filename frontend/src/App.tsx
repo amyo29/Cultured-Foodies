@@ -1,8 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import FooterLarge from "./components/FooterLarge";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import "./styles/App.css";
 
 import Home from "./pages/Home/Home";
@@ -53,7 +52,8 @@ export default function App() {
           </Switch>
         </div>
       </Router>
-      <Footer></Footer>
+      <FooterLarge></FooterLarge>   
+
     </div>
   );
 }

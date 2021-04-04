@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
+
+.footer {
+	font-family: 'Josefin Sans', Georgia, Times, serif;
+	background-color: #400801;
+	height: 100%;
+	/* height: calc(250px - (10vw / 2)); */
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.footerDataShort,
+.footerDataLong {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 16px auto;
+}
+
+.footerDataLong {
+	flex: 3;
+}
+.footerDataShort {
+	font-size: medium;  
+	flex: 2;
+}
+
+.footerLinkContainer {
+	margin: 4px 0;
+}
+
+.container {
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom: 30px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container * {
+	color: white;
+}
+
+.copyrightText {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 20px;
+	font-size: medium;  
+
+}
+
+.siteName {
+	font-size: xx-large;  
+	font-weight: bold;
+}
+.modelHeader {
+	font-size: larger;  
+	font-weight: bold;
+}
+
+.otherLinksHeader {
+	font-size: larger;  
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.container {
+		flex-direction: row;
+	}
+}
