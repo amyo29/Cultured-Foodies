@@ -3,8 +3,10 @@ import NavBar from "./components/NavBar";
 import FooterLarge from "./components/FooterLarge";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
+import { Card, Button } from 'antd';
 
 import Home from "./pages/Home/Home";
+import Splash from "./pages/Home/Splash";
 import About from "./pages/About/About";
 import Cuisines from "./pages/Cuisines/Cuisines";
 import Cuisine from "./pages/Cuisines/Cuisine";
@@ -20,7 +22,7 @@ export default function App() {
       <Router>
         <div>
           <Route exact path="/">
-            <Home />
+            <Splash />
           </Route>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
