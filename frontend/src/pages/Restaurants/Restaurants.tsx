@@ -9,7 +9,7 @@ function Restaurants() {
     document.title = "Restaurants";
   }, []);
 
-  const [restaurants, setResetaurants] = useState([]);
+  const [restaurants, setRestaurants] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
@@ -18,7 +18,7 @@ function Restaurants() {
 
   useEffect(() => {
     if (data) {
-      setResetaurants(data.restaurants);
+      setRestaurants(data.restaurants);   
     }
   }, [data]);
 
@@ -28,7 +28,7 @@ function Restaurants() {
 
   return (
     <div>
-      <h1 className="text-align center">Restaurants</h1>
+      <h1 className="model text-align center">Restaurants</h1>
       <Table responsive className="table">
         <thead>
           <tr>

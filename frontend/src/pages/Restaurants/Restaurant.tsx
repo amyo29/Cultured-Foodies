@@ -28,54 +28,8 @@ function Restaurant(id: any) {
     "&q=" +
     restaurant?.name.replace("&", "%20");
 
-  // // model navigation
-  // let countryIndex = article["countryIndex"];
-  // let dishIndex = article["dishIndex"];
-
-  // let country = countries_data[countryIndex]["name"];
-  // let countryFlag = countries_data[countryIndex]["flag"];
-
-  // let dishName = dishes_data[dishIndex]["recipe"]["label"]
-
-  // // attributes and media
-  // let img = article["media"];
-  // let authorImage = article["authorimage"];
-  // let title = article["title"];
-  // let language = article["language"];
-  // let author = article["author"];
-  // let publishedDate = article["published_date"];
-  // let summmary = article["summary"];
-  // let link = article["link"];
-  // let source = article["clean_url"]
-  // let source_business_name = article["meta_business_title"]
-  // let source_desc = article["meta_business_summary"]
-  // let topic = article["topic"]
-
-  // let img = restaurant["restaurant_image"];
-  // let authorImage = article["authorimage"];
-  // let name = restaurant["name"];
-  // let language = article["language"];
-  // let author = article["author"];
-  // let publishedDate = article["published_date"];
-  // let summmary = article["summary"];
-  // let link = article["link"];
-  // let source = article["clean_url"];
-  // let source_business_name = article["meta_business_title"];
-  // let source_desc = article["meta_business_summary"];
-  // let topic = article["topic"];
 
   return (
-    // <div className="center">
-    //   {/* <img src={img} className="article-img"></img> */}
-    //   <h1>{restaurant?.name}</h1>
-
-    //   <section>
-    // <h5>City Locations</h5>
-    //  <a href={"/cities/" + restaurant?.city_id}>{restaurant?.city}<br/></a>
-    // <h5>Cuisines of {restaurant?.name}</h5>
-    // {cuisines?.map((c) => (<a href={"/cuisines/" + c.id}>{c.name}<br/></a>))}
-    // </section>
-    // </div>
 
     <div>
       <body className="Instance center-div">
@@ -164,39 +118,7 @@ function Restaurant(id: any) {
         ></iframe>
       </div>
     </div>
-
-    //   <div className="center">
-    //   <img src={img} className="article-img"></img>
-    //   <h1>{title}</h1>
-
-    //   <p>
-    //   Language: {language} <br/>
-    //     Published: {publishedDate} <br/>
-    //   News source: {source}<br/></p>
-
-    //   <a href={"/dishes/" + dishIndex}>
-    //     <h5>Associated Dish: {dishName}</h5>
-    //   </a>
-    //   <a href={"/countries/" + countryIndex}>
-    //     <img src={countryFlag} className="flag-img"></img>
-    //     <h5>Dish's Origin: {country}</h5>
-    //   </a>
-    //   <div className="text-left px-2">
-    //   <h4>{summmary}</h4>
-    //   <br/>
-
-    //   <h5><b>Source Title:</b> {source_business_name}</h5>
-    //   <h5><b>About the News Source:</b> {source_desc}</h5>
-
-    //   </div>
-    //   <div>
-    //   <a href={link} target="_blank">
-    //     <h5>Link to the article</h5>
-    //   </a>
-    //   <h4>Author: {author}</h4>
-    //   <img src={authorImage} className="author-img center"></img>
-    //   </div>
-    // </div>
+    
   );
 }
 
