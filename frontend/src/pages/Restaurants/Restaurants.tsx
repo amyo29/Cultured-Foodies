@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Table } from "react-bootstrap";
+import { Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
+
+import logo from "../../static_resources/spinny.gif";
 
 function Restaurants() {
   useEffect(() => {
@@ -11,6 +13,7 @@ function Restaurants() {
 
   const [restaurants, setRestaurants] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
+  const [loaded, changeLoading] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -19,6 +22,7 @@ function Restaurants() {
   useEffect(() => {
     if (data) {
       setRestaurants(data.restaurants);   
+      changeLoading(true);
     }
   }, [data]);
 
@@ -29,6 +33,8 @@ function Restaurants() {
   return (
     <div>
       <h1 className="model text-align center">Restaurants</h1>
+      {
+        loaded ? (
       <Table responsive className="table">
         <thead>
           <tr>
@@ -41,7 +47,7 @@ function Restaurants() {
             <th>Average Cost for Two</th>
           </tr>
         </thead>
-        <tbody>
+          <tbody>
           {currentData.map((restaurant: any, i: any) => (
             <tr>
               <td>{startIndex + i + 1}</td>
@@ -61,7 +67,20 @@ function Restaurants() {
             </tr>
           ))}
         </tbody>
+        
       </Table>
+        )
+        : 
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          margin: 40
+        }}>
+          <img src={logo} alt="loading..."/>
+        </div>
+      }  
+
       <div className="row pagination">
       <Pagination   
         count={Math.ceil(restaurants.length / numPerPage )}

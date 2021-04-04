@@ -5,6 +5,8 @@ import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
 
+import logo from "../../static_resources/spinny.gif";
+
 function Cities() {
   useEffect(() => {
     document.title = "Cities";
@@ -86,10 +88,12 @@ function Cities() {
         justifyContent: 'center',
         margin: 40
       }}>
-      <Spinner animation="border" variant="dark" 
+      {/* <Spinner animation="border" variant="dark" 
       as="span" 
       role="status"
       aria-hidden="true"/>
+       */}
+      <img src={logo} alt="loading..."/>
       </div>
       }
       <div className="row pagination">
