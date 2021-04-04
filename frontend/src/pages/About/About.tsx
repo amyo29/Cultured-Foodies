@@ -9,7 +9,7 @@ import retrieveGitLabInfo, {
 import "../../styles/About.css";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from "@material-ui/core/Grid";
-import { CardDeck } from "react-bootstrap";
+import { CardDeck, Spinner } from "react-bootstrap";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import ZomatoLogo from "./Images/APIs/zomato.png";
 
@@ -78,9 +78,13 @@ function About() {
       </p>
 
       <h2>Meet the Team</h2>
+    { loaded ?
+      <>
       <Container>
         <div className="row mb-4">
-            {loaded ? (
+            {
+            // loaded ? 
+            (
               teamData1.map((teamMember: any) => {
                 const {
                   name,
@@ -107,14 +111,18 @@ function About() {
                   </div>
                 );
               })
-            ) : (
-              <div>Loading</div>
-            )}
+            ) 
+            // : (
+            //   <Spinner animation="grow" variant="dark" size="sm"/>
+            // )
+            }
         </div>
       </Container>
       <Container>
         <div className="row mb-4">
-            {loaded ? (
+            {
+            // loaded ? 
+            (
               teamData2.map((teamMember: any) => {
                 const {
                   name,
@@ -141,30 +149,63 @@ function About() {
                   </div>
                 );
               })
-            ) : (
-              <div>Loading</div>
-            )}
+            )  
+            // :(  
+            //      <Spinner animation="grow" variant="dark" size="sm"/>
+            // )
+            }
         </div>
       </Container>
+      </>
+      :
+      <Spinner animation="border" role="status">
+        <span className="sr-only">Loading...</span>
+      </Spinner>
+      }
+      
+
       <div>
         <h2>Stats</h2>
         <div>
+          
           {commitsSum === -1 ? (
-            <h5>Total Commits: </h5>
+            <h5>Total Commits:  {<Spinner
+              as="span"
+              animation="border"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+            />
+            }
+            </h5> 
           ) : (
             <h5>Total Commits: {commitsSum}</h5>
           )}
         </div>
         <div>
           {commitsSum === -1 ? (
-            <h5>Total Issues: </h5>
+            <h5>Total Issues:  {<Spinner
+              as="span"
+              animation="border"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+            />
+            }</h5>
           ) : (
             <h5>Total Issues: {issuesSum}</h5>
           )}
         </div>
         <div>
           {commitsSum === -1 ? (
-            <h5>Total Tests: </h5>
+            <h5>Total Tests:  {<Spinner
+              as="span"
+              animation="border"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+            />
+            }</h5>
           ) : (
             <h5>Total Tests: {testsSum}</h5>
           )}
