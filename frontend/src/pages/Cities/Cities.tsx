@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card,ListGroup, Navbar, Button, Spinner, DropdownButton, Dropdown} from "react-bootstrap";
+import { Container, Row, Col, Card,ListGroup, Navbar, Button, Spinner, DropdownButton, Dropdown, Form,FormControl} from "react-bootstrap";
 import Footer from "../../components/Footer";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
-
+import {CityObject, CityInstance} from "./City";
 function Cities() {
   useEffect(() => {
     document.title = "Cities";
   }, []);
-  const [cities, setCities] = useState([]);
-  const [displayedCities, setDisplayedCities] = useState([]);
+  const [cities, setCities] = useState<Array<CityInstance>>([]);
+  const [displayedCities, setDisplayedCities] = useState<Array<CityInstance>>([]);
+  const [searchCities, setSearchCities] = useState("")
 
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
@@ -23,12 +24,29 @@ function Cities() {
   }, []);
   useEffect(() => {
     if (data) {
+      const cityObj: CityObject = data as CityObject;
       setCities(data.cities);
       setDisplayedCities(data.cities)
       changeLoading(true);
     }
   }, [data]);
 
+  let handleSearchChange =( event:any) =>{
+    console.log('searching', event.target.value)
+    setSearchCities(event.target.value)
+  }
+
+  let searchOnClick = () => {
+    console.log('search query', searchCities)
+    let filteredCities = []
+    for (var i = 0; i < cities.length; i++) {
+      var cityObj = cities[i]
+        if (cityObj['name'].toLowerCase().includes(searchCities.toLowerCase())) {
+        filteredCities.push(cityObj)
+      }
+    }
+    setDisplayedCities(filteredCities)
+  }
 
   let onSort = (sortableField: string, ascending: boolean) => {
     var copy = cities.slice(0);
@@ -68,6 +86,19 @@ function Cities() {
           <Dropdown.Item  onClick={() => onSort("population", false)}>Population (desc)</Dropdown.Item>
 
         </DropdownButton>
+        <Form inline onSubmit={(e) => {e.preventDefault();}}>
+              <FormControl
+                className="mr-sm-2"
+                type="text"
+                placeholder="Search Cities"
+                onChange={handleSearchChange}
+              />
+              <Button  
+              onClick={searchOnClick}
+              >
+              </Button>
+            </Form>
+
         {rows.map((cols) => (
           <Row> 
             {cols.map((city: any, i: any) => (
