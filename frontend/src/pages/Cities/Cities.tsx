@@ -53,7 +53,7 @@ function Cities() {
     copy.sort(function (a: any, b: any) {
       if (ascending){
         return a[sortableField] > b[sortableField]? 1: -1;
-      }else {
+      } else {
         return a[sortableField] >  b[sortableField]? -1: 1;
       }
     });
