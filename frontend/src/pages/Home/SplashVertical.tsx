@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "../../styles/SplashVertical.module.css"   
-import { Card, Avatar, Typography, Button } from "antd"
 
 import { BsCaretDown } from "react-icons/bs";
 import Models from "./Models";
-
-const { Title, Paragraph } = Typography
 
 function SplashVertical(){
     function click(){
@@ -17,14 +14,14 @@ function SplashVertical(){
 			<div className={styles.splash}>
 				<div className={styles.splashContent}>
 					<div className={styles.headerText}>
-						<Title level={1} className={styles.title}>
-							Cultured Foodies
-						</Title>
-						<Paragraph className={styles.about}>
-                        Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? 
-                        Join us on a journey of culinary and cultural discovery that 
-                        stretches through the ages and across the seas.
-						</Paragraph>
+                        <div className={styles.title}>
+                            Cultured Foodies
+                        </div>
+                        <div className={styles.about}>
+                            Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? 
+                            Join us on a journey of culinary and cultural discovery that 
+                            stretches through the ages and across the seas.
+						</div>  
 					</div>
 
                     <div className={styles.arrow}>  
