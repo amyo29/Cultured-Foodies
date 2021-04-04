@@ -19,6 +19,22 @@
     margin-left: 90px;
 } */
 
+
+
+/* .model-container {
+    border-radius: 10px;
+    position:relative;
+    z-index:1;
+} */
+.model-container img {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+}
+.model-container:hover img {
+    transform: scale(1.3);
+    /* transform-origin: 50% 50%; */
+}
+
 .models-text {
     /* text-align: center; */
     color: #400801;

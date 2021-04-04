@@ -15,7 +15,7 @@ function Models() {
   /* display the three model buttons */
   return (
     <div className="row pt-5 justify-content-md-center mx-0">
-        <div className="col-lg-5 ">
+        <div className="model-container col-lg-5 ">
           <NavLink to="/cuisines">
             <img
               src={Cuisines}
@@ -44,7 +44,7 @@ function Models() {
           </h5>
         </div>
 
-        <div className="col-lg-4">
+        <div className="model-container col-lg-4">
           <NavLink to="/cites">
             <img
               src={Cities}
@@ -57,7 +57,7 @@ function Models() {
       </div>
 
       <div className="row pt-5 justify-content-md-center mx-0">
-        <div className="col-lg-5 ">
+        <div className="model-container col-lg-5 ">
           <NavLink to="/restaurants">
             <img
               src={Restaurants}
