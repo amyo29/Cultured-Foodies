@@ -16,18 +16,18 @@ function Models() {
   return (
     <div className="row pt-5 justify-content-md-center mx-0">
         <div className="col-lg-5 ">
-          <NavLink to="/cities">
+          <NavLink to="/cuisines">
             <img
-              src={Cities}
+              src={Cuisines}
               className="rounded-circle mx-auto d-block mb-5"
-              alt="cities"
-              style={{ width: "30rem" }}
+              alt="cuisines"
+              style={{ width: "30rem", height: "30rem" }}
             ></img>
           </NavLink>
         </div>
         <div className="col-lg-5" style={{ marginTop: "5rem" }}>
           <h1 className="cities-text">
-           Learn about your city
+           Explore worldwide cuisines
           </h1>
         </div>
 
@@ -40,16 +40,16 @@ function Models() {
             
           </h1>
           <h5 className="counties-text">
-            Explore worldwide cuisines
+            Learn about your city
           </h5>
         </div>
 
         <div className="col-lg-4">
-          <NavLink to="/cuisines">
+          <NavLink to="/cites">
             <img
-              src={Cuisines}
+              src={Cities}
               className="rounded-circle mx-auto d-block mb-5 "
-              alt="cuisines"
+              alt="cities"
               style={{ width: "30rem" , height: "30rem"}}
             ></img>
           </NavLink>

@@ -12,27 +12,6 @@ function SplashVertical(){
         window.scrollTo({top:650, left: 0, behavior:'smooth'});
     }
     return (
-        // <div className="Landing">
-        //     <header className="Landing-header">
-        //         <div style={{marginTop:"150px"}}>
-        //             <h3>Relocccate</h3>
-        //             <h1>To anywhere you want</h1>
-        //         </div>
-        //         <div className="arrow">
-        //             {/* <BsCaretDown size={75} onClick={()=>click()}/> */}
-        //             <BsCaretDown size={75} />   
-
-        //         </div>
-        //     </header>
-        //     <div className="body">
-        //         <div className="purpose">
-        //             <div className="purpose-header">
-        //                 Make your move easier
-        //                 <Models />
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
 
         <div className={styles.splashPage}>
 			<div className={styles.splash}>
