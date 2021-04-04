@@ -75,72 +75,75 @@ function Cities() {
   for (i = 0, j = currentData.length; i < j; i += chunk) {
     rows.push(currentData.slice(i, i + chunk));
   }
+  if (loaded) 
+  {
+    return (
+      <div>
+        <h1 className="text-align center">Cities</h1>
+        
+        <Container>
+          <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item  onClick={() => onSort("name", true)} >City Name (A-Z)</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("leisure_culture", false)} >Leisure and Culture Score</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("cost_of_living", false)} >Cost of Living Score</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("environmental_quality", false)} >Environmental Quality Score</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("travel_connectivity", false)} >Travel Connectivity Score</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("population", true)}>Population (asc)</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("population", false)}>Population (desc)</Dropdown.Item>
 
-  return (
-    <div>
-      <h1 className="text-align center">Cities</h1>
-      { loaded ? (
-      <Container>
-        <DropdownButton id="dropdown-basic-button" title="Sort By">
-          <Dropdown.Item  onClick={() => onSort("name", true)} >City Name (A-Z)</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("leisure_culture", false)} >Leisure and Culture Score</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("cost_of_living", false)} >Cost of Living Score</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("environmental_quality", false)} >Environmental Quality Score</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("travel_connectivity", false)} >Travel Connectivity Score</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("population", true)}>Population (asc)</Dropdown.Item>
-          <Dropdown.Item  onClick={() => onSort("population", false)}>Population (desc)</Dropdown.Item>
+          </DropdownButton>
+          <Form inline onSubmit={(e) => {e.preventDefault();}}>
+                <FormControl
+                  className="mr-sm-2"
+                  type="text"
+                  placeholder="Search Cities"
+                  onChange={handleSearchChange}
+                />
+                <Button  
+                onClick={searchOnClick}
+                >
+                </Button>
+              </Form>
 
-        </DropdownButton>
-        <Form inline onSubmit={(e) => {e.preventDefault();}}>
-              <FormControl
-                className="mr-sm-2"
-                type="text"
-                placeholder="Search Cities"
-                onChange={handleSearchChange}
-              />
-              <Button  
-              onClick={searchOnClick}
-              >
-              </Button>
-            </Form>
-
-        {rows.map((cols) => (
-          <Row> 
-            {cols.map((city: any, i: any) => (
-              <Col className="col-sm-4 py-2">
-                <CitiesCard city={city}></CitiesCard> 
-              </Col>
-            ))} 
-          </Row>
-        ))}
-      </Container>
-      ) 
-      : 
+          {rows.map((cols) => (
+            <Row> 
+              {cols.map((city: any, i: any) => (
+                <Col className="col-sm-4 py-2">
+                  <CitiesCard city={city}></CitiesCard> 
+                </Col>
+              ))} 
+            </Row>
+          ))}
+        </Container>
+        
+        <div className="row pagination">
+          <Pagination
+            count={Math.ceil(cities.length / numPerPage)}
+            page={pageNumber}
+            onChange={handleChange}
+          ></Pagination>
+          {startIndex + 1} - {Math.min(startIndex + numPerPage, cities?.length)}{" "}
+          of {cities?.length}
+        </div>
+      </div>
+    );
+  }
+  else 
+  {
+    return (
       <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 40
+        position: 'absolute', left: '50%', top: '50%',
+        transform: 'translate(-50%, -50%)'
       }}>
       {/* <Spinner animation="border" variant="dark" 
       as="span" 
       role="status"
       aria-hidden="true"/>
-       */}
+      */}
       <img src={logo} alt="loading..."/>
       </div>
-      }
-      <div className="row pagination">
-        <Pagination
-          count={Math.ceil(cities.length / numPerPage)}
-          page={pageNumber}
-          onChange={handleChange}
-        ></Pagination>
-        {startIndex + 1} - {Math.min(startIndex + numPerPage, cities?.length)}{" "}
-        of {cities?.length}
-      </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default Cities;
