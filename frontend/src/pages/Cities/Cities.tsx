@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, DropdownButton, Dropdown} from "react-bootstrap";
+import { Container, Row, Col, Card,ListGroup, Navbar, Button, Spinner, DropdownButton, Dropdown} from "react-bootstrap";
+import Footer from "../../components/Footer";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
@@ -12,6 +13,7 @@ function Cities() {
   const [displayedCities, setDisplayedCities] = useState([]);
 
   const [pageNumber, setPageNumber] = useState(1);
+  const [loaded, changeLoading] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -22,8 +24,8 @@ function Cities() {
   useEffect(() => {
     if (data) {
       setCities(data.cities);
-      console.log(data.cities);
       setDisplayedCities(data.cities)
+      changeLoading(true);
     }
   }, [data]);
 
@@ -54,6 +56,7 @@ function Cities() {
   return (
     <div>
       <h1 className="text-align center">Cities</h1>
+      { loaded ? (
       <Container>
         <DropdownButton id="dropdown-basic-button" title="Sort By">
           <Dropdown.Item  onClick={() => onSort("name", true)} >City Name (A-Z)</Dropdown.Item>
@@ -64,18 +67,31 @@ function Cities() {
           <Dropdown.Item  onClick={() => onSort("population", true)}>Population (asc)</Dropdown.Item>
           <Dropdown.Item  onClick={() => onSort("population", false)}>Population (desc)</Dropdown.Item>
 
-          <Dropdown.Item >Something else</Dropdown.Item>
         </DropdownButton>
         {rows.map((cols) => (
-          <Row>
+          <Row> 
             {cols.map((city: any, i: any) => (
               <Col className="col-sm-4 py-2">
-                <CitiesCard city={city}></CitiesCard>
+                <CitiesCard city={city}></CitiesCard> 
               </Col>
-            ))}
+            ))} 
           </Row>
         ))}
       </Container>
+      ) 
+      : 
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: 40
+      }}>
+      <Spinner animation="border" variant="dark" 
+      as="span" 
+      role="status"
+      aria-hidden="true"/>
+      </div>
+      }
       <div className="row pagination">
         <Pagination
           count={Math.ceil(cities.length / numPerPage)}
