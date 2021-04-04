@@ -1,13 +1,13 @@
-import React, { FC, ComponentType, useState, useEffect, useRef, MutableRefObject } from "react"
-import { Typography, Card, Button } from "antd"
+import React, { FC, Component, ComponentType, useState, useEffect, useRef, MutableRefObject } from "react"
+import { Card, Avatar, Typography, Button } from "antd"
 // import Card from "react-bootstrap/Card";
 
 import { DownOutlined } from "@ant-design/icons"
-import { Link, useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"  
 
-import Districts from "../../static_resources/cuisineModel.jpg"       
-import Politicians from "../../static_resources/cityModel.jpg"
-import Elections from "../../static_resources/restaurantModel.jpg"
+import Cuisines from "../../static_resources/cuisineModel.jpg"       
+import Cities from "../../static_resources/cityModel.jpg"
+import Restaurants from "../../static_resources/restaurantModel.jpg"
 
 import styles from "../../styles/Splash.module.css"   
 // import GeneralSearchBar, { AddressSearchBar } from "../Search/GeneralSearchBar"
@@ -15,11 +15,14 @@ import styles from "../../styles/Splash.module.css"
 
 const { Title, Paragraph } = Typography
 const { Meta } = Card;
+// const ref = useRef<HTMLDivElement>(null);    
 
-const Splash: FC = () => {   
+class Splash extends Component {
+    render() {
+// const Splash: FC = () => {   
     // const ref = useRef(null)
-    const ref = useRef<HTMLDivElement>(null);    
     // const ref = useRef() as MutableRefObject<HTMLDivElement>; 
+    
 	return (
 		<div className={styles.splashPage}>
 			<div className={styles.splash}>
@@ -48,39 +51,49 @@ const Splash: FC = () => {
 					/>
 				</div>       */}
 			</div>
-			<div className={styles.modelCards} ref={ref}>
+			<div className={styles.modelCards} >
 				<Title level={1} style={{ textAlign: "center", marginTop: 32 }}>
 					Model Pages
 				</Title>
 				<div className={styles.cardFlexContainer}>
 					<Link
-						id="politicianCard"
-						to="/politicians/view"
+						id="cuisineCard"
+						to="/cuisines/"
 						className={styles.card}
 					>
-						<Card.Meta className={styles.card}
+                        <Card.Meta className={styles.card}>
+                            {/* avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />} */}
+                                title="Card title"
+                                description="This is the description"
+                        </Card.Meta>
+						{/* <Card className={styles.card}
 							bordered={true}  
 							
 							cover={
 								<img
 									className={styles.cardImage}
-									alt={"Politician"}
-									src={Politicians}
+									alt={"Cuisines"}
+									src={Cuisines}
 								></img>
 							}
 							hoverable={true}
 						>
 							<Title level={2} style={{ textAlign: "center" }}>
-								Politicians
+								Cuisines
 							</Title>
 							<Paragraph>
-								Want to learn more about your politicians?
+								Want to learn more about cuisines around the world?
 							</Paragraph>
-						</Card.Meta>
+                            <Meta
+                                avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                                title="Card title"
+                                description="This is the description"    
+                                />
+						</Card>    */}
 					</Link>
 					<Link
-						id="districtCard"
-						to="/districts/view"
+						id="cityCard"
+						to="/cities/"
 						className={styles.card}
 					>
 						<Card.Meta
@@ -89,24 +102,23 @@ const Splash: FC = () => {
 							cover={
 								<img
 									className={styles.cardImage}
-									alt={"Texas"}
-									src={Districts}
+									alt={"City"}
+									src={Cities}
 								></img>
 							}
 							hoverable={true}
 						>
 							<Title level={2} style={{ textAlign: "center" }}>
-								Districts
+								Cities
 							</Title>
 							<Paragraph>
-								Which district are you in? Learn about the
-								different districts across Texas!
+								Which city are you in? Learn about your city as well as cities across the U.S.!
 							</Paragraph>
 						</Card.Meta>
 					</Link>
 					<Link
-						id="electionCard"
-						to="/elections/view"
+						id="restaurantCard"
+						to="/restaurants/"
 						className={styles.card}
 					>
 						<Card.Meta
@@ -115,19 +127,17 @@ const Splash: FC = () => {
 							cover={
 								<img
 									className={styles.cardImage}
-									alt={"Vote"}
-									src={Elections}
+									alt={"Restaurant"}
+									src={Restaurants}
 								></img>
 							}
 							hoverable={true}
 						>
 							<Title level={2} style={{ textAlign: "center" }}>
-								Elections
+								Restaurants
 							</Title>
 							<Paragraph>
-								What are some of the upcoming elections? Keep
-								track of the elections and mark your calendars
-								to vote!   
+								Find nearby restaurants which serve your favourite cuisines!   
 							</Paragraph>
 						</Card.Meta>      
 					</Link>
@@ -136,6 +146,7 @@ const Splash: FC = () => {
 		
 		</div>
 	)
+    }
 }
 
-export default Splash
+export default Splash;
