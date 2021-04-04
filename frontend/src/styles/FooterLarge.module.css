@@ -3,9 +3,11 @@
 .footer {
 	font-family: 'Josefin Sans', Georgia, Times, serif;
 	background-color: #400801;
-	height: 100%;
-	/* height: calc(250px - (10vw / 2)); */
-	position: relative;
+	height: 22%;
+	/* height: calc(250px - (10vw / 2));   */
+	/* position: relative; */
+	position: fixed;
+	bottom: 0;
 	display: block;
 	width: 100%;
 	padding-right: 15px;

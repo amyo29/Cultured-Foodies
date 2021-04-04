@@ -7,6 +7,8 @@ import { Card, Button } from 'antd';
 
 import Home from "./pages/Home/Home";
 import Splash from "./pages/Home/Splash";
+import SplashVertical from "./pages/Home/SplashVertical";
+
 import About from "./pages/About/About";
 import Cuisines from "./pages/Cuisines/Cuisines";
 import Cuisine from "./pages/Cuisines/Cuisine";
@@ -22,7 +24,7 @@ export default function App() {
       <Router>
         <div>
           <Route exact path="/">
-            <Splash />
+            <SplashVertical />
           </Route>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

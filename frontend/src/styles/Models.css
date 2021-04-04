@@ -1,0 +1,111 @@
+.topText {
+    text-align: right;
+    font-size: 50vh;
+}
+
+.college-image{
+    padding-top: 10px;
+    margin-right: 50px;  
+    background-size: 50px;
+}
+
+.college-text {
+    text-align: left;
+    font-size: 40px;
+    margin-left: 90px;
+}
+
+.cities-text {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 90px;
+}
+
+.counties-text {
+    text-align: center;
+    font-size: 40px;
+    margin-right: 90px;
+}
+
+.image-content {
+    overflow: hidden;
+}
+
+.purpose-header{
+    font-size: 30px;
+}
+
+.hero-section {
+    background-color: bisque;
+}
+  
+.heading {
+    color:black;
+    padding-top: 2rem;
+    /* padding-right: 5rem; */
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
+    font-weight: bold;
+/* max-width: 51%; */
+}
+
+.heading-content {
+    margin-left: 5rem;
+    font-weight: bold;
+}
+
+.subheading {
+    color: rgba(170, 205, 189, 0.9);
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.image-1 {
+    padding-top: 5rem;
+    width: 9rem;
+    margin-left: 2rem;
+}
+.image-2 {
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.img-cont {
+    overflow: hidden;
+}
+
+.image {
+    margin-left: 5rem;
+    top: 0;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.nav-link{
+    color: rgba(170, 109, 79, 0.9);
+    text-decoration: none;
+}
+
+
+.active {
+    color: red;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+    color: rgba(236, 84, 71, 0.5);
+  }
+  
+ 
+  
+  /* change the link color */
+  .navbar-custom .navbar-nav .nav-link {
+    color: rgba(170, 109, 79, 0.9)
+  } /* change the color of active or hovered links */
+  .navbar-custom .nav-item .nav-link.active,
+  .navbar-custom .nav-item:hover .nav-link {
+    color:rgba(163, 183, 175, 1)
+  }
+    
