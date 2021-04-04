@@ -41,7 +41,9 @@ function Cities() {
     let filteredCities = []
     for (var i = 0; i < cities.length; i++) {
       var cityObj = cities[i]
-        if (cityObj['name'].toLowerCase().includes(searchCities.toLowerCase())) {
+      var cityObjStr = JSON.stringify(cityObj)   
+        // search for text across all city attributes
+        if (cityObjStr.toLowerCase().includes(searchCities.toLowerCase())) {
         filteredCities.push(cityObj)
       }
     }
