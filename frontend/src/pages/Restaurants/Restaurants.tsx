@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Spinner, Table } from "react-bootstrap";
+import { Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 
-import logo from "../../static_resources/spinny.gif";
+import logo from "../../static_resources/dumpling.gif";
+import small from "../../static_resources/smaller dumpling.gif";
 
 function Restaurants() {
   useEffect(() => {
@@ -30,11 +31,40 @@ function Restaurants() {
   const startIndex = numPerPage * (pageNumber-1);
   const currentData = restaurants.slice(startIndex, startIndex + numPerPage);
 
+  if (loaded) {
   return (
+    
     <div>
-      <h1 className="model text-align center">Restaurants</h1>
-      {
-        loaded ? (
+      <Row className="justify-content-md-center" style={{
+        margin: 25
+      }}>
+      <Col md={3}>
+      <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          <img src={small} alt="loading..."/>
+        </div>
+      </Col>
+      
+      <Col md={3}>
+      <h1 className="text-align center" style={{
+        margin: 25,
+      }}>Restaurants</h1>
+        </Col>
+      
+        <Col md={3}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          <img src={small} alt="loading..."/>
+        </div>
+      </Col>
+      </Row>
+      
       <Table responsive className="table">
         <thead>
           <tr>
@@ -69,17 +99,7 @@ function Restaurants() {
         </tbody>
         
       </Table>
-        )
-        : 
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          margin: 40
-        }}>
-          <img src={logo} alt="loading..."/>
-        </div>
-      }  
+        
 
       <div className="row pagination">
       <Pagination   
@@ -89,8 +109,20 @@ function Restaurants() {
       ></Pagination>
       {startIndex+1 } - {Math.min(startIndex + numPerPage, restaurants?.length)} of {restaurants?.length}
       </div>
+      
     </div>
   );
+          }
+
+  else { return (
+    <div style={{
+      position: 'absolute', left: '50%', top: '50%',
+        transform: 'translate(-50%, -50%)'
+    }}>
+      <img src={logo} alt="loading..."/>
+    </div>
+  )
+  }
 }
 
 export default Restaurants;
