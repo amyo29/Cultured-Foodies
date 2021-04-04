@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef}  from "react";
 import styles from "../../styles/SplashVertical.module.css"   
 
 import { BsCaretDown } from "react-icons/bs";
@@ -8,7 +8,14 @@ function SplashVertical(){
     function click(){
         window.scrollTo({top:650, left: 0, behavior:'smooth'});
     }
+
+    const myRef = useRef<HTMLDivElement>(null)
+
+    // const executeScroll = () => myRef.current.scrollIntoView()  
+
     return (
+
+        
 
         <div className={styles.splashPage}>
 			<div className={styles.splash}>
@@ -25,13 +32,15 @@ function SplashVertical(){
 					</div>
 
                     <div className={styles.arrow}>  
+                    
                        {/* <BsCaretDown size={75} onClick={()=>click()}/> */}
                        <BsCaretDown size={75} />   
 
                     </div>
 
                     <div className={styles.body}>
-                        <div className={styles.purpose}>
+                        
+                        <div ref={myRef} className={styles.purpose}>
                             <div className="purpose-header">
                                 Explore the intersection of cuisine and culture.
                                 <Models />   

@@ -65,50 +65,91 @@ const CuisinesCard = (props: any) => {
   // console.log(cuisine)
   // console.log(countries)
   return (
-    
     <Accordion defaultActiveKey="0">
-    { loaded ? (
-    <Card >
-    <a href={"/cuisines/" + cuisine["id"]} className="card">
-      <h5 className="card-title mt-3">{cuisine["name"]}</h5>
-      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" />
-      </a>
-      <div className="card-body text-left">
+      {loaded ? (
         <p>
-        <Accordion.Toggle as={Card.Header} eventKey="1">
-          Show more
-          </Accordion.Toggle>
-          <Accordion.Collapse eventKey="1">
+          {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
             <Card>
-          <b>Country: </b>
-          {cuisine["country"]} <br /> 
-          {cuisine?.countryID.split(", ").map((cID: string) => (
-            // <p>{ cID} </p>
-            // <p>{countries[cID]?.name} </p>
-            <>
+              <a href={"/cuisines/" + cuisine["id"]} className="card">
+                <h5 className="card-title mt-3">{cuisine["name"]}</h5>
+                <img
+                  src={cuisine.dishes[0].image_url}
+                  className="city-card-img-top"
+                />
+              </a>
+              <div className="card-body text-left">
                 <p>
-                  <b>Capital: </b>
-                  {countries[parseInt(cID)].capital} <br />
-                  <b>Region: </b>
-                  {countries[parseInt(cID)].region} <br />
-                  <b>Population: </b>
-                  {countries[parseInt(cID)].population.toLocaleString()}
-                  <br />
-                  <b>Timezones: </b>
-                  {countries[parseInt(cID)].timezones}
+                  <Accordion.Toggle as={Card.Header} eventKey="1">
+                    Show more
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey="1">
+                    <Card>
+                      <b>Country: </b>
+                      {cuisine["country"]} <br />
+                      {cuisine?.countryID.split(", ").map((cID: string) => (
+                        // <p>{ cID} </p>
+                        // <p>{countries[cID]?.name} </p>
+                        <>
+                          <p>
+                            <b>Capital: </b>
+                            {countries[parseInt(cID)].capital} <br />
+                            <b>Region: </b>
+                            {countries[parseInt(cID)].region} <br />
+                            <b>Population: </b>
+                            {countries[
+                              parseInt(cID)
+                            ].population.toLocaleString()}
+                            <br />
+                            <b>Timezones: </b>
+                            {countries[parseInt(cID)].timezones}
+                          </p>
+                        </>
+                      ))}
+                    </Card>
+                  </Accordion.Collapse>
                 </p>
-              
-            </>
-          ))}
-          </Card>
-          </Accordion.Collapse>
+              </div>
+            </Card>
+          ) : (
+            <Card>
+              <a href={"/cuisines/" + cuisine["id"]} className="card">
+                <h5 className="card-title mt-3">{cuisine["name"]}</h5>
+                <img
+                  src={cuisine.dishes[0].image_url}
+                  className="city-card-img-top"
+                />
+              </a>
+              <div className="card-body text-left">
+                <p>
+                  <Card>
+                    <b>Country: </b>
+                    {cuisine["country"]} <br />
+                    {cuisine?.countryID.split(", ").map((cID: string) => (
+                      // <p>{ cID} </p>
+                      // <p>{countries[cID]?.name} </p>
+                      <>
+                        <p>
+                          <b>Capital: </b>
+                          {countries[parseInt(cID)].capital} <br />
+                          <b>Region: </b>
+                          {countries[parseInt(cID)].region} <br />
+                          <b>Population: </b>
+                          {countries[parseInt(cID)].population.toLocaleString()}
+                          <br />
+                          <b>Timezones: </b>
+                          {countries[parseInt(cID)].timezones}
+                        </p>
+                      </>
+                    ))}
+                  </Card>
+                </p>
+              </div>
+            </Card>
+          )}
         </p>
-      </div>
-    
-    </Card>
-    ) :
-    <></>
-    }
+      ) : (
+        <></>
+      )}
     </Accordion>
   );
 };

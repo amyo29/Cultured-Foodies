@@ -45,7 +45,7 @@ function Models() {
         </div>
 
         <div className="model-container col-lg-4">
-          <NavLink to="/cites">
+          <NavLink to="/cities">
             <img
               src={Cities}
               className="rounded-circle mx-auto d-block mb-5 "

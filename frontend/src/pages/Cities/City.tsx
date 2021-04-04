@@ -212,6 +212,10 @@ function City(id: any) {
   );
 }
 
+export interface CityObject {
+  cities: CityInstance[];
+}
+
 export interface CityInstance {
   business_freedom: number;
   commute: number;
