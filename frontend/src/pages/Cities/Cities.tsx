@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, ListGroup, Navbar, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Navbar, Button, Spinner } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
@@ -13,6 +13,7 @@ function Cities() {
   const [cities, setCities] = useState([]);
   const [chunkedCities, setChunkedCities] = useState<Array<Array<CityInstance>>>([])
   const [pageNumber, setPageNumber] = useState(1);
+  const [loaded, changeLoading] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -23,7 +24,8 @@ function Cities() {
   useEffect(() => {
     if (data) {
       setCities(data.cities);
-      console.log(data.cities);
+      changeLoading(true);
+      //console.log(data.cities);
     }
   }, [data]);
   const numPerPage = 12;
@@ -51,19 +53,34 @@ function Cities() {
   return (    
     <div>
       <h1 className="text-align center">Cities</h1>
+      { loaded ? (
       <Container>
       <Button onClick={() => onSort('population')}>sorting by population</Button>
 
         {chunkedCities.map((cols) => (
-          <Row>
+          <Row> 
             {cols.map((city: any, i: any) => (
               <Col className="col-sm-4 py-2">
-                <CitiesCard city={city}></CitiesCard>
+                <CitiesCard city={city}></CitiesCard> 
               </Col>
-            ))}
+            ))} 
           </Row>
         ))}
       </Container>
+      ) 
+      : 
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: 40
+      }}>
+      <Spinner animation="border" variant="dark" 
+      as="span" 
+      role="status"
+      aria-hidden="true"/>
+      </div>
+      }
       <div className="row pagination">
         <Pagination
           count={Math.ceil(cities.length / numPerPage)}
