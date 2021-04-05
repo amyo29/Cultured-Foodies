@@ -90,6 +90,7 @@ function Countries() {
         <DropdownButton id="dropdown-basic-button" title="Sort By">
             <Dropdown.Item  onClick={() => onSort("name", true)} >Cuisine Name (A-Z)</Dropdown.Item>
             <Dropdown.Item  onClick={() => onSort("name", false)} >Cuisine Name (Z-A)</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("country", true)} >Country of Origin</Dropdown.Item>
           </DropdownButton>
           {rows.map((cols) => (
             <Row>
