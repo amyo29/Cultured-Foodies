@@ -78,7 +78,7 @@ const CuisinesCard = (props: any) => {
                   {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
                     <>
                       <p
-                        className="collapse pl-1"
+                        className="collapse"
                         id="collapseParagraph"
                         aria-expanded="false"
                       >
