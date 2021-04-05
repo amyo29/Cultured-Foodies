@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Col, Row, Figure, Card } from "react-bootstrap";
+import { Container, Col, Row, Figure, Card, CardColumns, CardDeck } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
@@ -53,89 +53,84 @@ function Cuisine(id: any) {
         <>
       <body className="Instance center-div">
         <div className="info" align-items="center">
-          <div className="row">
-            {/* <div className="col">
+          {/* <div className="row"> */}
+          <CardDeck>
+            <Card>
+                <Card.Header as="h2">Country: {country?.name}</Card.Header>
+                
+                <Card.Body>
+                  <Card.Title>Basic Info:</Card.Title>
+                  <Card.Text>Capital city: {country?.capital}</Card.Text>
+                  <Card.Text>Alpha 3 Code: {country?.alpha3code}</Card.Text>
+                  <Card.Text>Region: {country?.region}</Card.Text>
+                  <Card.Text>Subregion: {country?.subregion}</Card.Text>
+                  <Card.Text>Latitude/Longitude: {country?.latitude}, {country?.longitude}</Card.Text>
+                  <Card.Text>Area: {country?.area.toLocaleString()} km<sup>2</sup></Card.Text>
+                  <Card.Text>Population: {country?.population.toLocaleString()}</Card.Text>
+                  <Card.Text>Bordering Countries: 
+                    {country?.borders.split(", ").map((border: any) => {
+                      return <li>{border}</li>;
+                    })}
+                  </Card.Text>
+                  <Card.Text>Time Zones: {country?.timezones}</Card.Text>
+                  <Card.Text>Translations: 
+                  {country ? (
+                      Object.keys(country?.translations).map((key, index) => (
+                        <p key={index}>
+                          {" "}
+                          {key} : {country?.translations[key]}
+                        </p>
+                      ))
+                      ) 
+                      : 
+                      (
+                      <p>he</p>
+                    )}
+                  </Card.Text>
+                  <Card.Text>Dishes</Card.Text>
+                  <Card.Text>{dishes ? (
+                      dishes.map((cols: any) => (
+                        <Row>
+                          {cols.map((dish: any, i: any) => (
+                            <Col className="col-sm-4 py-2">
+                              <Figure>
+                                <Figure.Image
+                                  width={170}
+                                  height={180}
+                                  alt="171x180"
+                                  src={dish.image_url}
+                                />
+                                <Figure.Caption>{dish.name}</Figure.Caption>
+                              </Figure>
+                            </Col>
+                          ))}
+                        </Row>
+                      ))
+                    ) : (
+                      <p>loading</p>
+                    )}
+                  </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
               <img
                 src={country?.flag}
                 alt=""
                 width="450"
               />
-            </div> */}
-            <div className="col">
-            
-                <Card className="instance-text" style={{ width: "55rem" }}>
-                  <Card.Body>
-                    <Card.Title>Country: {country?.name}</Card.Title>
-                    <Card.Text>Alpha 3 Code: {country?.alpha3code}</Card.Text>
-                    <Card.Text>Region: {country?.region}</Card.Text>
-                    <Card.Text>Subregion: {country?.subregion}</Card.Text>
-                    <Card.Text>Latitude/Longitude: {country?.latitude}, {country?.longitude}</Card.Text>
-                    <Card.Text>Area: {country?.area.toLocaleString()} km<sup>2</sup></Card.Text>
-                    <Card.Text>Population: {country?.population.toLocaleString()}</Card.Text>
-                    <Card.Text>Capital city: {country?.capital}</Card.Text>
-                    <Card.Text>Bordering Countries: 
-                      {country?.borders.split(", ").map((border: any) => {
-                        return <li>{border}</li>;
-                      })}
-                    </Card.Text>
-                    <Card.Text>Time Zones: {country?.timezones}</Card.Text>
-                    <Card.Text>Translations: 
-                    {country ? (
-                        Object.keys(country?.translations).map((key, index) => (
-                          <p key={index}>
-                            {" "}
-                            {key} : {country?.translations[key]}
-                          </p>
-                        ))
-                        ) 
-                        : 
-                        (
-                        <p>he</p>
-                      )}
-                    </Card.Text>
-                    <Card.Text>Dishes</Card.Text>
-                    <Card.Text>{dishes ? (
-                        dishes.map((cols: any) => (
-                          <Row>
-                            {cols.map((dish: any, i: any) => (
-                              <Col className="col-sm-4 py-2">
-                                <Figure>
-                                  <Figure.Image
-                                    width={170}
-                                    height={180}
-                                    alt="171x180"
-                                    src={dish.image_url}
-                                  />
-                                  <Figure.Caption>{dish.name}</Figure.Caption>
-                                </Figure>
-                              </Col>
-                            ))}
-                          </Row>
-                        ))
-                      ) : (
-                        <p>loading</p>
-                      )}
-                    </Card.Text>
-                    
-                  </Card.Body>
-                  
-                  {/*change where to put later */}
-                  <Image src={country?.flag} fluid />
-                  <iframe
-                    src={
-                      "https://www.google.com/maps/embed/v1/place?key=" +
-                      API_KEY +
-                      "&q=" +
-                      country?.name
-                    }
-                    width="450"
-                    height="300"
-                    loading="lazy"
-                  ></iframe>
-                </Card>
-            )
-            </div>
-          </div>
+              <iframe
+                src={
+                  "https://www.google.com/maps/embed/v1/place?key=" +
+                  API_KEY +
+                  "&q=" +
+                  country?.name
+                }
+                width="450"
+                height="300"
+                loading="lazy"
+              ></iframe>
+          </Card>
+          </CardDeck>
         </div>
       </body>
       {/* <div className="center">

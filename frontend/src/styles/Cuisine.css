@@ -13,9 +13,12 @@ section {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  
 }
+
 .card:hover{
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  
 }
 
 .card {
@@ -29,9 +32,14 @@ section {
   width: 100%;  
   height: 100%; 
   max-width: 100%;
+  
 }
+
+
+
 .card-text {
   word-wrap: break-word;
+  
 }
 
 .Instance-header{
@@ -56,17 +64,18 @@ h5{
 	font-family: 'Josefin Sans', Georgia, Times, serif;
 }
 
-h4{
+/* h4{
 	font-family: 'Josefin Sans', Georgia, Times, serif;
-}   
+}    */
 
 .info{
 	align-items: center;
-	padding: 6%;
+	padding: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
+  
 }
 
 .instance-photo{
@@ -79,6 +88,7 @@ h4{
   align-items: center;
   justify-content: center;
   padding: 20px;
+  
 }
 
 .instance-text{
