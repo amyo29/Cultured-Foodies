@@ -1,7 +1,7 @@
 import React, { useRef}  from "react";
 import styles from "../../styles/SplashVertical.module.css"   
 
-import { BsCaretDown } from "react-icons/bs";
+import { BsCaretDownFill } from "react-icons/bs";
 import Models from "./Models";
 
 function SplashVertical(){
@@ -34,7 +34,7 @@ function SplashVertical(){
                     <div className={styles.arrow}>  
                     
                        {/* <BsCaretDown size={75} onClick={()=>click()}/> */}
-                       <BsCaretDown size={75} />   
+                       <BsCaretDownFill size={75} />     
 
                     </div>
 
