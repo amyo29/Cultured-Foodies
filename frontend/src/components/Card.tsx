@@ -69,7 +69,7 @@ const CuisinesCard = (props: any) => {
     <a href={"/cuisines/" + cuisine["id"]} id="module" className="card">
       <h5 className="card-title mt-3">{cuisine["name"]}</h5>
       <img src={cuisine.dishes[0].image_url} className="city-card-img-top" />
-      <div className="card-body">
+      <div className="card-body align-self-start">
         <p>
           {cuisine?.countryID.split(", ").map((cID: string, i: number) => (
             <>
