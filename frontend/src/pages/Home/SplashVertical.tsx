@@ -43,9 +43,16 @@ function SplashVertical(){
                         <div ref={myRef} className={styles.purpose}>
                             <div className="purpose-header">
                                 Explore the intersection of cuisine and culture.
-                                <Models />   
                             </div>
+                             
+
                         </div>
+                        <Models />
+                    </div>
+
+                    <div>
+                      
+
                     </div>
 	
 				</div>
