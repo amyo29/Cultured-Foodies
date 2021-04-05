@@ -84,3 +84,30 @@ a.card:hover {
   margin-top: 0px !important;
   display: block !important;
 }
+#module {
+  width: 500px;
+}
+
+#module a.collapsed:after {
+  content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+  content: '- Show Less';
+}
+
+#module #collapseParagraph.collapse:not(.show) {
+  display: block;
+  /* height = lineheight * no of lines to display */
+  height: 1.5em;
+  overflow: hidden;
+}
+
+#module #collapseParagraph.collapsing {
+  height: 1.5em;
+}
+.just{
+  justify-content: left;
+  margin-left: 0px;
+  align-items: left;
+}

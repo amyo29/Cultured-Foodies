@@ -2,7 +2,11 @@ import React from "react";
 import "../styles/Footer.css";
 import Card from "react-bootstrap/Card";
 import "../styles/About.css";
-import Accordion from "react-bootstrap/Accordion";
+import Button from "react-bootstrap/Button";
+import Collapse from "react-bootstrap/Collapse";
+import { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
@@ -62,96 +66,75 @@ const CitiesCard = (props: any) => {
 const CuisinesCard = (props: any) => {
   const { cuisine, countries, loaded } = props;
   return (
-    <div>
-      {loaded ? (
+    <a href={"/cuisines/" + cuisine["id"]} id="module" className="card">
+      <h5 className="card-title mt-3">{cuisine["name"]}</h5>
+      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" />
+      <div className="card-body">
         <p>
-          {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
-            <Accordion defaultActiveKey="0">
-              <Card>
-                <a href={"/cuisines/" + cuisine["id"]} className="card">
-                  <h5 className="card-title mt-3">{cuisine["name"]}</h5>
-                  <img
-                    src={cuisine.dishes[0].image_url}
-                    className="city-card-img-top"
-                  />
-                </a>
-                <div className="card-body text-left">
-                  <p>
-                    <Accordion.Toggle as={Card.Header} eventKey="1">
-                      Show more
-                    </Accordion.Toggle>
-                    <Accordion.Collapse eventKey="1">
-                      <Card>
-                        {cuisine?.countryID.split(", ").map((cID: string, i:number) => (
-                          <>
-                            <p>
-                              <b>Country: </b>
-                              {cuisine["country"].split(", ")[i]} <br />
-                              <b>Capital: </b>
-                              {countries[parseInt(cID)].capital} <br />
-                              <b>Region: </b>
-                              {countries[parseInt(cID)].region} <br />
-                              <b>Population: </b>
-                              {countries[
-                                parseInt(cID)
-                              ].population.toLocaleString()}
-                              <br />
-                              <b>Area: </b>
-                              {countries[
-                                parseInt(cID)
-                              ].area.toLocaleString()}{" "}
-                              km<sup>2</sup>
-                            </p>
-                          </>
-                        ))}
-                      </Card>
-                    </Accordion.Collapse>
-                  </p>
-                </div>
-              </Card>
-            </Accordion>
-          ) : (
-            <a href={"/cuisines/" + cuisine["id"]} className="card">
-              <h5 className="card-title mt-3">{cuisine["name"]}</h5>
-              <img
-                src={cuisine.dishes[0].image_url}
-                className="city-card-img-top"
-              />
-              <div className="card-body text-left">
-                <p>
-                  {cuisine?.countryID.split(", ").map((cID: string, i:number) => (
-                    // <p>{ cID} </p>
-                    // <p>{countries[cID]?.name} </p>
+          {cuisine?.countryID.split(", ").map((cID: string, i: number) => (
+            <>
+              {loaded ? (
+                <>
+                  {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
                     <>
-                      {loaded ? (
-                        <p>
-                          <b>Country: </b>
-                          {cuisine["country"].split(", ")[i]} <br />
-                          <b>Capital: </b>
-                          {countries[parseInt(cID)].capital} <br />
-                          <b>Region: </b>
-                          {countries[parseInt(cID)].region} <br />
-                          <b>Population: </b>
-                          {countries[parseInt(cID)].population.toLocaleString()}
-                          <br />
-                          <b>Area: </b>
-                          {countries[parseInt(cID)].area.toLocaleString()} km
-                          <sup>2</sup>
-                        </p>
-                      ) : (
-                        <></>
-                      )}
+                      <p
+                        className="collapse pl-1"
+                        id="collapseParagraph"
+                        aria-expanded="false"
+                      >
+                        <b>Country: </b>
+                        {cuisine["country"].split(", ")[i]} <br />
+                        <b>Capital: </b>
+                        {countries[parseInt(cID)].capital} <br />
+                        <b>Region: </b>
+                        {countries[parseInt(cID)].region} <br />
+                        <b>Population: </b>
+                        {countries[parseInt(cID)].population.toLocaleString()}
+                        <br />
+                        <b>Area: </b>
+                        {countries[parseInt(cID)].area.toLocaleString()} km
+                        <sup>2</sup>
+                      </p>
                     </>
-                  ))}
-                </p>
-              </div>
-            </a>
-          )}
+                  ) : (
+                    <>
+                      <p>
+                        <b>Country: </b>
+                        {cuisine["country"].split(", ")[i]} <br />
+                        <b>Capital: </b>
+                        {countries[parseInt(cID)].capital} <br />
+                        <b>Region: </b>
+                        {countries[parseInt(cID)].region} <br />
+                        <b>Population: </b>
+                        {countries[parseInt(cID)].population.toLocaleString()}
+                        <br />
+                        <b>Area: </b>
+                        {countries[parseInt(cID)].area.toLocaleString()} km
+                        <sup>2</sup>
+                      </p>
+                    </>
+                  )}
+                </>
+              ) : (
+                <></>
+              )}
+            </>
+          ))}
         </p>
-      ) : (
-        <></>
-      )}
-    </div>
+        {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
+          <a
+            role="button"
+            className="collapsed"
+            data-toggle="collapse"
+            href="#collapseParagraph"
+            aria-expanded="false"
+            aria-controls="collapseParagraph"
+          ></a>
+        ) : (
+          <></>
+        )}
+      </div>
+    </a>
   );
 };
 
