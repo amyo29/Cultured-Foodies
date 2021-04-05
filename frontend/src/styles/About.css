@@ -7,14 +7,22 @@
   text-align: center;
 }
 
+.summary {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
 .main-card {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-.card:hover{
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .profile-img {
   align-items: center;
@@ -28,10 +36,10 @@
   display: block !important;
 }
 
-.card_deck{
+.card_deck {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
 }
 .embed-responsive .card-img-top {
   width: 20px;
@@ -42,27 +50,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Josefin Sans', Georgia, Times, serif;
+  font-family: "Josefin Sans", Georgia, Times, serif;
 }
-h1{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
+h1 {
+  font-family: "Josefin Sans", Georgia, Times, serif;
 }
-h2{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
+h2 {
+  font-family: "Josefin Sans", Georgia, Times, serif;
 }
-h2{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
+h2 {
+  font-family: "Josefin Sans", Georgia, Times, serif;
 }
-p{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
+p {
+  font-family: "Josefin Sans", Georgia, Times, serif;
 }
-a.card-block { color: inherit; }
+a.card-block {
+  color: inherit;
+}
 a.card,
 a.card:hover {
   color: black;
   text-decoration: none;
 }
-.info-card-img-top{
+.info-card-img-top {
   align-items: center;
   justify-content: center;
   object-fit: cover !important;
@@ -73,7 +83,7 @@ a.card:hover {
   margin-top: 20px !important;
   display: block !important;
 }
-.city-card-img-top{
+.city-card-img-top {
   align-items: center;
   justify-content: center;
   object-fit: cover !important;
@@ -113,11 +123,10 @@ a.card:hover {
   line-height: 1.5;
 }
 
-#module a.collapsed:after  {
-    content: '+ Show More';
+#module a.collapsed:after {
+  content: "+ Show More";
 }
 
 #module a:not(.collapsed):after {
-  
-    content: '- Show Less';
+  content: "- Show Less";
 }

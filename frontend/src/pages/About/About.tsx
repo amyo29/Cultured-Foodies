@@ -71,7 +71,7 @@ function About() {
     <div className="font-style center">
       <h1>About Us</h1>
 
-      <p>
+      <p className="summary">
         Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
         With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, 
         Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
