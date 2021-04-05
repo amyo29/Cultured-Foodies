@@ -84,6 +84,7 @@ a.card:hover {
   margin-top: 0px !important;
   display: block !important;
 }
+/* 
 #module {
   width: 500px;
 }
@@ -98,16 +99,25 @@ a.card:hover {
 
 #module #collapseParagraph.collapse:not(.show) {
   display: block;
-  /* height = lineheight * no of lines to display */
   height: 1.5em;
   overflow: hidden;
 }
 
 #module #collapseParagraph.collapsing {
   height: 1.5em;
+} */
+
+#module {
+  width: 500px;
+  font-size: 14px;
+  line-height: 1.5;
 }
-.just{
-  justify-content: left;
-  margin-left: 0px;
-  align-items: left;
+
+#module a.collapsed:after  {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+  
+    content: '- Show Less';
 }
