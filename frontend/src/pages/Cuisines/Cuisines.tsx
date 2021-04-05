@@ -5,6 +5,8 @@ import { Pagination } from "@material-ui/lab";
 import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import {CuisinesCard} from "../../components/Card";
+import load from "../../static_resources/spinny donut.gif";
+
 function Countries() {
   useEffect(() => {
     document.title = "Cuisines";
@@ -65,32 +67,46 @@ function Countries() {
     rows.push(currentData.slice(i, i + chunk));
   }
 
-  return (
-    <div>
-      <h1 className="text-align center">Cuisines</h1>
-      <Container>
-        {rows.map((cols) => (
-          <Row>
-            {cols.map((cuisine: any, i: any) => (
-              <Col className="col-sm-4 py-2">
-                <CuisinesCard cuisine={cuisine} countries = {countries} loaded = {loaded}></CuisinesCard>
-              </Col>
-            ))}
-          </Row>
-        ))}
-      </Container>
-      <div className="row pagination">
-      <Pagination   
-        count={Math.ceil(cuisines.length / numPerPage )}
-        page={pageNumber}
-        onChange={handleChange}
-      ></Pagination>
-      {startIndex+1 } - {Math.min(startIndex + numPerPage, cuisines?.length)} of {cuisines?.length}
-      </div>
+  if (loaded) {
+    return (
 
-      {/* <Footer></Footer> */}
-    </div>
-  );
+      <div>
+        <h1 className="text-align center">Cuisines</h1>
+        <Container>
+          {rows.map((cols) => (
+            <Row>
+              {cols.map((cuisine: any, i: any) => (
+                <Col className="col-sm-4 py-2">
+                  <CuisinesCard cuisine={cuisine} countries = {countries} loaded = {loaded}></CuisinesCard>
+                </Col>
+              ))}
+            </Row>
+          ))}
+        </Container>
+        <div className="row pagination">
+        <Pagination   
+          count={Math.ceil(cuisines.length / numPerPage )}
+          page={pageNumber} 
+          onChange={handleChange}
+        ></Pagination>
+        {startIndex+1 } - {Math.min(startIndex + numPerPage, cuisines?.length)} of {cuisines?.length}
+        </div>
+
+        {/* <Footer></Footer> */}
+      </div>
+    );
+  }
+  else 
+  {
+    return (
+      <div style={{
+        position: 'absolute', left: '50%', top: '50%',
+          transform: 'translate(-50%, -50%)'
+      }}>
+        <img src={load} alt="loading..."/>
+      </div>
+    )
+  }
 }
 //mobile for card, web for instance page
 export default Countries;
