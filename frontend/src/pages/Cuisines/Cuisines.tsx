@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Navbar } from "react-bootstrap";
+import { Container, Row, Col, Card, Navbar, DropdownButton, Dropdown } from "react-bootstrap";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CountryInstance, CuisineInstance } from "./Cuisine";
@@ -12,6 +12,7 @@ function Countries() {
     document.title = "Cuisines";
   }, []);
   const [cuisines, setCuisines] = useState([]);
+  const [displayedCuisines, setDisplayedCuisines] = useState<Array<CuisineInstance>>([]);
   const [pageNumber, setPageNumber] = useState(1);
   const [countries, setCountries]: any = useState({});
   const [loaded, changeLoading] = useState(false);
@@ -23,6 +24,7 @@ function Countries() {
   useEffect(() => {
     if (data) {
       setCuisines(data.cuisines);
+      setDisplayedCuisines(data.cuisines)
       // console.log(data.cuisines);
     }
 
@@ -55,11 +57,23 @@ function Countries() {
       //   });
       // });
     });
-  }, [cuisines]);
+  }, [displayedCuisines]);
 
+  let onSort = (sortableField: string, ascending: boolean) => {
+    var copy = cuisines.slice(0);
+    copy.sort(function (a: any, b: any) {
+      if (ascending){
+        return a[sortableField] > b[sortableField]? 1: -1;
+      } else {
+        return a[sortableField] >  b[sortableField]? -1: 1;
+      }
+    });
+
+    setDisplayedCuisines(copy)
+  };
   const numPerPage = 12;
   const startIndex = numPerPage * (pageNumber - 1);
-  const currentData = cuisines.slice(startIndex, startIndex + numPerPage);
+  const currentData = displayedCuisines.slice(startIndex, startIndex + numPerPage);
   var i, j;
   var chunk = 3;
   var rows = [];
@@ -73,6 +87,10 @@ function Countries() {
       <div>
         <h1 className="text-align center">Cuisines</h1>
         <Container>
+        <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item  onClick={() => onSort("name", true)} >Cuisine Name (A-Z)</Dropdown.Item>
+            <Dropdown.Item  onClick={() => onSort("name", false)} >Cuisine Name (Z-A)</Dropdown.Item>
+          </DropdownButton>
           {rows.map((cols) => (
             <Row>
               {cols.map((cuisine: any, i: any) => (
