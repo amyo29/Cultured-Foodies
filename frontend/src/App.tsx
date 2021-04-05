@@ -6,7 +6,7 @@ import "./styles/App.css";
 import { Card, Button } from 'antd';
 
 import Home from "./pages/Home/Home";
-import Splash from "./pages/Home/Splash";
+// import SplashCards from "./pages/Home/SplashCards";
 import SplashVertical from "./pages/Home/SplashVertical";
 
 import About from "./pages/About/About";

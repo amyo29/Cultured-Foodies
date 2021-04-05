@@ -1,23 +1,22 @@
 import React, { FC, Component, ComponentType, useState, useEffect, useRef, MutableRefObject } from "react"
-import { Card, Avatar, Typography, Button } from "antd"
+// import { Card, Avatar, Typography, Button } from "antd"
 // import Card from "react-bootstrap/Card";
 
-import { DownOutlined } from "@ant-design/icons"
 import { Link, useHistory } from "react-router-dom"  
 
 import Cuisines from "../../static_resources/cuisineModel.jpg"       
 import Cities from "../../static_resources/cityModel.jpg"
 import Restaurants from "../../static_resources/restaurantModel.jpg"
 
-import styles from "../../styles/Splash.module.css"   
+import styles from "../../styles/SplashCards.module.css"   
 // import GeneralSearchBar, { AddressSearchBar } from "../Search/GeneralSearchBar"
 // import { getAPI } from "library/APIClient"
 
-const { Title, Paragraph } = Typography
-const { Meta } = Card;
+// const { Title, Paragraph } = Typography
+// const { Meta } = Card;
 // const ref = useRef<HTMLDivElement>(null);    
 
-class Splash extends Component {
+class SplashCards extends Component {
     render() {
 // const Splash: FC = () => {   
     // const ref = useRef(null)
@@ -28,14 +27,14 @@ class Splash extends Component {
 			<div className={styles.splash}>
 				<div className={styles.splashContent}>
 					<div className={styles.headerText}>
-						<Title level={1} className={styles.title}>
+						{/* <Title level={1} className={styles.title}> */}
 							Cultured Foodies
-						</Title>
-						<Paragraph className={styles.about}>
+						{/* </Title> */}
+						{/* <Paragraph className={styles.about}> */}
                         Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? 
                         Join us on a journey of culinary and cultural discovery that 
                         stretches through the ages and across the seas.
-						</Paragraph>
+						{/* </Paragraph> */}
 					</div>
 	
 				</div>
@@ -52,20 +51,20 @@ class Splash extends Component {
 				</div>       */}
 			</div>
 			<div className={styles.modelCards} >
-				<Title level={1} style={{ textAlign: "center", marginTop: 32 }}>
+				{/* <Title level={1} style={{ textAlign: "center", marginTop: 32 }}> */}
 					Model Pages
-				</Title>
+				{/* </Title> */}
 				<div className={styles.cardFlexContainer}>
 					<Link
 						id="cuisineCard"
 						to="/cuisines/"
 						className={styles.card}
 					>
-                        <Card.Meta className={styles.card}>
-                            {/* avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />} */}
+                        {/* <Card.Meta className={styles.card}>
+                            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
                                 title="Card title"
                                 description="This is the description"
-                        </Card.Meta>
+                        </Card.Meta> */}   
 						{/* <Card className={styles.card}
 							bordered={true}  
 							
@@ -96,7 +95,7 @@ class Splash extends Component {
 						to="/cities/"
 						className={styles.card}
 					>
-						<Card
+						{/* <Card
 							// bordered={true}
 							className={styles.card}
 							cover={
@@ -114,14 +113,14 @@ class Splash extends Component {
 							<Paragraph>
 								Which city are you in? Learn about your city as well as cities across the U.S.!
 							</Paragraph>
-						</Card>
+						</Card> */}
 					</Link>
 					<Link
 						id="restaurantCard"
 						to="/restaurants/"
 						className={styles.card}
 					>
-						<Card
+						{/* <Card
 							// bordered={true}
 							className={styles.card}
 							cover={
@@ -139,7 +138,7 @@ class Splash extends Component {
 							<Paragraph>
 								Find nearby restaurants which serve your favourite cuisines!   
 							</Paragraph>
-						</Card>      
+						</Card>       */}
 					</Link>
 				</div>
 			</div>
@@ -149,4 +148,4 @@ class Splash extends Component {
     }
 }
 
-export default Splash;
+export default SplashCards;
