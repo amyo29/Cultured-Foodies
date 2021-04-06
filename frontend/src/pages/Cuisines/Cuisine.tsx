@@ -8,6 +8,7 @@ import {
   CardColumns,
   CardDeck,
   CardImg,
+  Carousel,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
@@ -55,13 +56,37 @@ function Cuisine(id: any) {
 
   let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
 
+  //Carousel:
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: React.SetStateAction<number>, e: any) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <div>
       <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
       {countries?.map((country) => (
         <>
               <h2 className="Instance-header">Country of {country?.name} </h2>
-              <Image src={country?.flag} className="flag-responsive"  />
+              <Card.Header as="h3">Dishes</Card.Header>
+              <Carousel activeIndex={index} onSelect={handleSelect}>
+                {dishes.map((cols: any) => (
+                  
+                  <Carousel.Item>
+                    <CardDeck>
+                    {cols.map((dish: any) => (
+                      <Card>
+                        <Image src={dish.image_url} fluid />
+                      </Card>
+                    ))}
+                    </CardDeck>
+                </Carousel.Item>
+                      
+                ))
+              }
+                  </Carousel> 
+              {/* <Image src={country?.flag} className="flag-responsive"  /> */}
                 {/* <div className="row"> */}
                 <CardDeck style={{margin: 20}}>
                   <Card border="dark">
@@ -106,7 +131,7 @@ function Cuisine(id: any) {
                       
                     </Card.Body>
                   </Card>
-                  <Card border="dark">
+                  {/* <Card border="dark">
                   <Card.Header as="h3">Dishes</Card.Header>
                       <Card.Text>
                         {dishes ? (
@@ -116,46 +141,19 @@ function Cuisine(id: any) {
                                 <Card>
                                   <Card.Img variant="bottom" src={dish.image_url}/>
                                   <Card.Title as="h5">{dish.name}</Card.Title>
-                                  {/* <Figure>
-                                    <Figure.Image
-                                      width={170}
-                                      height={180}
-                                      alt="171x180"
-                                      src={dish.image_url}
-                                    />
-                                    <Figure.Caption>{dish.name}</Figure.Caption>
-                                  </Figure> */}
                                 </Card>
                               ))}
                             </CardDeck>
-                          //   <Row>
-                          //   {cols.map((dish: any, i: any) => (
-                          //     <Col className="col-sm-4 py-2">
-                          //        <Figure>
-                          //           <Figure.Image
-                          //            width={170}
-                          //            height={180}
-                          //           alt="171x180"
-                          //          src={dish.image_url}
-                          //          />
-                          //       <Figure.Caption>{dish.name}</Figure.Caption>
-                          //       </Figure>
-                          //     </Col>
-                          //   ))}
-                          // </Row>
                           ))
                         ) : (
                           <p>loading</p>
                         )}
                       </Card.Text>
-                 </Card>
-                  {/*  <Card border="dark">
+                 </Card> */}
+                   <Card border="dark">
                     <Card.Header as="h3">Flag:</Card.Header>
                     <Card.Img src={country?.flag}></Card.Img>
-                    {/* <Card.Body> 
-                
-              </Card.Body> 
-                  </Card> */}
+                  </Card>
                 </CardDeck>
           <h5>Restaurants with {cuisine?.name} food</h5>
           {cuisine?.restaurants ? (
