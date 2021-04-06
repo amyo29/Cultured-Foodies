@@ -9,6 +9,7 @@ import useAxios from "axios-hooks";
 import axios from "axios";
 import { RestaurantInstance } from "../Restaurants/Restaurant";
 import { CuisineInstance } from "../Cuisines/Cuisine";
+import "../../styles/City.css";
 
 function City(id: any) {
   useEffect(() => {
@@ -152,16 +153,6 @@ function City(id: any) {
           ))}
         </section>
 
-        <div className="center">
-          <iframe
-            src={cityMapURL}
-            width="600"
-            height="450"
-            loading="lazy"
-          ></iframe>
-          <h4>Map Location</h4>
-        </div>
-
         {/* <h5>Health</h5>
         {data["recipe"]["healthLabels"].map((healthLabel: any) => {
           return <li>{healthLabel}</li>;
@@ -208,6 +199,17 @@ function City(id: any) {
         />
       </div> */}
       </Container>
+      <div className="center">
+        <h4>Map Location</h4>
+        <div className="map-responsive">
+          <iframe
+            src={cityMapURL}
+            width="600"
+            height="450"
+            loading="lazy"
+          ></iframe>
+          </div>
+        </div>
     </div>
   );
 }
