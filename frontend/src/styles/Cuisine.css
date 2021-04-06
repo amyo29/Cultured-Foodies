@@ -114,3 +114,20 @@ h5{
 	margin-right: auto;
 	margin-bottom: 5%;
 }   
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  padding: 0;
+  height:98%;
+  width:80%;
+  position:absolute;
+}
