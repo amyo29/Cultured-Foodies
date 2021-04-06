@@ -37,28 +37,26 @@ function Restaurant(id: any) {
         <div className="info" align-items="center">
           <div className="row">
             <div className="col">
+            <div className="card">
               <img
                 src={restaurant?.restaurant_image}
                 alt=""
-                width="450"
+                className="restaurant-card-img-top"
               />
-            </div>
-            <div className="col">
-            <Card className="instance-text" style={{ width: "55rem" }}>
-              <Card.Body>
-                <Card.Title>{restaurant?.name}</Card.Title>
-                <Card.Text>Phone Number: {restaurant?.phone_numbers}</Card.Text>
-                <Card.Text>Address: {restaurant?.address}</Card.Text>
-                <Card.Text>City: {restaurant?.city}</Card.Text>
-                <Card.Text>Zipcode: {restaurant?.zipcode}</Card.Text>
-                <Card.Text>
+              <div className="card-body">
+                <h5 className="card-title">{restaurant?.name}</h5>
+                <p className="card-text">Phone Number: {restaurant?.phone_numbers}</p>
+                <p className="card-text">Address: {restaurant?.address}</p>
+                <p className="card-text">City: {restaurant?.city}</p>
+                <p className="card-text">Zipcode: {restaurant?.zipcode}</p>
+                <p className="card-text">
                   Average Rating: {restaurant?.aggregate_rating}
-                </Card.Text>
-                <Card.Text>Highlights: {restaurant?.highlights}</Card.Text>
-                <Card.Text>Price Range: {restaurant?.price_range}</Card.Text>
-                <Card.Text>Average Cost for Two: ${restaurant?.average_cost_for_two}</Card.Text>
-                <Card.Text>Timings: {restaurant?.timings}</Card.Text>
-                <Card.Text>
+                </p>
+                <p className="card-text">Highlights: {restaurant?.highlights}</p>
+                <p className="card-text">Price Range: {restaurant?.price_range}</p>
+                <p className="card-text">Average Cost for Two: ${restaurant?.average_cost_for_two}</p>
+                <p className="card-text">Timings: {restaurant?.timings}</p>
+                <p className="card-text">
                   Menu: 
                   {
                     <a href={restaurant?.menu_url}>
@@ -67,8 +65,8 @@ function Restaurant(id: any) {
                       <br />
                     </a>
                   }
-                </Card.Text>
-                <Card.Text>
+                </p>
+                <p className="card-text">
                   Cities which have this restaurant:
                   {
                     <a href={"/cities/" + restaurant?.city_id}>
@@ -77,7 +75,7 @@ function Restaurant(id: any) {
                       <br />
                     </a>
                   }
-                </Card.Text>
+                </p>
                 Cuisines for this restaurant: <br />
                 {restaurant?.cuisines ? (
                   restaurant?.cuisines?.split(", ").map((c, index) =>
@@ -101,21 +99,23 @@ function Restaurant(id: any) {
                 ) : (
                   <p>loading</p>
                 )}
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
+                <p className="card-text"></p>
+              </div>
+            </div>
             </div>
           </div>
         </div>
       </body>
       <div className="center">
         <h4>Map Location</h4>
+        <div className="map-responsive">
         <iframe
           src={cityMapURL}
           width="600"
           height="450"
           loading="lazy"
         ></iframe>
+        </div>
       </div>
     </div>
     

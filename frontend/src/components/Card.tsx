@@ -2,9 +2,6 @@ import React from "react";
 import "../styles/Footer.css";
 import Card from "react-bootstrap/Card";
 import "../styles/About.css";
-import Button from "react-bootstrap/Button";
-import Collapse from "react-bootstrap/Collapse";
-import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
