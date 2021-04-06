@@ -122,6 +122,9 @@ function Restaurant(id: any) {
   );
 }
 
+export interface RestaurantObject {
+  restaurants: RestaurantInstance[];
+}
 export interface RestaurantInstance {
   address: string;
   aggregate_rating: string;

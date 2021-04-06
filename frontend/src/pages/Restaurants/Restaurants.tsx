@@ -3,17 +3,20 @@ import { Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
-
+// import { MDBDataTable } from 'mdbreact';
 import logo from "../../static_resources/dumpling.gif";
 import small from "../../static_resources/smaller dumpling.gif";
+import {RestaurantObject, RestaurantInstance } from './Restaurant'
 
 function Restaurants() {
   useEffect(() => {
     document.title = "Restaurants";
   }, []);
 
-  const [restaurants, setRestaurants] = useState([]);
+  const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>([]);
   const [pageNumber, setPageNumber] = useState(1);
+  const [displayedRestuarants, setDisplayedRestaurants] = useState<Array<RestaurantInstance>>([]);
+
   const [loaded, changeLoading] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
@@ -22,15 +25,73 @@ function Restaurants() {
 
   useEffect(() => {
     if (data) {
+      const restauarantObj: RestaurantObject = data as RestaurantObject;
       setRestaurants(data.restaurants);   
+      setDisplayedRestaurants(data.restaurants)
       changeLoading(true);
     }
   }, [data]);
 
   const numPerPage = 12;
   const startIndex = numPerPage * (pageNumber-1);
-  const currentData = restaurants.slice(startIndex, startIndex + numPerPage);
+  const currentData = displayedRestuarants.slice(startIndex, startIndex + numPerPage);
+  let onSort = (sortableField: string, ascending: boolean) => {
+    console.log(sortableField)
+    var copy = restaurants.slice(0);
+    copy.sort(function (a: any, b: any) {
+      if (ascending){
+        return a[sortableField] > b[sortableField]? 1: -1;
+      } else {
+        return a[sortableField] >  b[sortableField]? -1: 1;
+      }
+    });
 
+    setDisplayedRestaurants(copy)
+  }
+  let tabledata_row = []
+
+  const tabledata = {
+    columns: [
+      {
+        label: 'Name',
+        field: 'name',
+        sort: 'asc',
+        width: 150
+      },
+      // {
+      //   label: 'Position',
+      //   field: 'position',
+      //   sort: 'asc',
+      //   width: 270
+      // },
+      // {
+      //   label: 'Office',
+      //   field: 'office',
+      //   sort: 'asc',
+      //   width: 200
+      // },
+      // {
+      //   label: 'Age',
+      //   field: 'age',
+      //   sort: 'asc',
+      //   width: 100
+      // },
+      // {
+      //   label: 'Start date',
+      //   field: 'date',
+      //   sort: 'asc',
+      //   width: 150
+      // },
+      // {
+      //   label: 'Salary',
+      //   field: 'salary',
+      //   sort: 'asc',
+      //   width: 100
+      // }
+    ],
+    rows: restaurants
+    // rows: restaurants.map((r)=> { return {'name':<a href={'/restaurants/' +r.id}>{r.name}</a>}; })
+  };
   if (loaded) {
   return (
     
@@ -65,11 +126,11 @@ function Restaurants() {
       </Col>
       </Row>
       
-      <Table responsive className="table">
+      <Table responsive className="table table-striped table-bordered table-sm">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Name</th>
+            <th><button  onClick={ () => onSort('id', true)}>#</button></th>
+            <th><button  onClick={ () => onSort('name', true)}>Name</button></th>
             <th>City</th>
             <th>Cuisines</th>
             <th>Rating</th>
@@ -98,9 +159,14 @@ function Restaurants() {
           ))}
         </tbody>
         
-      </Table>
+      </Table> 
         
-
+    {/* <MDBDataTable
+      striped
+      bordered
+      small
+      data={tabledata}
+    /> */}
       <div className="row pagination">
       <Pagination   
         count={Math.ceil(restaurants.length / numPerPage )}
