@@ -9,6 +9,7 @@ import {
   CardDeck,
   CardImg,
   Carousel,
+  Badge,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
@@ -66,133 +67,139 @@ function Cuisine(id: any) {
   return (
     <div>
       <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
+      {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first"></Tab.Container> */}
       {countries?.map((country) => (
         <>
           <div style={{
             margin:20
           }}> 
           <h2 className="Instance-header">Country of {country?.name} </h2>
-            <Card.Header as="h3">Dishes</Card.Header>
+          {/* <Image src={country?.flag} className="flag-responsive"  /> */}
+          <Card.Header as="h3">Dishes</Card.Header>
            
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                {dishes.map((cols: any) => (
-                  
-                  <Carousel.Item>
-                    
-                    <CardDeck>
-                    {cols.map((dish: any) => (
-                      <Card>
-                        <Card.Header as="h5">{dish.name}</Card.Header>
-                        <Card.Img 
-                          src={dish.image_url} 
-                          // style={{ height: '15rem' }}
-                          className="carousel-img"
-                          />
-                      </Card>
-                    ))}
-                    </CardDeck>
-                </Carousel.Item>
-                      
-                ))
-              }
-              </Carousel> 
-              </div>
-              {/* <Image src={country?.flag} className="flag-responsive"  /> */}
-                {/* <div className="row"> */}
-                <CardDeck style={{margin: 20}}>
-                  <Card border="dark">
-                    <Card.Header as="h3">Basic Info:</Card.Header>
-                    <Card.Body>
-                      <Card.Text>Capital city: {country?.capital}</Card.Text>
-                      <Card.Text>Alpha 3 Code: {country?.alpha3code}</Card.Text>
-                      <Card.Text>Region: {country?.region}</Card.Text>
-                      <Card.Text>Subregion: {country?.subregion}</Card.Text>
-                      <Card.Text>
-                        Latitude/Longitude: {country?.latitude},{" "}
-                        {country?.longitude}
-                      </Card.Text>
-                      <Card.Text>
-                        Area: {country?.area.toLocaleString()} km<sup>2</sup>
-                      </Card.Text>
-                      <Card.Text>
-                        Population: {country?.population.toLocaleString()}
-                      </Card.Text>
-                      <Card.Text>
-                        Bordering Countries:
-                        {country?.borders.split(", ").map((border: any) => {
-                          return <li>{border}</li>;
-                        })}
-                      </Card.Text>
-                      <Card.Text>Time Zones: {country?.timezones}</Card.Text>
-                      <Card.Text>
-                        Translations:
-                        {country ? (
-                          Object.keys(country?.translations).map(
-                            (key, index) => (
-                              <p key={index}>
-                                {" "}
-                                {key} : {country?.translations[key]}
-                              </p>
-                            )
-                          )
-                        ) : (
-                          <p>he</p>
-                        )}
-                      </Card.Text>
-                      
-                    </Card.Body>
+          <Carousel activeIndex={index} onSelect={handleSelect}>
+            {dishes.map((cols: any) => (
+              
+              <Carousel.Item>
+                
+                <CardDeck>
+                {cols.map((dish: any) => (
+                  <Card>
+                    <Card.Header as="h5">{dish.name}</Card.Header>
+                    <Card.Img 
+                      src={dish.image_url} 
+                      // style={{ height: '15rem' }}
+                      className="carousel-img"
+                      />
                   </Card>
-                  {/* <Card border="dark">
-                  <Card.Header as="h3">Dishes</Card.Header>
-                      <Card.Text>
-                        {dishes ? (
-                          dishes.map((cols: any) => (
-                            <CardDeck>
-                              {cols.map((dish: any, i: any) => (
-                                <Card>
-                                  <Card.Img variant="bottom" src={dish.image_url}/>
-                                  <Card.Title as="h5">{dish.name}</Card.Title>
-                                </Card>
-                              ))}
-                            </CardDeck>
-                          ))
-                        ) : (
-                          <p>loading</p>
-                        )}
-                      </Card.Text>
-                 </Card> */}
-                   <Card border="dark">
-                    <Card.Header as="h3">Flag:</Card.Header>
-                    <Card.Img src={country?.flag}></Card.Img>
-                  </Card>
+                ))}
                 </CardDeck>
-          <h5>Restaurants with {cuisine?.name} food</h5>
-          {cuisine?.restaurants ? (
-            cuisine?.restaurants?.split(", ").map((r, index) => (
-              <a
-                href={
-                  "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-                }
-              >
-                {r}
-                <br />
-              </a>
+            </Carousel.Item>
+                  
             ))
-          ) : (
-            <p>loading</p>
-          )}
+          }
+          </Carousel> 
+            </div>
+            
+                {/* <div className="row"> */}
+          <CardColumns style={{margin: 20}}>
+            <Card border="dark">
+              <Card.Header as="h3">Basic Info:</Card.Header>
+              <div className="card-body align-self-start">
+              <Card.Body>
+                <Card.Text><h5>Capital city:</h5>{country?.capital}</Card.Text>
+                <Card.Text><h5>Alpha 3 Code:</h5> {country?.alpha3code}</Card.Text>
+                <Card.Text><h5>Region:</h5> {country?.region}</Card.Text>
+                <Card.Text><h5>Subregion:</h5> {country?.subregion}</Card.Text>
+                <Card.Text>
+                <h5>Latitude/Longitude:</h5> {country?.latitude},{" "}
+                  {country?.longitude}
+                </Card.Text>
+                <Card.Text>
+                <h5>Area:</h5> {country?.area.toLocaleString()} km<sup>2</sup>
+                </Card.Text>
+                <Card.Text>
+                <h5>Population:</h5> {country?.population.toLocaleString()}
+                </Card.Text>
+                <Card.Text>
+                <h5>Bordering Countries:</h5>
+                  
+                    {country?.borders ? (
+                    country?.borders.split(", ").map((border: any) => {
+                        return <li>{border}</li>;
+                    })
+                    
+                    )
+                    :
+                    <Card.Text>N/A</Card.Text>
+                    }
 
-          <h5>Cities with {cuisine?.name} food</h5>
-          {cuisine?.cities ? (
-            cuisine?.cities?.split(", ").map((c, index) => (
-              <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]}>
-                {c}
-                <br />
-              </a>
-            ))
-          ) : (
-            <p>loading</p>
-          )}
+                </Card.Text>
+                <Card.Text><h5>Time Zones:</h5> {country?.timezones}</Card.Text>
+                <Card.Text>
+                <h5>Translations:</h5>
+                  {country ? (
+                    Object.keys(country?.translations).map(
+                      (key, index) => (
+                        <p key={index}>
+                          {" "}
+                          {key} : {country?.translations[key]}
+                        </p>
+                      )
+                    )
+                  ) : (
+                    <p>he</p>
+                  )}
+                </Card.Text>
+                
+              </Card.Body>
+              </div>
+            </Card>
+          
+            <Card border="dark">
+              <Card.Header as="h3">Flag:</Card.Header>
+              <Card.Img src={country?.flag}></Card.Img>
+            </Card>
+
+            <Card border="dark">
+                <Card.Header as="h3">Cities with {cuisine?.name} food</Card.Header>
+                <Card.Body>
+              {cuisine?.cities ? (
+                cuisine?.cities?.split(", ").map((c, index) => (
+                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
+                    {c}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+              </Card.Body>
+            </Card>     
+
+            <Card border="dark">
+
+              <Card.Header as="h3">Restaurants with {cuisine?.name} food</Card.Header>
+              <Card.Body>
+              {cuisine?.restaurants ? (
+                cuisine?.restaurants?.split(", ").map((r, index) => (
+                  <a
+                    href={
+                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
+                    }
+                    target="_blank"
+                  >
+                     {r}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+              </Card.Body>
+            </Card>
+          </CardColumns>
+        
           <p></p>
           <p></p>
           <p></p>
