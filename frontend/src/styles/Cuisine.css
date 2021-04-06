@@ -114,12 +114,24 @@ h5{
 	margin-right: auto;
 	margin-bottom: 5%;
 }   
+
+.flag-responsive{     
+	align-items: center;
+	margin: auto;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .map-responsive{
   overflow:hidden;
   padding-bottom:50%;
   position:relative;
   height:0;
 }
+
 .map-responsive iframe{
   display: block;
   top: 0;
@@ -130,4 +142,13 @@ h5{
   height:98%;
   width:80%;
   position:absolute;
+}
+
+
+img {
+  opacity: 1.0;
+}
+
+img:hover {
+  opacity: 0.5;
 }

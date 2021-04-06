@@ -62,12 +62,12 @@ function Cuisine(id: any) {
         <>
           
               <h2 className="Instance-header">Country of {country?.name} </h2>
-            
+              <Image src={country?.flag} className="flag-responsive"  />
             <body>
               <div>
                 {/* <div className="row"> */}
-
-                <CardDeck>
+                
+                <CardDeck style={{margin: 20}}>
                   <Card border="dark">
                     <Card.Header as="h3">Basic Info:</Card.Header>
                     <Card.Body>
@@ -152,24 +152,14 @@ function Cuisine(id: any) {
                           <p>loading</p>
                         )}
                       </Card.Text>
-                  </Card>
-                  <Card border="dark">
+                 </Card>
+                  {/*  <Card border="dark">
                     <Card.Header as="h3">Flag:</Card.Header>
                     <Card.Img src={country?.flag}></Card.Img>
                     {/* <Card.Body> 
-                <iframe
-                  src={
-                    "https://www.google.com/maps/embed/v1/place?key=" +
-                    API_KEY +
-                    "&q=" +
-                    country?.name
-                  }
-                  width="100%"
-                  height="200%"
-                  loading="lazy"
-                ></iframe>
-              </Card.Body> */}
-                  </Card>
+                
+              </Card.Body> 
+                  </Card> */}
                   
                 </CardDeck>
               </div>
