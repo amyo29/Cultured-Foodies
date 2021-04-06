@@ -57,13 +57,12 @@ function Cuisine(id: any) {
 
   return (
     <div>
-      <h1 className="Instance-header">{cuisine?.name}</h1>
+      <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
       {countries?.map((country) => (
         <>
-          <Card>
-            <Card.Title>
-              <h2 className="Instance-header">Country: {country?.name} </h2>
-            </Card.Title>
+          
+              <h2 className="Instance-header">Country of {country?.name} </h2>
+            
             <body>
               <div>
                 {/* <div className="row"> */}
@@ -71,7 +70,6 @@ function Cuisine(id: any) {
                 <CardDeck>
                   <Card border="dark">
                     <Card.Header as="h3">Basic Info:</Card.Header>
-
                     <Card.Body>
                       <Card.Text>Capital city: {country?.capital}</Card.Text>
                       <Card.Text>Alpha 3 Code: {country?.alpha3code}</Card.Text>
@@ -109,14 +107,20 @@ function Cuisine(id: any) {
                           <p>he</p>
                         )}
                       </Card.Text>
-                      <Card.Text>Dishes</Card.Text>
+                      
+                    </Card.Body>
+                  </Card>
+                  <Card border="dark">
+                  <Card.Header as="h3">Dishes</Card.Header>
                       <Card.Text>
                         {dishes ? (
                           dishes.map((cols: any) => (
-                            <Row>
+                            <CardDeck>
                               {cols.map((dish: any, i: any) => (
-                                <Col className="col-sm-4 py-2">
-                                  <Figure>
+                                <Card>
+                                  <Card.Img variant="bottom" src={dish.image_url}/>
+                                  <Card.Title as="h5">{dish.name}</Card.Title>
+                                  {/* <Figure>
                                     <Figure.Image
                                       width={170}
                                       height={180}
@@ -124,16 +128,30 @@ function Cuisine(id: any) {
                                       src={dish.image_url}
                                     />
                                     <Figure.Caption>{dish.name}</Figure.Caption>
-                                  </Figure>
-                                </Col>
+                                  </Figure> */}
+                                </Card>
                               ))}
-                            </Row>
+                            </CardDeck>
+                          //   <Row>
+                          //   {cols.map((dish: any, i: any) => (
+                          //     <Col className="col-sm-4 py-2">
+                          //        <Figure>
+                          //           <Figure.Image
+                          //            width={170}
+                          //            height={180}
+                          //           alt="171x180"
+                          //          src={dish.image_url}
+                          //          />
+                          //       <Figure.Caption>{dish.name}</Figure.Caption>
+                          //       </Figure>
+                          //     </Col>
+                          //   ))}
+                          // </Row>
                           ))
                         ) : (
                           <p>loading</p>
                         )}
                       </Card.Text>
-                    </Card.Body>
                   </Card>
                   <Card border="dark">
                     <Card.Header as="h3">Flag:</Card.Header>
@@ -152,10 +170,11 @@ function Cuisine(id: any) {
                 ></iframe>
               </Card.Body> */}
                   </Card>
+                  
                 </CardDeck>
               </div>
             </body>
-          </Card>
+         
           <h5>Restaurants with {cuisine?.name} food</h5>
           {cuisine?.restaurants ? (
             cuisine?.restaurants?.split(", ").map((r, index) => (
