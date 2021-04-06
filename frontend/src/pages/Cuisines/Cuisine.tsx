@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Col, Row, Figure, Card, CardColumns, CardDeck } from "react-bootstrap";
+import { Container, Col, Row, Figure, Card, CardColumns, CardDeck, CardImg } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
@@ -48,18 +48,20 @@ function Cuisine(id: any) {
   
   return (
     <div>
-      <h2 className="Instance-header">{cuisine?.name}</h2>
+      <h1 className="Instance-header">{cuisine?.name}</h1>
       {countries?.map((country) => (
         <>
-      <body className="Instance center-div">
-        <div className="info" align-items="center">
+        <Card> 
+          <Card.Title><h2 className="Instance-header">Country: {country?.name} </h2></Card.Title>
+      <body>
+        <div >
           {/* <div className="row"> */}
+          
           <CardDeck>
-            <Card>
-                <Card.Header as="h2">Country: {country?.name}</Card.Header>
+            <Card border="dark">
+                <Card.Header as="h3">Basic Info:</Card.Header>
                 
                 <Card.Body>
-                  <Card.Title>Basic Info:</Card.Title>
                   <Card.Text>Capital city: {country?.capital}</Card.Text>
                   <Card.Text>Alpha 3 Code: {country?.alpha3code}</Card.Text>
                   <Card.Text>Region: {country?.region}</Card.Text>
@@ -112,27 +114,28 @@ function Cuisine(id: any) {
                   </Card.Text>
               </Card.Body>
             </Card>
-            <Card>
-              <img
-                src={country?.flag}
-                alt=""
-                width="450"
-              />
-              <iframe
-                src={
-                  "https://www.google.com/maps/embed/v1/place?key=" +
-                  API_KEY +
-                  "&q=" +
-                  country?.name
-                }
-                width="450"
-                height="300"
-                loading="lazy"
-              ></iframe>
+            <Card border="dark">
+              <Card.Header as="h3">Flag:</Card.Header>
+              <Card.Img src={country?.flag}></Card.Img>
+              {/* <Card.Body> 
+                <iframe
+                  src={
+                    "https://www.google.com/maps/embed/v1/place?key=" +
+                    API_KEY +
+                    "&q=" +
+                    country?.name
+                  }
+                  width="100%"
+                  height="200%"
+                  loading="lazy"
+                ></iframe>
+              </Card.Body> */}
           </Card>
           </CardDeck>
+          
         </div>
       </body>
+      </Card>
       {/* <div className="center">
         <h4>Map Location</h4>
         <iframe
@@ -142,7 +145,17 @@ function Cuisine(id: any) {
           loading="lazy"
         ></iframe>
       </div> */}
-
+                <iframe
+                  src={
+                    "https://www.google.com/maps/embed/v1/place?key=" +
+                    API_KEY +
+                    "&q=" +
+                    country?.name
+                  }
+                  width="100%"
+                  height="200%"
+                  loading="lazy"
+                ></iframe>
 
 
       <h5>Restaurants with {cuisine?.name} food</h5>
