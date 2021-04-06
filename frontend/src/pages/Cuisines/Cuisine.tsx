@@ -60,13 +60,9 @@ function Cuisine(id: any) {
       <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
       {countries?.map((country) => (
         <>
-          
               <h2 className="Instance-header">Country of {country?.name} </h2>
               <Image src={country?.flag} className="flag-responsive"  />
-            <body>
-              <div>
                 {/* <div className="row"> */}
-                
                 <CardDeck style={{margin: 20}}>
                   <Card border="dark">
                     <Card.Header as="h3">Basic Info:</Card.Header>
@@ -160,11 +156,7 @@ function Cuisine(id: any) {
                 
               </Card.Body> 
                   </Card> */}
-                  
                 </CardDeck>
-              </div>
-            </body>
-         
           <h5>Restaurants with {cuisine?.name} food</h5>
           {cuisine?.restaurants ? (
             cuisine?.restaurants?.split(", ").map((r, index) => (
