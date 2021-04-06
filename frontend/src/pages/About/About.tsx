@@ -164,7 +164,7 @@ function About() {
       }
       
 
-      <div>
+      <div className = "card" style = {{width: "18rem"}}>
         <h2>Stats</h2>
         <div>
           
