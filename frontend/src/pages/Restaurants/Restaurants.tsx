@@ -3,7 +3,6 @@ import { Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { useHistory } from "react-router-dom";
-import { Pagination } from "@material-ui/lab";
 import { MDBDataTable } from "mdbreact";
 import logo from "../../static_resources/dumpling.gif";
 import small from "../../static_resources/smaller dumpling.gif";
@@ -111,13 +110,13 @@ function Restaurants() {
     ],
     rows: restaurants.map((r)=> { 
       return {
-        id: <div>{r.id}</div>,
-        name: <div>{r.name}</div>,
-        city: <div>{r.city}</div>,
-        cuisines: <div>{r.cuisines}</div>,
-        price_range: <div>{r.price_range}</div>,
-        aggregate_rating: <div>{r.aggregate_rating}</div>,
-        average_cost_for_two: <div>{r.average_cost_for_two}</div>,
+        id: r.id,
+        name: r.name,
+        city: r.city,
+        cuisines: r.cuisines,
+        price_range: r.price_range,
+        aggregate_rating: r.aggregate_rating,
+        average_cost_for_two: r.average_cost_for_two,
         clickEvent: () => routeChange(r),
       }
     })
@@ -202,17 +201,7 @@ function Restaurants() {
           </tbody>
         </Table> */}
 
-        <MDBDataTable striped bordered small data={tabledata} />
-        <div className="row pagination">
-          <Pagination
-            count={Math.ceil(restaurants.length / numPerPage)}
-            page={pageNumber}
-            onChange={handleChange}
-          ></Pagination>
-          {startIndex + 1} -{" "}
-          {Math.min(startIndex + numPerPage, restaurants?.length)} of{" "}
-          {restaurants?.length}
-        </div>
+        <MDBDataTable btn hover striped bordered small noBottomColumns={true} data={tabledata} />
       </div>
     );
   } else {
