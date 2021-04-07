@@ -91,7 +91,8 @@ function City(id: any) {
           <h3 className="margin">
             {city?.name}'s Urban Area- Quality of Life Scores
           </h3>
-          <div className="my-custom-scrollbar">
+          <div className="my-custom-scrollbar" 
+          style={{ width: "40rem", maxHeight: "40rem" }}>
             <table className="table table-bordered table-hover mb-0">
               <thead>
                 <tr>
@@ -222,7 +223,7 @@ function City(id: any) {
           <h3 className="margin">Restaurants in {city?.name}</h3>
           <div
             className="my-custom-scrollbar-restaurant"
-            style={{ width: "40rem", maxHeight: "40rem" }}
+            style={{ width: "40rem", maxHeight: "34rem" }}
           >
             <table className="table table-bordered table-hover mb-0">
               <tbody>

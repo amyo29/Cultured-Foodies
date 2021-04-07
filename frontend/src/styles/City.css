@@ -42,7 +42,7 @@ section {
 }
 .my-custom-scrollbar {
   position: relative !important;
-  height: 500px !important;
+  height: relative !important;
   width: 100% !important;
   overflow: auto !important;
 }
