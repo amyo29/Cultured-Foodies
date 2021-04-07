@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
-// import { Jumbotron } from "react-bootstrap";
-// import Image from "react-bootstrap/Image";
-// import { Container } from "react-bootstrap";
-// import { Row } from "react-bootstrap";
-// import { Col } from "react-bootstrap";
-// import { useParams } from "react-router-dom";
 import useAxios from "axios-hooks";
 import axios from "axios";
-// import { RestaurantInstance } from "../Restaurants/Restaurant";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import "../../styles/City.css";
+import { CardDeck, Carousel, Card, Container } from "react-bootstrap";
+import { cpuUsage } from "node:process";
 
 function City(id: any) {
   useEffect(() => {
@@ -51,185 +46,211 @@ function City(id: any) {
     "&q=" +
     city?.full_name;
 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: any, e: any) => {
+    setIndex(selectedIndex);
+  };
+  var i, j;
+  var chunk = 3;
+  var CuisineRows = [];
+  for (i = 0, j = cuisines?.length; i < (j ? j : 0); i += chunk) {
+    CuisineRows.push(cuisines?.slice(i, i + chunk));
+  }
   return (
     <div>
       <img src={city?.imagesweb} className="city-img-top" />
       <h1 className="text-center">{city?.name}</h1>
-      <div className="row m-0">
-        <div className="col margin">
-          <div className="card">
-            <div className="card-body align-self-start">
-              <h3>{city?.full_name}</h3>
-
-              <h5>Summary</h5>
-              <p>{city?.summary.replace(/(<([^>]+)>)/gi, "")}</p>
-
-              <h5>State</h5>
-              <p>{city?.state}</p>
-
-              <h5>Population</h5>
-              <p>{city?.population.toLocaleString()}</p>
-
-              <h5>Location</h5>
-              <h6>Latitude</h6>
-              <p>
-                {city?.latitude}
-                <h6>Longitude</h6>
-                {city?.longitude}
-              </p>
-
-              <h5>Timezone</h5>
-              <p>{city?.timezone}</p>
-            </div>
-          </div>
-        </div>
-        <div className="col margin">
-          <div className="card">
-            <div className="card-body">
-              <h3>{city?.name}'s Urban Area- Quality of Life Scores</h3>
-              <div className="my-custom-scrollbar">
-                <table className="table table-bordered table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th scope="col">Attribute</th>
-                      <th scope="col">Score</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row">Business Freedom</td>
-                      <td>
-                        {city?.business_freedom
-                          ? parseFloat(city?.business_freedom.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Cost of Living</td>
-                      <td>
-                        {city?.cost_of_living
-                          ? parseFloat(city?.cost_of_living.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Economy</td>
-                      <td>
-                        {city?.economy
-                          ? parseFloat(city?.economy.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Housing</td>
-                      <td>
-                        {city?.housing
-                          ? parseFloat(city?.housing.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Commute</td>
-                      <td>
-                        {city?.commute
-                          ? parseFloat(city?.commute.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Education</td>
-                      <td>
-                        {city?.education
-                          ? parseFloat(city?.education.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Environmental Quality</td>
-                      <td>
-                        {city?.environmental_quality
-                          ? parseFloat(city?.environmental_quality.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Healthcare</td>
-                      <td>
-                        {city?.healthcare
-                          ? parseFloat(city?.healthcare.toFixed(4))
-                          : " "}{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Leisure and Culture</td>
-                      <td>
-                        {city?.leisure_culture
-                          ? parseFloat(city?.leisure_culture.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Outdoors</td>
-                      <td>
-                        {city?.outdoors
-                          ? parseFloat(city?.outdoors.toFixed(4))
-                          : " "}{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Safety</td>
-                      <td>
-                        {city?.safety
-                          ? parseFloat(city?.safety.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Taxation</td>
-                      <td>
-                        {city?.taxation
-                          ? parseFloat(city?.taxation.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Travel and Connectivity</td>
-                      <td>
-                        {city?.travel_connectivity
-                          ? parseFloat(city?.travel_connectivity.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Internet Access</td>
-                      <td>
-                        {" "}
-                        {city?.internet_access
-                          ? parseFloat(city?.internet_access.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Venture Capital</td>
-                      <td>
-                        {" "}
-                        {city?.venture_capital
-                          ? parseFloat(city?.venture_capital.toFixed(4))
-                          : " "}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div style={{ margin: 10 }}>
+        <Container style={{maxWidth: "90%"}}>
+        <h3 className="mt-2">Cuisines of {city?.name}</h3>
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            style={{ margin: "25px" }}
+          >
+            {CuisineRows?.map((cols) => (
+              <Carousel.Item>
+                <CardDeck>
+                  {cols?.map((c: any) => (
+                    <a href={"/cuisines/" + c.id} className="card">
+                      <h5 className="mt-2">{c.name}</h5>
+                      <img
+                        src={c.dishes[0].image_url}
+                        className="carousel-img"
+                      />
+                    </a>
+                  ))}
+                </CardDeck>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Container>
       </div>
+      <div className="card-columns" style={{ margin: 20 }}>
+        <div className="card">
+          <div className="card-body align-self-start">
+            <h3 className="margin">{city?.full_name}</h3>
 
-      <div className="card" style={{ width: "40rem", maxHeight: "40rem"}}>
+            <h5>Summary</h5>
+            <p>{city?.summary.replace(/(<([^>]+)>)/gi, "")}</p>
+
+            <h5>State</h5>
+            <p>{city?.state}</p>
+
+            <h5>Population</h5>
+            <p>{city?.population.toLocaleString()}</p>
+
+            <h5>Location</h5>
+            <h6>Latitude</h6>
+            <p>
+              {city?.latitude}
+              <h6>Longitude</h6>
+              {city?.longitude}
+            </p>
+
+            <h5>Timezone</h5>
+            <p>{city?.timezone}</p>
+          </div>
+        </div>
+        <div className="card">
+          <h3 className="margin">
+            {city?.name}'s Urban Area- Quality of Life Scores
+          </h3>
+          <div className="my-custom-scrollbar">
+            <table className="table table-bordered table-hover mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Attribute</th>
+                  <th scope="col">Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Business Freedom</td>
+                  <td>
+                    {city?.business_freedom
+                      ? parseFloat(city?.business_freedom.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Cost of Living</td>
+                  <td>
+                    {city?.cost_of_living
+                      ? parseFloat(city?.cost_of_living.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Economy</td>
+                  <td>
+                    {city?.economy ? parseFloat(city?.economy.toFixed(4)) : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Housing</td>
+                  <td>
+                    {city?.housing ? parseFloat(city?.housing.toFixed(4)) : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Commute</td>
+                  <td>
+                    {city?.commute ? parseFloat(city?.commute.toFixed(4)) : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Education</td>
+                  <td>
+                    {city?.education
+                      ? parseFloat(city?.education.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Environmental Quality</td>
+                  <td>
+                    {city?.environmental_quality
+                      ? parseFloat(city?.environmental_quality.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Healthcare</td>
+                  <td>
+                    {city?.healthcare
+                      ? parseFloat(city?.healthcare.toFixed(4))
+                      : " "}{" "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Leisure and Culture</td>
+                  <td>
+                    {city?.leisure_culture
+                      ? parseFloat(city?.leisure_culture.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Outdoors</td>
+                  <td>
+                    {city?.outdoors
+                      ? parseFloat(city?.outdoors.toFixed(4))
+                      : " "}{" "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Safety</td>
+                  <td>
+                    {city?.safety ? parseFloat(city?.safety.toFixed(4)) : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Taxation</td>
+                  <td>
+                    {city?.taxation
+                      ? parseFloat(city?.taxation.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Travel and Connectivity</td>
+                  <td>
+                    {city?.travel_connectivity
+                      ? parseFloat(city?.travel_connectivity.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Internet Access</td>
+                  <td>
+                    {" "}
+                    {city?.internet_access
+                      ? parseFloat(city?.internet_access.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Venture Capital</td>
+                  <td>
+                    {" "}
+                    {city?.venture_capital
+                      ? parseFloat(city?.venture_capital.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="card">
           <h3 className="margin">Restaurants in {city?.name}</h3>
-          <div className = "my-custom-scrollbar-restaurant">
-            <table className="table table-bordered table-hover">
+          <div
+            className="my-custom-scrollbar-restaurant"
+            style={{ width: "40rem", maxHeight: "40rem" }}
+          >
+            <table className="table table-bordered table-hover mb-0">
               <tbody>
                 {city?.restaurants ? (
                   city?.restaurants?.split(", ").map((r, index) => (
@@ -256,18 +277,8 @@ function City(id: any) {
               </tbody>
             </table>
           </div>
+        </div>
       </div>
-      <div>
-        <h5>Cuisines of {city?.name}</h5>
-        {cuisines?.map((c) => (
-          <a href={"/cuisines/" + c.id}>
-            {c.name}
-            <br />{" "}
-            <img src={c.dishes[0].image_url} width="200" height="200"></img>
-          </a>
-        ))}
-      </div>
-
       <div className="center">
         <h2>Map Location</h2>
         <div className="map-responsive">
