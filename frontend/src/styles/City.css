@@ -40,3 +40,18 @@ section {
 .margin{
   margin: 25px;
 }
+.my-custom-scrollbar {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: auto;
+  }
+.table-wrapper-scroll-y {
+display: block;
+}
+.my-custom-scrollbar-restaurant {
+  position: relative;
+  height: relative;
+  width: 100%;
+  overflow: auto;
+  }

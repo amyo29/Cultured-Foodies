@@ -53,160 +53,221 @@ function City(id: any) {
 
   return (
     <div>
-      <img src={city?.imagesweb} className = "city-img-top"/>
+      <img src={city?.imagesweb} className="city-img-top" />
       <h1 className="text-center">{city?.name}</h1>
       <div className="row m-0">
         <div className="col margin">
           <div className="card">
             <div className="card-body align-self-start">
-              <h2>{city?.full_name}</h2>
+              <h3>{city?.full_name}</h3>
 
               <h5>Summary</h5>
-              {city?.summary.replace(/(<([^>]+)>)/gi, "")}
+              <p>{city?.summary.replace(/(<([^>]+)>)/gi, "")}</p>
 
               <h5>State</h5>
-              {city?.state}
+              <p>{city?.state}</p>
 
               <h5>Population</h5>
-              {city?.population.toLocaleString()}
+              <p>{city?.population.toLocaleString()}</p>
 
               <h5>Location</h5>
               <h6>Latitude</h6>
-              {city?.latitude}
-              <h6>Longitude</h6>
-              {city?.longitude}
+              <p>
+                {city?.latitude}
+                <h6>Longitude</h6>
+                {city?.longitude}
+              </p>
 
               <h5>Timezone</h5>
-              {city?.timezone}
+              <p>{city?.timezone}</p>
             </div>
           </div>
         </div>
         <div className="col margin">
           <div className="card">
-          <table className="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Attribute</th>
-                <th scope="col">Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row">Business Freedom</td>
-                <td>
-                  {city?.business_freedom
-                    ? parseFloat(city?.business_freedom.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Cost of Living</td>
-                <td>
-                  {city?.cost_of_living
-                    ? parseFloat(city?.cost_of_living.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Economy</td>
-                <td>
-                  {city?.economy ? parseFloat(city?.economy.toFixed(4)) : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Housing</td>
-                <td>
-                  {city?.housing ? parseFloat(city?.housing.toFixed(4)) : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Commute</td>
-                <td>
-                  {city?.commute ? parseFloat(city?.commute.toFixed(4)) : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Education</td>
-                <td>
-                  {city?.education
-                    ? parseFloat(city?.education.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Environmental Quality</td>
-                <td>
-                  {city?.environmental_quality
-                    ? parseFloat(city?.environmental_quality.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Healthcare</td>
-                <td>
-                  {city?.healthcare
-                    ? parseFloat(city?.healthcare.toFixed(4))
-                    : " "}{" "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Leisure and Culture</td>
-                <td>
-                  {city?.leisure_culture
-                    ? parseFloat(city?.leisure_culture.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Outdoors</td>
-                <td>
-                  {city?.outdoors ? parseFloat(city?.outdoors.toFixed(4)) : " "}{" "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Safety</td>
-                <td>
-                  {city?.safety ? parseFloat(city?.safety.toFixed(4)) : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Taxation</td>
-                <td>
-                  {city?.taxation ? parseFloat(city?.taxation.toFixed(4)) : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Travel and Connectivity</td>
-                <td>
-                  {city?.travel_connectivity
-                    ? parseFloat(city?.travel_connectivity.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Internet Access</td>
-                <td>
-                  {" "}
-                  {city?.internet_access
-                    ? parseFloat(city?.internet_access.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">Venture Capital</td>
-                <td>
-                  {" "}
-                  {city?.venture_capital
-                    ? parseFloat(city?.venture_capital.toFixed(4))
-                    : " "}
-                </td>
-              </tr>
-            </tbody>
-            <caption>City Urban Area Quality of Living Scores</caption>
-          </table>
+            <div className="card-body">
+              <h3>{city?.name}'s Urban Area- Quality of Life Scores</h3>
+              <div className="table-wrapper-scroll-y my-custom-scrollbar">
+                <table className="table table-bordered table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Attribute</th>
+                      <th scope="col">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Business Freedom</td>
+                      <td>
+                        {city?.business_freedom
+                          ? parseFloat(city?.business_freedom.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Cost of Living</td>
+                      <td>
+                        {city?.cost_of_living
+                          ? parseFloat(city?.cost_of_living.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Economy</td>
+                      <td>
+                        {city?.economy
+                          ? parseFloat(city?.economy.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Housing</td>
+                      <td>
+                        {city?.housing
+                          ? parseFloat(city?.housing.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Commute</td>
+                      <td>
+                        {city?.commute
+                          ? parseFloat(city?.commute.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Education</td>
+                      <td>
+                        {city?.education
+                          ? parseFloat(city?.education.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Environmental Quality</td>
+                      <td>
+                        {city?.environmental_quality
+                          ? parseFloat(city?.environmental_quality.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Healthcare</td>
+                      <td>
+                        {city?.healthcare
+                          ? parseFloat(city?.healthcare.toFixed(4))
+                          : " "}{" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Leisure and Culture</td>
+                      <td>
+                        {city?.leisure_culture
+                          ? parseFloat(city?.leisure_culture.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Outdoors</td>
+                      <td>
+                        {city?.outdoors
+                          ? parseFloat(city?.outdoors.toFixed(4))
+                          : " "}{" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Safety</td>
+                      <td>
+                        {city?.safety
+                          ? parseFloat(city?.safety.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Taxation</td>
+                      <td>
+                        {city?.taxation
+                          ? parseFloat(city?.taxation.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Travel and Connectivity</td>
+                      <td>
+                        {city?.travel_connectivity
+                          ? parseFloat(city?.travel_connectivity.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Internet Access</td>
+                      <td>
+                        {" "}
+                        {city?.internet_access
+                          ? parseFloat(city?.internet_access.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Venture Capital</td>
+                      <td>
+                        {" "}
+                        {city?.venture_capital
+                          ? parseFloat(city?.venture_capital.toFixed(4))
+                          : " "}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="card" style={{ width: "40rem", maxHeight: "40rem" }}>
+        <h3 className="margin">Restaurants in {city?.name}</h3>
+        <div className="table-wrapper-scroll-y my-custom-scrollbar-restaurant">
+          <table className="table table-bordered table-hover mb-0">
+            <tbody>
+              {city?.restaurants ? (
+                city?.restaurants?.split(", ").map((r, index) => (
+                  <>
+                    <tr>
+                      <td scope="row">
+                        <a
+                          href={
+                            "/restaurants/" +
+                            city?.restaurant_ids.split(", ")[index]
+                          }
+                          target="_blank"
+                        >
+                          {r}
+                          <br />
+                        </a>
+                      </td>
+                    </tr>
+                  </>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h5>Cuisines of {city?.name}</h5>
+        {cuisines?.map((c) => (
+          <a href={"/cuisines/" + c.id}>
+            {c.name}
+            <br />{" "}
+            <img src={c.dishes[0].image_url} width="200" height="200"></img>
+          </a>
+        ))}
+      </div>
+
       <div className="center">
         <h2>Map Location</h2>
         <div className="map-responsive">
