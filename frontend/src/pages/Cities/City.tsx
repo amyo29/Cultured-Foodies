@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Jumbotron } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import { Container } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+// import { Jumbotron } from "react-bootstrap";
+// import Image from "react-bootstrap/Image";
+// import { Container } from "react-bootstrap";
+// import { Row } from "react-bootstrap";
+// import { Col } from "react-bootstrap";
+// import { useParams } from "react-router-dom";
 import useAxios from "axios-hooks";
 import axios from "axios";
-import { RestaurantInstance } from "../Restaurants/Restaurant";
+// import { RestaurantInstance } from "../Restaurants/Restaurant";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import "../../styles/City.css";
 
@@ -87,7 +87,7 @@ function City(id: any) {
           <div className="card">
             <div className="card-body">
               <h3>{city?.name}'s Urban Area- Quality of Life Scores</h3>
-              <div className="table-wrapper-scroll-y my-custom-scrollbar">
+              <div className="my-custom-scrollbar">
                 <table className="table table-bordered table-hover mb-0">
                   <thead>
                     <tr>
@@ -226,36 +226,36 @@ function City(id: any) {
         </div>
       </div>
 
-      <div className="card" style={{ width: "40rem", maxHeight: "40rem" }}>
-        <h3 className="margin">Restaurants in {city?.name}</h3>
-        <div className="table-wrapper-scroll-y my-custom-scrollbar-restaurant">
-          <table className="table table-bordered table-hover mb-0">
-            <tbody>
-              {city?.restaurants ? (
-                city?.restaurants?.split(", ").map((r, index) => (
-                  <>
-                    <tr>
-                      <td scope="row">
-                        <a
-                          href={
-                            "/restaurants/" +
-                            city?.restaurant_ids.split(", ")[index]
-                          }
-                          target="_blank"
-                        >
-                          {r}
-                          <br />
-                        </a>
-                      </td>
-                    </tr>
-                  </>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-            </tbody>
-          </table>
-        </div>
+      <div className="card" style={{ width: "40rem", maxHeight: "40rem"}}>
+          <h3 className="margin">Restaurants in {city?.name}</h3>
+          <div className = "my-custom-scrollbar-restaurant">
+            <table className="table table-bordered table-hover">
+              <tbody>
+                {city?.restaurants ? (
+                  city?.restaurants?.split(", ").map((r, index) => (
+                    <>
+                      <tr>
+                        <td scope="row">
+                          <a
+                            href={
+                              "/restaurants/" +
+                              city?.restaurant_ids.split(", ")[index]
+                            }
+                            target="_blank"
+                          >
+                            {r}
+                            <br />
+                          </a>
+                        </td>
+                      </tr>
+                    </>
+                  ))
+                ) : (
+                  <p>loading</p>
+                )}
+              </tbody>
+            </table>
+          </div>
       </div>
       <div>
         <h5>Cuisines of {city?.name}</h5>

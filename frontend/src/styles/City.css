@@ -35,23 +35,20 @@ section {
   display: block !important;
 }
 .table{
-  font-family: 'Josefin Sans', Georgia, Times, serif;
+  font-family: 'Josefin Sans', Georgia, Times, serif !important;
 }
 .margin{
   margin: 25px;
 }
 .my-custom-scrollbar {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  overflow: auto;
-  }
-.table-wrapper-scroll-y {
-display: block;
+  position: relative !important;
+  height: 500px !important;
+  width: 100% !important;
+  overflow: auto !important;
 }
 .my-custom-scrollbar-restaurant {
-  position: relative;
-  height: relative;
-  width: 100%;
-  overflow: auto;
-  }
+  position: relative !important;
+  height: relative !important;
+  width: 100% !important;
+  overflow: auto !important;
+}
