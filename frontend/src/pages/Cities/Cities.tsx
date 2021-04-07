@@ -42,9 +42,13 @@ function Cities() {
   );
   const [searchCities, setSearchCities] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
-
+  const [filteringFields, setFilteringFields] = useState<Array<string>>();
+  // [{'name' : 'state', 'value': 'california'}, {'name': 'timezone', value: 'los angeles'}    ]
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
+  var states = ['Texas', 'California']
+  var filterableNames = [{'name' :'States','value': 'state', 'options': states}]
+ //proof of concept
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -66,6 +70,13 @@ function Cities() {
     setSearchCities(event.target.value);
   };
 
+  // useEffect(() => {
+  //   //go over all the cities
+  //   //apply the search query (if  any)
+  //   //apply the filters (if anny)
+  //   //apply the sort (if any)
+  // }, [searchCities,sortingFields]);
+  
   //sort by population, search by tx, search by california
   let searchOnClick = () => {
     let filteredCities = [];
@@ -104,6 +115,19 @@ function Cities() {
     });
     setSortingField({'name': sortableField, 'ascending': ascending})
     setDisplayedCities(copy);
+  };
+
+
+  let onFilter = (filterableField: string, option: string) => {
+    let filteredCities: Array<CityInstance> = [];
+    for (var i = 0; i < cities.length; i++) {
+      var cityObj: CityInstance = cities[i];
+      console.log((cityObj as any)[filterableField])
+      if ((cityObj as any)[filterableField] == option) {
+        filteredCities.push(cityObj);
+      }
+    }  
+    setDisplayedCities(filteredCities)
   };
 
   const numPerPage = 12;
@@ -150,28 +174,15 @@ function Cities() {
             </Dropdown.Item>
           </DropdownButton>
           <>
-            {[
-              "Primary",
-              "Secondary",
-              "Success",
-              "Info",
-              "Warning",
-              "Danger",
-            ].map((variant) => (
+            {filterableNames.map((variant) => (
               <DropdownButton
                 as={ButtonGroup}
-                key={variant}
-                id={`dropdown-variants-${variant}`}
-                variant={variant.toLowerCase()}
-                title={variant}
+                variant='info'
+                title={variant.name}
               >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3" active>
-                  Active Item
-                </Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                {variant.options.map((item) => (
+                  <Dropdown.Item onClick={() => onFilter(variant['value'], item)}>{item}</Dropdown.Item>
+                ))}
               </DropdownButton>
             ))}
           </>
