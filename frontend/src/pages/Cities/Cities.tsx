@@ -20,17 +20,20 @@ import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
 import logo from "../../static_resources/spinny.gif";
 import { CityObject, CityInstance } from "./City";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Select from "@material-ui/core/Select";
+import Checkbox from "@material-ui/core/Checkbox";
+import Input from "@material-ui/core/Input";
+// Search --> be able to sort and filter based on that
 
-/*
-Search --> be able to sort and filter based on that
-
-
-Features
--searching --> being able to sort on that subset [WORKS]
--pagination: fix for searching [WORKS]
--searching only on values of just the card (grid) [WORKS]
--Filterable
-*/
+// Features
+// -searching --> being able to sort on that subset [WORKS]
+// -pagination: fix for searching [WORKS]
+// -searching only on values of just the card (grid) [WORKS]
+// -Filterable
+// */
 
 function Cities() {
   useEffect(() => {
@@ -43,12 +46,14 @@ function Cities() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
-  const [filteringFields, setFilteringFields] = useState<Array<string>>();
-  // [{'name' : 'state', 'value': 'california'}, {'name': 'timezone', value: 'los angeles'}    ]
+  const [filteringFields, setFilteringFields] = useState<FilterableDict>({
+    states: [],
+  });
+
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
   var states = ["Texas", "California"];
-  var filterableNames = [{ name: "States", value: "state", options: states }];
+  var filterableNames = [{ name: "States", value: "states", options: states }];
   //proof of concept
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
@@ -70,10 +75,9 @@ function Cities() {
     setSearchQuery(event.target.value);
   };
 
-  let handleFilterChange = () => {
-    //need to be able to check and uncheck
+  const onFilters = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setFilteringFields({ states: event.target.value as string[] });
   };
-
   let onSort = (sortableField: string, ascending: boolean) => {
     setSortingField({ name: sortableField, ascending: ascending });
   };
@@ -81,25 +85,38 @@ function Cities() {
   useEffect(() => {
     let filteredCities = [];
     for (var i = 0; i < cities.length; i++) {
-      var cityObj = cities[i];
-      var cityObjStr =
-        cityObj["name"] +
-        cityObj["state"] +
-        cityObj["leisure_culture"] +
-        cityObj["cost_of_living"] +
-        cityObj["environmental_quality"] +
-        cityObj["travel_connectivity"] +
-        cityObj["population"];
-      // search for text across all city attributes
-      if (cityObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+      var cityObj = cities[i];  
+      var matchSearchQuery = true;
+      var matchFilters = true;
+
+      ///needs to be an AND operation
+      if (searchQuery != "") {
+        var cityObjStr =
+          cityObj["name"] +
+          cityObj["state"] +
+          cityObj["leisure_culture"] +
+          cityObj["cost_of_living"] +
+          cityObj["environmental_quality"] +
+          cityObj["travel_connectivity"] +
+          cityObj["population"];
+        // search for text across all city attributes
+        if (!cityObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+          matchSearchQuery = false;
+        }
+      } 
+      if ( filteringFields['states'].length !=0 && !filteringFields['states'].includes(cityObj['state']) ) {
+        matchFilters = false;
+      }
+      if (matchFilters && matchSearchQuery) {
         filteredCities.push(cityObj);
       }
+
     }
     if (sortingField) {
       sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending);
     }
     setDisplayedCities(filteredCities);
-  }, [searchQuery, sortingField]);
+  }, [searchQuery, sortingField, filteringFields]);
 
   // useEffect(() => {
   //   //go over all the cities
@@ -176,6 +193,7 @@ function Cities() {
   for (i = 0, j = currentData.length; i < j; i += chunk) {
     rows.push(currentData.slice(i, i + chunk));
   }
+
   if (loaded) {
     return (
       <div>
@@ -207,19 +225,61 @@ function Cities() {
               Population (desc)
             </Dropdown.Item>
           </DropdownButton>
-          <>
-            {/* {filterableNames.map((variant) => (
+          <div>
+            {/* <FormControl>
+        <InputLabel id="demo-mutiple-checkbox-label">States</InputLabel>
+        <Select
+          labelId="demo-mutiple-checkbox-label"
+          id="demo-mutiple-checkbox"
+          multiple
+          value={filteringFields['states']}
+          onChange={(event) => handleFilterChange(event, 'states')}
+          input={<Input />}
+          renderValue={(selected: any) => selected.join(', ')}
+        >
+          {states.map((name) => (
+            <MenuItem key={name} value={name}> 
+              <Checkbox checked={ (filteringFields['states'].indexOf(name) > -1)} />
+              <ListItemText primary={name} />
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl> */}
+
+              <InputLabel id="demo-mutiple-checkbox-label">Tag</InputLabel>
+              <Select
+                labelId="demo-mutiple-checkbox-label"
+                id="demo-mutiple-checkbox"
+                multiple
+                value={filteringFields.states}
+                onChange={onFilters}
+                input={<Input />}
+                renderValue={(selected) => (selected as string[]).join(", ")}
+                // MenuProps={MenuProps}
+              >
+                {states.map((name) => (
+                  <MenuItem key={name} value={name}>
+                    <Checkbox
+                      checked={filteringFields.states.indexOf(name) > -1}
+                    />
+                    <ListItemText primary={name} />
+                  </MenuItem>
+                ))}
+              </Select>
+          </div>
+          {/* <> */}
+          {/* {filterableNames.map((variant) => (
               <DropdownButton
                 as={ButtonGroup}
                 variant='info'
                 title={variant.name}
               >
                 {variant.options.map((item) => (
-                  <Dropdown.Item onClick={() => onFilter(variant['value'], item)}>{item}</Dropdown.Item>
+                  <Dropdown.Item >{item}</Dropdown.Item>
                 ))}
               </DropdownButton>
             ))} */}
-          </>
+          {/* </> */}
           <Form
             inline
             onSubmit={(e) => {
@@ -282,5 +342,10 @@ function Cities() {
 export interface SortingAttribute {
   name: string;
   ascending: boolean;
+}
+
+export interface FilterableDict {
+  states: Array<String>;
+  // values: Array<String>;
 }
 export default Cities;
