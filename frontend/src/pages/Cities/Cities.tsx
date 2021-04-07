@@ -40,15 +40,16 @@ function Cities() {
   const [displayedCities, setDisplayedCities] = useState<Array<CityInstance>>(
     []
   );
-  const [searchCities, setSearchCities] = useState("");
+
+  const [searchQuery, setSearchQuery] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
   const [filteringFields, setFilteringFields] = useState<Array<string>>();
   // [{'name' : 'state', 'value': 'california'}, {'name': 'timezone', value: 'los angeles'}    ]
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
-  var states = ['Texas', 'California']
-  var filterableNames = [{'name' :'States','value': 'state', 'options': states}]
- //proof of concept
+  var states = ["Texas", "California"];
+  var filterableNames = [{ name: "States", value: "state", options: states }];
+  //proof of concept
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -59,7 +60,6 @@ function Cities() {
 
   useEffect(() => {
     if (data) {
-      const cityObj: CityObject = data as CityObject;
       setCities(data.cities);
       setDisplayedCities(data.cities);
       changeLoading(true);
@@ -67,8 +67,39 @@ function Cities() {
   }, [data]);
 
   let handleSearchChange = (event: any) => {
-    setSearchCities(event.target.value);
+    setSearchQuery(event.target.value);
   };
+
+  let handleFilterChange = () => {
+    //need to be able to check and uncheck
+  };
+
+  let onSort = (sortableField: string, ascending: boolean) => {
+    setSortingField({ name: sortableField, ascending: ascending });
+  };
+
+  useEffect(() => {
+    let filteredCities = [];
+    for (var i = 0; i < cities.length; i++) {
+      var cityObj = cities[i];
+      var cityObjStr =
+        cityObj["name"] +
+        cityObj["state"] +
+        cityObj["leisure_culture"] +
+        cityObj["cost_of_living"] +
+        cityObj["environmental_quality"] +
+        cityObj["travel_connectivity"] +
+        cityObj["population"];
+      // search for text across all city attributes
+      if (cityObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+        filteredCities.push(cityObj);
+      }
+    }
+    if (sortingField) {
+      sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending);
+    }
+    setDisplayedCities(filteredCities);
+  }, [searchQuery, sortingField]);
 
   // useEffect(() => {
   //   //go over all the cities
@@ -76,26 +107,30 @@ function Cities() {
   //   //apply the filters (if anny)
   //   //apply the sort (if any)
   // }, [searchCities,sortingFields]);
-  
-  //sort by population, search by tx, search by california
-  let searchOnClick = () => {
-    let filteredCities = [];
-    for (var i = 0; i < cities.length; i++) {
-      var cityObj = cities[i];
-      var cityObjStr = cityObj["name"] + cityObj["state"] + cityObj["leisure_culture"] + cityObj["cost_of_living"] + cityObj['environmental_quality'] + cityObj['travel_connectivity'] + cityObj['population']
-      // search for text across all city attributes
-      if (cityObjStr.toLowerCase().includes(searchCities.toLowerCase())) {
-        filteredCities.push(cityObj);
-      }
-    }
-    if (sortingField != null) {
-    sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending)
-    }
-    setDisplayedCities(filteredCities);
-  };
-  // let filterNames =[;]
 
-  let sortingFunc = (possibleCities: Array<CityInstance>,sortableField: string, ascending: boolean) => {
+  //sort by population, search by tx, search by california
+  // let searchOnClick = () => {
+  //   let filteredCities = [];
+  //   for (var i = 0; i < cities.length; i++) {
+  //     var cityObj = cities[i];
+  //     var cityObjStr = cityObj["name"] + cityObj["state"] + cityObj["leisure_culture"] + cityObj["cost_of_living"] + cityObj['environmental_quality'] + cityObj['travel_connectivity'] + cityObj['population']
+  //     // search for text across all city attributes
+  //     if (cityObjStr.toLowerCase().includes(searchCities.toLowerCase())) {
+  //       filteredCities.push(cityObj);
+  //     }
+  //   }
+  //   if (sortingField != null) {
+  //   sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending)
+  //   }
+  //   setDisplayedCities(filteredCities);
+  // };
+  // // let filterNames =[;]
+
+  let sortingFunc = (
+    possibleCities: Array<CityInstance>,
+    sortableField: string,
+    ascending: boolean
+  ) => {
     possibleCities.sort(function (a: any, b: any) {
       if (ascending) {
         return a[sortableField] > b[sortableField] ? 1 : -1;
@@ -104,31 +139,30 @@ function Cities() {
       }
     });
   };
-  let onSort = (sortableField: string, ascending: boolean) => {
-    var copy = displayedCities.slice(0);
-    copy.sort(function (a: any, b: any) {
-      if (ascending) {
-        return a[sortableField] > b[sortableField] ? 1 : -1;
-      } else {
-        return a[sortableField] > b[sortableField] ? -1 : 1;
-      }
-    });
-    setSortingField({'name': sortableField, 'ascending': ascending})
-    setDisplayedCities(copy);
-  };
+  // let onSort = (sortableField: string, ascending: boolean) => {
+  //   var copy = displayedCities.slice(0);
+  //   copy.sort(function (a: any, b: any) {
+  //     if (ascending) {
+  //       return a[sortableField] > b[sortableField] ? 1 : -1;
+  //     } else {
+  //       return a[sortableField] > b[sortableField] ? -1 : 1;
+  //     }
+  //   });
+  //   setSortingField({'name': sortableField, 'ascending': ascending})
+  //   setDisplayedCities(copy);
+  // };
 
-
-  let onFilter = (filterableField: string, option: string) => {
-    let filteredCities: Array<CityInstance> = [];
-    for (var i = 0; i < cities.length; i++) {
-      var cityObj: CityInstance = cities[i];
-      console.log((cityObj as any)[filterableField])
-      if ((cityObj as any)[filterableField] == option) {
-        filteredCities.push(cityObj);
-      }
-    }  
-    setDisplayedCities(filteredCities)
-  };
+  // let onFilter = (filterableField: string, option: string) => {
+  //   let filteredCities: Array<CityInstance> = [];
+  //   for (var i = 0; i < cities.length; i++) {
+  //     var cityObj: CityInstance = cities[i];
+  //     console.log((cityObj as any)[filterableField])
+  //     if ((cityObj as any)[filterableField] == option) {
+  //       filteredCities.push(cityObj);
+  //     }
+  //   }
+  //   setDisplayedCities(filteredCities)
+  // };
 
   const numPerPage = 12;
   const startIndex = numPerPage * (pageNumber - 1);
@@ -174,7 +208,7 @@ function Cities() {
             </Dropdown.Item>
           </DropdownButton>
           <>
-            {filterableNames.map((variant) => (
+            {/* {filterableNames.map((variant) => (
               <DropdownButton
                 as={ButtonGroup}
                 variant='info'
@@ -184,7 +218,7 @@ function Cities() {
                   <Dropdown.Item onClick={() => onFilter(variant['value'], item)}>{item}</Dropdown.Item>
                 ))}
               </DropdownButton>
-            ))}
+            ))} */}
           </>
           <Form
             inline
@@ -198,7 +232,7 @@ function Cities() {
               placeholder="Search Cities"
               onChange={handleSearchChange}
             />
-            <Button onClick={searchOnClick}></Button>
+            {/* <Button onClick={searchOnClick}></Button> */}
           </Form>
 
           {rows.map((cols) => (
@@ -247,6 +281,6 @@ function Cities() {
 
 export interface SortingAttribute {
   name: string;
-  ascending: boolean; 
+  ascending: boolean;
 }
 export default Cities;
