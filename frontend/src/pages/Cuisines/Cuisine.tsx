@@ -10,6 +10,9 @@ import {
   CardImg,
   Carousel,
   Badge,
+  Tabs,
+  Tab,
+  Media,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
@@ -71,99 +74,125 @@ function Cuisine(id: any) {
       {countries?.map((country) => (
         <>
           <div style={{
-            margin:20
-          }}> 
-          <h2 className="Instance-header">Country of {country?.name} </h2>
-          {/* <Image src={country?.flag} className="flag-responsive"  /> */}
-          <Card.Header as="h3">Dishes</Card.Header>
-           
-          <Carousel activeIndex={index} onSelect={handleSelect}>
-            {dishes.map((cols: any) => (
-              
-              <Carousel.Item>
-                
-                <CardDeck>
-                {cols.map((dish: any) => (
-                  <Card>
-                    <Card.Header as="h5">{dish.name}</Card.Header>
-                    <Card.Img 
-                      src={dish.image_url} 
-                      // style={{ height: '15rem' }}
-                      className="carousel-img"
-                      />
-                  </Card>
-                ))}
-                </CardDeck>
-            </Carousel.Item>
-                  
-            ))
-          }
-          </Carousel> 
-            </div>
-            
-                {/* <div className="row"> */}
-          <CardColumns style={{margin: 20}}>
-            <Card border="dark">
-              <Card.Header as="h3">Basic Info:</Card.Header>
-              <div className="card-body align-self-start">
-              <Card.Body>
-                <Card.Text><h5>Capital city:</h5>{country?.capital}</Card.Text>
-                <Card.Text><h5>Alpha 3 Code:</h5> {country?.alpha3code}</Card.Text>
-                <Card.Text><h5>Region:</h5> {country?.region}</Card.Text>
-                <Card.Text><h5>Subregion:</h5> {country?.subregion}</Card.Text>
-                <Card.Text>
-                <h5>Latitude/Longitude:</h5> {country?.latitude},{" "}
-                  {country?.longitude}
-                </Card.Text>
-                <Card.Text>
-                <h5>Area:</h5> {country?.area.toLocaleString()} km<sup>2</sup>
-                </Card.Text>
-                <Card.Text>
-                <h5>Population:</h5> {country?.population.toLocaleString()}
-                </Card.Text>
-                <Card.Text>
-                <h5>Bordering Countries:</h5>
-                  
-                    {country?.borders ? (
-                    country?.borders.split(", ").map((border: any) => {
-                        return <li>{border}</li>;
-                    })
-                    
-                    )
-                    :
-                    <Card.Text>N/A</Card.Text>
-                    }
+            margin: 20
+          }}>
 
-                </Card.Text>
-                <Card.Text><h5>Time Zones:</h5> {country?.timezones}</Card.Text>
-                <Card.Text>
-                <h5>Translations:</h5>
-                  {country ? (
-                    Object.keys(country?.translations).map(
-                      (key, index) => (
-                        <p key={index}>
-                          {" "}
-                          {key} : {country?.translations[key]}
-                        </p>
-                      )
-                    )
-                  ) : (
-                    <p>he</p>
-                  )}
-                </Card.Text>
-                
-              </Card.Body>
-              </div>
-            </Card>
-          
-            <Card border="dark">
+          <h2 className="Instance-header">Country of {country?.name} 
+          {/* <img
+          width={128}
+          height={64}
+          className="ml-3"
+          src={country?.flag}
+          alt="Generic placeholder"
+        /> */}
+        </h2>
+         <Row style={{paddingBottom: 20}}>
+          <img
+          width={256}
+          height={128}
+          className="mx-auto"
+          src={country?.flag}
+        />
+        </Row>
+  
+            {/* <Image src={country?.flag} className="flag-responsive"  /> */}
+            <Card.Title as="h3">Dishes</Card.Title>
+
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+              {dishes.map((cols: any) => (
+                <Carousel.Item>
+                  <CardDeck>
+                    {cols.map((dish: any) => (
+                      <Card>
+                        <Card.Title><h4 className="mt-4">{dish.name}</h4></Card.Title>
+                        <Card.Img
+                          src={dish.image_url}
+                          // style={{ height: '15rem' }}
+                          className="carousel-img"
+                        />
+                      </Card>
+                    ))}
+                  </CardDeck>
+                </Carousel.Item>
+              ))
+              }
+            </Carousel>
+          </div>
+          <Container fluid>
+            {/* <CardColumns style={{margin: 20}}> */}
+            <Row xs={1} md={2} style={{marginBottom: 20}}>
+              <Col>
+                <Card border="dark" style={{ maxHeight: "30rem" }}>
+                  <Card.Header as="h3">Basic Info:</Card.Header>
+                  {/* <div className="card-body align-self-start"> */}
+                  <div className="my-custom-scrollbar" >
+                    <Card.Body>
+                      <Card.Text><h5>Capital city:</h5>{country?.capital}</Card.Text>
+                      <Card.Text><h5>Alpha 3 Code:</h5> {country?.alpha3code}</Card.Text>
+                      <Card.Text><h5>Region:</h5> {country?.region}</Card.Text>
+                      <Card.Text><h5>Subregion:</h5> {country?.subregion}</Card.Text>
+                      <Card.Text>
+                        <h5>Latitude/Longitude:</h5> {country?.latitude},{" "}
+                        {country?.longitude}
+                      </Card.Text>
+                      <Card.Text>
+                        <h5>Area:</h5> {country?.area.toLocaleString()} km<sup>2</sup>
+                      </Card.Text>
+                      <Card.Text>
+                        <h5>Population:</h5> {country?.population.toLocaleString()}
+                      </Card.Text>
+                      <Card.Text>
+                        <h5>Bordering Countries:</h5>
+                        {country?.borders ? (
+                          country?.borders.split(", ").map((border: any) => {
+                            return <li>{border}</li>;
+                          }))
+                          :
+                          <Card.Text>N/A</Card.Text>
+                        }
+                      </Card.Text>
+                      <Card.Text><h5>Time Zones:</h5> {country?.timezones}</Card.Text>
+                      <Card.Text>
+                        <h5>Translations:</h5>
+                        {country ? (
+                          Object.keys(country?.translations).map(
+                            (key, index) => (
+                              <p key={index}>
+                                {" "}
+                                {key} : {country?.translations[key]}
+                              </p>
+                            )
+                          )
+                        ) : (
+                          <p>he</p>
+                        )}
+                      </Card.Text>
+                    </Card.Body>
+                  </div>
+                </Card>
+              </Col>
+              <Col style={{ maxHeight: "30rem" }}>
+                <Card>
+                  <Card.Header as="h3">Location</Card.Header>
+                  <iframe
+                    src={
+                      "https://www.google.com/maps/embed/v1/place?key=" +
+                      API_KEY +
+                      "&q=" +
+                      country?.name
+                    }
+                    className="cardmap-responsive"
+                  ></iframe>
+                </Card>
+              </Col>
+              {/* <Card border="dark">
               <Card.Header as="h3">Flag:</Card.Header>
               <Card.Img src={country?.flag}></Card.Img>
             </Card>
 
             <Card border="dark">
-                <Card.Header as="h3">Cities with {cuisine?.name} food</Card.Header>
-                <Card.Body>
+              <Card.Header as="h3">Cities with {cuisine?.name} food</Card.Header>
+              <Card.Body>
               {cuisine?.cities ? (
                 cuisine?.cities?.split(", ").map((c, index) => (
                   <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
@@ -178,7 +207,6 @@ function Cuisine(id: any) {
             </Card>     
 
             <Card border="dark">
-
               <Card.Header as="h3">Restaurants with {cuisine?.name} food</Card.Header>
               <Card.Body>
               {cuisine?.restaurants ? (
@@ -197,14 +225,107 @@ function Cuisine(id: any) {
                 <p>loading</p>
               )}
               </Card.Body>
-            </Card>
-          </CardColumns>
-        
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <div className="center">
+            </Card> */}
+            </Row>
+            {/* </CardColumns> */}
+          </Container>
+          {/* <Card border="dark">
+            <Card.Header as="h3">Flag:</Card.Header>
+            <Card.Img src={country?.flag}></Card.Img>
+          </Card> */}
+
+          {/* <Row xs={1} md={2} style={{marginBottom: 20}}> 
+          <Col>
+          <Card border="dark" style={{ maxHeight: "30rem" }}>
+            <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
+            <div className="my-custom-scrollbar" >
+            <Card.Body>
+              {cuisine?.cities ? (
+                cuisine?.cities?.split(", ").map((c, index) => (
+                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
+                    {c}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+            </Card.Body>
+            </div>
+          </Card>
+          </Col>
+          <Col>
+          <Card border="dark" style={{ maxHeight: "30rem" }}>
+            <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
+            <div className="my-custom-scrollbar" >
+            <Card.Body>
+              {cuisine?.restaurants ? (
+                cuisine?.restaurants?.split(", ").map((r, index) => (
+                  <a
+                    href={
+                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
+                    }
+                    target="_blank"
+                  >
+                    {r}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+            </Card.Body>
+            </div>
+          </Card>
+          </Col>
+
+          </Row> */}
+
+          <div style={{margin: 20}} >
+          <Card border="dark" style={{ maxHeight: "30rem" }}>
+            <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
+            <div className="my-custom-scrollbar" >
+            <Card.Body>
+              {cuisine?.cities ? (
+                cuisine?.cities?.split(", ").map((c, index) => (
+                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
+                    {c}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+            </Card.Body>
+            </div>
+          </Card>
+          </div>
+          <div style={{margin: 20}}>
+          <Card border="dark" style={{ maxHeight: "30rem" }}>
+            <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
+            <div className="my-custom-scrollbar" >
+            <Card.Body>
+              {cuisine?.restaurants ? (
+                cuisine?.restaurants?.split(", ").map((r, index) => (
+                  <a
+                    href={
+                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
+                    }
+                    target="_blank"
+                  >
+                    {r}
+                    <br />
+                  </a>
+                ))
+              ) : (
+                <p>loading</p>
+              )}
+            </Card.Body>
+            </div>
+          </Card>
+          </div>
+          
+          {/* <div className="center">
             <h4>Map Location</h4>
             <div className="map-responsive">
               <iframe
@@ -214,12 +335,12 @@ function Cuisine(id: any) {
                   "&q=" +
                   country?.name
                 }
-                width="600"
-                height="450"
+                width="500"
+                height="350"
                 loading="lazy"
               ></iframe>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </>
       ))}
     </div>
