@@ -133,7 +133,6 @@ h5{
   justify-content: center;
 }
 
-
 .map-responsive{
   overflow:hidden;
   padding-bottom:50%;
@@ -153,6 +152,12 @@ h5{
   position:absolute;
 }
 
+.cardmap-responsive{
+  overflow:hidden;
+  position:relative;
+  height:100rem;
+  width:100%;
+}
 
 img {
   opacity: 1.0;
@@ -161,4 +166,11 @@ img {
 
 img:hover {
   opacity: 0.5;
+}
+
+.my-custom-scrollbar {
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+  overflow: auto !important;
 }
