@@ -61,32 +61,6 @@ function City(id: any) {
     <div>
       <img src={city?.imagesweb} className="city-img-top" />
       <h1 className="text-center">{city?.name}</h1>
-      <div style={{ margin: 10 }}>
-        <Container style={{maxWidth: "90%"}}>
-        <h3 className="mt-2">Cuisines of {city?.name}</h3>
-          <Carousel
-            activeIndex={index}
-            onSelect={handleSelect}
-            style={{ margin: "25px" }}
-          >
-            {CuisineRows?.map((cols) => (
-              <Carousel.Item>
-                <CardDeck>
-                  {cols?.map((c: any) => (
-                    <a href={"/cuisines/" + c.id} className="card">
-                      <h5 className="mt-2">{c.name}</h5>
-                      <img
-                        src={c.dishes[0].image_url}
-                        className="carousel-img"
-                      />
-                    </a>
-                  ))}
-                </CardDeck>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Container>
-      </div>
       <div className="card-columns" style={{ margin: 20 }}>
         <div className="card">
           <div className="card-body align-self-start">
@@ -278,6 +252,32 @@ function City(id: any) {
             </table>
           </div>
         </div>
+      </div>
+      <div style={{ margin: 10 }}>
+        <Container style={{maxWidth: "90%"}}>
+        <h3 className="mt-2">Cuisines of {city?.name}</h3>
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            style={{ margin: "25px" }}
+          >
+            {CuisineRows?.map((cols) => (
+              <Carousel.Item>
+                <CardDeck>
+                  {cols?.map((c: any) => (
+                    <a href={"/cuisines/" + c.id} className="card">
+                      <h5 className="mt-2">{c.name}</h5>
+                      <img
+                        src={c.dishes[0].image_url}
+                        className="carousel-img"
+                      />
+                    </a>
+                  ))}
+                </CardDeck>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Container>
       </div>
       <div className="center">
         <h2>Map Location</h2>
