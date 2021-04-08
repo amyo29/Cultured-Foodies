@@ -13,12 +13,15 @@ import {
   Tabs,
   Tab,
   Media,
+  Button,
+  Accordion,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
 import axios from "axios";
+import { countReset } from "node:console";
 
 function Cuisine(id: any) {
   useEffect(() => {
@@ -69,59 +72,66 @@ function Cuisine(id: any) {
 
   return (
     <div>
-      <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
-      {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first"></Tab.Container> */}
-      {countries?.map((country) => (
-        <>
-          <div style={{
-            margin: 20
-          }}>
-
-          <h2 className="Instance-header">Country of {country?.name} 
-          {/* <img
-          width={128}
-          height={64}
-          className="ml-3"
-          src={country?.flag}
-          alt="Generic placeholder"
-        /> */}
-        </h2>
-         <Row style={{paddingBottom: 20}}>
-          <img
-          width={256}
-          height={128}
-          className="mx-auto"
-          src={country?.flag}
-        />
-        </Row>
-  
-            {/* <Image src={country?.flag} className="flag-responsive"  /> */}
-            <Card.Title as="h3">Dishes</Card.Title>
-
-            <Carousel activeIndex={index} onSelect={handleSelect}>
-              {dishes.map((cols: any) => (
-                <Carousel.Item>
-                  <CardDeck>
-                    {cols.map((dish: any) => (
-                      <Card>
-                        <Card.Title><h4 className="mt-4">{dish.name}</h4></Card.Title>
-                        <Card.Img
-                          src={dish.image_url}
-                          // style={{ height: '15rem' }}
-                          className="carousel-img"
-                        />
-                      </Card>
-                    ))}
-                  </CardDeck>
-                </Carousel.Item>
-              ))
-              }
-            </Carousel>
-          </div>
-          <Container fluid>
-            {/* <CardColumns style={{margin: 20}}> */}
-            <Row xs={1} md={2} style={{marginBottom: 20}}>
+      <a id="top"></a>
+      <Container fluid>
+      <Accordion defaultActiveKey="0">
+        <h1 className="Instance-header">{cuisine?.name} Cuisine</h1>
+        {/* <Tab.Container id="left-tabs-example" defaultActiveKey="first"></Tab.Container> */}
+        {countries?.map((country, i) => (
+          <>
+           <Accordion.Toggle as={Card.Header} eventKey={i.toString()}>
+             <Col>
+            <h2 className="Instance-header-accordian">Country of {country?.name}</h2>
+            </Col>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey={i.toString()}>
+              <Card> 
+            <Row style={{ padding: 20 }}>
+              <img
+                width={256}
+                height={128}
+                className="mx-auto"
+                src={country?.flag}
+              />
+            </Row>
+            
+            <Row className="justify-content-md-center">
+              {/* <Image src={country?.flag} className="flag-responsive"  /> */}
               <Col>
+                <Card.Title as="h3">Dishes from {country?.name}</Card.Title>
+              </Col>
+            </Row>
+
+            <Row style={{ marginBottom: 20 }}>
+              <div>
+                <Col >
+                  <Carousel activeIndex={index} onSelect={handleSelect}>
+                    {dishes.map((cols: any) => (
+                      <Carousel.Item>
+                        <CardDeck>
+                          {cols.map((dish: any) => (
+                            <Card>
+                              <Card.Title><h4 className="mt-4">{dish.name}</h4></Card.Title>
+                              <Card.Img
+                                src={dish.image_url}
+                                // style={{ height: '15rem' }}
+                                className="carousel-img"
+                              />
+                            </Card>
+                          ))}
+                        </CardDeck>
+                      </Carousel.Item>
+                    ))
+                    }
+                  </Carousel>
+                  {/* </div> */}
+                </Col>
+              </div>
+            </Row>
+
+            {/* <CardColumns style={{margin: 20}}> */}
+            <Row style={{ marginBottom: 20, width: "100%"}}>
+              <Col sm="4">
                 <Card border="dark" style={{ maxHeight: "30rem" }}>
                   <Card.Header as="h3">Basic Info:</Card.Header>
                   {/* <div className="card-body align-self-start"> */}
@@ -171,9 +181,9 @@ function Cuisine(id: any) {
                   </div>
                 </Card>
               </Col>
-              <Col style={{ maxHeight: "30rem" }}>
+              <Col sm="8" style={{maxHeight: "30rem" }}>
                 <Card>
-                  <Card.Header as="h3">Location</Card.Header>
+                  {/* <Card.Header as="h3">Location</Card.Header> */}
                   <iframe
                     src={
                       "https://www.google.com/maps/embed/v1/place?key=" +
@@ -185,164 +195,66 @@ function Cuisine(id: any) {
                   ></iframe>
                 </Card>
               </Col>
-              {/* <Card border="dark">
-              <Card.Header as="h3">Flag:</Card.Header>
-              <Card.Img src={country?.flag}></Card.Img>
-            </Card>
-
-            <Card border="dark">
-              <Card.Header as="h3">Cities with {cuisine?.name} food</Card.Header>
-              <Card.Body>
-              {cuisine?.cities ? (
-                cuisine?.cities?.split(", ").map((c, index) => (
-                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
-                    {c}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-              </Card.Body>
-            </Card>     
-
-            <Card border="dark">
-              <Card.Header as="h3">Restaurants with {cuisine?.name} food</Card.Header>
-              <Card.Body>
-              {cuisine?.restaurants ? (
-                cuisine?.restaurants?.split(", ").map((r, index) => (
-                  <a
-                    href={
-                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-                    }
-                    target="_blank"
-                  >
-                     {r}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-              </Card.Body>
-            </Card> */}
             </Row>
-            {/* </CardColumns> */}
-          </Container>
-          {/* <Card border="dark">
-            <Card.Header as="h3">Flag:</Card.Header>
-            <Card.Img src={country?.flag}></Card.Img>
-          </Card> */}
-
-          {/* <Row xs={1} md={2} style={{marginBottom: 20}}> 
-          <Col>
-          <Card border="dark" style={{ maxHeight: "30rem" }}>
-            <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
-            <div className="my-custom-scrollbar" >
-            <Card.Body>
-              {cuisine?.cities ? (
-                cuisine?.cities?.split(", ").map((c, index) => (
-                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
-                    {c}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-            </Card.Body>
-            </div>
-          </Card>
-          </Col>
-          <Col>
-          <Card border="dark" style={{ maxHeight: "30rem" }}>
-            <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
-            <div className="my-custom-scrollbar" >
-            <Card.Body>
-              {cuisine?.restaurants ? (
-                cuisine?.restaurants?.split(", ").map((r, index) => (
-                  <a
-                    href={
-                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-                    }
-                    target="_blank"
-                  >
-                    {r}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-            </Card.Body>
-            </div>
-          </Card>
-          </Col>
-
-          </Row> */}
-
-          <div style={{margin: 20}} >
-          <Card border="dark" style={{ maxHeight: "30rem" }}>
-            <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
-            <div className="my-custom-scrollbar" >
-            <Card.Body>
-              {cuisine?.cities ? (
-                cuisine?.cities?.split(", ").map((c, index) => (
-                  <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
-                    {c}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-            </Card.Body>
-            </div>
-          </Card>
-          </div>
-          <div style={{margin: 20}}>
-          <Card border="dark" style={{ maxHeight: "30rem" }}>
-            <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
-            <div className="my-custom-scrollbar" >
-            <Card.Body>
-              {cuisine?.restaurants ? (
-                cuisine?.restaurants?.split(", ").map((r, index) => (
-                  <a
-                    href={
-                      "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-                    }
-                    target="_blank"
-                  >
-                    {r}
-                    <br />
-                  </a>
-                ))
-              ) : (
-                <p>loading</p>
-              )}
-            </Card.Body>
-            </div>
-          </Card>
-          </div>
-          
-          {/* <div className="center">
-            <h4>Map Location</h4>
-            <div className="map-responsive">
-              <iframe
-                src={
-                  "https://www.google.com/maps/embed/v1/place?key=" +
-                  API_KEY +
-                  "&q=" +
-                  country?.name
-                }
-                width="500"
-                height="350"
-                loading="lazy"
-              ></iframe>
-            </div> 
-          </div>*/}
-        </>
-      ))}
+            <Row style={{width: "100%"}}>
+              <Col>
+                <div style={{ margin: 20 }} >
+                  <Card border="dark" style={{ maxHeight: "30rem" }}>
+                    <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
+                    <div className="my-custom-scrollbar" >
+                      <Card.Body>
+                        {cuisine?.cities ? (
+                          cuisine?.cities?.split(", ").map((c, index) => (
+                            <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
+                              {c}
+                              <br />
+                            </a>
+                          ))
+                        ) : (
+                          <p>loading</p>
+                        )}
+                      </Card.Body>
+                    </div>
+                  </Card>
+                </div>
+              </Col>
+              <Col>
+                <div style={{ margin: 20 }}>
+                  <Card border="dark" style={{ maxHeight: "30rem" }}>
+                    <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
+                    <div className="my-custom-scrollbar" >
+                      <Card.Body>
+                        {cuisine?.restaurants ? (
+                          cuisine?.restaurants?.split(", ").map((r, index) => (
+                            <a
+                              href={
+                                "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
+                              }
+                              target="_blank"
+                            >
+                              {r}
+                              <br />
+                            </a>
+                          ))
+                        ) : (
+                          <p>loading</p>
+                        )}
+                      </Card.Body>
+                    </div>
+                  </Card>
+                </div>
+              </Col>
+            </Row>
+            <a href="#top" className="center-text" style={{paddingBottom: "1rem"}}>Go to Top</a> 
+            </Card>
+           
+            </Accordion.Collapse>
+              
+          </>
+        )
+        )}
+        </Accordion>
+      </Container>
     </div>
   );
 }

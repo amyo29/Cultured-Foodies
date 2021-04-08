@@ -169,8 +169,29 @@ img:hover {
 }
 
 .my-custom-scrollbar {
-  position: relative !important;
-  height: 100% !important;
-  width: 100% !important;
+  /* position: relative !important; */
+  /* height: 100% !important;
+  width: 100% !important; */
   overflow: auto !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+a.center-text {
+  display: block;
+}
+
+.Instance-header-accordian {
+  font-family: 'Abril Fatface', Georgia, Times, serif;
+	text-align: center;
+	margin: auto;
+	align-items: center;
+	padding-top : 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
 }
