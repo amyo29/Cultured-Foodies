@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {  useState } from "react";
 import {
   Navbar,
   Nav,
@@ -6,11 +6,30 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-
+import { useHistory } from "react-router-dom";
 import "../styles/NavBar.css"
 
-class NavBar extends Component {
-  render() {
+function NavBar() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const history = useHistory();
+  let handleSearchQuery = (event: any) => {
+    console.log(event.target.value)
+    setSearchQuery(event.target.value);
+  };
+
+  let handleKeyPress = (event: any) => {
+    if (event.key === 'Enter') {
+      console.log('detected enter')
+      // history.push("/search/query=" + searchQuery);
+      window.location.assign("/search/query=" + searchQuery);
+    }
+  }
+  let searchResults = () => {
+    window.location.assign("/search/query=" + searchQuery);
+
+  }
+
+
     return (
       <div>
         <Navbar expand="lg" className="navbar-custom">
@@ -30,14 +49,16 @@ class NavBar extends Component {
                 type="text"
                 placeholder="Search"
                 className="mr-sm-2"
+                onChange={handleSearchQuery}
+                onKeyPress={handleKeyPress}
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" onClick={searchResults}>Search</Button>
             </Form>
           </Navbar.Collapse>
         </Navbar>
       </div>
-    );
-  }
+  
+    )
 }
 
 export default NavBar;
