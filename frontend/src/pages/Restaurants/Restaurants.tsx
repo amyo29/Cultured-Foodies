@@ -3,10 +3,12 @@ import { Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { useHistory } from "react-router-dom";
-import { MDBDataTable } from "mdbreact";
+// import { MDBDataTable } from "mdbreact";
+import MUIDataTable from "mui-datatables";
 import logo from "../../static_resources/dumpling.gif";
 import small from "../../static_resources/smaller dumpling.gif";
 import { RestaurantObject, RestaurantInstance } from "./Restaurant";
+import { resolveConfig } from "prettier";
 
 function Restaurants() {
   useEffect(() => {
@@ -53,73 +55,162 @@ function Restaurants() {
 
     setDisplayedRestaurants(copy);
   };
-  let tabledata_row = [];
 
   const history = useHistory();
 
-  const routeChange = (restaurant: any) => {
-    let path = "/restaurants/" + restaurant["id"];
+  const routeChange = (id: number) => {
+    let path = "/restaurants/" + id;
     console.log(path);
     history.push(path);
   };
 
-  const tabledata = {
-    columns: [
-      {
-        label: "ID",
-        field: "id",
-        sort: "asc",
-        width: 10,
+  // let tabledata_row = [];
+
+  // const tabledata = {
+  //   columns: [
+  //     {
+  //       label: "ID",
+  //       field: "id",
+  //       sort: "asc",
+  //       width: 10,
+  //     },
+  //     {
+  //       label: "Name",
+  //       field: "name",
+  //       sort: "asc",
+  //       width: 150,
+  //     },
+  //     {
+  //       label: "City",
+  //       field: "city",
+  //       sort: "asc",
+  //       width: 270,
+  //     },
+  //     {
+  //       label: "Cuisines",
+  //       field: "cuisines",
+  //       sort: "asc",
+  //       width: 200,
+  //     },
+  //     {
+  //       label: "Rating",
+  //       field: "aggregate_rating",
+  //       sort: "asc",
+  //       width: 100,
+  //     },
+  //     {
+  //       label: "Price Range",
+  //       field: "price_range",
+  //       sort: "asc",
+  //       width: 150,
+  //     },
+  //     {
+  //       label: "Average Cost for Two",
+  //       field: "average_cost_for_two",
+  //       sort: "asc",
+  //       width: 100,
+  //     },
+  //   ],
+  //   rows: restaurants.map((r)=> {
+  //     return {
+  //       id: r.id,
+  //       name: r.name,
+  //       city: r.city,
+  //       cuisines: r.cuisines,
+  //       price_range: r.price_range,
+  //       aggregate_rating: r.aggregate_rating,
+  //       average_cost_for_two: r.average_cost_for_two,
+  //       clickEvent: () => routeChange(r),
+  //     }
+  //   })
+  // };
+
+  const columns = [
+    {
+      name: "id",
+      label: "ID",
+      options: {
+        filter: false,
+        sort: true,
       },
-      {
-        label: "Name",
-        field: "name",
-        sort: "asc",
-        width: 150,
+    },
+    {
+      name: "name",
+      label: "Name",
+      options: {
+        filter: false,
+        sort: true,
       },
-      {
-        label: "City",
-        field: "city",
-        sort: "asc",
-        width: 270,
+    },
+    {
+      name: "city",
+      label: "City",
+      options: {
+        filter: true,
+        sort: true,
       },
-      {
-        label: "Cuisines",
-        field: "cuisines",
-        sort: "asc",
-        width: 200,
+    },
+    {
+      name: "cuisines",
+      label: "Cuisines",
+      options: {
+        filter: true,
+        sort: true,
       },
-      {
-        label: "Rating",
-        field: "aggregate_rating",
-        sort: "asc",
-        width: 100,
+    },
+    {
+      name: "price_range",
+      label: "Price Range",
+      options: {
+        filter: true,
+        sort: true,
       },
-      {
-        label: "Price Range",
-        field: "price_range",
-        sort: "asc",
-        width: 150,
+    },
+    {
+      name: "aggregate_rating",
+      label: "Rating",
+      options: {
+        filter: true,
+        sort: true,
       },
-      {
-        label: "Average Cost for Two",
-        field: "average_cost_for_two",
-        sort: "asc",
-        width: 100,
+    },
+    {
+      name: "average_cost_for_two",
+      label: "Average Cost for Two",
+      options: {
+        filter: true,
+        sort: true,
       },
-    ],
-    rows: restaurants.map((r)=> { 
-      return {
-        id: r.id,
-        name: r.name,
-        city: r.city,
-        cuisines: r.cuisines,
-        price_range: r.price_range,
-        aggregate_rating: r.aggregate_rating,
-        average_cost_for_two: r.average_cost_for_two,
-        clickEvent: () => routeChange(r),
-      }
-    })
+    },
+  ];
+
+  const restaurantsData = () => {
+    var restaurantList: any[][] = [];
+    restaurants.map((r) => {
+      let restaurantData = [
+        r.id,
+        r.name,
+        r.city,
+        r.cuisines,
+        r.price_range,
+        r.aggregate_rating,
+        r.average_cost_for_two,
+      ];
+      restaurantList.push(restaurantData);
+    });
+    return restaurantList;
+  };
+
+  const options = {
+    download: false,
+    print: false,
+    selectableRowsHideCheckboxes: true,
+    onRowClick: (
+      rowData: string[],
+      rowMeta: { dataIndex: number; rowIndex: number }
+    ) => {
+      routeChange(rowMeta.rowIndex + 1);
+    },
   };
 
   if (loaded) {
@@ -201,7 +292,14 @@ function Restaurants() {
           </tbody>
         </Table> */}
 
-        <MDBDataTable btn hover striped bordered small noBottomColumns={true} data={tabledata} />
+        {/* <MDBDataTable materialSearch hover striped bordered small noBottomColumns={true} data={tabledata} /> */}
+
+        <MUIDataTable
+          title={"Restaurants"}
+          data={restaurantsData()}
+          columns={columns}
+          options={options}
+        />
       </div>
     );
   } else {
