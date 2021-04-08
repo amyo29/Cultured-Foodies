@@ -21,6 +21,7 @@ import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
 import axios from "axios";
+import { countReset } from "node:console";
 
 function Cuisine(id: any) {
   useEffect(() => {
@@ -97,7 +98,7 @@ function Cuisine(id: any) {
             <Row className="justify-content-md-center">
               {/* <Image src={country?.flag} className="flag-responsive"  /> */}
               <Col>
-                <Card.Title as="h3">{cuisine?.name} Dishes</Card.Title>
+                <Card.Title as="h3">Dishes from {country?.name}</Card.Title>
               </Col>
             </Row>
 
