@@ -26,7 +26,9 @@ function Restaurant(id: any) {
     "https://www.google.com/maps/embed/v1/place?key=" +
     API_KEY +
     "&q=" +
-    restaurant?.name.replace("&", "%20");
+    restaurant?.name.replace("&", "%20")
+    +
+    restaurant?.address.replace("&", "%20");
 
 
   return (
