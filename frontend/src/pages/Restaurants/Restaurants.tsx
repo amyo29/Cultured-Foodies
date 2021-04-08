@@ -27,7 +27,7 @@ function Restaurants() {
 
   const history = useHistory();
 
-  const routeChange = (id: number) => {
+  const routeChange = (id: string) => {
     let path = "/restaurants/" + id;
     console.log(path);
     history.push(path);
@@ -40,7 +40,7 @@ function Restaurants() {
       options: {
         filter: false,
         sort: true,
-        display: "excluded",
+        display: false,
       },
     },
     {
