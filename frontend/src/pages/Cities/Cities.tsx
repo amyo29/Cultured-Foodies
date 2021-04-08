@@ -200,6 +200,8 @@ function Cities() {
         <h1 className="text-align center">Cities</h1>
 
         <Container>
+          <div className = "row" style = {{padding:20}}>
+            <div className="col">
           <DropdownButton id="dropdown-basic-button" title="Sort By">
             <Dropdown.Item onClick={() => onSort("name", true)}>
               City Name (A-Z)
@@ -225,6 +227,121 @@ function Cities() {
               Population (desc)
             </Dropdown.Item>
           </DropdownButton>
+          </div>
+          <div className="col">
+          <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item onClick={() => onSort("name", true)}>
+              City Name (A-Z)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+              Leisure and Culture Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+              Cost of Living Score
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onSort("environmental_quality", false)}
+            >
+              Environmental Quality Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("travel_connectivity", false)}>
+              Travel Connectivity Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", true)}>
+              Population (asc)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", false)}>
+              Population (desc)
+            </Dropdown.Item>
+          </DropdownButton>
+          </div>
+          <div className="col">
+          <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item onClick={() => onSort("name", true)}>
+              City Name (A-Z)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+              Leisure and Culture Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+              Cost of Living Score
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onSort("environmental_quality", false)}
+            >
+              Environmental Quality Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("travel_connectivity", false)}>
+              Travel Connectivity Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", true)}>
+              Population (asc)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", false)}>
+              Population (desc)
+            </Dropdown.Item>
+          </DropdownButton>
+          </div>
+
+          <div className="col">
+          <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item onClick={() => onSort("name", true)}>
+              City Name (A-Z)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+              Leisure and Culture Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+              Cost of Living Score
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onSort("environmental_quality", false)}
+            >
+              Environmental Quality Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("travel_connectivity", false)}>
+              Travel Connectivity Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", true)}>
+              Population (asc)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", false)}>
+              Population (desc)
+            </Dropdown.Item>
+          </DropdownButton>
+          </div>
+
+
+          <div className="col">
+          <DropdownButton id="dropdown-basic-button" title="Sort By">
+            <Dropdown.Item onClick={() => onSort("name", true)}>
+              City Name (A-Z)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+              Leisure and Culture Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+              Cost of Living Score
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onSort("environmental_quality", false)}
+            >
+              Environmental Quality Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("travel_connectivity", false)}>
+              Travel Connectivity Score
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", true)}>
+              Population (asc)
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onSort("population", false)}>
+              Population (desc)
+            </Dropdown.Item>
+          </DropdownButton>
+          </div>
+
+
+          </div>
           <div>
             {/* <FormControl>
         <InputLabel id="demo-mutiple-checkbox-label">States</InputLabel>
@@ -266,6 +383,7 @@ function Cities() {
                   </MenuItem>
                 ))}
               </Select>
+
           </div>
           {/* <> */}
           {/* {filterableNames.map((variant) => (
