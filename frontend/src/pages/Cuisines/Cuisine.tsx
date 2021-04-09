@@ -244,6 +244,7 @@ function Cuisine(id: any) {
                                         "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
                                       }
                                       target="_blank"
+                                  
                                     >
                                       {r}
                                       <br />
@@ -258,7 +259,9 @@ function Cuisine(id: any) {
                         </div>
                       </Col>
                     </Row>
-                    <a href="#top" className="center-text" style={{ paddingBottom: "1rem" }}>Go to Top</a>
+                    <Row className="pb-2">
+                    <a href="#top" className="center-text">Go to Top</a>
+                   </Row>
                   </Card>
 
                 </Accordion.Collapse>
