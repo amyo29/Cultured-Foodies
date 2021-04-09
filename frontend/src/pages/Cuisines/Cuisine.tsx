@@ -18,6 +18,8 @@ import {
   Modal,
   Spinner,
   Jumbotron,
+  Tooltip,
+  TooltipProps,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useParams } from "react-router-dom";
@@ -25,6 +27,7 @@ import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
 import axios from "axios";
 import { countReset } from "node:console";
+import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
 
 function Cuisine(id: any) {
   useEffect(() => {
@@ -104,11 +107,14 @@ function Cuisine(id: any) {
 
                     <Row className="justify-content-md-center">
                       {/* <Image src={country?.flag} className="flag-responsive"  /> */}
+                      <a id="dishes"></a>
                       <Col>
-                        <Card.Title as="h3">Dishes from {country?.name}</Card.Title>
+                        <a href="#dishes" style={{color:"black"}}>
+                          <Card.Title as="h3">Dishes from {country?.name}</Card.Title>
+                        </a>
                       </Col>
                     </Row>
-
+                    
                     <Row style={{ marginBottom: 20 }}>
                       <div>
                         <Col >
