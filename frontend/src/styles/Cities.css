@@ -44,85 +44,18 @@ a:hover {
     opacity: 0.7;
 }
 
-/* 
-.section-header.section-category {
-    height: 60vh;
-}
-
-.section-header {
-    height: auto;
-    max-height: none;
-    overflow: visible;
-}
-.section {
-    margin: 0;
-    position: relative;
-}
-.section-header {
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.section-header {
-    height: 92vh;
-    max-height: 768px;
-    display: flex;
-    align-items: center;
-    background-color: #36275d;
-}
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-body {
-    background-color: #E5E5E5;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333333;
-    background-color: #fff;
-}
-html {
-    font-size: 10px;
-    -webkit-tap-highlight-color: transparent;
-}
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-[class*="gradient-"]::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-.gradient-light-blue::after {
-    background-color: rgba(28,206,234,0.82);
-    background: linear-gradient(
--45deg
-, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);
-}
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-} 
-*/
+.a-custom {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  }
+  
+  .a-custom:hover,
+  .a-custom:focus {
+    text-decoration: none;
+    background-size: 100% 2px;
+  }
+  

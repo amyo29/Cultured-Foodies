@@ -8,3 +8,18 @@
 .nav-link {
   color: white !important;
 }
+
+.a-custom {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+
+.a-custom:hover,
+.a-custom:focus {
+  text-decoration: none;
+  background-size: 100% 2px;
+}

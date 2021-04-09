@@ -218,7 +218,10 @@ function Cuisine(id: any) {
                               <Card.Body>
                                 {cuisine?.cities ? (
                                   cuisine?.cities?.split(", ").map((c, index) => (
-                                    <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} target="_blank">
+                                    <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} 
+                                    target="_blank"
+                                    className="a-custom"
+                                    >
                                       {c}
                                       <br />
                                     </a>
@@ -244,7 +247,7 @@ function Cuisine(id: any) {
                                         "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
                                       }
                                       target="_blank"
-                                  
+                                      className="a-custom"
                                     >
                                       {r}
                                       <br />

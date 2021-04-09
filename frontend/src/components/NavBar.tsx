@@ -39,10 +39,10 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/cuisines">Cuisines</Nav.Link>
-              <Nav.Link href="/cities">Cities</Nav.Link>
-              <Nav.Link href="/restaurants">Restaurants</Nav.Link>
+              <Nav.Link href="/about" className="a-custom">About Us</Nav.Link>
+              <Nav.Link href="/cuisines" className="a-custom">Cuisines</Nav.Link>
+              <Nav.Link href="/cities" className="a-custom">Cities</Nav.Link>
+              <Nav.Link href="/restaurants" className="a-custom">Restaurants</Nav.Link>
             </Nav>
             <Form inline>
               <FormControl

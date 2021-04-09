@@ -197,7 +197,7 @@ a.center-text {
 }
 
 /* Styles for the title tooltips */
-a {
+.a-custom {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -206,8 +206,8 @@ a {
   transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
-a:hover,
-a:focus {
+.a-custom:hover,
+.a-custom:focus {
   text-decoration: none;
   background-size: 100% 2px;
 }
