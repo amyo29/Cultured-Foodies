@@ -15,10 +15,12 @@ import {
   FormControl,
 } from "react-bootstrap";
 import Footer from "../../components/Footer";
+import "../../styles/Cities.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
 import logo from "../../static_resources/spinny.gif";
+import citiesImg from "../../static_resources/cities.jpg";
 import { CityObject, CityInstance } from "./City";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -26,6 +28,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Select from "@material-ui/core/Select";
 import Checkbox from "@material-ui/core/Checkbox";
 import Input from "@material-ui/core/Input";
+
 // Search --> be able to sort and filter based on that
 
 // Features
@@ -198,161 +201,191 @@ function Cities() {
 
   if (loaded) {
     return (
-      <div>
-        <h1 className="text-align center">Cities</h1>
-
-        <Container>
-          <div className="row" style={{ padding: 20 }}>
-            <div className="col">
-              <DropdownButton id="dropdown-basic-button" title="Sort By">
-                <Dropdown.Item onClick={() => onSort("name", true)}>
-                  City Name (A-Z)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                  Leisure and Culture Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                  Cost of Living Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("environmental_quality", false)}
-                >
-                  Environmental Quality Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("travel_connectivity", false)}
-                >
-                  Travel Connectivity Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", true)}>
-                  Population (asc)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", false)}>
-                  Population (desc)
-                </Dropdown.Item>
-              </DropdownButton>
-            </div>
-            <div className="col">
-              <DropdownButton id="dropdown-basic-button" title="Sort By">
-                <Dropdown.Item onClick={() => onSort("name", true)}>
-                  City Name (A-Z)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                  Leisure and Culture Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                  Cost of Living Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("environmental_quality", false)}
-                >
-                  Environmental Quality Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("travel_connectivity", false)}
-                >
-                  Travel Connectivity Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", true)}>
-                  Population (asc)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", false)}>
-                  Population (desc)
-                </Dropdown.Item>
-              </DropdownButton>
-            </div>
-            <div className="col">
-              <DropdownButton id="dropdown-basic-button" title="Sort By">
-                <Dropdown.Item onClick={() => onSort("name", true)}>
-                  City Name (A-Z)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                  Leisure and Culture Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                  Cost of Living Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("environmental_quality", false)}
-                >
-                  Environmental Quality Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("travel_connectivity", false)}
-                >
-                  Travel Connectivity Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", true)}>
-                  Population (asc)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", false)}>
-                  Population (desc)
-                </Dropdown.Item>
-              </DropdownButton>
-            </div>
-
-            <div className="col">
-              <DropdownButton id="dropdown-basic-button" title="Sort By">
-                <Dropdown.Item onClick={() => onSort("name", true)}>
-                  City Name (A-Z)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                  Leisure and Culture Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                  Cost of Living Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("environmental_quality", false)}
-                >
-                  Environmental Quality Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("travel_connectivity", false)}
-                >
-                  Travel Connectivity Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", true)}>
-                  Population (asc)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", false)}>
-                  Population (desc)
-                </Dropdown.Item>
-              </DropdownButton>
-            </div>
-
-            <div className="col">
-              <DropdownButton id="dropdown-basic-button" title="Sort By">
-                <Dropdown.Item onClick={() => onSort("name", true)}>
-                  City Name (A-Z)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                  Leisure and Culture Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                  Cost of Living Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("environmental_quality", false)}
-                >
-                  Environmental Quality Score
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => onSort("travel_connectivity", false)}
-                >
-                  Travel Connectivity Score
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", true)}>
-                  Population (asc)
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => onSort("population", false)}>
-                  Population (desc)
-                </Dropdown.Item>
-              </DropdownButton>
-            </div>
-          </div>
+      <body>
+        <Container fluid>
+          <Row >
+            <Card className="header-card">
+              <Card.Img src={citiesImg} className="header-img"/>
+              <Card.ImgOverlay>
+                <Row  className="mt-5" style={{justifyContent:"center"}}> 
+                <Col className="text-align center">
+                <Card.Title><h1 className="header-text">Cities</h1></Card.Title>
+                </Col>
+                </Row>
+                <Row className="mt-4" style={{justifyContent:"center"}}>
+                    <Form
+                    inline
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                    }}
+                  >
+                    <FormControl
+                      type="text"
+                      placeholder="Search Cities"
+                      onChange={handleSearchChange}
+                    />
+                     <Button href="#target1">search</Button>
+                  </Form>
+                  </Row>
+              </Card.ImgOverlay>
+            </Card>
+          </Row>
+          
           <div>
-            {/* <FormControl>
+            {/* <h1 className="text-align center">Cities</h1> */}
+            <a id="target1"></a>
+            <Container>
+              <div className="row" style={{ padding: 20 }}>
+                <div className="col">
+                  <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item onClick={() => onSort("name", true)}>
+                      City Name (A-Z)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+                      Leisure and Culture Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+                      Cost of Living Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", false)}
+                    >
+                      Environmental Quality Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", false)}
+                    >
+                      Travel Connectivity Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", true)}>
+                      Population (asc)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", false)}>
+                      Population (desc)
+                </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+                <div className="col">
+                  <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item onClick={() => onSort("name", true)}>
+                      City Name (A-Z)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+                      Leisure and Culture Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+                      Cost of Living Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", false)}
+                    >
+                      Environmental Quality Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", false)}
+                    >
+                      Travel Connectivity Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", true)}>
+                      Population (asc)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", false)}>
+                      Population (desc)
+                </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+                <div className="col">
+                  <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item onClick={() => onSort("name", true)}>
+                      City Name (A-Z)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+                      Leisure and Culture Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+                      Cost of Living Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", false)}
+                    >
+                      Environmental Quality Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", false)}
+                    >
+                      Travel Connectivity Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", true)}>
+                      Population (asc)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", false)}>
+                      Population (desc)
+                </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+
+                <div className="col">
+                  <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item onClick={() => onSort("name", true)}>
+                      City Name (A-Z)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+                      Leisure and Culture Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+                      Cost of Living Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", false)}
+                    >
+                      Environmental Quality Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", false)}
+                    >
+                      Travel Connectivity Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", true)}>
+                      Population (asc)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", false)}>
+                      Population (desc)
+                </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+
+                <div className="col">
+                  <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <Dropdown.Item onClick={() => onSort("name", true)}>
+                      City Name (A-Z)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
+                      Leisure and Culture Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
+                      Cost of Living Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", false)}
+                    >
+                      Environmental Quality Score
+                </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", false)}
+                    >
+                      Travel Connectivity Score
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", true)}>
+                      Population (asc)
+                </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("population", false)}>
+                      Population (desc)
+                </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+              </div>
+              <div>
+                {/* <FormControl>
         <InputLabel id="demo-mutiple-checkbox-label">States</InputLabel>
         <Select
           labelId="demo-mutiple-checkbox-label"
@@ -371,30 +404,30 @@ function Cities() {
           ))}
         </Select>
       </FormControl> */}
-      
-            <InputLabel id="demo-mutiple-checkbox-label">Tag</InputLabel>
-            <Select
-              labelId="demo-mutiple-checkbox-label"
-              id="demo-mutiple-checkbox"
-              multiple
-              value={filteringFields.states}
-              onChange={onFilters}
-              input={<Input />}
-              renderValue={(selected) => (selected as string[]).join(", ")}
-              // MenuProps={MenuProps}
-            >
-              {states.map((name) => (
-                <MenuItem  key={name} value={name}>
-                  <Checkbox
-                    checked={filteringFields.states.indexOf(name) > -1}
-                  />
-                  <ListItemText primary={name} />
-                </MenuItem>
-              ))}
-            </Select>
-          </div>
-          {/* <> */}
-          {/* {filterableNames.map((variant) => (
+
+                <InputLabel id="demo-mutiple-checkbox-label">Tag</InputLabel>
+                <Select
+                  labelId="demo-mutiple-checkbox-label"
+                  id="demo-mutiple-checkbox"
+                  multiple
+                  value={filteringFields.states}
+                  onChange={onFilters}
+                  input={<Input />}
+                  renderValue={(selected) => (selected as string[]).join(", ")}
+                // MenuProps={MenuProps}
+                >
+                  {states.map((name) => (
+                    <MenuItem key={name} value={name}>
+                      <Checkbox
+                        checked={filteringFields.states.indexOf(name) > -1}
+                      />
+                      <ListItemText primary={name} />
+                    </MenuItem>
+                  ))}
+                </Select>
+              </div>
+              {/* <> */}
+              {/* {filterableNames.map((variant) => (
               <DropdownButton
                 as={ButtonGroup}
                 variant='info'
@@ -405,44 +438,33 @@ function Cities() {
                 ))}
               </DropdownButton>
             ))} */}
-          {/* </> */}
-          <Form
-            inline
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
-          >
-            <FormControl
-              className="mr-sm-2"
-              type="text"
-              placeholder="Search Cities"
-              onChange={handleSearchChange}
-            />
-            {/* <Button onClick={searchOnClick}></Button> */}
-          </Form>
+              {/* </> */}
+              
 
-          {rows.map((cols) => (
-            <Row>
-              {cols.map((city: any, i: any) => (
-                <Col className="col-sm-4 py-2">
-                  <CitiesCard city={city}></CitiesCard>
-                </Col>
+              {rows.map((cols) => (
+                <Row>
+                  {cols.map((city: any, i: any) => (
+                    <Col className="col-sm-4 py-2">
+                      <CitiesCard city={city}></CitiesCard>
+                    </Col>
+                  ))}
+                </Row>
               ))}
-            </Row>
-          ))}
-        </Container>
+            </Container>
 
-        <div className="row pagination">
-          <Pagination
-            count={Math.ceil(displayedCities.length / numPerPage)}
-            page={pageNumber}
-            onChange={handleChange}
-          ></Pagination>
-          {startIndex + 1} -{" "}
-          {Math.min(startIndex + numPerPage, displayedCities?.length)} of{" "}
-          {displayedCities?.length}
-        </div>
-      </div>
+            <div className="row pagination">
+              <Pagination
+                count={Math.ceil(displayedCities.length / numPerPage)}
+                page={pageNumber}
+                onChange={handleChange}
+              ></Pagination>
+              {startIndex + 1} -{" "}
+              {Math.min(startIndex + numPerPage, displayedCities?.length)} of{" "}
+              {displayedCities?.length}
+            </div>
+          </div>
+        </Container>
+      </body>
     );
   } else {
     return (
