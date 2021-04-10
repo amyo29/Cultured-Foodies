@@ -135,4 +135,13 @@ const CuisinesCard = (props: any) => {
   );
 };
 
-export { InfoCard, ProfileCard, CitiesCard, CuisinesCard };
+
+const SearchCard = (props: any) => {
+  const { result } = props;
+  return (
+    <a></a>
+  );
+};
+
+
+export { InfoCard, ProfileCard, CitiesCard, CuisinesCard, SearchCard};
