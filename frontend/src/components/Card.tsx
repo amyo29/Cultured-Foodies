@@ -4,6 +4,13 @@ import Card from "react-bootstrap/Card";
 import "../styles/About.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import {
+  InstantSearch,
+  SearchBox,
+  Hits,
+  Highlight,
+  Index,
+} from "react-instantsearch-dom";
 
 const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
@@ -139,7 +146,17 @@ const CuisinesCard = (props: any) => {
 const SearchCard = (props: any) => {
   const { result } = props;
   return (
-    <a></a>
+    <div>
+    <div className="name">
+      <Highlight tagName="mark" attribute="name" hit={props.hit} />
+    </div>
+    <div className="hit-description">
+      <Highlight tagName="mark" attribute="summary" hit={props.hit} />
+    </div>
+    <div className="hit-description">
+      <Highlight tagName="mark" attribute="state" hit={props.hit} />
+    </div>
+  </div>
   );
 };
 

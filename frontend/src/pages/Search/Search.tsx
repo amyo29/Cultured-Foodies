@@ -1,4 +1,5 @@
 import React from "react";
+import { SearchCard } from "../../components/Card";
 import algoliasearch from "algoliasearch/lite";
 import {
   InstantSearch,
