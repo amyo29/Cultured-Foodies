@@ -10,7 +10,7 @@ import {
 } from "react-instantsearch-dom";
 function CuisineHit(props: any) {
   return (
-    <div>
+    <div className="card">
       <div className="name">
         <Highlight tagName="mark" attribute="name" hit={props.hit}/>
       </div>
