@@ -21,32 +21,77 @@ function CityHit(props: any) {
   return (
     <div className="card">
       <div className="name">
+        <b>Full Name: </b> 
         <Highlight tagName="mark" attribute="full_name" hit={props.hit}/>
       </div>
 
       <div className="hit-description">
+      <b>Description: </b> 
         <Highlight tagName="mark" attribute="summary" hit={props.hit} />
       </div>
      
       <div className="hit-description">
+      <b>State: </b> 
         <Highlight tagName="mark" attribute="state" hit={props.hit} />
       </div>
       <div className="hit-description">
+      <b>Population: </b> 
         <Highlight tagName="mark" attribute="population" hit={props.hit} />
       </div>
 
       <div className="hit-description">
+      <b>Latitude: </b> 
         <Highlight tagName="mark" attribute="latitude" hit={props.hit} />
       </div>
 
 
       <div className="hit-description">
+      <b>Longitude: </b> 
         <Highlight tagName="mark" attribute="longitude" hit={props.hit} />
       </div>
 
       <div className="hit-description">
+      <b>Timezone: </b> 
         <Highlight tagName="mark" attribute="timezone" hit={props.hit} />
       </div>
+
+      <div className="hit-description">
+      <b>Business Freedom: </b> 
+        <Highlight tagName="mark" attribute="business_freedom" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Cost of Living: </b> 
+        <Highlight tagName="mark" attribute="cost_of_living" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Economy: </b> 
+        <Highlight tagName="mark" attribute="economy" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Housing: </b> 
+        <Highlight tagName="mark" attribute="housing" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Commute: </b> 
+        <Highlight tagName="mark" attribute="commute" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Education: </b> 
+        <Highlight tagName="mark" attribute="education" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Environmental Quality: </b> 
+        <Highlight tagName="mark" attribute="environmental_quality" hit={props.hit} />
+      </div>
+
     </div>
   );
 }
