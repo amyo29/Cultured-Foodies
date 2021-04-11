@@ -11,7 +11,7 @@ function CityHit(props: any) {
   return (
     <div>
       <div className="name">
-        <Highlight tagName="mark" attribute="name" hit={props.hit} />
+        <Highlight tagName="mark" attribute="name" hit={props.hit}/>
       </div>
       <div className="hit-description">
         <Highlight tagName="mark" attribute="summary" hit={props.hit} />
@@ -22,6 +22,18 @@ function CityHit(props: any) {
     </div>
   );
 }
+
+function RestaurantHit(props: any) {
+  return (
+    <div>
+      <div className="name">
+        <Highlight tagName="mark" attribute="name" hit={props.hit} />
+      </div>
+    </div>
+  );
+}
+
+
 
 function Search(query: any) {
   console.log("here");
@@ -47,6 +59,10 @@ function Search(query: any) {
         <Index indexName="cities">
           <h2>index: Cities</h2>
           <Hits hitComponent={CityHit} />
+        </Index>
+        <Index indexName="restaurants">
+          <h2>index: Restaurants</h2>
+          <Hits hitComponent={RestaurantHit} />
         </Index>
       </InstantSearch>
     </div>
