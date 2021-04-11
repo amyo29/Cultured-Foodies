@@ -8,6 +8,15 @@ import {
   Highlight,
   Index,
 } from "react-instantsearch-dom";
+function CuisineHit(props: any) {
+  return (
+    <div>
+      <div className="name">
+        <Highlight tagName="mark" attribute="name" hit={props.hit}/>
+      </div>
+    </div>
+  );
+}
 function CityHit(props: any) {
   return (
     <div>
@@ -56,7 +65,10 @@ function Search(query: any) {
         <div style={{ display: "none" }}>
           <SearchBox />
         </div>
-
+        <Index indexName="cuisines">
+          <h2>index: Cuisines</h2>
+          <Hits hitComponent={CuisineHit} />
+        </Index>
         <Index indexName="cities">
           <h2>index: Cities</h2>
           <Hits hitComponent={CityHit} />
