@@ -10,7 +10,7 @@ import {
 } from "react-instantsearch-dom";
 function CuisineHit(props: any) {
   return (
-    <div>
+    <div className="card">
       <div className="name">
         <Highlight tagName="mark" attribute="name" hit={props.hit}/>
       </div>
@@ -19,15 +19,33 @@ function CuisineHit(props: any) {
 }
 function CityHit(props: any) {
   return (
-    <div>
+    <div className="card">
       <div className="name">
-        <Highlight tagName="mark" attribute="name" hit={props.hit}/>
+        <Highlight tagName="mark" attribute="full_name" hit={props.hit}/>
       </div>
+
       <div className="hit-description">
         <Highlight tagName="mark" attribute="summary" hit={props.hit} />
       </div>
+     
       <div className="hit-description">
         <Highlight tagName="mark" attribute="state" hit={props.hit} />
+      </div>
+      <div className="hit-description">
+        <Highlight tagName="mark" attribute="population" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+        <Highlight tagName="mark" attribute="latitude" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+        <Highlight tagName="mark" attribute="longitude" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+        <Highlight tagName="mark" attribute="timezone" hit={props.hit} />
       </div>
     </div>
   );
@@ -35,7 +53,7 @@ function CityHit(props: any) {
 
 function RestaurantHit(props: any) {
   return (
-    <div>
+    <div className="card">
       <div className="name">
         <Highlight tagName="mark" attribute="name" hit={props.hit} />
       </div>
