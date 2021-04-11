@@ -19,7 +19,7 @@ function CuisineHit(props: any) {
 }
 function CityHit(props: any) {
   return (
-    <div>
+    <div className="card">
       <div className="name">
         <Highlight tagName="mark" attribute="name" hit={props.hit}/>
       </div>
