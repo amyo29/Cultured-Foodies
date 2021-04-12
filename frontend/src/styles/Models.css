@@ -1,6 +1,6 @@
-.row {
-    /* background-color: bisque; */
-}
+/* .row {
+
+} */
 
 .topText {
     text-align: right;
@@ -116,3 +116,63 @@
     color: red;
     text-decoration: none;
 }
+
+
+.row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-card {
+    width:"100%"; 
+    height:"auto";
+}
+
+.header-text {
+    text-shadow: 1px 1px 3px black;
+    font-size: 11rem !important;
+    color: white;
+}
+
+.header-img {    
+    align-items: center;
+    justify-content: center;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 450px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    display: block !important;
+    opacity: 0.7;
+    /* background-image: linear-gradient(rgba(0,0,0,.5),#000);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #fff;
+    font-family: "Raleway";
+    width: 100% !important;
+    height: 500px !important; */
+    
+}
+
+.a-custom {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+  
+.a-custom:hover,
+.a-custom:focus {
+text-decoration: none;
+background-size: 100% 2px;
+}
+  

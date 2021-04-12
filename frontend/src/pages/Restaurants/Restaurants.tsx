@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row, Spinner, Table } from "react-bootstrap";
+import { Card, Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { useHistory } from "react-router-dom";
 import MUIDataTable from "mui-datatables";
 import logo from "../../static_resources/dumpling.gif";
+import restImg from "../../static_resources/restaurantimg1.jpg";
 import small from "../../static_resources/smaller dumpling.gif";
 import { RestaurantInstance } from "./Restaurant";
 import { resolveConfig } from "prettier";
@@ -494,8 +495,8 @@ function Restaurants() {
 
   if (loaded) {
     return (
-      <div>
-        <Row
+      <body>
+        {/* <Row
           className="justify-content-md-center"
           style={{
             margin: 25,
@@ -535,7 +536,20 @@ function Restaurants() {
               <img src={small} alt="loading..." />
             </div>
           </Col>
-        </Row>
+        </Row> */}
+
+          <Row >
+            <Card className="header-card">
+              <Card.Img src={restImg} className="header-img"/>
+              <Card.ImgOverlay>
+                <Row  className="mt-5" style={{justifyContent:"center"}}> 
+                <Col className="text-align center">
+                <Card.Title><h1 className="header-text">Restaurants</h1></Card.Title>
+                </Col>
+                </Row>
+              </Card.ImgOverlay>
+            </Card>
+          </Row>
 
         <MUIDataTable
           title={"Restaurants"}
@@ -543,7 +557,7 @@ function Restaurants() {
           columns={columns}
           options={options}
         />
-      </div>
+      </body>
     );
   } else {
     return (

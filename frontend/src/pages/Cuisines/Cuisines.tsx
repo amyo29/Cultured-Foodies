@@ -16,6 +16,7 @@ import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import { CuisinesCard } from "../../components/Card";
 import load from "../../static_resources/spinny donut.gif";
+import headerimg from "../../static_resources/cuisineimg1.jpg";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -146,8 +147,21 @@ function Countries() {
 
   if (loaded) {
     return (
-      <div>
-        <h1 className="text-align center">Cuisines</h1>
+      <body>
+        <Row >
+            <Card className="header-card">
+              <Card.Img src={headerimg} className="header-img"/>
+              <Card.ImgOverlay>
+                <Row  className="mt-5" style={{justifyContent:"center"}}> 
+                <Col className="text-align center">
+                <Card.Title><h1 className="header-text">Cuisines</h1></Card.Title>
+                </Col>
+                </Row>
+              </Card.ImgOverlay>
+            </Card>
+          </Row>
+
+        {/* <h1 className="text-align center">Cuisines</h1> */}
         <Container>
           <DropdownButton id="dropdown-basic-button" title="Sort By">
             <Dropdown.Item onClick={() => onSort("name", true)}>
@@ -223,7 +237,7 @@ function Countries() {
         </div>
 
         {/* <Footer></Footer> */}
-      </div>
+      </body>
     );
   } else {
     return (

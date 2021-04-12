@@ -15,7 +15,7 @@ import {
   FormControl,
 } from "react-bootstrap";
 import Footer from "../../components/Footer";
-import "../../styles/Cities.css";
+import "../../styles/Models.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
