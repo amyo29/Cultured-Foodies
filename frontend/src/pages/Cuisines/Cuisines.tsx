@@ -45,7 +45,7 @@ function Countries() {
     setPageNumber(value);
   };
   const [{ data, loading, error }] = useAxios("/api/cuisines");
-  var regions = ["Europe", "Americas"];
+  var regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
   useEffect(() => {
     if (data) {
@@ -80,29 +80,35 @@ function Countries() {
     let filteredCuisines: Array<CuisineInstance> = [];
     for (var i = 0; i < cuisines.length; i++) {
       var cuisineObj = cuisines[i];
+      var regions_list: Array<String> = [];
       var matchSearchQuery = true;
       var matchFilters = true;
       ///needs to be an AND operation
-
-      console.log(cuisineObj["countryID"]);
+      var cuisineObjStr = cuisineObj["name"] + cuisineObj["country"];
+      var countriesObj = cuisineObj["countryID"]
+        .split(",")
+        .forEach(function (countryID: string) {
+          var countryObj = countries[parseInt(countryID)];
+          regions_list.push(countryObj["region"]);
+          cuisineObjStr +=
+            countryObj["capital"] +
+            countryObj["region"] +
+            countryObj["population"] +
+            countryObj["area"];
+        });
       if (searchQuery != "") {
-        console.log("cuisineObj", cuisineObj);
-        var regions: string[] = [];
-        var countriesObj = cuisineObj["countryID"]
-          .split(",")
-          .forEach(function (countryID: string) {
-            var countryObj = countries[parseInt(countryID)];
-            regions.push(countryObj["region"]);
-          });
-        // var countriesObj = cuisineObj['countryID'].split(", ").map((cID: string, i: number) => (return countries[parseInt(cID)]))
-        var cuisineObjStr = regions.join(", ");
         if (!cuisineObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
           matchSearchQuery = false;
         }
       }
-      // if ( filteringFields['states'].length !=0 && !filteringFields['states'].includes(cityObj['state']) ) {
-      //   matchFilters = false;
-      // }
+      if (filteringFields["regions"].length != 0) {
+        const intersection = regions_list.filter((x) =>
+          filteringFields["regions"].includes(x)
+        );
+        if (intersection.length == 0) {
+          matchFilters = false;
+        }
+      }
       if (matchFilters && matchSearchQuery) {
         filteredCuisines.push(cuisineObj);
       }
@@ -186,7 +192,6 @@ function Countries() {
               renderValue={(selected) => (selected as string[]).join(", ")}
               // MenuProps={MenuProps}
             >
-             
               {regions.map((name) => (
                 <MenuItem key={name} value={name}>
                   <Checkbox
@@ -198,19 +203,19 @@ function Countries() {
             </Select>
           </div>
           <Form
-                inline
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                <FormControl
-                  className="mr-sm-2"
-                  type="text"
-                  placeholder="Search Cuisines"
-                  onChange={handleSearchChange}
-                />
-                {/* <Button onClick={searchOnClick}></Button> */}
-              </Form>
+            inline
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <FormControl
+              className="mr-sm-2"
+              type="text"
+              placeholder="Search Cuisines"
+              onChange={handleSearchChange}
+            />
+            {/* <Button onClick={searchOnClick}></Button> */}
+          </Form>
           {rows.map((cols) => (
             <Row>
               {cols.map((cuisine: any, i: any) => (

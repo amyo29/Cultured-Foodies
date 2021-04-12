@@ -55,7 +55,7 @@ function Cities() {
 
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
-  var states = ["Texas", "California"];
+  var states =['Alabama', 'Alaska', 'Arizona', 'California', 'Colorado', 'Florida', 'Georgia', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maryland', 'Massachusetts', 'Michigan', 'Missouri', 'Nebraska', 'Nevada', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'Tennessee', 'Texas', 'Utah', 'Virginia', 'Washington', 'Washington, D.C.', 'Wisconsin'];
   var filterableNames = [{ name: "States", value: "states", options: states }];
   //proof of concept
   const handleChange = (event: any, value: number) => {
@@ -123,30 +123,7 @@ function Cities() {
     setDisplayedCities(filteredCities);
   }, [searchQuery, sortingField, filteringFields]);
 
-  // useEffect(() => {
-  //   //go over all the cities
-  //   //apply the search query (if  any)
-  //   //apply the filters (if anny)
-  //   //apply the sort (if any)
-  // }, [searchCities,sortingFields]);
 
-  //sort by population, search by tx, search by california
-  // let searchOnClick = () => {
-  //   let filteredCities = [];
-  //   for (var i = 0; i < cities.length; i++) {
-  //     var cityObj = cities[i];
-  //     var cityObjStr = cityObj["name"] + cityObj["state"] + cityObj["leisure_culture"] + cityObj["cost_of_living"] + cityObj['environmental_quality'] + cityObj['travel_connectivity'] + cityObj['population']
-  //     // search for text across all city attributes
-  //     if (cityObjStr.toLowerCase().includes(searchCities.toLowerCase())) {
-  //       filteredCities.push(cityObj);
-  //     }
-  //   }
-  //   if (sortingField != null) {
-  //   sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending)
-  //   }
-  //   setDisplayedCities(filteredCities);
-  // };
-  // // let filterNames =[;]
 
   let sortingFunc = (
     possibleCities: Array<CityInstance>,
@@ -161,30 +138,6 @@ function Cities() {
       }
     });
   };
-  // let onSort = (sortableField: string, ascending: boolean) => {
-  //   var copy = displayedCities.slice(0);
-  //   copy.sort(function (a: any, b: any) {
-  //     if (ascending) {
-  //       return a[sortableField] > b[sortableField] ? 1 : -1;
-  //     } else {
-  //       return a[sortableField] > b[sortableField] ? -1 : 1;
-  //     }
-  //   });
-  //   setSortingField({'name': sortableField, 'ascending': ascending})
-  //   setDisplayedCities(copy);
-  // };
-
-  // let onFilter = (filterableField: string, option: string) => {
-  //   let filteredCities: Array<CityInstance> = [];
-  //   for (var i = 0; i < cities.length; i++) {
-  //     var cityObj: CityInstance = cities[i];
-  //     console.log((cityObj as any)[filterableField])
-  //     if ((cityObj as any)[filterableField] == option) {
-  //       filteredCities.push(cityObj);
-  //     }
-  //   }
-  //   setDisplayedCities(filteredCities)
-  // };
 
   const numPerPage = 12;
   const startIndex = numPerPage * (pageNumber - 1);
@@ -355,36 +308,31 @@ function Cities() {
                 </div>
 
                 <div className="col">
-                  <DropdownButton id="dropdown-basic-button" title="Sort By">
-                    <Dropdown.Item onClick={() => onSort("name", true)}>
-                      City Name (A-Z)
-                </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("leisure_culture", false)}>
-                      Leisure and Culture Score
-                </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("cost_of_living", false)}>
-                      Cost of Living Score
-                </Dropdown.Item>
-                    <Dropdown.Item
-                      onClick={() => onSort("environmental_quality", false)}
-                    >
-                      Environmental Quality Score
-                </Dropdown.Item>
-                    <Dropdown.Item
-                      onClick={() => onSort("travel_connectivity", false)}
-                    >
-                      Travel Connectivity Score
-                </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("population", true)}>
-                      Population (asc)
-                </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("population", false)}>
-                      Population (desc)
-                </Dropdown.Item>
-                  </DropdownButton>
+              
+                <InputLabel id="demo-mutiple-checkbox-label">Filter By State</InputLabel>
+                <Select
+                  labelId="demo-mutiple-checkbox-label"
+                  id="demo-mutiple-checkbox"
+                  multiple
+                  value={filteringFields.states}
+                  onChange={onFilters}
+                  input={<Input />}
+                  renderValue={(selected) => (selected as string[]).join(", ")}
+                  placeholder="Filter by States"
+                // MenuProps={MenuProps}
+                >
+                  {states.map((name) => (
+                    <MenuItem key={name} value={name}>
+                      <Checkbox
+                        checked={filteringFields.states.indexOf(name) > -1}
+                      />
+                      <ListItemText primary={name} />
+                    </MenuItem>
+                  ))}
+                </Select>
                 </div>
               </div>
-              <div>
+              {/* <div> */}
                 {/* <FormControl>
         <InputLabel id="demo-mutiple-checkbox-label">States</InputLabel>
         <Select
@@ -405,27 +353,7 @@ function Cities() {
         </Select>
       </FormControl> */}
 
-                <InputLabel id="demo-mutiple-checkbox-label">Tag</InputLabel>
-                <Select
-                  labelId="demo-mutiple-checkbox-label"
-                  id="demo-mutiple-checkbox"
-                  multiple
-                  value={filteringFields.states}
-                  onChange={onFilters}
-                  input={<Input />}
-                  renderValue={(selected) => (selected as string[]).join(", ")}
-                // MenuProps={MenuProps}
-                >
-                  {states.map((name) => (
-                    <MenuItem key={name} value={name}>
-                      <Checkbox
-                        checked={filteringFields.states.indexOf(name) > -1}
-                      />
-                      <ListItemText primary={name} />
-                    </MenuItem>
-                  ))}
-                </Select>
-              </div>
+              {/* </div> */}
               {/* <> */}
               {/* {filterableNames.map((variant) => (
               <DropdownButton
