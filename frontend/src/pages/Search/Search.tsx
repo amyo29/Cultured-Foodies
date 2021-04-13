@@ -21,7 +21,7 @@ function CityHit(props: any) {
   return (
     <div className="card">
       <div className="name">
-        <b style="text-align:center;">Full Name: </b> 
+        <b>Full Name: </b> 
         <Highlight tagName="mark" attribute="full_name" hit={props.hit}/>
       </div>
 
