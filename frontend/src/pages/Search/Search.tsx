@@ -18,12 +18,14 @@ function CuisineHit(props: any) {
   );
 }
 function CityHit(props: any) {
+  props.hit.summary = props.hit.summary.replace(/(<([^>]+)>)/gi, "")
   return (
     <div className="card">
       <div className="name">
         <b>Full Name: </b> 
         <Highlight tagName="mark" attribute="full_name" hit={props.hit}/>
       </div>
+
 
       <div className="hit-description">
       <b>Description: </b> 
