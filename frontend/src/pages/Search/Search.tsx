@@ -66,6 +66,13 @@ function CuisineHit(props: any) {
   );
 }
 function CityHit(props: any) {
+  // console.log("before");
+  // console.log(props.hit["summary"]);
+  // var propsCopy = {"summary": props.hit["summary"].replace(/(<([^>]+)>)/gi, "")};
+  // props.hit["summary"] = props.hit["summary"].replace(/(<([^>]+)>)/gi, "");
+  // console.log(props.hit);
+  // console.log("after");
+  // console.log(props.hit["summary"]);
   return (
     <div className="card">
       <div className="name">
@@ -73,9 +80,10 @@ function CityHit(props: any) {
         <Highlight tagName="mark" attribute="full_name" hit={props.hit}/>
       </div>
 
+
       <div className="hit-description">
       <b>Description: </b> 
-        <Highlight tagName="mark" attribute="summary" hit={props.hit} />
+        <Highlight tagName="mark" attribute="summary" hit={propsCopy} />
       </div>
      
       <div className="hit-description">
@@ -139,6 +147,62 @@ function CityHit(props: any) {
       <b>Environmental Quality: </b> 
         <Highlight tagName="mark" attribute="environmental_quality" hit={props.hit} />
       </div>
+
+
+      <div className="hit-description">
+      <b>Healthcare: </b> 
+        <Highlight tagName="mark" attribute="healthcare" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Leisure and Culture: </b> 
+        <Highlight tagName="mark" attribute="leisure_culture" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Outdoors: </b> 
+        <Highlight tagName="mark" attribute="outdoors" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Safety: </b> 
+        <Highlight tagName="mark" attribute="safety" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Taxation: </b> 
+        <Highlight tagName="mark" attribute="taxation" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Travel and Connectivity: </b> 
+        <Highlight tagName="mark" attribute="travel_connectivity" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Internet Access: </b> 
+        <Highlight tagName="mark" attribute="internet_access" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Venture Capital: </b> 
+        <Highlight tagName="mark" attribute="venture_capital" hit={props.hit} />
+      </div>
+
+
+      <div className="hit-description">
+      <b>Venture Capital: </b> 
+        <Highlight tagName="mark" attribute="venture_capital" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Restaurants: </b> 
+        <Highlight tagName="mark" attribute="restaurants" hit={props.hit} />
+      </div>
+      
 
     </div>
   );
