@@ -8,11 +8,59 @@ import {
   Highlight,
   Index,
 } from "react-instantsearch-dom";
+import { DialpadSharp } from "@material-ui/icons";
 function CuisineHit(props: any) {
+  console.log(props.hit)
   return (
     <div className="card">
+      <div className="card-body align-self-start">
       <div className="name">
+      <b>Name: </b> 
         <Highlight tagName="mark" attribute="name" hit={props.hit}/>
+      </div>
+      <div className="hit-description">
+      <b>Country: </b> 
+        <Highlight tagName="mark" attribute="country" hit={props.hit}/>
+      </div>
+      <div className="hit-description">
+      <b>Cities: </b> 
+        <Highlight tagName="mark" attribute="cities" hit={props.hit}/>
+      </div>
+      <div className="hit-description">
+      <b>Restaurants: </b> 
+        <Highlight tagName="mark" attribute="restaurants" hit={props.hit}/>
+      </div>
+      <div className="hit-description">
+      <b>Description: </b> 
+        <Highlight tagName="mark" attribute="description" hit={props.hit}/>
+      </div>
+      <div className="hit-description">
+      <b>Dishes: </b> 
+          {props.hit.dishes.map((dish: any, counter: any) => (
+            <li key={counter}><Highlight tagName = "mark" attribute={`dishes[${counter}].name`} hit={props.hit} /></li>
+          ))}
+      </div>
+      <div className="hit-description">
+      <b>Country Info: </b> 
+          {props.hit.country_data.map((country: any, counter: any) => (
+            <>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].capital`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].alpha3code`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].region`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].subregion`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].latitude`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].longitude`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].area`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].population`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].borders`} hit={props.hit} /></li>
+            <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].timezones`} hit={props.hit} /></li>
+            {props.hit.country_data[counter].translations.map((translation:any, index: any) => (
+              <li key={counter}><Highlight tagName = "mark" attribute={`country_data[${counter}].translations[${index}].br`} hit={props.hit} /></li>
+            ))}
+            </>
+            
+          ))}
+      </div>
       </div>
     </div>
   );
