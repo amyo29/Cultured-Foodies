@@ -199,7 +199,7 @@ function CityHit(props: any) {
       </div>
 
       <div className="hit-description">
-        <b>Description: </b>
+      <b>Description: </b> 
         <Highlight tagName="mark" attribute="summary" hit={props.hit} />
       </div>
 
@@ -331,8 +331,65 @@ function RestaurantHit(props: any) {
   return (
     <div className="card">
       <div className="name">
+      <b>Restaurant Name: </b> 
         <Highlight tagName="mark" attribute="name" hit={props.hit} />
       </div>
+
+      <div className="hit-description">
+      <b>Phone Numbers: </b> 
+        <Highlight tagName="mark" attribute="phone_numbers" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Address: </b> 
+        <Highlight tagName="mark" attribute="address" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>City: </b> 
+        <Highlight tagName="mark" attribute="city" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Zipcode: </b> 
+        <Highlight tagName="mark" attribute="zipcode" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Highlights: </b> 
+        <Highlight tagName="mark" attribute="highlights" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Price Range: </b> 
+        <Highlight tagName="mark" attribute="price_range" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Average cost for two: </b> 
+        <Highlight tagName="mark" attribute="average_cost_for_two" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Menu URL: </b> 
+        <Highlight tagName="mark" attribute="menu_url" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Timings: </b> 
+        <Highlight tagName="mark" attribute="timings" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Citie(s): </b> 
+      <Highlight tagName="mark" attribute="city" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+      <b>Cuisine(s): </b> 
+      <Highlight tagName="mark" attribute="cuisines" hit={props.hit} />
+      </div>
+
     </div>
   );
 }
