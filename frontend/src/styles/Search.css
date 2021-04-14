@@ -12,25 +12,25 @@ content: "+ Show More";
 content: "- Show Less";
 } */
 
-  
-#module {
+
+#search-page {
   width: 500px;
 }
 
-#module a.collapsed:after {
+#search-page a.collapsed:after {
   content: '+ Show More';
 }
 
-#module a:not(.collapsed):after {
+#search-page a:not(.collapsed):after {
   content: '- Show Less';
 }
 
-#module #collapseParagraph.collapse:not(.show) {
+#search-page #collapseParagraph.collapse:not(.show) {
   display: block;
   height: 12rem;
   overflow: hidden;
 }
 
-#module #collapseParagraph.collapsing {
+#search-page #collapseParagraph.collapsing {
   height: 1.5em;
 }

@@ -14,7 +14,7 @@ import {
 import { DialpadSharp } from "@material-ui/icons";
 function CuisineHit(props: any) {
   return (
-    <div className="card" id="module" style={{ width: "40rem" }}>
+    <div className="card" id="search-page" style={{ width: "40rem" }}>
       <div className="card-body align-self-start">
         <p className="collapse" id="collapseParagraph" aria-expanded="false">
           <div className="name">
