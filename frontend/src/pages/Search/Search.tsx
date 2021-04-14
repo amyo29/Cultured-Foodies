@@ -35,7 +35,7 @@ function CityHit(props: any) {
 
       <div className="hit-description">
       <b>Description: </b> 
-        <Highlight tagName="mark" attribute="summary" hit={propsCopy} />
+        <Highlight tagName="mark" attribute="summary" hit={props.hit} />
       </div>
      
       <div className="hit-description">
