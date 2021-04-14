@@ -118,7 +118,7 @@
 }
 
 
-.row {
+/* .row {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -144,22 +144,8 @@
     margin-bottom: 0px !important;
     margin-top: 0px !important;
     display: block !important;
-    opacity: 0.7;
-    /* background-image: linear-gradient(rgba(0,0,0,.5),#000);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #fff;
-    font-family: "Raleway";
-    width: 100% !important;
-    height: 500px !important; */
-    
-}
+    opacity: 0.7;   
+} */
 
 .a-custom {
     text-decoration: none;
