@@ -92,6 +92,8 @@ const CuisinesCard = (props: any) => {
                         {countries[parseInt(cID)].capital} <br />
                         <b>Region: </b>
                         {countries[parseInt(cID)].region} <br />
+                        <b>Subregion: </b>
+                        {countries[parseInt(cID)].subregion} <br />
                         <b>Population: </b>
                         {countries[parseInt(cID)].population.toLocaleString()}
                         <br />

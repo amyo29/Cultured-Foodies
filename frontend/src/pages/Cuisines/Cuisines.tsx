@@ -36,17 +36,17 @@ function Countries() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
-  const [filteringFields, setFilteringFields] = useState<FilterableDict>({
-    regions: [],
-  });
+  const [filteringRegions, setFilteringRegions] = useState<Array<String>>([]);
+  const [filteringSubRegions, setFilteringSubRegions] = useState<Array<String>>([]);
+
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
   const [{ data, loading, error }] = useAxios("/api/cuisines");
-  var regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
-
+  var regions_options = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+  var subregions_options = ["Southern Asia","Southern Europe","Northern America","South America","Western Asia","Australia and New Zealand","Western Europe","Northern Europe", "South-Eastern Asia", "Eastern Asia","Caribbean", "Central America","Eastern Africa","Eastern Europe","Northern Africa", "Western Africa","Southern Africa", "Central Asia"]
   useEffect(() => {
     if (data) {
       setCuisines(data.cuisines);
@@ -70,17 +70,38 @@ function Countries() {
   let handleSearchChange = (event: any) => {
     setSearchQuery(event.target.value);
   };
-  const onFilters = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setFilteringFields({ regions: event.target.value as string[] });
+  const onFiltersRegion = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setFilteringRegions(event.target.value as string[]);
   };
+
+  const onFiltersSubRegion = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setFilteringSubRegions(event.target.value as string[]);
+  };
+
+
   let onSort = (sortableField: string, ascending: boolean) => {
     setSortingField({ name: sortableField, ascending: ascending });
+  };
+
+  let retrieveCountryField = (
+    cuisineObj: CuisineInstance,
+    countryField: string
+  ) => {
+    var results = [];
+    var countryIDs = cuisineObj["countryID"].split(", ");
+    for (var i = 0; i < countryIDs.length; i++) {
+      var cId = countryIDs[i];
+      results.push(countries[parseInt(cId)][countryField]);
+    }
+    return results;
   };
   useEffect(() => {
     let filteredCuisines: Array<CuisineInstance> = [];
     for (var i = 0; i < cuisines.length; i++) {
       var cuisineObj = cuisines[i];
       var regions_list: Array<String> = [];
+      var subregions_list: Array<String> =[];
+      var populations_list: Array<number> = [];
       var matchSearchQuery = true;
       var matchFilters = true;
       ///needs to be an AND operation
@@ -90,6 +111,8 @@ function Countries() {
         .forEach(function (countryID: string) {
           var countryObj = countries[parseInt(countryID)];
           regions_list.push(countryObj["region"]);
+          subregions_list.push(countryObj["subregion"]);
+          populations_list.push(countryObj["population"]);
           cuisineObjStr +=
             countryObj["capital"] +
             countryObj["region"] +
@@ -101,14 +124,24 @@ function Countries() {
           matchSearchQuery = false;
         }
       }
-      if (filteringFields["regions"].length != 0) {
+      if (filteringRegions.length != 0) {
         const intersection = regions_list.filter((x) =>
-          filteringFields["regions"].includes(x)
+          filteringRegions.includes(x)
         );
         if (intersection.length == 0) {
           matchFilters = false;
         }
       }
+      if (filteringSubRegions.length != 0 ) {
+        const subregionIntersection = subregions_list.filter((x) =>
+          filteringSubRegions.includes(x)
+        )
+        if (subregionIntersection.length == 0) {
+          matchFilters = false;
+        }
+      }
+      
+
       if (matchFilters && matchSearchQuery) {
         filteredCuisines.push(cuisineObj);
       }
@@ -122,20 +155,37 @@ function Countries() {
       );
     }
     setDisplayedCuisines(filteredCuisines);
-  }, [searchQuery, sortingField, filteringFields]);
+  }, [searchQuery, sortingField, filteringRegions, filteringSubRegions]);
 
   let sortingFunc = (
-    possibleCities: Array<CuisineInstance>,
+    possibleCuisines: Array<CuisineInstance>,
     sortableField: string,
     ascending: boolean
   ) => {
-    possibleCities.sort(function (a: any, b: any) {
-      if (ascending) {
-        return a[sortableField] > b[sortableField] ? 1 : -1;
-      } else {
-        return a[sortableField] > b[sortableField] ? -1 : 1;
-      }
-    });
+    if (sortableField == "name" || sortableField == "country") {
+      possibleCuisines.sort(function (a: any, b: any) {
+        if (ascending) {
+          return a[sortableField] > b[sortableField] ? 1 : -1;
+        } else {
+          return a[sortableField] > b[sortableField] ? -1 : 1;
+        }
+      });
+    } else {
+      //sortableField is capital
+      possibleCuisines.sort(function (a: any, b: any) {
+        var aList = retrieveCountryField(a, sortableField);
+        aList.sort();
+        var bList = retrieveCountryField(b, sortableField);
+        bList.sort();
+        var aCountryFieldMax = aList[aList.length - 1];
+        var bCountryFieldMax = bList[bList.length - 1];
+        if (ascending) {
+          return aCountryFieldMax > bCountryFieldMax ? 1 : -1;
+        } else {
+          return aCountryFieldMax > bCountryFieldMax ? -1 : 1;
+        }
+      });
+    }
   };
 
   const numPerPage = 12;
@@ -154,68 +204,114 @@ function Countries() {
   if (loaded) {
     return (
       <body>
-        <Row >
-            <Card className="header-card">
-              <Card.Img src={headerimg} className="header-img"/>
-              <Card.ImgOverlay>
-                <Row  className="mt-5" style={{justifyContent:"center"}}> 
+        <Row>
+          <Card className="header-card">
+            <Card.Img src={headerimg} className="header-img" />
+            <Card.ImgOverlay>
+              <Row className="mt-5" style={{ justifyContent: "center" }}>
                 <Col className="text-align center">
-                <Card.Title><h1 className="header-text">Cuisines</h1></Card.Title>
+                  <Card.Title>
+                    <h1 className="header-text">Cuisines</h1>
+                  </Card.Title>
                 </Col>
-                </Row>
-              </Card.ImgOverlay>
-            </Card>
-          </Row>
+              </Row>
+              <Row className="mt-4" style={{ justifyContent: "center" }}>
+                <Form
+                  inline
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  <FormControl
+                    className="mr-sm-2"
+                    type="text"
+                    placeholder="Search Cuisines"
+                    onChange={handleSearchChange}
+                  />
+                  {/* <Button onClick={searchOnClick}></Button> */}
+                </Form>
+              </Row>
+            </Card.ImgOverlay>
+          </Card>
+        </Row>
 
         {/* <h1 className="text-align center">Cuisines</h1> */}
         <Container>
-          <DropdownButton id="dropdown-basic-button" title="Sort By">
-            <Dropdown.Item onClick={() => onSort("name", true)}>
-              Cuisine Name (A-Z)
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => onSort("name", false)}>
-              Cuisine Name (Z-A)
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => onSort("country", true)}>
-              Country of Origin
-            </Dropdown.Item>
-          </DropdownButton>
-          <div>
-            <InputLabel id="demo-mutiple-checkbox-label">Tag</InputLabel>
-            <Select
-              labelId="demo-mutiple-checkbox-label"
-              id="demo-mutiple-checkbox"
-              multiple
-              value={filteringFields.regions}
-              onChange={onFilters}
-              input={<Input />}
-              renderValue={(selected) => (selected as string[]).join(", ")}
-              // MenuProps={MenuProps}
-            >
-              {regions.map((name) => (
-                <MenuItem key={name} value={name}>
-                  <Checkbox
-                    checked={filteringFields.regions.indexOf(name) > -1}
-                  />
-                  <ListItemText primary={name} />
-                </MenuItem>
-              ))}
-            </Select>
+          <div className="row" style={{ padding: 20 }}>
+            <div className="col">
+              <DropdownButton id="dropdown-basic-button" title="Sort By">
+                <Dropdown.Item onClick={() => onSort("name", true)}>
+                  Cuisine Name (A-Z)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("name", false)}>
+                  Cuisine Name (Z-A)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("country", true)}>
+                  Country of Origin
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("region", true)}>
+                  Origin Country's Region
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("capital", true)}>
+                  Origin Country's Capitals
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("population", true)}>
+                  Origin Country's Population (asc)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("area", true)}>
+                  Origin Country's Area (asc)
+                </Dropdown.Item>
+              </DropdownButton>
+            </div>
+            <div className="col">
+              <div>
+                <InputLabel id="demo-mutiple-checkbox-label">
+                  Filter by Regions
+                </InputLabel>
+                <Select
+                  labelId="demo-mutiple-checkbox-label"
+                  id="demo-mutiple-checkbox"
+                  multiple
+                  value={filteringRegions}
+                  onChange={onFiltersRegion}
+                  input={<Input />}
+                  renderValue={(selected) => (selected as string[]).join(", ")}
+                  // MenuProps={MenuProps}
+                >
+                  {regions_options.map((name) => (
+                    <MenuItem key={name} value={name}>
+                      <Checkbox checked={filteringRegions.indexOf(name) > -1} />
+                      <ListItemText primary={name} />
+                    </MenuItem>
+                  ))}
+                </Select>
+              </div>
+            </div>
+            <div className="col">
+              <div>
+                <InputLabel id="demo-mutiple-checkbox-label">
+                  Filter by Subregions
+                </InputLabel>
+                <Select
+                  labelId="demo-mutiple-checkbox-label"
+                  id="demo-mutiple-checkbox"
+                  multiple
+                  value={filteringSubRegions}
+                  onChange={onFiltersSubRegion}
+                  input={<Input />}
+                  renderValue={(selected) => (selected as string[]).join(", ")}
+                >
+                  {subregions_options.map((name) => (
+                    <MenuItem key={name} value={name}>
+                      <Checkbox checked={filteringSubRegions.indexOf(name) > -1} />
+                      <ListItemText primary={name} />
+                    </MenuItem>
+                  ))}
+                </Select>
+              </div>
+            </div>
           </div>
-          <Form
-            inline
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
-          >
-            <FormControl
-              className="mr-sm-2"
-              type="text"
-              placeholder="Search Cuisines"
-              onChange={handleSearchChange}
-            />
-            {/* <Button onClick={searchOnClick}></Button> */}
-          </Form>
+
           {rows.map((cols) => (
             <Row>
               {cols.map((cuisine: any, i: any) => (
@@ -266,7 +362,3 @@ export interface SortingAttribute {
   ascending: boolean;
 }
 
-export interface FilterableDict {
-  regions: Array<String>;
-  // values: Array<String>;
-}
