@@ -3,7 +3,7 @@ import { SearchCard } from "../../components/Card";
 import algoliasearch from "algoliasearch/lite";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "C:/Users/visha/OneDrive/Desktop/CS-373/cultured-foodies/frontend/src/styles/Search.css";
+import "../../styles/Search.css";
 import {
   InstantSearch,
   SearchBox,
@@ -307,11 +307,6 @@ function CityHit(props: any) {
       <div className="hit-description">
         <b>Internet Access: </b>
         <Highlight tagName="mark" attribute="internet_access" hit={props.hit} />
-      </div>
-
-      <div className="hit-description">
-        <b>Venture Capital: </b>
-        <Highlight tagName="mark" attribute="venture_capital" hit={props.hit} />
       </div>
 
       <div className="hit-description">
