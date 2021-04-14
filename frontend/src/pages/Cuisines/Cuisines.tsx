@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CSS from 'csstype';
 import {
   Container,
   Row,
@@ -201,35 +202,57 @@ function Countries() {
     rows.push(currentData.slice(i, i + chunk));
   }
 
+  const headerImgStyle: CSS.Properties = {
+    alignItems: 'center',
+    justifyContent: 'center',
+    objectFit: 'cover',
+    width: '100%',
+    height: '450px',
+    marginBottom: "0px",
+    marginTop: "0px",
+    display: "block",
+    opacity: "0.7",   
+  };
+
+  const headerTextStyle: CSS.Properties = {
+    textShadow: '1px 1px 3px black',
+    fontSize: '11rem',
+    color: 'white',
+    width: '100%', 
+  };
+
+  const headerCardStyle: CSS.Properties = {
+    width:"100%", 
+    height:"auto",
+  };
+
+  const rowStyle: CSS.Properties = {
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   if (loaded) {
     return (
       <body>
+        
         <Row>
-          <Card className="header-card">
-            <Card.Img src={headerimg} className="header-img" />
+          <Card style={headerCardStyle}>
+            <Card.Img src={headerimg} style={headerImgStyle}/>
             <Card.ImgOverlay>
-              <Row className="mt-5" style={{ justifyContent: "center" }}>
+              <Row className="mt-5" style={rowStyle}>
                 <Col className="text-align center">
                   <Card.Title>
-                    <h1 className="header-text">Cuisines</h1>
+                    <h1 style={headerTextStyle}>Cuisines</h1>
                   </Card.Title>
                 </Col>
               </Row>
-              <Row className="mt-4" style={{ justifyContent: "center" }}>
-                <Form
-                  inline
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                  }}
-                >
-                  <FormControl
-                    className="mr-sm-2"
-                    type="text"
-                    placeholder="Search Cuisines"
-                    onChange={handleSearchChange}
-                  />
-                  {/* <Button onClick={searchOnClick}></Button> */}
-                </Form>
+              <Row>
+                <Col className="text-align center">
+                  <Card.Text>
+                    <h4>Cuisines</h4>
+                  </Card.Text>
+                </Col>
               </Row>
             </Card.ImgOverlay>
           </Card>
@@ -237,6 +260,23 @@ function Countries() {
 
         {/* <h1 className="text-align center">Cuisines</h1> */}
         <Container>
+          <div className="col">
+            <Form
+              inline
+              onSubmit={(e) => {
+                e.preventDefault();
+              }}
+            >
+              <FormControl
+                className="mr-sm-2"
+                type="text"
+                placeholder="Search Cuisines"
+                onChange={handleSearchChange}
+              />
+              {/* <Button onClick={searchOnClick}></Button> */}
+            </Form>
+          </div>
+
           <div className="row" style={{ padding: 20 }}>
             <div className="col">
               <DropdownButton id="dropdown-basic-button" title="Sort By">
