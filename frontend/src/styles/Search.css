@@ -1,0 +1,36 @@
+/* #module {
+    width: 500px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+  
+#module a.collapsed:after {
+content: "+ Show More";
+}
+
+#module a:not(.collapsed):after {
+content: "- Show Less";
+} */
+
+  
+#module {
+  width: 500px;
+}
+
+#module a.collapsed:after {
+  content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+  content: '- Show Less';
+}
+
+#module #collapseParagraph.collapse:not(.show) {
+  display: block;
+  height: 12rem;
+  overflow: hidden;
+}
+
+#module #collapseParagraph.collapsing {
+  height: 1.5em;
+}
