@@ -109,7 +109,8 @@ class Tests(TestCase):
         }
 
     def test_one_cuisine(self):
-        result = requests.get("https://www.culturedfoodies.me/api/cuisines/id=7")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/cuisines/id=7")
         assert result.status_code == 200
         jsonRes = result.json()
         assert jsonRes == {
@@ -207,7 +208,8 @@ class Tests(TestCase):
         }
 
     def test_not_found_cuisine(self):
-        result = requests.get("https://www.culturedfoodies.me/api/cuisines/id=111")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/cuisines/id=111")
         assert result.status_code == 404
         jsonRes = result.json()
         assert jsonRes == {"error": "111 not found"}
@@ -249,7 +251,8 @@ class Tests(TestCase):
         }
 
     def test_one_restaurant(self):
-        result = requests.get("https://www.culturedfoodies.me/api/restaurants/id=111")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/restaurants/id=111")
         assert result.status_code == 200
         jsonRes = result.json()
         assert jsonRes == {
@@ -276,7 +279,8 @@ class Tests(TestCase):
         }
 
     def test_not_found_restaurant(self):
-        result = requests.get("https://www.culturedfoodies.me/api/restaurants/id=5555")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/restaurants/id=5555")
         assert result.status_code == 404
         jsonRes = result.json()
         assert jsonRes == {"error": "5555 not found"}
@@ -317,16 +321,19 @@ class Tests(TestCase):
             "restaurant_ids": "3373",
             "restaurants": "Speisekammer",
             "safety": 5.7155000000000005,
+            "startups": 10,
             "state": "California",
             "summary": "<p>San Francisco Bay Area, California, is among the leading cities with a <b>higher number of accelerators or available funding</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>startups</b>, <b>business freedom</b> and <b>healthcare</b>.\n    \n\n    \n</p>\n\n\n    <p>San Francisco Bay Area is one of the top ten city matches for 6.9% of Teleport users.</p>",
             "taxation": 4.488,
             "timezone": "America/Los_Angeles",
+            "tolerance": 8.012500000000001,
             "travel_connectivity": 3.6545000000000005,
-            "venture_capital": 10,
+            "venture_capital": 10
         }
 
     def test_one_city(self):
-        result = requests.get("https://www.culturedfoodies.me/api/cities/id=111")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/cities/id=111")
         assert result.status_code == 200
         jsonRes = result.json()
         assert jsonRes == {
@@ -354,16 +361,19 @@ class Tests(TestCase):
             "restaurant_ids": "80, 199, 220, 250, 319, 371, 603, 697, 757, 763, 780, 1003, 1029, 1088, 1644, 1732, 1765, 1807, 2254, 2365, 2473, 2497, 2512, 2545, 2602, 2613, 2616, 2635, 2645, 2680, 2786, 2834, 2854, 2890, 2954, 2990, 3185, 3352, 3478, 3498, 3499, 3607, 3787, 4099, 4198, 4211, 4347, 4377, 4408, 4412, 4633, 4642, 4645, 4675, 4688, 4831, 4844, 4905, 5042, 5044, 5055, 5127, 5160, 5185, 5340",
             "restaurants": "Moto Cucina + Enoteca, Puckett's Grocery & Restaurant, Amerigo Italian Restaurant, The Old Spaghetti Factory, The Southern Steak & Oyster, Joey's House of Pizza, Amerigo Italian Restaurant, Sole Mio, Porta Via Italian Kitchen, Campione's Taste of Chicago, Red Bicycle Coffee & Crêpes, San Antonio Taco Company, Sky Blue Cafe, City House, DeSano Pizza Bakery, McNamara's Irish Pub & Restaurant, Thai Phooket, Mama Mia's, Hattie B's Hot Chicken, M.L. Rose Craft Beer & Burgers, Miel Restaurant, Loveless Cafe, NY Pie, PM, Angelo's Picnic Pizza, Marché Artisan Foods, The Wild Cow, Prince's Hot Chicken Shack, Taco Mamacita, Coco's Italian Market, Puckett's Grocery & Restaurant, Jacks Bar-B-Que, Carrabba's Italian Grill, Rolf and Daughters, Pancake Pantry, Rosepepper Cantina, Antonio's of Nashville, Marina's on the Square, Caffé Nonna, The Smiling Elephant, Arnold's Country Kitchen, Carrabba's Italian Grill, Tin Angel Restaurant, Valentino's Ristorante, Burger Up, Gondola House Pizzeria, Husk, Demos' Steak and Spaghetti House, Demos Steak & Spaghetti House, Monell's Restaurant, Mas Tacos Por Favor, Molinari's, Sauce, Zolo's Italian Restaurant, MAFIAoZA'S (Nashville), Cafe Coco, Whiskey Kitchen, Manny's House of Pizza, Buca di Beppo Italian Restaurant, Adele's, Mirko Pasta, Maggiano's Little Italy, Bella Napoli Pizzeria, Edley's Bar-B-Que, Fido",
             "safety": 5.078,
+            "startups": 6.0600000000000005,
             "state": "Tennessee",
             "summary": "<p>Nashville, Tennessee, is among the top cities with a <b>free business environment</b>.\n\n    \n        According to our city rankings, this is a good place to live with high ratings in <b>healthcare</b>, <b>environmental quality</b> and <b>internet access</b>.\n    \n\n    \n</p>\n\n\n    <p>Nashville is one of the top ten city matches for 0.3% of Teleport users.</p>",
             "taxation": 4.772,
             "timezone": "America/Chicago",
+            "tolerance": 6.807500000000001,
             "travel_connectivity": 1.9080000000000004,
-            "venture_capital": 3.569,
+            "venture_capital": 3.569
         }
 
     def test_not_found_city(self):
-        result = requests.get("https://www.culturedfoodies.me/api/cities/id=-1")
+        result = requests.get(
+            "https://www.culturedfoodies.me/api/cities/id=-1")
         assert result.status_code == 404
         jsonRes = result.json()
         assert jsonRes == {"error": "-1 not found"}
