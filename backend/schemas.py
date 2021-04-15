@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_marshmallow import Marshmallow
 from marshmallow import fields
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(
     __name__,
@@ -16,6 +17,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = (
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.debug = True
 
+db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 # SCHEMAS
@@ -52,7 +54,7 @@ class CitySchema(ma.Schema):
     imagesweb = fields.Str(required=False)
     housing = fields.Float(required=False)
     cost_of_living = fields.Float(required=False)
-    startsup = fields.Float(required=False)
+    startups = fields.Float(required=False)
     venture_capital = fields.Float(required=False)
     travel_connectivity = fields.Float(required=False)
     commute = fields.Float(required=False)
@@ -65,7 +67,7 @@ class CitySchema(ma.Schema):
     taxation = fields.Float(required=False)
     internet_access = fields.Float(required=False)
     leisure_culture = fields.Float(required=False)
-    tolerence = fields.Float(required=False)
+    tolerance = fields.Float(required=False)
     outdoors = fields.Float(required=False)
     summary = fields.Str(required=False)
     cuisine_ids = fields.Str(required=False)

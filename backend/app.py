@@ -19,6 +19,8 @@ from schemas import (
 
 # NOTE: This route is needed for the default EB health check route
 # Routing to frontend/build/index.html
+
+
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def home(path):

@@ -47,6 +47,10 @@ python-unit-tests:
 	echo "Running Python unit tests..."
 	python3 backend/tests.py
 
+python-mock-db-unit-tests:
+	echo "Running Python mock db unit tests..."
+	python3 backend/mockdbtests.py
+
 selenium-tests:
 	echo "Running Selenium tests..."
 	python3 frontend/selenium_tests.py
