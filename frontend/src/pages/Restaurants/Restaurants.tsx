@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CSS from 'csstype';
 import { Card, Col, Container, Row, Spinner, Table } from "react-bootstrap";
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
@@ -493,6 +494,42 @@ function Restaurants() {
     },
   };
 
+  const headerImgStyle: CSS.Properties = {
+    alignItems: 'center',
+    justifyContent: 'center',
+    objectFit: 'cover',
+    width: '100%',
+    height: '450px',
+    marginBottom: "0px",
+    marginTop: "0px",
+    display: "block",
+    opacity: "0.7",   
+  };
+
+  const headerTextStyle: CSS.Properties = {
+    textShadow: '1px 1px 3px black',
+    fontSize: '11rem',
+    color: 'white',
+    width: '100%', 
+  };
+
+  const headerCardStyle: CSS.Properties = {
+    width:"100%", 
+    height:"auto",
+  };
+
+  const rowStyle: CSS.Properties = {
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
+  const subtitleTextStyle: CSS.Properties = {
+    textShadow: '1px 1px 3px black',
+    color: 'white',
+    width: '100%', 
+  };
+
   if (loaded) {
     return (
       <body>
@@ -539,14 +576,19 @@ function Restaurants() {
         </Row> */}
 
           <Row >
-            <Card className="header-card">
-              <Card.Img src={restImg} className="header-img"/>
+          <Card style={headerCardStyle}>
+              <Card.Img src={restImg} style={headerImgStyle}/>
               <Card.ImgOverlay>
-                <Row  className="mt-5" style={{justifyContent:"center"}}> 
-                <Col className="text-align center">
-                <Card.Title><h1 className="header-text">Restaurants</h1></Card.Title>
-                </Col>
-                </Row>
+              <Row className="mt-4" style={rowStyle}>
+                  <Card.Title>
+                    <h1 style={headerTextStyle}>Restaurants</h1>
+                  </Card.Title>
+              </Row>
+              <Row style={rowStyle} className="mt-5">
+                  <Card.Subtitle style={subtitleTextStyle}>
+                    <h4>Learn more about your favorite cuisines below!</h4>
+                  </Card.Subtitle>
+              </Row>
               </Card.ImgOverlay>
             </Card>
           </Row>

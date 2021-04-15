@@ -250,12 +250,28 @@ function Countries() {
           <Card style={headerCardStyle}>
             <Card.Img src={headerimg} style={headerImgStyle}/>
             <Card.ImgOverlay>
-              <Row className="mt-5" style={rowStyle}>
+              <Row className="mt-4" style={rowStyle}>
                   <Card.Title>
                     <h1 style={headerTextStyle}>Cuisines</h1>
                   </Card.Title>
               </Row>
               <Row style={rowStyle}>
+                <Form
+                inline
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                <FormControl
+                  className="mr-sm-2"
+                  type="text"
+                  placeholder="Search Cuisines"
+                  onChange={handleSearchChange}
+                />
+                {/* <Button onClick={searchOnClick}></Button> */}
+                </Form>
+              </Row>
+              <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
                     <h4>Learn more about your favorite cuisines below!</h4>
                   </Card.Subtitle>
@@ -267,24 +283,8 @@ function Countries() {
         {/* <h1 className="text-align center">Cuisines</h1> */}
         { loadedCards ? (
           <>
+          
         <Container>
-          <div className="col">
-            <Form
-              inline
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
-            >
-              <FormControl
-                className="mr-sm-2"
-                type="text"
-                placeholder="Search Cuisines"
-                onChange={handleSearchChange}
-              />
-              {/* <Button onClick={searchOnClick}></Button> */}
-            </Form>
-          </div>
-
           <div className="row" style={{ padding: 20 }}>
             <div className="col">
               <DropdownButton id="dropdown-basic-button" title="Sort By">

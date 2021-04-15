@@ -3,19 +3,18 @@ import styles from "../../styles/SplashVertical.module.css"
 
 import { BsCaretDownFill } from "react-icons/bs";
 import Models from "./Models";
+import CSS from 'csstype';
 
 function SplashVertical(){
-    function click(){
-        window.scrollTo({top:650, left: 0, behavior:'smooth'});
-    }
+    // function click(){
+    //     window.scrollTo({top: 700, left: 0, behavior: 'smooth'});
+    // }
 
+    
     const myRef = useRef<HTMLDivElement>(null)
 
     // const executeScroll = () => myRef.current.scrollIntoView()  
-
     return (
-
-        
 
         <div className={styles.splashPage}>
 			<div className={styles.splash}>
@@ -32,10 +31,10 @@ function SplashVertical(){
 					</div>
 
                     <div className={styles.arrow}>  
-                    
+                    <a href="#target">
                        {/* <BsCaretDown size={75} onClick={()=>click()}/> */}
-                       <BsCaretDownFill size={75} />     
-
+                       <BsCaretDownFill size={75}/>     
+                    </a>
                     </div>
 
                     <div ref={myRef} className={styles.purpose}>
@@ -48,7 +47,7 @@ function SplashVertical(){
 
                     <div className={styles.body}>
                         
-                        
+                         <a id="target"></a>
                         <Models />
                     </div>
 

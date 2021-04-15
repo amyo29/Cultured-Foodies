@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CSS from 'csstype';
+import { BsCaretDown } from "react-icons/bs";
 import {
   Container,
   Row,
@@ -238,13 +239,12 @@ function Cities() {
     rows.push(currentData.slice(i, i + chunk));
   }
 
-
   const headerImgStyle: CSS.Properties = {
     alignItems: 'center',
     justifyContent: 'center',
     objectFit: 'cover',
     width: '100%',
-    height: '450px',
+    height: '500px',
     marginBottom: "0px",
     marginTop: "0px",
     display: "block",
@@ -275,7 +275,10 @@ function Cities() {
     width: '100%', 
   };
 
-  
+  const buttonStyle: CSS.Properties = {
+    color: "white",
+    opacity: "0.7", 
+  }
 
   if (loaded) {
     return (
@@ -285,17 +288,39 @@ function Cities() {
           <Card style={headerCardStyle}>
               <Card.Img src={citiesImg} style={headerImgStyle}/>
               <Card.ImgOverlay>
-                <Row className="mt-5" style={rowStyle}>
+                <Row className="mt-4" style={rowStyle}>
                   <Col className="text-align center">
                   <Card.Title>
                     <h1 style={headerTextStyle}>Cities</h1>
                   </Card.Title>
                   </Col>
                 </Row>
-                <Row style={rowStyle}>
+                
+              <Row style={rowStyle}> 
+                <Form
+                  inline
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  <FormControl
+                    className="mr-sm-2"
+                    type="text"
+                    placeholder="Search Cuisines"
+                    onChange={handleSearchChange}
+                  />
+                  {/* <Button onClick={searchOnClick}></Button> */}
+                </Form>
+              </Row>
+              <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
                     <h4>Learn more about your favorite cities below!</h4>
                   </Card.Subtitle>
+              </Row>
+              <Row style={rowStyle} >
+                <a href="#top" className="center-text">
+                  <BsCaretDown size={75} style={buttonStyle}/>
+                </a>
               </Row>
               </Card.ImgOverlay>
             </Card>
@@ -303,25 +328,8 @@ function Cities() {
 
           <div>
             {/* <h1 className="text-align center">Cities</h1> */}
-            <a id="target1"></a>
+            <a id="top"></a>
             <Container>
-              <div className="col">
-              <Form
-                inline
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                <FormControl
-                  className="mr-sm-2"
-                  type="text"
-                  placeholder="Search Cuisines"
-                  onChange={handleSearchChange}
-                />
-                {/* <Button onClick={searchOnClick}></Button> */}
-              </Form>
-            </div>
-
               <div className="row" style={{ padding: 20 }}>
                 <div className="col">
                   <DropdownButton id="dropdown-basic-button" title="Sort By">
