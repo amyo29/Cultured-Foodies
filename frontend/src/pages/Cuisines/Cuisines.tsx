@@ -295,19 +295,34 @@ function Countries() {
                   Cuisine Name (Z-A)
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => onSort("country", true)}>
-                  Country of Origin
+                  Country of Origin (A-Z)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("country", false)}>
+                  Country of Origin (Z-A )
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => onSort("region", true)}>
-                  Origin Country's Region
+                  Origin Country's Region (A-Z)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("region", false)}>
+                  Origin Country's Region (Z-A)
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => onSort("capital", true)}>
-                  Origin Country's Capitals
+                  Origin Country's Capitals (A-Z)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("capital", false)}>
+                  Origin Country's Capitals (Z-A)
                 </Dropdown.Item>
                 <Dropdown.Item onClick={() => onSort("population", true)}>
                   Origin Country's Population (asc)
                 </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("population", false)}>
+                  Origin Country's Population (dsc)
+                </Dropdown.Item>
                 <Dropdown.Item onClick={() => onSort("area", true)}>
                   Origin Country's Area (asc)
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => onSort("area",false)}>
+                  Origin Country's Area (dsc)
                 </Dropdown.Item>
               </DropdownButton>
             </div>

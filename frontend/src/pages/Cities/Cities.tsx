@@ -201,7 +201,6 @@ function Cities() {
         }
       }
 
-
       if (matchFilters && matchSearchQuery && matchLeisure && matchCost) {
         filteredCities.push(cityObj);
       }
@@ -210,7 +209,13 @@ function Cities() {
       sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending);
     }
     setDisplayedCities(filteredCities);
-  }, [searchQuery, sortingField, filteringStates, filteringLeisure, filteringCost]);
+  }, [
+    searchQuery,
+    sortingField,
+    filteringStates,
+    filteringLeisure,
+    filteringCost,
+  ]);
 
   let sortingFunc = (
     possibleCities: Array<CityInstance>,
@@ -336,31 +341,54 @@ function Cities() {
                     <Dropdown.Item onClick={() => onSort("name", true)}>
                       City Name (A-Z)
                     </Dropdown.Item>
+                    <Dropdown.Item onClick={() => onSort("name", false)}>
+                      City Name (Z-A)
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("leisure_culture", true)}
+                    >
+                      Leisure and Culture Score (asc)
+                    </Dropdown.Item>
                     <Dropdown.Item
                       onClick={() => onSort("leisure_culture", false)}
                     >
-                      Leisure and Culture Score
+                      Leisure and Culture Score (dsc)
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("cost_of_living", true)}
+                    >
+                      Cost of Living Score (asc)
                     </Dropdown.Item>
                     <Dropdown.Item
                       onClick={() => onSort("cost_of_living", false)}
                     >
-                      Cost of Living Score
+                      Cost of Living Score (dsc)
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("environmental_quality", true)}
+                    >
+                      Environmental Quality Score (asc)
                     </Dropdown.Item>
                     <Dropdown.Item
                       onClick={() => onSort("environmental_quality", false)}
                     >
-                      Environmental Quality Score
+                      Environmental Quality Score (dsc)
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => onSort("travel_connectivity", true)}
+                    >
+                      Travel Connectivity Score (asc)
                     </Dropdown.Item>
                     <Dropdown.Item
                       onClick={() => onSort("travel_connectivity", false)}
                     >
-                      Travel Connectivity Score
+                      Travel Connectivity Score (dsc)
                     </Dropdown.Item>
                     <Dropdown.Item onClick={() => onSort("population", true)}>
                       Population (asc)
                     </Dropdown.Item>
                     <Dropdown.Item onClick={() => onSort("population", false)}>
-                      Population (desc)
+                      Population (dsc)
                     </Dropdown.Item>
                   </DropdownButton>
                 </div>
@@ -435,9 +463,7 @@ function Cities() {
                   >
                     {costscore.map((name) => (
                       <MenuItem key={name} value={name}>
-                        <Checkbox
-                          checked={filteringCost.indexOf(name) > -1}
-                        />
+                        <Checkbox checked={filteringCost.indexOf(name) > -1} />
                         <ListItemText primary={name} />
                       </MenuItem>
                     ))}
