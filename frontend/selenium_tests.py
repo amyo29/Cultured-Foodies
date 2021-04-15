@@ -249,7 +249,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.implicitly_wait(30)
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/body/div/div/div[2]/div/div/div"
+            "/html/body/div/div/div[2]/div/body/div/div/div/div/div/h5"
         )[0].text
         assert textVal == "Indian Street Cafe"
 
