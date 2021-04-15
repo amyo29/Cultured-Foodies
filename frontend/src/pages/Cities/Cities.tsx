@@ -91,9 +91,13 @@ function Cities() {
     "Wisconsin",
   ];
   var leisurescore = ["0-3", "3-6", "6-10"];
+  var costscore = ["0-3", "3-6", "6-10"];
+
   var filterableNames = [{ name: "States", value: "states", options: states }];
   const [filteringStates, setFilteringStates] = useState<Array<String>>([]);
   const [filteringLeisure, setFilteringLeisure] = useState<Array<String>>([]);
+  const [filteringCost, setFilteringCost] = useState<Array<String>>([]);
+
   //proof of concept
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
@@ -121,6 +125,10 @@ function Cities() {
   const onFiltersLeisure = (event: React.ChangeEvent<{ value: unknown }>) => {
     setFilteringLeisure(event.target.value as string[]);
   };
+
+  const onFiltersCost = (event: React.ChangeEvent<{ value: unknown }>) => {
+    setFilteringCost(event.target.value as string[]);
+  };
   let onSort = (sortableField: string, ascending: boolean) => {
     setSortingField({ name: sortableField, ascending: ascending });
   };
@@ -132,6 +140,7 @@ function Cities() {
       var matchSearchQuery = true;
       var matchFilters = true;
       var matchLeisure = true;
+      var matchCost = true;
 
       ///needs to be an AND operation
       if (searchQuery != "") {
@@ -174,7 +183,24 @@ function Cities() {
           }
         }
       }
-      if (matchFilters && matchSearchQuery && matchLeisure) {
+      if (filteringCost.length != 0) {
+        matchCost = false;
+
+        for (let i = 0; i < filteringCost.length; i++) {
+          var costRange = filteringCost[i].split("-");
+          var low = parseFloat(costRange[0]);
+          var high = parseFloat(costRange[1]);
+          if (
+            low <= cityObj["cost_of_living"] &&
+            cityObj["cost_of_living"] < high
+          ) {
+            matchCost = true;
+          }
+        }
+      }
+
+
+      if (matchFilters && matchSearchQuery && matchLeisure && matchCost) {
         filteredCities.push(cityObj);
       }
     }
@@ -182,7 +208,7 @@ function Cities() {
       sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending);
     }
     setDisplayedCities(filteredCities);
-  }, [searchQuery, sortingField, filteringStates, filteringLeisure]);
+  }, [searchQuery, sortingField, filteringStates, filteringLeisure, filteringCost]);
 
   let sortingFunc = (
     possibleCities: Array<CityInstance>,
@@ -330,6 +356,32 @@ function Cities() {
                       <MenuItem key={name} value={name}>
                         <Checkbox
                           checked={filteringLeisure.indexOf(name) > -1}
+                        />
+                        <ListItemText primary={name} />
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </div>
+                <div className="col">
+                  <InputLabel id="demo-mutiple-checkbox-label">
+                    Filter By Cost of Living
+                  </InputLabel>
+                  <Select
+                    labelId="demo-mutiple-checkbox-label"
+                    id="demo-mutiple-checkbox"
+                    multiple
+                    value={filteringCost}
+                    onChange={onFiltersCost}
+                    input={<Input />}
+                    renderValue={(selected) =>
+                      (selected as string[]).join(", ")
+                    }
+                    // MenuProps={MenuProps}
+                  >
+                    {costscore.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        <Checkbox
+                          checked={filteringCost.indexOf(name) > -1}
                         />
                         <ListItemText primary={name} />
                       </MenuItem>

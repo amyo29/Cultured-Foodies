@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CSS from 'csstype';
+import CSS from "csstype";
 import {
   Container,
   Row,
@@ -38,7 +38,9 @@ function Countries() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
   const [filteringRegions, setFilteringRegions] = useState<Array<String>>([]);
-  const [filteringSubRegions, setFilteringSubRegions] = useState<Array<String>>([]);
+  const [filteringSubRegions, setFilteringSubRegions] = useState<Array<String>>(
+    []
+  );
 
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
@@ -47,7 +49,26 @@ function Countries() {
   };
   const [{ data, loading, error }] = useAxios("/api/cuisines");
   var regions_options = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
-  var subregions_options = ["Southern Asia","Southern Europe","Northern America","South America","Western Asia","Australia and New Zealand","Western Europe","Northern Europe", "South-Eastern Asia", "Eastern Asia","Caribbean", "Central America","Eastern Africa","Eastern Europe","Northern Africa", "Western Africa","Southern Africa", "Central Asia"]
+  var subregions_options = [
+    "Southern Asia",
+    "Southern Europe",
+    "Northern America",
+    "South America",
+    "Western Asia",
+    "Australia and New Zealand",
+    "Western Europe",
+    "Northern Europe",
+    "South-Eastern Asia",
+    "Eastern Asia",
+    "Caribbean",
+    "Central America",
+    "Eastern Africa",
+    "Eastern Europe",
+    "Northern Africa",
+    "Western Africa",
+    "Southern Africa",
+    "Central Asia",
+  ];
   useEffect(() => {
     if (data) {
       setCuisines(data.cuisines);
@@ -79,7 +100,6 @@ function Countries() {
     setFilteringSubRegions(event.target.value as string[]);
   };
 
-
   let onSort = (sortableField: string, ascending: boolean) => {
     setSortingField({ name: sortableField, ascending: ascending });
   };
@@ -101,7 +121,7 @@ function Countries() {
     for (var i = 0; i < cuisines.length; i++) {
       var cuisineObj = cuisines[i];
       var regions_list: Array<String> = [];
-      var subregions_list: Array<String> =[];
+      var subregions_list: Array<String> = [];
       var populations_list: Array<number> = [];
       var matchSearchQuery = true;
       var matchFilters = true;
@@ -133,15 +153,14 @@ function Countries() {
           matchFilters = false;
         }
       }
-      if (filteringSubRegions.length != 0 ) {
+      if (filteringSubRegions.length != 0) {
         const subregionIntersection = subregions_list.filter((x) =>
           filteringSubRegions.includes(x)
-        )
+        );
         if (subregionIntersection.length == 0) {
           matchFilters = false;
         }
       }
-      
 
       if (matchFilters && matchSearchQuery) {
         filteredCuisines.push(cuisineObj);
@@ -203,27 +222,27 @@ function Countries() {
   }
 
   const headerImgStyle: CSS.Properties = {
-    alignItems: 'center',
-    justifyContent: 'center',
-    objectFit: 'cover',
-    width: '100%',
-    height: '450px',
+    alignItems: "center",
+    justifyContent: "center",
+    objectFit: "cover",
+    width: "100%",
+    height: "450px",
     marginBottom: "0px",
     marginTop: "0px",
     display: "block",
-    opacity: "0.7",   
+    opacity: "0.7",
   };
 
   const headerTextStyle: CSS.Properties = {
-    textShadow: '1px 1px 3px black',
-    fontSize: '11rem',
-    color: 'white',
-    width: '100%', 
+    textShadow: "1px 1px 3px black",
+    fontSize: "11rem",
+    color: "white",
+    width: "100%",
   };
 
   const headerCardStyle: CSS.Properties = {
-    width:"100%", 
-    height:"auto",
+    width: "100%",
+    height: "auto",
   };
 
   const rowStyle: CSS.Properties = {
@@ -235,10 +254,9 @@ function Countries() {
   if (loaded) {
     return (
       <body>
-        
         <Row>
           <Card style={headerCardStyle}>
-            <Card.Img src={headerimg} style={headerImgStyle}/>
+            <Card.Img src={headerimg} style={headerImgStyle} />
             <Card.ImgOverlay>
               <Row className="mt-5" style={rowStyle}>
                 <Col className="text-align center">
@@ -247,12 +265,21 @@ function Countries() {
                   </Card.Title>
                 </Col>
               </Row>
-              <Row>
-                <Col className="text-align center">
-                  <Card.Text>
-                    <h4>Cuisines</h4>
-                  </Card.Text>
-                </Col>
+              <Row className="mt-4" style={{ justifyContent: "center" }}>
+                <Form
+                  inline
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  <FormControl
+                    className="mr-sm-2"
+                    type="text"
+                    placeholder="Search Cuisines"
+                    onChange={handleSearchChange}
+                  />
+                  {/* <Button onClick={searchOnClick}></Button> */}
+                </Form>
               </Row>
             </Card.ImgOverlay>
           </Card>
@@ -260,23 +287,6 @@ function Countries() {
 
         {/* <h1 className="text-align center">Cuisines</h1> */}
         <Container>
-          <div className="col">
-            <Form
-              inline
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
-            >
-              <FormControl
-                className="mr-sm-2"
-                type="text"
-                placeholder="Search Cuisines"
-                onChange={handleSearchChange}
-              />
-              {/* <Button onClick={searchOnClick}></Button> */}
-            </Form>
-          </div>
-
           <div className="row" style={{ padding: 20 }}>
             <div className="col">
               <DropdownButton id="dropdown-basic-button" title="Sort By">
@@ -343,7 +353,9 @@ function Countries() {
                 >
                   {subregions_options.map((name) => (
                     <MenuItem key={name} value={name}>
-                      <Checkbox checked={filteringSubRegions.indexOf(name) > -1} />
+                      <Checkbox
+                        checked={filteringSubRegions.indexOf(name) > -1}
+                      />
                       <ListItemText primary={name} />
                     </MenuItem>
                   ))}
@@ -401,4 +413,3 @@ export interface SortingAttribute {
   name: string;
   ascending: boolean;
 }
-
