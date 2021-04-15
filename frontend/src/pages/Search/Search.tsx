@@ -291,8 +291,18 @@ function CityHit(props: any) {
       </div>
 
       <div className="hit-description">
+        <b>Startups: </b>
+        <Highlight tagName="mark" attribute="startups" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
         <b>Taxation: </b>
         <Highlight tagName="mark" attribute="taxation" hit={props.hit} />
+      </div>
+
+      <div className="hit-description">
+        <b>Tolerance: </b>
+        <Highlight tagName="mark" attribute="tolerance" hit={props.hit} />
       </div>
 
       <div className="hit-description">

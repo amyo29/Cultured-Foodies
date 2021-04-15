@@ -182,10 +182,24 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
+                  <td scope="row">Startups</td>
+                  <td>
+                    {city?.safety ? parseFloat(city?.startups.toFixed(4)) : " "}
+                  </td>
+                </tr>
+                <tr>
                   <td scope="row">Taxation</td>
                   <td>
                     {city?.taxation
                       ? parseFloat(city?.taxation.toFixed(4))
+                      : " "}
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Tolerance</td>
+                  <td>
+                    {city?.taxation
+                      ? parseFloat(city?.tolerance.toFixed(4))
                       : " "}
                   </td>
                 </tr>
@@ -320,8 +334,10 @@ export interface CityInstance {
   outdoors: number;
   population: number;
   safety: number;
+  startups: number;
   state: string;
   taxation: number;
+  tolerance: number;
   timezone: string;
   travel_connectivity: number;
   venture_capital: number;
