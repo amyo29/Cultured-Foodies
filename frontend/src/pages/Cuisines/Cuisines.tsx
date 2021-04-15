@@ -10,6 +10,7 @@ import {
   Dropdown,
   Form,
   FormControl,
+  Spinner,
 } from "react-bootstrap";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
@@ -42,6 +43,7 @@ function Countries() {
 
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
+  const [loadedCards, changeLoadingCards] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -52,6 +54,7 @@ function Countries() {
     if (data) {
       setCuisines(data.cuisines);
       setDisplayedCuisines(data.cuisines);
+      changeLoadingCards(true);
     }
   }, [data]);
 
@@ -262,6 +265,8 @@ function Countries() {
         </Row>
 
         {/* <h1 className="text-align center">Cuisines</h1> */}
+        { loadedCards ? (
+          <>
         <Container>
           <div className="col">
             <Form
@@ -354,7 +359,7 @@ function Countries() {
               </div>
             </div>
           </div>
-
+          
           {rows.map((cols) => (
             <Row>
               {cols.map((cuisine: any, i: any) => (
@@ -379,7 +384,15 @@ function Countries() {
           {Math.min(startIndex + numPerPage, displayedCuisines?.length)} of{" "}
           {displayedCuisines?.length}
         </div>
-
+        </>
+        ) 
+        : 
+          <Row style={rowStyle}>
+            <Spinner animation="border" role="status">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          </Row>
+        }
         {/* <Footer></Footer> */}
       </body>
     );
