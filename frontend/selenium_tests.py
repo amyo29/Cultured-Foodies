@@ -174,7 +174,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[2]/div[3]/table/tbody/tr[7]/td[1]/div[2]"
+            "/html/body/div/div/div[2]/body/div[2]/div[3]/table/tbody/tr[7]/td[1]"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -183,7 +183,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/a"
+            "/html/body/div/div/div[2]/body/div[2]/div[3]/table/tbody/tr[1]/td[1]"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -192,18 +192,18 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[2]/nav/ul/li[6]/button"
+            "/html/body/div/div/div[2]/body/div[2]/table/tfoot/tr/td/div/div/div/div[3]/button[2]/span[1]/svg/path"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[1]/table/tbody/tr[10]/td[2]/a"
+            "/html/body/div/div/div[2]/body/div[2]/div[3]/table/tbody/tr[7]/td[1]"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
         assert (
-            "https://www.culturedfoodies.me/restaurants/58" in self.driver.current_url
+            "https://www.culturedfoodies.me/restaurants/17" in self.driver.current_url
         )
 
     def test_cuisine_instance_page(self):
