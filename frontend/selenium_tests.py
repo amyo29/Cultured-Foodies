@@ -174,7 +174,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/restaurants")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/table/tbody/tr[7]/td[2]/a"
+            "/html/body/div/div/div[2]/div/div[2]/div[3]/table/tbody/tr[7]/td[1]/div[2]"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
