@@ -25,12 +25,12 @@ content: "- Show Less";
   content: '- Show Less';
 }
 
-#search-page #collapseParagraph.collapse:not(.show) {
+#search-page [id^='id_'].collapse:not(.show) {
   display: block;
   height: 12rem;
   overflow: hidden;
 }
 
-#search-page #collapseParagraph.collapsing {
+#search-page [id^='id_'].collapsing {
   height: 1.5em;
 }
