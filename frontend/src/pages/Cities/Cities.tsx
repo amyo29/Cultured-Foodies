@@ -17,6 +17,7 @@ import {
   FormControl,
 } from "react-bootstrap";
 import Footer from "../../components/Footer";
+import NavBarSolid from "../../components/NavBarSolid";
 import "../../styles/Models.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
@@ -335,6 +336,7 @@ function Cities() {
           </Row>
 
           <div>
+            <NavBarSolid />
             {/* <h1 className="text-align center">Cities</h1> */}
             <a id="top"></a>
             <Container>
