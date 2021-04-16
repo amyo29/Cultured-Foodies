@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import CSS from 'csstype';
+import CSS from "csstype";
 import { Card, Col, Container, Row, Spinner, Table } from "react-bootstrap";
+
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
+import Button from "react-bootstrap/Button";
+
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
 import { useHistory } from "react-router-dom";
@@ -11,6 +16,7 @@ import small from "../../static_resources/smaller dumpling.gif";
 import NavBarSolid from "../../components/NavBarSolid";
 import { RestaurantInstance } from "./Restaurant";
 import { resolveConfig } from "prettier";
+import Highlighter from "react-highlight-words";
 
 function Restaurants() {
   useEffect(() => {
@@ -20,6 +26,9 @@ function Restaurants() {
   const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>([]);
   const [loaded, changeLoading] = useState(false);
   const [{ data, loading, error }] = useAxios("/api/restaurants");
+  const [searchText, setSearchText] = useState<string>("");
+  /* reference for search bar input */
+  const textInput: any = React.useRef();
 
   useEffect(() => {
     if (data) {
@@ -28,13 +37,28 @@ function Restaurants() {
     }
   }, [data]);
 
-  const history = useHistory();
+  function searchButtonClicked(clear: boolean) {
+    if (clear) {
+      setSearchText("");
+      textInput.current.value = "";
+    } else {
+      setSearchText(textInput.current.value);
+    }
+  }
 
-  const routeChange = (id: string) => {
-    let path = "/restaurants/" + id;
-    console.log(path);
-    history.push(path);
-  };
+  const restaurantCustomBodyRender = (
+    value: any,
+    tableMeta: any,
+    updateValue: any
+  ) => (
+    <div>
+      <Highlighter
+        highlightClassName="highlight-class"
+        searchWords={[searchText]}
+        textToHighlight={value + ""}
+      ></Highlighter>
+    </div>
+  );
 
   const columns = [
     {
@@ -52,6 +76,8 @@ function Restaurants() {
       options: {
         filter: false,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
       },
     },
     {
@@ -60,6 +86,8 @@ function Restaurants() {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
         filterOptions: {
           names: ["A-F", "G-L", "M-R", "S-Z"],
           logic(city: any, filterVal: any) {
@@ -87,6 +115,8 @@ function Restaurants() {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
         filterOptions: {
           names: [
             "Afghan",
@@ -396,6 +426,8 @@ function Restaurants() {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
         filterOptions: {
           names: ["$", "$$", "$$$", "$$$$"],
           logic(price_range: any, filterVal: any) {
@@ -415,6 +447,8 @@ function Restaurants() {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
         filterOptions: {
           names: ["0", "1", "2", "3", "4", "5"],
           logic(aggregate_rating: any, filterVal: any) {
@@ -444,6 +478,8 @@ function Restaurants() {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value: any, tableMeta: any, updateValue: any) =>
+          restaurantCustomBodyRender(value, tableMeta, updateValue),
         filterOptions: {
           names: [
             "$0-$20",
@@ -485,38 +521,39 @@ function Restaurants() {
   const options = {
     filterType: "checkbox" as any,
     download: false,
+    search: false,
     print: false,
     selectableRowsHideCheckboxes: true,
-    onRowClick: (
-      rowData: string[],
-      rowMeta: { dataIndex: number; rowIndex: number }
-    ) => {
-      routeChange(rowData[0]);
+    selectableRowsHeader: false,
+    viewColumns: false,
+    onRowClick: (rowData: any) => {
+      window.location.assign("/restaurants/" + rowData[0]);
     },
+    searchText: searchText,
   };
 
   const headerImgStyle: CSS.Properties = {
-    alignItems: 'center',
-    justifyContent: 'center',
-    objectFit: 'cover',
-    width: '100%',
-    height: '450px',
+    alignItems: "center",
+    justifyContent: "center",
+    objectFit: "cover",
+    width: "100%",
+    height: "450px",
     marginBottom: "0px",
     marginTop: "0px",
     display: "block",
-    opacity: "0.7",   
+    opacity: "0.7",
   };
 
   const headerTextStyle: CSS.Properties = {
-    textShadow: '1px 1px 3px black',
-    fontSize: '11rem',
-    color: 'white',
-    width: '100%', 
+    textShadow: "1px 1px 3px black",
+    fontSize: "11rem",
+    color: "white",
+    width: "100%",
   };
 
   const headerCardStyle: CSS.Properties = {
-    width:"100%", 
-    height:"auto",
+    width: "100%",
+    height: "auto",
   };
 
   const rowStyle: CSS.Properties = {
@@ -526,32 +563,76 @@ function Restaurants() {
   };
 
   const subtitleTextStyle: CSS.Properties = {
-    textShadow: '1px 1px 3px black',
-    color: 'white',
-    width: '100%', 
+    textShadow: "1px 1px 3px black",
+    color: "white",
+    width: "100%",
+  };
+
+  const searchButtonStyle: CSS.Properties = {
+    // backgroundColor: "white",
+    // borderColor: "black",
+    // color: "black",
   };
 
   if (loaded) {
     return (
       <body>
         <NavBarSolid />
-          <Row >
+        <Row>
           <Card style={headerCardStyle}>
-              <Card.Img src={restImg} style={headerImgStyle}/>
-              <Card.ImgOverlay>
+            <Card.Img src={restImg} style={headerImgStyle} />
+            <Card.ImgOverlay>
               <Row className="mt-4" style={rowStyle}>
-                  <Card.Title>
-                    <h1 style={headerTextStyle}>Restaurants</h1>
-                  </Card.Title>
+                <Card.Title>
+                  <h1 style={headerTextStyle}>Restaurants</h1>
+                </Card.Title>
+              </Row>
+              <Row style={rowStyle}>
+                <Form
+                  inline
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  <FormControl
+                    className="mr-sm-2"
+                    type="text"
+                    placeholder="Search Restaurants"
+                    ref={textInput}
+                    onKeyPress={(event: any) => {
+                      if (event.key === "Enter") {
+                        searchButtonClicked(false);
+                      }
+                    }}
+                  />
+                  <Button
+                    style={searchButtonStyle}
+                    variant="info"
+                    onClick={() => searchButtonClicked(false)}
+                  >
+                    Search
+                  </Button>
+
+                  <Button
+                    style={searchButtonStyle}
+                    variant="info"
+                    onClick={() => searchButtonClicked(true)}
+                  >
+                    Clear
+                  </Button>
+                </Form>
               </Row>
               <Row style={rowStyle} className="mt-5">
-                  <Card.Subtitle style={subtitleTextStyle}>
-                    <h4>😋 Hungry? Whether you're looking for French escargot or Korean bulgogi, we've got just the place for you! 🍽️ </h4>
-                  </Card.Subtitle>
+                <Card.Subtitle style={subtitleTextStyle}>
+                  <h4>
+                    😋 Hungry? Whether you're looking for French escargot or
+                    Korean bulgogi, we've got just the place for you! 🍽️{" "}
+                  </h4>
+                </Card.Subtitle>
               </Row>
-              </Card.ImgOverlay>
-            </Card>
-          </Row>
+            </Card.ImgOverlay>
+          </Card>
+        </Row>
 
         <MUIDataTable
           title={"Restaurants"}

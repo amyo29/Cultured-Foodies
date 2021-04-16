@@ -46,10 +46,10 @@ const ProfileCard = (props: any) => {
 
 const CitiesCard = (props: any) => {
   const { city } = props;
-  let leisureCulture = (parseInt(city["leisure_culture"]!) == 0) ? "No Data" : parseFloat(city["leisure_culture"].toFixed(4));
-  let costOfLiving = (parseInt(city["cost_of_living"]!) == 0) ? "No Data" : parseFloat(city["cost_of_living"].toFixed(4));
-  let environmentalQuality = (parseInt(city["environmental_quality"]!) == 0) ? "No Data" : parseFloat(city["environmental_quality"].toFixed(4));
-  let travelConnectivity = (parseInt(city["travel_connectivity"]!) == 0) ? "No Data" : parseFloat(city["travel_connectivity"].toFixed(4));
+  let leisureCulture = (parseInt(city["leisure_culture"]!) == 0) ? "No Data" : parseFloat(city["leisure_culture"].toFixed(2));
+  let costOfLiving = (parseInt(city["cost_of_living"]!) == 0) ? "No Data" : parseFloat(city["cost_of_living"].toFixed(2));
+  let environmentalQuality = (parseInt(city["environmental_quality"]!) == 0) ? "No Data" : parseFloat(city["environmental_quality"].toFixed(2));
+  let travelConnectivity = (parseInt(city["travel_connectivity"]!) == 0) ? "No Data" : parseFloat(city["travel_connectivity"].toFixed(2));
 
   return (
     <a href={"/cities/" + city["id"]} className="card">
