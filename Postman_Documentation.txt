@@ -15,16 +15,16 @@ A cuisine has the following properties.
 
 - ID: An integer, database id.
 - Name: The name of the cuisine, e.g.: "American".
-- Cities: A list of cities that have this cuisine.
-- City ID's: A list of the corresponding database city ID's of cities which have this cuisine.
+- Cities: A comma-separated string listing the cities that have this cuisine. Each id in the string is separated by ", ". 
+- City ID's: A string attribute that represents a list of the corresponding database city ID's of cities which have this cuisine. Each id in the string is separated by ", ". 
 - Dishes: A list of objects containing information on noteworthy dishes particular to this cuisine.
     - Image URL: A string denoting a link to an image of this dish.
     - Name: A string denoting the dish's name in English.
-- Country: A string, the country or countries associated with this cuisine.
-- Country ID: A string, the database id of the country or countries associated with this cuisine.
+- Country: A string, the country or countries associated with this cuisine. Each id in the string is separated by ", ". 
+- Country ID: A string, the database id of the country or countries associated with this cuisine. Each id in the string is separated by ", ". 
 - Description: A general description about this cuisine. Can include information on its origin, history, dishes and highlights.
-- Restaurant IDs: A string, list of the database id's of restaurants which serve this cuisine.
-- Restaurants: A string, list of names of restaurants which serve this cuisine.
+- Restaurant IDs: A string attribute that represents a list of the database id's of the restaurants that serve this cuisine. Each id in the string is separated by ", ".
+- Restaurants: A string, list of names of restaurants which serve this cuisine. Each id in the string is separated by ", ". 
 
 Countries
 
@@ -39,9 +39,9 @@ A country has the following properties.
 - Alpha2Code: The alpha 2 code of the country (ex: Afghanistan is "AF").
 - Alpha3Code: The alpha 3 code of the country (ex: Aghanistan is "AFG").
 - Area: The area size of the country in squared kilometers.
-- Borders: A string listing the countries that this country borders.
+- Borders: A string listing the countries that this country borders. Each id in the string is separated by ", ". 
 - Capital: The capital city of the country (ex: Afghanistan's capital is Kabul.)
-- Currencies: A string denoting the currencies used by this country, including its code, name and symbol, separated by "-". 
+- Currencies: A string denoting the currencies used by this country, including its code, name and symbol, separated by "-". Each id in the string is separated by ", ". 
 - Demonym: A string denoting the group of people belonging to the country (ex: The demonym for Afghanistan is "Afghan", denoting the Afghan people).
 - Flag: A string containing the URL of a country's flag picture in the database.
 - Gini: An integer denoting the country's Gini coefficient (a statistical measure of a country's income or wealth inequality).
@@ -51,8 +51,10 @@ A country has the following properties.
 - Native name: A string denoting the country's name in its official native language.
 - Numeric code: A integer denoting the numeric code of this country.
 - Population: An integer denoting the population of the country.
-- Region: The region the country belongs to (ex: United States is in the region Americas)
-- Subregion: The subregion the country belongs to (ex: The United States in the subregion Northern America.)
+- Region: The region the country belongs to (ex: United States is in the region Americas). Possible regions: Africa, Americas, Asia, Europe, Oceania 
+- Subregion: The subregion the country belongs to (ex: The United States in the subregion Northern America). 
+  Possible subregions: Southern Asia, Southern Europe, Northern America, South America, Western Asia, Australia and New Zealand, Western Europe, Northern Europe, 
+  South-Eastern Asia, Eastern Asia, Caribbean, Central America, Eastern Africa, Eastern Europe, Northern Africa, Western Africa, Southern Africa, Central Asia
 - Time zone: A string containing all the time zones within the country.
 - Translations: A dictionary of translations of the country name in other languages. 
     - BR: A string denoting the country's name in Breton.
@@ -78,7 +80,7 @@ Note: All urban area scores are determined by Teleport API.
 - Commute: A float denoting the city's urban area commute score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 4.687250000000001).
 - Cost of living:  A float denoting the city's urban area cost of living score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 2.618).
 - Cuisine ids: A string listing the database id's of the cuisines available in this city (Ex: "34").
-- Cuisines: A string listing the cuisines available in this city (Ex: "German").
+- Cuisines: A string listing the cuisines available in this city (Ex: "German"). Each id in the string is separated by ", ". 
 - Economy:  A float denoting the city's urban area economy score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 6.5145).
 - Education:  A float denoting the city's urban area education score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 8.6245).
 - Environmental_quality:  A float denoting the city's urban area environmental quality score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 6.4815000000000005).
@@ -95,13 +97,24 @@ Note: All urban area scores are determined by Teleport API.
 - Name:  A string denoting the name of this city.
 - Outdoors:  A float denoting the city's urban area outdoors score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 7.014).
 - Population:  An integer denoting the population of this city.
-- Restaurant_ids:  A string listing the database id's of the restaurants that are in this city.
-- Restaurants:  A string listing the names of the database restaurants that are in this city.
+- Restaurant_ids:  A string listing the database id's of the restaurants that are in this city. Each id in the string is separated by ", ". 
+- Restaurants:  A string listing the names of the database restaurants that are in this city. Each id in the string is separated by ", ". 
 - Safety:  A float denoting the city's urban area safety score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 5.7155000000000005).
 - State:  A string denoting the name of this city.
 - Summary: A description of the city and what it has to offer.
 - Taxation:  A float denoting the city's urban area taxation score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 4.488).
-- Timezone:  A string denoting the time zone(s) of this city.
+- Timezone:  A string denoting the time zone(s) of this city. 
+  Possible timezones: 
+    America/Kentucky/Louisville
+    America/Phoenix
+    America/Denver
+    America/New_York
+    America/Anchorage
+    America/Indiana/Indianapolis
+    America/Detroit
+    America/Boise
+    America/Chicago
+    America/Los_Angeles
 - Travel Connectivity:  A float denoting the city's urban area travel connectivity score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 3.6545000000000005).
 - Venture Capital:  A float denoting the city's urban area venture capital score on a scale of 0-10, where 10 is the highest possible score (Ex: Alameda's score is 10).
 
@@ -115,11 +128,20 @@ A restaurant is a business established where meals or refreshments can be purcha
 - Address: A string denoting the address of this restaurant.
 - Aggregate Rating: A float denoting the average rating of this restaurant, from 1-5 where 5 is the highest rating.
 - Average cost for two: An integer denoting the average cost in dollars that two people would spend at this restaurant.
-- City: A string listing the cities that have this restaurant.
+- City: A string denoting the name of the city this restaurant is located in.
 - City id: An integer denoting the city that this restaurant is located.
-- Cuisine ids: A string of the database id's for cuisines that this restaurant serves.
-- Cuisines: A string containing the names of cuisines that this restaurant serves (Ex: "Italian, Pizza, Sandwich)".
-- Highlights: A string listing the highlights of this restaurant (Ex: "Delivery, Dinner, Takeaway Available, Lunch, Outdoor Seating, Gluten Free Options, Kid Friendly").
+- Cuisine ids: A string of the database id's for cuisines that this restaurant serves. Each id in the string is separated by ", ". 
+- Cuisines: A string containing the names of cuisines that this restaurant serves (Ex: "Italian, Pizza, Sandwich)". Each id in the string is separated by ", ". 
+- Highlights: A string listing the highlights of this restaurant (Ex: "Delivery, Dinner, Takeaway Available, Lunch, Outdoor Seating, Gluten Free Options, Kid Friendly"). Each id in the string is separated by ", ". 
+Possible highlights:
+Gastro Pub, Outdoor Seating, Beer, Rooftop, Beverages, Dog Friendly, Pool Table, Desserts and Bakes, Paid Parking, BYOB, Corkage Fee Charged, Restricted Entry, 
+Private Dining Area Available, No Seating Available, Halal, Vegetarian Friendly, Wine, Live Entertainment, AMEX for Credit Card, Drinking Age Applicable, 
+Private Parking, Discover for Debit Card, Formal Attire, Breakfast, Farm-to-Table, Debit Card, Fullbar, Discover for Credit Card, Table booking recommended, 
+Nightlife, Sake, AMEX for Debit Card, Casual Attire, Valet Parking Available, Street Parking, Dressy Attire, Serves Alcohol, Serves Cocktails, Karaoke, 
+City View, Lunch Menu, Disabled Friendly, Visa for Debit Card, Serves Organic Food, All Day Breakfast, No Alcohol Available, Luxury Dining, Locally Sourced,
+ Distillery, Sports TV, Kid Friendly, Snacks, BYOW, Takeaway Available, Kosher, Buffet, Wifi, Dinner, Credit Card, Afternoon Tea, Brunch, MasterCard for Credit Card, 
+ Kids Area, Sports Bar, TV, Waterfront, Free Parking, Delivery, Board Games, Table reservation required, Visa for Credit Card, Apple Pay, Live Music, 
+ MasterCard for Debit Card, Lunch, ATM, Gluten Free Options, Smoking Area, Android Pay, Cash, Drive Thru, Serves Pho, Michelin Starred, Craft Beer, Indoor Seating, Vegan Options.
 - Id: The database id of this restaurant.
 - Latitude: An integer denoting the latitudinal coordinates of this country.
 - Longitude: An integer denoting the longitudinal coordinates of this country.
