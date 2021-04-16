@@ -18,7 +18,7 @@ import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import { CuisinesCard } from "../../components/Card";
 import load from "../../static_resources/spinny donut.gif";
-import headerimg from "../../static_resources/cuisineimg6.jpg";
+import headerimg from "../../static_resources/cuisineimg8.jpg";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
