@@ -15,8 +15,8 @@ import {
 import { DialpadSharp } from "@material-ui/icons";
 function CuisineHit(props: any) {
   return (
-    <div className="row mb-4">
-      <div className="col-md-4">
+    // <div className="row mb-4">
+    //   <div className="col-md-4">
     <a
       href={"/cuisines/" + props.hit["id"]}
       className="card"
@@ -203,8 +203,6 @@ function CuisineHit(props: any) {
         ></a>
       </div>
     </a>
-    </div>
-    </div>
   );
 }
 function CityHit(props: any) {
@@ -216,8 +214,6 @@ function CityHit(props: any) {
   // console.log("after");
   // console.log(props.hit["summary"]);
   return (
-    <div className="row mb-4">
-    <div className="col-md-4">
     <a
       href={"/cities/" + props.hit["id"]}
       className="card"
@@ -394,15 +390,11 @@ function CityHit(props: any) {
         ></a>
       </div>
     </a>
-    </div>
-    </div>
   );
 }
 
 function RestaurantHit(props: any) {
   return (
-    <div className="row mb-4">
-    <div className="col-md-4">
     <a
       href={"/restaurants/" + props.hit["id"]}
       className="card overflow-auto"
@@ -479,8 +471,6 @@ function RestaurantHit(props: any) {
           </div>
         </div>
     </a>
-    </div>
-    </div>
   );
 }
 

@@ -223,6 +223,7 @@ function Cities() {
     if (sortingField) {
       sortingFunc(filteredCities, sortingField?.name, sortingField?.ascending);
     }
+    setPageNumber(1);
     setDisplayedCities(filteredCities);
   }, [
     searchQuery,

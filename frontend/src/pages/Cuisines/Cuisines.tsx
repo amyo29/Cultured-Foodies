@@ -198,6 +198,7 @@ function Countries() {
         sortingField?.ascending
       );
     }
+    setPageNumber(1);
     setDisplayedCuisines(filteredCuisines);
   }, [searchQuery, sortingField, filteringRegions, filteringSubRegions]);
 

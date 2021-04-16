@@ -1,7 +1,3 @@
-#module {
-  width: 500px;
-}
-
 #module a.collapsed:after {
   content: '+ Show More';
 }
@@ -20,10 +16,6 @@
   height: 1.5em;
 }
 
-
-#search-page {
-  width: 500px;
-}
 
 #search-page a.collapsed:after {
   content: '+ Show More';
