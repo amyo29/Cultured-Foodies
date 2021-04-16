@@ -19,42 +19,6 @@
           "operationId": "listCountries",
           "tags": ["countries"],
           "parameters": [
-            {
-              "name": "language",
-              "in": "query",
-              "description": "Filter by language of the country",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "timezone",
-              "in": "query",
-              "description": "Filter by timezone of the country",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "currency",
-              "in": "query",
-              "description": "Filter by currency of the country",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "sort",
-              "in": "query",
-              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            }
           ],
           "responses": {
             "200": {
@@ -187,7 +151,7 @@
           }
         }
       },
-      "/cities/{cityId}": {
+      "/cities/id=<id>": {
         "get": {
           "summary": "Details about a city",
           "operationId": "listCity",
@@ -288,7 +252,7 @@
           }
         }
       },
-      "/restaurants/{restaurantid}": {
+      "/restaurants/id=<id>": {
         "get": {
           "summary": "Details about a restaurant",
           "operationId": "listRestaurant",
@@ -359,7 +323,7 @@
           }
         }
       },
-      "/cuisines/{cuisineid}": {
+      "/cuisines/id=<id>": {
         "get": {
           "summary": "Details about a cultural cuisine",
           "operationId": "listCuisine",
