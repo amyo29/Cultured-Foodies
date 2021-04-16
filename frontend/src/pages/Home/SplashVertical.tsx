@@ -1,5 +1,6 @@
 import React, { useRef}  from "react";
 import NavBar from "../../components/NavBar";
+import FooterLarge from "../../components/FooterLarge";
 
 import styles from "../../styles/SplashVertical.module.css"   
 
@@ -62,6 +63,7 @@ function SplashVertical(){
 	
 				</div>
             </div>
+            <FooterLarge />
         </div>
       );
     
