@@ -216,6 +216,8 @@ function CityHit(props: any) {
   // console.log("after");
   // console.log(props.hit["summary"]);
   return (
+    <div className="row mb-4">
+    <div className="col-md-4">
     <a
       href={"/cities/" + props.hit["id"]}
       className="card"
@@ -392,11 +394,15 @@ function CityHit(props: any) {
         ></a>
       </div>
     </a>
+    </div>
+    </div>
   );
 }
 
 function RestaurantHit(props: any) {
   return (
+    <div className="row mb-4">
+    <div className="col-md-4">
     <a
       href={"/restaurants/" + props.hit["id"]}
       className="card overflow-auto"
@@ -473,7 +479,8 @@ function RestaurantHit(props: any) {
           </div>
         </div>
     </a>
-    
+    </div>
+    </div>
   );
 }
 
