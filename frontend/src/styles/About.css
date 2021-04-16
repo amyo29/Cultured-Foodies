@@ -1,6 +1,8 @@
 .font-style {
   font-family: serif;
-  background-color: bisque;
+  /* background-color: bisque; */
+  background-color: rgb(247, 235, 221);
+
 }
 
 .center {
