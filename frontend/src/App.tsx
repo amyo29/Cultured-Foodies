@@ -19,7 +19,7 @@ import Search from "./pages/Search/Search";
 export default function App() {
   return (
     <div className="background full-height">
-      <NavBar />
+      {/* <NavBar /> */}
       <Router>
         <div>
           <Route exact path="/">

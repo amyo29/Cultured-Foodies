@@ -1,4 +1,6 @@
 import React, { useRef}  from "react";
+import NavBar from "../../components/NavBar";
+
 import styles from "../../styles/SplashVertical.module.css"   
 
 import { BsCaretDownFill } from "react-icons/bs";
@@ -15,8 +17,10 @@ function SplashVertical(){
 
     // const executeScroll = () => myRef.current.scrollIntoView()  
     return (
+        
 
         <div className={styles.splashPage}>
+            <NavBar />
 			<div className={styles.splash}>
 				<div className={styles.splashContent}>
 					<div className={styles.headerText}>
