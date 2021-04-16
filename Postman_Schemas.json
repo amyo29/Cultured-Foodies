@@ -1,363 +1,42 @@
 {
-    "openapi": "3.0.0",
-    "info": {
-      "version": "1.0.0",
-      "title": "CulturedFoodies",
-      "license": {
-        "name": "MIT"
-      }
-    },
-    "servers": [
-      {
-        "url": "https://culturedfoodies.me/api"
-      }
-    ],
-    "paths": {
-      "/countries": {
-        "get": {
-          "summary": "Returns list of countries",
-          "operationId": "listCountries",
-          "tags": ["countries"],
-          "parameters": [
-          ],
-          "responses": {
-            "200": {
-              "description": "List of all countries and corresponding details",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Country"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CulturedFoodies",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.culturedfoodies.me/api"
+    }
+  ],
+  "paths": {
+    "/countries": {
+      "get": {
+        "summary": "Returns list of countries",
+        "operationId": "listCountries",
+        "tags": ["countries"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "List of all countries and corresponding details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Country"
                 }
               }
             }
-          }
-        }
-      },
-      "/countries/{countryId}": {
-        "get": {
-          "summary": "Details about a country",
-          "operationId": "listCountry",
-          "tags": ["country"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "description": "id of the country",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Details about a country",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Country"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/cities": {
-        "get": {
-          "summary": "Returns list of cities in the USA",
-          "operationId": "listCities",
-          "tags": ["cities"],
-          "parameters": [
-            {
-              "name": "language",
-              "in": "query",
-              "description": "Filter by state of the city",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "timezone",
-              "in": "query",
-              "description": "Filter by timezone of the city",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "currency",
-              "in": "query",
-              "description": "Filter by population of the city",
-              "required": false,
-              "schema": {
-                "type": "number"
-              }
-            },
-            {
-              "name": "sort",
-              "in": "query",
-              "description": "Can sort by name with sort=name. Adding a '-' in front returns in descending order",
-              "required": false,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "List of all cities and corresponding details",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/City"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/cities/id=<id>": {
-        "get": {
-          "summary": "Details about a city",
-          "operationId": "listCity",
-          "tags": ["city"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "description": "id of the city",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Details about a city",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/City"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/restaurants": {
-        "get": {
-          "summary": "Returns list of restaurants",
-          "operationId": "listRestaurants",
-          "tags": ["restaurants"],
-          "parameters": [
-            {
-              "name": "city",
-              "in": "query",
-              "description": "filter by city that restaurant is in",
-              "required": false,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            },
-            {
-              "name": "cuisines",
-              "in": "query",
-              "description": "filter by cuisines for this restaurant",
-              "required": false,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            },
-            {
-              "name": "price range",
-              "in": "query",
-              "description": "sort by price range of restaurant",
-              "required": false,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "List of restaurants and their corresponding details",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Restaurant"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/restaurants/id=<id>": {
-        "get": {
-          "summary": "Details about a restaurant",
-          "operationId": "listRestaurant",
-          "tags": ["restaurant"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "description": "id of the dish",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Details about a restaurant",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Restaurant"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/cuisines": {
-        "get": {
-          "summary": "Returns list of cultural cuisines",
-          "operationId": "listCuisines",
-          "tags": ["cuisines"],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "List of cuisines and their corresponding details",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Cuisine"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/cuisines/id=<id>": {
-        "get": {
-          "summary": "Details about a cultural cuisine",
-          "operationId": "listCuisine",
-          "tags": ["cuisine"],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "description": "id of the cuisine",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "format": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Details about a cultural cuisine",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Cuisine"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
                 }
               }
             }
@@ -365,407 +44,624 @@
         }
       }
     },
-    "components": {
-      "schemas": {
-        "Country": {
-          "type": "object",
-          "required": [
-            "alpha2code",
-            "alpha3code",
-            "area",
-            "borders",
-            "capital",
-            "currencies",
-            "demonym",
-            "flag",
-            "gini",
-            "id",
-            "languages",
-            "latitude",
-            "longitude",
-            "name",
-            "native_name",
-            "numeric_code",
-            "population",
-            "region",
-            "subregion",
-            "timezones",
-            "translations"
-          ],
-          "properties": {
-            "alpha2code" : {
-              "type": "string"
-            },
-            "alpha3code" : {
-              "type": "string"
-            },
-            "area" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "borders" : {
-              "type": "string"
-            },
-            "capital" : {
-              "type": "string"
-            },
-            "currencies" : {
-              "type": "string"
-            },
-            "demonym" : {
-              "type": "string"
-            },
-            "flag" : {
-              "type": "string"
-            },
-            "gini" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "languages" : {
-              "type": "string"
-            },
-            "latitude" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "longitude" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "name" : {
-              "type": "string"
-            },
-            "numeric_code" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "population" : {
-              "type": "integer",
-              "format": "int32"
-            },
-            "region" : {
-              "type": "string"
-            },
-            "subregion" : {
-              "type": "string"
-            },
-            "timezones" : {
-              "type": "string"
-            },
-            "translations" : {
+    "/countries/id=<id>": {
+      "get": {
+        "summary": "Details about a country",
+        "operationId": "listCountry",
+        "tags": ["country"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Details about a country",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Country"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cities": {
+      "get": {
+        "summary": "Returns list of cities in the USA",
+        "operationId": "listCities",
+        "tags": ["cities"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "List of all cities and corresponding details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/City"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cities/id=<id>": {
+      "get": {
+        "summary": "Details about a city",
+        "operationId": "listCity",
+        "tags": ["city"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Details about a city",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/City"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/restaurants": {
+      "get": {
+        "summary": "Returns list of restaurants",
+        "operationId": "listRestaurants",
+        "tags": ["restaurants"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "List of restaurants and their corresponding details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Restaurant"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/restaurants/id=<id>": {
+      "get": {
+        "summary": "Details about a restaurant",
+        "operationId": "listRestaurant",
+        "tags": ["restaurant"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Details about a restaurant",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Restaurant"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuisines": {
+      "get": {
+        "summary": "Returns list of cultural cuisines",
+        "operationId": "listCuisines",
+        "tags": ["cuisines"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "List of cuisines and their corresponding details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cuisine"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuisines/id=<id>": {
+      "get": {
+        "summary": "Details about a cultural cuisine",
+        "operationId": "listCuisine",
+        "tags": ["cuisine"],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Details about a cultural cuisine",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cuisine"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Country": {
+        "type": "object",
+        "required": [
+          "alpha2code",
+          "alpha3code",
+          "area",
+          "borders",
+          "capital",
+          "currencies",
+          "demonym",
+          "flag",
+          "gini",
+          "id",
+          "languages",
+          "latitude",
+          "longitude",
+          "name",
+          "native_name",
+          "numeric_code",
+          "population",
+          "region",
+          "subregion",
+          "timezones",
+          "translations"
+        ],
+        "properties": {
+          "alpha2code" : {
+            "type": "string"
+          },
+          "alpha3code" : {
+            "type": "string"
+          },
+          "area" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "borders" : {
+            "type": "string"
+          },
+          "capital" : {
+            "type": "string"
+          },
+          "currencies" : {
+            "type": "string"
+          },
+          "demonym" : {
+            "type": "string"
+          },
+          "flag" : {
+            "type": "string"
+          },
+          "gini" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "languages" : {
+            "type": "string"
+          },
+          "latitude" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "longitude" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name" : {
+            "type": "string"
+          },
+          "numeric_code" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "population" : {
+            "type": "integer",
+            "format": "int32"
+          },
+          "region" : {
+            "type": "string"
+          },
+          "subregion" : {
+            "type": "string"
+          },
+          "timezones" : {
+            "type": "string"
+          },
+                      "translations" : {
+            "type":"object",
+            "properties" : {
+              "br": {"type":"string"},
+              "de": {"type":"string"},
+              "es": {"type":"string"},
+              "fa": {"type":"string"},
+              "fr": {"type":"string"},
+              "hr": {"type":"string"},
+              "it": {"type":"string"},
+              "ja": {"type":"string"},
+              "nl": {"type":"string"},
+              "pt": {"type":"string"}
+            }
+        }
+        }
+      },
+      "City": {
+        "type": "object",
+        "required": [
+          "business_freedom",
+          "commute",
+          "cost_of_living",
+          "cuisine_ids",
+          "cuisines",
+          "economy",
+          "education",
+          "environmental_quality",
+          "full_name",
+          "healthcare",
+          "housing",
+          "id",
+          "imagesmobile",
+          "imagesweb",
+          "internet_access",
+          "latitude",
+          "leisure_culture",
+          "longitude",
+          "name",
+          "outdoors",
+          "population",
+          "restaurant_ids",
+          "restaurants",
+          "safety",
+          "state",
+          "summary",
+          "taxation",
+          "timezone",
+          "tolerance",
+          "travel_connectivity",
+          "venture_capital"
+        ],
+        "properties": {
+          "business_freedom": {
+            "type": "number"
+          },
+          "commute": {
+            "type": "number"
+          },
+          "cost_of_living": {
+            "type": "number"
+          },
+          "cuisine_ids": {
+            "type": "string"
+          },
+          "cuisines": {
+            "type": "string"
+          },
+          "economy": {
+            "type": "number"
+          },
+          "education": {
+            "type": "number"
+          },
+          "environmental_quality": {
+            "type": "number"
+          },
+          "full_name": {
+            "type": "string"
+          },
+          "healthcare": {
+            "type": "number"
+          },
+          "housing": {
+            "type": "number"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "imagesmobile": {
+            "type": "string"
+          },
+          "imagesweb": {
+            "type": "string"
+          },
+          "internet_access": {
+            "type": "number"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "leisure_culture": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "outdoors": {
+            "type": "number"
+          },
+          "population": {
+            "type": "integer",
+            "format": "int32"   
+          },
+          "restaurant_ids":{
+            "type": "string"
+          },
+          "restaurants":{
+            "type": "string"
+          },
+          "safety":{
+            "type": "number"
+          },
+          "state":{
+            "type": "string"
+          },
+          "summary":{
+            "type": "string"
+          },
+          "taxation":{
+            "type": "number"
+          },
+          "timezone":{
+            "type": "string"
+          },
+          "tolerance":{
+            "type": "number"
+          },
+          "travel_connectivity":{
+            "type": "number"
+          },
+          "venture_capital":{
+            "type": "number"
+          }
+        }
+      },
+      "Restaurant": {
+        "type": "object",
+        "required": [
+          "address",
+          "aggregate_rating",
+          "average_cost_for_two",
+          "city",
+          "city_id",
+          "cuisine_ids",
+          "cuisines",
+          "highlights",
+          "id",
+          "latitude",
+          "longitude",
+          "menu_url",
+          "name",
+          "phone_numbers",
+          "price_range",
+          "restaurant_image",
+          "state_abbrev",
+          "timings",
+          "url",
+          "zipcode"
+        ],
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "aggregate_rating":{
+            "type": "string"
+          },
+          "average_cost_for_two":{
+            "type": "number"
+          },
+          "city":{
+            "type": "string"
+          },
+          "city_id":{
+            "type": "integer",
+            "format": "int32"
+          },
+          "cuisine_ids":{
+            "type": "string"
+          },
+          "cuisines":{
+            "type": "string"
+          },
+          "highlights":{
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude":{
+            "type": "string"
+          },
+          "longitude":{
+            "type": "string"
+          },
+          "menu_url":{
+            "type": "string"
+          },
+          "name":{
+            "type": "string"
+          },
+          "phone_numbers":{
+            "type": "string"
+          },
+          "price_range":{
+            "type": "integer",
+            "format": "int32"
+          },
+          "restaurant_image":{
+            "type": "string"
+          },
+          "state_abbrev":{
+            "type": "string"
+          },
+          "timings":{
+            "type": "string"
+          },
+          "url":{
+            "type": "string"
+          },
+          "zipcode":{
+            "type": "string"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Cuisine": {
+        "type": "object",
+        "required": [
+          "cities",
+          "city_ids",
+          "country",
+          "countryID",
+          "description",
+          "dishes",
+          "id",
+          "name",
+          "restaurant_ids",
+          "restaurants"
+        ],
+        "properties": {
+          "cities": {
+            "type": "string"
+          },
+          "city_ids": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "countryID": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "dishes": {
+            "type": "array",
+            "items": {
               "type":"object",
-              "properties" : {
-                "br": {"type":"string"},
-                "de": {"type":"string"},
-                "es": {"type":"string"},
-                "fa": {"type":"string"},
-                "fr": {"type":"string"},
-                "hr": {"type":"string"},
-                "it": {"type":"string"},
-                "ja": {"type":"string"},
-                "nl": {"type":"string"},
-                "pt": {"type":"string"}
+              "properties": {
+                "image_url": {"type":"string"},
+                "name": {"type": "string"}
               }
-          }
-        },
-        "City": {
-          "type": "object",
-          "required": [
-            "business_freedom",
-            "commute",
-            "cost_of_living",
-            "cuisine_ids",
-            "cuisines",
-            "economy",
-            "education",
-            "environmental_quality",
-            "full_name",
-            "healthcare",
-            "housing",
-            "id",
-            "imagesmobile",
-            "imagesweb",
-            "internet_access",
-            "latitude",
-            "leisure_culture",
-            "longitude",
-            "name",
-            "outdoors",
-            "population",
-            "restaurant_ids",
-            "restaurants",
-            "safety",
-            "state",
-            "summary",
-            "taxation",
-            "timezone",
-            "tolerance",
-            "travel_connectivity",
-            "venture_capital"
-          ],
-          "properties": {
-            "business_freedom": {
-              "type": "number"
-            },
-            "commute": {
-              "type": "number"
-            },
-            "cost_of_living": {
-              "type": "number"
-            },
-            "cuisine_ids": {
-              "type": "string"
-            },
-            "cuisines": {
-              "type": "string"
-            },
-            "economy": {
-              "type": "number"
-            },
-            "education": {
-              "type": "number"
-            },
-            "environmental_quality": {
-              "type": "number"
-            },
-            "full_name": {
-              "type": "string"
-            },
-            "healthcare": {
-              "type": "number"
-            },
-            "housing": {
-              "type": "number"
-            },
-            "id": {
-              "type": "integer",
-              "format": "int64"
-            },
-            "imagesmobile": {
-              "type": "string"
-            },
-            "imagesweb": {
-              "type": "string"
-            },
-            "internet_access": {
-              "type": "number"
-            },
-            "latitude": {
-              "type": "number"
-            },
-            "leisure_culture": {
-              "type": "number"
-            },
-            "longitude": {
-              "type": "number"
-            },
-            "name": {
-              "type": "string"
-            },
-            "outdoors": {
-              "type": "number"
-            },
-            "population": {
-              "type": "integer",
-              "format": "int32"   
-            },
-            "restaurant_ids":{
-              "type": "string"
-            },
-            "restaurants":{
-              "type": "string"
-            },
-            "safety":{
-              "type": "number"
-            },
-            "state":{
-              "type": "string"
-            },
-            "summary":{
-              "type": "string"
-            },
-            "taxation":{
-              "type": "number"
-            },
-            "timezone":{
-              "type": "string"
-            },
-            "tolerance":{
-              "type": "number"
-            },
-            "travel_connectivity":{
-              "type": "number"
-            },
-            "venture_capital":{
-              "type": "number"
-            }
-          }
-        },
-        "Restaurant": {
-          "type": "object",
-          "required": [
-            "address",
-            "aggregate_rating",
-            "average_cost_for_two",
-            "city",
-            "city_id",
-            "cuisine_ids",
-            "cuisines",
-            "highlights",
-            "id",
-            "latitude",
-            "longitude",
-            "menu_url",
-            "name",
-            "phone_numbers",
-            "price_range",
-            "restaurant_image",
-            "state_abbrev",
-            "timings",
-            "url",
-            "zipcode"
-          ],
-          "properties": {
-            "address": {
-              "type": "string"
-            },
-            "aggregate_rating":{
-              "type": "string"
-            },
-            "average_cost_for_two":{
-              "type": "number"
-            },
-            "city":{
-              "type": "string"
-            },
-            "city_id":{
-              "type": "integer",
-              "format": "int32"
-            },
-            "cuisine_ids":{
-              "type": "string"
-            },
-            "cuisines":{
-              "type": "string"
-            },
-            "highlights":{
-              "type": "string"
-            },
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "latitude":{
-              "type": "string"
-            },
-            "longitude":{
-              "type": "string"
-            },
-            "menu_url":{
-              "type": "string"
-            },
-            "name":{
-              "type": "string"
-            },
-            "phone_numbers":{
-              "type": "string"
-            },
-            "price_range":{
-              "type": "integer",
-              "format": "int32"
-            },
-            "restaurant_image":{
-              "type": "string"
-            },
-            "state_abbrev":{
-              "type": "string"
-            },
-            "timings":{
-              "type": "string"
-            },
-            "url":{
-              "type": "string"
-            },
-            "zipcode":{
-              "type": "string"
-            }
-          }
-        },
-        "Error": {
-          "type": "object",
-          "required": ["code", "message"],
-          "properties": {
-            "code": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "message": {
-              "type": "string"
-            }
-          }
-        },
-        "Cuisine": {
-          "type": "object",
-          "required": [
-            "cities",
-            "city_ids",
-            "country",
-            "countryID",
-            "description",
-            "dishes",
-            "id",
-            "name",
-            "restaurant_ids",
-            "restaurants"
-          ],
-          "properties": {
-            "cities": {
-              "type": "string"
-            },
-            "city_ids": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "countryID": {
-              "type": "string"
-            },
-            "description": {
-              "type": "string"
-            },
-            "dishes": {
-              "type": "array",
-              "items": {
-                "type":"object",
-                "properties": {
-                  "image_url": {"type":"string"},
-                  "name": {"type": "string"}
-                }
-              }            
-            },
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "name":{
-              "type": "string"
-            },
-            "restaurant_ids":{
-              "type": "string"
-            },
-            "restaurants":{
-              "type": "string"
-            }
+            }            
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name":{
+            "type": "string"
+          },
+          "restaurant_ids":{
+            "type": "string"
+          },
+          "restaurants":{
+            "type": "string"
           }
         }
       }
     }
   }
 }
-  
+

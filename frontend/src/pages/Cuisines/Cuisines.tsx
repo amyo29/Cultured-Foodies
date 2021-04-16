@@ -41,6 +41,7 @@ function Countries() {
   const [filteringRegions, setFilteringRegions] = useState<Array<String>>([]);
   const [filteringSubRegions, setFilteringSubRegions] = useState<Array<String>>([]);
 
+  const [numPerPage, setNumPerPage] = useState(12)
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
   const [loadedCards, changeLoadingCards] = useState(false);
@@ -192,7 +193,10 @@ function Countries() {
     }
   };
 
-  const numPerPage = 12;
+  let updateNumPerPage = (num: number) => {
+    setNumPerPage(num)
+
+  }
   const startIndex = numPerPage * (pageNumber - 1);
   const currentData = displayedCuisines.slice(
     startIndex,
@@ -372,6 +376,20 @@ function Countries() {
                   ))}
                 </Select>
               </div>
+            </div>
+
+            <div className="col">
+              <DropdownButton id="dropdown-basic-button" title="Item Per Page">
+                <Dropdown.Item onClick={() =>  updateNumPerPage(6)}>
+                 6
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() =>  updateNumPerPage(12)}>
+                 12
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() =>  updateNumPerPage(15)}>
+                 15
+                </Dropdown.Item>
+              </DropdownButton>
             </div>
           </div>
           
