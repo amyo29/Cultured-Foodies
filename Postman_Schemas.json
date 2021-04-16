@@ -406,63 +406,112 @@
         "Country": {
           "type": "object",
           "required": [
+            "alpha2code",
+            "alpha3code",
+            "area",
+            "borders",
+            "capital",
+            "currencies",
+            "demonym",
+            "flag",
+            "gini",
             "id",
+            "languages",
+            "latitude",
+            "longitude",
             "name",
-            "code",
-            "language",
+            "native_name",
+            "numeric_code",
             "population",
-            "timezone",
-            "currency",
             "region",
-            "flagUrl",
-            "latlong"
+            "subregion",
+            "timezones",
+            "translations"
           ],
           "properties": {
+            "alpha2code" : {
+              "type": "string"
+            },
+            "alpha3code" : {
+              "type": "string"
+            },
+            "area" : {
+              "type": "integer",
+              "format": "int32"
+            },
+            "borders" : {
+              "type": "string"
+            },
+            "capital" : {
+              "type": "string"
+            },
+            "currencies" : {
+              "type": "string"
+            },
+            "demonym" : {
+              "type": "string"
+            },
+            "flag" : {
+              "type": "string"
+            },
+            "gini" : {
+              "type": "integer",
+              "format": "int32"
+            },
             "id": {
               "type": "integer",
               "format": "int32"
             },
-            "name": {
+            "languages" : {
               "type": "string"
             },
-            "code": {
-              "type": "string"
-            },
-            "language": {
-              "type": "string"
-            },
-            "population": {
+            "latitude" : {
               "type": "integer",
-              "format": "int64"
+              "format": "int32"
             },
-            "timezone": {
+            "longitude" : {
+              "type": "integer",
+              "format": "int32"
+            },
+            "name" : {
               "type": "string"
             },
-            "currency": {
+            "numeric_code" : {
+              "type": "integer",
+              "format": "int32"
+            },
+            "population" : {
+              "type": "integer",
+              "format": "int32"
+            },
+            "region" : {
               "type": "string"
             },
-            "region": {
+            "subregion" : {
               "type": "string"
             },
-            "flagUrl": {
+            "timezones" : {
               "type": "string"
             },
-            "latlong": {
-              "type": "array",
-              "items": {
-                "type": "number",
-                "minimum": -180,
-                "maximum": 180
-              },
-              "minItems": 2,
-              "maxItems": 2
-            }
+            "translations" : {
+              "type":"object",
+              "properties" : {
+                "br": {"type":"string"},
+                "de": {"type":"string"},
+                "es": {"type":"string"},
+                "fa": {"type":"string"},
+                "fr": {"type":"string"},
+                "hr": {"type":"string"},
+                "it": {"type":"string"},
+                "ja": {"type":"string"},
+                "nl": {"type":"string"},
+                "pt": {"type":"string"}
+              }
           }
         },
         "City": {
           "type": "object",
           "required": [
-            "id",
             "business_freedom",
             "commute",
             "cost_of_living",
@@ -474,6 +523,7 @@
             "full_name",
             "healthcare",
             "housing",
+            "id",
             "imagesmobile",
             "imagesweb",
             "internet_access",
@@ -490,15 +540,11 @@
             "summary",
             "taxation",
             "timezone",
+            "tolerance",
             "travel_connectivity",
             "venture_capital"
-          
           ],
           "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int64"
-            },
             "business_freedom": {
               "type": "number"
             },
@@ -531,6 +577,10 @@
             },
             "housing": {
               "type": "number"
+            },
+            "id": {
+              "type": "integer",
+              "format": "int64"
             },
             "imagesmobile": {
               "type": "string"
@@ -581,6 +631,9 @@
             "timezone":{
               "type": "string"
             },
+            "tolerance":{
+              "type": "number"
+            },
             "travel_connectivity":{
               "type": "number"
             },
@@ -592,7 +645,6 @@
         "Restaurant": {
           "type": "object",
           "required": [
-            "id",
             "address",
             "aggregate_rating",
             "average_cost_for_two",
@@ -601,6 +653,7 @@
             "cuisine_ids",
             "cuisines",
             "highlights",
+            "id",
             "latitude",
             "longitude",
             "menu_url",
@@ -614,10 +667,6 @@
             "zipcode"
           ],
           "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
             "address": {
               "type": "string"
             },
@@ -642,6 +691,10 @@
             },
             "highlights":{
               "type": "string"
+            },
+            "id": {
+              "type": "integer",
+              "format": "int32"
             },
             "latitude":{
               "type": "string"
@@ -695,20 +748,20 @@
         "Cuisine": {
           "type": "object",
           "required": [
-            "id",
+            "cities",
             "city_ids",
             "country",
             "countryID",
             "description",
             "dishes",
+            "id",
             "name",
             "restaurant_ids",
             "restaurants"
           ],
           "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
+            "cities": {
+              "type": "string"
             },
             "city_ids": {
               "type": "string"
@@ -732,6 +785,10 @@
                 }
               }            
             },
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            },
             "name":{
               "type": "string"
             },
@@ -746,4 +803,5 @@
       }
     }
   }
+}
   
