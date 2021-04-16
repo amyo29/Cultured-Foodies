@@ -151,13 +151,14 @@ function Cities() {
         var cityObjStr =
           cityObj["name"] +
           cityObj["state"] +
-          cityObj["leisure_culture"] +
-          cityObj["cost_of_living"] +
-          cityObj["environmental_quality"] +
-          cityObj["travel_connectivity"] +
-          cityObj["population"];
+          cityObj["leisure_culture"].toFixed(2) +
+          cityObj["cost_of_living"].toFixed(2) +
+          cityObj["environmental_quality"].toFixed(2) +
+          cityObj["travel_connectivity"].toFixed(2) +
+          cityObj["population"]
+          ;
         // search for text across all city attributes
-        if (!cityObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+        if (!cityObjStr.toLowerCase().includes(searchQuery.toLowerCase().replace(",", ""))) {
           matchSearchQuery = false;
         }
       }
@@ -499,7 +500,7 @@ function Cities() {
                 <Row>
                   {cols.map((city: any, i: any) => (
                     <Col className="col-sm-4 py-2">
-                      <CitiesCard city={city}></CitiesCard>
+                      <CitiesCard city={city} searchQuery={searchQuery}></CitiesCard>
                     </Col>
                   ))}
                 </Row>

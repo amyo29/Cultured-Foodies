@@ -144,11 +144,12 @@ function Countries() {
           cuisineObjStr +=
             countryObj["capital"] +
             countryObj["region"] +
+            countryObj["subregion"] +
             countryObj["population"] +
             countryObj["area"];
         });
       if (searchQuery != "") {
-        if (!cuisineObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+        if (!cuisineObjStr.toLowerCase().includes(searchQuery.toLowerCase().replace(",", ""))) {
           matchSearchQuery = false;
         }
       }
@@ -436,6 +437,7 @@ function Countries() {
                         cuisine={cuisine}
                         countries={countries}
                         loaded={loaded}
+                        searchQuery={searchQuery}
                       ></CuisinesCard>
                     </Col>
                   ))}
