@@ -23,7 +23,7 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar expand="lg" className="navbar-custom">
+      <Navbar expand="lg" className="navbar-custom-transparent">
         <Navbar.Brand href="/" className="nav-link">
           <b>Cultured Foodies</b>
         </Navbar.Brand>
