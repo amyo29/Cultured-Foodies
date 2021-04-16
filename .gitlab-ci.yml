@@ -62,15 +62,15 @@ postman_tests:
 #     # test the website
 #     - python3 selenium_tests.py
 
-# jest_tests:
-#   stage: test
-#   image:
-#     name: mcgenius/pp_mocha
-#     entrypoint: [""]
-#   script:
-#     - cd frontend
-#     - npm install
-#     - npm run test
+jest_tests:
+  stage: test
+  image:
+    name: mcgenius/pp_mocha
+    entrypoint: [""]
+  script:
+    - cd frontend
+    - npm install
+    - npm run test
 
 # deploy-prod:
 #   stage: deploy
