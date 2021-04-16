@@ -18,9 +18,9 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "Cultured Foodies"
 
         summary = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/body/header/div"
+            "/html/body/div/div/div[2]/div/div/div/div[1]/div[1]"
         )[0].text
-        assert "Welcome fellow Foodie!" in summary
+        assert "Cultured Foodies" in summary
 
     def test_navbar(self):
         self.driver.get("https://www.culturedfoodies.me")
