@@ -37,7 +37,7 @@ class Selenium_Tests(unittest.TestCase):
         assert "https://www.culturedfoodies.me/about" in self.driver.current_url
 
         self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/button")[
+        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
             0
         ].click()
 
@@ -48,7 +48,7 @@ class Selenium_Tests(unittest.TestCase):
         assert "https://www.culturedfoodies.me/cuisines" in self.driver.current_url
 
         self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/button")[
+        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
             0
         ].click()
 
@@ -59,7 +59,7 @@ class Selenium_Tests(unittest.TestCase):
         assert "https://www.culturedfoodies.me/cities" in self.driver.current_url
 
         self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/button")[
+        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
             0
         ].click()
 
