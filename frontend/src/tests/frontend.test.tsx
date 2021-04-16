@@ -59,11 +59,13 @@ describe("Render views", () => {
 		const component = shallow(<Cuisines />);
 		expect(component).toMatchSnapshot();
 	});
-	// tests for instance pages
+	
+	// Update for below comments: Fixed by correctly restructuring frontend
 	// need to restructure frontend to make these tests pass
 	//     TypeError: Cannot read property 'match' of undefined
 	// this error is due to using useParams from react-router (see https://stackoverflow.com/questions/59153898/typeerror-cannot-read-property-match-of-undefined-when-using-useparams-from-r)
 	
+	// tests for instance pages
 	test('Restaurant instance page', () => {
 		const component = shallow(<Restaurant/>);
 		expect(component).toMatchSnapshot();
@@ -76,13 +78,6 @@ describe("Render views", () => {
 		const component = shallow(<Cuisine/>);
 		expect(component).toMatchSnapshot();
 	});
-
-	// jest.mock("react-router-dom", () => ({
-	// 	...jest.requireActual("react-router-dom"),
-	// 	useParams: () => ({
-	// 	  id: 590
-	// 	})
-	//   }));
 
 
 })
