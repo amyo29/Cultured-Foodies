@@ -18,7 +18,7 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "Cultured Foodies"
 
         summary = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div/div/div[1]/div[1]"
+            "/html/body/div/div/div/div/div[2]/div/div[1]/div[1]"
         )[0].text
         assert "Cultured Foodies" in summary
 
@@ -92,7 +92,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cuisines")
         self.driver.implicitly_wait(60)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div/a"
+            "/html/body/div/div/div/body/div[3]/div[2]/div[2]/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -101,7 +101,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cuisines")
         self.driver.implicitly_wait(60)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[1]/div[4]/div[1]/div/div/a"
+            "/html/body/div/div/div/body/div[3]/div[5]/div[1]/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
@@ -111,13 +111,13 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.implicitly_wait(60)
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[2]/nav/ul/li[6]/button"
+            "/html/body/div/div/div/body/div[4]/nav/ul/li[6]/button"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
 
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[1]/div[4]/div[3]/div/div/a"
+            "/html/body/div/div/div/body/div[3]/div[5]/div[3]/a"
         )[0]
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
         element.click()
