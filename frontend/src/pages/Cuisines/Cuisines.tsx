@@ -277,7 +277,7 @@ function Countries() {
               </Row>
               <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
-                    <h4>Learn more about your favorite cuisines below!</h4>
+                    <h4> 🌎 Worldwide food for thought 💭</h4>
                   </Card.Subtitle>
               </Row>
             </Card.ImgOverlay>
