@@ -30,6 +30,8 @@ function Restaurant(id: any) {
     +
     restaurant?.address.replace("&", "%20");
 
+  let averageRating = (parseInt(restaurant?.aggregate_rating!) == 0) ? "No Data" : restaurant?.aggregate_rating
+  let averageCostForTwo = (restaurant?.average_cost_for_two == 0) ? "No Data" : "$" + restaurant?.average_cost_for_two
 
   return (
 
@@ -52,11 +54,11 @@ function Restaurant(id: any) {
                 <p className="card-text">City: {restaurant?.city}</p>
                 <p className="card-text">Zipcode: {restaurant?.zipcode}</p>
                 <p className="card-text">
-                  Average Rating: {restaurant?.aggregate_rating}
+                  Average Rating: {averageRating}
                 </p>
                 <p className="card-text">Highlights: {restaurant?.highlights}</p>
                 <p className="card-text">Price Range: {restaurant?.price_range}</p>
-                <p className="card-text">Average Cost for Two: ${restaurant?.average_cost_for_two}</p>
+                <p className="card-text">Average Cost for Two: {averageCostForTwo}</p>
                 <p className="card-text">Timings: {restaurant?.timings}</p>
                 <p className="card-text">
                   Menu: 
