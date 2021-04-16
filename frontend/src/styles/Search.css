@@ -42,7 +42,9 @@
 #search-page [id^='id_'].collapsing {
   height: 1.5em;
 }
+
 .ais-Hits-item {
   list-style: none;
 }
+
 
