@@ -108,7 +108,7 @@ function City(id: any) {
                   <td scope="row">Business Freedom</td>
                   <td>
                     {city?.business_freedom
-                      ? parseFloat(city?.business_freedom.toFixed(4))
+                      ? parseFloat(city?.business_freedom.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -116,33 +116,33 @@ function City(id: any) {
                   <td scope="row">Cost of Living</td>
                   <td>
                     {city?.cost_of_living
-                      ? parseFloat(city?.cost_of_living.toFixed(4))
+                      ? parseFloat(city?.cost_of_living.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Economy</td>
                   <td>
-                    {city?.economy ? parseFloat(city?.economy.toFixed(4)) : "No Data"}
+                    {city?.economy ? parseFloat(city?.economy.toFixed(2)) : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Housing</td>
                   <td>
-                    {city?.housing ? parseFloat(city?.housing.toFixed(4)) : "No Data"}
+                    {city?.housing ? parseFloat(city?.housing.toFixed(2)) : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Commute</td>
                   <td>
-                    {city?.commute ? parseFloat(city?.commute.toFixed(4)) : "No Data"}
+                    {city?.commute ? parseFloat(city?.commute.toFixed(2)) : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Education</td>
                   <td>
                     {city?.education
-                      ? parseFloat(city?.education.toFixed(4))
+                      ? parseFloat(city?.education.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -150,7 +150,7 @@ function City(id: any) {
                   <td scope="row">Environmental Quality</td>
                   <td>
                     {city?.environmental_quality
-                      ? parseFloat(city?.environmental_quality.toFixed(4))
+                      ? parseFloat(city?.environmental_quality.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -158,7 +158,7 @@ function City(id: any) {
                   <td scope="row">Healthcare</td>
                   <td>
                     {city?.healthcare
-                      ? parseFloat(city?.healthcare.toFixed(4))
+                      ? parseFloat(city?.healthcare.toFixed(2))
                       : "No Data"}{" "}
                   </td>
                 </tr>
@@ -166,7 +166,7 @@ function City(id: any) {
                   <td scope="row">Leisure and Culture</td>
                   <td>
                     {city?.leisure_culture
-                      ? parseFloat(city?.leisure_culture.toFixed(4))
+                      ? parseFloat(city?.leisure_culture.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -174,27 +174,27 @@ function City(id: any) {
                   <td scope="row">Outdoors</td>
                   <td>
                     {city?.outdoors
-                      ? parseFloat(city?.outdoors.toFixed(4))
+                      ? parseFloat(city?.outdoors.toFixed(2))
                       : "No Data"}{" "}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Safety</td>
                   <td>
-                    {city?.safety ? parseFloat(city?.safety.toFixed(4)) : "No Data"}
+                    {city?.safety ? parseFloat(city?.safety.toFixed(2)) : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Startups</td>
                   <td>
-                    {city?.safety ? parseFloat(city?.startups.toFixed(4)) : "No Data"}
+                    {city?.safety ? parseFloat(city?.startups.toFixed(2)) : "No Data"}
                   </td>
                 </tr>
                 <tr>
                   <td scope="row">Taxation</td>
                   <td>
                     {city?.taxation
-                      ? parseFloat(city?.taxation.toFixed(4))
+                      ? parseFloat(city?.taxation.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -202,7 +202,7 @@ function City(id: any) {
                   <td scope="row">Tolerance</td>
                   <td>
                     {city?.taxation
-                      ? parseFloat(city?.tolerance.toFixed(4))
+                      ? parseFloat(city?.tolerance.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -210,7 +210,7 @@ function City(id: any) {
                   <td scope="row">Travel and Connectivity</td>
                   <td>
                     {city?.travel_connectivity
-                      ? parseFloat(city?.travel_connectivity.toFixed(4))
+                      ? parseFloat(city?.travel_connectivity.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -219,7 +219,7 @@ function City(id: any) {
                   <td>
                     {" "}
                     {city?.internet_access
-                      ? parseFloat(city?.internet_access.toFixed(4))
+                      ? parseFloat(city?.internet_access.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>
@@ -228,7 +228,7 @@ function City(id: any) {
                   <td>
                     {" "}
                     {city?.venture_capital
-                      ? parseFloat(city?.venture_capital.toFixed(4))
+                      ? parseFloat(city?.venture_capital.toFixed(2))
                       : "No Data"}
                   </td>
                 </tr>

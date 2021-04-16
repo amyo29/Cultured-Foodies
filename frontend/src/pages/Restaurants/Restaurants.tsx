@@ -587,47 +587,47 @@ function Restaurants() {
                   <h1 style={headerTextStyle}>Restaurants</h1>
                 </Card.Title>
               </Row>
+              <Row style={rowStyle}>
+                <Form
+                  inline
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  <FormControl
+                    className="mr-sm-2"
+                    type="text"
+                    placeholder="Search Restaurants"
+                    ref={textInput}
+                    onKeyPress={(event: any) => {
+                      if (event.key === "Enter") {
+                        searchButtonClicked(false);
+                      }
+                    }}
+                  />
+                  <Button
+                    style={searchButtonStyle}
+                    variant="info"
+                    onClick={() => searchButtonClicked(false)}
+                  >
+                    Search
+                  </Button>
+
+                  <Button
+                    style={searchButtonStyle}
+                    variant="info"
+                    onClick={() => searchButtonClicked(true)}
+                  >
+                    Clear
+                  </Button>
+                </Form>
+              </Row>
               <Row style={rowStyle} className="mt-5">
                 <Card.Subtitle style={subtitleTextStyle}>
                   <h4>
                     😋 Hungry? Whether you're looking for French escargot or
                     Korean bulgogi, we've got just the place for you! 🍽️{" "}
                   </h4>
-
-                  <Form
-                    style={rowStyle}
-                    inline
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                    }}
-                  >
-                    <FormControl
-                      type="text"
-                      placeholder="Search restaurants"
-                      ref={textInput}
-                      onKeyPress={(event: any) => {
-                        if (event.key === "Enter") {
-                          searchButtonClicked(false);
-                        }
-                      }}
-                    />
-                    {/* Search Button */}
-                    <Button
-                      style={searchButtonStyle}
-                      variant="info"
-                      onClick={() => searchButtonClicked(false)}
-                    >
-                      Search
-                    </Button>
-                    {/* Clear Search Button */}
-                    <Button
-                      style={searchButtonStyle}
-                      variant="info"
-                      onClick={() => searchButtonClicked(true)}
-                    >
-                      Clear
-                    </Button>
-                  </Form>
                 </Card.Subtitle>
               </Row>
             </Card.ImgOverlay>
