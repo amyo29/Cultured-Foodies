@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CSS from 'csstype';
+import CSS from "csstype";
 import { BsCaretDown } from "react-icons/bs";
 import {
   Container,
@@ -52,6 +52,7 @@ function Cities() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortingField, setSortingField] = useState<SortingAttribute>();
 
+  const [numPerPage, setNumPerPage] = useState(12);
   const [pageNumber, setPageNumber] = useState(1);
   const [loaded, changeLoading] = useState(false);
   var states = [
@@ -231,7 +232,9 @@ function Cities() {
     });
   };
 
-  const numPerPage = 12;
+  let updateNumPerPage = (num: number) => {
+    setNumPerPage(num);
+  };
   const startIndex = numPerPage * (pageNumber - 1);
   const currentData = displayedCities.slice(
     startIndex,
@@ -245,27 +248,27 @@ function Cities() {
   }
 
   const headerImgStyle: CSS.Properties = {
-    alignItems: 'center',
-    justifyContent: 'center',
-    objectFit: 'cover',
-    width: '100%',
-    height: '500px',
+    alignItems: "center",
+    justifyContent: "center",
+    objectFit: "cover",
+    width: "100%",
+    height: "500px",
     marginBottom: "0px",
     marginTop: "0px",
     display: "block",
-    opacity: "0.7",   
+    opacity: "0.7",
   };
 
   const headerTextStyle: CSS.Properties = {
-    textShadow: '1px 1px 3px black',
-    fontSize: '11rem',
-    color: 'white',
-    width: '100%', 
+    textShadow: "1px 1px 3px black",
+    fontSize: "11rem",
+    color: "white",
+    width: "100%",
   };
 
   const headerCardStyle: CSS.Properties = {
-    width:"100%", 
-    height:"auto",
+    width: "100%",
+    height: "auto",
   };
 
   const rowStyle: CSS.Properties = {
@@ -275,58 +278,58 @@ function Cities() {
   };
 
   const subtitleTextStyle: CSS.Properties = {
-    textShadow: '1px 1px 3px black',
-    color: 'white',
-    width: '100%', 
+    textShadow: "1px 1px 3px black",
+    color: "white",
+    width: "100%",
   };
 
   const buttonStyle: CSS.Properties = {
     color: "white",
-    opacity: "0.7", 
-  }
+    opacity: "0.7",
+  };
 
   if (loaded) {
     return (
       <body>
         <Container fluid>
           <Row>
-          <Card style={headerCardStyle}>
-              <Card.Img src={citiesImg} style={headerImgStyle}/>
+            <Card style={headerCardStyle}>
+              <Card.Img src={citiesImg} style={headerImgStyle} />
               <Card.ImgOverlay>
                 <Row className="mt-4" style={rowStyle}>
                   <Col className="text-align center">
-                  <Card.Title>
-                    <h1 style={headerTextStyle}>Cities</h1>
-                  </Card.Title>
+                    <Card.Title>
+                      <h1 style={headerTextStyle}>Cities</h1>
+                    </Card.Title>
                   </Col>
                 </Row>
-                
-              <Row style={rowStyle}> 
-                <Form
-                  inline
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                  }}
-                >
-                  <FormControl
-                    className="mr-sm-2"
-                    type="text"
-                    placeholder="Search Cuisines"
-                    onChange={handleSearchChange}
-                  />
-                  {/* <Button onClick={searchOnClick}></Button> */}
-                </Form>
-              </Row>
-              <Row style={rowStyle} className="mt-5">
+
+                <Row style={rowStyle}>
+                  <Form
+                    inline
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                    }}
+                  >
+                    <FormControl
+                      className="mr-sm-2"
+                      type="text"
+                      placeholder="Search Cuisines"
+                      onChange={handleSearchChange}
+                    />
+                    {/* <Button onClick={searchOnClick}></Button> */}
+                  </Form>
+                </Row>
+                <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
                     <h4>Learn more about your favorite cities below!</h4>
                   </Card.Subtitle>
-              </Row>
-              <Row style={rowStyle} >
-                <a href="#top" className="center-text">
-                  <BsCaretDown size={75} style={buttonStyle}/>
-                </a>
-              </Row>
+                </Row>
+                <Row style={rowStyle}>
+                  <a href="#top" className="center-text">
+                    <BsCaretDown size={75} style={buttonStyle} />
+                  </a>
+                </Row>
               </Card.ImgOverlay>
             </Card>
           </Row>
@@ -468,6 +471,22 @@ function Cities() {
                       </MenuItem>
                     ))}
                   </Select>
+                </div>
+                <div className="col">
+                  <DropdownButton
+                    id="dropdown-basic-button"
+                    title="Item Per Page"
+                  >
+                    <Dropdown.Item onClick={() => updateNumPerPage(6)}>
+                      6
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => updateNumPerPage(12)}>
+                      12
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => updateNumPerPage(15)}>
+                      15
+                    </Dropdown.Item>
+                  </DropdownButton>
                 </div>
               </div>
 
