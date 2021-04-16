@@ -26,13 +26,13 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me")
 
         self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/button")[
+        self.driver.find_elements_by_xpath("/html/body/div/div/div/div/div[1]/nav/a/b")[
             0
         ].click()
 
         self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[1]/nav/div/div/a[1]"
+            "/html/body/div/div/div/div/div[1]/nav/div/div/a[1]"
         )[0].click()
         assert "https://www.culturedfoodies.me/about" in self.driver.current_url
 
@@ -69,17 +69,17 @@ class Selenium_Tests(unittest.TestCase):
         assert self.driver.title == "About"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/h2"
+            "/html/body/div/div/div/div/h2"
         )[0].text
         assert textVal == "Meet the Team"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[3]/h2"
+            "/html/body/div/div/div/div/div[4]/h2"
         )[0].text
         assert textVal == "Stats"
 
         textVal = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[2]/div/div[6]/h2"
+            "/html/body/div/div/div/div/div[7]/h2"
         )[0].text
         assert textVal == "Tools"
 
