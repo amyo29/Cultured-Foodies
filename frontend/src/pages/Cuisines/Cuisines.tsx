@@ -96,9 +96,20 @@ function Countries() {
     });
   });
 
+  function formatNumber(num: number) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+  }
+
   let handleSearchChange = (event: any) => {
-    setSearchQuery(event.target.value);
+    if (isNaN(event.target.value)) {
+      setSearchQuery(event.target.value);
+    } else {
+      let number: number = event.target.value;
+      setSearchQuery(formatNumber(number));
+      console.log(formatNumber(number));
+    }
   };
+
   const onFiltersRegion = (event: React.ChangeEvent<{ value: unknown }>) => {
     setFilteringRegions(event.target.value as string[]);
   };
@@ -144,11 +155,17 @@ function Countries() {
           cuisineObjStr +=
             countryObj["capital"] +
             countryObj["region"] +
+            countryObj["subregion"] +
             countryObj["population"] +
             countryObj["area"];
         });
+      // console.log(cuisineObjStr)
       if (searchQuery != "") {
-        if (!cuisineObjStr.toLowerCase().includes(searchQuery.toLowerCase())) {
+        if (
+          !cuisineObjStr
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase().replaceAll(",", ""))
+        ) {
           matchSearchQuery = false;
         }
       }
@@ -437,6 +454,7 @@ function Countries() {
                         cuisine={cuisine}
                         countries={countries}
                         loaded={loaded}
+                        searchQuery={searchQuery}
                       ></CuisinesCard>
                     </Col>
                   ))}

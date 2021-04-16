@@ -28,7 +28,7 @@ Phase I: Lucinda Nguyen
 
 Phase II: Siddhesh Krishnan
 
-Phase III:
+Phase III: Tim Nguyen
 
 Phase IV:
 
@@ -72,12 +72,12 @@ https://www.culturedfoodies.me
 
 | Name              | Estimated Completion time | Actual Completion time |
 | ----------------- | ------------------------- | ---------------------- |
-| Joshua Arrojado   | XX hours                  | XX hours               |
-| Siddhesh Krishnan | XX hours                  | XX hours               |
-| Lucinda Nguyen    | XX hours                  | XX hours               |
-| Tim Nguyen        | XX hours                  | XX hours               |
-| Amy Ouyang        | XX hours                  | XX hours               |
-| Vishal Tak        | XX hours                  | XX hours               |
+| Joshua Arrojado   | 20 hours                  | 25 hours               |
+| Siddhesh Krishnan | 20 hours                  | 25 hours               |
+| Lucinda Nguyen    | 25 hours                  | 30 hours               |
+| Tim Nguyen        | 15 hours                  | 16 hours               |
+| Amy Ouyang        | 25 hours                  | 30 hours               |
+| Vishal Tak        | 15 hours                  | 20 hours               |
 
 ### Phase IV
 
