@@ -38,7 +38,7 @@ https://gitlab.com/cs373-group-11/cultured-foodies/-/pipelines
 
 ## Link to Postman API
 
-https://documenter.getpostman.com/view/15165948/TzCL9UDZ
+https://documenter.getpostman.com/view/15165948/TzJrBeeW
 
 ## Link to website
 
