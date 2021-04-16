@@ -133,6 +133,15 @@ A restaurant is a business established where meals or refreshments can be purcha
 - Cuisine ids: A string of the database id's for cuisines that this restaurant serves. Each id in the string is separated by ", ". 
 - Cuisines: A string containing the names of cuisines that this restaurant serves (Ex: "Italian, Pizza, Sandwich)". Each id in the string is separated by ", ". 
 - Highlights: A string listing the highlights of this restaurant (Ex: "Delivery, Dinner, Takeaway Available, Lunch, Outdoor Seating, Gluten Free Options, Kid Friendly"). Each id in the string is separated by ", ". 
+Possible highlights:
+Gastro Pub, Outdoor Seating, Beer, Rooftop, Beverages, Dog Friendly, Pool Table, Desserts and Bakes, Paid Parking, BYOB, Corkage Fee Charged, Restricted Entry, 
+Private Dining Area Available, No Seating Available, Halal, Vegetarian Friendly, Wine, Live Entertainment, AMEX for Credit Card, Drinking Age Applicable, 
+Private Parking, Discover for Debit Card, Formal Attire, Breakfast, Farm-to-Table, Debit Card, Fullbar, Discover for Credit Card, Table booking recommended, 
+Nightlife, Sake, AMEX for Debit Card, Casual Attire, Valet Parking Available, Street Parking, Dressy Attire, Serves Alcohol, Serves Cocktails, Karaoke, 
+City View, Lunch Menu, Disabled Friendly, Visa for Debit Card, Serves Organic Food, All Day Breakfast, No Alcohol Available, Luxury Dining, Locally Sourced,
+ Distillery, Sports TV, Kid Friendly, Snacks, BYOW, Takeaway Available, Kosher, Buffet, Wifi, Dinner, Credit Card, Afternoon Tea, Brunch, MasterCard for Credit Card, 
+ Kids Area, Sports Bar, TV, Waterfront, Free Parking, Delivery, Board Games, Table reservation required, Visa for Credit Card, Apple Pay, Live Music, 
+ MasterCard for Debit Card, Lunch, ATM, Gluten Free Options, Smoking Area, Android Pay, Cash, Drive Thru, Serves Pho, Michelin Starred, Craft Beer, Indoor Seating, Vegan Options.
 - Id: The database id of this restaurant.
 - Latitude: An integer denoting the latitudinal coordinates of this country.
 - Longitude: An integer denoting the longitudinal coordinates of this country.
