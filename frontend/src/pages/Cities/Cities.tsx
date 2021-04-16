@@ -314,7 +314,7 @@ function Cities() {
                     <FormControl
                       className="mr-sm-2"
                       type="text"
-                      placeholder="Search Cuisines"
+                      placeholder="Search Cities"
                       onChange={handleSearchChange}
                     />
                     {/* <Button onClick={searchOnClick}></Button> */}
