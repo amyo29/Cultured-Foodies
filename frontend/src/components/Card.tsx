@@ -46,6 +46,11 @@ const ProfileCard = (props: any) => {
 
 const CitiesCard = (props: any) => {
   const { city } = props;
+  let leisureCulture = (parseInt(city["leisure_culture"]!) == 0) ? "No Data" : parseFloat(city["leisure_culture"].toFixed(4));
+  let costOfLiving = (parseInt(city["cost_of_living"]!) == 0) ? "No Data" : parseFloat(city["cost_of_living"].toFixed(4));
+  let environmentalQuality = (parseInt(city["environmental_quality"]!) == 0) ? "No Data" : parseFloat(city["environmental_quality"].toFixed(4));
+  let travelConnectivity = (parseInt(city["travel_connectivity"]!) == 0) ? "No Data" : parseFloat(city["travel_connectivity"].toFixed(4));
+
   return (
     <a href={"/cities/" + city["id"]} className="card">
       <h5 className="card-title mt-3">{city["name"]}</h5>
@@ -54,13 +59,13 @@ const CitiesCard = (props: any) => {
         <p>
           <b>State: </b> {city["state"]} <br />
           <b>Leisure and Culture: </b>{" "}
-          {parseFloat(city["leisure_culture"].toFixed(4))} <br />
+          {leisureCulture} <br />
           <b>Cost of Living: </b>{" "}
-          {parseFloat(city["cost_of_living"].toFixed(4))} <br />
+          {costOfLiving} <br />
           <b>Environmental Quality: </b>{" "}
-          {parseFloat(city["environmental_quality"].toFixed(4))} <br />
+          {environmentalQuality} <br />
           <b>Travel Connectivity: </b>{" "}
-          {parseFloat(city["travel_connectivity"].toFixed(4))} <br />
+          {travelConnectivity} <br />
           <b>Population: </b> {city["population"].toLocaleString()} <br />
         </p>
       </div>
