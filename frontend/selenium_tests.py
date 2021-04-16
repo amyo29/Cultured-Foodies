@@ -26,8 +26,8 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me")
 
         self.driver.implicitly_wait(60)
-        print(self.driver.find_elements_by_xpath("/html/body/div/div/div/div/div[1]/nav/a/b")[0])
-        self.driver.find_elements_by_xpath("/html/body/div/div/div/div/div[1]/nav/a/b")[
+        
+        self.driver.find_elements_by_xpath("/html/body/div/div/div/div/div[1]/nav/a")[
             0
         ].click()
 
@@ -131,7 +131,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cities")
         self.driver.implicitly_wait(60)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div/body/div[2]/div[2]/div[1]/div[5]/div[2]/a")[0]
+            "/html/body/div/div/div/body/div[2]/div[2]/div[1]/div[5]/div[2]/a/h5")[0]
         element.click()
         assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
 
