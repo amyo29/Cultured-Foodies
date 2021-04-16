@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import NavBarSolid from "../../components/NavBarSolid";
+
 import { API_INFO, TOOLS_INFO, TEAM_INFO } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
 import retrieveGitLabInfo, {
@@ -69,6 +71,7 @@ function About() {
   }
   return (
     <div className="font-style center">
+      <NavBarSolid/>
       <h1>About Us</h1>
 
       <p className="summary">

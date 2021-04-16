@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import "../styles/NavBar.css";
+import "../styles/NavBarSolid.css";
 
 function NavBar() {
   const [searchQuery, setSearchQuery] = useState("");
