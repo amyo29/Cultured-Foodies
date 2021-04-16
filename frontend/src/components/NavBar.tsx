@@ -61,7 +61,7 @@ function NavBar() {
                 }
               }}
             />
-            <Button variant="outline-success" onClick={searchResults}>
+            <Button bsPrefix="search-button" variant="outline-success" onClick={searchResults}>
               Search
             </Button>
           </Form>

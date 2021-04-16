@@ -23,3 +23,21 @@
   text-decoration: none;
   background-size: 100% 2px;
 }
+
+.search-button {
+  background-color: rgb(236, 158, 61);
+  color: white;
+  border: 2px solid rgb(236, 158, 61);
+  border-radius: 8px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.search-button:hover {
+  background-color: beige;
+  border: 2px solid beige;
+  border-radius: 8px;
+  color:rgb(53, 13, 3)
+
+
+}
