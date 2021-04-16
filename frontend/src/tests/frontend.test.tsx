@@ -41,6 +41,7 @@ describe("Render views", () => {
 		const component = shallow(<Home />);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	// test About page
 	test('About Page', () => {
@@ -53,16 +54,19 @@ describe("Render views", () => {
 		const component = shallow(<Restaurants />);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	test('Cities model page', () => {
 		const component = shallow(<Cities />);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	test('Cuisines model page', () => {
 		const component = shallow(<Cuisines />);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	
 	// Update for below comments: Fixed by correctly restructuring frontend
@@ -75,16 +79,19 @@ describe("Render views", () => {
 		const component = shallow(<Restaurant/>);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	test('City instance page', () => {
 		const component = shallow(<City/>);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 	test('Cuisine instance page', () => {
 		const component = shallow(<Cuisine/>);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
+		expect(component).toHaveLength(1);
 	});
 
 
