@@ -148,7 +148,7 @@ const TEAM_INFO = [
     username: "Tim Nguyen",
     email: "nguyenmctim@gmail.com",
     img: TimImg,
-    role: "Full-Stack",
+    role: "Full-Stack | Phase III Project Leader",
     bio:
       "I'm a fourth year CS major at UT Austin. I'm from a small town called Palacios, TX and I enjoy playing video games and watching anime!",
     linkedin: "https://www.linkedin.com/in/nguyenmctim/",

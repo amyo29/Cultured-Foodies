@@ -119,8 +119,17 @@ function Cities() {
     }
   }, [data]);
 
+  function formatNumber(num: number) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+  }
+
   let handleSearchChange = (event: any) => {
-    setSearchQuery(event.target.value);
+    if (isNaN(event.target.value)) {
+      setSearchQuery(event.target.value);
+    } else {
+      let number: number = event.target.value;
+      setSearchQuery(formatNumber(number));
+    }
   };
 
   const onFiltersStates = (event: React.ChangeEvent<{ value: unknown }>) => {
@@ -155,10 +164,13 @@ function Cities() {
           cityObj["cost_of_living"].toFixed(2) +
           cityObj["environmental_quality"].toFixed(2) +
           cityObj["travel_connectivity"].toFixed(2) +
-          cityObj["population"]
-          ;
+          cityObj["population"];
         // search for text across all city attributes
-        if (!cityObjStr.toLowerCase().includes(searchQuery.toLowerCase().replace(",", ""))) {
+        if (
+          !cityObjStr
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase().replaceAll(",", ""))
+        ) {
           matchSearchQuery = false;
         }
       }
@@ -500,7 +512,10 @@ function Cities() {
                 <Row>
                   {cols.map((city: any, i: any) => (
                     <Col className="col-sm-4 py-2">
-                      <CitiesCard city={city} searchQuery={searchQuery}></CitiesCard>
+                      <CitiesCard
+                        city={city}
+                        searchQuery={searchQuery}
+                      ></CitiesCard>
                     </Col>
                   ))}
                 </Row>
