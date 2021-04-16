@@ -322,7 +322,7 @@ function Cities() {
                 </Row>
                 <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
-                    <h4>Learn more about your favorite cities below!</h4>
+                    <h4> Wherever you are, wherever you're headed, all you want to know about your city is just a click away!</h4>
                   </Card.Subtitle>
                 </Row>
                 <Row style={rowStyle}>
