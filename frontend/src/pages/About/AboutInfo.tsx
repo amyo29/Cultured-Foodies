@@ -5,6 +5,8 @@ import ReactLogo from "./Images/Tools/ReactLogo.png";
 import BootStrapLogo from "./Images/Tools/BootstrapLogo.jpg";
 import NameCheapLogo from "./Images/Tools/Namecheap.png";
 import PostgreSQL from "./Images/Tools/PostgreSQL.png";
+import MaterialUI from "./Images/Tools/MaterialUI.png";
+import AlgoliaLogo from "./Images/Tools/AlgoliaLogo.png";
 
 import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
 import ZomatoLogo from "./Images/APIs/zomato.png";
@@ -102,6 +104,18 @@ const TOOLS_INFO = [
     img: PostgreSQL,
     description: "Open-source relational database management system.",
     link: "https://postgresql.org",
+  },
+  {
+    title: "Algolia",
+    img: AlgoliaLogo,
+    description: "Used to implement site-wide search.",
+    link: "https://www.algolia.com/",
+  },
+  {
+    title: "Material UI",
+    img: MaterialUI,
+    description: "UI library for mobile-first front-end web development.",
+    link: "https://material-ui.com/",
   }
 ];
 
