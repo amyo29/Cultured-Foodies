@@ -35,6 +35,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
               "render": [Function],
             }
           }
+          className="a-custom"
           disabled={false}
           href="/about"
         >
@@ -47,6 +48,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
               "render": [Function],
             }
           }
+          className="a-custom"
           disabled={false}
           href="/cuisines"
         >
@@ -59,6 +61,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
               "render": [Function],
             }
           }
+          className="a-custom"
           disabled={false}
           href="/cities"
         >
@@ -71,6 +74,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
               "render": [Function],
             }
           }
+          className="a-custom"
           disabled={false}
           href="/restaurants"
         >
@@ -79,15 +83,19 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
       </Nav>
       <Form
         inline={true}
+        onSubmit={[Function]}
       >
         <FormControl
           className="mr-sm-2"
+          onChange={[Function]}
+          onKeyPress={[Function]}
           placeholder="Search"
           type="text"
         />
         <Button
           active={false}
           disabled={false}
+          onClick={[Function]}
           variant="outline-success"
         >
           Search
@@ -105,51 +113,69 @@ exports[`Render views About Page 1`] = `
   <h1>
     About Us
   </h1>
-  <p>
+  <p
+    className="summary"
+  >
     Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas. With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
   </p>
   <h2>
     Meet the Team
   </h2>
-  <Container
-    fluid={false}
+  <Spinner
+    animation="border"
+    role="status"
   >
-    <div
-      className="row mb-4"
+    <span
+      className="sr-only"
     >
-      <div>
-        Loading
-      </div>
-    </div>
-  </Container>
-  <Container
-    fluid={false}
+      Loading...
+    </span>
+  </Spinner>
+  <div
+    className="card"
+    style={
+      Object {
+        "width": "18rem",
+      }
+    }
   >
-    <div
-      className="row mb-4"
-    >
-      <div>
-        Loading
-      </div>
-    </div>
-  </Container>
-  <div>
     <h2>
       Stats
     </h2>
     <div>
       <h5>
-        Total Commits: 
+        Total Commits:  
+        <Spinner
+          animation="border"
+          aria-hidden="true"
+          as="span"
+          role="status"
+          size="sm"
+        />
       </h5>
     </div>
     <div>
       <h5>
-        Total Issues: 
+        Total Issues:  
+        <Spinner
+          animation="border"
+          aria-hidden="true"
+          as="span"
+          role="status"
+          size="sm"
+        />
       </h5>
     </div>
     <div>
       <h5>
-        Total Tests: 
+        Total Tests:  
+        <Spinner
+          animation="border"
+          aria-hidden="true"
+          as="span"
+          role="status"
+          size="sm"
+        />
       </h5>
     </div>
   </div>
@@ -166,19 +192,85 @@ exports[`Render views About Page 1`] = `
     >
       <InfoCard
         description="Used to retrieve country information"
-        img="RestCountriesLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://restcountries.eu/"
         title="REST Countries"
       />
       <InfoCard
         description="Used to find restaurant data."
-        img="zomato.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://rapidapi.com/blog/how-to-use-zomato-api/"
         title="Zomato API"
       />
       <InfoCard
         description="Used to retrieve cuisine and dishes data."
-        img="WorldFood.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://worldfood.guide/api/"
         title="WorldFood API"
       />
@@ -188,19 +280,85 @@ exports[`Render views About Page 1`] = `
     >
       <InfoCard
         description="Used to show the map location of a country"
-        img="GoogleMapsLogo.jpeg"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://developers.google.com/maps/documentation/embed/get-started"
         title="Google Maps Embed API"
       />
       <InfoCard
         description="Used to retrieve images of restaurants."
-        img="GooglePlaceLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://developers.google.com/maps/documentation/places/web-service/photos"
         title="Google Places Photos API"
       />
       <InfoCard
         description="Used to retrieve city data."
-        img="teleportAPI.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://developers.teleport.org/api/"
         title="Teleport API"
       />
@@ -219,19 +377,85 @@ exports[`Render views About Page 1`] = `
     >
       <InfoCard
         description="Cloud hosting platform"
-        img="AWSLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://aws.amazon.com/"
         title="AWS"
       />
       <InfoCard
         description="GitLab Repository and CI/CD platform"
-        img="GitLabLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://gitlab.com/"
         title="GitLab"
       />
       <InfoCard
         description="API and streamline collaboration platform"
-        img="PostmanLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://www.postman.com/"
         title="Postman"
       />
@@ -241,19 +465,85 @@ exports[`Render views About Page 1`] = `
     >
       <InfoCard
         description="A JavaScript library for building user interfaces"
-        img="ReactLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://reactjs.org/"
         title="React"
       />
       <InfoCard
         description="A free and open-source CSS framework directed at responsive, mobile-first front-end web development"
-        img="BootstrapLogo.jpg"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://getbootstrap.com/"
         title="BootStrap"
       />
       <InfoCard
         description="Domain name registrar"
-        img="Namecheap.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://www.namecheap.com/"
         title="NameCheap"
       />
@@ -263,7 +553,29 @@ exports[`Render views About Page 1`] = `
     >
       <InfoCard
         description="Open-source relational database management system."
-        img="PostgreSQL.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://postgresql.org"
         title="PostgreSQL"
       />
@@ -281,12 +593,56 @@ exports[`Render views About Page 1`] = `
       className="row justify-content-center"
     >
       <InfoCard
-        img="GitLabLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://gitlab.com/cs373-group-11/cultured-foodies"
         title="Gitlab Repo"
       />
       <InfoCard
-        img="PostmanLogo.png"
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
         link="https://documenter.getpostman.com/view/15165948/TzCL9UDZ"
         title="Postman API"
       />
@@ -296,140 +652,382 @@ exports[`Render views About Page 1`] = `
 `;
 
 exports[`Render views Cities model page 1`] = `
-<div>
-  <h1
-    className="text-align center"
-  >
-    Cities
-  </h1>
-  <Container
-    fluid={false}
+<div
+  style={
+    Object {
+      "left": "50%",
+      "position": "absolute",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+    }
+  }
+>
+  <img
+    alt="loading..."
+    src="spinny.gif"
   />
-  <div
-    className="row pagination"
-  >
-    <WithStyles(ForwardRef(Pagination))
-      count={0}
-      onChange={[Function]}
-      page={1}
-    />
-    1
-     - 
-    0
-     of 
-    0
-  </div>
 </div>
 `;
 
 exports[`Render views City instance page 1`] = `
 <div>
-  <Image
-    fluid={true}
-    rounded={false}
-    roundedCircle={false}
-    thumbnail={false}
+  <img
+    className="city-img-top"
   />
-  <Container
-    fluid={false}
+  <h1
+    className="text-center"
+  />
+  <div
+    className="card-columns"
+    style={
+      Object {
+        "margin": 20,
+      }
+    }
   >
-    <h1 />
-    <section>
-      <h2>
-        About the City
-      </h2>
-      <h5>
-        Summary
-      </h5>
-      <h5>
-        State
-      </h5>
-      <h5>
-        Population
-      </h5>
-      <h5>
-        Location
-      </h5>
-      <h6>
-        Latitude
-      </h6>
-      <h6>
-        Longitude
-      </h6>
-      <h5>
-        Timezone
-      </h5>
-    </section>
-    <section
+    <div
+      className="card"
+    >
+      <div
+        className="card-body align-self-start"
+      >
+        <h3
+          className="margin"
+        />
+        <h5>
+          Summary
+        </h5>
+        <p />
+        <h5>
+          State
+        </h5>
+        <p />
+        <h5>
+          Population
+        </h5>
+        <p />
+        <h5>
+          Location
+        </h5>
+        <h6>
+          Latitude
+        </h6>
+        <p>
+          <h6>
+            Longitude
+          </h6>
+        </p>
+        <h5>
+          Timezone
+        </h5>
+        <p />
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <h3
+        className="margin"
+      >
+        's Urban Area- Quality of Life Scores
+      </h3>
+      <div
+        className="my-custom-scrollbar"
+        style={
+          Object {
+            "maxHeight": "40rem",
+            "width": "40rem",
+          }
+        }
+      >
+        <table
+          className="table table-bordered table-hover mb-0"
+        >
+          <thead>
+            <tr>
+              <th
+                scope="col"
+              >
+                Attribute
+              </th>
+              <th
+                scope="col"
+              >
+                Score
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                scope="row"
+              >
+                Business Freedom
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Cost of Living
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Economy
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Housing
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Commute
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Education
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Environmental Quality
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Healthcare
+              </td>
+              <td>
+                 
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Leisure and Culture
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Outdoors
+              </td>
+              <td>
+                 
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Safety
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Startups
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Taxation
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Tolerance
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Travel and Connectivity
+              </td>
+              <td>
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Internet Access
+              </td>
+              <td>
+                 
+                 
+              </td>
+            </tr>
+            <tr>
+              <td
+                scope="row"
+              >
+                Venture Capital
+              </td>
+              <td>
+                 
+                 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <h3
+        className="margin"
+      >
+        Restaurants in 
+      </h3>
+      <div
+        className="my-custom-scrollbar-restaurant"
+        style={
+          Object {
+            "maxHeight": "34rem",
+            "width": "40rem",
+          }
+        }
+      >
+        <table
+          className="table table-bordered table-hover mb-0"
+        >
+          <tbody>
+            <p>
+              loading
+            </p>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+  >
+    <Container
+      fluid={false}
       style={
         Object {
-          "alignItems": "left",
-          "paddingLeft": "1px",
+          "maxWidth": "90%",
         }
       }
     >
-      <h5>
-        Scores
-      </h5>
-      <h6>
-        Business Freedom
-      </h6>
-      <h6>
-        Cost of Living
-      </h6>
-      <h6>
-        Economy
-      </h6>
-      <h6>
-        Housing
-      </h6>
-      <h6>
-        Commute
-      </h6>
-      <h6>
-        Education
-      </h6>
-      <h6>
-        Environmental Quality
-      </h6>
-      <h6>
-        Healthcare
-      </h6>
-      <h6>
-        Leisure and Culture
-      </h6>
-      <h6>
-        Outdoors
-      </h6>
-      <h6>
-        Safety
-      </h6>
-      <h6>
-        Taxation
-      </h6>
-      <h6>
-        Travel and Connectivity
-      </h6>
-      <h6>
-        Internet Access
-      </h6>
-      <h6>
-        Venture Capital
-      </h6>
-    </section>
-    <section>
-      <h5>
-        Restaurants in 
-      </h5>
-      <p>
-        loading
-      </p>
-      <h5>
+      <h3
+        className="mt-2"
+      >
         Cuisines of 
-      </h5>
-    </section>
+      </h3>
+      <Carousel
+        activeIndex={0}
+        controls={true}
+        defaultActiveIndex={0}
+        fade={false}
+        indicators={true}
+        interval={5000}
+        keyboard={true}
+        nextIcon={
+          <span
+            aria-hidden="true"
+            className="carousel-control-next-icon"
+          />
+        }
+        nextLabel="Next"
+        onSelect={[Function]}
+        pause="hover"
+        prevIcon={
+          <span
+            aria-hidden="true"
+            className="carousel-control-prev-icon"
+          />
+        }
+        prevLabel="Previous"
+        slide={true}
+        style={
+          Object {
+            "margin": "25px",
+          }
+        }
+        touch={true}
+        wrap={true}
+      />
+    </Container>
+  </div>
+  <div
+    className="center"
+  >
+    <h2>
+      Map Location
+    </h2>
     <div
-      className="center"
+      className="map-responsive"
     >
       <iframe
         height="450"
@@ -437,69 +1035,43 @@ exports[`Render views City instance page 1`] = `
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefined"
         width="600"
       />
-      <h4>
-        Map Location
-      </h4>
     </div>
-  </Container>
+  </div>
 </div>
 `;
 
 exports[`Render views Cuisine instance page 1`] = `
-<Container
-  fluid={true}
+<div
+  style={
+    Object {
+      "left": "50%",
+      "position": "absolute",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+    }
+  }
 >
-  <h1>
-    <Component />
-  </h1>
-  <h5>
-    <Component />
-  </h5>
-  <h5>
-    Restaurants with 
-     food
-  </h5>
-  <p>
-    loading
-  </p>
-  <h5>
-    Cities with 
-     food
-  </h5>
-  <p>
-    loading
-  </p>
-  <p />
-  <p />
-  <p />
-  <p />
-</Container>
+  <Spinner
+    animation="border"
+  />
+</div>
 `;
 
 exports[`Render views Cuisines model page 1`] = `
-<div>
-  <h1
-    className="text-align center"
-  >
-    Cuisines
-  </h1>
-  <Container
-    fluid={false}
+<div
+  style={
+    Object {
+      "left": "50%",
+      "position": "absolute",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+    }
+  }
+>
+  <img
+    alt="loading..."
+    src="spinny donut.gif"
   />
-  <div
-    className="row pagination"
-  >
-    <WithStyles(ForwardRef(Pagination))
-      count={0}
-      onChange={[Function]}
-      page={1}
-    />
-    1
-     - 
-    0
-     of 
-    0
-  </div>
 </div>
 `;
 
@@ -521,59 +1093,76 @@ exports[`Render views Restaurant instance page 1`] = `
         <div
           className="col"
         >
-          <img
-            alt=""
-            width="450"
-          />
-        </div>
-        <div
-          className="col"
-        >
-          <Card
-            body={false}
-            className="instance-text"
-            style={
-              Object {
-                "width": "55rem",
-              }
-            }
+          <div
+            className="card"
           >
-            <CardBody>
-              <CardTitle />
-              <CardText>
+            <img
+              alt=""
+              className="restaurant-card-img-top"
+            />
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              />
+              <p
+                className="card-text"
+              >
                 Phone Number: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Address: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 City: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Zipcode: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Average Rating: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Highlights: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Price Range: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Average Cost for Two: $
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Timings: 
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Menu:
                 <a>
+                   
                   <br />
                 </a>
-              </CardText>
-              <CardText>
+              </p>
+              <p
+                className="card-text"
+              >
                 Cities which have this restaurant:
                 <a
                   href="/cities/undefined"
@@ -581,15 +1170,17 @@ exports[`Render views Restaurant instance page 1`] = `
                    
                   <br />
                 </a>
-              </CardText>
+              </p>
               Cuisines for this restaurant: 
               <br />
               <p>
                 loading
               </p>
-              <CardText />
-            </CardBody>
-          </Card>
+              <p
+                className="card-text"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -600,68 +1191,35 @@ exports[`Render views Restaurant instance page 1`] = `
     <h4>
       Map Location
     </h4>
-    <iframe
-      height="450"
-      loading="lazy"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefined"
-      width="600"
-    />
+    <div
+      className="map-responsive"
+    >
+      <iframe
+        height="450"
+        loading="lazy"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefinedundefined"
+        width="600"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Render views Restaurants model page 1`] = `
-<div>
-  <h1
-    className="text-align center"
-  >
-    Restaurants
-  </h1>
-  <ForwardRef
-    className="table"
-    responsive={true}
-  >
-    <thead>
-      <tr>
-        <th>
-          #
-        </th>
-        <th>
-          Name
-        </th>
-        <th>
-          City
-        </th>
-        <th>
-          Cuisines
-        </th>
-        <th>
-          Rating
-        </th>
-        <th>
-          Price Range
-        </th>
-        <th>
-          Average Cost for Two
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </ForwardRef>
-  <div
-    className="row pagination"
-  >
-    <WithStyles(ForwardRef(Pagination))
-      count={0}
-      onChange={[Function]}
-      page={1}
-    />
-    1
-     - 
-    0
-     of 
-    0
-  </div>
+<div
+  style={
+    Object {
+      "left": "50%",
+      "position": "absolute",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+    }
+  }
+>
+  <img
+    alt="loading..."
+    src="dumpling.gif"
+  />
 </div>
 `;
 
@@ -669,7 +1227,29 @@ exports[`Render views Splash Page 1`] = `
 <div>
   <body
     className="Home"
-    data-background="homephoto.jpg"
+    data-background={
+      Object {
+        "roots": Array [
+          "<rootDir>/src",
+        ],
+        "setupFilesAfterEnv": Array [
+          "<rootDir>/src/setupEnzyme.ts",
+        ],
+        "snapshotSerializers": Array [
+          "enzyme-to-json/serializer",
+        ],
+        "testMatch": Array [
+          "**/__tests__/**/*.+(ts|tsx|js)",
+          "**/?(*.)+(spec|test).+(ts|tsx|js)",
+        ],
+        "transform": Object {
+          "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+          "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+          "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+          "^.+\\\\.(ts|tsx)$": "ts-jest",
+        },
+      }
+    }
     id="mybody"
   >
     <header
@@ -678,17 +1258,19 @@ exports[`Render views Splash Page 1`] = `
       <div
         className="Title-summary"
       >
-        Welcome fellow Foodie!
+        Welcome!
         <div
           className="summary"
         >
-          Whether you are looking for cultural dishes
+          Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? 
           <br />
-          around the world, country information, dishes 
+          Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
           <br />
-          or global news, Cultured Foodies 
+          With information on delectable cuisines from around the world and where you can experience them in your city,
           <br />
-          can help you find what you're looking for!
+          as well as highlights on worldwide countries and U.S cities, 
+          <br />
+          Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
           <br />
         </div>
       </div>

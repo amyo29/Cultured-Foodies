@@ -110,16 +110,16 @@
       "enzyme-to-json/serializer"
     ],
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/ts-jest"
+      "\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+      "\\.(webp|svg|ttf|woff|woff2|mp4)$": "<rootDir>/assetsTransformer.js",
+      "\\.(webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js"
     },
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
-      "src/(.*)$": "<rootDir>/src/$1"
+      "^.*(jpe?g|png).*$": "<rootDir>/assetsTransformer.js"
     }
   }
 }
