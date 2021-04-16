@@ -586,7 +586,7 @@ function Restaurants() {
               </Row>
               <Row style={rowStyle} className="mt-5">
                   <Card.Subtitle style={subtitleTextStyle}>
-                    <h4>Hungry? Whether you're looking for French escargot or Korean bulgogi, these restaurants have got you covered!</h4>
+                    <h4>😋 Hungry? Whether you're looking for French escargot or Korean bulgogi, we've got just the restaurant for you! 🍽️ </h4>
                   </Card.Subtitle>
               </Row>
               </Card.ImgOverlay>
