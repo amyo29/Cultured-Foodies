@@ -1,16 +1,24 @@
-/* #module {
-    width: 500px;
-    font-size: 14px;
-    line-height: 1.5;
+#module {
+  width: 500px;
 }
-  
+
 #module a.collapsed:after {
-content: "+ Show More";
+  content: '+ Show More';
 }
 
 #module a:not(.collapsed):after {
-content: "- Show Less";
-} */
+  content: '- Show Less';
+}
+
+#module [id^='cid_'].collapse:not(.show) {
+  display: block;
+  height: 12rem;
+  overflow: hidden;
+}
+
+#module [id^='cid_'].collapsing {
+  height: 1.5em;
+}
 
 
 #search-page {
@@ -34,3 +42,7 @@ content: "- Show Less";
 #search-page [id^='id_'].collapsing {
   height: 1.5em;
 }
+.ais-Hits-item {
+  list-style: none;
+}
+
