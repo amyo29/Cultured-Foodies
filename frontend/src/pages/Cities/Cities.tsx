@@ -22,7 +22,7 @@ import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
 import logo from "../../static_resources/spinny.gif";
-import citiesImg from "../../static_resources/cities.jpg";
+import citiesImg from "../../static_resources/newyork.jpg";
 import { CityObject, CityInstance } from "./City";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
