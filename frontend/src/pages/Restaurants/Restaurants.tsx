@@ -6,7 +6,7 @@ import useAxios from "axios-hooks";
 import { useHistory } from "react-router-dom";
 import MUIDataTable from "mui-datatables";
 import logo from "../../static_resources/dumpling.gif";
-import restImg from "../../static_resources/restaurantimg1.jpg";
+import restImg from "../../static_resources/foodimg1.jpg";
 import small from "../../static_resources/smaller dumpling.gif";
 import NavBarSolid from "../../components/NavBarSolid";
 import { RestaurantInstance } from "./Restaurant";
