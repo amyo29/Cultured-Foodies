@@ -473,6 +473,7 @@ function RestaurantHit(props: any) {
           </div>
         </div>
     </a>
+    
   );
 }
 
