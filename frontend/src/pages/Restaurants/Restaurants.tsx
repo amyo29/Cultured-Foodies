@@ -8,6 +8,7 @@ import MUIDataTable from "mui-datatables";
 import logo from "../../static_resources/dumpling.gif";
 import restImg from "../../static_resources/restaurantimg1.jpg";
 import small from "../../static_resources/smaller dumpling.gif";
+import NavBarSolid from "../../components/NavBarSolid";
 import { RestaurantInstance } from "./Restaurant";
 import { resolveConfig } from "prettier";
 
@@ -533,48 +534,7 @@ function Restaurants() {
   if (loaded) {
     return (
       <body>
-        {/* <Row
-          className="justify-content-md-center"
-          style={{
-            margin: 25,
-          }}
-        >
-          <Col md={3}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img src={small} alt="loading..." />
-            </div>
-          </Col>
-
-          <Col md={3}>
-            <h1
-              className="text-align center"
-              style={{
-                margin: 25,
-              }}
-            >
-              Restaurants
-            </h1>
-          </Col>
-
-          <Col md={3}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img src={small} alt="loading..." />
-            </div>
-          </Col>
-        </Row> */}
-
+        <NavBarSolid />
           <Row >
           <Card style={headerCardStyle}>
               <Card.Img src={restImg} style={headerImgStyle}/>

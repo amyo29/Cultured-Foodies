@@ -22,6 +22,8 @@ import {
   TooltipProps,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+import NavBarSolid from "../../components/NavBarSolid";
+
 import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
@@ -82,6 +84,7 @@ function Cuisine(id: any) {
   if (loaded) {
     return (
       <div>
+        <NavBarSolid />
         <a id="top"></a>
         <Container fluid>
           <Accordion defaultActiveKey="0">

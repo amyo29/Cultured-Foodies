@@ -292,6 +292,7 @@ function Cities() {
   if (loaded) {
     return (
       <body>
+        <NavBarSolid />
         <Container fluid>
           <Row>
             <Card style={headerCardStyle}>
@@ -336,8 +337,6 @@ function Cities() {
           </Row>
 
           <div>
-            <NavBarSolid />
-            {/* <h1 className="text-align center">Cities</h1> */}
             <a id="top"></a>
             <Container>
               <div className="row" style={{ padding: 20 }}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { SearchCard } from "../../components/Card";
 import algoliasearch from "algoliasearch/lite";
+import NavBarSolid from "../../components/NavBarSolid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../../styles/Search.css";
@@ -411,6 +412,7 @@ function Search(query: any) {
 
   return (
     <div>
+      <NavBarSolid />
       <h1>Search Results for {query["q"]}</h1>
 
       <InstantSearch

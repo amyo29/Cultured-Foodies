@@ -3,9 +3,6 @@ import NavBar from "./components/NavBar";
 import FooterLarge from "./components/FooterLarge";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
-
-import Home from "./pages/Home/Home";
-// import SplashCards from "./pages/Home/SplashCards";
 import SplashVertical from "./pages/Home/SplashVertical";
 
 import About from "./pages/About/About";

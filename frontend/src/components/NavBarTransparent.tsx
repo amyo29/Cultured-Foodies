@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import "../styles/NavBarSolid.css";
+import "../styles/NavBar.css";
 
-function NavBarSolid() {
+function NavBar() {
   const [searchQuery, setSearchQuery] = useState("");
   const history = useHistory();
   let handleSearchQuery = (event: any) => {
@@ -71,4 +71,4 @@ function NavBarSolid() {
   );
 }
 
-export default NavBarSolid;
+export default NavBar;

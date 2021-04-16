@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useAxios from "axios-hooks";
 import axios from "axios";
+import NavBarSolid from "../../components/NavBarSolid";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import "../../styles/City.css";
 import { CardDeck, Carousel, Card, Container } from "react-bootstrap";
@@ -60,6 +61,7 @@ function City(id: any) {
 
   return (
     <div>
+      <NavBarSolid />
       <img src={city?.imagesweb} className="city-img-top" />
       <h1 className="text-center">{city?.name}</h1>
       <div className="card-columns" style={{ margin: 20 }}>

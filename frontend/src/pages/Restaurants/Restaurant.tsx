@@ -2,6 +2,7 @@ import React, { useEffect, useState, Component } from "react";
 import { useParams } from "react-router-dom";
 import "../../styles/Restaurant.css";
 import Card from "react-bootstrap/Card";
+import NavBarSolid from "../../components/NavBarSolid";
 import useAxios from "axios-hooks";
 import axios from "axios";
 import { CuisineInstance } from "../Cuisines/Cuisine";
@@ -36,6 +37,7 @@ function Restaurant(id: any) {
   return (
 
     <div>
+      <NavBarSolid />
       <body className="Instance center-div">
         <h2 className="Instance-header">{restaurant?.name}</h2>
         <div className="info" align-items="center">

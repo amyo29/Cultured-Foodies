@@ -14,6 +14,7 @@ import {
 } from "react-bootstrap";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
+import NavBarSolid from "../../components/NavBarSolid";
 import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import { CuisinesCard } from "../../components/Card";
@@ -250,6 +251,7 @@ function Countries() {
   if (loaded) {
     return (
       <body>
+        <NavBarSolid />
         <Row>
           <Card style={headerCardStyle}>
             <Card.Img src={headerimg} style={headerImgStyle}/>
