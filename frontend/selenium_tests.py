@@ -36,36 +36,30 @@ class Selenium_Tests(unittest.TestCase):
         )[0].click()
         assert "https://www.culturedfoodies.me/about" in self.driver.current_url
 
-        self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
-            0
-        ].click()
+        self.driver.get("https://www.culturedfoodies.me")
+
 
         self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[1]/nav/div/div/a[2]"
+            "/html/body/div/div/div/div/div[1]/nav/div/div/a[2]"
         )[0].click()
         assert "https://www.culturedfoodies.me/cuisines" in self.driver.current_url
 
-        self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
-            0
-        ].click()
+        self.driver.get("https://www.culturedfoodies.me")
+
 
         self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[1]/nav/div/div/a[3]"
+            "/html/body/div/div/div/div/div[1]/nav/div/div/a[3]"
         )[0].click()
         assert "https://www.culturedfoodies.me/cities" in self.driver.current_url
 
-        self.driver.implicitly_wait(30)
-        self.driver.find_elements_by_xpath("/html/body/div/div/div[1]/nav/a/b")[
-            0
-        ].click()
+        self.driver.get("https://www.culturedfoodies.me")
+
 
         self.driver.implicitly_wait(30)
         self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div[1]/nav/div/div/a[4]"
+            "/html/body/div/div/div/div/div[1]/nav/div/div/a[4]"
         )[0].click()
         assert "https://www.culturedfoodies.me/restaurants" in self.driver.current_url
 
@@ -136,8 +130,7 @@ class Selenium_Tests(unittest.TestCase):
         self.driver.get("https://www.culturedfoodies.me/cities")
         self.driver.implicitly_wait(30)
         element = self.driver.find_elements_by_xpath(
-            "/html/body/div/div/div/body/div[2]/div[2]/div[1]/div[5]/div[2]/a"
-        )[0]
+            "/html/body/div/div/div/body/div[2]/div[2]/div[1]/div[5]/div[2]/a")[0]
         element.click()
         assert "https://www.culturedfoodies.me/cities/11" in self.driver.current_url
 
