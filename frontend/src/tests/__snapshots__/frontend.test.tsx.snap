@@ -643,7 +643,7 @@ exports[`Render views About Page 1`] = `
             },
           }
         }
-        link="https://documenter.getpostman.com/view/15165948/TzCL9UDZ"
+        link="https://documenter.getpostman.com/view/15165948/TzJrBeeW"
         title="Postman API"
       />
     </div>
@@ -765,7 +765,7 @@ exports[`Render views City instance page 1`] = `
                 Business Freedom
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -775,7 +775,7 @@ exports[`Render views City instance page 1`] = `
                 Cost of Living
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -785,7 +785,7 @@ exports[`Render views City instance page 1`] = `
                 Economy
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -795,7 +795,7 @@ exports[`Render views City instance page 1`] = `
                 Housing
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -805,7 +805,7 @@ exports[`Render views City instance page 1`] = `
                 Commute
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -815,7 +815,7 @@ exports[`Render views City instance page 1`] = `
                 Education
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -825,7 +825,7 @@ exports[`Render views City instance page 1`] = `
                 Environmental Quality
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -835,7 +835,7 @@ exports[`Render views City instance page 1`] = `
                 Healthcare
               </td>
               <td>
-                 
+                No Data
                  
               </td>
             </tr>
@@ -846,7 +846,7 @@ exports[`Render views City instance page 1`] = `
                 Leisure and Culture
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -856,7 +856,7 @@ exports[`Render views City instance page 1`] = `
                 Outdoors
               </td>
               <td>
-                 
+                No Data
                  
               </td>
             </tr>
@@ -867,7 +867,7 @@ exports[`Render views City instance page 1`] = `
                 Safety
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -877,7 +877,7 @@ exports[`Render views City instance page 1`] = `
                 Startups
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -887,7 +887,7 @@ exports[`Render views City instance page 1`] = `
                 Taxation
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -897,7 +897,7 @@ exports[`Render views City instance page 1`] = `
                 Tolerance
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -907,7 +907,7 @@ exports[`Render views City instance page 1`] = `
                 Travel and Connectivity
               </td>
               <td>
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -918,7 +918,7 @@ exports[`Render views City instance page 1`] = `
               </td>
               <td>
                  
-                 
+                No Data
               </td>
             </tr>
             <tr>
@@ -929,7 +929,7 @@ exports[`Render views City instance page 1`] = `
               </td>
               <td>
                  
-                 
+                No Data
               </td>
             </tr>
           </tbody>
@@ -1144,7 +1144,8 @@ exports[`Render views Restaurant instance page 1`] = `
               <p
                 className="card-text"
               >
-                Average Cost for Two: $
+                Average Cost for Two: 
+                $undefined
               </p>
               <p
                 className="card-text"

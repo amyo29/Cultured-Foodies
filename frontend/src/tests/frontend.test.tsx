@@ -40,24 +40,29 @@ describe("Render views", () => {
 	test('Splash Page', () => {
 		const component = shallow(<Home />);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	// test About page
 	test('About Page', () => {
 		const component = shallow(<About />);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	// tests for model pages
 	test('Restaurants model page', () => {
 		const component = shallow(<Restaurants />);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	test('Cities model page', () => {
 		const component = shallow(<Cities />);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	test('Cuisines model page', () => {
 		const component = shallow(<Cuisines />);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	
 	// Update for below comments: Fixed by correctly restructuring frontend
@@ -69,14 +74,17 @@ describe("Render views", () => {
 	test('Restaurant instance page', () => {
 		const component = shallow(<Restaurant/>);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	test('City instance page', () => {
 		const component = shallow(<City/>);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 	test('Cuisine instance page', () => {
 		const component = shallow(<Cuisine/>);
 		expect(component).toMatchSnapshot();
+		expect(component).not.toBeUndefined;
 	});
 
 
