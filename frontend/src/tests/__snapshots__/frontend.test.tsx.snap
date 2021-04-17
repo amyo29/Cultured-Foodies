@@ -3,7 +3,7 @@
 exports[`<Navigation /> renders a Navigation Bar 1`] = `
 <div>
   <Navbar
-    className="navbar-custom"
+    className="navbar-custom-transparent"
     collapseOnSelect={false}
     expand="lg"
     variant="light"
@@ -94,6 +94,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
         />
         <Button
           active={false}
+          bsPrefix="search-button"
           disabled={false}
           onClick={[Function]}
           variant="outline-success"
@@ -110,6 +111,7 @@ exports[`Render views About Page 1`] = `
 <div
   className="font-style center"
 >
+  <NavBarSolid />
   <h1>
     About Us
   </h1>
@@ -579,6 +581,62 @@ exports[`Render views About Page 1`] = `
         link="https://postgresql.org"
         title="PostgreSQL"
       />
+      <InfoCard
+        description="Used to implement site-wide search."
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
+        link="https://www.algolia.com/"
+        title="Algolia"
+      />
+      <InfoCard
+        description="UI library for mobile-first front-end web development."
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
+        link="https://material-ui.com/"
+        title="Material UI"
+      />
     </div>
   </Container>
   <div>
@@ -671,6 +729,7 @@ exports[`Render views Cities model page 1`] = `
 
 exports[`Render views City instance page 1`] = `
 <div>
+  <NavBarSolid />
   <img
     className="city-img-top"
   />
@@ -1077,6 +1136,7 @@ exports[`Render views Cuisines model page 1`] = `
 
 exports[`Render views Restaurant instance page 1`] = `
 <div>
+  <NavBarSolid />
   <body
     className="Instance center-div"
   >
