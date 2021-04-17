@@ -19,7 +19,7 @@ Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journ
 | --------- | ---------------------------------------- |
 | Phase I   | 4bde46bdaf4329e224efc4b3a8db9f7eacb8aeed |
 | Phase II  | 4fbf2dfd585fa3c90df9ae846b13d681cebb804c |
-| Phase III | 958397f794b8a1ce638ea87099c713635e6eb7df |
+| Phase III | 067ca5f0e1b8ce2f25978eee9b6b45c6b62ac681 |
 | Phase IV  |                                          |
 
 ## Project leader
