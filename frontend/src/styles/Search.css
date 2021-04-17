@@ -13,7 +13,7 @@
 }
 
 #module [id^='cid_'].collapsing {
-  height: 1.5em;
+  height: 12rem;
 }
 
 
@@ -32,7 +32,7 @@
 }
 
 #search-page [id^='id_'].collapsing {
-  height: 1.5em;
+  height: 12rem;
 }
 
 .ais-Hits-item {

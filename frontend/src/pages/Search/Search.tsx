@@ -15,15 +15,13 @@ import {
 import { DialpadSharp } from "@material-ui/icons";
 function CuisineHit(props: any) {
   return (
-    // <div className="row mb-4">
-    //   <div className="col-md-4">
     <a
       href={"/cuisines/" + props.hit["id"]}
-      className="card"
-      style={{ width: "40rem" }}
+      className="card overflow-auto"
       target="_blank"
+      id="search-page"
+      style = {{width: "40rem"}}
     >
-      <div id="search-page">
         <div className="card-body align-self-start">
           <p
             className="collapse"
@@ -192,8 +190,9 @@ function CuisineHit(props: any) {
               ))}
             </div>
           </p>
-        </div>
-        <a
+        
+      </div>
+      <a
           role="button"
           className="collapsed"
           data-toggle="collapse"
@@ -201,7 +200,6 @@ function CuisineHit(props: any) {
           aria-expanded="false"
           aria-controls={"id_" + props.hit["id"]}
         ></a>
-      </div>
     </a>
   );
 }
@@ -217,10 +215,10 @@ function CityHit(props: any) {
     <a
       href={"/cities/" + props.hit["id"]}
       className="card"
-      style={{ width: "40rem"}}
       target="_blank"
+      id= "module"
+      style = {{width: "40rem"}}
     >
-      <div id= "module">
         <div className="card-body align-self-start" style = {{fontSize: "16px"}}>
         <p
             className="collapse"
@@ -388,7 +386,6 @@ function CityHit(props: any) {
           aria-expanded="false"
           aria-controls={"cid_" + props.hit["id"]}
         ></a>
-      </div>
     </a>
   );
 }
@@ -398,8 +395,8 @@ function RestaurantHit(props: any) {
     <a
       href={"/restaurants/" + props.hit["id"]}
       className="card overflow-auto"
-      style={{ width: "40rem"}}
       target="_blank"
+      style = {{width: "40rem"}}
     >
         <div className="card-body align-self-start">
           <div className="name">

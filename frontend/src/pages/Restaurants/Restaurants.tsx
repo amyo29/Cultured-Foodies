@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from "react";
 import CSS from "csstype";
-import { Card, Col, Container, Row, Spinner, Table } from "react-bootstrap";
-
+import { Card, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-
 import "../../styles/Restaurants.css";
 import useAxios from "axios-hooks";
-import { useHistory } from "react-router-dom";
 import MUIDataTable from "mui-datatables";
 import logo from "../../static_resources/dumpling.gif";
 import restImg from "../../static_resources/foodimg1.jpg";
-import small from "../../static_resources/smaller dumpling.gif";
 import NavBarSolid from "../../components/NavBarSolid";
 import { RestaurantInstance } from "./Restaurant";
-import { resolveConfig } from "prettier";
 import Highlighter from "react-highlight-words";
 
 function Restaurants() {
@@ -530,6 +525,7 @@ function Restaurants() {
       window.location.assign("/restaurants/" + rowData[0]);
     },
     searchText: searchText,
+    rowsPerPageOptions: [10, 20, 50],
   };
 
   const headerImgStyle: CSS.Properties = {
