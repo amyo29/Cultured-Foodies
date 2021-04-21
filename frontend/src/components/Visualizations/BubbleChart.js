@@ -1,45 +1,50 @@
 import React from 'react';
-import BubbleChart from "@weknow/react-bubble-chart-d3";
-
+import * as d3 from 'd3';
+//https://observablehq.com/@d3/bubble-chart
 function BubbleChartFunc () {
-  return (
-    <BubbleChart
-      width={1000}
-      height={800}
-      legendFont={{
-        family: "Arial",
-        size: 12,
-        color: "#000",
-        weight: "bold",
-      }}
-      valueFont={{
-        family: "Arial",
-        size: 24,
-        color: "#fff",
-        weight: "bold",
-        lineColor: "#3f3f3f",
-        lineWeight: 2,
-      }}
-      data={[
-        { label: "CRM", value: 1 },
-        { label: "API", value: 1 },
-        { label: "Data", value: 1 },
-        { label: "Commerce", value: 1 },
-        { label: "AI", value: 3 },
-        { label: "Management", value: 5 },
-        { label: "Testing", value: 6 },
-        { label: "Mobile", value: 9 },
-        { label: "Conversion", value: 9 },
-        { label: "Misc", value: 21 },
-        { label: "Databases", value: 22 },
-        { label: "DevOps", value: 22 },
-        { label: "Javascript", value: 23 },
-        { label: "Languages / Frameworks", value: 25 },
-        { label: "Front End", value: 26 },
-        { label: "Content", value: 26 },
-      ]}
-    />
-  );
-}
+  let data =[{name: "AgglomerativeCluster", title: "flare/analytics/cluster/AgglomerativeCluster", group: "analytics", value: 3938}]
+  let chart =() => {
+    const root = pack(data);
+    
+    const svg = d3.create("svg")
+        .attr("viewBox", [0, 0, width, height])
+        .attr("font-size", 10)
+        .attr("font-family", "sans-serif")
+        .attr("text-anchor", "middle");
+  
+    const leaf = svg.selectAll("g")
+      .data(root.leaves())
+      .join("g")
+        .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
+  
+    leaf.append("circle")
+        .attr("id", d => (d.leafUid = DOM.uid("leaf")).id)
+        .attr("r", d => d.r)
+        .attr("fill-opacity", 0.7)
+        .attr("fill", d => color(d.data.group));
+  
+    leaf.append("clipPath")
+        .attr("id", d => (d.clipUid = DOM.uid("clip")).id)
+      .append("use")
+        .attr("xlink:href", d => d.leafUid.href);
+  
+    leaf.append("text")
+        .attr("clip-path", d => d.clipUid)
+      .selectAll("tspan")
+      .data(d => d.data.name.split(/(?=[A-Z][a-z])|\s+/g))
+      .join("tspan")
+        .attr("x", 0)
+        .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+        .text(d => d);
+  
+    leaf.append("title")
+        .text(d => `${d.data.title === undefined ? "" : `${d.data.title}
+  `}${format(d.value)}`);
+      
+    return svg.node();
+  }
 
+  return (<div>hi</div>)
+
+}
 export default BubbleChartFunc;
