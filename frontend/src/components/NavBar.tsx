@@ -42,6 +42,9 @@ function NavBar() {
             <Nav.Link href="/restaurants" className="a-custom">
               Restaurants
             </Nav.Link>
+            <Nav.Link href="/visualizations" className="a-custom">
+              Visualizations
+            </Nav.Link>
           </Nav>
           <Form
             inline

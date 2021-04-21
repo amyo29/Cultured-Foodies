@@ -42,6 +42,9 @@ function NavBarSolid() {
             <Nav.Link href="/restaurants" className="a-custom">
               Restaurants
             </Nav.Link>
+            <Nav.Link href="/visualizations" className="a-custom">
+              Our Visualizations
+            </Nav.Link>
           </Nav>
           <Form
             inline
