@@ -1,5 +1,5 @@
 import React from "react";
-import fakeData from "../vizualization_data/very_fake_data.json";
+import fakeData from "../visualization_data/very_fake_data.json";
 import BarChart from "../components/Visualizations/BarChart";
 import NavBarSolid from "../components/NavBarSolid";
 import BubbleChart from "../components/Visualizations/BubbleChart";
