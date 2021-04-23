@@ -16,188 +16,6 @@ import {
   connectStateResults,
 } from "react-instantsearch-dom";
 import { DialpadSharp } from "@material-ui/icons";
-// function CuisineHit(props: any) {
-//   console.log(props)
-//   return (
-// <a
-//   href={"/cuisines/" + props.hit["id"]}
-//   className="card overflow-auto"
-//   target="_blank"
-//   id="search-page"
-//   style={{ width: "40rem" }}
-// >
-//   <div className="card-body align-self-start">
-//     <p
-//       className="collapse"
-//       id={"id_" + props.hit["id"]}
-//       aria-expanded="false"
-//     >
-//       <div className="name">
-//         <b>Name: </b>
-//         <Highlight tagName="mark" attribute="name" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <b>Country: </b>
-//         <Highlight tagName="mark" attribute="country" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <b>Cities: </b>
-//         <Highlight tagName="mark" attribute="cities" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <b>Restaurants: </b>
-//         <Highlight tagName="mark" attribute="restaurants" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <b>Description: </b>
-//         <Highlight tagName="mark" attribute="description" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <b>Dishes: </b>
-//         {props.hit.dishes.map((dish: any, counter: any) => (
-//           <li className="ml-5" key={counter}>
-//             <Highlight
-//               tagName="mark"
-//               attribute={`dishes[${counter}].name`}
-//               hit={props.hit}
-//             />
-//           </li>
-//         ))}
-//       </div>
-//       <div className="hit-description">
-//         <b>Country Info: </b>
-//         {props.hit.country_data.map((country: any, counter: any) => (
-//           <>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Capital:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].capital`}
-//                   hit={props.hit}
-//                 />{" "}
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Alpha 3 Code:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].alpha3code`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Region:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].region`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Subregion:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].subregion`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Latitude:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].latitude`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Longitude:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].longitude`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Area:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].area`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Population:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].population`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Borders:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].borders`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <li className="ml-5" key={counter}>
-//               <div>
-//                 Timezones:{" "}
-//                 <Highlight
-//                   tagName="mark"
-//                   attribute={`country_data[${counter}].timezones`}
-//                   hit={props.hit}
-//                 />
-//               </div>
-//             </li>
-//             <b>Translations: </b>
-//             {country ? (
-//               Object.keys(country?.translations).map((key, index) => (
-//                 <li className="ml-5" key={counter}>
-//                   <Highlight
-//                     tagName="mark"
-//                     attribute={`country_data[${counter}].translations.${key}`}
-//                     hit={props.hit}
-//                   />
-//                 </li>
-//               ))
-//             ) : (
-//               <></>
-//             )}
-//           </>
-//         ))}
-//       </div>
-//     </p>
-//   </div>
-//   <a
-//     role="button"
-//     className="collapsed"
-//     data-toggle="collapse"
-//     href={"#id_" + props.hit["id"]}
-//     aria-expanded="false"
-//     aria-controls={"id_" + props.hit["id"]}
-//   ></a>
-// </a>
-//   );
-// }
 
 const CuisineHit = ({ hits }) => (
   <div className="row mb-4 ml-4 mr-4">
@@ -404,17 +222,12 @@ const CuisineContent = connectStateResults(({ searchState }) =>
   ) : null
 );
 
-function CityHit(props: any) {
-  // console.log("before");
-  // console.log(props.hit["summary"]);
-  // var propsCopy = {"summary": props.hit["summary"].replace(/(<([^>]+)>)/gi, "")};
-  // props.hit["summary"] = props.hit["summary"].replace(/(<([^>]+)>)/gi, "");
-  // console.log(props.hit);
-  // console.log("after");
-  // console.log(props.hit["summary"]);
-  return (
-    <a
-      href={"/cities/" + props.hit["id"]}
+const CityHit = ({ hits }) => (
+  <div className="row mb-4 ml-4 mr-4">
+    {hits.map((hit) => (
+      <div className="col-md-4 mb-4">
+         <a
+      href={"/cities/" + hit["id"]}
       className="card"
       target="_blank"
       id="module"
@@ -422,42 +235,42 @@ function CityHit(props: any) {
     >
       <div className="card-body align-self-start" style={{ fontSize: "16px" }}>
         <p
-          className="collapse"
-          id={"cid_" + props.hit["id"]}
-          aria-expanded="false"
+           className="collapse"
+           id="id_2"
+           aria-expanded="false"
         >
           <div className="name">
             <b>Full Name: </b>
-            <Highlight tagName="mark" attribute="full_name" hit={props.hit} />
+            <Highlight tagName="mark" attribute="full_name" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Description: </b>
-            <Highlight tagName="mark" attribute="summary" hit={props.hit} />
+            <Highlight tagName="mark" attribute="summary" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>State: </b>
-            <Highlight tagName="mark" attribute="state" hit={props.hit} />
+            <Highlight tagName="mark" attribute="state" hit={ hit} />
           </div>
           <div className="hit-description">
             <b>Population: </b>
-            <Highlight tagName="mark" attribute="population" hit={props.hit} />
+            <Highlight tagName="mark" attribute="population" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Latitude: </b>
-            <Highlight tagName="mark" attribute="latitude" hit={props.hit} />
+            <Highlight tagName="mark" attribute="latitude" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Longitude: </b>
-            <Highlight tagName="mark" attribute="longitude" hit={props.hit} />
+            <Highlight tagName="mark" attribute="longitude" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Timezone: </b>
-            <Highlight tagName="mark" attribute="timezone" hit={props.hit} />
+            <Highlight tagName="mark" attribute="timezone" hit={ hit} />
           </div>
 
           <div className="hit-description">
@@ -465,7 +278,7 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="business_freedom"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
@@ -474,28 +287,28 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="cost_of_living"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
           <div className="hit-description">
             <b>Economy: </b>
-            <Highlight tagName="mark" attribute="economy" hit={props.hit} />
+            <Highlight tagName="mark" attribute="economy" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Housing: </b>
-            <Highlight tagName="mark" attribute="housing" hit={props.hit} />
+            <Highlight tagName="mark" attribute="housing" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Commute: </b>
-            <Highlight tagName="mark" attribute="commute" hit={props.hit} />
+            <Highlight tagName="mark" attribute="commute" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Education: </b>
-            <Highlight tagName="mark" attribute="education" hit={props.hit} />
+            <Highlight tagName="mark" attribute="education" hit={ hit} />
           </div>
 
           <div className="hit-description">
@@ -503,13 +316,13 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="environmental_quality"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
           <div className="hit-description">
             <b>Healthcare: </b>
-            <Highlight tagName="mark" attribute="healthcare" hit={props.hit} />
+            <Highlight tagName="mark" attribute="healthcare" hit={ hit} />
           </div>
 
           <div className="hit-description">
@@ -517,33 +330,33 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="leisure_culture"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
           <div className="hit-description">
             <b>Outdoors: </b>
-            <Highlight tagName="mark" attribute="outdoors" hit={props.hit} />
+            <Highlight tagName="mark" attribute="outdoors" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Safety: </b>
-            <Highlight tagName="mark" attribute="safety" hit={props.hit} />
+            <Highlight tagName="mark" attribute="safety" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Startups: </b>
-            <Highlight tagName="mark" attribute="startups" hit={props.hit} />
+            <Highlight tagName="mark" attribute="startups" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Taxation: </b>
-            <Highlight tagName="mark" attribute="taxation" hit={props.hit} />
+            <Highlight tagName="mark" attribute="taxation" hit={ hit} />
           </div>
 
           <div className="hit-description">
             <b>Tolerance: </b>
-            <Highlight tagName="mark" attribute="tolerance" hit={props.hit} />
+            <Highlight tagName="mark" attribute="tolerance" hit={ hit} />
           </div>
 
           <div className="hit-description">
@@ -551,7 +364,7 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="travel_connectivity"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
@@ -560,7 +373,7 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="internet_access"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
@@ -569,28 +382,39 @@ function CityHit(props: any) {
             <Highlight
               tagName="mark"
               attribute="venture_capital"
-              hit={props.hit}
+              hit={ hit}
             />
           </div>
 
           <div className="hit-description">
             <b>Restaurants: </b>
-            <Highlight tagName="mark" attribute="restaurants" hit={props.hit} />
+            <Highlight tagName="mark" attribute="restaurants" hit={ hit} />
           </div>
         </p>
       </div>
       <a
-        role="button"
-        className="collapsed"
-        data-toggle="collapse"
-        href={"#cid_" + props.hit["id"]}
-        aria-expanded="false"
-        aria-controls={"cid_" + props.hit["id"]}
+       role="button"
+       className="collapsed"
+       data-toggle="collapse"
+       href="#id_2"
+       aria-expanded="false"
+       aria-controls="id_2"
       ></a>
     </a>
-  );
-}
+      </div>
+    ))}
+  </div>
+);
+const CustomCityHits = connectHits(CityHit);
 
+/* displays element for resulting cuisine when user types in query */
+const CityContent = connectStateResults(({ searchState }) =>
+  searchState && searchState.query ? (
+    <div className="content">
+      <CustomCityHits />
+    </div>
+  ) : null
+);
 function RestaurantHit(props: any) {
   return (
     <a
@@ -693,11 +517,11 @@ function Search(query: any) {
           <h2 className="text-center">Cuisines</h2>
           <CuisineContent />
         </Index>
-        {/* <Index indexName="cities">
+        <Index indexName="cities">
           <h2 className="text-center">Cities</h2>
-          <Hits hitComponent={CityHit} />
+          <CityContent/>
         </Index>
-        <Index indexName="restaurants">
+        {/* <Index indexName="restaurants">
           <h2 className="text-center">Restaurants</h2>
           <Hits hitComponent={RestaurantHit} />
         </Index> */}
