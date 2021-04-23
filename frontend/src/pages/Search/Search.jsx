@@ -31,7 +31,7 @@ const CuisineHit = ({ hits }) => (
           <div className="card-body align-self-start">
             <p
               className="collapse"
-              id= {`id_${index / 3}`}
+              id= {`id_${Math.floor(index / 3)}`}
               aria-expanded="false"
             >
               <div className="name">
@@ -201,9 +201,9 @@ const CuisineHit = ({ hits }) => (
              role="button"
              className="collapsed"
              data-toggle="collapse"
-             href={`#id_${index / 3}`}
+             href={`#id_${Math.floor(index / 3)}`}
              aria-expanded="false"
-             aria-controls={`id_${index / 3}`}
+             aria-controls={`id_${Math.floor(index / 3)}`}
           ></a>
         </a>
       </div>
@@ -236,7 +236,7 @@ const CityHit = ({ hits }) => (
       <div className="card-body align-self-start" style={{ fontSize: "16px" }}>
         <p
            className="collapse"
-           id= {`id_${index / 3}c`}
+           id= {`id_${Math.floor(index / 3)}c`}
            aria-expanded="false"
         >
           <div className="name">
@@ -396,9 +396,9 @@ const CityHit = ({ hits }) => (
        role="button"
        className="collapsed"
        data-toggle="collapse"
-       href={`#id_${index / 3}c`}
+       href={`#id_${Math.floor(index / 3)}c`}
        aria-expanded="false"
-       aria-controls={`id_${index / 3}c`}
+       aria-controls={`id_${Math.floor(index / 3)}c`}
       ></a>
     </a>
       </div>
