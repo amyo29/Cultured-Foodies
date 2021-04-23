@@ -200,20 +200,20 @@ import { DialpadSharp } from "@material-ui/icons";
 // }
 
 const CuisineHit = ({ hits }) => (
-  <div className="row mb-4">
+  <div className="row mb-4 ml-4 mr-4">
     {hits.map((hit) => (
-      <div className="col-md-4">
+      <div className="col-md-4 mb-4">
         <a
           href={"/cuisines/" + hit["id"]}
           className="card overflow-auto"
           target="_blank"
-          id="search-page"
+          id="module"
           style={{ width: "40rem" }}
         >
           <div className="card-body align-self-start">
             <p
               className="collapse"
-              id={"id_" + hit["id"]}
+              id="id_1"
               aria-expanded="false"
             >
               <div className="name">
@@ -380,12 +380,12 @@ const CuisineHit = ({ hits }) => (
             </p>
           </div>
           <a
-            role="button"
-            className="collapsed"
-            data-toggle="collapse"
-            href={"#id_" +  hit["id"]}
-            aria-expanded="false"
-            aria-controls={"id_" +  hit["id"]}
+             role="button"
+             className="collapsed"
+             data-toggle="collapse"
+             href="#id_1"
+             aria-expanded="false"
+             aria-controls="id_1"
           ></a>
         </a>
       </div>
