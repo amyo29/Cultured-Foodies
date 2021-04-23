@@ -6,18 +6,17 @@
   content: '- Show Less';
 }
 
-#module [id^='cid_'].collapse:not(.show) {
+#module #collapseParagraph.collapse:not(.show) {
   display: block;
   height: 12rem;
   overflow: hidden;
 }
 
-#module [id^='cid_'].collapsing {
+#module #collapseParagraph.collapsing {
   height: 12rem;
-}
+} 
 
-
-#search-page a.collapsed:after {
+/* #search-page a.collapsed:after {
   content: '+ Show More';
 }
 
@@ -39,4 +38,4 @@
   list-style: none;
 }
 
-
+ */
