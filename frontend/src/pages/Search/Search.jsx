@@ -415,10 +415,13 @@ const CityContent = connectStateResults(({ searchState }) =>
     </div>
   ) : null
 );
-function RestaurantHit(props: any) {
-  return (
-    <a
-      href={"/restaurants/" + props.hit["id"]}
+
+const RestaurantHit = ({ hits }) => (
+  <div className="row mb-4 ml-4 mr-4">
+    {hits.map((hit) => (
+      <div className="col-md-4 mb-4">
+         <a
+      href={"/restaurants/" + hit["id"]}
       className="card overflow-auto"
       target="_blank"
       style={{ width: "40rem" }}
@@ -426,37 +429,37 @@ function RestaurantHit(props: any) {
       <div className="card-body align-self-start">
         <div className="name">
           <b>Restaurant Name: </b>
-          <Highlight tagName="mark" attribute="name" hit={props.hit} />
+          <Highlight tagName="mark" attribute="name" hit={hit} />
         </div>
 
         <div className="hit-description">
           <b>Phone Numbers: </b>
-          <Highlight tagName="mark" attribute="phone_numbers" hit={props.hit} />
+          <Highlight tagName="mark" attribute="phone_numbers" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Address: </b>
-          <Highlight tagName="mark" attribute="address" hit={props.hit} />
+          <Highlight tagName="mark" attribute="address" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>City: </b>
-          <Highlight tagName="mark" attribute="city" hit={props.hit} />
+          <Highlight tagName="mark" attribute="city" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Zipcode: </b>
-          <Highlight tagName="mark" attribute="zipcode" hit={props.hit} />
+          <Highlight tagName="mark" attribute="zipcode" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Highlights: </b>
-          <Highlight tagName="mark" attribute="highlights" hit={props.hit} />
+          <Highlight tagName="mark" attribute="highlights" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Price Range: </b>
-          <Highlight tagName="mark" attribute="price_range" hit={props.hit} />
+          <Highlight tagName="mark" attribute="price_range" hit={ hit} />
         </div>
 
         <div className="hit-description">
@@ -464,34 +467,45 @@ function RestaurantHit(props: any) {
           <Highlight
             tagName="mark"
             attribute="average_cost_for_two"
-            hit={props.hit}
+            hit={ hit}
           />
         </div>
 
         <div className="hit-description">
           <b>Menu URL: </b>
-          <Highlight tagName="mark" attribute="menu_url" hit={props.hit} />
+          <Highlight tagName="mark" attribute="menu_url" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Timings: </b>
-          <Highlight tagName="mark" attribute="timings" hit={props.hit} />
+          <Highlight tagName="mark" attribute="timings" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Citie(s): </b>
-          <Highlight tagName="mark" attribute="city" hit={props.hit} />
+          <Highlight tagName="mark" attribute="city" hit={ hit} />
         </div>
 
         <div className="hit-description">
           <b>Cuisine(s): </b>
-          <Highlight tagName="mark" attribute="cuisines" hit={props.hit} />
+          <Highlight tagName="mark" attribute="cuisines" hit={ hit} />
         </div>
       </div>
     </a>
-  );
-}
+      </div>
+    ))}
+  </div>
+);
+const CustomRestaurantHits = connectHits(RestaurantHit);
 
+/* displays element for resulting cuisine when user types in query */
+const RestaurantContent = connectStateResults(({ searchState }) =>
+  searchState && searchState.query ? (
+    <div className="content">
+      <CustomRestaurantHits />
+    </div>
+  ) : null
+);
 function Search(query: any) {
   console.log("here");
   console.log("searching", query["q"]);
@@ -521,10 +535,10 @@ function Search(query: any) {
           <h2 className="text-center">Cities</h2>
           <CityContent/>
         </Index>
-        {/* <Index indexName="restaurants">
+        <Index indexName="restaurants">
           <h2 className="text-center">Restaurants</h2>
-          <Hits hitComponent={RestaurantHit} />
-        </Index> */}
+          <RestaurantContent/>
+        </Index>
       </InstantSearch>
     </div>
   );
