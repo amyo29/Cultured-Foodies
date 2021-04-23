@@ -506,7 +506,7 @@ const RestaurantContent = connectStateResults(({ searchState }) =>
     </div>
   ) : null
 );
-function Search(query: any) {
+function Search(query) {
   console.log("here");
   console.log("searching", query["q"]);
   const searchClient = algoliasearch(
