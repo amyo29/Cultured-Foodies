@@ -6,55 +6,16 @@
   content: '- Show Less';
 }
 
-#module #collapseParagraph.collapse:not(.show) {
+#module [id^='id_'].collapse:not(.show) {
   display: block;
   height: 12rem;
   overflow: hidden;
 }
 
-#module #collapseParagraph.collapsing {
+#module [id^='id_'].collapsing {
   height: 12rem;
 } 
-
-#city a.collapsed:after {
-  content: '+ Show More';
-}
-
-#city a:not(.collapsed):after {
-  content: '- Show Less';
-}
-
-#city #cityParagraph.collapse:not(.show) {
-  display: block;
-  height: 12rem;
-  overflow: hidden;
-}
-
-#city #cityParagraph.collapsing {
-  height: 12rem;
-} 
-
-
-/* #search-page a.collapsed:after {
-  content: '+ Show More';
-}
-
-#search-page a:not(.collapsed):after {
-  content: '- Show Less';
-}
-
-#search-page [id^='id_'].collapse:not(.show) {
-  display: block;
-  height: 12rem;
-  overflow: hidden;
-}
-
-#search-page [id^='id_'].collapsing {
-  height: 12rem;
-}
 
 .ais-Hits-item {
   list-style: none;
 }
-
- */
