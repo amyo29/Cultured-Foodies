@@ -19,7 +19,7 @@ import { DialpadSharp } from "@material-ui/icons";
 
 const CuisineHit = ({ hits }) => (
   <div className="row mb-4 ml-4 mr-4">
-    {hits.map((hit) => (
+    {hits.map((hit, index) => (
       <div className="col-md-4 mb-4">
         <a
           href={"/cuisines/" + hit["id"]}
@@ -31,7 +31,7 @@ const CuisineHit = ({ hits }) => (
           <div className="card-body align-self-start">
             <p
               className="collapse"
-              id="id_1"
+              id= {`id_${index / 3}`}
               aria-expanded="false"
             >
               <div className="name">
@@ -201,9 +201,9 @@ const CuisineHit = ({ hits }) => (
              role="button"
              className="collapsed"
              data-toggle="collapse"
-             href="#id_1"
+             href={`#id_${index / 3}`}
              aria-expanded="false"
-             aria-controls="id_1"
+             aria-controls={`id_${index / 3}`}
           ></a>
         </a>
       </div>
@@ -224,7 +224,7 @@ const CuisineContent = connectStateResults(({ searchState }) =>
 
 const CityHit = ({ hits }) => (
   <div className="row mb-4 ml-4 mr-4">
-    {hits.map((hit) => (
+    {hits.map((hit, index) => (
       <div className="col-md-4 mb-4">
          <a
       href={"/cities/" + hit["id"]}
@@ -236,7 +236,7 @@ const CityHit = ({ hits }) => (
       <div className="card-body align-self-start" style={{ fontSize: "16px" }}>
         <p
            className="collapse"
-           id="id_2"
+           id= {`id_${index / 3}c`}
            aria-expanded="false"
         >
           <div className="name">
@@ -396,9 +396,9 @@ const CityHit = ({ hits }) => (
        role="button"
        className="collapsed"
        data-toggle="collapse"
-       href="#id_2"
+       href={`#id_${index / 3}c`}
        aria-expanded="false"
-       aria-controls="id_2"
+       aria-controls={`id_${index / 3}c`}
       ></a>
     </a>
       </div>
