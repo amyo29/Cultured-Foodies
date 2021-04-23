@@ -283,7 +283,7 @@ function City(id: any) {
               <Carousel.Item>
                 <CardDeck>
                   {cols?.map((c: any) => (
-                    <a href={"/cuisines/" + c.id} className="card">
+                    <a href={"/cuisines/" + c.id} className="card" style={{width : "25rem", height : "25rem"}}>
                       <h5 className="mt-2">{c.name}</h5>
                       <img
                         src={c.dishes[0].image_url}
