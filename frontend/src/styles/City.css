@@ -52,6 +52,9 @@ section {
   width: 100% !important;
   overflow: auto !important;
 }
+.scroll::-webkit-scrollbar {
+    display: none;
+}
 .carousel-img{
   align-items: center;
   justify-content: center;
