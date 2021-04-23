@@ -4,12 +4,9 @@ import Card from "react-bootstrap/Card";
 import "../styles/About.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import { MDBIcon } from "mdbreact";
 import {
-  InstantSearch,
-  SearchBox,
-  Hits,
   Highlight,
-  Index,
 } from "react-instantsearch-dom";
 import Highlighter from "react-highlight-words";
 
@@ -37,9 +34,26 @@ const ProfileCard = (props: any) => {
         <h5 className="card-title">{name}</h5>
         <p className="card-text"> {role}</p>
         <p className="card-text"> {bio}</p>
-        <p className="card-text">Commits: {commits}</p>
-        <p className="card-text">Issues: {issues}</p>
-        <p className="card-text">Tests: {tests}</p>
+        <div className="row">
+          <div className="col m2">
+        <p className="card-text">Commits<br/>
+        <MDBIcon icon="code-branch" size="1x" />
+        <br/>
+        {commits}</p>
+        </div>
+        <div className="col m2">
+        <p className="card-text">Issues<br/>
+        <MDBIcon icon="list-ul" size="1x" />
+        <br/>
+        {issues}</p>
+        </div>
+        <div className="col m2">
+        <p className="card-text">Tests<br/>
+        <MDBIcon far icon="check-circle" size= "1x" />
+        <br/>
+        {tests}</p>
+        </div>
+        </div>
       </div>
     </a>
   );
