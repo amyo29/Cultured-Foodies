@@ -18,7 +18,9 @@ import {
 import { DialpadSharp } from "@material-ui/icons";
 
 const CuisineHit = ({ hits }) => (
-  <div className="row mb-4 ml-4 mr-4">
+  
+  Object.keys(hits).length != 0 ? (
+    <div className="row mb-4 ml-4 mr-4">
     {hits.map((hit, index) => (
       <div className="col-md-4 mb-4">
         <a
@@ -209,6 +211,9 @@ const CuisineHit = ({ hits }) => (
       </div>
     ))}
   </div>
+  ) : (
+    <h4 className= "text-center" style = {{color:"red"}}>No Results Found</h4>
+  )
 );
 
 const CustomCuisineHits = connectHits(CuisineHit);
@@ -223,6 +228,7 @@ const CuisineContent = connectStateResults(({ searchState }) =>
 );
 
 const CityHit = ({ hits }) => (
+  Object.keys(hits).length != 0 ? (
   <div className="row mb-4 ml-4 mr-4">
     {hits.map((hit, index) => (
       <div className="col-md-4 mb-4">
@@ -404,6 +410,9 @@ const CityHit = ({ hits }) => (
       </div>
     ))}
   </div>
+  ) : (
+    <h4 className= "text-center" style = {{color:"red"}}>No Results Found</h4>
+  )
 );
 const CustomCityHits = connectHits(CityHit);
 
@@ -417,6 +426,7 @@ const CityContent = connectStateResults(({ searchState }) =>
 );
 
 const RestaurantHit = ({ hits }) => (
+  Object.keys(hits).length != 0 ? (
   <div className="row mb-4 ml-4 mr-4">
     {hits.map((hit) => (
       <div className="col-md-4 mb-4">
@@ -495,6 +505,9 @@ const RestaurantHit = ({ hits }) => (
       </div>
     ))}
   </div>
+  ) : (
+    <h4 className= "text-center" style = {{color:"red"}}>No Results Found</h4>
+  )
 );
 const CustomRestaurantHits = connectHits(RestaurantHit);
 
@@ -517,7 +530,7 @@ function Search(query) {
   return (
     <div>
       <NavBarSolid />
-      <h1>Search Results for {query["q"]}</h1>
+      <h1>Search Results for {`"${query["q"]}"`}</h1>
 
       <InstantSearch
         indexName="cities"
