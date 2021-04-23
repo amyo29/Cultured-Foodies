@@ -26,7 +26,7 @@ const CuisineHit = ({ hits }) => (
           className="card overflow-auto"
           target="_blank"
           id="module"
-          style={{ width: "40rem" }}
+          style={{ width: "40rem" , fontSize: "16px"}}
         >
           <div className="card-body align-self-start">
             <p
