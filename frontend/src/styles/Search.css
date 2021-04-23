@@ -16,6 +16,25 @@
   height: 12rem;
 } 
 
+#city a.collapsed:after {
+  content: '+ Show More';
+}
+
+#city a:not(.collapsed):after {
+  content: '- Show Less';
+}
+
+#city #cityParagraph.collapse:not(.show) {
+  display: block;
+  height: 12rem;
+  overflow: hidden;
+}
+
+#city #cityParagraph.collapsing {
+  height: 12rem;
+} 
+
+
 /* #search-page a.collapsed:after {
   content: '+ Show More';
 }
