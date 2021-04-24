@@ -94,7 +94,7 @@ function City(id: any) {
           <h3 className="margin">
             {city?.name}'s Urban Area- Quality of Life Scores
           </h3>
-          <div className="my-custom-scrollbar" 
+          <div className="my-custom-scrollbar scroll" 
           style={{ width: "40rem", maxHeight: "40rem" }}>
             <table className="table table-bordered table-hover mb-0">
               <thead>
@@ -239,7 +239,7 @@ function City(id: any) {
         <div className="card">
           <h3 className="margin">Restaurants in {city?.name}</h3>
           <div
-            className="my-custom-scrollbar-restaurant"
+            className="my-custom-scrollbar-restaurant scroll"
             style={{ width: "40rem", maxHeight: "34rem" }}
           >
             <table className="table table-bordered table-hover mb-0">
@@ -283,7 +283,7 @@ function City(id: any) {
               <Carousel.Item>
                 <CardDeck>
                   {cols?.map((c: any) => (
-                    <a href={"/cuisines/" + c.id} className="card">
+                    <a href={"/cuisines/" + c.id} className="card" style={{width : "25rem", height : "25rem"}}>
                       <h5 className="mt-2">{c.name}</h5>
                       <img
                         src={c.dishes[0].image_url}

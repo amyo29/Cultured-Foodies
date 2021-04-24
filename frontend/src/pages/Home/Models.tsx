@@ -3,7 +3,7 @@
 // import Typography from '@material-ui/core/Typography';
 import { NavLink } from 'react-router-dom';
 // import Image from "react-bootstrap/Image";
-
+import React from "react";
 import Cuisines from "../../static_resources/cuisineModel.jpg"       
 import Cities from "../../static_resources/cityModel.jpg"
 import Restaurants from "../../static_resources/restaurantModel4.jpg"

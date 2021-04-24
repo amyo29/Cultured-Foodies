@@ -1,0 +1,376 @@
+[
+  {
+    "label": "OKB-5",
+    "name": "Yuzhnoye Design Bureau",
+    "value": 0
+  },
+  {
+    "label": "WRE",
+    "name": "Weapons Research Establishment",
+    "value": 0
+  },
+  { "label": "VO", "name": "Virgin Orbit", "value": 4 },
+  { "label": "USN", "name": "US Navy", "value": 0 },
+  {
+    "label": "USAF",
+    "name": "United States Air Force",
+    "value": 33
+  },
+  {
+    "label": "USA",
+    "name": "United Space Alliance",
+    "value": 51
+  },
+  {
+    "label": "ULA",
+    "name": "United Launch Alliance",
+    "value": 166
+  },
+  { "label": "UKSA", "name": "UK Space Agency", "value": 0 },
+  {
+    "label": "RVSN ",
+    "name": "Strategic Missile Troops",
+    "value": 7
+  },
+  { "label": "SSA", "name": "Starsem SA", "value": 5 },
+  { "label": "SpX", "name": "SpaceX", "value": 167 },
+  { "label": "SSIA", "name": "Space Services Inc.", "value": 0 },
+  {
+    "label": "CCCP",
+    "name": "Soviet Space Program",
+    "value": 73
+  },
+  {
+    "label": "SNC",
+    "name": "Sierra Nevada Corporation",
+    "value": 0
+  },
+  { "label": "SL", "name": "Sea Launch", "value": 7 },
+  {
+    "label": "SERC",
+    "name": "Science and Engineering Research Council",
+    "value": 0
+  },
+  {
+    "label": "SNL",
+    "name": "Sandia National Laboratories",
+    "value": 1
+  },
+  { "label": "VKS", "name": "Russian Space Forces", "value": 42 },
+  {
+    "label": "RFSA",
+    "name": "Russian Federal Space Agency (ROSCOSMOS)",
+    "value": 307
+  },
+  {
+    "label": "VKO",
+    "name": "Russian Aerospace Defence Forces",
+    "value": 22
+  },
+  {
+    "label": "ROI",
+    "name": "Rockwell International",
+    "value": 8
+  },
+  { "label": "RL", "name": "Rocket Lab Ltd", "value": 24 },
+  { "label": "RS", "name": "Relativity Space", "value": 1 },
+  {
+    "label": "PRSC",
+    "name": "Progress Rocket Space Center",
+    "value": 0
+  },
+  { "label": "PL", "name": "Planet Labs", "value": 0 },
+  {
+    "label": "OSC",
+    "name": "Orbital Sciences Corporation",
+    "value": 55
+  },
+  { "label": "OA", "name": "Orbital ATK", "value": 6 },
+  { "label": "OS", "name": "OneSpace", "value": 1 },
+  {
+    "label": "NGIS",
+    "name": "Northrop Grumman Innovation Systems",
+    "value": 9
+  },
+  {
+    "label": "HKAY",
+    "name": "National Space Agency of Ukraine",
+    "value": 0
+  },
+  {
+    "label": "KazCo",
+    "name": "National Space Agency of the Republic of Kazakhstan",
+    "value": 0
+  },
+  {
+    "label": "NSA",
+    "name": "National Space Agency (KazCosmos)",
+    "value": 0
+  },
+  {
+    "label": "NRC",
+    "name": "National Research Council",
+    "value": 0
+  },
+  {
+    "label": "CNIE",
+    "name": "National Commission for Space Research",
+    "value": 0
+  },
+  {
+    "label": "CNES",
+    "name": "National Center of Space Research",
+    "value": 0
+  },
+  {
+    "label": "NASA",
+    "name": "National Aeronautics and Space Administration",
+    "value": 52
+  },
+  {
+    "label": "MITT",
+    "name": "Moscow Institute of Thermal Technology",
+    "value": 0
+  },
+  {
+    "label": "MHI",
+    "name": "Mitsubishi Heavy Industries",
+    "value": 40
+  },
+  {
+    "label": "MOD_R",
+    "name": "Ministry of Defence of the Russian Federation",
+    "value": 1
+  },
+  { "label": "AEM", "name": "Mexican Space Agency", "value": 0 },
+  { "label": "MM", "name": "Martin Marietta", "value": 0 },
+  {
+    "label": "ANGKA",
+    "name": "Malaysian National Space Agency",
+    "value": 0
+  },
+  {
+    "label": "OKB",
+    "name": "Makeyev Rocket Design Bureau",
+    "value": 0
+  },
+  {
+    "label": "LSOC",
+    "name": "Lockheed Space Operations Company",
+    "value": 65
+  },
+  {
+    "label": "LMSO",
+    "name": "Lockheed Martin Space Operations",
+    "value": 9
+  },
+  { "label": "LMT", "name": "Lockheed Martin", "value": 8 },
+  { "label": "LS", "name": "LandSpace", "value": 2 },
+  { "label": "LL", "name": "Land Launch", "value": 6 },
+  {
+    "label": "KCST",
+    "name": "Korean Committee of Space Technology",
+    "value": 3
+  },
+  {
+    "label": "KARI",
+    "name": "Korea Aerospace Research Institute",
+    "value": 2
+  },
+  {
+    "label": "KhSC",
+    "name": "Khrunichev State Research and Production Space Center",
+    "value": 58
+  },
+  { "label": "KBM", "name": "KB Mashinostroyeniya", "value": 0 },
+  {
+    "label": "JAXA",
+    "name": "Japan Aerospace Exploration Agency",
+    "value": 10
+  },
+  { "label": "ASI", "name": "Italian Space Agency", "value": 0 },
+  { "label": "ISA", "name": "Israeli Space Agency", "value": 0 },
+  {
+    "label": "IAI",
+    "name": "Israel Aerospace Industries",
+    "value": 4
+  },
+  { "label": "iSpac", "name": "iSpace", "value": 2 },
+  { "label": "ISCK", "name": "ISC Kosmotras", "value": 9 },
+  { "label": "ISA", "name": "Iranian Space Agency", "value": 10 },
+  {
+    "label": "ISTEC",
+    "name": "Interstellar Technologies",
+    "value": 6
+  },
+  {
+    "label": "ILS",
+    "name": "International Launch Services",
+    "value": 43
+  },
+  {
+    "label": "INTA",
+    "name": "Instituto Nacional de T\u00e9cnica Aeroespacial",
+    "value": 0
+  },
+  {
+    "label": "ISAS",
+    "name": "Institute of Space and Astronautical Science",
+    "value": 0
+  },
+  {
+    "label": "ISARS",
+    "name": "Institute for Space Applications and Remote Sensing",
+    "value": 0
+  },
+  {
+    "label": "ISRO",
+    "name": "Indian Space Research Organization",
+    "value": 64
+  },
+  {
+    "label": "HSO",
+    "name": "Hungarian Space Office",
+    "value": 0
+  },
+  { "label": "GKLS", "name": "GK Launch Services", "value": 1 },
+  {
+    "label": "DLR",
+    "name": "German Aerospace Center",
+    "value": 0
+  },
+  { "label": "GE", "name": "Galactic Energy", "value": 1 },
+  { "label": "FA", "name": "Firefly Aerospace", "value": 1 },
+  { "label": "EP", "name": "ExPace", "value": 10 },
+  { "label": "EXOS", "name": "EXOS Aerospace", "value": 4 },
+  {
+    "label": "ESRO",
+    "name": "European Space Research Organisation",
+    "value": 0
+  },
+  { "label": "ESA", "name": "European Space Agency", "value": 0 },
+  {
+    "label": "ELDO",
+    "name": "European Launcher Development Organisation",
+    "value": 0
+  },
+  {
+    "label": "ELS",
+    "name": "Eurockot Launch Services",
+    "value": 5
+  },
+  {
+    "label": "DCTA",
+    "name": "Department of Aerospace Science and Technology",
+    "value": 0
+  },
+  {
+    "label": "DRC",
+    "name": "Danish National Space Center",
+    "value": 0
+  },
+  {
+    "label": "CSU",
+    "name": "Copenhagen Suborbitals",
+    "value": 0
+  },
+  {
+    "label": "CSIRO",
+    "name": "Commonwealth Scientific and Industrial Research Organisation",
+    "value": 0
+  },
+  {
+    "label": "COSPA",
+    "name": "Committee on Space Research",
+    "value": 0
+  },
+  { "label": "CHR", "name": "Chrysler", "value": 0 },
+  {
+    "label": "CHNR",
+    "name": "Chinarocket Co., Ltd.",
+    "value": 1
+  },
+  {
+    "label": "CNSA",
+    "name": "China National Space Administration",
+    "value": 0
+  },
+  {
+    "label": "CGWIC",
+    "name": "China Great Wall Industry Corporation",
+    "value": 1
+  },
+  {
+    "label": "CASC",
+    "name": "China Aerospace Science and Technology Corporation",
+    "value": 256
+  },
+  {
+    "label": "CASIC",
+    "name": "China Aerospace Science and Industry Corporation",
+    "value": 6
+  },
+  {
+    "label": "CASC",
+    "name": "China Aerospace Corporation",
+    "value": 4
+  },
+  { "label": "CSA", "name": "Canadian Space Agency", "value": 0 },
+  {
+    "label": "AEB",
+    "name": "Brazilian Space Agency",
+    "value": 0
+  },
+  {
+    "label": "ABAE",
+    "name": "Bolivarian Agency for Space Activities",
+    "value": 0
+  },
+  { "label": "BA", "name": "Boeing", "value": 1 },
+  { "label": "BO", "name": "Blue Origin", "value": 14 },
+  {
+    "label": "BIRA",
+    "name": "Belgian Institute for Space Aeronomy",
+    "value": 0
+  },
+  {
+    "label": "AMAKA",
+    "name": "Azerbaijan National Aerospace Agency",
+    "value": 0
+  },
+  { "label": "AXS", "name": "Axiom Space", "value": 0 },
+  { "label": "ALR", "name": "Austrian Space Agency", "value": 0 },
+  { "label": "AS", "name": "Astra Space", "value": 5 },
+  {
+    "label": "APRSA",
+    "name": "Asia-Pacific Regional Space Agency Forum",
+    "value": 0
+  },
+  {
+    "label": "ABMA",
+    "name": "Army Ballistic Missile Agency",
+    "value": 3
+  },
+  { "label": "ASA", "name": "Arianespace", "value": 185 },
+  {
+    "label": "ACL",
+    "name": "Antrix Corporation Limited",
+    "value": 4
+  },
+  {
+    "label": "ASAL",
+    "name": "Algerian Space Agency",
+    "value": 0
+  },
+  {
+    "label": "AIRDS",
+    "name": "Airbus Defence and Space",
+    "value": 0
+  },
+  { "label": "AEV", "name": "Aevum", "value": 1 },
+  {
+    "label": "AARC",
+    "name": "Ad Astra Rocket Company",
+    "value": 0
+  }
+]

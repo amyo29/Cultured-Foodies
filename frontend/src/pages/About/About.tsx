@@ -14,6 +14,8 @@ import Grid, { GridSpacing } from "@material-ui/core/Grid";
 import { CardDeck, Spinner } from "react-bootstrap";
 import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
 import ZomatoLogo from "./Images/APIs/zomato.png";
+import { MDBIcon } from "mdbreact";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -71,149 +73,180 @@ function About() {
   }
   return (
     <div className="font-style center">
-      <NavBarSolid/>
+      <NavBarSolid />
       <h1>About Us</h1>
 
       <p className="summary">
-        Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
-        With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, 
-        Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
+        Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on
+        a journey of culinary and cultural discovery that stretches through the
+        ages and across the seas. With information on delectable cuisines from
+        around the world and where you can experience them in your city, as well
+        as highlights on worldwide countries and U.S cities, Cultured Foodies
+        makes it easy for you to feast to your mind and stomach's content.
       </p>
 
       <h2>Meet the Team</h2>
-    { loaded ?
-      <>
-      <Container>
-        <div className="row mb-4">
-            {
-            // loaded ? 
-            (
-              teamData1.map((teamMember: any) => {
-                const {
-                  name,
-                  img,
-                  role,
-                  bio,
-                  commits,
-                  issues,
-                  tests,
-                  linkedin,
-                } = teamMember;
-                return (
-                  <div className="col-md-4">
-                    <ProfileCard
-                      name={name}
-                      img={img}
-                      role={role}
-                      bio={bio}
-                      commits={commits}
-                      issues={issues}
-                      tests={tests}
-                      linkedin = {linkedin}
-                    />
-                  </div>
-                );
-              })
-            ) 
-            // : (
-            //   <Spinner animation="grow" variant="dark" size="sm"/>
-            // )
-            }
-        </div>
-      </Container>
-      <Container>
-        <div className="row mb-4">
-            {
-            // loaded ? 
-            (
-              teamData2.map((teamMember: any) => {
-                const {
-                  name,
-                  img,
-                  role,
-                  bio,
-                  commits,
-                  issues,
-                  tests,
-                  linkedin
-                } = teamMember;
-                return (
-                  <div className="col-md-4">
-                    <ProfileCard
-                      name={name}
-                      img={img}
-                      role={role}
-                      bio={bio}
-                      commits={commits}
-                      issues={issues}
-                      tests={tests}
-                      linkedin = {linkedin}
-                    />
-                  </div>
-                );
-              })
-            )  
-            // :(  
-            //      <Spinner animation="grow" variant="dark" size="sm"/>
-            // )
-            }
-        </div>
-      </Container>
-      </>
-      :
-      <Spinner animation="border" role="status">
-        <span className="sr-only">Loading...</span>
-      </Spinner>
-      }
-      
+      {loaded ? (
+        <>
+          <Container>
+            <div className="row mb-4">
+              {
+                // loaded ?
+                teamData1.map((teamMember: any) => {
+                  const {
+                    name,
+                    img,
+                    role,
+                    bio,
+                    commits,
+                    issues,
+                    tests,
+                    linkedin,
+                  } = teamMember;
+                  return (
+                    <div className="col-md-4">
+                      <ProfileCard
+                        name={name}
+                        img={img}
+                        role={role}
+                        bio={bio}
+                        commits={commits}
+                        issues={issues}
+                        tests={tests}
+                        linkedin={linkedin}
+                      />
+                    </div>
+                  );
+                })
+                // : (
+                //   <Spinner animation="grow" variant="dark" size="sm"/>
+                // )
+              }
+            </div>
+          </Container>
+          <Container>
+            <div className="row mb-4">
+              {
+                // loaded ?
+                teamData2.map((teamMember: any) => {
+                  const {
+                    name,
+                    img,
+                    role,
+                    bio,
+                    commits,
+                    issues,
+                    tests,
+                    linkedin,
+                  } = teamMember;
+                  return (
+                    <div className="col-md-4">
+                      <ProfileCard
+                        name={name}
+                        img={img}
+                        role={role}
+                        bio={bio}
+                        commits={commits}
+                        issues={issues}
+                        tests={tests}
+                        linkedin={linkedin}
+                      />
+                    </div>
+                  );
+                })
+                // :(
+                //      <Spinner animation="grow" variant="dark" size="sm"/>
+                // )
+              }
+            </div>
+          </Container>
+        </>
+      ) : (
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      )}
 
-      <div className = "card" style = {{width: "18rem"}}>
-        <h2>Stats</h2>
-        <div>
-          
-          {commitsSum === -1 ? (
-            <h5>Total Commits:  {<Spinner
-              as="span"
-              animation="border"
-              size="sm"
-              role="status"
-              aria-hidden="true"
-            />
-            }
-            </h5> 
-          ) : (
-            <h5>Total Commits: {commitsSum}</h5>
-          )}
+      <h2>Stats</h2>
+      <Container>
+        <div className="row mb-4">
+          <div className="col-md-4">
+            <div className="card">
+              <div>
+                {commitsSum === -1 ? (
+                  <h4>
+                    Total Commits:{" "}
+                    {
+                      <Spinner
+                        as="span"
+                        animation="border"
+                        size="sm"
+                        role="status"
+                        aria-hidden="true"
+                      />
+                    }
+                  </h4>
+                ) : (
+                  <>
+                  <MDBIcon icon="code-branch" size="2x" />
+                  <h4>Total Commits: {commitsSum}</h4>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div>
+                {commitsSum === -1 ? (
+                  <h4>
+                    Total Issues:{" "}
+                    {
+                      <Spinner
+                        as="span"
+                        animation="border"
+                        size="sm"
+                        role="status"
+                        aria-hidden="true"
+                      />
+                    }
+                  </h4>
+                ) : (
+                  <>
+                    <MDBIcon icon="list-ul" size="2x" />
+                    <h4>Total Issues: {issuesSum}</h4>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div>
+                {commitsSum === -1 ? (
+                  <h4>
+                    Total Tests:{" "}
+                    {
+                      <Spinner
+                        as="span"
+                        animation="border"
+                        size="sm"
+                        role="status"
+                        aria-hidden="true"
+                      />
+                    }
+                  </h4>
+                ) : (
+                  <>
+                  <MDBIcon far icon="check-circle" size= "2x" />
+                  <h4>Total Tests: {testsSum}</h4>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          {commitsSum === -1 ? (
-            <h5>Total Issues:  {<Spinner
-              as="span"
-              animation="border"
-              size="sm"
-              role="status"
-              aria-hidden="true"
-            />
-            }</h5>
-          ) : (
-            <h5>Total Issues: {issuesSum}</h5>
-          )}
-        </div>
-        <div>
-          {commitsSum === -1 ? (
-            <h5>Total Tests:  {<Spinner
-              as="span"
-              animation="border"
-              size="sm"
-              role="status"
-              aria-hidden="true"
-            />
-            }</h5>
-          ) : (
-            <h5>Total Tests: {testsSum}</h5>
-          )}
-        </div>
-      </div>
+      </Container>
 
       <div>
         <h2>APIs</h2>

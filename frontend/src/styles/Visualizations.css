@@ -1,0 +1,18 @@
+.row.center {
+    justify-content: "center";
+    align-items: "center";
+    text-align: center;
+}
+
+.h1.custom1{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.h2.custom1 {
+    text-align: center;
+}
+
+.h3.custom1 {
+    text-align: center;
+}

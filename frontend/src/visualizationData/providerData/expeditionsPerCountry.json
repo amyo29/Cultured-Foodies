@@ -1,0 +1,42 @@
+[
+    {
+        "country": "USA",
+        "expeditions": 122
+    },
+    {
+        "country": "RUS",
+        "expeditions": 39
+    },
+    {
+        "country": "IND",
+        "expeditions": 7
+    },
+    {
+        "country": "CHN",
+        "expeditions": 65
+    },
+    {
+        "country": "JPN",
+        "expeditions": 8
+    },
+    {
+        "country": "FRA",
+        "expeditions": 19
+    },
+    {
+        "country": "KOR",
+        "expeditions": 1
+    },
+    {
+        "country": "PRK",
+        "expeditions": 1
+    },
+    {
+        "country": "IRN",
+        "expeditions": 1
+    },
+    {
+        "country": "ISR",
+        "expeditions": 1
+    }
+]

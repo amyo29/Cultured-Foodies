@@ -13,6 +13,7 @@ import City from "./pages/Cities/City";
 import Restaurants from "./pages/Restaurants/Restaurants";
 import Restaurant from "./pages/Restaurants/Restaurant";
 import Search from "./pages/Search/Search";
+import Visualization from "./pages/Visualizations";
 export default function App() {
   return (
     <div className="background full-height">
@@ -49,11 +50,14 @@ export default function App() {
               path="/restaurants/:id"
               render={(props) => <Restaurant id={props.match.params.id} />}
             />
+            <Route path="/visualizations">
+              <Visualization />
+            </Route>
+
             <Route
               path="/search/query=:q"
               render={(props) => <Search q={props.match.params.q} />}
             />
-
           </Switch>
         </div>
       </Router>
