@@ -1,3 +1,7 @@
+.container {
+    overflow: "hidden";
+}
+
 .row-center {
     justify-content: "center";
     align-items: "center";
@@ -15,21 +19,47 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center !important;
-    font-size: 5rem;
+    font-size:9vw;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    overflow: "hidden";
+    
 }
 
 .header2Style {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center !important;
-    font-size: 3rem;
+    font-size: 5vw;
 }
 
 .header3Style {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center !important;
-    font-size: 2rem;
+    font-size: 2vw;
+}
+
+.animation {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 /* .h2.custom1 {

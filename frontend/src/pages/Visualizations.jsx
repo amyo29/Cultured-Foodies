@@ -25,7 +25,7 @@ import BubbleMap from "../components/Visualizations/BubbleMap";
 // };
 
 function Visualizations() {
-  const [key, setKey] = useState("home");
+  //const [key, setKey] = useState("home");
 
   const cities = qualityOfLifeScoresPerCity;
   const [currentCity, setCity] = useState(cities[0]);
@@ -37,10 +37,13 @@ function Visualizations() {
   return (
     <div>
       <NavBarSolid />
-      <Container fluid>
+      <Container fluid class="container">
+
         <h1 class="headerStyle">Visualizations</h1>
+
         <h2 class="header2Style">Our Data</h2>
         <h3 class="header3Style">Number of restaurants in each city</h3>
+        
         <Row>
           <BubbleMap></BubbleMap>
         </Row>
