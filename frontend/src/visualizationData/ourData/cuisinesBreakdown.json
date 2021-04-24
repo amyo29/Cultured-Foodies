@@ -1,0 +1,469 @@
+{
+  "name": "Global Cuisines",
+  "children": [
+    {
+      "name": "Asia",
+      "children": [
+        {
+          "name": "Southern Asia",
+          "children": [
+            {
+              "name": "Afghanistan",
+              "children": [{ "name": "Afghan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Bangladesh",
+              "children": [{ "name": "Bangladeshi", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Iran (Islamic Republic of)",
+              "children": [{ "name": "Iranian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Nepal",
+              "children": [{ "name": "Nepalese", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Pakistan",
+              "children": [{ "name": "Pakistani", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Sri Lanka",
+              "children": [{ "name": "Sri Lankan", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Western Asia",
+          "children": [
+            {
+              "name": "Armenia",
+              "children": [{ "name": "Armenian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Georgia",
+              "children": [{ "name": "Georgian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Israel",
+              "children": [
+                { "name": "Israeli", "minSize": 5, "size": 5 },
+                { "name": "Jewish", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Lebanon",
+              "children": [{ "name": "Lebanese", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Saudi Arabia",
+              "children": [{ "name": "Saudi Arabian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Syrian Arab Republic",
+              "children": [{ "name": "Syrian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Turkey",
+              "children": [{ "name": "Turkish", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Yemen",
+              "children": [{ "name": "Yemeni", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "South-Eastern Asia",
+          "children": [
+            {
+              "name": "Myanmar",
+              "children": [{ "name": "Burmese", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Cambodia",
+              "children": [{ "name": "Cambodian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Philippines",
+              "children": [{ "name": "Filipino", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Indonesia",
+              "children": [{ "name": "Indonesian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Malaysia",
+              "children": [{ "name": "Malaysian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Singapore",
+              "children": [{ "name": "Singaporean", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Thailand",
+              "children": [{ "name": "Thai", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Vietnam",
+              "children": [{ "name": "Vietnamese", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Eastern Asia",
+          "children": [
+            {
+              "name": "China",
+              "children": [
+                { "name": "Cantonese", "minSize": 5, "size": 5 },
+                { "name": "Chinese", "minSize": 5, "size": 5 },
+                { "name": "Hong Kong", "minSize": 5, "size": 5 },
+                { "name": "Sichuan", "minSize": 5, "size": 5 },
+                { "name": "Tibetan", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Japan",
+              "children": [{ "name": "Japanese", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Korea (Republic of)",
+              "children": [{ "name": "Korean", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Mongolia",
+              "children": [{ "name": "Mongolian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Taiwan",
+              "children": [{ "name": "Taiwanese", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Central Asia",
+          "children": [
+            {
+              "name": "Uzbekistan",
+              "children": [{ "name": "Uzbek", "minSize": 5, "size": 5 }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "children": [
+        {
+          "name": "Southern Europe",
+          "children": [
+            {
+              "name": "Albania",
+              "children": [{ "name": "Albanian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Spain",
+              "children": [
+                { "name": "Balearic", "minSize": 5, "size": 5 },
+                { "name": "Spanish", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Greece",
+              "children": [{ "name": "Greek", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Italy",
+              "children": [{ "name": "Italian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Portugal",
+              "children": [{ "name": "Portuguese", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Western Europe",
+          "children": [
+            {
+              "name": "Austria",
+              "children": [{ "name": "Austrian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Belgium",
+              "children": [{ "name": "Belgian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "France",
+              "children": [{ "name": "French", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Germany",
+              "children": [{ "name": "German", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Northern Europe",
+          "children": [
+            {
+              "name": "United Kingdom of Great Britain and Northern Ireland",
+              "children": [
+                { "name": "British", "minSize": 5, "size": 5 },
+                { "name": "Scottish", "minSize": 5, "size": 5 },
+                { "name": "Welsh", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Denmark",
+              "children": [{ "name": "Danish", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Iceland",
+              "children": [{ "name": "Icelandic", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Ireland",
+              "children": [{ "name": "Irish", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Sweden",
+              "children": [
+                { "name": "Swedish", "minSize": 5, "size": 5 },
+                { "name": "Swiss", "minSize": 5, "size": 5 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eastern Europe",
+          "children": [
+            {
+              "name": "Hungary",
+              "children": [{ "name": "Hungarian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Moldova (Republic of)",
+              "children": [{ "name": "Moldovan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Poland",
+              "children": [{ "name": "Polish", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Russian Federation",
+              "children": [{ "name": "Russian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Ukraine",
+              "children": [{ "name": "Ukrainian", "minSize": 5, "size": 5 }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Americas",
+      "children": [
+        {
+          "name": "Northern America",
+          "children": [
+            {
+              "name": "United States of America",
+              "children": [
+                { "name": "American", "minSize": 5, "size": 5 },
+                { "name": "Amish", "minSize": 5, "size": 5 },
+                { "name": "Cajun", "minSize": 5, "size": 5 },
+                { "name": "California", "minSize": 5, "size": 5 },
+                { "name": "Creole", "minSize": 5, "size": 5 },
+                { "name": "Hawaiian", "minSize": 5, "size": 5 },
+                { "name": "New American", "minSize": 5, "size": 5 },
+                { "name": "New Mexican", "minSize": 5, "size": 5 },
+                { "name": "Soul Food", "minSize": 5, "size": 5 },
+                { "name": "Southern", "minSize": 5, "size": 5 },
+                { "name": "Southwestern", "minSize": 5, "size": 5 },
+                { "name": "Tex-Mex", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Canada",
+              "children": [{ "name": "Canadian", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "South America",
+          "children": [
+            {
+              "name": "Argentina",
+              "children": [{ "name": "Argentine", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Bolivia (Plurinational State of)",
+              "children": [{ "name": "Bolivian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Brazil",
+              "children": [{ "name": "Brazilian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Chile",
+              "children": [{ "name": "Chilean", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Colombia",
+              "children": [{ "name": "Colombian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Ecuador",
+              "children": [{ "name": "Ecuadorian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Guyana",
+              "children": [{ "name": "Guyanese", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Paraguay",
+              "children": [{ "name": "Paraguayan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Peru",
+              "children": [{ "name": "Peruvian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Uruguay",
+              "children": [{ "name": "Uruguayan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Venezuela (Bolivarian Republic of)",
+              "children": [{ "name": "Venezuelan", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Caribbean",
+          "children": [
+            {
+              "name": "Cuba",
+              "children": [{ "name": "Cuban", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Dominican Republic",
+              "children": [{ "name": "Dominican", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Haiti",
+              "children": [{ "name": "Haitian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Jamaica",
+              "children": [{ "name": "Jamaican", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Puerto Rico",
+              "children": [{ "name": "Puerto Rican", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "children": [
+                { "name": "Trinidad And Tobago", "minSize": 5, "size": 5 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Central America",
+          "children": [
+            {
+              "name": "Mexico",
+              "children": [{ "name": "Mexican", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Nicaragua",
+              "children": [{ "name": "Nicaraguan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "El Salvador",
+              "children": [{ "name": "Salvadorean", "minSize": 5, "size": 5 }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oceania",
+      "children": [
+        {
+          "name": "Australia and New Zealand",
+          "children": [
+            {
+              "name": "Australia",
+              "children": [{ "name": "Australian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "New Zealand",
+              "children": [{ "name": "New Zealand", "minSize": 5, "size": 5 }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Africa",
+      "children": [
+        {
+          "name": "Eastern Africa",
+          "children": [
+            {
+              "name": "Ethiopia",
+              "children": [{ "name": "Ethiopian", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "British Indian Ocean Territory",
+              "children": [
+                { "name": "Indian", "minSize": 5, "size": 5 },
+                { "name": "Punjabi", "minSize": 5, "size": 5 }
+              ]
+            },
+            {
+              "name": "Somalia",
+              "children": [{ "name": "Somali", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Northern Africa",
+          "children": [
+            {
+              "name": "Morocco",
+              "children": [{ "name": "Moroccan", "minSize": 5, "size": 5 }]
+            },
+            {
+              "name": "Tunisia",
+              "children": [{ "name": "Tunisian", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Western Africa",
+          "children": [
+            {
+              "name": "Nigeria",
+              "children": [{ "name": "Nigerian", "minSize": 5, "size": 5 }]
+            }
+          ]
+        },
+        {
+          "name": "Southern Africa",
+          "children": [
+            {
+              "name": "South Africa",
+              "children": [{ "name": "South African", "minSize": 5, "size": 5 }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

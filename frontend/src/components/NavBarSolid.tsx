@@ -45,6 +45,9 @@ function NavBarSolid() {
             <Nav.Link href="/visualizations" className="a-custom">
               Our Visualizations
             </Nav.Link>
+            <Nav.Link href="/provider-visualizations" className="a-custom">
+              Provider Visualizations
+            </Nav.Link>
           </Nav>
           <Form
             inline

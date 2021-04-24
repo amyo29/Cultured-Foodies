@@ -43,7 +43,10 @@ function NavBar() {
               Restaurants
             </Nav.Link>
             <Nav.Link href="/visualizations" className="a-custom">
-              Visualizations
+              Our Visualizations
+            </Nav.Link>
+            <Nav.Link href="/provider-visualizations" className="a-custom">
+              Provider Visualizations
             </Nav.Link>
           </Nav>
           <Form

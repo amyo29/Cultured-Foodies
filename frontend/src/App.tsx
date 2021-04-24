@@ -14,6 +14,8 @@ import Restaurants from "./pages/Restaurants/Restaurants";
 import Restaurant from "./pages/Restaurants/Restaurant";
 import Search from "./pages/Search/Search";
 import Visualization from "./pages/Visualizations";
+import ProviderVisualizations from "./pages/ProviderVisualizations";
+
 export default function App() {
   return (
     <div className="background full-height">
@@ -53,7 +55,9 @@ export default function App() {
             <Route path="/visualizations">
               <Visualization />
             </Route>
-
+            <Route path="/provider-visualizations">
+              <ProviderVisualizations />
+            </Route>
             <Route
               path="/search/query=:q"
               render={(props) => <Search q={props.match.params.q} />}
