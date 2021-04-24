@@ -37,7 +37,7 @@ function Visualizations() {
   return (
     <div>
       <NavBarSolid />
-      <Container fluid class="container">
+      <Container fluid>
 
         <h1 class="headerStyle">Visualizations</h1>
 
@@ -45,7 +45,7 @@ function Visualizations() {
         <h3 class="header3Style">Number of restaurants in each city</h3>
         
         <Row>
-          <BubbleMap></BubbleMap>
+          <BubbleMap class="animation"></BubbleMap>
         </Row>
         <h3 class="header3Style">
             Quality of Life Scores for {currentCity.name}, {currentCity.state}
