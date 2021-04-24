@@ -13,6 +13,7 @@ import qualityOfLifeScoresPerCity from "../visualizationData/ourData/qualityOfLi
 import expeditionsPerCountry from "../visualizationData/providerData/expeditionsPerCountry.json";
 import newsArticlesPerPublisher from "../visualizationData/providerData/newsArticlesPerPublisher.json";
 import totalLaunchesPerAgency from "../visualizationData/providerData/totalLaunchesPerAgency.json";
+import BubbleMap from "../components/Visualizations/BubbleMap";
 
 //import CSS from "csstype";
 //import BubbleChart from "../components/Visualizations/BubbleChart";
@@ -42,6 +43,10 @@ function Visualizations() {
         </Row>
         <Row class="center">
           <h2 class="custom1">Our Data</h2>
+        </Row>
+        <Row class="center">
+          <h3 class="custom1">Number of restaurants in each city</h3>
+          <BubbleMap></BubbleMap>
         </Row>
         <Row class="center">
           <h3 class="custom1">
