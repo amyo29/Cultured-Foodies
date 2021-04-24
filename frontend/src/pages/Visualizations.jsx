@@ -5,6 +5,7 @@ import expeditionsPerCountry from "../visualizationData/providerData/expeditions
 import BarChart from "../components/Visualizations/BarChart";
 import NavBarSolid from "../components/NavBarSolid";
 import "../styles/Visualizations.css";
+import BubbleMap from "../components/Visualizations/BubbleMap";
 
 //import CSS from "csstype";
 //import BubbleChart from "../components/Visualizations/BubbleChart";
@@ -52,13 +53,7 @@ function Visualizations() {
           />
       </Row>
       <Row class="center">
-          <BarChart
-            data={expeditionsPerCountry}
-            xAttr="country"
-            yAttr="expeditions"
-            xLabel="Countries"
-            yLabel="Expeditions"
-          />
+         <BubbleMap></BubbleMap>
       </Row>
     
       </Container>

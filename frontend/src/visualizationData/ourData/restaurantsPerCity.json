@@ -1,191 +1,1096 @@
 [
-  { "city": "Peoria, AZ", "restaurants": 35 },
-  { "city": "Stockton, CA", "restaurants": 60 },
-  { "city": "Providence, RI", "restaurants": 55 },
-  { "city": "Tacoma, WA", "restaurants": 47 },
-  { "city": "Chicago, IL", "restaurants": 97 },
-  { "city": "Bellevue, WA", "restaurants": 48 },
-  { "city": "Columbus, OH", "restaurants": 47 },
-  { "city": "Cedar Park, TX", "restaurants": 2 },
-  { "city": "Mesa, AZ", "restaurants": 58 },
-  { "city": "Salt Lake City, UT", "restaurants": 45 },
-  { "city": "Detroit, MI", "restaurants": 50 },
-  { "city": "Allen, TX", "restaurants": 8 },
-  { "city": "Jersey City, NJ", "restaurants": 62 },
-  { "city": "Petaluma, CA", "restaurants": 9 },
-  { "city": "Buffalo, NY", "restaurants": 59 },
-  { "city": "Plano, TX", "restaurants": 63 },
-  { "city": "Philadelphia, PA", "restaurants": 63 },
-  { "city": "Los Angeles, CA", "restaurants": 61 },
-  { "city": "San Jose, CA", "restaurants": 66 },
-  { "city": "Cleburne, TX", "restaurants": 3 },
-  { "city": "Richmond, VA", "restaurants": 58 },
-  { "city": "Hayward, CA", "restaurants": 33 },
-  { "city": "Pittsburgh, PA", "restaurants": 45 },
-  { "city": "Des Moines, IA", "restaurants": 53 },
-  { "city": "Surprise, AZ", "restaurants": 44 },
-  { "city": "Fremont, CA", "restaurants": 37 },
-  { "city": "Santa Maria, CA", "restaurants": 53 },
-  { "city": "Grand Prairie, TX", "restaurants": 31 },
-  { "city": "Seattle, WA", "restaurants": 53 },
-  { "city": "Charlotte, NC", "restaurants": 61 },
-  { "city": "Lakewood, CA", "restaurants": 32 },
-  { "city": "Houston, TX", "restaurants": 88 },
-  { "city": "Louisville, KY", "restaurants": 55 },
-  { "city": "Santa Clarita, CA", "restaurants": 43 },
-  { "city": "Las Vegas, NV", "restaurants": 48 },
-  { "city": "Chattanooga, TN", "restaurants": 59 },
-  { "city": "Healdsburg, CA", "restaurants": 1 },
-  { "city": "Arlington, TX", "restaurants": 65 },
-  { "city": "Jacksonville, FL", "restaurants": 54 },
-  { "city": "Scottsdale, AZ", "restaurants": 55 },
-  { "city": "Albuquerque, NM", "restaurants": 58 },
-  { "city": "Pomona, CA", "restaurants": 26 },
-  { "city": "Milwaukee, WI", "restaurants": 49 },
-  { "city": "Eugene, OR", "restaurants": 47 },
-  { "city": "Alexandria, VA", "restaurants": 64 },
-  { "city": "Boise, ID", "restaurants": 57 },
-  { "city": "Long Beach, CA", "restaurants": 64 },
-  { "city": "New York City, NY", "restaurants": 150 },
-  { "city": "Rohnert Park, CA", "restaurants": 4 },
-  { "city": "Gilbert, AZ", "restaurants": 39 },
-  { "city": "Worcester, MA", "restaurants": 53 },
-  { "city": "Anchorage, AK", "restaurants": 53 },
-  { "city": "Irving, TX", "restaurants": 57 },
-  { "city": "St. Louis, MO", "restaurants": 53 },
-  { "city": "Omaha, NE", "restaurants": 57 },
-  { "city": "Denton, TX", "restaurants": 39 },
-  { "city": "Dallas, TX", "restaurants": 61 },
-  { "city": "Denver, CO", "restaurants": 61 },
-  { "city": "New Orleans, LA", "restaurants": 55 },
-  { "city": "Nashville, TN", "restaurants": 65 },
-  { "city": "Fort Worth, TX", "restaurants": 64 },
-  { "city": "Cincinnati, OH", "restaurants": 39 },
-  { "city": "San Francisco, CA", "restaurants": 67 },
-  { "city": "Frisco, TX", "restaurants": 50 },
-  { "city": "San Diego, CA", "restaurants": 69 },
-  { "city": "Atlanta, GA", "restaurants": 60 },
-  { "city": "Oakland, CA", "restaurants": 61 },
-  { "city": "Baltimore, MD", "restaurants": 47 },
-  { "city": "San Antonio, TX", "restaurants": 61 },
-  { "city": "Austin, TX", "restaurants": 62 },
-  { "city": "Memphis, TN", "restaurants": 55 },
-  { "city": "Tampa, FL", "restaurants": 47 },
-  { "city": "Sonoma, CA", "restaurants": 3 },
-  { "city": "McKinney, TX", "restaurants": 30 },
-  { "city": "Huntington Park, CA", "restaurants": 22 },
-  { "city": "Ontario, OR", "restaurants": 19 },
-  { "city": "Glendale, AZ", "restaurants": 42 },
-  { "city": "Washington DC, DC", "restaurants": 52 },
-  { "city": "Santa Rosa, CA", "restaurants": 54 },
-  { "city": "Rochester, NY", "restaurants": 56 },
-  { "city": "Oklahoma City, OK", "restaurants": 60 },
-  { "city": "Indianapolis, IN", "restaurants": 53 },
-  { "city": "Birmingham, AL", "restaurants": 62 },
-  { "city": "Carrollton, TX", "restaurants": 39 },
-  { "city": "Pasadena, CA", "restaurants": 65 },
-  { "city": "Phoenix, AZ", "restaurants": 57 },
-  { "city": "Sacramento, CA", "restaurants": 53 },
-  { "city": "Saratoga, CA", "restaurants": 3 },
-  { "city": "Newark, NJ", "restaurants": 47 },
-  { "city": "Vancouver, WA", "restaurants": 29 },
-  { "city": "Miami, FL", "restaurants": 60 },
-  { "city": "Colorado Springs, CO", "restaurants": 52 },
-  { "city": "San Anselmo, CA", "restaurants": 2 },
-  { "city": "Hermosa Beach, CA", "restaurants": 4 },
-  { "city": "Sunnyvale, CA", "restaurants": 35 },
-  { "city": "Cleveland, OH", "restaurants": 31 },
-  { "city": "Anna, TX", "restaurants": 2 },
-  { "city": "Madison, WI", "restaurants": 55 },
-  { "city": "Chandler, AZ", "restaurants": 53 },
-  { "city": "Paterson, NJ", "restaurants": 49 },
-  { "city": "Orlando, FL", "restaurants": 63 },
-  { "city": "Knoxville, TN", "restaurants": 58 },
-  { "city": "Portland, OR", "restaurants": 49 },
-  { "city": "Lake Dallas, TX", "restaurants": 3 },
-  { "city": "Garland, TX", "restaurants": 34 },
-  { "city": "Calistoga, CA", "restaurants": 1 },
-  { "city": "Campbell, CA", "restaurants": 6 },
-  { "city": "Round Rock, TX", "restaurants": 31 },
-  { "city": "Rancho Palos Verdes, CA", "restaurants": 19 },
-  { "city": "Glendale, CA", "restaurants": 54 },
-  { "city": "Boston, MA", "restaurants": 52 },
-  { "city": "Lakewood, WA", "restaurants": 2 },
-  { "city": "Canby, OR", "restaurants": 7 },
-  { "city": "West Linn, OR", "restaurants": 2 },
-  { "city": "Bee Cave, TX", "restaurants": 7 },
-  { "city": "Oregon City, OR", "restaurants": 1 },
-  { "city": "Belmont, CA", "restaurants": 2 },
-  { "city": "Torrance, CA", "restaurants": 4 },
-  { "city": "Tukwila, WA", "restaurants": 1 },
-  { "city": "Tempe, AZ", "restaurants": 37 },
-  { "city": "Bodega Bay, CA", "restaurants": 3 },
-  { "city": "Tigard, OR", "restaurants": 3 },
-  { "city": "Cotati, CA", "restaurants": 2 },
-  { "city": "Lancaster, TX", "restaurants": 1 },
-  { "city": "Dublin, CA", "restaurants": 1 },
-  { "city": "Redondo Beach, CA", "restaurants": 7 },
-  { "city": "Palmdale, CA", "restaurants": 26 },
-  { "city": "Tualatin, OR", "restaurants": 1 },
-  { "city": "Rowlett, TX", "restaurants": 4 },
-  { "city": "Claremont, CA", "restaurants": 3 },
-  { "city": "Lakeway, TX", "restaurants": 1 },
-  { "city": "Danville, CA", "restaurants": 1 },
-  { "city": "Redwood City, CA", "restaurants": 3 },
-  { "city": "Santa Clara, CA", "restaurants": 3 },
-  { "city": "Rockwall, TX", "restaurants": 2 },
-  { "city": "Wilsonville, OR", "restaurants": 6 },
-  { "city": "Wylie, TX", "restaurants": 2 },
-  { "city": "Richardson, TX", "restaurants": 4 },
-  { "city": "Kent, WA", "restaurants": 1 },
-  { "city": "Georgetown, TX", "restaurants": 3 },
-  { "city": "Los Gatos, CA", "restaurants": 1 },
-  { "city": "Cerritos, CA", "restaurants": 1 },
-  { "city": "Kenwood, CA", "restaurants": 1 },
-  { "city": "Hurst, TX", "restaurants": 1 },
-  { "city": "Sumner, WA", "restaurants": 1 },
-  { "city": "Alvarado, TX", "restaurants": 1 },
-  { "city": "Guerneville, CA", "restaurants": 4 },
-  { "city": "Kansas City, KS", "restaurants": 1 },
-  { "city": "Midlothian, TX", "restaurants": 1 },
-  { "city": "Covina, CA", "restaurants": 1 },
-  { "city": "San Leandro, CA", "restaurants": 3 },
-  { "city": "Albany, CA", "restaurants": 2 },
-  { "city": "Grapevine, TX", "restaurants": 2 },
-  { "city": "Vashon, WA", "restaurants": 1 },
-  { "city": "Novato, CA", "restaurants": 2 },
-  { "city": "Occidental, CA", "restaurants": 3 },
-  { "city": "Pleasanton, CA", "restaurants": 4 },
-  { "city": "Colleyville, TX", "restaurants": 1 },
-  { "city": "La Verne, CA", "restaurants": 1 },
-  { "city": "Whittier, CA", "restaurants": 1 },
-  { "city": "Bedford, TX", "restaurants": 1 },
-  { "city": "Washougal, WA", "restaurants": 1 },
-  { "city": "Euless, TX", "restaurants": 1 },
-  { "city": "Manhattan Beach, CA", "restaurants": 1 },
-  { "city": "Penngrove, CA", "restaurants": 2 },
-  { "city": "Southlake, TX", "restaurants": 1 },
-  { "city": "Diamond Bar, CA", "restaurants": 1 },
-  { "city": "Mountain View, CA", "restaurants": 4 },
-  { "city": "Graton, CA", "restaurants": 2 },
-  { "city": "Mansfield, TX", "restaurants": 1 },
-  { "city": "Alameda, CA", "restaurants": 1 },
-  { "city": "Murphy, TX", "restaurants": 1 },
-  { "city": "Palo Alto, CA", "restaurants": 2 },
-  { "city": "Fife, WA", "restaurants": 1 },
-  { "city": "Monte Rio, CA", "restaurants": 2 },
-  { "city": "Woodland Park, NJ", "restaurants": 1 },
-  { "city": "Alhambra, CA", "restaurants": 1 },
-  { "city": "Pflugerville, TX", "restaurants": 1 },
-  { "city": "Lake Oswego, OR", "restaurants": 2 },
-  { "city": "Menlo Park, CA", "restaurants": 1 },
-  { "city": "Cedar Hill, TX", "restaurants": 1 },
-  { "city": "Passaic, NJ", "restaurants": 1 },
-  { "city": "Burbank, CA", "restaurants": 1 },
-  { "city": "Arlington, VA", "restaurants": 1 },
-  { "city": "Clackamas, OR", "restaurants": 1 },
-  { "city": "Emeryville, CA", "restaurants": 1 },
-  { "city": "Castro Valley, CA", "restaurants": 1 },
-  { "city": "Redmond, WA", "restaurants": 1 },
-  { "city": "Camas, WA", "restaurants": 1 }
+  {
+    "city": "Peoria, AZ",
+    "restaurants": 35,
+    "long": -112.23738,
+    "lat": 33.5806
+  },
+  {
+    "city": "Stockton, CA",
+    "restaurants": 60,
+    "long": -121.29078,
+    "lat": 37.9577
+  },
+  {
+    "city": "Providence, RI",
+    "restaurants": 55,
+    "long": -71.41283,
+    "lat": 41.82399
+  },
+  {
+    "city": "Tacoma, WA",
+    "restaurants": 47,
+    "long": -122.44429,
+    "lat": 47.25288
+  },
+  {
+    "city": "Chicago, IL",
+    "restaurants": 97,
+    "long": -87.65005,
+    "lat": 41.85003
+  },
+  {
+    "city": "Bellevue, WA",
+    "restaurants": 48,
+    "long": -122.20068,
+    "lat": 47.61038
+  },
+  {
+    "city": "Columbus, OH",
+    "restaurants": 47,
+    "long": -82.99879,
+    "lat": 39.96118
+  },
+  {
+    "city": "Cedar Park, TX",
+    "restaurants": 2,
+    "long": -97.82029,
+    "lat": 30.5052
+  },
+  {
+    "city": "Mesa, AZ",
+    "restaurants": 58,
+    "long": -111.82264,
+    "lat": 33.42227
+  },
+  {
+    "city": "Salt Lake City, UT",
+    "restaurants": 45,
+    "long": -111.89105,
+    "lat": 40.76078
+  },
+  {
+    "city": "Detroit, MI",
+    "restaurants": 50,
+    "long": -83.04575,
+    "lat": 42.33143
+  },
+  { "city": "Allen, TX", "restaurants": 8, "long": -96.67055, "lat": 33.10317 },
+  {
+    "city": "Jersey City, NJ",
+    "restaurants": 62,
+    "long": -74.07764,
+    "lat": 40.72816
+  },
+  {
+    "city": "Petaluma, CA",
+    "restaurants": 9,
+    "long": -122.63665,
+    "lat": 38.23242
+  },
+  {
+    "city": "Buffalo, NY",
+    "restaurants": 59,
+    "long": -78.87837,
+    "lat": 42.88645
+  },
+  {
+    "city": "Plano, TX",
+    "restaurants": 63,
+    "long": -96.69889,
+    "lat": 33.01984
+  },
+  {
+    "city": "Philadelphia, PA",
+    "restaurants": 63,
+    "long": -75.16379,
+    "lat": 39.95233
+  },
+  {
+    "city": "Los Angeles, CA",
+    "restaurants": 61,
+    "long": -118.24368,
+    "lat": 34.05223
+  },
+  {
+    "city": "San Jose, CA",
+    "restaurants": 66,
+    "long": -121.89496,
+    "lat": 37.33939
+  },
+  {
+    "city": "Cleburne, TX",
+    "restaurants": 3,
+    "long": -97.38668,
+    "lat": 32.34764
+  },
+  {
+    "city": "Richmond, VA",
+    "restaurants": 58,
+    "long": -77.46026,
+    "lat": 37.55376
+  },
+  {
+    "city": "Hayward, CA",
+    "restaurants": 33,
+    "long": -122.0808,
+    "lat": 37.66882
+  },
+  {
+    "city": "Pittsburgh, PA",
+    "restaurants": 45,
+    "long": -79.99589,
+    "lat": 40.44062
+  },
+  {
+    "city": "Des Moines, IA",
+    "restaurants": 53,
+    "long": -93.60911,
+    "lat": 41.60054
+  },
+  {
+    "city": "Surprise, AZ",
+    "restaurants": 44,
+    "long": -112.33322,
+    "lat": 33.63059
+  },
+  {
+    "city": "Fremont, CA",
+    "restaurants": 37,
+    "long": -121.98857,
+    "lat": 37.54827
+  },
+  {
+    "city": "Santa Maria, CA",
+    "restaurants": 53,
+    "long": -120.43572,
+    "lat": 34.95303
+  },
+  {
+    "city": "Grand Prairie, TX",
+    "restaurants": 31,
+    "long": -96.99778,
+    "lat": 32.74596
+  },
+  {
+    "city": "Seattle, WA",
+    "restaurants": 53,
+    "long": -122.33207,
+    "lat": 47.60621
+  },
+  {
+    "city": "Charlotte, NC",
+    "restaurants": 61,
+    "long": -80.84313,
+    "lat": 35.22709
+  },
+  {
+    "city": "Lakewood, CA",
+    "restaurants": 32,
+    "long": -118.13396,
+    "lat": 33.85363
+  },
+  {
+    "city": "Houston, TX",
+    "restaurants": 88,
+    "long": -95.36327,
+    "lat": 29.76328
+  },
+  {
+    "city": "Louisville, KY",
+    "restaurants": 55,
+    "long": -85.75941,
+    "lat": 38.25424
+  },
+  {
+    "city": "Santa Clarita, CA",
+    "restaurants": 43,
+    "long": -118.54259,
+    "lat": 34.39166
+  },
+  {
+    "city": "Las Vegas, NV",
+    "restaurants": 48,
+    "long": -115.13722,
+    "lat": 36.17497
+  },
+  {
+    "city": "Chattanooga, TN",
+    "restaurants": 59,
+    "long": -85.30968,
+    "lat": 35.04563
+  },
+  {
+    "city": "Healdsburg, CA",
+    "restaurants": 1,
+    "long": -122.86916,
+    "lat": 38.61047
+  },
+  {
+    "city": "Arlington, TX",
+    "restaurants": 65,
+    "long": -97.10807,
+    "lat": 32.73569
+  },
+  {
+    "city": "Jacksonville, FL",
+    "restaurants": 54,
+    "long": -81.65565,
+    "lat": 30.33218
+  },
+  {
+    "city": "Scottsdale, AZ",
+    "restaurants": 55,
+    "long": -111.89903,
+    "lat": 33.50921
+  },
+  {
+    "city": "Albuquerque, NM",
+    "restaurants": 58,
+    "long": -106.65114,
+    "lat": 35.08449
+  },
+  {
+    "city": "Pomona, CA",
+    "restaurants": 26,
+    "long": -117.75228,
+    "lat": 34.05529
+  },
+  {
+    "city": "Milwaukee, WI",
+    "restaurants": 49,
+    "long": -87.90647,
+    "lat": 43.0389
+  },
+  {
+    "city": "Eugene, OR",
+    "restaurants": 47,
+    "long": -123.08675,
+    "lat": 44.05207
+  },
+  {
+    "city": "Alexandria, VA",
+    "restaurants": 64,
+    "long": -77.04692,
+    "lat": 38.80484
+  },
+  {
+    "city": "Boise, ID",
+    "restaurants": 57,
+    "long": -116.20345,
+    "lat": 43.6135
+  },
+  {
+    "city": "Long Beach, CA",
+    "restaurants": 64,
+    "long": -118.18923,
+    "lat": 33.76696
+  },
+  {
+    "city": "New York City, NY",
+    "restaurants": 150,
+    "long": -74.00597,
+    "lat": 40.71427
+  },
+  {
+    "city": "Rohnert Park, CA",
+    "restaurants": 4,
+    "long": -122.7011,
+    "lat": 38.33964
+  },
+  {
+    "city": "Gilbert, AZ",
+    "restaurants": 39,
+    "long": -111.78903,
+    "lat": 33.35283
+  },
+  {
+    "city": "Worcester, MA",
+    "restaurants": 53,
+    "long": -71.80229,
+    "lat": 42.26259
+  },
+  {
+    "city": "Anchorage, AK",
+    "restaurants": 53,
+    "long": -149.90028,
+    "lat": 61.21806
+  },
+  {
+    "city": "Irving, TX",
+    "restaurants": 57,
+    "long": -96.94889,
+    "lat": 32.81402
+  },
+  {
+    "city": "St. Louis, MO",
+    "restaurants": 53,
+    "long": -90.19789,
+    "lat": 38.62727
+  },
+  {
+    "city": "Omaha, NE",
+    "restaurants": 57,
+    "long": -95.94043,
+    "lat": 41.25626
+  },
+  {
+    "city": "Denton, TX",
+    "restaurants": 39,
+    "long": -97.13307,
+    "lat": 33.21484
+  },
+  {
+    "city": "Dallas, TX",
+    "restaurants": 61,
+    "long": -96.80667,
+    "lat": 32.78306
+  },
+  {
+    "city": "Denver, CO",
+    "restaurants": 61,
+    "long": -104.9847,
+    "lat": 39.73915
+  },
+  {
+    "city": "New Orleans, LA",
+    "restaurants": 55,
+    "long": -90.07507,
+    "lat": 29.95465
+  },
+  {
+    "city": "Nashville, TN",
+    "restaurants": 65,
+    "long": -86.78444,
+    "lat": 36.16589
+  },
+  {
+    "city": "Fort Worth, TX",
+    "restaurants": 64,
+    "long": -97.32085,
+    "lat": 32.72541
+  },
+  {
+    "city": "Cincinnati, OH",
+    "restaurants": 39,
+    "long": -84.51439,
+    "lat": 39.12711
+  },
+  {
+    "city": "San Francisco, CA",
+    "restaurants": 67,
+    "long": -122.41942,
+    "lat": 37.77493
+  },
+  {
+    "city": "Frisco, TX",
+    "restaurants": 50,
+    "long": -96.82361,
+    "lat": 33.15067
+  },
+  {
+    "city": "San Diego, CA",
+    "restaurants": 69,
+    "long": -117.15726,
+    "lat": 32.71533
+  },
+  {
+    "city": "Atlanta, GA",
+    "restaurants": 60,
+    "long": -84.38798,
+    "lat": 33.749
+  },
+  {
+    "city": "Oakland, CA",
+    "restaurants": 61,
+    "long": -122.2708,
+    "lat": 37.80437
+  },
+  {
+    "city": "Baltimore, MD",
+    "restaurants": 47,
+    "long": -76.61219,
+    "lat": 39.29038
+  },
+  {
+    "city": "San Antonio, TX",
+    "restaurants": 61,
+    "long": -98.49363,
+    "lat": 29.42412
+  },
+  {
+    "city": "Austin, TX",
+    "restaurants": 62,
+    "long": -97.74306,
+    "lat": 30.26715
+  },
+  {
+    "city": "Memphis, TN",
+    "restaurants": 55,
+    "long": -90.04898,
+    "lat": 35.14953
+  },
+  {
+    "city": "Tampa, FL",
+    "restaurants": 47,
+    "long": -82.45843,
+    "lat": 27.94752
+  },
+  {
+    "city": "Sonoma, CA",
+    "restaurants": 3,
+    "long": -122.45804,
+    "lat": 38.29186
+  },
+  {
+    "city": "McKinney, TX",
+    "restaurants": 30,
+    "long": -96.61527,
+    "lat": 33.19762
+  },
+  {
+    "city": "Huntington Park, CA",
+    "restaurants": 22,
+    "long": -118.22507,
+    "lat": 33.98168
+  },
+  {
+    "city": "Ontario, OR",
+    "restaurants": 19,
+    "long": -116.96294,
+    "lat": 44.02655
+  },
+  {
+    "city": "Glendale, AZ",
+    "restaurants": 42,
+    "long": -118.25508,
+    "lat": 34.14251
+  },
+  {
+    "city": "Washington DC, DC",
+    "long": -77.03637,
+    "lat": 38.89511,
+    "restaurants": 52
+  },
+  {
+    "city": "Santa Rosa, CA",
+    "restaurants": 54,
+    "long": -122.71443,
+    "lat": 38.44047
+  },
+  {
+    "city": "Rochester, NY",
+    "restaurants": 56,
+    "long": -77.61556,
+    "lat": 43.15478
+  },
+  {
+    "city": "Oklahoma City, OK",
+    "restaurants": 60,
+    "long": -97.51643,
+    "lat": 35.46756
+  },
+  {
+    "city": "Indianapolis, IN",
+    "restaurants": 53,
+    "long": -86.15804,
+    "lat": 39.76838
+  },
+  {
+    "city": "Birmingham, AL",
+    "restaurants": 62,
+    "long": -86.80249,
+    "lat": 33.52066
+  },
+  {
+    "city": "Carrollton, TX",
+    "restaurants": 39,
+    "long": -96.89028,
+    "lat": 32.95373
+  },
+  {
+    "city": "Pasadena, CA",
+    "restaurants": 65,
+    "long": -118.14452,
+    "lat": 34.14778
+  },
+  {
+    "city": "Phoenix, AZ",
+    "restaurants": 57,
+    "long": -112.07404,
+    "lat": 33.44838
+  },
+  {
+    "city": "Sacramento, CA",
+    "restaurants": 53,
+    "long": -121.4944,
+    "lat": 38.58157
+  },
+  {
+    "city": "Saratoga, CA",
+    "restaurants": 3,
+    "long": -122.02301,
+    "lat": 37.26383
+  },
+  {
+    "city": "Newark, NJ",
+    "restaurants": 47,
+    "long": -74.17237,
+    "lat": 40.73566
+  },
+  {
+    "city": "Vancouver, WA",
+    "restaurants": 29,
+    "long": -122.66149,
+    "lat": 45.63873
+  },
+  {
+    "city": "Miami, FL",
+    "restaurants": 60,
+    "long": -80.19366,
+    "lat": 25.77427
+  },
+  {
+    "city": "Colorado Springs, CO",
+    "restaurants": 52,
+    "long": -104.82136,
+    "lat": 38.83388
+  },
+  {
+    "city": "San Anselmo, CA",
+    "restaurants": 2,
+    "long": -122.56164,
+    "lat": 37.97465
+  },
+  {
+    "city": "Hermosa Beach, CA",
+    "restaurants": 4,
+    "long": -118.39952,
+    "lat": 33.86224
+  },
+  {
+    "city": "Sunnyvale, CA",
+    "restaurants": 35,
+    "long": -122.03635,
+    "lat": 37.36883
+  },
+  {
+    "city": "Cleveland, OH",
+    "restaurants": 31,
+    "long": -81.69541,
+    "lat": 41.4995
+  },
+  { "city": "Anna, TX", "restaurants": 2, "long": -96.5486, "lat": 33.349 },
+  {
+    "city": "Madison, WI",
+    "restaurants": 55,
+    "long": -89.40123,
+    "lat": 43.07305
+  },
+  {
+    "city": "Chandler, AZ",
+    "restaurants": 53,
+    "long": -111.84125,
+    "lat": 33.30616
+  },
+  {
+    "city": "Paterson, NJ",
+    "restaurants": 49,
+    "long": -74.17181,
+    "lat": 40.91677
+  },
+  {
+    "city": "Orlando, FL",
+    "restaurants": 63,
+    "long": -81.37924,
+    "lat": 28.53834
+  },
+  {
+    "city": "Knoxville, TN",
+    "restaurants": 58,
+    "long": -83.92074,
+    "lat": 35.96064
+  },
+  {
+    "city": "Portland, OR",
+    "restaurants": 49,
+    "long": -122.67621,
+    "lat": 45.52345
+  },
+  {
+    "city": "Lake Dallas, TX",
+    "restaurants": 3,
+    "long": -97.02556,
+    "lat": 33.11929
+  },
+  {
+    "city": "Garland, TX",
+    "restaurants": 34,
+    "long": -96.63888,
+    "lat": 32.91262
+  },
+  {
+    "city": "Calistoga, CA",
+    "restaurants": 1,
+    "long": -122.57971,
+    "lat": 38.5788
+  },
+  {
+    "city": "Campbell, CA",
+    "restaurants": 6,
+    "long": -121.94996,
+    "lat": 37.28717
+  },
+  {
+    "city": "Round Rock, TX",
+    "restaurants": 31,
+    "long": -97.6789,
+    "lat": 30.50826
+  },
+  {
+    "city": "Rancho Palos Verdes, CA",
+    "restaurants": 19,
+    "long": -118.38702,
+    "lat": 33.74446
+  },
+  {
+    "city": "Glendale, CA",
+    "restaurants": 54,
+    "long": -118.25508,
+    "lat": 34.14251
+  },
+  {
+    "city": "Boston, MA",
+    "restaurants": 52,
+    "long": -71.05977,
+    "lat": 42.35843
+  },
+  {
+    "city": "Lakewood, WA",
+    "restaurants": 2,
+    "long": -118.13396,
+    "lat": 33.85363
+  },
+  { "city": "Canby, OR", "restaurants": 7, "long": -122.69259, "lat": 45.2629 },
+  {
+    "city": "West Linn, OR",
+    "restaurants": 2,
+    "long": -122.61231,
+    "lat": 45.36568
+  },
+  {
+    "city": "Bee Cave, TX",
+    "restaurants": 7,
+    "long": -97.94501,
+    "lat": 30.30854
+  },
+  {
+    "city": "Oregon City, OR",
+    "restaurants": 1,
+    "long": -122.60676,
+    "lat": 45.35734
+  },
+  {
+    "city": "Belmont, CA",
+    "restaurants": 2,
+    "long": -122.2758,
+    "lat": 37.52021
+  },
+  {
+    "city": "Torrance, CA",
+    "restaurants": 4,
+    "long": -118.34063,
+    "lat": 33.83585
+  },
+  {
+    "city": "Tukwila, WA",
+    "restaurants": 1,
+    "long": -122.26096,
+    "lat": 47.47399
+  },
+  {
+    "city": "Tempe, AZ",
+    "restaurants": 37,
+    "long": -111.90931,
+    "lat": 33.41477
+  },
+  {
+    "city": "Bodega Bay, CA",
+    "restaurants": 3,
+    "long": -123.04806,
+    "lat": 38.33325
+  },
+  {
+    "city": "Tigard, OR",
+    "restaurants": 3,
+    "long": -122.77149,
+    "lat": 45.43123
+  },
+  {
+    "city": "Cotati, CA",
+    "restaurants": 2,
+    "long": -122.70721,
+    "lat": 38.32686
+  },
+  {
+    "city": "Lancaster, TX",
+    "restaurants": 1,
+    "long": -96.75611,
+    "lat": 32.59208
+  },
+  {
+    "city": "Dublin, CA",
+    "restaurants": 1,
+    "long": -121.93579,
+    "lat": 37.70215
+  },
+  {
+    "city": "Redondo Beach, CA",
+    "restaurants": 7,
+    "long": -118.38841,
+    "lat": 33.84918
+  },
+  {
+    "city": "Palmdale, CA",
+    "restaurants": 26,
+    "long": -118.11646,
+    "lat": 34.57943
+  },
+  {
+    "city": "Tualatin, OR",
+    "restaurants": 1,
+    "long": -122.76399,
+    "lat": 45.38401
+  },
+  {
+    "city": "Rowlett, TX",
+    "restaurants": 4,
+    "long": -96.56388,
+    "lat": 32.9029
+  },
+  {
+    "city": "Claremont, CA",
+    "restaurants": 3,
+    "long": -117.71978,
+    "lat": 34.09668
+  },
+  {
+    "city": "Lakeway, TX",
+    "restaurants": 1,
+    "long": -97.97959,
+    "lat": 30.36377
+  },
+  {
+    "city": "Danville, CA",
+    "restaurants": 1,
+    "long": -121.99996,
+    "lat": 37.82159
+  },
+  {
+    "city": "Redwood City, CA",
+    "restaurants": 3,
+    "long": -122.23635,
+    "lat": 37.48522
+  },
+  {
+    "city": "Santa Clara, CA",
+    "restaurants": 3,
+    "long": -121.95524,
+    "lat": 37.35411
+  },
+  {
+    "city": "Rockwall, TX",
+    "restaurants": 2,
+    "long": -96.45971,
+    "lat": 32.93123
+  },
+  {
+    "city": "Wilsonville, OR",
+    "restaurants": 6,
+    "long": -122.77371,
+    "lat": 45.29984
+  },
+  { "city": "Wylie, TX", "restaurants": 2, "long": -96.53888, "lat": 33.01512 },
+  {
+    "city": "Richardson, TX",
+    "restaurants": 4,
+    "long": -96.72972,
+    "lat": 32.94818
+  },
+  { "city": "Kent, WA", "restaurants": 1, "long": -122.23484, "lat": 47.38093 },
+  {
+    "city": "Georgetown, TX",
+    "restaurants": 3,
+    "long": -97.67723,
+    "lat": 30.63269
+  },
+  {
+    "city": "Los Gatos, CA",
+    "restaurants": 1,
+    "long": -121.97468,
+    "lat": 37.22661
+  },
+  {
+    "city": "Cerritos, CA",
+    "restaurants": 1,
+    "long": -118.06479,
+    "lat": 33.85835
+  },
+  {
+    "city": "Kenwood, CA",
+    "restaurants": 1,
+    "long": -122.54609,
+    "lat": 38.4138
+  },
+  { "city": "Hurst, TX", "restaurants": 1, "long": -97.17057, "lat": 32.82346 },
+  {
+    "city": "Sumner, WA",
+    "restaurants": 1,
+    "long": -122.2404,
+    "lat": 47.20316
+  },
+  {
+    "city": "Alvarado, TX",
+    "restaurants": 1,
+    "long": -97.21168,
+    "lat": 32.40653
+  },
+  {
+    "city": "Guerneville, CA",
+    "restaurants": 4,
+    "long": -122.99611,
+    "lat": 38.50186
+  },
+  {
+    "city": "Kansas City, KS",
+    "restaurants": 1,
+    "long": -94.62746,
+    "lat": 39.11417
+  },
+  {
+    "city": "Midlothian, TX",
+    "restaurants": 1,
+    "long": -96.99445,
+    "lat": 32.48236
+  },
+  {
+    "city": "Covina, CA",
+    "restaurants": 1,
+    "long": -117.89034,
+    "lat": 34.09001
+  },
+  {
+    "city": "San Leandro, CA",
+    "restaurants": 3,
+    "long": -122.15608,
+    "lat": 37.72493
+  },
+  {
+    "city": "Albany, CA",
+    "restaurants": 2,
+    "long": -122.29775,
+    "lat": 37.88687
+  },
+  {
+    "city": "Grapevine, TX",
+    "restaurants": 2,
+    "long": -97.07807,
+    "lat": 32.93429
+  },
+  {
+    "city": "Vashon, WA",
+    "restaurants": 1,
+    "long": -122.45985,
+    "lat": 47.44732
+  },
+  {
+    "city": "Novato, CA",
+    "restaurants": 2,
+    "long": -122.5697,
+    "lat": 38.10742
+  },
+  {
+    "city": "Occidental, CA",
+    "restaurants": 3,
+    "long": -122.94833,
+    "lat": 38.40741
+  },
+  {
+    "city": "Pleasanton, CA",
+    "restaurants": 4,
+    "long": -121.87468,
+    "lat": 37.66243
+  },
+  {
+    "city": "Colleyville, TX",
+    "restaurants": 1,
+    "long": -97.15501,
+    "lat": 32.88096
+  },
+  {
+    "city": "La Verne, CA",
+    "restaurants": 1,
+    "long": -117.76784,
+    "lat": 34.10084
+  },
+  {
+    "city": "Whittier, CA",
+    "restaurants": 1,
+    "long": -118.03284,
+    "lat": 33.97918
+  },
+  {
+    "city": "Bedford, TX",
+    "restaurants": 1,
+    "long": -97.14307,
+    "lat": 32.84402
+  },
+  {
+    "city": "Washougal, WA",
+    "restaurants": 1,
+    "long": -122.35342,
+    "lat": 45.58262
+  },
+  {
+    "city": "Euless, TX",
+    "restaurants": 1,
+    "long": -97.08195,
+    "lat": 32.83707
+  },
+  {
+    "city": "Manhattan Beach, CA",
+    "restaurants": 1,
+    "long": -118.41091,
+    "lat": 33.88474
+  },
+  {
+    "city": "Penngrove, CA",
+    "restaurants": 2,
+    "long": -122.66665,
+    "lat": 38.29964
+  },
+  {
+    "city": "Southlake, TX",
+    "restaurants": 1,
+    "long": -97.13418,
+    "lat": 32.94124
+  },
+  {
+    "city": "Diamond Bar, CA",
+    "restaurants": 1,
+    "long": -117.81034,
+    "lat": 34.02862
+  },
+  {
+    "city": "Mountain View, CA",
+    "restaurants": 4,
+    "long": -122.08385,
+    "lat": 37.38605
+  },
+  {
+    "city": "Graton, CA",
+    "restaurants": 2,
+    "long": -122.86972,
+    "lat": 38.4363
+  },
+  {
+    "city": "Mansfield, TX",
+    "restaurants": 1,
+    "long": -97.14168,
+    "lat": 32.56319
+  },
+  {
+    "city": "Alameda, CA",
+    "restaurants": 1,
+    "long": -122.24164,
+    "lat": 37.76521
+  },
+  {
+    "city": "Murphy, TX",
+    "restaurants": 1,
+    "long": -96.61305,
+    "lat": 33.01512
+  },
+  {
+    "city": "Palo Alto, CA",
+    "restaurants": 2,
+    "long": -122.14302,
+    "lat": 37.44188
+  },
+  { "city": "Fife, WA", "restaurants": 1, "long": -122.35707, "lat": 47.23927 },
+  {
+    "city": "Monte Rio, CA",
+    "restaurants": 2,
+    "long": -123.00889,
+    "lat": 38.46547
+  },
+  {
+    "city": "Woodland Park, NJ",
+    "restaurants": 1,
+    "long": -74.19487,
+    "lat": 40.88982
+  },
+  {
+    "city": "Alhambra, CA",
+    "restaurants": 1,
+    "long": -118.12701,
+    "lat": 34.09529
+  },
+  {
+    "city": "Pflugerville, TX",
+    "restaurants": 1,
+    "long": -97.62,
+    "lat": 30.43937
+  },
+  {
+    "city": "Lake Oswego, OR",
+    "restaurants": 2,
+    "long": -122.67065,
+    "lat": 45.42067
+  },
+  {
+    "city": "Menlo Park, CA",
+    "restaurants": 1,
+    "long": -122.18219,
+    "lat": 37.45383
+  },
+  {
+    "city": "Cedar Hill, TX",
+    "restaurants": 1,
+    "long": -96.95612,
+    "lat": 32.58847
+  },
+  {
+    "city": "Passaic, NJ",
+    "restaurants": 1,
+    "long": -74.12848,
+    "lat": 40.85677
+  },
+  {
+    "city": "Burbank, CA",
+    "restaurants": 1,
+    "long": -118.30897,
+    "lat": 34.18084
+  },
+  {
+    "city": "Arlington, VA",
+    "restaurants": 1,
+    "long": -97.10807,
+    "lat": 32.73569
+  },
+  {
+    "city": "Clackamas, OR",
+    "restaurants": 1,
+    "long": -122.57037,
+    "lat": 45.40762
+  },
+  {
+    "city": "Emeryville, CA",
+    "restaurants": 1,
+    "long": -122.28525,
+    "lat": 37.83132
+  },
+  {
+    "city": "Castro Valley, CA",
+    "restaurants": 1,
+    "long": -122.08635,
+    "lat": 37.6941
+  },
+  {
+    "city": "Redmond, WA",
+    "restaurants": 1,
+    "long": -122.12151,
+    "lat": 47.67399
+  },
+  { "city": "Camas, WA", "restaurants": 1, "long": -122.39954, "lat": 45.58706 }
 ]
