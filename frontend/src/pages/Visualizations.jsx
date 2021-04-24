@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Card } from "react-bootstrap";
 import BarChart from "../components/Visualizations/BarChart";
 import NavBarSolid from "../components/NavBarSolid";
 import "../styles/Visualizations.css";
@@ -15,6 +15,9 @@ import newsArticlesPerPublisher from "../visualizationData/providerData/newsArti
 import totalLaunchesPerAgency from "../visualizationData/providerData/totalLaunchesPerAgency.json";
 import BubbleMap from "../components/Visualizations/BubbleMap";
 
+import headerimg from "../static_resources/visualizations1.jpg";
+
+
 //import CSS from "csstype";
 //import BubbleChart from "../components/Visualizations/BubbleChart";
 
@@ -26,6 +29,42 @@ import BubbleMap from "../components/Visualizations/BubbleMap";
 
 function Visualizations() {
   //const [key, setKey] = useState("home");
+
+  const headerImgStyle: CSS.Properties = {
+    alignItems: "center",
+    justifyContent: "center",
+    objectFit: "cover",
+    width: "100%",
+    height: "450px",
+    marginBottom: "0px",
+    marginTop: "0px",
+    display: "block",
+    opacity: "0.7",
+  };
+
+  const headerTextStyle: CSS.Properties = {
+    textShadow: "1px 1px 3px black",
+    fontSize: "11rem",
+    color: "white",
+    width: "100%",
+  };
+
+  const headerCardStyle: CSS.Properties = {
+    width: "100%",
+    height: "auto",
+  };
+
+  const rowStyle: CSS.Properties = {
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
+  const subtitleTextStyle: CSS.Properties = {
+    textShadow: "1px 1px 3px black",
+    color: "white",
+    width: "100%",
+  };
 
   const cities = qualityOfLifeScoresPerCity;
   const [currentCity, setCity] = useState(cities[0]);
@@ -39,8 +78,18 @@ function Visualizations() {
       <NavBarSolid />
       <Container fluid>
 
-        <h1 class="headerStyle">Visualizations</h1>
-
+      <Row>
+          <Card style={headerCardStyle}>
+            <Card.Img src={headerimg} style={headerImgStyle} />
+            <Card.ImgOverlay>
+              <Row className="mt-4" style={rowStyle}>
+                <Card.Title>
+                  <h1 style={headerTextStyle}>Visualizations</h1>
+                </Card.Title>
+                </Row>
+            </Card.ImgOverlay>
+          </Card>
+        </Row>
         <h2 class="header2Style">Our Data</h2>
         <h3 class="header3Style">Number of restaurants in each city</h3>
         
