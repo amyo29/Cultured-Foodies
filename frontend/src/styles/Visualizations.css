@@ -1,18 +1,41 @@
-.row.center {
+.row-center {
     justify-content: "center";
     align-items: "center";
     text-align: center;
 }
 
-.h1.custom1{
-    margin-top: 1rem;
-    text-align: center;
+.col.center-col {
+    justify-content: "center" !important;
+    align-items: "center" !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.h2.custom1 {
+.headerStyle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center !important;
+    font-size: 5rem;
+}
+
+.header2Style {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center !important;
+    font-size: 3rem;
+}
+
+.header3Style {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center !important;
+    font-size: 2rem;
+}
+
+/* .h2.custom1 {
     text-align: center;
 }
 
 .h3.custom1 {
     text-align: center;
-}
+} */

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import BarChart from "../components/Visualizations/BarChart";
 import NavBarSolid from "../components/NavBarSolid";
 import "../styles/Visualizations.css";
@@ -38,20 +38,16 @@ function Visualizations() {
     <div>
       <NavBarSolid />
       <Container fluid>
-        <Row class="center">
-          <h1 class="custom1">Visualizations</h1>
-        </Row>
-        <Row class="center">
-          <h2 class="custom1">Our Data</h2>
-        </Row>
-        <Row class="center">
-          <h3 class="custom1">Number of restaurants in each city</h3>
+        <h1 class="headerStyle">Visualizations</h1>
+        <h2 class="header2Style">Our Data</h2>
+        <h3 class="header3Style">Number of restaurants in each city</h3>
+        <Row>
           <BubbleMap></BubbleMap>
         </Row>
-        <Row class="center">
-          <h3 class="custom1">
+        <h3 class="header3Style">
             Quality of Life Scores for {currentCity.name}, {currentCity.state}
           </h3>
+        <Row>
           <DropdownButton id="dropdown-basic-button" title="Select City">
             {cities.map((city, index) => {
               return (
@@ -157,12 +153,9 @@ function Visualizations() {
             />
           </Row>
         </Row>
-        <Row class="center">
-          <h2 class="custom1">Provider Data</h2>
-        </Row>
-        <Row class="center">
-          <h3 class="custom1">Expeditions per country</h3>
-          <Row class="center">
+        <h2 class="header2Style">Provider Data</h2>
+        <h3 class="header3Style">Expeditions per country</h3>
+          <Row>
             <BarChart
               data={expeditionsPerCountry}
               xAttr="country"
@@ -171,19 +164,15 @@ function Visualizations() {
               yLabel="Expeditions"
             />
           </Row>
-        </Row>
-        <Row class="center">
-          <h3 class="custom1">News stories per publisher</h3>
-          <Row class="center">
+          <h3 class="header3Style">News stories per publisher</h3>
+          <Row>
             <BubbleChart
               width={1000}
               height={800}
               data={newsArticlesPerPublisher}
             />
           </Row>
-        </Row>
-        <Row class="center">
-          <h3 class="custom1">Total launches per agency</h3>
+          <h3 class="header3Style">Total launches per agency</h3>
           <Row class="center">
             <BubbleChart
               width={1000}
@@ -191,7 +180,6 @@ function Visualizations() {
               data={totalLaunchesPerAgency}
             />
           </Row>
-        </Row>
       </Container>
     </div>
   );
