@@ -1,376 +1,376 @@
 [
   {
-    "abbrev": "OKB-5",
+    "label": "OKB-5",
     "name": "Yuzhnoye Design Bureau",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "WRE",
+    "label": "WRE",
     "name": "Weapons Research Establishment",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "VO", "name": "Virgin Orbit", "total_launch_count": 4 },
-  { "abbrev": "USN", "name": "US Navy", "total_launch_count": 0 },
+  { "label": "VO", "name": "Virgin Orbit", "value": 4 },
+  { "label": "USN", "name": "US Navy", "value": 0 },
   {
-    "abbrev": "USAF",
+    "label": "USAF",
     "name": "United States Air Force",
-    "total_launch_count": 33
+    "value": 33
   },
   {
-    "abbrev": "USA",
+    "label": "USA",
     "name": "United Space Alliance",
-    "total_launch_count": 51
+    "value": 51
   },
   {
-    "abbrev": "ULA",
+    "label": "ULA",
     "name": "United Launch Alliance",
-    "total_launch_count": 166
+    "value": 166
   },
-  { "abbrev": "UKSA", "name": "UK Space Agency", "total_launch_count": 0 },
+  { "label": "UKSA", "name": "UK Space Agency", "value": 0 },
   {
-    "abbrev": "RVSN ",
+    "label": "RVSN ",
     "name": "Strategic Missile Troops",
-    "total_launch_count": 7
+    "value": 7
   },
-  { "abbrev": "SSA", "name": "Starsem SA", "total_launch_count": 5 },
-  { "abbrev": "SpX", "name": "SpaceX", "total_launch_count": 167 },
-  { "abbrev": "SSIA", "name": "Space Services Inc.", "total_launch_count": 0 },
+  { "label": "SSA", "name": "Starsem SA", "value": 5 },
+  { "label": "SpX", "name": "SpaceX", "value": 167 },
+  { "label": "SSIA", "name": "Space Services Inc.", "value": 0 },
   {
-    "abbrev": "CCCP",
+    "label": "CCCP",
     "name": "Soviet Space Program",
-    "total_launch_count": 73
+    "value": 73
   },
   {
-    "abbrev": "SNC",
+    "label": "SNC",
     "name": "Sierra Nevada Corporation",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "SL", "name": "Sea Launch", "total_launch_count": 7 },
+  { "label": "SL", "name": "Sea Launch", "value": 7 },
   {
-    "abbrev": "SERC",
+    "label": "SERC",
     "name": "Science and Engineering Research Council",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "SNL",
+    "label": "SNL",
     "name": "Sandia National Laboratories",
-    "total_launch_count": 1
+    "value": 1
   },
-  { "abbrev": "VKS", "name": "Russian Space Forces", "total_launch_count": 42 },
+  { "label": "VKS", "name": "Russian Space Forces", "value": 42 },
   {
-    "abbrev": "RFSA",
+    "label": "RFSA",
     "name": "Russian Federal Space Agency (ROSCOSMOS)",
-    "total_launch_count": 307
+    "value": 307
   },
   {
-    "abbrev": "VKO",
+    "label": "VKO",
     "name": "Russian Aerospace Defence Forces",
-    "total_launch_count": 22
+    "value": 22
   },
   {
-    "abbrev": "ROI",
+    "label": "ROI",
     "name": "Rockwell International",
-    "total_launch_count": 8
+    "value": 8
   },
-  { "abbrev": "RL", "name": "Rocket Lab Ltd", "total_launch_count": 24 },
-  { "abbrev": "RS", "name": "Relativity Space", "total_launch_count": 1 },
+  { "label": "RL", "name": "Rocket Lab Ltd", "value": 24 },
+  { "label": "RS", "name": "Relativity Space", "value": 1 },
   {
-    "abbrev": "PRSC",
+    "label": "PRSC",
     "name": "Progress Rocket Space Center",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "PL", "name": "Planet Labs", "total_launch_count": 0 },
+  { "label": "PL", "name": "Planet Labs", "value": 0 },
   {
-    "abbrev": "OSC",
+    "label": "OSC",
     "name": "Orbital Sciences Corporation",
-    "total_launch_count": 55
+    "value": 55
   },
-  { "abbrev": "OA", "name": "Orbital ATK", "total_launch_count": 6 },
-  { "abbrev": "OS", "name": "OneSpace", "total_launch_count": 1 },
+  { "label": "OA", "name": "Orbital ATK", "value": 6 },
+  { "label": "OS", "name": "OneSpace", "value": 1 },
   {
-    "abbrev": "NGIS",
+    "label": "NGIS",
     "name": "Northrop Grumman Innovation Systems",
-    "total_launch_count": 9
+    "value": 9
   },
   {
-    "abbrev": "HKAY",
+    "label": "HKAY",
     "name": "National Space Agency of Ukraine",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "KazCo",
+    "label": "KazCo",
     "name": "National Space Agency of the Republic of Kazakhstan",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "NSA",
+    "label": "NSA",
     "name": "National Space Agency (KazCosmos)",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "NRC",
+    "label": "NRC",
     "name": "National Research Council",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "CNIE",
+    "label": "CNIE",
     "name": "National Commission for Space Research",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "CNES",
+    "label": "CNES",
     "name": "National Center of Space Research",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "NASA",
+    "label": "NASA",
     "name": "National Aeronautics and Space Administration",
-    "total_launch_count": 52
+    "value": 52
   },
   {
-    "abbrev": "MITT",
+    "label": "MITT",
     "name": "Moscow Institute of Thermal Technology",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "MHI",
+    "label": "MHI",
     "name": "Mitsubishi Heavy Industries",
-    "total_launch_count": 40
+    "value": 40
   },
   {
-    "abbrev": "MOD_R",
+    "label": "MOD_R",
     "name": "Ministry of Defence of the Russian Federation",
-    "total_launch_count": 1
+    "value": 1
   },
-  { "abbrev": "AEM", "name": "Mexican Space Agency", "total_launch_count": 0 },
-  { "abbrev": "MM", "name": "Martin Marietta", "total_launch_count": 0 },
+  { "label": "AEM", "name": "Mexican Space Agency", "value": 0 },
+  { "label": "MM", "name": "Martin Marietta", "value": 0 },
   {
-    "abbrev": "ANGKA",
+    "label": "ANGKA",
     "name": "Malaysian National Space Agency",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "OKB",
+    "label": "OKB",
     "name": "Makeyev Rocket Design Bureau",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "LSOC",
+    "label": "LSOC",
     "name": "Lockheed Space Operations Company",
-    "total_launch_count": 65
+    "value": 65
   },
   {
-    "abbrev": "LMSO",
+    "label": "LMSO",
     "name": "Lockheed Martin Space Operations",
-    "total_launch_count": 9
+    "value": 9
   },
-  { "abbrev": "LMT", "name": "Lockheed Martin", "total_launch_count": 8 },
-  { "abbrev": "LS", "name": "LandSpace", "total_launch_count": 2 },
-  { "abbrev": "LL", "name": "Land Launch", "total_launch_count": 6 },
+  { "label": "LMT", "name": "Lockheed Martin", "value": 8 },
+  { "label": "LS", "name": "LandSpace", "value": 2 },
+  { "label": "LL", "name": "Land Launch", "value": 6 },
   {
-    "abbrev": "KCST",
+    "label": "KCST",
     "name": "Korean Committee of Space Technology",
-    "total_launch_count": 3
+    "value": 3
   },
   {
-    "abbrev": "KARI",
+    "label": "KARI",
     "name": "Korea Aerospace Research Institute",
-    "total_launch_count": 2
+    "value": 2
   },
   {
-    "abbrev": "KhSC",
+    "label": "KhSC",
     "name": "Khrunichev State Research and Production Space Center",
-    "total_launch_count": 58
+    "value": 58
   },
-  { "abbrev": "KBM", "name": "KB Mashinostroyeniya", "total_launch_count": 0 },
+  { "label": "KBM", "name": "KB Mashinostroyeniya", "value": 0 },
   {
-    "abbrev": "JAXA",
+    "label": "JAXA",
     "name": "Japan Aerospace Exploration Agency",
-    "total_launch_count": 10
+    "value": 10
   },
-  { "abbrev": "ASI", "name": "Italian Space Agency", "total_launch_count": 0 },
-  { "abbrev": "ISA", "name": "Israeli Space Agency", "total_launch_count": 0 },
+  { "label": "ASI", "name": "Italian Space Agency", "value": 0 },
+  { "label": "ISA", "name": "Israeli Space Agency", "value": 0 },
   {
-    "abbrev": "IAI",
+    "label": "IAI",
     "name": "Israel Aerospace Industries",
-    "total_launch_count": 4
+    "value": 4
   },
-  { "abbrev": "iSpac", "name": "iSpace", "total_launch_count": 2 },
-  { "abbrev": "ISCK", "name": "ISC Kosmotras", "total_launch_count": 9 },
-  { "abbrev": "ISA", "name": "Iranian Space Agency", "total_launch_count": 10 },
+  { "label": "iSpac", "name": "iSpace", "value": 2 },
+  { "label": "ISCK", "name": "ISC Kosmotras", "value": 9 },
+  { "label": "ISA", "name": "Iranian Space Agency", "value": 10 },
   {
-    "abbrev": "ISTEC",
+    "label": "ISTEC",
     "name": "Interstellar Technologies",
-    "total_launch_count": 6
+    "value": 6
   },
   {
-    "abbrev": "ILS",
+    "label": "ILS",
     "name": "International Launch Services",
-    "total_launch_count": 43
+    "value": 43
   },
   {
-    "abbrev": "INTA",
+    "label": "INTA",
     "name": "Instituto Nacional de T\u00e9cnica Aeroespacial",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ISAS",
+    "label": "ISAS",
     "name": "Institute of Space and Astronautical Science",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ISARS",
+    "label": "ISARS",
     "name": "Institute for Space Applications and Remote Sensing",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ISRO",
+    "label": "ISRO",
     "name": "Indian Space Research Organization",
-    "total_launch_count": 64
+    "value": 64
   },
   {
-    "abbrev": "HSO",
+    "label": "HSO",
     "name": "Hungarian Space Office",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "GKLS", "name": "GK Launch Services", "total_launch_count": 1 },
+  { "label": "GKLS", "name": "GK Launch Services", "value": 1 },
   {
-    "abbrev": "DLR",
+    "label": "DLR",
     "name": "German Aerospace Center",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "GE", "name": "Galactic Energy", "total_launch_count": 1 },
-  { "abbrev": "FA", "name": "Firefly Aerospace", "total_launch_count": 1 },
-  { "abbrev": "EP", "name": "ExPace", "total_launch_count": 10 },
-  { "abbrev": "EXOS", "name": "EXOS Aerospace", "total_launch_count": 4 },
+  { "label": "GE", "name": "Galactic Energy", "value": 1 },
+  { "label": "FA", "name": "Firefly Aerospace", "value": 1 },
+  { "label": "EP", "name": "ExPace", "value": 10 },
+  { "label": "EXOS", "name": "EXOS Aerospace", "value": 4 },
   {
-    "abbrev": "ESRO",
+    "label": "ESRO",
     "name": "European Space Research Organisation",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "ESA", "name": "European Space Agency", "total_launch_count": 0 },
+  { "label": "ESA", "name": "European Space Agency", "value": 0 },
   {
-    "abbrev": "ELDO",
+    "label": "ELDO",
     "name": "European Launcher Development Organisation",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ELS",
+    "label": "ELS",
     "name": "Eurockot Launch Services",
-    "total_launch_count": 5
+    "value": 5
   },
   {
-    "abbrev": "DCTA",
+    "label": "DCTA",
     "name": "Department of Aerospace Science and Technology",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "DRC",
+    "label": "DRC",
     "name": "Danish National Space Center",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "CSU",
+    "label": "CSU",
     "name": "Copenhagen Suborbitals",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "CSIRO",
+    "label": "CSIRO",
     "name": "Commonwealth Scientific and Industrial Research Organisation",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "COSPA",
+    "label": "COSPA",
     "name": "Committee on Space Research",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "CHR", "name": "Chrysler", "total_launch_count": 0 },
+  { "label": "CHR", "name": "Chrysler", "value": 0 },
   {
-    "abbrev": "CHNR",
+    "label": "CHNR",
     "name": "Chinarocket Co., Ltd.",
-    "total_launch_count": 1
+    "value": 1
   },
   {
-    "abbrev": "CNSA",
+    "label": "CNSA",
     "name": "China National Space Administration",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "CGWIC",
+    "label": "CGWIC",
     "name": "China Great Wall Industry Corporation",
-    "total_launch_count": 1
+    "value": 1
   },
   {
-    "abbrev": "CASC",
+    "label": "CASC",
     "name": "China Aerospace Science and Technology Corporation",
-    "total_launch_count": 256
+    "value": 256
   },
   {
-    "abbrev": "CASIC",
+    "label": "CASIC",
     "name": "China Aerospace Science and Industry Corporation",
-    "total_launch_count": 6
+    "value": 6
   },
   {
-    "abbrev": "CASC",
+    "label": "CASC",
     "name": "China Aerospace Corporation",
-    "total_launch_count": 4
+    "value": 4
   },
-  { "abbrev": "CSA", "name": "Canadian Space Agency", "total_launch_count": 0 },
+  { "label": "CSA", "name": "Canadian Space Agency", "value": 0 },
   {
-    "abbrev": "AEB",
+    "label": "AEB",
     "name": "Brazilian Space Agency",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ABAE",
+    "label": "ABAE",
     "name": "Bolivarian Agency for Space Activities",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "BA", "name": "Boeing", "total_launch_count": 1 },
-  { "abbrev": "BO", "name": "Blue Origin", "total_launch_count": 14 },
+  { "label": "BA", "name": "Boeing", "value": 1 },
+  { "label": "BO", "name": "Blue Origin", "value": 14 },
   {
-    "abbrev": "BIRA",
+    "label": "BIRA",
     "name": "Belgian Institute for Space Aeronomy",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "AMAKA",
+    "label": "AMAKA",
     "name": "Azerbaijan National Aerospace Agency",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "AXS", "name": "Axiom Space", "total_launch_count": 0 },
-  { "abbrev": "ALR", "name": "Austrian Space Agency", "total_launch_count": 0 },
-  { "abbrev": "AS", "name": "Astra Space", "total_launch_count": 5 },
+  { "label": "AXS", "name": "Axiom Space", "value": 0 },
+  { "label": "ALR", "name": "Austrian Space Agency", "value": 0 },
+  { "label": "AS", "name": "Astra Space", "value": 5 },
   {
-    "abbrev": "APRSA",
+    "label": "APRSA",
     "name": "Asia-Pacific Regional Space Agency Forum",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "ABMA",
+    "label": "ABMA",
     "name": "Army Ballistic Missile Agency",
-    "total_launch_count": 3
+    "value": 3
   },
-  { "abbrev": "ASA", "name": "Arianespace", "total_launch_count": 185 },
+  { "label": "ASA", "name": "Arianespace", "value": 185 },
   {
-    "abbrev": "ACL",
+    "label": "ACL",
     "name": "Antrix Corporation Limited",
-    "total_launch_count": 4
+    "value": 4
   },
   {
-    "abbrev": "ASAL",
+    "label": "ASAL",
     "name": "Algerian Space Agency",
-    "total_launch_count": 0
+    "value": 0
   },
   {
-    "abbrev": "AIRDS",
+    "label": "AIRDS",
     "name": "Airbus Defence and Space",
-    "total_launch_count": 0
+    "value": 0
   },
-  { "abbrev": "AEV", "name": "Aevum", "total_launch_count": 1 },
+  { "label": "AEV", "name": "Aevum", "value": 1 },
   {
-    "abbrev": "AARC",
+    "label": "AARC",
     "name": "Ad Astra Rocket Company",
-    "total_launch_count": 0
+    "value": 0
   }
 ]
