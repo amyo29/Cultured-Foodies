@@ -102,7 +102,7 @@ function Visualizations() {
           {value == 1 && (
             <>
               {" "}
-              <h3>Number of restaurants in each city</h3>
+              <h3>Number of Restaurants in Cities</h3>
               <Row>
                 <BubbleMap class="animation"></BubbleMap>
               </Row>
