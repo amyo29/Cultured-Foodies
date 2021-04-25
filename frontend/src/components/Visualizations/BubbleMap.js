@@ -20,7 +20,7 @@ class BubbleMap extends Component {
   drawChart() {
     // Set up the svg container
     const chart = d3
-      .select(this.refs.canvas)
+      .select("#my_dataviz")
       .append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("viewBox", "0 0 960 600")
@@ -36,68 +36,62 @@ class BubbleMap extends Component {
       .enter()
       .append("path")
       .attr("class", "states")
-      .attr("d", d3.geoPath().projection(projection));
+      .attr("d", d3.geoPath().projection(projection))
 
-    // Append the tooltip
-    let div = d3
+    // create a tooltip
+    var toolTip = d3
       .select("body")
       .append("div")
-      .attr("class", "tooltip")
-      .style("opacity", 0);
+      .attr("id", "tooltip")
+      .attr("style", "position: absolute; opacity: 0;")
+      .style("background-color", "rgb(247, 235, 221)")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+      .style("font-family", "Josefin Sans")
+      .style("font-weight", "550");
 
-    // Avoid confusing 'this'
-    console.log(this.cities);
-    let self = this;
-    // Plot all of the national parks
+    // Add circles:
     chart
-      .selectAll("circle")
+      .selectAll("myCircles")
       .data(this.cities)
       .enter()
       .append("circle")
-      .attr("r", function (d) {
-        return (d.restaurants / 200) * 20 + 7;
-      })
-      .attr("fill", "#FED892")
-      .attr("stroke", "#000")
       .attr("cx", function (d) {
         return projection([d.long, d.lat])[0];
       })
       .attr("cy", function (d) {
         return projection([d.long, d.lat])[1];
       })
-      .style("cursor", "pointer")
-      .on("mouseover", function (d, i) {
-        // Slightly expand the circle
-        // d3.select(this)
-        //   .transition()
-        //   .duration(200)
-        //   .attr("r", (d.restaurants / 100) * 20 + 9);
-        // // Fade in the tooltip
-        // div.transition().duration(200).style("opacity", 1);
-        // // Set the position of the tooltip
-        // div
-        //   .html(d.restaurants)
-        //   .style("left", d3.select(this).attr("cx") + 20 + "px")
-        //   .style("top", d3.select(this).attr("cy") - 15 + "px");
+      .attr("r", function (d) {
+        return d.restaurants / 5;
       })
-      .on("mouseout", function (d, i) {
-        // Shrink the circle back
-        // d3.select(this)
-        //   .transition()
-        //   .duration(200)
-        //   .attr("r", (d.restaurants/ 200) * 20 + 7);
+      .attr("class", "circle")
+      .style("fill", "69b3a2")
+      .attr("stroke", "#69b3a2")
+      .attr("stroke-width", 3)
+      .attr("fill-opacity", 0.4)
+      .on("mouseover", function (event, d) {
+        d3.select("#tooltip").transition().duration(200).style("opacity", 1);
 
-        // Fade out the tooltip
-        div.transition().duration(200).style("opacity", 0);
+        d3.select("#tooltip")
+          .html(
+            "City: "+
+            d.city +
+              "<br>" +
+              "Restaurants: " +
+              d.restaurants
+          )
+          .style("left", (event.pageX + 20) + "px")
+          .style("top", (event.pageY - 15) + "px");
+      })
+      .on("mouseout", function () {
+        d3.select("#tooltip").style("opacity", 0);
       });
-    // .on('click', function(d, i) {
-    //   self.setState({park: d});
-    //   d3.selectAll('circle').transition(.2).duration(100).attr('fill', '#FED892');
-    //   d3.select(this).transition(.2).duration(100).attr('fill', '#2A9D8F');
-    // });
   }
   render() {
-    return <div ref="canvas" className="col-md-9"></div>;
+    return <div id="my_dataviz" className="col-md-9"></div>;
   }
 }
 
