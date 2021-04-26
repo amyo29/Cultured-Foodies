@@ -15,8 +15,8 @@ from schemas import (
     country_schema,
 )
 
-# ENDPOINTS
 
+# ENDPOINTS
 # NOTE: This route is needed for the default EB health check route
 # Routing to frontend/build/index.html
 
@@ -117,3 +117,4 @@ def get_country_id(id):
 if __name__ == "__main__":
     db.init_app(app)
     app.run(host="0.0.0.0", port=5000, threaded=True, debug=True)
+    

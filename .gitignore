@@ -5,6 +5,9 @@
 frontend/.pnp
 frontned/.pnp.js
 
+# api keys
+frontend/.env
+
 # testing
 frontend/coverage
 

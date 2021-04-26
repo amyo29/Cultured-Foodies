@@ -71,7 +71,7 @@ function Cuisine(id: any) {
   }, [cuisine]);
   console.log(countries);
 
-  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+  let API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
   //Carousel:
   const [index, setIndex] = useState(0);
