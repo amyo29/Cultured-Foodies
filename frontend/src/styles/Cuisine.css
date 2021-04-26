@@ -44,7 +44,7 @@ section {
 }
 
 .Instance-header{
-	font-family: "Josefin Sans", Georgia, Times, serif;
+	font-family: "Josefin Sans", Georgia, Times, serif; 
 	text-align: center;
 	margin: auto;
 	align-items: center;
@@ -186,6 +186,7 @@ a.center-text {
 
 .Instance-header-accordian {
   font-family: "Josefin Sans", Georgia, Times, serif;
+  font-weight: bold;
 	text-align: center;
 	margin: auto;
 	align-items: center;
