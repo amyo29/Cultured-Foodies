@@ -5,17 +5,11 @@ import {
   Row,
   Col,
   Card,
-  ListGroup,
-  Navbar,
-  Button,
-  Spinner,
   DropdownButton,
-  ButtonGroup,
   Dropdown,
   Form,
   FormControl,
 } from "react-bootstrap";
-import Footer from "../../components/Footer";
 import NavBarSolid from "../../components/NavBarSolid";
 import "../../styles/Cities.css";
 import useAxios from "axios-hooks";
@@ -23,7 +17,7 @@ import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
 import logo from "../../static_resources/spinny.gif";
 import citiesImg from "../../static_resources/newyork.jpg";
-import { CityObject, CityInstance } from "./City";
+import { CityInstance } from "./City";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -188,8 +182,6 @@ function Cities() {
           console.log(parseInt(leisureRange[0]));
           var low = parseFloat(leisureRange[0]);
           var high = parseFloat(leisureRange[1]);
-          // console.log(typeof(low))
-          // console.log(typeof(high))
           console.log(typeof cityObj["leisure_culture"]);
           if (
             low <= cityObj["leisure_culture"] &&
@@ -268,7 +260,7 @@ function Cities() {
         <Container fluid>
           <Row>
             <Card className="headerCardStyle">
-              <Card.Img src={citiesImg} className="headerImgStyle"/>
+              <Card.Img src={citiesImg} className="headerImgStyle" />
               <Card.ImgOverlay>
                 <Row className="rowStyle mt-4">
                   <Col className="text-align center">
@@ -294,7 +286,7 @@ function Cities() {
                     {/* <Button onClick={searchOnClick}></Button> */}
                   </Form>
                 </Row>
-                <br/>
+                <br />
                 <Row className="rowStyle mt-4">
                   <Card.Subtitle className="subtitleTextStyle">
                     <h4>
@@ -306,7 +298,7 @@ function Cities() {
                 </Row>
                 <Row className="rowStyle">
                   <a href="#top" className="center-text">
-                    <BsCaretDown size={75} className="buttonStyle"/>
+                    <BsCaretDown size={75} className="buttonStyle" />
                   </a>
                 </Row>
               </Card.ImgOverlay>
@@ -388,7 +380,6 @@ function Cities() {
                       (selected as string[]).join(", ")
                     }
                     placeholder="Filter by States"
-                    // MenuProps={MenuProps}
                   >
                     {states.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -414,7 +405,6 @@ function Cities() {
                     renderValue={(selected) =>
                       (selected as string[]).join(", ")
                     }
-                    // MenuProps={MenuProps}
                   >
                     {leisurescore.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -440,7 +430,6 @@ function Cities() {
                     renderValue={(selected) =>
                       (selected as string[]).join(", ")
                     }
-                    // MenuProps={MenuProps}
                   >
                     {costscore.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -506,11 +495,6 @@ function Cities() {
           transform: "translate(-50%, -50%)",
         }}
       >
-        {/* <Spinner animation="border" variant="dark" 
-      as="span" 
-      role="status"
-      aria-hidden="true"/>
-      */}
         <img src={logo} alt="loading..." />
       </div>
     );
