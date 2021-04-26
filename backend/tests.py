@@ -222,7 +222,6 @@ class Tests(TestCase):
 
     # asserts expected first object in all years response
     def test_all_restaurants(self):
-
         result = requests.get("https://www.culturedfoodies.me/api/restaurants")
         assert result.status_code == 200
         jsonRes = result.json()
