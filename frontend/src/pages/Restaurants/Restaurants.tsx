@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CSS from "csstype";
 import { Card, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
@@ -528,62 +527,20 @@ function Restaurants() {
     rowsPerPageOptions: [10, 20, 50],
   };
 
-  const headerImgStyle: CSS.Properties = {
-    alignItems: "center",
-    justifyContent: "center",
-    objectFit: "cover",
-    width: "100%",
-    height: "450px",
-    marginBottom: "0px",
-    marginTop: "0px",
-    display: "block",
-    opacity: "0.7",
-  };
-
-  const headerTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    fontSize: "11rem",
-    color: "white",
-    width: "100%",
-  };
-
-  const headerCardStyle: CSS.Properties = {
-    width: "100%",
-    height: "auto",
-  };
-
-  const rowStyle: CSS.Properties = {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
-  };
-
-  const subtitleTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    color: "white",
-    width: "100%",
-  };
-
-  const searchButtonStyle: CSS.Properties = {
-    // backgroundColor: "white",
-    // borderColor: "black",
-    // color: "black",
-  };
-
   if (loaded) {
     return (
       <body>
         <NavBarSolid />
         <Row>
-          <Card style={headerCardStyle}>
-            <Card.Img src={restImg} style={headerImgStyle} />
+          <Card className="headerCardStyle">
+            <Card.Img src={restImg} className="headerImgStyle"/>
             <Card.ImgOverlay>
-              <Row className="mt-4" style={rowStyle}>
+              <Row className="rowStyle mt-4">
                 <Card.Title>
-                  <h1 style={headerTextStyle}>Restaurants</h1>
+                  <h1 className="headerTextStyle">Restaurants</h1>
                 </Card.Title>
               </Row>
-              <Row style={rowStyle}>
+              <Row className="rowStyle">
                 <Form
                   inline
                   onSubmit={(e) => {
@@ -602,7 +559,6 @@ function Restaurants() {
                     }}
                   />
                   <Button
-                    style={searchButtonStyle}
                     variant="info"
                     onClick={() => searchButtonClicked(false)}
                   >
@@ -610,7 +566,6 @@ function Restaurants() {
                   </Button>
 
                   <Button
-                    style={searchButtonStyle}
                     variant="info"
                     onClick={() => searchButtonClicked(true)}
                   >
@@ -618,8 +573,8 @@ function Restaurants() {
                   </Button>
                 </Form>
               </Row>
-              <Row style={rowStyle} className="mt-5">
-                <Card.Subtitle style={subtitleTextStyle}>
+              <Row className="rowStyle mt-5">
+                <Card.Subtitle className="subtitleTextStyle">
                   <h4>
                     😋 Hungry? Whether you're looking for French escargot or
                     Korean bulgogi, we've got just the place for you! 🍽️{" "}
