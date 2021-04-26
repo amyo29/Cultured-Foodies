@@ -92,7 +92,7 @@ class BubbleMap extends Component {
       .attr("stroke", "#69b3a2")
       .attr("stroke-width", 3)
       .attr("fill-opacity", 0.4)
-      .on("mouseover", function (event, d) {
+      .on("mouseover", function () {
         d3.select("#tooltip").transition().duration(200).style("opacity", 1);
       })
       .on("mousemove", function (event, d) {
