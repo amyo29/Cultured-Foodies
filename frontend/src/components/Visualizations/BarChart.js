@@ -46,7 +46,7 @@ class BarChart extends Component {
             .selectAll('text')
             .attr('transform', 'translate(-10,0)rotate(-45)')
             .style('text-anchor', 'end')
-            .style('fill', 'white');
+            .style('fill', 'black');
 
         const maxValue = 
 				Math.max(...this.props.data.map(d => d[this.props.yAttr]));
@@ -56,7 +56,7 @@ class BarChart extends Component {
             .range([height, 0]);
             svg.append('g').call(d3.axisLeft(y))
             .selectAll('text')
-            .style('fill', 'white');
+            .style('fill', 'black');
 
         svg
             .selectAll('mybar')
