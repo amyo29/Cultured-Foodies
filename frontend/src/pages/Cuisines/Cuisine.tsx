@@ -58,7 +58,6 @@ function Cuisine(id: any) {
         rows.push(cuisineObj.dishes.slice(i, i + chunk));
       }
       setDishes(rows);
-      
     }
   }, [data]);
 
@@ -67,7 +66,7 @@ function Cuisine(id: any) {
       let all_countries = value["data"]["countries"];
       let filtered_countries = all_countries.filter(matchesCuisineCountries);
       setCountries(filtered_countries);
-      changeLoading(true)
+      changeLoading(true);
     });
   }, [cuisine]);
   console.log(countries);
@@ -77,7 +76,10 @@ function Cuisine(id: any) {
   //Carousel:
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex: React.SetStateAction<number>, e: any) => {
+  const handleSelect = (
+    selectedIndex: React.SetStateAction<number>,
+    e: any
+  ) => {
     setIndex(selectedIndex);
   };
 
@@ -94,7 +96,9 @@ function Cuisine(id: any) {
               <>
                 <Accordion.Toggle as={Card.Header} eventKey={i.toString()}>
                   <Col>
-                    <h2 className="Instance-header-accordian">Country of {country?.name}</h2>
+                    <h2 className="Instance-header-accordian">
+                      Country of {country?.name}
+                    </h2>
                   </Col>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={i.toString()}>
@@ -112,22 +116,26 @@ function Cuisine(id: any) {
                       {/* <Image src={country?.flag} className="flag-responsive"  /> */}
                       <a id="dishes"></a>
                       <Col>
-                        <a href="#dishes" style={{color:"black"}}>
-                          <Card.Title as="h3">Dishes from {country?.name}</Card.Title>
+                        <a href="#dishes" style={{ color: "black" }}>
+                          <Card.Title as="h3">
+                            Dishes from {country?.name}
+                          </Card.Title>
                         </a>
                       </Col>
                     </Row>
-                    
+
                     <Row style={{ marginBottom: 20 }}>
                       <div>
-                        <Col >
-                          <Carousel activeIndex={index} onSelect={handleSelect}>
+                        <Col>
+                          <Carousel activeIndex={index} style={{ margin: "25px" }} onSelect={handleSelect}>
                             {dishes.map((cols: any) => (
                               <Carousel.Item>
                                 <CardDeck>
                                   {cols.map((dish: any) => (
-                                    <Card>
-                                      <Card.Title><h4 className="mt-4">{dish.name}</h4></Card.Title>
+                                    <Card style={{height: '25rem'}}>
+                                      <Card.Title>
+                                        <h4 className="mt-4">{dish.name}</h4>
+                                      </Card.Title>
                                       <Card.Img
                                         src={dish.image_url}
                                         // style={{ height: '15rem' }}
@@ -137,8 +145,7 @@ function Cuisine(id: any) {
                                   ))}
                                 </CardDeck>
                               </Carousel.Item>
-                            ))
-                            }
+                            ))}
                           </Carousel>
                           {/* </div> */}
                         </Col>
@@ -151,33 +158,48 @@ function Cuisine(id: any) {
                         <Card border="dark" style={{ maxHeight: "30rem" }}>
                           <Card.Header as="h3">Basic Info:</Card.Header>
                           {/* <div className="card-body align-self-start"> */}
-                          <div className="my-custom-scrollbar" >
+                          <div className="my-custom-scrollbar">
                             <Card.Body>
-                              <Card.Text><h5>Capital city:</h5>{country?.capital}</Card.Text>
-                              <Card.Text><h5>Alpha 3 Code:</h5> {country?.alpha3code}</Card.Text>
-                              <Card.Text><h5>Region:</h5> {country?.region}</Card.Text>
-                              <Card.Text><h5>Subregion:</h5> {country?.subregion}</Card.Text>
                               <Card.Text>
-                                <h5>Latitude/Longitude:</h5> {country?.latitude},{" "}
-                                {country?.longitude}
+                                <h5>Capital city:</h5>
+                                {country?.capital}
                               </Card.Text>
                               <Card.Text>
-                                <h5>Area:</h5> {country?.area.toLocaleString()} km<sup>2</sup>
+                                <h5>Alpha 3 Code:</h5> {country?.alpha3code}
                               </Card.Text>
                               <Card.Text>
-                                <h5>Population:</h5> {country?.population.toLocaleString()}
+                                <h5>Region:</h5> {country?.region}
+                              </Card.Text>
+                              <Card.Text>
+                                <h5>Subregion:</h5> {country?.subregion}
+                              </Card.Text>
+                              <Card.Text>
+                                <h5>Latitude/Longitude:</h5> {country?.latitude}
+                                , {country?.longitude}
+                              </Card.Text>
+                              <Card.Text>
+                                <h5>Area:</h5> {country?.area.toLocaleString()}{" "}
+                                km<sup>2</sup>
+                              </Card.Text>
+                              <Card.Text>
+                                <h5>Population:</h5>{" "}
+                                {country?.population.toLocaleString()}
                               </Card.Text>
                               <Card.Text>
                                 <h5>Bordering Countries:</h5>
                                 {country?.borders ? (
-                                  country?.borders.split(", ").map((border: any) => {
-                                    return <li>{border}</li>;
-                                  }))
-                                  :
+                                  country?.borders
+                                    .split(", ")
+                                    .map((border: any) => {
+                                      return <li>{border}</li>;
+                                    })
+                                ) : (
                                   <Card.Text>N/A</Card.Text>
-                                }
+                                )}
                               </Card.Text>
-                              <Card.Text><h5>Time Zones:</h5> {country?.timezones}</Card.Text>
+                              <Card.Text>
+                                <h5>Time Zones:</h5> {country?.timezones}
+                              </Card.Text>
                               <Card.Text>
                                 <h5>Translations:</h5>
                                 {country ? (
@@ -214,21 +236,29 @@ function Cuisine(id: any) {
                     </Row>
                     <Row style={{ width: "100%" }}>
                       <Col>
-                        <div style={{ margin: 20 }} >
+                        <div style={{ margin: 20 }}>
                           <Card border="dark" style={{ maxHeight: "30rem" }}>
-                            <Card.Header as="h3">Cities with {cuisine?.name} cuisine</Card.Header>
-                            <div className="my-custom-scrollbar" >
+                            <Card.Header as="h3">
+                              Cities with {cuisine?.name} cuisine
+                            </Card.Header>
+                            <div className="my-custom-scrollbar">
                               <Card.Body>
                                 {cuisine?.cities ? (
-                                  cuisine?.cities?.split(", ").map((c, index) => (
-                                    <a href={"/cities/" + cuisine?.city_ids.split(", ")[index]} 
-                                    target="_blank"
-                                    className="a-custom"
-                                    >
-                                      {c}
-                                      <br />
-                                    </a>
-                                  ))
+                                  cuisine?.cities
+                                    ?.split(", ")
+                                    .map((c, index) => (
+                                      <a
+                                        href={
+                                          "/cities/" +
+                                          cuisine?.city_ids.split(", ")[index]
+                                        }
+                                        target="_blank"
+                                        className="a-custom"
+                                      >
+                                        {c}
+                                        <br />
+                                      </a>
+                                    ))
                                 ) : (
                                   <p>loading</p>
                                 )}
@@ -240,22 +270,29 @@ function Cuisine(id: any) {
                       <Col>
                         <div style={{ margin: 20 }}>
                           <Card border="dark" style={{ maxHeight: "30rem" }}>
-                            <Card.Header as="h3">Restaurants with {cuisine?.name} cuisine</Card.Header>
-                            <div className="my-custom-scrollbar" >
+                            <Card.Header as="h3">
+                              Restaurants with {cuisine?.name} cuisine
+                            </Card.Header>
+                            <div className="my-custom-scrollbar">
                               <Card.Body>
                                 {cuisine?.restaurants ? (
-                                  cuisine?.restaurants?.split(", ").map((r, index) => (
-                                    <a
-                                      href={
-                                        "/restaurants/" + cuisine?.restaurant_ids.split(", ")[index]
-                                      }
-                                      target="_blank"
-                                      className="a-custom"
-                                    >
-                                      {r}
-                                      <br />
-                                    </a>
-                                  ))
+                                  cuisine?.restaurants
+                                    ?.split(", ")
+                                    .map((r, index) => (
+                                      <a
+                                        href={
+                                          "/restaurants/" +
+                                          cuisine?.restaurant_ids.split(", ")[
+                                            index
+                                          ]
+                                        }
+                                        target="_blank"
+                                        className="a-custom"
+                                      >
+                                        {r}
+                                        <br />
+                                      </a>
+                                    ))
                                 ) : (
                                   <p>loading</p>
                                 )}
@@ -266,21 +303,19 @@ function Cuisine(id: any) {
                       </Col>
                     </Row>
                     <Row className="pb-2">
-                    <a href="#top" className="center-text">Go to Top</a>
-                   </Row>
+                      <a href="#top" className="center-text">
+                        Go to Top
+                      </a>
+                    </Row>
                   </Card>
-
                 </Accordion.Collapse>
-
               </>
-            )
-            )}
+            ))}
           </Accordion>
         </Container>
       </div>
     );
-  }
-  else {
+  } else {
     return (
       <div
         style={{
@@ -292,10 +327,9 @@ function Cuisine(id: any) {
       >
         <Spinner animation="border" />
       </div>
-    )
+    );
   }
 }
-
 
 interface Dish {
   image_url: string;

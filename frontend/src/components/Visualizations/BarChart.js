@@ -20,8 +20,8 @@ class BarChart extends Component {
   createBarChart() {
     //format the margin and size
     const margin = { top: 100, right: 20, bottom: 150, left: 130 };
-    const height = 800 - margin.top - margin.bottom;
-    const width = 1600 - margin.left - margin.right;
+    const height = 600 - margin.top - margin.bottom;
+    const width = 1400 - margin.left - margin.right;
     const padding = -110;
 
     const svg = d3

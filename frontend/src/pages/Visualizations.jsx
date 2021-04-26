@@ -11,7 +11,6 @@ import BubbleMap from "../components/Visualizations/BubbleMap";
 import cuisinesSunburst from "../visualizationData/ourData/cuisinesBreakdown.json";
 import Sunburst from "react-d3-zoomable-sunburst";
 
-
 function Visualizations() {
   const [value, setValue] = useState(0);
   const handleChange = (event, value) => {
@@ -77,27 +76,29 @@ function Visualizations() {
         </Tabs>
         <Paper>
           {value == 0 && (
-
             <>
-              <h3>Breakdown of Regions, Subregions, and Countries of Cuisines</h3>
+              <h3>
+                Breakdown of Regions, Subregions, and Countries of Cuisines
+              </h3>
 
-            <Sunburst
-              data={cuisinesSunburst}
-              scale="exponential"
-              tooltipContent={
-                <div
-                  class="sunburstTooltip"
-                  style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
-                />
-              }
-              tooltip
-              tooltipPosition="right"
-              keyId="Sunburst"
-              width={window.innerWidth * 0.8}
-              value="minSize"
-              height={window.innerHeight * 0.8}
-            />
-          </>)}
+              <Sunburst
+                data={cuisinesSunburst}
+                scale="exponential"
+                tooltipContent={
+                  <div
+                    class="sunburstTooltip"
+                    style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
+                  />
+                }
+                tooltip
+                tooltipPosition="right"
+                keyId="Sunburst"
+                width={window.innerWidth * 0.8}
+                value="minSize"
+                height={window.innerHeight * 0.8}
+              />
+            </>
+          )}
 
           {value == 1 && (
             <>
@@ -114,7 +115,7 @@ function Visualizations() {
                 Quality of Life Scores for {currentCity.name},{" "}
                 {currentCity.state}
               </h3>
-              <Row>
+              <div class="center">
                 <DropdownButton id="dropdown-basic-button" title="Select City">
                   {cities.map((city, index) => {
                     return (
@@ -124,108 +125,103 @@ function Visualizations() {
                     );
                   })}
                 </DropdownButton>
-              </Row>
+              </div>
 
-              <Row class="center">
-                <Row class="center">
-                  <Radar
-                    width={500}
-                    height={500}
-                    padding={70}
-                    domainMax={10}
-                    highlighted={null}
-                    // onHover={(point) => {
-                    //   if (point) {
-                    //     console.log("hovered over a data point");
-                    //   } else {
-                    //     console.log("not over anything");
-                    //   }
-                    // }}
-                    data={{
-                      variables: [
-                        { key: "business_freedom", label: "Business Freedom" },
-                        { key: "commute", label: "Commute" },
-                        { key: "cost_of_living", label: "Cost of Living" },
-                        { key: "economy", label: "Economy" },
-                        { key: "education", label: "Education" },
-                        {
-                          key: "environmental_quality",
-                          label: "Environmental Quality",
+              <div class="center">
+                <Radar
+                  width={600}
+                  height={600}
+                  padding={100}
+                  domainMax={10}
+                  highlighted={null}
+                  // onHover={(point) => {
+                  //   if (point) {
+                  //     console.log("hovered over a data point");
+                  //   } else {
+                  //     console.log("not over anything");
+                  //   }
+                  // }}
+                  data={{
+                    variables: [
+                      { key: "business_freedom", label: "Business Freedom" },
+                      { key: "commute", label: "Commute" },
+                      { key: "cost_of_living", label: "Cost of Living" },
+                      { key: "economy", label: "Economy" },
+                      { key: "education", label: "Education" },
+                      {
+                        key: "environmental_quality",
+                        label: "Environmental Quality",
+                      },
+                      { key: "healthcare", label: "Healthcare" },
+                      { key: "housing", label: "Housing" },
+                      { key: "internet_access", label: "Internet Access" },
+                    ],
+                    sets: [
+                      {
+                        key: "city",
+                        label: "City",
+                        values: {
+                          business_freedom: currentCity.business_freedom,
+                          commute: currentCity.commute,
+                          cost_of_living: currentCity.cost_of_living,
+                          economy: currentCity.economy,
+                          education: currentCity.education,
+                          environmental_quality:
+                            currentCity.environmental_quality,
+                          healthcare: currentCity.healthcare,
+                          housing: currentCity.housing,
+                          internet_access: currentCity.internet_access,
                         },
-                        { key: "healthcare", label: "Healthcare" },
-                        { key: "housing", label: "Housing" },
-                        { key: "internet_access", label: "Internet Access" },
-                      ],
-                      sets: [
-                        {
-                          key: "city",
-                          label: "City",
-                          values: {
-                            business_freedom: currentCity.business_freedom,
-                            commute: currentCity.commute,
-                            cost_of_living: currentCity.cost_of_living,
-                            economy: currentCity.economy,
-                            education: currentCity.education,
-                            environmental_quality:
-                              currentCity.environmental_quality,
-                            healthcare: currentCity.healthcare,
-                            housing: currentCity.housing,
-                            internet_access: currentCity.internet_access,
-                          },
+                      },
+                    ],
+                  }}
+                />
+                <Radar
+                  width={600}
+                  height={600}
+                  padding={100}
+                  domainMax={10}
+                  highlighted={null}
+                  // onHover={(point) => {
+                  //   if (point) {
+                  //     console.log("hovered over a data point");
+                  //   } else {
+                  //     console.log("not over anything");
+                  //   }
+                  // }}
+                  data={{
+                    variables: [
+                      { key: "leisure_culture", label: "Leisure Culture" },
+                      { key: "outdoors", label: "Outdoors" },
+                      { key: "safety", label: "Safety" },
+                      { key: "startups", label: "Startups" },
+                      { key: "taxation", label: "Taxation" },
+                      { key: "tolerance", label: "Tolerance" },
+                      {
+                        key: "travel_connectivity",
+                        label: "Travel Connectivity",
+                      },
+                      { key: "venture_capital", label: "Venture Capital" },
+                    ],
+                    sets: [
+                      {
+                        key: "city",
+                        label: "City",
+                        values: {
+                          leisure_culture: currentCity.leisure_culture,
+                          outdoors: currentCity.outdoors,
+                          safety: currentCity.safety,
+                          startups: currentCity.startups,
+                          taxation: currentCity.taxation,
+                          tolerance: currentCity.tolerance,
+                          travel_connectivity: currentCity.travel_connectivity,
+                          venture_capital: currentCity.venture_capital,
                         },
-                      ],
-                    }}
-                  />
-                </Row>
-                <Row class="center">
-                  <Radar
-                    width={500}
-                    height={500}
-                    padding={70}
-                    domainMax={10}
-                    highlighted={null}
-                    // onHover={(point) => {
-                    //   if (point) {
-                    //     console.log("hovered over a data point");
-                    //   } else {
-                    //     console.log("not over anything");
-                    //   }
-                    // }}
-                    data={{
-                      variables: [
-                        { key: "leisure_culture", label: "Leisure Culture" },
-                        { key: "outdoors", label: "Outdoors" },
-                        { key: "safety", label: "Safety" },
-                        { key: "startups", label: "Startups" },
-                        { key: "taxation", label: "Taxation" },
-                        { key: "tolerance", label: "Tolerance" },
-                        {
-                          key: "travel_connectivity",
-                          label: "Travel Connectivity",
-                        },
-                        { key: "venture_capital", label: "Venture Capital" },
-                      ],
-                      sets: [
-                        {
-                          key: "city",
-                          label: "City",
-                          values: {
-                            leisure_culture: currentCity.leisure_culture,
-                            outdoors: currentCity.outdoors,
-                            safety: currentCity.safety,
-                            startups: currentCity.startups,
-                            taxation: currentCity.taxation,
-                            tolerance: currentCity.tolerance,
-                            travel_connectivity:
-                              currentCity.travel_connectivity,
-                            venture_capital: currentCity.venture_capital,
-                          },
-                        },
-                      ],
-                    }}
-                  />
-                </Row>
-              </Row>
+                      },
+                    ],
+                  }}
+                />
+              </div>
             </>
           )}
         </Paper>

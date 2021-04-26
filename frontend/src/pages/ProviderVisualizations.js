@@ -33,13 +33,13 @@ function ProviderVisualizations() {
           {value == 0 && (
             <>
               <h3>Total launches per agency</h3>
-              <Row class="center">
+              <div class="center">
                 <BubbleChart
-                  width={1000}
-                  height={800}
+                  width={900}
+                  height={900}
                   data={totalLaunchesPerAgency}
                 />
-              </Row>
+              </div>
             </>
           )}
           {value == 1 && (
@@ -59,13 +59,13 @@ function ProviderVisualizations() {
           {value == 2 && (
             <>
               <h3>News stories per publisher</h3>
-              <Row>
+              <div class="center">
                 <BubbleChart
-                  width={1000}
-                  height={800}
+                  width={900}
+                  height={900}
                   data={newsArticlesPerPublisher}
                 />
-              </Row>
+              </div>
             </>
           )}
         </Paper>
