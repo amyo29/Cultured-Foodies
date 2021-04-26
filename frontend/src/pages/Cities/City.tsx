@@ -40,7 +40,7 @@ function City(id: any) {
   console.log(city);
 
   //render: map long/lat or city names to render map
-  let API_KEY = "AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8";
+  let API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
   let cityMapURL =
     "https://www.google.com/maps/embed/v1/place?key=" +
     API_KEY +
