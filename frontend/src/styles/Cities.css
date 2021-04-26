@@ -1,0 +1,40 @@
+.headerImgStyle {
+    align-items: center;
+    justify-content: center !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 500px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    display: block !important;
+    opacity: 0.7 !important;
+}
+
+.headerTextStyle {
+    text-shadow: 1px 1px 3px black;
+    font-size: 11rem !important;
+    color: white !important;
+    width: 100%;
+}
+
+.headerCardStyle {
+    width: 100%;
+    height: auto;
+}
+
+.rowStyle {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitleTextStyle{
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    width: 100%;
+}
+
+.buttonStyle  {
+    color: white;
+    opacity: 0.7;
+}
