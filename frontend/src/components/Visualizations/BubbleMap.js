@@ -101,7 +101,7 @@ class BubbleMap extends Component {
         .style("left", event.pageX + 10 + "px")
         .style("top", event.pageY + "px");
       })
-      .on("mouseleave", function () {
+      .on("mouseout", function () {
         d3.select("#tooltip").style("opacity", 0);
       })
       .on("click", function (event, d) {
@@ -114,7 +114,6 @@ class BubbleMap extends Component {
       });
   }
   render() {
-    console.log("Here:", this.state.city);
     return (
       <>
         <div id="my_dataviz" className="col-md-9"></div>
