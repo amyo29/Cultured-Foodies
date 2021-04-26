@@ -16,7 +16,6 @@ import {
   Form,
   FormControl,
 } from "react-bootstrap";
-import Footer from "../../components/Footer";
 import NavBarSolid from "../../components/NavBarSolid";
 import "../../styles/Models.css";
 import useAxios from "axios-hooks";

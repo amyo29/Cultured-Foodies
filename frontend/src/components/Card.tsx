@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Footer.css";
 import Card from "react-bootstrap/Card";
 import "../styles/About.css";
 import "bootstrap/dist/css/bootstrap.min.css";

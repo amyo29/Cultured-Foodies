@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
-
+/* position: fixed;
+bottom: 0; 	height: 20%;
+*/
 .footer {
-	font-family: 'Josefin Sans', Georgia, Times, serif;
+	/* font-family: 'Josefin Sans', Georgia, Times, serif;
+*/
 	background-color: #400801;
-	height: 20%;
-	position: fixed;
-	bottom: 0;
-  display: flex;
+	position:fixed; 
+	bottom:0;  
+	/* position: relative; */
+
+	display: flex;
   flex-direction: row;
+/*
+
   flex-wrap: wrap;
 	width: 100%;
 	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+	padding-left: 15px; */
 }
 
 .footerDataShort,

@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import FooterLarge from "./components/FooterLarge";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 import SplashVertical from "./pages/Home/SplashVertical";
@@ -65,7 +64,6 @@ export default function App() {
           </Switch>
         </div>
       </Router>
-      {/* <FooterLarge></FooterLarge>    */}
     </div>
   );
 }
