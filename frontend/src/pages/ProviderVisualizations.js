@@ -44,7 +44,7 @@ function ProviderVisualizations() {
           )}
           {value == 1 && (
             <>
-              <h3>Expeditions per country</h3>
+              <h3>Space Expeditions Per Country</h3>
               <Row>
                 <BarChart
                   data={expeditionsPerCountry}
