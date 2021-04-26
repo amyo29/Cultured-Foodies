@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CSS from "csstype";
+
 import {
   Container,
   Row,
@@ -17,6 +17,7 @@ import { Pagination } from "@material-ui/lab";
 import NavBarSolid from "../../components/NavBarSolid";
 import { CountryInstance, CuisineInstance } from "./Cuisine";
 import axios from "axios";
+import "../../styles/Cuisines.css";
 import { CuisinesCard } from "../../components/Card";
 import load from "../../static_resources/spinny donut.gif";
 import headerimg from "../../static_resources/cuisineimg8.jpg";
@@ -248,56 +249,20 @@ function Countries() {
     rows.push(currentData.slice(i, i + chunk));
   }
 
-  const headerImgStyle: CSS.Properties = {
-    alignItems: "center",
-    justifyContent: "center",
-    objectFit: "cover",
-    width: "100%",
-    height: "450px",
-    marginBottom: "0px",
-    marginTop: "0px",
-    display: "block",
-    opacity: "0.7",
-  };
-
-  const headerTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    fontSize: "11rem",
-    color: "white",
-    width: "100%",
-  };
-
-  const headerCardStyle: CSS.Properties = {
-    width: "100%",
-    height: "auto",
-  };
-
-  const rowStyle: CSS.Properties = {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
-  };
-
-  const subtitleTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    color: "white",
-    width: "100%",
-  };
-
   if (loaded) {
     return (
       <body>
         <NavBarSolid />
         <Row>
-          <Card style={headerCardStyle}>
-            <Card.Img src={headerimg} style={headerImgStyle} />
+          <Card className="headerCardStyle">
+            <Card.Img src={headerimg} className="headerImgStyle"/>
             <Card.ImgOverlay>
-              <Row className="mt-4" style={rowStyle}>
+              <Row className="rowStyle mt-4">
                 <Card.Title>
-                  <h1 style={headerTextStyle}>Cuisines</h1>
+                  <h1 className="headerTextStyle">Cuisines</h1>
                 </Card.Title>
               </Row>
-              <Row style={rowStyle}>
+              <Row className="rowStyle">
                 <Form
                   inline
                   onSubmit={(e) => {
@@ -313,8 +278,8 @@ function Countries() {
                   {/* <Button onClick={searchOnClick}></Button> */}
                 </Form>
               </Row>
-              <Row style={rowStyle} className="mt-5">
-                <Card.Subtitle style={subtitleTextStyle}>
+              <Row className="rowStyle mt-5">
+                <Card.Subtitle className="subtitleTextStyle">
                   <h4> 🌎 Worldwide food for thought 💭</h4>
                   <h5>
                     {" "}
@@ -331,8 +296,8 @@ function Countries() {
         {loadedCards ? (
           <>
             <Container>
-              <div className="row" style={{ padding: 20 }}>
-                <div className="col">
+              <Row style={{ padding: 20 }}>
+                <Col>
                   <DropdownButton id="dropdown-basic-button" title="Sort By">
                     <Dropdown.Item onClick={() => onSort("name", true)}>
                       Cuisine Name (A-Z)
@@ -371,8 +336,8 @@ function Countries() {
                       Origin Country's Area (dsc)
                     </Dropdown.Item>
                   </DropdownButton>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                   <div>
                     <InputLabel id="demo-mutiple-checkbox-label">
                       Filter by Regions
@@ -399,9 +364,9 @@ function Countries() {
                       ))}
                     </Select>
                   </div>
-                </div>
-                <div className="col">
-                  <div>
+                </Col>
+                <Col>
+                  <Col>
                     <InputLabel id="demo-mutiple-checkbox-label">
                       Filter by Subregions
                     </InputLabel>
@@ -425,10 +390,10 @@ function Countries() {
                         </MenuItem>
                       ))}
                     </Select>
-                  </div>
-                </div>
+                  </Col>
+                </Col>
 
-                <div className="col">
+                <Col>
                   <DropdownButton
                     id="dropdown-basic-button"
                     title="Item Per Page"
@@ -443,8 +408,8 @@ function Countries() {
                       15
                     </Dropdown.Item>
                   </DropdownButton>
-                </div>
-              </div>
+                </Col>
+              </Row>
 
               {rows.map((cols) => (
                 <Row>
@@ -473,7 +438,7 @@ function Countries() {
             </div>
           </>
         ) : (
-          <Row style={rowStyle}>
+          <Row className="rowStyle">
             <Spinner animation="border" role="status">
               <span className="sr-only">Loading...</span>
             </Spinner>

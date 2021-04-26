@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CSS from "csstype";
 import { BsCaretDown } from "react-icons/bs";
 import {
   Container,
@@ -18,7 +17,7 @@ import {
 } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import NavBarSolid from "../../components/NavBarSolid";
-import "../../styles/Models.css";
+import "../../styles/Cities.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
@@ -262,65 +261,24 @@ function Cities() {
     rows.push(currentData.slice(i, i + chunk));
   }
 
-  const headerImgStyle: CSS.Properties = {
-    alignItems: "center",
-    justifyContent: "center",
-    objectFit: "cover",
-    width: "100%",
-    height: "500px",
-    marginBottom: "0px",
-    marginTop: "0px",
-    display: "block",
-    opacity: "0.7",
-  };
-
-  const headerTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    fontSize: "11rem",
-    color: "white",
-    width: "100%",
-  };
-
-  const headerCardStyle: CSS.Properties = {
-    width: "100%",
-    height: "auto",
-  };
-
-  const rowStyle: CSS.Properties = {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
-  };
-
-  const subtitleTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    color: "white",
-    width: "100%",
-  };
-
-  const buttonStyle: CSS.Properties = {
-    color: "white",
-    opacity: "0.7",
-  };
-
   if (loaded) {
     return (
       <body>
         <NavBarSolid />
         <Container fluid>
           <Row>
-            <Card style={headerCardStyle}>
-              <Card.Img src={citiesImg} style={headerImgStyle} />
+            <Card className="headerCardStyle">
+              <Card.Img src={citiesImg} className="headerImgStyle"/>
               <Card.ImgOverlay>
-                <Row className="mt-4" style={rowStyle}>
+                <Row className="rowStyle mt-4">
                   <Col className="text-align center">
                     <Card.Title>
-                      <h1 style={headerTextStyle}>Cities</h1>
+                      <h1 className="headerTextStyle">Cities</h1>
                     </Card.Title>
                   </Col>
                 </Row>
 
-                <Row style={rowStyle}>
+                <Row className="rowStyle">
                   <Form
                     inline
                     onSubmit={(e) => {
@@ -336,8 +294,9 @@ function Cities() {
                     {/* <Button onClick={searchOnClick}></Button> */}
                   </Form>
                 </Row>
-                <Row style={rowStyle} className="mt-5">
-                  <Card.Subtitle style={subtitleTextStyle}>
+                <br/>
+                <Row className="rowStyle mt-4">
+                  <Card.Subtitle className="subtitleTextStyle">
                     <h4>
                       {" "}
                       🌆 Wherever you are, wherever you're headed, all you want
@@ -345,9 +304,9 @@ function Cities() {
                     </h4>
                   </Card.Subtitle>
                 </Row>
-                <Row style={rowStyle}>
+                <Row className="rowStyle">
                   <a href="#top" className="center-text">
-                    <BsCaretDown size={75} style={buttonStyle} />
+                    <BsCaretDown size={75} className="buttonStyle"/>
                   </a>
                 </Row>
               </Card.ImgOverlay>
@@ -357,8 +316,8 @@ function Cities() {
           <div>
             <a id="top"></a>
             <Container>
-              <div className="row" style={{ padding: 20 }}>
-                <div className="col">
+              <Row style={{ padding: 20 }}>
+                <Col>
                   <DropdownButton id="dropdown-basic-button" title="Sort By">
                     <Dropdown.Item onClick={() => onSort("name", true)}>
                       City Name (A-Z)
@@ -413,8 +372,8 @@ function Cities() {
                       Population (dsc)
                     </Dropdown.Item>
                   </DropdownButton>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                   <InputLabel id="demo-mutiple-checkbox-label">
                     Filter By State
                   </InputLabel>
@@ -440,8 +399,8 @@ function Cities() {
                       </MenuItem>
                     ))}
                   </Select>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                   <InputLabel id="demo-mutiple-checkbox-label">
                     Filter By Leisure Score
                   </InputLabel>
@@ -466,8 +425,8 @@ function Cities() {
                       </MenuItem>
                     ))}
                   </Select>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                   <InputLabel id="demo-mutiple-checkbox-label">
                     Filter By Cost of Living
                   </InputLabel>
@@ -490,8 +449,8 @@ function Cities() {
                       </MenuItem>
                     ))}
                   </Select>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                   <DropdownButton
                     id="dropdown-basic-button"
                     title="Item Per Page"
@@ -506,8 +465,8 @@ function Cities() {
                       15
                     </Dropdown.Item>
                   </DropdownButton>
-                </div>
-              </div>
+                </Col>
+              </Row>
 
               {rows.map((cols) => (
                 <Row>
