@@ -21,8 +21,6 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 # SCHEMAS
-
-
 class DishSchema(ma.Schema):
     name = fields.Str(required=False)
     image_url = fields.Str(required=False)
@@ -124,7 +122,6 @@ class CountrySchema(ma.Schema):
 
 
 # Initialize Schemas for each model
-
 cuisine_schema = CuisineSchema()
 cuisines_schema = CuisineSchema(many=True)
 

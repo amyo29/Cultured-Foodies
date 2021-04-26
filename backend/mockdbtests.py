@@ -7,8 +7,6 @@ from schemas import app, db
 from app import *
 
 # add all the mock data
-
-
 class BaseTestCase(TestCase):
     """A base test case."""
 
@@ -21,7 +19,6 @@ class BaseTestCase(TestCase):
 
         # ADD MOCK CUISINE DATA
         for cuisine in mockdbdata.cuisines:
-            # print(cuisine)
             cuisine_entry = Cuisine(
                 id=cuisine["id"],
                 name=cuisine["name"],
