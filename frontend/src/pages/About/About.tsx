@@ -74,6 +74,7 @@ function About() {
   return (
     <div className="font-style center">
       <NavBarSolid />
+      
       <h1>About Us</h1>
 
       <p className="summary">

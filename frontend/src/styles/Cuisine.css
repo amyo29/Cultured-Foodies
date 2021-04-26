@@ -44,7 +44,7 @@ section {
 }
 
 .Instance-header{
-	font-family: 'Abril Fatface', Georgia, Times, serif;
+	font-family: "Josefin Sans", Georgia, Times, serif;
 	text-align: center;
 	margin: auto;
 	align-items: center;
@@ -183,8 +183,9 @@ a.center-text {
   display: block;
 }
 
+
 .Instance-header-accordian {
-  font-family: 'Abril Fatface', Georgia, Times, serif;
+  font-family: "Josefin Sans", Georgia, Times, serif;
 	text-align: center;
 	margin: auto;
 	align-items: center;
