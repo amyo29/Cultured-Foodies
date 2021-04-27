@@ -20,7 +20,7 @@ function Restaurants() {
 
   const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>([]);
   const [loaded, changeLoading] = useState(false);
-  const [{ data, loading, error }] = useAxios("/api/restaurants");
+  const [{ data }] = useAxios("/api/restaurants");
   const [searchText, setSearchText] = useState<string>("");
   /* reference for search bar input */
   const textInput: any = React.useRef();
@@ -427,10 +427,10 @@ function Restaurants() {
           names: ["$", "$$", "$$$", "$$$$"],
           logic(price_range: any, filterVal: any) {
             const show =
-              (filterVal.indexOf("$") >= 0 && price_range == 1) ||
-              (filterVal.indexOf("$$") >= 0 && price_range == 2) ||
-              (filterVal.indexOf("$$$") >= 0 && price_range == 3) ||
-              (filterVal.indexOf("$$$$") >= 0 && price_range == 4);
+              (filterVal.indexOf("$") >= 0 && price_range === 1) ||
+              (filterVal.indexOf("$$") >= 0 && price_range === 2) ||
+              (filterVal.indexOf("$$$") >= 0 && price_range === 3) ||
+              (filterVal.indexOf("$$$$") >= 0 && price_range === 4);
             return !show;
           },
         },
@@ -461,7 +461,7 @@ function Restaurants() {
               (filterVal.indexOf("4") >= 0 &&
                 aggregate_rating >= 4 &&
                 aggregate_rating < 5) ||
-              (filterVal.indexOf("5") >= 0 && aggregate_rating == 4);
+              (filterVal.indexOf("5") >= 0 && aggregate_rating === 4);
             return !show;
           },
         },

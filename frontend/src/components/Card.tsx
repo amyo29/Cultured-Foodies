@@ -9,8 +9,13 @@ const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
   return (
     <div className="col-md-4">
-      <a href={link} className="card text-center" target="_blank">
-        <img src={img} className="card-img-top info-card-img-top" />
+      <a
+        href={link}
+        className="card text-center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={img} className="card-img-top info-card-img-top" alt="" />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text-center"> {description}</p>
@@ -23,14 +28,19 @@ const InfoCard = (props: any) => {
 const ProfileCard = (props: any) => {
   const { name, img, role, bio, commits, issues, tests, linkedin } = props;
   return (
-    <a href={linkedin} className="card text-center" target="_blank">
-      <img src={img} className="card-img-top profile-img img-fluid" />
+    <a
+      href={linkedin}
+      className="card text-center"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src={img} className="card-img-top profile-img img-fluid" alt="" />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text"> {role}</p>
         <p className="card-text"> {bio}</p>
       </div>
-        <div className = "card-text d-flex flex-column mb-2">
+      <div className="card-text d-flex flex-column mb-2">
         <div className="row border-top pt-2">
           <div className="col border-right">
             <p className="card-text">
@@ -60,7 +70,7 @@ const ProfileCard = (props: any) => {
             </p>
           </div>
         </div>
-        </div>
+      </div>
     </a>
   );
 };
@@ -68,19 +78,19 @@ const ProfileCard = (props: any) => {
 const CitiesCard = (props: any) => {
   const { city } = props;
   let leisureCulture =
-    parseInt(city["leisure_culture"]!) == 0
+    parseInt(city["leisure_culture"]!) === 0
       ? "No Data"
       : parseFloat(city["leisure_culture"].toFixed(2));
   let costOfLiving =
-    parseInt(city["cost_of_living"]!) == 0
+    parseInt(city["cost_of_living"]!) === 0
       ? "No Data"
       : parseFloat(city["cost_of_living"].toFixed(2));
   let environmentalQuality =
-    parseInt(city["environmental_quality"]!) == 0
+    parseInt(city["environmental_quality"]!) === 0
       ? "No Data"
       : parseFloat(city["environmental_quality"].toFixed(2));
   let travelConnectivity =
-    parseInt(city["travel_connectivity"]!) == 0
+    parseInt(city["travel_connectivity"]!) === 0
       ? "No Data"
       : parseFloat(city["travel_connectivity"].toFixed(2));
 
@@ -95,7 +105,7 @@ const CitiesCard = (props: any) => {
           textToHighlight={city["name"]}
         ></Highlighter>
       </h5>
-      <img src={city["imagesmobile"]} className="city-card-img-top" />
+      <img src={city["imagesmobile"]} className="city-card-img-top" alt="" />
       <div className="card-body text-left">
         <p>
           <b>State: </b>
@@ -157,14 +167,14 @@ const CuisinesCard = (props: any) => {
           textToHighlight={cuisine["name"]}
         ></Highlighter>
       </h5>
-      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" />
+      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" alt="" />
       <div className="card-body align-self-start">
         <p>
           {cuisine?.countryID.split(", ").map((cID: string, i: number) => (
             <>
               {loaded ? (
                 <>
-                  {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
+                  {cuisine["id"] === 21 || cuisine["id"] === 74 ? (
                     <>
                       <p
                         className="collapse"
@@ -278,7 +288,7 @@ const CuisinesCard = (props: any) => {
             </>
           ))}
         </p>
-        {cuisine["id"] == 21 || cuisine["id"] == 74 ? (
+        {cuisine["id"] === 21 || cuisine["id"] === 74 ? (
           <a
             role="button"
             className="collapsed"
@@ -296,7 +306,7 @@ const CuisinesCard = (props: any) => {
 };
 
 const SearchCard = (props: any) => {
-  const { result } = props;
+  // const { result } = props;
   return (
     <div>
       <div className="name">

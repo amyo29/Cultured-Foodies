@@ -6,7 +6,7 @@ function Restaurant(id: any) {
   useEffect(() => {
     document.title = "Restaurant";
   }, []);
-  const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id.id);
+  const [{ data }] = useAxios("/api/restaurants/id=" + id.id);
   const [restaurant, setRestaurant] = useState<RestaurantInstance>();
   useEffect(() => {
     const restaurantObj: RestaurantInstance = data as RestaurantInstance;
@@ -25,8 +25,8 @@ function Restaurant(id: any) {
     +
     restaurant?.address.replace("&", "%20");
 
-  let averageRating = (parseInt(restaurant?.aggregate_rating!) == 0) ? "No Data" : restaurant?.aggregate_rating
-  let averageCostForTwo = (restaurant?.average_cost_for_two == 0) ? "No Data" : "$" + restaurant?.average_cost_for_two
+  let averageRating = (parseInt(restaurant?.aggregate_rating!) === 0) ? "No Data" : restaurant?.aggregate_rating
+  let averageCostForTwo = (restaurant?.average_cost_for_two === 0) ? "No Data" : "$" + restaurant?.average_cost_for_two
 
   return (
 

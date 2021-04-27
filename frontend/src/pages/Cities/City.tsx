@@ -10,7 +10,7 @@ function City(id: any) {
   useEffect(() => {
     document.title = "City";
   }, []);
-  const [{ data, loading, error }] = useAxios("/api/cities/id=" + id.id);
+  const [{ data }] = useAxios("/api/cities/id=" + id.id);
   const [city, setCity] = useState<CityInstance>();
   // const [restaurants, setRestaurants] = useState<Array<RestaurantInstance>>();
   const [cuisines, setCuisines] = useState<Array<CuisineInstance>>();
@@ -60,7 +60,7 @@ function City(id: any) {
   return (
     <div>
       <NavBarSolid />
-      <img src={city?.imagesweb} className="city-img-top" />
+      <img src={city?.imagesweb} className="city-img-top" alt="" />
       <h1 className="text-center">{city?.name}</h1>
       <div className="card-columns" style={{ margin: 20 }}>
         <div className="card">
@@ -92,8 +92,10 @@ function City(id: any) {
           <h3 className="margin">
             {city?.name}'s Urban Area- Quality of Life Scores
           </h3>
-          <div className="my-custom-scrollbar scroll" 
-          style={{ width: "40rem", maxHeight: "40rem" }}>
+          <div
+            className="my-custom-scrollbar scroll"
+            style={{ width: "40rem", maxHeight: "40rem" }}
+          >
             <table className="table table-bordered table-hover mb-0">
               <thead>
                 <tr>
@@ -103,7 +105,7 @@ function City(id: any) {
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row">Business Freedom</td>
+                  <td>Business Freedom</td>
                   <td>
                     {city?.business_freedom
                       ? parseFloat(city?.business_freedom.toFixed(2))
@@ -111,7 +113,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Cost of Living</td>
+                  <td>Cost of Living</td>
                   <td>
                     {city?.cost_of_living
                       ? parseFloat(city?.cost_of_living.toFixed(2))
@@ -119,25 +121,31 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Economy</td>
+                  <td>Economy</td>
                   <td>
-                    {city?.economy ? parseFloat(city?.economy.toFixed(2)) : "No Data"}
+                    {city?.economy
+                      ? parseFloat(city?.economy.toFixed(2))
+                      : "No Data"}
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Housing</td>
+                  <td>Housing</td>
                   <td>
-                    {city?.housing ? parseFloat(city?.housing.toFixed(2)) : "No Data"}
+                    {city?.housing
+                      ? parseFloat(city?.housing.toFixed(2))
+                      : "No Data"}
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Commute</td>
+                  <td>Commute</td>
                   <td>
-                    {city?.commute ? parseFloat(city?.commute.toFixed(2)) : "No Data"}
+                    {city?.commute
+                      ? parseFloat(city?.commute.toFixed(2))
+                      : "No Data"}
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Education</td>
+                  <td>Education</td>
                   <td>
                     {city?.education
                       ? parseFloat(city?.education.toFixed(2))
@@ -145,7 +153,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Environmental Quality</td>
+                  <td>Environmental Quality</td>
                   <td>
                     {city?.environmental_quality
                       ? parseFloat(city?.environmental_quality.toFixed(2))
@@ -153,7 +161,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Healthcare</td>
+                  <td>Healthcare</td>
                   <td>
                     {city?.healthcare
                       ? parseFloat(city?.healthcare.toFixed(2))
@@ -161,7 +169,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Leisure and Culture</td>
+                  <td>Leisure and Culture</td>
                   <td>
                     {city?.leisure_culture
                       ? parseFloat(city?.leisure_culture.toFixed(2))
@@ -169,7 +177,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Outdoors</td>
+                  <td>Outdoors</td>
                   <td>
                     {city?.outdoors
                       ? parseFloat(city?.outdoors.toFixed(2))
@@ -177,19 +185,23 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Safety</td>
+                  <td>Safety</td>
                   <td>
-                    {city?.safety ? parseFloat(city?.safety.toFixed(2)) : "No Data"}
+                    {city?.safety
+                      ? parseFloat(city?.safety.toFixed(2))
+                      : "No Data"}
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Startups</td>
+                  <td>Startups</td>
                   <td>
-                    {city?.safety ? parseFloat(city?.startups.toFixed(2)) : "No Data"}
+                    {city?.safety
+                      ? parseFloat(city?.startups.toFixed(2))
+                      : "No Data"}
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Taxation</td>
+                  <td>Taxation</td>
                   <td>
                     {city?.taxation
                       ? parseFloat(city?.taxation.toFixed(2))
@@ -197,7 +209,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Tolerance</td>
+                  <td>Tolerance</td>
                   <td>
                     {city?.taxation
                       ? parseFloat(city?.tolerance.toFixed(2))
@@ -205,7 +217,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Travel and Connectivity</td>
+                  <td>Travel and Connectivity</td>
                   <td>
                     {city?.travel_connectivity
                       ? parseFloat(city?.travel_connectivity.toFixed(2))
@@ -213,7 +225,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Internet Access</td>
+                  <td>Internet Access</td>
                   <td>
                     {" "}
                     {city?.internet_access
@@ -222,7 +234,7 @@ function City(id: any) {
                   </td>
                 </tr>
                 <tr>
-                  <td scope="row">Venture Capital</td>
+                  <td>Venture Capital</td>
                   <td>
                     {" "}
                     {city?.venture_capital
@@ -246,13 +258,14 @@ function City(id: any) {
                   city?.restaurants?.split(", ").map((r, index) => (
                     <>
                       <tr>
-                        <td scope="row">
+                        <td>
                           <a
                             href={
                               "/restaurants/" +
                               city?.restaurant_ids.split(", ")[index]
                             }
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             {r}
                             <br />
@@ -270,8 +283,8 @@ function City(id: any) {
         </div>
       </div>
       <div style={{ margin: 10 }}>
-        <Container style={{maxWidth: "90%"}}>
-        <h3 className="mt-2">Cuisines of {city?.name}</h3>
+        <Container style={{ maxWidth: "90%" }}>
+          <h3 className="mt-2">Cuisines of {city?.name}</h3>
           <Carousel
             activeIndex={index}
             onSelect={handleSelect}
@@ -281,11 +294,16 @@ function City(id: any) {
               <Carousel.Item>
                 <CardDeck>
                   {cols?.map((c: any) => (
-                    <a href={"/cuisines/" + c.id} className="card" style={{width : "25rem", height : "25rem"}}>
+                    <a
+                      href={"/cuisines/" + c.id}
+                      className="card"
+                      style={{ width: "25rem", height: "25rem" }}
+                    >
                       <h5 className="mt-2">{c.name}</h5>
                       <img
                         src={c.dishes[0].image_url}
                         className="carousel-img"
+                        alt=""
                       />
                     </a>
                   ))}

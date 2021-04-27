@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBarSolid from "../../components/NavBarSolid";
 
-import { API_INFO, TOOLS_INFO } from "./AboutInfo";
+import { API_INFO, TOOLS_INFO, TEAM_INFO } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
 import retrieveGitLabInfo, {
   TOTAL_COMMITS_INDEX,

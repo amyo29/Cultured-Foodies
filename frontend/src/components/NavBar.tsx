@@ -1,22 +1,21 @@
 import { useState } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
 import "../styles/NavBar.css";
 
 function NavBar() {
   const [searchQuery, setSearchQuery] = useState("");
-  const history = useHistory();
+  // const history = useHistory();
   let handleSearchQuery = (event: any) => {
     setSearchQuery(event.target.value);
   };
 
-  let handleKeyPress = (event: any) => {
-    if (event.key === "Enter") {
-      window.location.assign("/search/query=" + searchQuery);
-      // history.push("/search/query=" + searchQuery);
-      // window.location.assign("/search/query=" + searchQuery);
-    }
-  };
+  // let handleKeyPress = (event: any) => {
+  //   if (event.key === "Enter") {
+  //     window.location.assign("/search/query=" + searchQuery);
+  //     // history.push("/search/query=" + searchQuery);
+  //     // window.location.assign("/search/query=" + searchQuery);
+  //   }
+  // };
   let searchResults = () => {
     window.location.assign("/search/query=" + searchQuery);
   };

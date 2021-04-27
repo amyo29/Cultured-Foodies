@@ -91,7 +91,7 @@ function Cities() {
   var leisurescore = ["0-3", "3-6", "6-10"];
   var costscore = ["0-3", "3-6", "6-10"];
 
-  var filterableNames = [{ name: "States", value: "states", options: states }];
+  // var filterableNames = [{ name: "States", value: "states", options: states }];
   const [filteringStates, setFilteringStates] = useState<Array<String>>([]);
   const [filteringLeisure, setFilteringLeisure] = useState<Array<String>>([]);
   const [filteringCost, setFilteringCost] = useState<Array<String>>([]);
@@ -100,7 +100,7 @@ function Cities() {
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
-  const [{ data, loading, error }] = useAxios("/api/cities");
+  const [{ data }] = useAxios("/api/cities");
   useEffect(() => {
     document.title = "Cities";
   }, []);
@@ -150,7 +150,7 @@ function Cities() {
       var matchCost = true;
 
       ///needs to be an AND operation
-      if (searchQuery != "") {
+      if (searchQuery !== "") {
         var cityObjStr =
           cityObj["name"] +
           cityObj["state"] +
@@ -169,19 +169,19 @@ function Cities() {
         }
       }
       if (
-        filteringStates.length != 0 &&
+        filteringStates.length !== 0 &&
         !filteringStates.includes(cityObj["state"])
       ) {
         matchFilters = false;
       }
 
-      if (filteringLeisure.length != 0) {
+      if (filteringLeisure.length !== 0) {
         matchLeisure = false;
 
         for (let i = 0; i < filteringLeisure.length; i++) {
-          var leisureRange = filteringLeisure[i].split("-");
-          var low = parseFloat(leisureRange[0]);
-          var high = parseFloat(leisureRange[1]);
+          let leisureRange = filteringLeisure[i].split("-");
+          let low = parseFloat(leisureRange[0]);
+          let high = parseFloat(leisureRange[1]);
           if (
             low <= cityObj["leisure_culture"] &&
             cityObj["leisure_culture"] < high
@@ -190,13 +190,13 @@ function Cities() {
           }
         }
       }
-      if (filteringCost.length != 0) {
+      if (filteringCost.length !== 0) {
         matchCost = false;
 
         for (let i = 0; i < filteringCost.length; i++) {
-          var costRange = filteringCost[i].split("-");
-          var low = parseFloat(costRange[0]);
-          var high = parseFloat(costRange[1]);
+          let costRange = filteringCost[i].split("-");
+          let low = parseFloat(costRange[0]);
+          let high = parseFloat(costRange[1]);
           if (
             low <= cityObj["cost_of_living"] &&
             cityObj["cost_of_living"] < high

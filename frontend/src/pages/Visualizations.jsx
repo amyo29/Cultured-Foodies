@@ -16,41 +16,42 @@ function Visualizations() {
   const handleChange = (event, value) => {
     setValue(value);
   };
-  const headerImgStyle: CSS.Properties = {
-    alignItems: "center",
-    justifyContent: "center",
-    objectFit: "cover",
-    width: "100%",
-    height: "450px",
-    marginBottom: "0px",
-    marginTop: "0px",
-    display: "block",
-    opacity: "0.7",
-  };
 
-  const headerTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    fontSize: "11rem",
-    color: "white",
-    width: "100%",
-  };
+  // const headerImgStyle: CSS.Properties = {
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   objectFit: "cover",
+  //   width: "100%",
+  //   height: "450px",
+  //   marginBottom: "0px",
+  //   marginTop: "0px",
+  //   display: "block",
+  //   opacity: "0.7",
+  // };
 
-  const headerCardStyle: CSS.Properties = {
-    width: "100%",
-    height: "auto",
-  };
+  // const headerTextStyle: CSS.Properties = {
+  //   textShadow: "1px 1px 3px black",
+  //   fontSize: "11rem",
+  //   color: "white",
+  //   width: "100%",
+  // };
 
-  const rowStyle: CSS.Properties = {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+  // const headerCardStyle: CSS.Properties = {
+  //   width: "100%",
+  //   height: "auto",
+  // };
 
-  const subtitleTextStyle: CSS.Properties = {
-    textShadow: "1px 1px 3px black",
-    color: "white",
-    width: "100%",
-  };
+  // const rowStyle: CSS.Properties = {
+  //   textAlign: "center",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // };
+
+  // const subtitleTextStyle: CSS.Properties = {
+  //   textShadow: "1px 1px 3px black",
+  //   color: "white",
+  //   width: "100%",
+  // };
 
   const cities = qualityOfLifeScoresPerCity;
   const [currentCity, setCity] = useState(cities[0]);
@@ -75,7 +76,7 @@ function Visualizations() {
           <Tab label="Cities" />
         </Tabs>
         <Paper>
-          {value == 0 && (
+          {value === 0 && (
             <>
               <h3>
                 Breakdown of Regions, Subregions, and Countries of Cuisines
@@ -100,7 +101,7 @@ function Visualizations() {
             </>
           )}
 
-          {value == 1 && (
+          {value === 1 && (
             <>
               {" "}
               <h3>Number of Restaurants in Cities</h3>
@@ -109,7 +110,7 @@ function Visualizations() {
               </Row>
             </>
           )}
-          {value == 2 && (
+          {value === 2 && (
             <>
               <h3>
                 Quality of Life Scores for {currentCity.name},{" "}

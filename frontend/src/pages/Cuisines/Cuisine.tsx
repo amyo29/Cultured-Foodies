@@ -7,7 +7,7 @@ import {
   CardDeck,
   Carousel,
   Accordion,
-  Spinner
+  Spinner,
 } from "react-bootstrap";
 import NavBarSolid from "../../components/NavBarSolid";
 import "../../styles/Cuisine.css";
@@ -19,7 +19,7 @@ function Cuisine(id: any) {
     document.title = "Cuisine";
   }, []);
 
-  const [{ data, loading, error }] = useAxios("/api/cuisines/id=" + id.id);
+  const [{ data }] = useAxios("/api/cuisines/id=" + id.id);
   const [loaded, changeLoading] = useState(false);
   const [cuisine, setCuisine] = useState<CuisineInstance>();
   const [countries, setCountries] = useState<Array<CountryInstance>>();
@@ -91,6 +91,7 @@ function Cuisine(id: any) {
                         height={128}
                         className="mx-auto"
                         src={country?.flag}
+                        alt=""
                       />
                     </Row>
 
@@ -109,12 +110,16 @@ function Cuisine(id: any) {
                     <Row style={{ marginBottom: 20 }}>
                       <div>
                         <Col>
-                          <Carousel activeIndex={index} style={{ margin: "25px" }} onSelect={handleSelect}>
+                          <Carousel
+                            activeIndex={index}
+                            style={{ margin: "25px" }}
+                            onSelect={handleSelect}
+                          >
                             {dishes.map((cols: any) => (
                               <Carousel.Item>
                                 <CardDeck>
                                   {cols.map((dish: any) => (
-                                    <Card style={{height: '25rem'}}>
+                                    <Card style={{ height: "25rem" }}>
                                       <Card.Title>
                                         <h4 className="mt-4">{dish.name}</h4>
                                       </Card.Title>
@@ -235,6 +240,7 @@ function Cuisine(id: any) {
                                           cuisine?.city_ids.split(", ")[index]
                                         }
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="a-custom"
                                       >
                                         {c}
@@ -269,6 +275,7 @@ function Cuisine(id: any) {
                                           ]
                                         }
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="a-custom"
                                       >
                                         {r}

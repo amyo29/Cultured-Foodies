@@ -29,7 +29,7 @@ function ProviderVisualizations() {
           <Tab label="News Stories" />
         </Tabs>
         <Paper>
-          {value == 0 && (
+          {value === 0 && (
             <>
               <h3>Total launches per agency</h3>
               <div class="center">
@@ -41,7 +41,7 @@ function ProviderVisualizations() {
               </div>
             </>
           )}
-          {value == 1 && (
+          {value === 1 && (
             <>
               <h3>Space Expeditions Per Country</h3>
               <Row>
@@ -55,7 +55,7 @@ function ProviderVisualizations() {
               </Row>
             </>
           )}
-          {value == 2 && (
+          {value === 2 && (
             <>
               <h3>News stories per publisher</h3>
               <div class="center">

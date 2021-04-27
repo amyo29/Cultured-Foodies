@@ -52,7 +52,7 @@ function Countries() {
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
-  const [{ data, loading, error }] = useAxios("/api/cuisines");
+  const [{ data }] = useAxios("/api/cuisines");
   var regions_options = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
   var subregions_options = [
     "Southern Asia",
@@ -138,26 +138,26 @@ function Countries() {
       var cuisineObj = cuisines[i];
       var regions_list: Array<String> = [];
       var subregions_list: Array<String> = [];
-      var populations_list: Array<number> = [];
+      // var populations_list: Array<number> = [];
       var matchSearchQuery = true;
       var matchFilters = true;
       ///needs to be an AND operation
       var cuisineObjStr = cuisineObj["name"] + cuisineObj["country"];
-      var countriesObj = cuisineObj["countryID"]
-        .split(",")
-        .forEach(function (countryID: string) {
-          var countryObj = countries[parseInt(countryID)];
-          regions_list.push(countryObj["region"]);
-          subregions_list.push(countryObj["subregion"]);
-          populations_list.push(countryObj["population"]);
-          cuisineObjStr +=
-            countryObj["capital"] +
-            countryObj["region"] +
-            countryObj["subregion"] +
-            countryObj["population"] +
-            countryObj["area"];
-        });
-      if (searchQuery != "") {
+      // var countriesObj = cuisineObj["countryID"]
+      //   .split(",")
+      //   .forEach(function (countryID: string) {
+      //     var countryObj = countries[parseInt(countryID)];
+      //     regions_list.push(countryObj["region"]);
+      //     subregions_list.push(countryObj["subregion"]);
+      //     populations_list.push(countryObj["population"]);
+      //     cuisineObjStr +=
+      //       countryObj["capital"] +
+      //       countryObj["region"] +
+      //       countryObj["subregion"] +
+      //       countryObj["population"] +
+      //       countryObj["area"];
+      //   });
+      if (searchQuery !== "") {
         if (
           !cuisineObjStr
             .toLowerCase()
@@ -166,19 +166,19 @@ function Countries() {
           matchSearchQuery = false;
         }
       }
-      if (filteringRegions.length != 0) {
+      if (filteringRegions.length !== 0) {
         const intersection = regions_list.filter((x) =>
           filteringRegions.includes(x)
         );
-        if (intersection.length == 0) {
+        if (intersection.length === 0) {
           matchFilters = false;
         }
       }
-      if (filteringSubRegions.length != 0) {
+      if (filteringSubRegions.length !== 0) {
         const subregionIntersection = subregions_list.filter((x) =>
           filteringSubRegions.includes(x)
         );
-        if (subregionIntersection.length == 0) {
+        if (subregionIntersection.length === 0) {
           matchFilters = false;
         }
       }
@@ -204,7 +204,7 @@ function Countries() {
     sortableField: string,
     ascending: boolean
   ) => {
-    if (sortableField == "name" || sortableField == "country") {
+    if (sortableField === "name" || sortableField === "country") {
       possibleCuisines.sort(function (a: any, b: any) {
         if (ascending) {
           return a[sortableField] > b[sortableField] ? 1 : -1;
