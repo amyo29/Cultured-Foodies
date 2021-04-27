@@ -85,6 +85,11 @@ a.card:hover {
   margin-top: 20px !important;
   display: block !important;
 }
+
+.pageStyle {
+  padding-bottom: 128px;
+}
+
 .city-card-img-top {
   align-items: center;
   justify-content: center;
