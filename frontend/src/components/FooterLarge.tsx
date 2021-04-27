@@ -20,7 +20,7 @@ function FooterLarge() {
 					<a href="/restaurants">Restaurants</a>
 				</div>
 				<div className='footerDataShort'>
-					<h1 className='header2'>Other Links</h1><br/>
+					<h1 className='header2'>Other Links</h1>
 					<a href="/about">About</a>
 					<a href="/visualizations">Visualizations</a>
 					<a href="/provider-visualizations">Provider's Visualizations</a>
@@ -29,7 +29,8 @@ function FooterLarge() {
 				
 			</div>
 			{/* Bottom of footer: website copyright */}
-			<h3 className='copyrightText'>
+			
+			<h3 className='copyrightText' style={{fontSize: "large"}}>
 				Copyright © 2021 Cultured Foodies
 			</h3>
 		</footer>

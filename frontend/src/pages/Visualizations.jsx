@@ -10,6 +10,8 @@ import qualityOfLifeScoresPerCity from "../visualizationData/ourData/qualityOfLi
 import BubbleMap from "../components/Visualizations/BubbleMap";
 import cuisinesSunburst from "../visualizationData/ourData/cuisinesBreakdown.json";
 import Sunburst from "react-d3-zoomable-sunburst";
+import { grey } from "@material-ui/core/colors";
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 function Visualizations() {
   const [value, setValue] = useState(0);
@@ -117,7 +119,8 @@ function Visualizations() {
                 {currentCity.state}
               </h3>
               <div class="center">
-                <DropdownButton id="dropdown-basic-button" title="Select City">
+                <DropdownButton variant = "info" id="dropdown-variants-info" title="Select City">
+                  
                   {cities.map((city, index) => {
                     return (
                       <Dropdown.Item onClick={() => selectCity(index)}>

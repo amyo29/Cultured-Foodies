@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import NavBar from "../../components/NavBar";
-// import FooterLarge from "../../components/FooterLarge";
+import FooterLarge from "../../components/FooterLarge";
 import "../../styles/SplashVertical.css";
 import { BsCaretDownFill } from "react-icons/bs";
 import Models from "./Models";
@@ -9,7 +9,7 @@ function SplashVertical() {
   const myRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="splashPage">
+    <>
       <NavBar />
       <div className="splash">
         <div className="splashContent">
@@ -34,23 +34,15 @@ function SplashVertical() {
             </div>
           </div>
 
-          <div className="body" style={{ marginBottom: "100px" }}>
+          <div className="body">
             <a id="target"></a>
             <Models />
           </div>
           <div></div>
         </div>
+        <FooterLarge/>
       </div>
-      {/* <FooterLarge /> */}
-      <footer className="footerbottom">
-        {" "}
-        <p>
-          Author: Hege Refsnes
-          <br />
-          <a href="mailto:hege@example.com">hege@example.com</a>
-        </p>
-      </footer>
-    </div>
+    </>
   );
 }
 

@@ -6,13 +6,13 @@ bottom: 0; 	height: 20%;
 	/* font-family: 'Josefin Sans', Georgia, Times, serif;
 */
 	background-color: #400801;
-	position:fixed;
+	position:relative;
 	bottom:0px;
 	width: 100%;
 	color: white;
 	display: flex;
-  flex-direction: row;
-	height: 30px;
+  	flex-direction: row;
+	height: 170px;
 /*
 
   flex-wrap: wrap;
@@ -30,13 +30,15 @@ bottom: 0; 	height: 20%;
 	width: 100%;
 	margin: 12px auto;
 	text-align: left;
+	font-size: large;
 }
 
 .footerDataLong {
 	flex: 3;
+	font-size: large;
 }
 .footerDataShort {
-	font-size: medium;  
+	font-size: large;  
 	flex: 2;
 	text-align:left;
 }
