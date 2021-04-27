@@ -11,6 +11,7 @@ import {
   FormControl,
 } from "react-bootstrap";
 import NavBarSolid from "../../components/NavBarSolid";
+import FooterLarge from "../../components/FooterLarge";
 import "../../styles/Cities.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
@@ -469,7 +470,7 @@ function Cities() {
               ))}
             </Container>
 
-            <div className="row pagination">
+            <div className="row pagination mt-4">
               <Pagination
                 count={Math.ceil(displayedCities.length / numPerPage)}
                 page={pageNumber}
@@ -481,6 +482,7 @@ function Cities() {
             </div>
           </div>
         </Container>
+        <FooterLarge/>
       </body>
     );
   } else {

@@ -2,7 +2,7 @@ import "../styles/FooterLarge.css"
 
 function FooterLarge() {
 	return (
-		<div className='footer'>
+		<footer className="footer">
 			{/* Container with 3 columns */}
 			<div className='container'>
 				{/* Long column with site name and description */}
@@ -32,7 +32,7 @@ function FooterLarge() {
 			<h3 className='copyrightText'>
 				Copyright © 2021 Cultured Foodies
 			</h3>
-		</div>
+		</footer>
 	)
 }
 

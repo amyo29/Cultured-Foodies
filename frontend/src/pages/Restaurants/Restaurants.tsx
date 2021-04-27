@@ -11,6 +11,7 @@ import restImg from "../../static_resources/modelHeaders/restaurantsHeader.jpg";
 import NavBarSolid from "../../components/NavBarSolid";
 import { RestaurantInstance } from "./Restaurant";
 import Highlighter from "react-highlight-words";
+import FooterLarge from "../../components/FooterLarge";
 
 function Restaurants() {
   useEffect(() => {
@@ -591,6 +592,7 @@ function Restaurants() {
           columns={columns}
           options={options}
         />
+        <FooterLarge />
       </body>
     );
   } else {

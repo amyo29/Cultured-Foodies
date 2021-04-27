@@ -16,6 +16,7 @@ import NavBarSolid from "../../components/NavBarSolid";
 import { CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import "../../styles/Cuisines.css";
+import FooterLarge from "../../components/FooterLarge";
 import { CuisinesCard } from "../../components/Card";
 import load from "../../static_resources/loading/spinny donut.gif";
 import headerimg from "../../static_resources/modelHeaders/cuisinesHeader.jpg";
@@ -421,7 +422,7 @@ function Countries() {
                 </Row>
               ))}
             </Container>
-            <div className="row pagination">
+            <div className="row pagination mt-4">
               <Pagination
                 count={Math.ceil(displayedCuisines.length / numPerPage)}
                 page={pageNumber}
@@ -439,7 +440,7 @@ function Countries() {
             </Spinner>
           </Row>
         )}
-        {/* <Footer></Footer> */}
+        <FooterLarge />
       </body>
     );
   } else {
