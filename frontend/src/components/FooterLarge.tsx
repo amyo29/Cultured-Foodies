@@ -12,13 +12,6 @@ function FooterLarge() {
 				</div>
 				
 				{/* Short column with other links */}
-				<div className='footerDataShort'>
-					<h1 className='header2'>Other Links</h1>
-					<a href="/about">About</a>
-					<a href="/visualizations">Visualizations</a>
-					<a href="/provider-visualizations">Provider's Visualizations</a>
-
-				</div>
 				{/* Short column with models */}
 				<div className='footerDataShort'>
 					<h1 className='header2'>Models</h1><br/>
@@ -26,6 +19,14 @@ function FooterLarge() {
 					<a href="/cities">Cities</a>
 					<a href="/restaurants">Restaurants</a>
 				</div>
+				<div className='footerDataShort'>
+					<h1 className='header2'>Other Links</h1>
+					<a href="/about">About</a>
+					<a href="/visualizations">Visualizations</a>
+					<a href="/provider-visualizations">Provider's Visualizations</a>
+
+				</div>
+				
 			</div>
 			{/* Bottom of footer: website copyright */}
 			<h3 className='copyrightText'>
