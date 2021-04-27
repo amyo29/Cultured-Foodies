@@ -38,7 +38,6 @@ function SplashVertical() {
             <a id="target"></a>
             <Models />
           </div>
-
           <div></div>
         </div>
       </div>

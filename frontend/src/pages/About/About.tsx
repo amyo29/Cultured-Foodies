@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBarSolid from "../../components/NavBarSolid";
 
-import { API_INFO, TOOLS_INFO, TEAM_INFO } from "./AboutInfo";
+import { API_INFO, TOOLS_INFO } from "./AboutInfo";
 import { InfoCard, ProfileCard } from "../../components/Card";
 import retrieveGitLabInfo, {
   TOTAL_COMMITS_INDEX,
@@ -9,36 +9,15 @@ import retrieveGitLabInfo, {
   TOTAL_TESTS_INDEX,
 } from "./GitLabInfo";
 import "../../styles/About.css";
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import Grid, { GridSpacing } from "@material-ui/core/Grid";
-import { CardDeck, Spinner } from "react-bootstrap";
-import { Container, Row, Col, Card, ListGroup, Navbar } from "react-bootstrap";
-import ZomatoLogo from "./Images/APIs/zomato.png";
+import {  Spinner } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import { MDBIcon } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      height: 140,
-      width: 100,
-    },
-    control: {
-      padding: theme.spacing(2),
-    },
-  })
-);
 
 function About() {
   useEffect(() => {
     document.title = "About";
   }, []);
-  const [spacing, setSpacing] = React.useState<GridSpacing>(2);
-  const classes = useStyles();
-
   const [commitsSum, changeCommitsSum] = useState(-1);
   const [issuesSum, changeIssuesSum] = useState(-1);
   const [testsSum, changeTestsSum] = useState(-1);
@@ -92,7 +71,6 @@ function About() {
           <Container>
             <div className="row mb-4">
               {
-                // loaded ?
                 teamData1.map((teamMember: any) => {
                   const {
                     name,
@@ -119,16 +97,13 @@ function About() {
                     </div>
                   );
                 })
-                // : (
-                //   <Spinner animation="grow" variant="dark" size="sm"/>
-                // )
+
               }
             </div>
           </Container>
           <Container>
             <div className="row mb-4">
               {
-                // loaded ?
                 teamData2.map((teamMember: any) => {
                   const {
                     name,
@@ -155,9 +130,6 @@ function About() {
                     </div>
                   );
                 })
-                // :(
-                //      <Spinner animation="grow" variant="dark" size="sm"/>
-                // )
               }
             </div>
           </Container>
