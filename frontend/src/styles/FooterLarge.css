@@ -10,7 +10,7 @@ bottom: 0; 	height: 20%;
 	bottom:0;  
 	width: 100%;
 	/* position: relative; */
-
+	color: white;
 	display: flex;
   flex-direction: row;
 /*
@@ -54,9 +54,9 @@ bottom: 0; 	height: 20%;
 	margin: auto;
 }
 
-.container * {
+/* .container * {
 	color: white;
-}
+} */
 
 .copyrightText {
 	color: white;
