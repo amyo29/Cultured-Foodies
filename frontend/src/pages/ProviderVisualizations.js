@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import expeditionsPerCountry from "../visualizationData/providerData/expeditionsPerCountry.json";
 import newsArticlesPerPublisher from "../visualizationData/providerData/newsArticlesPerPublisher.json";
 import totalLaunchesPerAgency from "../visualizationData/providerData/totalLaunchesPerAgency.json";

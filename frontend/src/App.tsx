@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 import SplashVertical from "./pages/Home/SplashVertical";
 
+import FooterLarge from "./components/FooterLarge";
+
+
 import About from "./pages/About/About";
 import Cuisines from "./pages/Cuisines/Cuisines";
 import Cuisine from "./pages/Cuisines/Cuisine";
@@ -64,6 +67,7 @@ export default function App() {
           </Switch>
         </div>
       </Router>
+      <FooterLarge />
     </div>
   );
 }

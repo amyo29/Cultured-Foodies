@@ -528,7 +528,7 @@ function Search(query) {
   );
 
   return (
-    <div>
+    <div class="pageStyle">
       <NavBarSolid />
       <h1>Search Results for {`"${query["q"]}"`}</h1>
 

@@ -51,9 +51,9 @@ function About() {
     APIRows.push(API_INFO.slice(i, i + chunk));
   }
   return (
-    <div className="font-style center">
+    <div className="font-style center pageStyle">
       <NavBarSolid />
-      
+
       <h1>About Us</h1>
 
       <p className="summary">
