@@ -8,6 +8,7 @@ bottom: 0; 	height: 20%;
 	background-color: #400801;
 	position:fixed; 
 	bottom:0;  
+	width: 100%;
 	/* position: relative; */
 
 	display: flex;
@@ -27,7 +28,7 @@ bottom: 0; 	height: 20%;
   flex-direction: column;
   flex-basis: 100%;
 	width: 100%;
-	margin: 16px auto;
+	margin: 12px auto;
 	text-align: left;
 }
 
