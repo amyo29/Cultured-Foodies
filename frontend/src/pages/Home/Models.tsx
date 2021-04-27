@@ -1,7 +1,6 @@
-import React from "react";
-import Cuisines from "../../static_resources/cuisineModel.jpg";
-import Cities from "../../static_resources/cityModel.jpg";
-import Restaurants from "../../static_resources/restaurantModel4.jpg";
+import Cuisines from "../../static_resources/home/cuisineModel.jpg";
+import Cities from "../../static_resources/home/cityModel.jpg";
+import Restaurants from "../../static_resources/home/restaurantModel4.jpg";
 import "../../styles/Models.css";
 
 /* used to display model page buttons

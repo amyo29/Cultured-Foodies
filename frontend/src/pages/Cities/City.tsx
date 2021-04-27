@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useAxios from "axios-hooks";
 import axios from "axios";
 import NavBarSolid from "../../components/NavBarSolid";
 import { CuisineInstance } from "../Cuisines/Cuisine";
 import "../../styles/City.css";
-import { CardDeck, Carousel, Card, Container } from "react-bootstrap";
-import { cpuUsage } from "node:process";
+import { CardDeck, Carousel, Container } from "react-bootstrap";
 
 function City(id: any) {
   useEffect(() => {
@@ -37,7 +36,6 @@ function City(id: any) {
       setCuisines(filtered_cuisines);
     });
   }, [city]);
-  console.log(city);
 
   //render: map long/lat or city names to render map
   let API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;

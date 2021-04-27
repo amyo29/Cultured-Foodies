@@ -1,26 +1,26 @@
-import AWSLogo from "./Images/Tools/AWSLogo.png";
-import GitLabLogo from "./Images/Tools/GitLabLogo.png";
-import PostmanLogo from "./Images/Tools/PostmanLogo.png";
-import ReactLogo from "./Images/Tools/ReactLogo.png";
-import BootStrapLogo from "./Images/Tools/BootstrapLogo.jpg";
-import NameCheapLogo from "./Images/Tools/Namecheap.png";
-import PostgreSQL from "./Images/Tools/PostgreSQL.png";
-import MaterialUI from "./Images/Tools/MaterialUI.png";
-import AlgoliaLogo from "./Images/Tools/AlgoliaLogo.png";
+import AWSLogo from "../../static_resources/about/tools/AWSLogo.png"
+import GitLabLogo from "../../static_resources/about/tools/GitLabLogo.png";
+import PostmanLogo from "../../static_resources/about/tools/PostmanLogo.png";
+import ReactLogo from "../../static_resources/about/tools/ReactLogo.png";
+import BootStrapLogo from "../../static_resources/about/tools/BootstrapLogo.jpg";
+import NameCheapLogo from "../../static_resources/about/tools/Namecheap.png";
+import PostgreSQL from "../../static_resources/about/tools/PostgreSQL.png";
+import MaterialUI from "../../static_resources/about/tools/MaterialUI.png";
+import AlgoliaLogo from "../../static_resources/about/tools/AlgoliaLogo.png";
 
-import RestCountriesLogo from "./Images/APIs/RestCountriesLogo.png";
-import ZomatoLogo from "./Images/APIs/zomato.png";
-import WorldFoodLogo from "./Images/APIs/WorldFood.png";
-import TeleportLogo from "./Images/APIs/teleportAPI.png"
-import GoogleMapsLogo from "./Images/APIs/GoogleMapsLogo.jpeg"
-import GooglePlaceLogo from "./Images/APIs/GooglePlaceLogo.png"
+import RestCountriesLogo from "../../static_resources/about/apis/RestCountriesLogo.png";
+import ZomatoLogo from "../../static_resources/about/apis/zomato.png";
+import WorldFoodLogo from "../../static_resources/about/apis/WorldFood.png";
+import TeleportLogo from "../../static_resources/about/apis/teleportAPI.png"
+import GoogleMapsLogo from "../../static_resources/about/apis/GoogleMapsLogo.jpeg"
+import GooglePlaceLogo from "../../static_resources/about/apis/GooglePlaceLogo.png"
 
-import AmyImg from "./Images/Members/AmyImg.jpg";
-import JoshuaImg from "./Images/Members/JoshuaImg.jpg";
-import LucindaImg from "./Images/Members/LucindaImg.jpg";
-import SiddheshImg from "./Images/Members/SiddheshImg.png";
-import TimImg from "./Images/Members/TimImg.jpg";
-import VishalImg from "./Images/Members/VishalImg.jpg";
+import AmyImg from "../../static_resources/about/members/AmyImg.jpg";
+import JoshuaImg from "../../static_resources/about/members/JoshuaImg.jpg";
+import LucindaImg from "../../static_resources/about/members/LucindaImg.jpg";
+import SiddheshImg from "../../static_resources/about/members/SiddheshImg.png";
+import TimImg from "../../static_resources/about/members/TimImg.jpg";
+import VishalImg from "../../static_resources/about/members/VishalImg.jpg";
 
 const API_INFO = [
   {

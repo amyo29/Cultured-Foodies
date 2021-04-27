@@ -1,21 +1,16 @@
-import React from "react";
-import { SearchCard } from "../../components/Card";
 import algoliasearch from "algoliasearch/lite";
 import NavBarSolid from "../../components/NavBarSolid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../../styles/Search.css";
-import { CityInstance } from "../Cities/City";
 import {
   InstantSearch,
   SearchBox,
-  Hits,
   Highlight,
   Index,
   connectHits,
   connectStateResults,
 } from "react-instantsearch-dom";
-import { DialpadSharp } from "@material-ui/icons";
 
 const CuisineHit = ({ hits }) => (
   
@@ -520,8 +515,6 @@ const RestaurantContent = connectStateResults(({ searchState }) =>
   ) : null
 );
 function Search(query) {
-  console.log("here");
-  console.log("searching", query["q"]);
   const searchClient = algoliasearch(
     "2EZLZI9A68",
     "d04bf0d390cc40ca14eebcd6d0acea55"

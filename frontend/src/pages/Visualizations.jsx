@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { useState } from "react";
+import { Row, Container } from "react-bootstrap";
 import NavBarSolid from "../components/NavBarSolid";
 import "../styles/Visualizations.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
@@ -134,13 +134,6 @@ function Visualizations() {
                   padding={100}
                   domainMax={10}
                   highlighted={null}
-                  // onHover={(point) => {
-                  //   if (point) {
-                  //     console.log("hovered over a data point");
-                  //   } else {
-                  //     console.log("not over anything");
-                  //   }
-                  // }}
                   data={{
                     variables: [
                       { key: "business_freedom", label: "Business Freedom" },
@@ -182,13 +175,6 @@ function Visualizations() {
                   padding={100}
                   domainMax={10}
                   highlighted={null}
-                  // onHover={(point) => {
-                  //   if (point) {
-                  //     console.log("hovered over a data point");
-                  //   } else {
-                  //     console.log("not over anything");
-                  //   }
-                  // }}
                   data={{
                     variables: [
                       { key: "leisure_culture", label: "Leisure Culture" },

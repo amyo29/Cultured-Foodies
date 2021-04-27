@@ -1,5 +1,3 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
 import "../styles/About.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";

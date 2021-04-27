@@ -1,19 +1,13 @@
-import React, { useEffect, useState, Component } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "../../styles/Restaurant.css";
-import Card from "react-bootstrap/Card";
 import NavBarSolid from "../../components/NavBarSolid";
 import useAxios from "axios-hooks";
-import axios from "axios";
-import { CuisineInstance } from "../Cuisines/Cuisine";
-import { CityInstance } from "../Cities/City";
 function Restaurant(id: any) {
   useEffect(() => {
     document.title = "Restaurant";
   }, []);
   const [{ data, loading, error }] = useAxios("/api/restaurants/id=" + id.id);
   const [restaurant, setRestaurant] = useState<RestaurantInstance>();
-  console.log("here", id);
   useEffect(() => {
     const restaurantObj: RestaurantInstance = data as RestaurantInstance;
     if (restaurantObj) {

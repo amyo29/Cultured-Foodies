@@ -15,8 +15,8 @@ import "../../styles/Cities.css";
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import { CitiesCard } from "../../components/Card";
-import logo from "../../static_resources/spinny.gif";
-import citiesImg from "../../static_resources/newyork.jpg";
+import logo from "../../static_resources/loading/spinny.gif";
+import citiesImg from "../../static_resources/modelHeaders/citiesHeader.jpg";
 import { CityInstance } from "./City";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -179,10 +179,8 @@ function Cities() {
 
         for (let i = 0; i < filteringLeisure.length; i++) {
           var leisureRange = filteringLeisure[i].split("-");
-          console.log(parseInt(leisureRange[0]));
           var low = parseFloat(leisureRange[0]);
           var high = parseFloat(leisureRange[1]);
-          console.log(typeof cityObj["leisure_culture"]);
           if (
             low <= cityObj["leisure_culture"] &&
             cityObj["leisure_culture"] < high

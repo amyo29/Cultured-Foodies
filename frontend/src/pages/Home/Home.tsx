@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "../../styles/Home.css";
-import homephoto from "../../static_resources/homephoto.jpg";
+import homephoto from "../../static_resources/home/homephoto.jpg";
 
 class Home extends Component {
   render() {

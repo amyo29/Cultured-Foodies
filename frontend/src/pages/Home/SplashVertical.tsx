@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import NavBar from "../../components/NavBar";
 // import FooterLarge from "../../components/FooterLarge";
 import "../../styles/SplashVertical.css";

@@ -3,33 +3,16 @@ import {
   Container,
   Col,
   Row,
-  Figure,
   Card,
-  CardColumns,
   CardDeck,
-  CardImg,
   Carousel,
-  Badge,
-  Tabs,
-  Tab,
-  Media,
-  Button,
   Accordion,
-  Modal,
-  Spinner,
-  Jumbotron,
-  Tooltip,
-  TooltipProps,
+  Spinner
 } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import NavBarSolid from "../../components/NavBarSolid";
-
-import { useParams } from "react-router-dom";
 import "../../styles/Cuisine.css";
 import useAxios from "axios-hooks";
 import axios from "axios";
-import { countReset } from "node:console";
-import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
 
 function Cuisine(id: any) {
   useEffect(() => {
@@ -69,7 +52,6 @@ function Cuisine(id: any) {
       changeLoading(true);
     });
   }, [cuisine]);
-  console.log(countries);
 
   let API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 

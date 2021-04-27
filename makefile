@@ -52,9 +52,8 @@ python-mock-db-unit-tests:
 	python3 backend/mockdbtests.py
 
 selenium-tests:
-
 	echo "Running Selenium tests..."
-	python3 frontend/selenium_tests.py
+	python3 frontend/src/tests/selenium_tests.py
 
 postman-tests:
 	echo "Running Postman tests..."

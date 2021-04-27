@@ -9,8 +9,8 @@ import retrieveGitLabInfo, {
   TOTAL_TESTS_INDEX,
 } from "./GitLabInfo";
 import "../../styles/About.css";
-import {  Spinner } from "react-bootstrap";
-import { Container} from "react-bootstrap";
+import { Spinner } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { MDBIcon } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -31,7 +31,7 @@ function About() {
         changeCommitsSum(gitLabInfo.statsInfo[TOTAL_COMMITS_INDEX]);
         changeIssuesSum(gitLabInfo.statsInfo[TOTAL_ISSUES_INDEX]);
         changeTestsSum(gitLabInfo.statsInfo[TOTAL_TESTS_INDEX]);
-        changeTeamData(gitLabInfo.TEAM_INFO);
+        changeTeamData(TEAM_INFO);
         changeLoading(true);
       }
     };
@@ -70,67 +70,62 @@ function About() {
         <>
           <Container>
             <div className="row mb-4">
-              {
-                teamData1.map((teamMember: any) => {
-                  const {
-                    name,
-                    img,
-                    role,
-                    bio,
-                    commits,
-                    issues,
-                    tests,
-                    linkedin,
-                  } = teamMember;
-                  return (
-                    <div className="col-md-4">
-                      <ProfileCard
-                        name={name}
-                        img={img}
-                        role={role}
-                        bio={bio}
-                        commits={commits}
-                        issues={issues}
-                        tests={tests}
-                        linkedin={linkedin}
-                      />
-                    </div>
-                  );
-                })
-
-              }
+              {teamData1.map((teamMember: any) => {
+                const {
+                  name,
+                  img,
+                  role,
+                  bio,
+                  commits,
+                  issues,
+                  tests,
+                  linkedin,
+                } = teamMember;
+                return (
+                  <div className="col-md-4">
+                    <ProfileCard
+                      name={name}
+                      img={img}
+                      role={role}
+                      bio={bio}
+                      commits={commits}
+                      issues={issues}
+                      tests={tests}
+                      linkedin={linkedin}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </Container>
           <Container>
             <div className="row mb-4">
-              {
-                teamData2.map((teamMember: any) => {
-                  const {
-                    name,
-                    img,
-                    role,
-                    bio,
-                    commits,
-                    issues,
-                    tests,
-                    linkedin,
-                  } = teamMember;
-                  return (
-                    <div className="col-md-4">
-                      <ProfileCard
-                        name={name}
-                        img={img}
-                        role={role}
-                        bio={bio}
-                        commits={commits}
-                        issues={issues}
-                        tests={tests}
-                        linkedin={linkedin}
-                      />
-                    </div>
-                  );
-                })
-              }
+              {teamData2.map((teamMember: any) => {
+                const {
+                  name,
+                  img,
+                  role,
+                  bio,
+                  commits,
+                  issues,
+                  tests,
+                  linkedin,
+                } = teamMember;
+                return (
+                  <div className="col-md-4">
+                    <ProfileCard
+                      name={name}
+                      img={img}
+                      role={role}
+                      bio={bio}
+                      commits={commits}
+                      issues={issues}
+                      tests={tests}
+                      linkedin={linkedin}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </Container>
         </>
@@ -161,8 +156,8 @@ function About() {
                   </h4>
                 ) : (
                   <>
-                  <MDBIcon icon="code-branch" size="2x" />
-                  <h4>Total Commits: {commitsSum}</h4>
+                    <MDBIcon icon="code-branch" size="2x" />
+                    <h4>Total Commits: {commitsSum}</h4>
                   </>
                 )}
               </div>
@@ -211,8 +206,8 @@ function About() {
                   </h4>
                 ) : (
                   <>
-                  <MDBIcon far icon="check-circle" size= "2x" />
-                  <h4>Total Tests: {testsSum}</h4>
+                    <MDBIcon far icon="check-circle" size="2x" />
+                    <h4>Total Tests: {testsSum}</h4>
                   </>
                 )}
               </div>

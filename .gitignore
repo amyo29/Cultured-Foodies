@@ -4,6 +4,8 @@
 *node_modules
 frontend/.pnp
 frontned/.pnp.js
+frontend/package-lock.json
+frontend/yarn.lock
 
 # api keys
 frontend/.env

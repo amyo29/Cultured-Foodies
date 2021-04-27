@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import {
   Container,
   Row,
   Col,
   Card,
-  Navbar,
   DropdownButton,
   Dropdown,
   Form,
@@ -15,19 +13,18 @@ import {
 import useAxios from "axios-hooks";
 import { Pagination } from "@material-ui/lab";
 import NavBarSolid from "../../components/NavBarSolid";
-import { CountryInstance, CuisineInstance } from "./Cuisine";
+import { CuisineInstance } from "./Cuisine";
 import axios from "axios";
 import "../../styles/Cuisines.css";
 import { CuisinesCard } from "../../components/Card";
-import load from "../../static_resources/spinny donut.gif";
-import headerimg from "../../static_resources/cuisineimg8.jpg";
+import load from "../../static_resources/loading/spinny donut.gif";
+import headerimg from "../../static_resources/modelHeaders/cuisinesHeader.jpg";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Select from "@material-ui/core/Select";
 import Checkbox from "@material-ui/core/Checkbox";
 import Input from "@material-ui/core/Input";
-import Highlighter from "react-highlight-words";
 
 function Countries() {
   useEffect(() => {
@@ -107,7 +104,6 @@ function Countries() {
     } else {
       let number: number = event.target.value;
       setSearchQuery(formatNumber(number));
-      console.log(formatNumber(number));
     }
   };
 
@@ -160,7 +156,6 @@ function Countries() {
             countryObj["population"] +
             countryObj["area"];
         });
-      // console.log(cuisineObjStr)
       if (searchQuery != "") {
         if (
           !cuisineObjStr

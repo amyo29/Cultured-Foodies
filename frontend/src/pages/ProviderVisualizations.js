@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Row, Container } from "react-bootstrap";
 import expeditionsPerCountry from "../visualizationData/providerData/expeditionsPerCountry.json";
 import newsArticlesPerPublisher from "../visualizationData/providerData/newsArticlesPerPublisher.json";
@@ -12,7 +12,6 @@ function ProviderVisualizations() {
   const [value, setValue] = useState(0);
   const handleChange = (event, value) => {
     setValue(value);
-    console.log("v", value);
   };
   return (
     <div>
