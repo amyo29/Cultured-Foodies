@@ -60,7 +60,7 @@ function Visualizations() {
   };
 
   return (
-    <div>
+    <div class="pageStyle">
       <NavBarSolid />
       <Container fluid>
         <Tabs

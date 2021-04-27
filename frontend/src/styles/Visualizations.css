@@ -47,6 +47,10 @@
     animation-name: slidein;
 }
 
+.pageStyle {
+    padding-bottom: 128px;
+  }
+
 @keyframes slidein {
 from {
     margin-left: 100%;
