@@ -6,13 +6,13 @@ bottom: 0; 	height: 20%;
 	/* font-family: 'Josefin Sans', Georgia, Times, serif;
 */
 	background-color: #400801;
-	position:fixed; 
-	bottom:0;  
+	position:fixed;
+	bottom:0px;
 	width: 100%;
-	/* position: relative; */
 	color: white;
 	display: flex;
   flex-direction: row;
+	height: 30px;
 /*
 
   flex-wrap: wrap;

@@ -67,7 +67,6 @@ export default function App() {
           </Switch>
         </div>
       </Router>
-      <FooterLarge />
     </div>
   );
 }

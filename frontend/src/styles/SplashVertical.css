@@ -1,6 +1,17 @@
 /* Splash */
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
 
+.splashPage{
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.splashPage:after {
+  content: "";
+  display: block;
+	height:142px;
+}
+
 .splash {
 	font-family: 'Josefin Sans', Georgia, Times, serif;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -11,9 +22,13 @@
 	background-position-y: 10%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-top: -64px;
+	/* margin-top: -64px; */
 }
 
+
+.footerbottom{
+	height: '142px';
+}
 .splashContent {
 	display: flex;
 	justify-content: space-between;
