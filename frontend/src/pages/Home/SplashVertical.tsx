@@ -4,6 +4,7 @@ import FooterLarge from "../../components/FooterLarge";
 import "../../styles/SplashVertical.css";
 import { BsCaretDownFill } from "react-icons/bs";
 import Models from "./Models";
+import { relative } from "node:path";
 
 function SplashVertical() {
   const myRef = useRef<HTMLDivElement>(null);
@@ -27,21 +28,18 @@ function SplashVertical() {
               <BsCaretDownFill size={75} />
             </a>
           </div>
-
-          <div ref={myRef} className="purpose">
-            <div className="purpose-header">
-              Explore the intersection of cuisine and culture.
-            </div>
-          </div>
-
-          <div className="body">
-            <a id="target"></a>
-            <Models />
-          </div>
-          <div></div>
         </div>
-        <FooterLarge/>
+        <div ref={myRef} className="purpose">
+        <div className="purpose-header">
+          Explore the intersection of cuisine and culture.
+        </div>
       </div>
+      </div>
+      <div className="body">
+        <a id="target"></a>
+        <Models />
+      </div>
+      <FooterLarge />
     </>
   );
 }
