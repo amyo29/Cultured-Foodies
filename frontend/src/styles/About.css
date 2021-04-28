@@ -78,7 +78,7 @@ a.card:hover {
   align-items: center;
   justify-content: center;
   object-fit: cover !important;
-  width: 250px !important;
+  width: 70% !important;
   height: 250px !important;
   /* margin: 25px !important; */
   margin-bottom: 0px !important;
