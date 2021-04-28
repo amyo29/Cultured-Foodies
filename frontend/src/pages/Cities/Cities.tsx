@@ -254,7 +254,7 @@ function Cities() {
 
   if (loaded) {
     return (
-      <body>
+      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
         <Container fluid>
           <Row>

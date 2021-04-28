@@ -245,7 +245,7 @@ function Countries() {
 
   if (loaded) {
     return (
-      <body>
+      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
         <Row>
           <Card className="headerCardStyle">
