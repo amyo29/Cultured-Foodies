@@ -247,7 +247,7 @@ function Countries() {
     return (
       <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
-        <Row>
+        <Row className="rowStyle">
           <Card className="headerCardStyle">
             <Card.Img src={headerimg} className="headerImgStyle" />
             <Card.ImgOverlay>
@@ -420,7 +420,7 @@ function Countries() {
                 </Row>
               ))}
             </Container>
-            <div className="row pagination mt-4">
+            <div className="row pagination mt-4 rowStyle">
               <Pagination
                 count={Math.ceil(displayedCuisines.length / numPerPage)}
                 page={pageNumber}

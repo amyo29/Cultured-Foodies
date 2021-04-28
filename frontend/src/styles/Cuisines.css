@@ -17,6 +17,7 @@
     width: 100%;
 }
 
+
 .headerCardStyle {
     width: 100%;
     height: auto;
@@ -26,6 +27,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .subtitleTextStyle{
