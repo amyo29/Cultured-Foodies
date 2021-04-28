@@ -58,8 +58,7 @@ class BubbleMap extends Component {
       .attr("d", d3.geoPath().projection(projection));
 
     // create a tooltip
-    var toolTip = d3
-      .select("body")
+    d3.select("body")
       .append("div")
       .attr("id", "tooltip")
       .attr("style", "position: absolute; opacity: 0;")
@@ -97,9 +96,9 @@ class BubbleMap extends Component {
       })
       .on("mousemove", function (event, d) {
         d3.select("#tooltip")
-        .html("City: " + d.city + "<br>" + "Restaurants: " + d.restaurants)
-        .style("left", event.pageX + 10 + "px")
-        .style("top", event.pageY + "px");
+          .html("City: " + d.city + "<br>" + "Restaurants: " + d.restaurants)
+          .style("left", event.pageX + 10 + "px")
+          .style("top", event.pageY + "px");
       })
       .on("mouseout", function () {
         d3.select("#tooltip").style("opacity", 0);

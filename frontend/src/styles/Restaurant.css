@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap");
 
 .main-card {
   display: flex;
@@ -6,8 +6,8 @@
   justify-content: center;
   padding: 20px;
 }
-.card:hover{
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .card {
@@ -18,85 +18,83 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;  
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   max-width: 100%;
 }
 .card-text {
   word-wrap: break-word;
 }
 
-.Instance-header{
+.Instance-header {
   font-family: "Josefin Sans", Georgia, Times, serif;
   font-weight: bold;
-	text-align: center;
-	margin: auto;
-	align-items: center;
-	padding-top : 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.Instance{
-  background-color: bisque;
+  text-align: center;
   margin: auto;
-	justify-content: center;
-  
-}
-h5{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
-}
-
-h4{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
-}   
-
-.info{
-	align-items: center;
-	padding: 6%;
+  align-items: center;
+  padding-top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-.instance-photo{
-	height: 10%;
-	width: 50%;
-	padding-bottom: 10%;
-	align-items: center;
-	margin: auto;
+.Instance {
+  background-color: rgb(247, 235, 221);
+  margin: auto;
+  justify-content: center;
+}
+h5 {
+  font-family: "Josefin Sans", Georgia, Times, serif;
+}
+
+h4 {
+  font-family: "Josefin Sans", Georgia, Times, serif;
+}
+
+.info {
+  align-items: center;
+  padding: 6%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-.instance-text{
-	/**height: 10%;**/  
-	/**width: 50%;**/
-	padding-bottom: 10%;      
-	align-items: center;
-	margin: auto;
+.instance-photo {
+  height: 10%;
+  width: 50%;
+  padding-bottom: 10%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.instance-text {
+  /**height: 10%;**/
+  /**width: 50%;**/
+  padding-bottom: 10%;
+  align-items: center;
+  margin: auto;
   word-wrap: break-word;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-    
 
-.RelatedDeck{
-	font-family: 'Josefin Sans', Georgia, Times, serif;
-	padding: 6%;
+.RelatedDeck {
+  font-family: "Josefin Sans", Georgia, Times, serif;
+  padding: 6%;
   align-items: center;
   word-wrap: break-word;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 5%;
-}   
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
 
 .restaurant-card-img-top {
   align-items: center;
@@ -108,20 +106,20 @@ h4{
   margin-top: 0px !important;
   display: block !important;
 }
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:50%;
-  position:relative;
-  height:0;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
 }
-.map-responsive iframe{
+.map-responsive iframe {
   display: block;
   top: 0;
   right: 0;
   bottom: 0;
   left: 10%;
   padding: 0;
-  height:98%;
-  width:80%;
-  position:absolute;
+  height: 98%;
+  width: 80%;
+  position: absolute;
 }

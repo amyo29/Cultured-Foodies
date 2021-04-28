@@ -64,8 +64,7 @@ class BarChart extends Component {
       .style("font-family", "Josefin Sans")
       .style("font-size", "16");
 
-    var toolTip = d3
-      .select("body")
+    d3.select("body")
       .append("div")
       .attr("id", "tooltip")
       .style("font-family", "Josefin Sans")
