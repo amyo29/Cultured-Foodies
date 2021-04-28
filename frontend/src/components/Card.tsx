@@ -167,7 +167,11 @@ const CuisinesCard = (props: any) => {
           textToHighlight={cuisine["name"]}
         ></Highlighter>
       </h5>
-      <img src={cuisine.dishes[0].image_url} className="city-card-img-top" alt="" />
+      <img
+        src={cuisine.dishes[0].image_url}
+        className="city-card-img-top"
+        alt=""
+      />
       <div className="card-body align-self-start">
         <p>
           {cuisine?.countryID.split(", ").map((cID: string, i: number) => (
@@ -296,7 +300,9 @@ const CuisinesCard = (props: any) => {
             href="#collapseParagraph"
             aria-expanded="false"
             aria-controls="collapseParagraph"
-          ></a>
+          >
+            {" "}
+          </a>
         ) : (
           <></>
         )}

@@ -17,7 +17,7 @@ function Restaurant(id: any) {
 
   //render: map long/lat or city names to render map
   let API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-  let cityMapURL =
+  let restaurantMapURL =
     "https://www.google.com/maps/embed/v1/place?key=" +
     API_KEY +
     "&q=" +
@@ -110,7 +110,8 @@ function Restaurant(id: any) {
         <h4>Map Location</h4>
         <div className="map-responsive">
         <iframe
-          src={cityMapURL}
+          title="Restaurant Map"
+          src={restaurantMapURL}
           width="600"
           height="450"
           loading="lazy"

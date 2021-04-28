@@ -193,7 +193,9 @@ const CuisineHit = ({ hits }) =>
               href={`#id_${Math.floor(index / 3)}`}
               aria-expanded="false"
               aria-controls={`id_${Math.floor(index / 3)}`}
-            ></a>
+            >
+              {" "}
+            </a>
           </a>
         </div>
       ))}
@@ -397,7 +399,9 @@ const CityHit = ({ hits }) =>
               href={`#id_${Math.floor(index / 3)}c`}
               aria-expanded="false"
               aria-controls={`id_${Math.floor(index / 3)}c`}
-            ></a>
+            >
+              {" "}
+            </a>
           </a>
         </div>
       ))}

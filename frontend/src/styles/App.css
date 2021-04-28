@@ -1,9 +1,8 @@
-
 .background {
-  background-color: bisque;
+  background-color: rgb(247, 235, 221);
   /* background-color: #181818; */
 }
 
-.pagination{
+.pagination {
   justify-content: center;
 }

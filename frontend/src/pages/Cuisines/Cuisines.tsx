@@ -138,25 +138,23 @@ function Countries() {
       var cuisineObj = cuisines[i];
       var regions_list: Array<String> = [];
       var subregions_list: Array<String> = [];
-      // var populations_list: Array<number> = [];
+      var populations_list: Array<number> = [];
       var matchSearchQuery = true;
       var matchFilters = true;
       ///needs to be an AND operation
       var cuisineObjStr = cuisineObj["name"] + cuisineObj["country"];
-      // var countriesObj = cuisineObj["countryID"]
-      //   .split(",")
-      //   .forEach(function (countryID: string) {
-      //     var countryObj = countries[parseInt(countryID)];
-      //     regions_list.push(countryObj["region"]);
-      //     subregions_list.push(countryObj["subregion"]);
-      //     populations_list.push(countryObj["population"]);
-      //     cuisineObjStr +=
-      //       countryObj["capital"] +
-      //       countryObj["region"] +
-      //       countryObj["subregion"] +
-      //       countryObj["population"] +
-      //       countryObj["area"];
-      //   });
+      cuisineObj["countryID"].split(",").forEach(function (countryID: string) {
+        var countryObj = countries[parseInt(countryID)];
+        regions_list.push(countryObj["region"]);
+        subregions_list.push(countryObj["subregion"]);
+        populations_list.push(countryObj["population"]);
+        cuisineObjStr +=
+          countryObj["capital"] +
+          countryObj["region"] +
+          countryObj["subregion"] +
+          countryObj["population"] +
+          countryObj["area"];
+      });
       if (searchQuery !== "") {
         if (
           !cuisineObjStr
@@ -247,11 +245,11 @@ function Countries() {
 
   if (loaded) {
     return (
-      <body>
+      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
-        <Row>
+        <Row className="rowStyle">
           <Card className="headerCardStyle">
-            <Card.Img src={headerimg} className="headerImgStyle"/>
+            <Card.Img src={headerimg} className="headerImgStyle" />
             <Card.ImgOverlay>
               <Row className="rowStyle mt-4">
                 <Card.Title>
@@ -292,7 +290,7 @@ function Countries() {
         {loadedCards ? (
           <>
             <Container>
-              <Row style={{ padding: 20 }}>
+              <Row style={{ padding: 20, margin: "auto" }}>
                 <Col>
                   <DropdownButton id="dropdown-basic-button" title="Sort By">
                     <Dropdown.Item onClick={() => onSort("name", true)}>
@@ -422,7 +420,7 @@ function Countries() {
                 </Row>
               ))}
             </Container>
-            <div className="row pagination mt-4">
+            <div className="row pagination mt-4 rowStyle">
               <Pagination
                 count={Math.ceil(displayedCuisines.length / numPerPage)}
                 page={pageNumber}

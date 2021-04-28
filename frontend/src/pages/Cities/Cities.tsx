@@ -254,7 +254,7 @@ function Cities() {
 
   if (loaded) {
     return (
-      <body>
+      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
         <Container fluid>
           <Row>
@@ -307,7 +307,7 @@ function Cities() {
           <div>
             <a id="top"></a>
             <Container>
-              <Row style={{ padding: 20 }}>
+              <Row style={{ padding: 20, margin: "auto" }}>
                 <Col>
                   <DropdownButton id="dropdown-basic-button" title="Sort By">
                     <Dropdown.Item onClick={() => onSort("name", true)}>
@@ -482,7 +482,7 @@ function Cities() {
             </div>
           </div>
         </Container>
-        <FooterLarge/>
+        <FooterLarge />
       </body>
     );
   } else {

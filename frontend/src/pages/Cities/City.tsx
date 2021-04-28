@@ -317,6 +317,7 @@ function City(id: any) {
         <h2>Map Location</h2>
         <div className="map-responsive">
           <iframe
+            title="City Map"
             src={cityMapURL}
             width="600"
             height="450"

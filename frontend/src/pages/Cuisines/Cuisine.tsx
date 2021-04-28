@@ -210,6 +210,7 @@ function Cuisine(id: any) {
                         <Card>
                           {/* <Card.Header as="h3">Location</Card.Header> */}
                           <iframe
+                            title="Country Map"
                             src={
                               "https://www.google.com/maps/embed/v1/place?key=" +
                               API_KEY +
