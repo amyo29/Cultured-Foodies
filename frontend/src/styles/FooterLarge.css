@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap');
 /* position: fixed;
 bottom: 0; 	height: 20%;
 */
@@ -12,7 +12,7 @@ bottom: 0; 	height: 20%;
 	color: white;
 	display: flex;
   	flex-direction: row;
-	height: 170px;
+	height: 100%;
 /*
 
   flex-wrap: wrap;
@@ -25,8 +25,8 @@ bottom: 0; 	height: 20%;
 .footerDataLong {
 	position: relative;
 	display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+	flex-direction: column;
+	flex-basis: 100%;
 	width: 100%;
 	margin: 12px auto;
 	text-align: left;
@@ -46,14 +46,14 @@ bottom: 0; 	height: 20%;
 
 
 .container {
-	padding-top: 0px; /** 10 **/
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	padding-bottom: 0px; /** 30 **/
-	max-width: 1200px;
-	margin: auto;
+	padding-top: 0px !important; 
+	width: 100% !important;
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap!important;
+	padding-bottom: 0px!important; 
+	max-width: 1200px!important;
+	margin: auto!important;
 }
 
 /* .container * {
@@ -86,4 +86,4 @@ bottom: 0; 	height: 20%;
 	.container {
 		flex-direction: row;
 	}
-}
+} 
