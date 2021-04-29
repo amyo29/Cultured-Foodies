@@ -22,7 +22,7 @@ function SplashVertical() {
               through the ages and across the seas.
             </div>
           </div>
-
+          <hr/>
           <div className="arrow">
             <a href="#target">
               <BsCaretDownFill size={75} />

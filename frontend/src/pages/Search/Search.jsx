@@ -19,13 +19,13 @@ const CuisineHit = ({ hits }) =>
         <div className="col-md-4 mb-4">
           <a
             href={"/cuisines/" + hit["id"]}
-            className="card overflow-auto"
+            className="card"
             target="_blank"
             rel="noopener noreferrer"
             id="module"
             style={{ width: "40rem", fontSize: "16px" }}
           >
-            <div className="card-body align-self-start">
+            <div className="card-body align-self-start" style={{wordBreak: "break-all"}}>
               <p
                 className="collapse"
                 id={`id_${Math.floor(index / 3)}`}
@@ -232,7 +232,7 @@ const CityHit = ({ hits }) =>
           >
             <div
               className="card-body align-self-start"
-              style={{ fontSize: "16px" }}
+              style={{ fontSize: "16px", wordBreak: "break-all"}}
             >
               <p
                 className="collapse"
@@ -429,12 +429,12 @@ const RestaurantHit = ({ hits }) =>
         <div className="col-md-4 mb-4">
           <a
             href={"/restaurants/" + hit["id"]}
-            className="card overflow-auto"
+            className="card"
             target="_blank"
             rel="noopener noreferrer"
             style={{ width: "40rem" }}
           >
-            <div className="card-body align-self-start">
+            <div className="card-body align-self-start" style={{wordBreak: "break-all"}}>
               <div className="name">
                 <b>Restaurant Name: </b>
                 <Highlight tagName="mark" attribute="name" hit={hit} />

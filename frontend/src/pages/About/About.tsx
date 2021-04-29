@@ -137,7 +137,7 @@ function About() {
 
       <h2>Stats</h2>
       <Container>
-        <div className="row mb-4" style={{margin: "auto"}}>
+        <div className="row mb-4 w-100" style={{margin: "auto"}}>
           <div className="col-md-4">
             <div className="card">
               <div>
