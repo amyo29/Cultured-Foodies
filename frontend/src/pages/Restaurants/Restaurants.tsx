@@ -532,13 +532,13 @@ function Restaurants() {
     return (
       <body>
         <NavBarSolid />
-        <Row>
+        <Row className="rowStyle">
           <Card className="headerCardStyle">
             <Card.Img src={restImg} className="headerImgStyle"/>
             <Card.ImgOverlay>
               <Row className="rowStyle mt-4">
                 <Card.Title>
-                  <h1 className="headerTextStyle">Restaurants</h1>
+                  <h1 className="headerTextStyle rowStyle">Restaurants</h1>  
                 </Card.Title>
               </Row>
               <Row className="rowStyle">

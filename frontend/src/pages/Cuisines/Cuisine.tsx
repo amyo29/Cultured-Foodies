@@ -84,7 +84,7 @@ function Cuisine(id: any) {
                   </Col>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={i.toString()}>
-                  <Card>
+                  <Card style={{width: "auto"}}>
                     <Row style={{ padding: 20 }}>
                       <img
                         width={214}
@@ -206,7 +206,7 @@ function Cuisine(id: any) {
                           </div>
                         </Card>
                       </Col>
-                      <Col sm="8" style={{ maxHeight: "30rem" }}>
+                      <Col sm="8" style={{ maxHeight: "30rem", maxWidth: "55rem"}}>
                         <Card>
                           {/* <Card.Header as="h3">Location</Card.Header> */}
                           <iframe

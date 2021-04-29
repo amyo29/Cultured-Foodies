@@ -30,9 +30,9 @@ function FooterLarge() {
 			</div>
 			{/* Bottom of footer: website copyright */}
 			
-			<h3 className='copyrightText' style={{fontSize: "large"}}>
+			<div className='copyrightText' style={{fontSize: "large"}}>
 				Copyright © 2021 Cultured Foodies
-			</h3>
+			</div>   
 		</footer>
 	)
 }
