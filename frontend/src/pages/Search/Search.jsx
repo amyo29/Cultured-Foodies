@@ -1,7 +1,5 @@
 import algoliasearch from "algoliasearch/lite";
 import NavBarSolid from "../../components/NavBarSolid";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import "../../styles/Search.css";
 import {
   InstantSearch,

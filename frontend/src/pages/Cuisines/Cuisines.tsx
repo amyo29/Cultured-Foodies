@@ -47,8 +47,7 @@ function Countries() {
 
   const [numPerPage, setNumPerPage] = useState(12);
   const [pageNumber, setPageNumber] = useState(1);
-  const [loaded, changeLoading] = useState(false);
-  const [loadedCards, changeLoadingCards] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -78,7 +77,6 @@ function Countries() {
     if (data) {
       setCuisines(data.cuisines);
       setDisplayedCuisines(data.cuisines);
-      changeLoadingCards(true);
     }
   }, [data]);
 
@@ -91,7 +89,7 @@ function Countries() {
         dict_countries[id] = country;
       });
       setCountries(dict_countries);
-      changeLoading(true);
+      setLoaded(true);
     });
   });
 
@@ -287,7 +285,7 @@ function Countries() {
         </Row>
 
         {/* <h1 className="text-align center">Cuisines</h1> */}
-        {loadedCards ? (
+        {loaded ? (
           <>
             <Container>
               <Row style={{ padding: 20, margin: "auto" }}>

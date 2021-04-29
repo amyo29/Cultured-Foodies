@@ -49,7 +49,7 @@ function Cities() {
 
   const [numPerPage, setNumPerPage] = useState(12);
   const [pageNumber, setPageNumber] = useState(1);
-  const [loaded, changeLoading] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   var states = [
     "Alabama",
     "Alaska",
@@ -91,7 +91,6 @@ function Cities() {
   var leisurescore = ["0-3", "3-6", "6-10"];
   var costscore = ["0-3", "3-6", "6-10"];
 
-  // var filterableNames = [{ name: "States", value: "states", options: states }];
   const [filteringStates, setFilteringStates] = useState<Array<String>>([]);
   const [filteringLeisure, setFilteringLeisure] = useState<Array<String>>([]);
   const [filteringCost, setFilteringCost] = useState<Array<String>>([]);
@@ -109,7 +108,7 @@ function Cities() {
     if (data) {
       setCities(data.cities);
       setDisplayedCities(data.cities);
-      changeLoading(true);
+      setLoaded(true);
     }
   }, [data]);
 

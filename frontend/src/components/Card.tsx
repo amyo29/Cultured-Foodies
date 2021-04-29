@@ -1,6 +1,3 @@
-import "../styles/About.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import { MDBIcon } from "mdbreact";
 import { Highlight } from "react-instantsearch-dom";
 import Highlighter from "react-highlight-words";
