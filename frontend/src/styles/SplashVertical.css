@@ -5,7 +5,8 @@
   font-family: "Josefin Sans", Georgia, Times, serif;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../static_resources/home/homephoto.jpg"); /** https://stackoverflow.com/questions/8195215/css-background-image-on-background-color **/
-  height: calc(100vh + 60px); /*+64px*/
+  /* height: calc(100vh + 60px); +64px */
+  height: calc(80vh + 64px);
   background-size: cover;
   background-position-x: 70%;
   background-position-y: 10%;
