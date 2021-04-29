@@ -22,14 +22,13 @@ function SplashVertical() {
               through the ages and across the seas.
             </div>
           </div>
-          <hr/>
-          <div className="arrow">
+        </div>
+        <div ref={myRef} className="purpose bottom-centered">
+        <div className="arrow">
             <a href="#target">
               <BsCaretDownFill size={75} />
             </a>
           </div>
-        </div>
-        <div ref={myRef} className="purpose">
         <div className="purpose-header">
           Explore the intersection of cuisine and culture.
         </div>
