@@ -4,7 +4,6 @@ import FooterLarge from "../../components/FooterLarge";
 import "../../styles/SplashVertical.css";
 import { BsCaretDownFill } from "react-icons/bs";
 import Models from "./Models";
-import { relative } from "node:path";
 
 function SplashVertical() {
   const myRef = useRef<HTMLDivElement>(null);

@@ -1,7 +1,7 @@
 import { MDBIcon } from "mdbreact";
 import { Highlight } from "react-instantsearch-dom";
 import Highlighter from "react-highlight-words";
-
+import "../styles/Cards.css";
 const InfoCard = (props: any) => {
   const { title, description, img, link } = props;
   return (
