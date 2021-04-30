@@ -9,27 +9,57 @@
           "children": [
             {
               "name": "Afghanistan",
-              "children": [{ "name": "Afghan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Afghan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Bangladesh",
-              "children": [{ "name": "Bangladeshi", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Bangladeshi",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Iran (Islamic Republic of)",
-              "children": [{ "name": "Iranian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Iranian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Nepal",
-              "children": [{ "name": "Nepalese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Nepalese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Pakistan",
-              "children": [{ "name": "Pakistani", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Pakistani",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Sri Lanka",
-              "children": [{ "name": "Sri Lankan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Sri Lankan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -38,38 +68,79 @@
           "children": [
             {
               "name": "Armenia",
-              "children": [{ "name": "Armenian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Armenian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Georgia",
-              "children": [{ "name": "Georgian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Georgian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Israel",
               "children": [
-                { "name": "Israeli", "minSize": 5, "size": 5 },
-                { "name": "Jewish", "minSize": 5, "size": 5 }
+                {
+                  "name": "Israeli",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Jewish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Lebanon",
-              "children": [{ "name": "Lebanese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Lebanese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Saudi Arabia",
-              "children": [{ "name": "Saudi Arabian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Saudi Arabian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Syrian Arab Republic",
-              "children": [{ "name": "Syrian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Syrian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Turkey",
-              "children": [{ "name": "Turkish", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Turkish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Yemen",
-              "children": [{ "name": "Yemeni", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Yemeni",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -78,35 +149,75 @@
           "children": [
             {
               "name": "Myanmar",
-              "children": [{ "name": "Burmese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Burmese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Cambodia",
-              "children": [{ "name": "Cambodian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Cambodian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Philippines",
-              "children": [{ "name": "Filipino", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Filipino",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Indonesia",
-              "children": [{ "name": "Indonesian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Indonesian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Malaysia",
-              "children": [{ "name": "Malaysian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Malaysian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Singapore",
-              "children": [{ "name": "Singaporean", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Singaporean",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Thailand",
-              "children": [{ "name": "Thai", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Thai",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Vietnam",
-              "children": [{ "name": "Vietnamese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Vietnamese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -116,28 +227,63 @@
             {
               "name": "China",
               "children": [
-                { "name": "Cantonese", "minSize": 5, "size": 5 },
-                { "name": "Chinese", "minSize": 5, "size": 5 },
-                { "name": "Hong Kong", "minSize": 5, "size": 5 },
-                { "name": "Sichuan", "minSize": 5, "size": 5 },
-                { "name": "Tibetan", "minSize": 5, "size": 5 }
+                {
+                  "name": "Cantonese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Chinese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Hong Kong",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Sichuan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Tibetan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Japan",
-              "children": [{ "name": "Japanese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Japanese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Korea (Republic of)",
-              "children": [{ "name": "Korean", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Korean",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Mongolia",
-              "children": [{ "name": "Mongolian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Mongolian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Taiwan",
-              "children": [{ "name": "Taiwanese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Taiwanese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -146,7 +292,12 @@
           "children": [
             {
               "name": "Uzbekistan",
-              "children": [{ "name": "Uzbek", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Uzbek",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         }
@@ -160,26 +311,52 @@
           "children": [
             {
               "name": "Albania",
-              "children": [{ "name": "Albanian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Albanian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Spain",
               "children": [
-                { "name": "Balearic", "minSize": 5, "size": 5 },
-                { "name": "Spanish", "minSize": 5, "size": 5 }
+                {
+                  "name": "Balearic",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Spanish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Greece",
-              "children": [{ "name": "Greek", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Greek",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Italy",
-              "children": [{ "name": "Italian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Italian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Portugal",
-              "children": [{ "name": "Portuguese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Portuguese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -188,19 +365,39 @@
           "children": [
             {
               "name": "Austria",
-              "children": [{ "name": "Austrian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Austrian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Belgium",
-              "children": [{ "name": "Belgian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Belgian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "France",
-              "children": [{ "name": "French", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "French",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Germany",
-              "children": [{ "name": "German", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "German",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -210,28 +407,58 @@
             {
               "name": "United Kingdom of Great Britain and Northern Ireland",
               "children": [
-                { "name": "British", "minSize": 5, "size": 5 },
-                { "name": "Scottish", "minSize": 5, "size": 5 },
-                { "name": "Welsh", "minSize": 5, "size": 5 }
+                {
+                  "name": "British",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Scottish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Welsh",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Denmark",
-              "children": [{ "name": "Danish", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Danish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Iceland",
-              "children": [{ "name": "Icelandic", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Icelandic",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Ireland",
-              "children": [{ "name": "Irish", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Irish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Sweden",
               "children": [
-                { "name": "Swedish", "minSize": 5, "size": 5 },
-                { "name": "Swiss", "minSize": 5, "size": 5 }
+                {
+                  "name": "Swedish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Swiss",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             }
           ]
@@ -241,23 +468,48 @@
           "children": [
             {
               "name": "Hungary",
-              "children": [{ "name": "Hungarian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Hungarian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Moldova (Republic of)",
-              "children": [{ "name": "Moldovan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Moldovan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Poland",
-              "children": [{ "name": "Polish", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Polish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Russian Federation",
-              "children": [{ "name": "Russian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Russian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Ukraine",
-              "children": [{ "name": "Ukrainian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Ukrainian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         }
@@ -272,23 +524,64 @@
             {
               "name": "United States of America",
               "children": [
-                { "name": "American", "minSize": 5, "size": 5 },
-                { "name": "Amish", "minSize": 5, "size": 5 },
-                { "name": "Cajun", "minSize": 5, "size": 5 },
-                { "name": "California", "minSize": 5, "size": 5 },
-                { "name": "Creole", "minSize": 5, "size": 5 },
-                { "name": "Hawaiian", "minSize": 5, "size": 5 },
-                { "name": "New American", "minSize": 5, "size": 5 },
-                { "name": "New Mexican", "minSize": 5, "size": 5 },
-                { "name": "Soul Food", "minSize": 5, "size": 5 },
-                { "name": "Southern", "minSize": 5, "size": 5 },
-                { "name": "Southwestern", "minSize": 5, "size": 5 },
-                { "name": "Tex-Mex", "minSize": 5, "size": 5 }
+                {
+                  "name": "American",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Amish",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Cajun",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "California",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Creole",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Hawaiian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "New American",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "New Mexican",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Soul Food",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Southern",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Southwestern",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Tex-Mex",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Canada",
-              "children": [{ "name": "Canadian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Canadian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -297,47 +590,102 @@
           "children": [
             {
               "name": "Argentina",
-              "children": [{ "name": "Argentine", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Argentine",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Bolivia (Plurinational State of)",
-              "children": [{ "name": "Bolivian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Bolivian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Brazil",
-              "children": [{ "name": "Brazilian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Brazilian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Chile",
-              "children": [{ "name": "Chilean", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Chilean",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Colombia",
-              "children": [{ "name": "Colombian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Colombian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Ecuador",
-              "children": [{ "name": "Ecuadorian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Ecuadorian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Guyana",
-              "children": [{ "name": "Guyanese", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Guyanese",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Paraguay",
-              "children": [{ "name": "Paraguayan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Paraguayan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Peru",
-              "children": [{ "name": "Peruvian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Peruvian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Uruguay",
-              "children": [{ "name": "Uruguayan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Uruguayan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Venezuela (Bolivarian Republic of)",
-              "children": [{ "name": "Venezuelan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Venezuelan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -346,28 +694,56 @@
           "children": [
             {
               "name": "Cuba",
-              "children": [{ "name": "Cuban", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Cuban",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Dominican Republic",
-              "children": [{ "name": "Dominican", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Dominican",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Haiti",
-              "children": [{ "name": "Haitian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Haitian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Jamaica",
-              "children": [{ "name": "Jamaican", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Jamaican",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Puerto Rico",
-              "children": [{ "name": "Puerto Rican", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Puerto Rican",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Trinidad and Tobago",
               "children": [
-                { "name": "Trinidad And Tobago", "minSize": 5, "size": 5 }
+                {
+                  "name": "Trinidad And Tobago",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             }
           ]
@@ -377,15 +753,30 @@
           "children": [
             {
               "name": "Mexico",
-              "children": [{ "name": "Mexican", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Mexican",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Nicaragua",
-              "children": [{ "name": "Nicaraguan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Nicaraguan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "El Salvador",
-              "children": [{ "name": "Salvadorean", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Salvadorean",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         }
@@ -399,11 +790,21 @@
           "children": [
             {
               "name": "Australia",
-              "children": [{ "name": "Australian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Australian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "New Zealand",
-              "children": [{ "name": "New Zealand", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "New Zealand",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         }
@@ -417,18 +818,34 @@
           "children": [
             {
               "name": "Ethiopia",
-              "children": [{ "name": "Ethiopian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Ethiopian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "British Indian Ocean Territory",
               "children": [
-                { "name": "Indian", "minSize": 5, "size": 5 },
-                { "name": "Punjabi", "minSize": 5, "size": 5 }
+                {
+                  "name": "Indian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                },
+                {
+                  "name": "Punjabi",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
               ]
             },
             {
               "name": "Somalia",
-              "children": [{ "name": "Somali", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Somali",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -437,11 +854,21 @@
           "children": [
             {
               "name": "Morocco",
-              "children": [{ "name": "Moroccan", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Moroccan",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             },
             {
               "name": "Tunisia",
-              "children": [{ "name": "Tunisian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Tunisian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -450,7 +877,12 @@
           "children": [
             {
               "name": "Nigeria",
-              "children": [{ "name": "Nigerian", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "Nigerian",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         },
@@ -459,7 +891,12 @@
           "children": [
             {
               "name": "South Africa",
-              "children": [{ "name": "South African", "minSize": 5, "size": 5 }]
+              "children": [
+                {
+                  "name": "South African",
+                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                }
+              ]
             }
           ]
         }
