@@ -1,71 +1,80 @@
 .container {
-    overflow: "hidden";
+  overflow: "hidden";
 }
 
 .row-center {
-    justify-content: "center";
-    align-items: "center";
-    text-align: center;
+  justify-content: "center";
+  align-items: "center";
+  text-align: center;
 }
 
 .col.center-col {
-    justify-content: "center" !important;
-    align-items: "center" !important;
-    margin-left: auto;
-    margin-right: auto;
+  justify-content: "center" !important;
+  align-items: "center" !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .headerStyle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center !important;
-    font-size:9vw;
-    animation-duration: 2s;
-    animation-name: fadeIn;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center !important;
+  font-size: 9vw;
+  animation-duration: 2s;
+  animation-name: fadeIn;
 }
 
 .header2Style {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center !important;
-    font-size: 5vw;
-    animation-duration: 5s;
-    animation-name: slidein;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center !important;
+  font-size: 5vw;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 
 .header3Style {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center !important;
-    font-size: 2vw;
-    animation-duration: 7s;
-    animation-name: slidein;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center !important;
+  font-size: 2vw;
+  animation-duration: 7s;
+  animation-name: slidein;
+}
+
+.dropdown-menu {
+  height: 300px;
+  overflow-y: scroll;
 }
 
 .animation {
-    animation-duration: 5s;
-    animation-name: slidein;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 
 .pageStyle {
-    padding-bottom: 128px;
-  }
+  padding-bottom: 128px;
+}
 
 @keyframes slidein {
-from {
+  from {
     margin-left: 100%;
     width: 300%;
-}
+  }
 
-to {
+  to {
     margin-left: 0%;
     width: 100%;
-}
+  }
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* @keyframes fadeOutUp {

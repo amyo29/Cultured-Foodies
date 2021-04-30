@@ -253,7 +253,7 @@ function Cities() {
 
   if (loaded) {
     return (
-      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
+      <body style={{ backgroundColor: "rgb(247, 235, 221)" }}>
         <NavBarSolid />
         <Container fluid>
           <Row>
@@ -469,7 +469,10 @@ function Cities() {
               ))}
             </Container>
 
-            <div className="row pagination mt-4">
+            <div
+              className="row pagination mt-4"
+              style={{ paddingBottom: "20px" }}
+            >
               <Pagination
                 count={Math.ceil(displayedCities.length / numPerPage)}
                 page={pageNumber}

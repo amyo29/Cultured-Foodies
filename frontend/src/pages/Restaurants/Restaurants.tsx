@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Row } from "react-bootstrap";
+import { Card, Row, Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
@@ -532,66 +532,70 @@ function Restaurants() {
     return (
       <body>
         <NavBarSolid />
-        <Row className="rowStyle">
-          <Card className="headerCardStyle">
-            <Card.Img src={restImg} className="headerImgStyle"/>
-            <Card.ImgOverlay>
-              <Row className="rowStyle mt-4">
-                <Card.Title>
-                  <h1 className="headerTextStyle rowStyle">Restaurants</h1>  
-                </Card.Title>
-              </Row>
-              <Row className="rowStyle">
-                <Form
-                  inline
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                  }}
-                >
-                  <FormControl
-                    className="mr-sm-2"
-                    type="text"
-                    placeholder="Search Restaurants"
-                    ref={textInput}
-                    onKeyPress={(event: any) => {
-                      if (event.key === "Enter") {
-                        searchButtonClicked(false);
-                      }
+        <Container fluid>
+          <Row>
+            <Card className="headerCardStyle">
+              <Card.Img src={restImg} className="headerImgStyle" />
+              <Card.ImgOverlay>
+                <Row className="rowStyle mt-4">
+                  <Card.Title>
+                    <h1 className="headerTextStyle rowStyle">Restaurants</h1>
+                  </Card.Title>
+                </Row>
+                <Row className="rowStyle">
+                  <Form
+                    inline
+                    onSubmit={(e) => {
+                      e.preventDefault();
                     }}
-                  />
-                  <Button
-                    variant="info"
-                    onClick={() => searchButtonClicked(false)}
                   >
-                    Search
-                  </Button>
+                    <FormControl
+                      className="mr-sm-2"
+                      type="text"
+                      placeholder="Search Restaurants"
+                      ref={textInput}
+                      onKeyPress={(event: any) => {
+                        if (event.key === "Enter") {
+                          searchButtonClicked(false);
+                        }
+                      }}
+                    />
+                    <Button
+                      variant="info"
+                      onClick={() => searchButtonClicked(false)}
+                    >
+                      Search
+                    </Button>
 
-                  <Button
-                    variant="info"
-                    onClick={() => searchButtonClicked(true)}
-                  >
-                    Clear
-                  </Button>
-                </Form>
-              </Row>
-              <Row className="rowStyle mt-5">
-                <Card.Subtitle className="subtitleTextStyle">
-                  <h4>
-                    😋 Hungry? Whether you're looking for French escargot or
-                    Korean bulgogi, we've got just the place for you! 🍽️{" "}
-                  </h4>
-                </Card.Subtitle>
-              </Row>
-            </Card.ImgOverlay>
-          </Card>
-        </Row>
+                    <Button
+                      variant="info"
+                      onClick={() => searchButtonClicked(true)}
+                    >
+                      Clear
+                    </Button>
+                  </Form>
+                </Row>
+                <Row className="rowStyle mt-5">
+                  <Card.Subtitle className="subtitleTextStyle">
+                    <h4>
+                      😋 Hungry? Whether you're looking for French escargot or
+                      Korean bulgogi, we've got just the place for you! 🍽️{" "}
+                    </h4>
+                  </Card.Subtitle>
+                </Row>
+              </Card.ImgOverlay>
+            </Card>
+          </Row>
 
-        <MUIDataTable
-          title={"Restaurants"}
-          data={restaurants}
-          columns={columns}
-          options={options}
-        />
+          <div style={{ paddingBottom: "20px" }}>
+            <MUIDataTable
+              title={"Restaurants"}
+              data={restaurants}
+              columns={columns}
+              options={options}
+            />
+          </div>
+        </Container>
         <FooterLarge />
       </body>
     );

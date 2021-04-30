@@ -54,7 +54,7 @@ function About() {
     <div className="font-style center pageStyle">
       <NavBarSolid />
 
-      <h1>About Us</h1>
+      <h1 style={{paddingTop: "20px"}}>About Us</h1>
 
       <p className="summary">
         Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on
