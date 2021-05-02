@@ -49,7 +49,7 @@ function Cities() {
 
   const [numPerPage, setNumPerPage] = useState(12);
   const [pageNumber, setPageNumber] = useState(1);
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, changeLoading] = useState(false);
   var states = [
     "Alabama",
     "Alaska",
@@ -91,6 +91,7 @@ function Cities() {
   var leisurescore = ["0-3", "3-6", "6-10"];
   var costscore = ["0-3", "3-6", "6-10"];
 
+  // var filterableNames = [{ name: "States", value: "states", options: states }];
   const [filteringStates, setFilteringStates] = useState<Array<String>>([]);
   const [filteringLeisure, setFilteringLeisure] = useState<Array<String>>([]);
   const [filteringCost, setFilteringCost] = useState<Array<String>>([]);
@@ -108,7 +109,7 @@ function Cities() {
     if (data) {
       setCities(data.cities);
       setDisplayedCities(data.cities);
-      setLoaded(true);
+      changeLoading(true);
     }
   }, [data]);
 
@@ -253,7 +254,7 @@ function Cities() {
 
   if (loaded) {
     return (
-      <body style={{ backgroundColor: "rgb(247, 235, 221)" }}>
+      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
         <NavBarSolid />
         <Container fluid>
           <Row>
@@ -469,10 +470,7 @@ function Cities() {
               ))}
             </Container>
 
-            <div
-              className="row pagination mt-4"
-              style={{ paddingBottom: "20px" }}
-            >
+            <div className="row pagination mt-4">
               <Pagination
                 count={Math.ceil(displayedCities.length / numPerPage)}
                 page={pageNumber}

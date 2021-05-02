@@ -12,7 +12,7 @@
 
 .headerTextStyle {
   text-shadow: 1px 1px 3px black;
-  font-size: 11rem;
+  font-size: 8vw !important;
   color: white;
   width: 100%;
 }
