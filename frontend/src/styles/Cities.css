@@ -1,4 +1,4 @@
-.headerImgStyle {
+.Cities-HeaderImgStyle {
     align-items: center;
     justify-content: center !important;
     object-fit: cover !important;
@@ -10,25 +10,25 @@
     opacity: 0.7 !important;
 }
 
-.headerTextStyle {
+.Cities-HeaderTextStyle {
     text-shadow: 1px 1px 3px black;
     font-size: 8vw !important;
     color: white !important;
-    width: 100%;
+    width: 100% ;
 }
 
-.headerCardStyle {
+.Cities-HeaderCardStyle {
     width: 100%;
     height: auto;
 }
 
-.rowStyle {
+.Cities-rowStyle {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.subtitleTextStyle{
+.Cities-subtitleTextStyle{
     text-shadow: 1px 1px 3px black;
     color: white;
     width: 100%;

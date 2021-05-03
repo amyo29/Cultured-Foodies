@@ -8,16 +8,16 @@
   margin-top: 0px;
   display: block;
   opacity: 0.7;
-};
+}
 
-.headerTextStyle {
+.textStyleRest {
   text-shadow: 1px 1px 3px black;
   font-size: 8vw !important;
   color: white;
   width: 100%;
 }
 
-headerCardStyle {
+.headerCardStyle {
   width: 100%;
   height: auto;
 }

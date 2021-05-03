@@ -1,28 +1,28 @@
-.headerImgStyle {
+.CuisinesheaderImgStyle {
   align-items: center;
-  justify-content: center !important;
-  object-fit: cover !important;
-  width: 100% !important;
-  height: 450px !important;
-  margin-bottom: 0px !important;
-  margin-top: 0px !important;
-  display: block !important;
-  opacity: 0.7 !important;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: block;
+  opacity: 0.7;
 }
 
-.headerTextStyle {
+.CuisinesheaderTextStyle {
   text-shadow: 1px 1px 3px black;
-  font-size: 8vw !important;
-  color: white !important;
+  font-size: 8vw;
+  color: white;
   width: 100%;
 }
 
-.headerCardStyle {
+.CuisinesheaderCardStyle {
   width: 100%;
   height: auto;
 }
 
-.rowStyle {
+.CuisinesrowStyle {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
   margin-left: 0px;
 }
 
-.subtitleTextStyle {
+.Cuisines-subtitleTextStyle {
   text-shadow: 1px 1px 3px black;
   color: white;
   width: 100%;

@@ -539,7 +539,7 @@ function Restaurants() {
               <Card.ImgOverlay>
                 <Row className="rowStyle mt-4">
                   <Card.Title>
-                    <h1 className="headerTextStyle rowStyle">Restaurants</h1>
+                    <h1 className="rowStyle textStyleRest">Restaurants</h1>
                   </Card.Title>
                 </Row>
                 <Row className="rowStyle">

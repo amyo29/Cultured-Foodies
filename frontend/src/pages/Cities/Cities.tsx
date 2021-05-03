@@ -258,18 +258,18 @@ function Cities() {
         <NavBarSolid />
         <Container fluid>
           <Row>
-            <Card className="headerCardStyle">
-              <Card.Img src={citiesImg} className="headerImgStyle" />
+            <Card className="Cities-HeaderCardStyle">
+              <Card.Img src={citiesImg} className="Cities-HeaderImgStyle" />
               <Card.ImgOverlay>
                 <Row className="rowStyle mt-4">
                   <Col className="text-align center">
                     <Card.Title>
-                      <h1 className="headerTextStyle">Cities</h1>
+                      <h1 className="Cities-HeaderTextStyle">Cities</h1>
                     </Card.Title>
                   </Col>
                 </Row>
 
-                <Row className="rowStyle">
+                <Row className="Cities-rowStyle">
                   <Form
                     inline
                     onSubmit={(e) => {
@@ -287,7 +287,7 @@ function Cities() {
                 </Row>
                 <br />
                 <Row className="rowStyle mt-4">
-                  <Card.Subtitle className="subtitleTextStyle">
+                  <Card.Subtitle className="Cities-subtitleTextStyle">
                     <h4>
                       {" "}
                       🌆 Wherever you are, wherever you're headed, all you want

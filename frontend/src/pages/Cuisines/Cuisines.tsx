@@ -247,15 +247,15 @@ function Countries() {
         <NavBarSolid />
         <Container fluid>
           <Row>
-            <Card className="headerCardStyle">
-              <Card.Img src={headerimg} className="headerImgStyle" />
+            <Card className="CuisinesheaderCardStyle">
+              <Card.Img src={headerimg} className="CuisinesheaderImgStyle" />
               <Card.ImgOverlay>
-                <Row className="rowStyle mt-4">
+                <Row className="CuisinesrowStyle mt-4">
                   <Card.Title>
-                    <h1 className="headerTextStyle">Cuisines</h1>
+                    <h1 className="CuisinesheaderTextStyle">Cuisines</h1>
                   </Card.Title>
                 </Row>
-                <Row className="rowStyle">
+                <Row className="CuisinesrowStyle">
                   <Form
                     inline
                     onSubmit={(e) => {
@@ -271,8 +271,8 @@ function Countries() {
                     {/* <Button onClick={searchOnClick}></Button> */}
                   </Form>
                 </Row>
-                <Row className="rowStyle mt-5">
-                  <Card.Subtitle className="subtitleTextStyle">
+                <Row className="CuisinesrowStyle mt-5">
+                  <Card.Subtitle className="Cuisines-subtitleTextStyle">
                     <h4> 🌎 Worldwide food for thought 💭</h4>
                     <h5>
                       {" "}
