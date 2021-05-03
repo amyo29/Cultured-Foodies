@@ -5,7 +5,7 @@ import "../styles/Visualizations.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Tabs, Tab, Paper } from "@material-ui/core";
 import Radar from "react-d3-radar";
-
+import Grid from "@material-ui/core/Grid";
 import qualityOfLifeScoresPerCity from "../visualizationData/ourData/qualityOfLifeScoresPerCity.json";
 import BubbleMap from "../components/Visualizations/BubbleMap";
 import cuisinesSunburst from "../visualizationData/ourData/cuisinesBreakdown.json";
@@ -80,33 +80,42 @@ function Visualizations() {
         <Paper>
           {value === 0 && (
             <>
-              <h3 className = "text-center">
+              <h3 className="text-center pt-2">
                 Breakdown of Regions, Subregions, and Countries of Cuisines
               </h3>
-
-              <Sunburst
-                data={cuisinesSunburst}
-                scale="exponential"
-                tooltipContent={
-                  <div
-                    class="sunburstTooltip"
-                    style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
-                  />
-                }
-                tooltip
-                tooltipPosition="right"
-                keyId="Sunburst"
-                width={window.innerWidth * 0.8}
-                value="minSize"
-                height={window.innerHeight * 0.8}
-              />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  display: "flex",
+                }}
+              >
+                <Sunburst
+                  data={cuisinesSunburst}
+                  scale="exponential"
+                  tooltipContent={
+                    <div
+                      class="sunburstTooltip"
+                      style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
+                    />
+                  }
+                  tooltip
+                  tooltipPosition="right"
+                  keyId="Sunburst"
+                  width={window.innerWidth * 0.8}
+                  value="minSize"
+                  height={window.innerHeight * 0.8}
+                />
+              </div>
             </>
           )}
 
           {value === 1 && (
             <>
               {" "}
-              <h3 className = "text-center">Number of Restaurants in Cities</h3>
+              <h3 className="text-center pt-2">
+                Number of Restaurants in Cities
+              </h3>
               <Row>
                 <BubbleMap class="animation"></BubbleMap>
               </Row>
@@ -114,17 +123,20 @@ function Visualizations() {
           )}
           {value === 2 && (
             <>
-              <h3 className = "text-center">
+              <h3 className="text-center pt-2">
                 Quality of Life Scores for {currentCity.name},{" "}
                 {currentCity.state}
               </h3>
               <div class="center">
-                <DropdownButton variant = "info" id="dropdown-variants-info" title="Select City">
-                  
+                <DropdownButton
+                  variant="info"
+                  id="dropdown-variants-info"
+                  title="Select City"
+                >
                   {cities.map((city, index) => {
                     return (
                       <Dropdown.Item onClick={() => selectCity(index)}>
-                        {city.name}
+                        {city.name}, {city.state}
                       </Dropdown.Item>
                     );
                   })}

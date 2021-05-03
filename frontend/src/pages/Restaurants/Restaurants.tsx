@@ -567,6 +567,8 @@ function Restaurants() {
                       Search
                     </Button>
 
+                    <p style={{paddingRight: "5px"}}/>
+
                     <Button
                       variant="info"
                       onClick={() => searchButtonClicked(true)}

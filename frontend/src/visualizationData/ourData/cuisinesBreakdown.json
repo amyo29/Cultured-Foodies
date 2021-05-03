@@ -12,7 +12,7 @@
               "children": [
                 {
                   "name": "Afghan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -21,7 +21,7 @@
               "children": [
                 {
                   "name": "Bangladeshi",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -30,7 +30,7 @@
               "children": [
                 {
                   "name": "Iranian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -39,7 +39,7 @@
               "children": [
                 {
                   "name": "Nepalese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -48,7 +48,7 @@
               "children": [
                 {
                   "name": "Pakistani",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -57,7 +57,7 @@
               "children": [
                 {
                   "name": "Sri Lankan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -71,7 +71,7 @@
               "children": [
                 {
                   "name": "Armenian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -80,7 +80,7 @@
               "children": [
                 {
                   "name": "Georgian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -89,11 +89,11 @@
               "children": [
                 {
                   "name": "Israeli",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Jewish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -102,7 +102,7 @@
               "children": [
                 {
                   "name": "Lebanese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -111,7 +111,7 @@
               "children": [
                 {
                   "name": "Saudi Arabian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -120,7 +120,7 @@
               "children": [
                 {
                   "name": "Syrian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -129,7 +129,7 @@
               "children": [
                 {
                   "name": "Turkish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -138,7 +138,7 @@
               "children": [
                 {
                   "name": "Yemeni",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -152,7 +152,7 @@
               "children": [
                 {
                   "name": "Burmese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -161,7 +161,7 @@
               "children": [
                 {
                   "name": "Cambodian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -170,7 +170,7 @@
               "children": [
                 {
                   "name": "Filipino",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -179,7 +179,7 @@
               "children": [
                 {
                   "name": "Indonesian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -188,7 +188,7 @@
               "children": [
                 {
                   "name": "Malaysian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -197,7 +197,7 @@
               "children": [
                 {
                   "name": "Singaporean",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -206,7 +206,7 @@
               "children": [
                 {
                   "name": "Thai",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -215,7 +215,7 @@
               "children": [
                 {
                   "name": "Vietnamese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -229,23 +229,23 @@
               "children": [
                 {
                   "name": "Cantonese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Chinese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Hong Kong",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Sichuan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Tibetan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -254,7 +254,7 @@
               "children": [
                 {
                   "name": "Japanese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -263,7 +263,7 @@
               "children": [
                 {
                   "name": "Korean",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -272,7 +272,7 @@
               "children": [
                 {
                   "name": "Mongolian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -281,7 +281,7 @@
               "children": [
                 {
                   "name": "Taiwanese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -295,7 +295,7 @@
               "children": [
                 {
                   "name": "Uzbek",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -314,7 +314,7 @@
               "children": [
                 {
                   "name": "Albanian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -323,11 +323,11 @@
               "children": [
                 {
                   "name": "Balearic",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Spanish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -336,7 +336,7 @@
               "children": [
                 {
                   "name": "Greek",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -345,7 +345,7 @@
               "children": [
                 {
                   "name": "Italian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -354,7 +354,7 @@
               "children": [
                 {
                   "name": "Portuguese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -368,7 +368,7 @@
               "children": [
                 {
                   "name": "Austrian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -377,7 +377,7 @@
               "children": [
                 {
                   "name": "Belgian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -386,7 +386,7 @@
               "children": [
                 {
                   "name": "French",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -395,7 +395,7 @@
               "children": [
                 {
                   "name": "German",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -409,15 +409,15 @@
               "children": [
                 {
                   "name": "British",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Scottish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Welsh",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -426,7 +426,7 @@
               "children": [
                 {
                   "name": "Danish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -435,7 +435,7 @@
               "children": [
                 {
                   "name": "Icelandic",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -444,7 +444,7 @@
               "children": [
                 {
                   "name": "Irish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -453,11 +453,11 @@
               "children": [
                 {
                   "name": "Swedish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Swiss",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -471,7 +471,7 @@
               "children": [
                 {
                   "name": "Hungarian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -480,7 +480,7 @@
               "children": [
                 {
                   "name": "Moldovan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -489,7 +489,7 @@
               "children": [
                 {
                   "name": "Polish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -498,7 +498,7 @@
               "children": [
                 {
                   "name": "Russian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -507,7 +507,7 @@
               "children": [
                 {
                   "name": "Ukrainian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -526,51 +526,51 @@
               "children": [
                 {
                   "name": "American",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Amish",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Cajun",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "California",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Creole",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Hawaiian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "New American",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "New Mexican",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Soul Food",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Southern",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Southwestern",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Tex-Mex",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -579,7 +579,7 @@
               "children": [
                 {
                   "name": "Canadian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -593,7 +593,7 @@
               "children": [
                 {
                   "name": "Argentine",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -602,7 +602,7 @@
               "children": [
                 {
                   "name": "Bolivian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -611,7 +611,7 @@
               "children": [
                 {
                   "name": "Brazilian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -620,7 +620,7 @@
               "children": [
                 {
                   "name": "Chilean",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -629,7 +629,7 @@
               "children": [
                 {
                   "name": "Colombian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -638,7 +638,7 @@
               "children": [
                 {
                   "name": "Ecuadorian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -647,7 +647,7 @@
               "children": [
                 {
                   "name": "Guyanese",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -656,7 +656,7 @@
               "children": [
                 {
                   "name": "Paraguayan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -665,7 +665,7 @@
               "children": [
                 {
                   "name": "Peruvian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -674,7 +674,7 @@
               "children": [
                 {
                   "name": "Uruguayan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -683,7 +683,7 @@
               "children": [
                 {
                   "name": "Venezuelan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -697,7 +697,7 @@
               "children": [
                 {
                   "name": "Cuban",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -706,7 +706,7 @@
               "children": [
                 {
                   "name": "Dominican",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -715,7 +715,7 @@
               "children": [
                 {
                   "name": "Haitian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -724,7 +724,7 @@
               "children": [
                 {
                   "name": "Jamaican",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -733,7 +733,7 @@
               "children": [
                 {
                   "name": "Puerto Rican",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -742,7 +742,7 @@
               "children": [
                 {
                   "name": "Trinidad And Tobago",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -756,7 +756,7 @@
               "children": [
                 {
                   "name": "Mexican",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -765,7 +765,7 @@
               "children": [
                 {
                   "name": "Nicaraguan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -774,7 +774,7 @@
               "children": [
                 {
                   "name": "Salvadorean",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -793,7 +793,7 @@
               "children": [
                 {
                   "name": "Australian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -802,7 +802,7 @@
               "children": [
                 {
                   "name": "New Zealand",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -821,7 +821,7 @@
               "children": [
                 {
                   "name": "Ethiopian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -830,11 +830,11 @@
               "children": [
                 {
                   "name": "Indian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 },
                 {
                   "name": "Punjabi",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -843,7 +843,7 @@
               "children": [
                 {
                   "name": "Somali",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -857,7 +857,7 @@
               "children": [
                 {
                   "name": "Moroccan",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             },
@@ -866,7 +866,7 @@
               "children": [
                 {
                   "name": "Tunisian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -880,7 +880,7 @@
               "children": [
                 {
                   "name": "Nigerian",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }
@@ -894,7 +894,7 @@
               "children": [
                 {
                   "name": "South African",
-                  "children": [{ "name": "cuisine", "minSize": 1, "size": 1 }]
+                  "children": [{ "name": "cuisine", "minSize": 1 }]
                 }
               ]
             }

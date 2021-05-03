@@ -16,6 +16,13 @@ function ProviderVisualizations() {
   return (
     <div>
       <NavBarSolid />
+      <a
+        href="https://www.aboveearth.me/"
+        className="text-center"
+        style={{ color: "black" }}
+      >
+        <h2 style={{ paddingTop: "10px"}}>Above Earth</h2>
+      </a>
       <Container fluid>
         <Tabs
           value={value}
@@ -31,8 +38,8 @@ function ProviderVisualizations() {
         <Paper>
           {value === 0 && (
             <>
-              <h3 className="text-center">Total Launches Per Agency</h3>
-              <div class="center">
+              <h3 className="text-center pt-2">Total Launches Per Agency</h3>
+              <div class="center" style={{height: "920px"}}>
                 <BubbleChart
                   graph={{
                     zoom: 0.9,
@@ -46,7 +53,7 @@ function ProviderVisualizations() {
           )}
           {value === 1 && (
             <>
-              <h3 className="text-center">Space Expeditions Per Country</h3>
+              <h3 className="text-center pt-2">Space Expeditions Per Country</h3>
               <Row>
                 <BarChart
                   data={expeditionsPerCountry}
@@ -60,7 +67,7 @@ function ProviderVisualizations() {
           )}
           {value === 2 && (
             <>
-              <h3 className="text-center">News Stories Per Publisher</h3>
+              <h3 className="text-center pt-2">News Stories Per Publisher</h3>
               <div class="center">
                 <BubbleChart
                   graph={{
