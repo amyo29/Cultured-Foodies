@@ -1122,7 +1122,7 @@ exports[`Render views City instance page 1`] = `
       <iframe
         height="450"
         loading="lazy"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB2G8KUKA8-o7jSDQ5cNsxAD7v1Z_Cbcs&q=undefined"
+        src="https://www.google.com/maps/embed/v1/place?key=undefined&q=undefined"
         title="City Map"
         width="600"
       />
@@ -1290,7 +1290,7 @@ exports[`Render views Restaurant instance page 1`] = `
       <iframe
         height="450"
         loading="lazy"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB2G8KUKA8-o7jSDQ5cNsxAD7v1Z_Cbcs&q=undefinedundefined"
+        src="https://www.google.com/maps/embed/v1/place?key=undefined&q=undefinedundefined"
         title="Restaurant Map"
         width="600"
       />
