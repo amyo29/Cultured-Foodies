@@ -12,7 +12,7 @@ bottom: 0; 	height: 20%;
 	color: white;
 	display: flex;
   	flex-direction: row;
-	height: 170px;
+	height: 100%;
 
 
     /* flex-wrap: wrap; */
@@ -44,7 +44,7 @@ bottom: 0; 	height: 20%;
 
 
 
-.container {
+.container-footer {
 	padding-top: 0px !important; 
 	width: 100% !important;
 	display: flex !important;

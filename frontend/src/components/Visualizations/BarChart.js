@@ -30,7 +30,7 @@ class BarChart extends Component {
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
-      .style("color", "blue")
+      .style("color", "black")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     //getting the data from input file
     const x = d3
@@ -86,7 +86,7 @@ class BarChart extends Component {
       .attr("y", (d) => y(d[this.props.yAttr]))
       .attr("width", x.bandwidth())
       .attr("height", (d) => height - y(d[this.props.yAttr]))
-      .attr("fill", "grey")
+      .attr("fill", "brown")
       .on("mouseover", function () {
         d3.select("#tooltip").transition().duration(200).style("opacity", 1);
       })

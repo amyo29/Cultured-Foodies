@@ -1,0 +1,29 @@
+.embed-responsive .card-img-top {
+  width: 20px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.info-card-img-top {
+  align-items: center;
+  justify-content: center;
+  object-fit: cover !important;
+  width: 70% !important;
+  height: 250px !important;
+  /* margin: 25px !important; */
+  margin-bottom: 0px !important;
+  margin-top: 20px !important;
+  display: block !important;
+}
+
+.city-card-img-top {
+  align-items: center;
+  justify-content: center;
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 250px !important;
+  /* margin: 25px !important; */
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  display: block !important;
+}

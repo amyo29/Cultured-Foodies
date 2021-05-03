@@ -32,6 +32,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
           as={
             Object {
               "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
               "render": [Function],
             }
           }
@@ -45,6 +46,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
           as={
             Object {
               "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
               "render": [Function],
             }
           }
@@ -58,6 +60,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
           as={
             Object {
               "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
               "render": [Function],
             }
           }
@@ -71,6 +74,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
           as={
             Object {
               "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
               "render": [Function],
             }
           }
@@ -79,6 +83,34 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
           href="/restaurants"
         >
           Restaurants
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          className="a-custom"
+          disabled={false}
+          href="/visualizations"
+        >
+          Our Visualizations
+        </NavLink>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          className="a-custom"
+          disabled={false}
+          href="/provider-visualizations"
+        >
+          Provider Visualizations
         </NavLink>
       </Nav>
       <Form
@@ -109,10 +141,16 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
 
 exports[`Render views About Page 1`] = `
 <div
-  className="font-style center"
+  className="font-style center pageStyle"
 >
   <NavBarSolid />
-  <h1>
+  <h1
+    style={
+      Object {
+        "paddingTop": "20px",
+      }
+    }
+  >
     About Us
   </h1>
   <p
@@ -133,54 +171,85 @@ exports[`Render views About Page 1`] = `
       Loading...
     </span>
   </Spinner>
-  <div
-    className="card"
-    style={
-      Object {
-        "width": "18rem",
-      }
-    }
+  <h2>
+    Stats
+  </h2>
+  <Container
+    fluid={false}
   >
-    <h2>
-      Stats
-    </h2>
-    <div>
-      <h5>
-        Total Commits:  
-        <Spinner
-          animation="border"
-          aria-hidden="true"
-          as="span"
-          role="status"
-          size="sm"
-        />
-      </h5>
+    <div
+      className="row mb-4 w-100"
+      style={
+        Object {
+          "margin": "auto",
+        }
+      }
+    >
+      <div
+        className="col-md-4"
+      >
+        <div
+          className="card"
+        >
+          <div>
+            <h4>
+              Total Commits:
+               
+              <Spinner
+                animation="border"
+                aria-hidden="true"
+                as="span"
+                role="status"
+                size="sm"
+              />
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md-4"
+      >
+        <div
+          className="card"
+        >
+          <div>
+            <h4>
+              Total Issues:
+               
+              <Spinner
+                animation="border"
+                aria-hidden="true"
+                as="span"
+                role="status"
+                size="sm"
+              />
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md-4"
+      >
+        <div
+          className="card"
+        >
+          <div>
+            <h4>
+              Total Tests:
+               
+              <Spinner
+                animation="border"
+                aria-hidden="true"
+                as="span"
+                role="status"
+                size="sm"
+              />
+            </h4>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <h5>
-        Total Issues:  
-        <Spinner
-          animation="border"
-          aria-hidden="true"
-          as="span"
-          role="status"
-          size="sm"
-        />
-      </h5>
-    </div>
-    <div>
-      <h5>
-        Total Tests:  
-        <Spinner
-          animation="border"
-          aria-hidden="true"
-          as="span"
-          role="status"
-          size="sm"
-        />
-      </h5>
-    </div>
-  </div>
+  </Container>
   <div>
     <h2>
       APIs
@@ -731,6 +800,7 @@ exports[`Render views City instance page 1`] = `
 <div>
   <NavBarSolid />
   <img
+    alt=""
     className="city-img-top"
   />
   <h1
@@ -751,7 +821,7 @@ exports[`Render views City instance page 1`] = `
         className="card-body align-self-start"
       >
         <h3
-          className="margin"
+          className="margin text-center"
         />
         <h5>
           Summary
@@ -786,12 +856,12 @@ exports[`Render views City instance page 1`] = `
       className="card"
     >
       <h3
-        className="margin"
+        className="margin text-center"
       >
         's Urban Area- Quality of Life Scores
       </h3>
       <div
-        className="my-custom-scrollbar"
+        className="my-custom-scrollbar scroll"
         style={
           Object {
             "maxHeight": "40rem",
@@ -818,9 +888,7 @@ exports[`Render views City instance page 1`] = `
           </thead>
           <tbody>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Business Freedom
               </td>
               <td>
@@ -828,9 +896,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Cost of Living
               </td>
               <td>
@@ -838,9 +904,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Economy
               </td>
               <td>
@@ -848,9 +912,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Housing
               </td>
               <td>
@@ -858,9 +920,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Commute
               </td>
               <td>
@@ -868,9 +928,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Education
               </td>
               <td>
@@ -878,9 +936,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Environmental Quality
               </td>
               <td>
@@ -888,9 +944,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Healthcare
               </td>
               <td>
@@ -899,9 +953,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Leisure and Culture
               </td>
               <td>
@@ -909,9 +961,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Outdoors
               </td>
               <td>
@@ -920,9 +970,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Safety
               </td>
               <td>
@@ -930,9 +978,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Startups
               </td>
               <td>
@@ -940,9 +986,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Taxation
               </td>
               <td>
@@ -950,9 +994,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Tolerance
               </td>
               <td>
@@ -960,9 +1002,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Travel and Connectivity
               </td>
               <td>
@@ -970,9 +1010,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Internet Access
               </td>
               <td>
@@ -981,9 +1019,7 @@ exports[`Render views City instance page 1`] = `
               </td>
             </tr>
             <tr>
-              <td
-                scope="row"
-              >
+              <td>
                 Venture Capital
               </td>
               <td>
@@ -999,12 +1035,12 @@ exports[`Render views City instance page 1`] = `
       className="card"
     >
       <h3
-        className="margin"
+        className="margin text-center"
       >
         Restaurants in 
       </h3>
       <div
-        className="my-custom-scrollbar-restaurant"
+        className="my-custom-scrollbar-restaurant scroll"
         style={
           Object {
             "maxHeight": "34rem",
@@ -1031,19 +1067,14 @@ exports[`Render views City instance page 1`] = `
       }
     }
   >
+    <h3
+      className="mt-2 text-center"
+    >
+      Cuisines of 
+    </h3>
     <Container
       fluid={false}
-      style={
-        Object {
-          "maxWidth": "90%",
-        }
-      }
     >
-      <h3
-        className="mt-2"
-      >
-        Cuisines of 
-      </h3>
       <Carousel
         activeIndex={0}
         controls={true}
@@ -1091,7 +1122,8 @@ exports[`Render views City instance page 1`] = `
       <iframe
         height="450"
         loading="lazy"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefined"
+        src="https://www.google.com/maps/embed/v1/place?key=undefined&q=undefined"
+        title="City Map"
         width="600"
       />
     </div>
@@ -1258,7 +1290,8 @@ exports[`Render views Restaurant instance page 1`] = `
       <iframe
         height="450"
         loading="lazy"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnpJl9h_gz0umc1sVng27AS3rNZOg7LR8&q=undefinedundefined"
+        src="https://www.google.com/maps/embed/v1/place?key=undefined&q=undefinedundefined"
+        title="Restaurant Map"
         width="600"
       />
     </div>
@@ -1285,57 +1318,58 @@ exports[`Render views Restaurants model page 1`] = `
 `;
 
 exports[`Render views Splash Page 1`] = `
-<div>
-  <body
-    className="Home"
-    data-background={
-      Object {
-        "roots": Array [
-          "<rootDir>/src",
-        ],
-        "setupFilesAfterEnv": Array [
-          "<rootDir>/src/setupEnzyme.ts",
-        ],
-        "snapshotSerializers": Array [
-          "enzyme-to-json/serializer",
-        ],
-        "testMatch": Array [
-          "**/__tests__/**/*.+(ts|tsx|js)",
-          "**/?(*.)+(spec|test).+(ts|tsx|js)",
-        ],
-        "transform": Object {
-          "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
-          "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
-          "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
-          "^.+\\\\.(ts|tsx)$": "ts-jest",
-        },
-      }
-    }
-    id="mybody"
+<Fragment>
+  <NavBar />
+  <div
+    className="splash"
   >
-    <header
-      className="Home-header"
+    <div
+      className="splashContent"
     >
       <div
-        className="Title-summary"
+        className="headerText"
       >
-        Welcome!
         <div
-          className="summary"
+          className="title"
         >
-          Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? 
-          <br />
-          Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
-          <br />
-          With information on delectable cuisines from around the world and where you can experience them in your city,
-          <br />
-          as well as highlights on worldwide countries and U.S cities, 
-          <br />
-          Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
-          <br />
+          Cultured Foodies
+        </div>
+        <div
+          className="about"
+        >
+          Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas.
         </div>
       </div>
-    </header>
-  </body>
-</div>
+    </div>
+    <div
+      className="purpose bottom-centered"
+    >
+      <div
+        className="arrow"
+      >
+        <a
+          href="#target"
+        >
+          <BsCaretDownFill
+            size={75}
+          />
+        </a>
+      </div>
+      <div
+        className="purpose-header"
+      >
+        Explore the intersection of cuisine and culture.
+      </div>
+    </div>
+  </div>
+  <div
+    className="body"
+  >
+    <a
+      id="target"
+    />
+    <Models />
+  </div>
+  <FooterLarge />
+</Fragment>
 `;

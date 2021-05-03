@@ -54,7 +54,7 @@ function About() {
     <div className="font-style center pageStyle">
       <NavBarSolid />
 
-      <h1>About Us</h1>
+      <h1 style={{paddingTop: "20px"}}>About Us</h1>
 
       <p className="summary">
         Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on
@@ -137,7 +137,7 @@ function About() {
 
       <h2>Stats</h2>
       <Container>
-        <div className="row mb-4" style={{margin: "auto"}}>
+        <div className="row mb-4 w-100" style={{margin: "auto"}}>
           <div className="col-md-4">
             <div className="card">
               <div>

@@ -47,8 +47,7 @@ function Countries() {
 
   const [numPerPage, setNumPerPage] = useState(12);
   const [pageNumber, setPageNumber] = useState(1);
-  const [loaded, changeLoading] = useState(false);
-  const [loadedCards, changeLoadingCards] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const handleChange = (event: any, value: number) => {
     setPageNumber(value);
   };
@@ -78,7 +77,6 @@ function Countries() {
     if (data) {
       setCuisines(data.cuisines);
       setDisplayedCuisines(data.cuisines);
-      changeLoadingCards(true);
     }
   }, [data]);
 
@@ -91,7 +89,7 @@ function Countries() {
         dict_countries[id] = country;
       });
       setCountries(dict_countries);
-      changeLoading(true);
+      setLoaded(true);
     });
   });
 
@@ -245,199 +243,206 @@ function Countries() {
 
   if (loaded) {
     return (
-      <body style={{backgroundColor: "rgb(247, 235, 221)"}}>
+      <body style={{ backgroundColor: "rgb(247, 235, 221)" }}>
         <NavBarSolid />
-        <Row className="rowStyle">
-          <Card className="headerCardStyle">
-            <Card.Img src={headerimg} className="headerImgStyle" />
-            <Card.ImgOverlay>
-              <Row className="rowStyle mt-4">
-                <Card.Title>
-                  <h1 className="headerTextStyle">Cuisines</h1>
-                </Card.Title>
-              </Row>
-              <Row className="rowStyle">
-                <Form
-                  inline
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                  }}
-                >
-                  <FormControl
-                    className="mr-sm-2"
-                    type="text"
-                    placeholder="Search Cuisines"
-                    onChange={handleSearchChange}
-                  />
-                  {/* <Button onClick={searchOnClick}></Button> */}
-                </Form>
-              </Row>
-              <Row className="rowStyle mt-5">
-                <Card.Subtitle className="subtitleTextStyle">
-                  <h4> 🌎 Worldwide food for thought 💭</h4>
-                  <h5>
-                    {" "}
-                    🍔 🍕 🌮 🌯 🫔 🥙 🥘 🍱 🍘 🍙 🍚 🍛 🍜 🍝 🍠 🍢 🍣 🍤 🍥 🥮
-                    🍡 🥟 🍬 🍭 🍮{" "}
-                  </h5>
-                </Card.Subtitle>
-              </Row>
-            </Card.ImgOverlay>
-          </Card>
-        </Row>
-
-        {/* <h1 className="text-align center">Cuisines</h1> */}
-        {loadedCards ? (
-          <>
-            <Container>
-              <Row style={{ padding: 20, margin: "auto" }}>
-                <Col>
-                  <DropdownButton id="dropdown-basic-button" title="Sort By">
-                    <Dropdown.Item onClick={() => onSort("name", true)}>
-                      Cuisine Name (A-Z)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("name", false)}>
-                      Cuisine Name (Z-A)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("country", true)}>
-                      Country of Origin (A-Z)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("country", false)}>
-                      Country of Origin (Z-A )
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("region", true)}>
-                      Origin Country's Region (A-Z)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("region", false)}>
-                      Origin Country's Region (Z-A)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("capital", true)}>
-                      Origin Country's Capitals (A-Z)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("capital", false)}>
-                      Origin Country's Capitals (Z-A)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("population", true)}>
-                      Origin Country's Population (asc)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("population", false)}>
-                      Origin Country's Population (dsc)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("area", true)}>
-                      Origin Country's Area (asc)
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => onSort("area", false)}>
-                      Origin Country's Area (dsc)
-                    </Dropdown.Item>
-                  </DropdownButton>
-                </Col>
-                <Col>
-                  <div>
-                    <InputLabel id="demo-mutiple-checkbox-label">
-                      Filter by Regions
-                    </InputLabel>
-                    <Select
-                      labelId="demo-mutiple-checkbox-label"
-                      id="demo-mutiple-checkbox"
-                      multiple
-                      value={filteringRegions}
-                      onChange={onFiltersRegion}
-                      input={<Input />}
-                      renderValue={(selected) =>
-                        (selected as string[]).join(", ")
-                      }
-                      // MenuProps={MenuProps}
-                    >
-                      {regions_options.map((name) => (
-                        <MenuItem key={name} value={name}>
-                          <Checkbox
-                            checked={filteringRegions.indexOf(name) > -1}
-                          />
-                          <ListItemText primary={name} />
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </div>
-                </Col>
-                <Col>
-                  <Col>
-                    <InputLabel id="demo-mutiple-checkbox-label">
-                      Filter by Subregions
-                    </InputLabel>
-                    <Select
-                      labelId="demo-mutiple-checkbox-label"
-                      id="demo-mutiple-checkbox"
-                      multiple
-                      value={filteringSubRegions}
-                      onChange={onFiltersSubRegion}
-                      input={<Input />}
-                      renderValue={(selected) =>
-                        (selected as string[]).join(", ")
-                      }
-                    >
-                      {subregions_options.map((name) => (
-                        <MenuItem key={name} value={name}>
-                          <Checkbox
-                            checked={filteringSubRegions.indexOf(name) > -1}
-                          />
-                          <ListItemText primary={name} />
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </Col>
-                </Col>
-
-                <Col>
-                  <DropdownButton
-                    id="dropdown-basic-button"
-                    title="Item Per Page"
-                  >
-                    <Dropdown.Item onClick={() => updateNumPerPage(6)}>
-                      6
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => updateNumPerPage(12)}>
-                      12
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => updateNumPerPage(15)}>
-                      15
-                    </Dropdown.Item>
-                  </DropdownButton>
-                </Col>
-              </Row>
-
-              {rows.map((cols) => (
-                <Row>
-                  {cols.map((cuisine: any, i: any) => (
-                    <Col className="col-sm-4 py-2">
-                      <CuisinesCard
-                        cuisine={cuisine}
-                        countries={countries}
-                        loaded={loaded}
-                        searchQuery={searchQuery}
-                      ></CuisinesCard>
-                    </Col>
-                  ))}
+        <Container fluid>
+          <Row>
+            <Card className="headerCardStyle">
+              <Card.Img src={headerimg} className="headerImgStyle" />
+              <Card.ImgOverlay>
+                <Row className="rowStyle mt-4">
+                  <Card.Title>
+                    <h1 className="headerTextStyle">Cuisines</h1>
+                  </Card.Title>
                 </Row>
-              ))}
-            </Container>
-            <div className="row pagination mt-4 rowStyle">
-              <Pagination
-                count={Math.ceil(displayedCuisines.length / numPerPage)}
-                page={pageNumber}
-                onChange={handleChange}
-              ></Pagination>
-              {startIndex + 1} -{" "}
-              {Math.min(startIndex + numPerPage, displayedCuisines?.length)} of{" "}
-              {displayedCuisines?.length}
-            </div>
-          </>
-        ) : (
-          <Row className="rowStyle">
-            <Spinner animation="border" role="status">
-              <span className="sr-only">Loading...</span>
-            </Spinner>
+                <Row className="rowStyle">
+                  <Form
+                    inline
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                    }}
+                  >
+                    <FormControl
+                      className="mr-sm-2"
+                      type="text"
+                      placeholder="Search Cuisines"
+                      onChange={handleSearchChange}
+                    />
+                    {/* <Button onClick={searchOnClick}></Button> */}
+                  </Form>
+                </Row>
+                <Row className="rowStyle mt-5">
+                  <Card.Subtitle className="subtitleTextStyle">
+                    <h4> 🌎 Worldwide food for thought 💭</h4>
+                    <h5>
+                      {" "}
+                      🍔 🍕 🌮 🌯 🫔 🥙 🥘 🍱 🍘 🍙 🍚 🍛 🍜 🍝 🍠 🍢 🍣 🍤 🍥 🥮
+                      🍡 🥟 🍬 🍭 🍮{" "}
+                    </h5>
+                  </Card.Subtitle>
+                </Row>
+              </Card.ImgOverlay>
+            </Card>
           </Row>
-        )}
+
+          {/* <h1 className="text-align center">Cuisines</h1> */}
+          {loaded ? (
+            <>
+              <Container>
+                <Row style={{ padding: 20, margin: "auto" }}>
+                  <Col>
+                    <DropdownButton id="dropdown-basic-button" title="Sort By">
+                      <Dropdown.Item onClick={() => onSort("name", true)}>
+                        Cuisine Name (A-Z)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("name", false)}>
+                        Cuisine Name (Z-A)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("country", true)}>
+                        Country of Origin (A-Z)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("country", false)}>
+                        Country of Origin (Z-A )
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("region", true)}>
+                        Origin Country's Region (A-Z)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("region", false)}>
+                        Origin Country's Region (Z-A)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("capital", true)}>
+                        Origin Country's Capitals (A-Z)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("capital", false)}>
+                        Origin Country's Capitals (Z-A)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("population", true)}>
+                        Origin Country's Population (asc)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        onClick={() => onSort("population", false)}
+                      >
+                        Origin Country's Population (dsc)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("area", true)}>
+                        Origin Country's Area (asc)
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => onSort("area", false)}>
+                        Origin Country's Area (dsc)
+                      </Dropdown.Item>
+                    </DropdownButton>
+                  </Col>
+                  <Col>
+                    <div>
+                      <InputLabel id="demo-mutiple-checkbox-label">
+                        Filter by Regions
+                      </InputLabel>
+                      <Select
+                        labelId="demo-mutiple-checkbox-label"
+                        id="demo-mutiple-checkbox"
+                        multiple
+                        value={filteringRegions}
+                        onChange={onFiltersRegion}
+                        input={<Input />}
+                        renderValue={(selected) =>
+                          (selected as string[]).join(", ")
+                        }
+                        // MenuProps={MenuProps}
+                      >
+                        {regions_options.map((name) => (
+                          <MenuItem key={name} value={name}>
+                            <Checkbox
+                              checked={filteringRegions.indexOf(name) > -1}
+                            />
+                            <ListItemText primary={name} />
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </div>
+                  </Col>
+                  <Col>
+                    <Col>
+                      <InputLabel id="demo-mutiple-checkbox-label">
+                        Filter by Subregions
+                      </InputLabel>
+                      <Select
+                        labelId="demo-mutiple-checkbox-label"
+                        id="demo-mutiple-checkbox"
+                        multiple
+                        value={filteringSubRegions}
+                        onChange={onFiltersSubRegion}
+                        input={<Input />}
+                        renderValue={(selected) =>
+                          (selected as string[]).join(", ")
+                        }
+                      >
+                        {subregions_options.map((name) => (
+                          <MenuItem key={name} value={name}>
+                            <Checkbox
+                              checked={filteringSubRegions.indexOf(name) > -1}
+                            />
+                            <ListItemText primary={name} />
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </Col>
+                  </Col>
+
+                  <Col>
+                    <DropdownButton
+                      id="dropdown-basic-button"
+                      title="Item Per Page"
+                    >
+                      <Dropdown.Item onClick={() => updateNumPerPage(6)}>
+                        6
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => updateNumPerPage(12)}>
+                        12
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => updateNumPerPage(15)}>
+                        15
+                      </Dropdown.Item>
+                    </DropdownButton>
+                  </Col>
+                </Row>
+
+                {rows.map((cols) => (
+                  <Row>
+                    {cols.map((cuisine: any, i: any) => (
+                      <Col className="col-sm-4 py-2">
+                        <CuisinesCard
+                          cuisine={cuisine}
+                          countries={countries}
+                          loaded={loaded}
+                          searchQuery={searchQuery}
+                        ></CuisinesCard>
+                      </Col>
+                    ))}
+                  </Row>
+                ))}
+              </Container>
+              <div
+                className="row pagination mt-4 rowStyle"
+                style={{ paddingBottom: "20px" }}
+              >
+                <Pagination
+                  count={Math.ceil(displayedCuisines.length / numPerPage)}
+                  page={pageNumber}
+                  onChange={handleChange}
+                ></Pagination>
+                {startIndex + 1} -{" "}
+                {Math.min(startIndex + numPerPage, displayedCuisines?.length)}{" "}
+                of {displayedCuisines?.length}
+              </div>
+            </>
+          ) : (
+            <Row className="rowStyle">
+              <Spinner animation="border" role="status">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+            </Row>
+          )}
+        </Container>
         <FooterLarge />
       </body>
     );

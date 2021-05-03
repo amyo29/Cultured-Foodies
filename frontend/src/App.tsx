@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 import SplashVertical from "./pages/Home/SplashVertical";
-
-import FooterLarge from "./components/FooterLarge";
-
-
 import About from "./pages/About/About";
 import Cuisines from "./pages/Cuisines/Cuisines";
 import Cuisine from "./pages/Cuisines/Cuisine";
@@ -19,7 +15,6 @@ import ProviderVisualizations from "./pages/ProviderVisualizations";
 export default function App() {
   return (
     <div className="background full-height">
-      {/* <NavBar /> */}
       <Router>
         <div>
           <Route exact path="/">
@@ -62,6 +57,7 @@ export default function App() {
               path="/search/query=:q"
               render={(props) => <Search q={props.match.params.q} />}
             />
+            <Route path="/search/query=" render={(props) => <Search q={""} />} />
           </Switch>
         </div>
       </Router>

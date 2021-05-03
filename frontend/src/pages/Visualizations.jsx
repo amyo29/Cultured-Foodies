@@ -5,55 +5,16 @@ import "../styles/Visualizations.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Tabs, Tab, Paper } from "@material-ui/core";
 import Radar from "react-d3-radar";
-
 import qualityOfLifeScoresPerCity from "../visualizationData/ourData/qualityOfLifeScoresPerCity.json";
 import BubbleMap from "../components/Visualizations/BubbleMap";
 import cuisinesSunburst from "../visualizationData/ourData/cuisinesBreakdown.json";
 import Sunburst from "react-d3-zoomable-sunburst";
-import { grey } from "@material-ui/core/colors";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 function Visualizations() {
   const [value, setValue] = useState(0);
   const handleChange = (event, value) => {
     setValue(value);
   };
-
-  // const headerImgStyle: CSS.Properties = {
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   objectFit: "cover",
-  //   width: "100%",
-  //   height: "450px",
-  //   marginBottom: "0px",
-  //   marginTop: "0px",
-  //   display: "block",
-  //   opacity: "0.7",
-  // };
-
-  // const headerTextStyle: CSS.Properties = {
-  //   textShadow: "1px 1px 3px black",
-  //   fontSize: "11rem",
-  //   color: "white",
-  //   width: "100%",
-  // };
-
-  // const headerCardStyle: CSS.Properties = {
-  //   width: "100%",
-  //   height: "auto",
-  // };
-
-  // const rowStyle: CSS.Properties = {
-  //   textAlign: "center",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  // };
-
-  // const subtitleTextStyle: CSS.Properties = {
-  //   textShadow: "1px 1px 3px black",
-  //   color: "white",
-  //   width: "100%",
-  // };
 
   const cities = qualityOfLifeScoresPerCity;
   const [currentCity, setCity] = useState(cities[0]);
@@ -80,33 +41,40 @@ function Visualizations() {
         <Paper>
           {value === 0 && (
             <>
-              <h3>
+              <h3 className="text-center pt-2">
                 Breakdown of Regions, Subregions, and Countries of Cuisines
               </h3>
-
-              <Sunburst
-                data={cuisinesSunburst}
-                scale="exponential"
-                tooltipContent={
-                  <div
-                    class="sunburstTooltip"
-                    style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
-                  />
-                }
-                tooltip
-                tooltipPosition="right"
-                keyId="Sunburst"
-                width={window.innerWidth * 0.8}
-                value="minSize"
-                height={window.innerHeight * 0.8}
-              />
+              <p
+                style={{
+                  position: "relative"
+                }}
+              >
+                <Sunburst
+                  data={cuisinesSunburst}
+                  scale="exponential"
+                  tooltipContent={
+                    <div
+                      class="sunburstTooltip"
+                      style="position:absolute; color:'black'; z-index:10; background: #e2e2e2; padding: 5px; text-align: center;"
+                    />
+                  }
+                  tooltip
+                  tooltipPosition="right"
+                  keyId="Sunburst"
+                  width={window.innerWidth * 0.8}
+                  value="minSize"
+                  height={window.innerHeight * 0.8}
+                />
+              </p>
             </>
           )}
 
           {value === 1 && (
             <>
               {" "}
-              <h3>Number of Restaurants in Cities</h3>
+              <h3 className="text-center pt-2">
+                Number of Restaurants in Cities
+              </h3>
               <Row>
                 <BubbleMap class="animation"></BubbleMap>
               </Row>
@@ -114,17 +82,20 @@ function Visualizations() {
           )}
           {value === 2 && (
             <>
-              <h3>
+              <h3 className="text-center pt-2">
                 Quality of Life Scores for {currentCity.name},{" "}
                 {currentCity.state}
               </h3>
               <div class="center">
-                <DropdownButton variant = "info" id="dropdown-variants-info" title="Select City">
-                  
+                <DropdownButton
+                  variant="info"
+                  id="dropdown-variants-info"
+                  title="Select City"
+                >
                   {cities.map((city, index) => {
                     return (
                       <Dropdown.Item onClick={() => selectCity(index)}>
-                        {city.name}
+                        {city.name}, {city.state}
                       </Dropdown.Item>
                     );
                   })}

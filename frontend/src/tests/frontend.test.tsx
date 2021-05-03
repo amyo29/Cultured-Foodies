@@ -5,7 +5,7 @@ import { shallow, configure } from 'enzyme';
 
 import App from "../App";
 import NavBar from "../components/NavBar";  
-import Home from "../pages/Home/Home";
+import SplashVertical from "../pages/Home/SplashVertical"; 
 import About from "../pages/About/About";
 import Restaurants from "../pages/Restaurants/Restaurants";
 import Restaurant from "../pages/Restaurants/Restaurant";
@@ -38,7 +38,7 @@ describe('<Navigation />', () => {
 describe("Render views", () => {
 	// test Splash page
 	test('Splash Page', () => {
-		const component = shallow(<Home />);
+		const component = shallow(<SplashVertical />);
 		expect(component).toMatchSnapshot();
 		expect(component).not.toBeUndefined;
 		expect(component).toHaveLength(1);

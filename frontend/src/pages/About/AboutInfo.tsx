@@ -150,7 +150,7 @@ const TEAM_INFO = [
     username: "amyo29",
     email: "yawen1999@gmail.com",
     img: AmyImg,
-    role: "Full-Stack",
+    role: "Full-Stack | Phase IV Project Leader",
     bio: "I'm a 4th year CS Honors student at UT Austin. In my free time, I enjoy dancing and watching movies. I also love trying out new foods and exploring the world!",
     linkedin: "https://www.linkedin.com/in/amy-o/",
     commits: 0,
