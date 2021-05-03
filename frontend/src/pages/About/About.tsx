@@ -13,6 +13,7 @@ import { Spinner } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { MDBIcon } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import FooterLarge from "../../components/FooterLarge";
 
 function About() {
   useEffect(() => {
@@ -51,7 +52,7 @@ function About() {
     APIRows.push(API_INFO.slice(i, i + chunk));
   }
   return (
-    <div className="font-style center pageStyle">
+    <div className="font-style center">
       <NavBarSolid />
 
       <h1 style={{paddingTop: "20px"}}>About Us</h1>
@@ -267,6 +268,7 @@ function About() {
           />
         </div>
       </Container>
+      <FooterLarge />
     </div>
   );
 }
