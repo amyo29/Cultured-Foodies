@@ -80,7 +80,7 @@ function Visualizations() {
         <Paper>
           {value === 0 && (
             <>
-              <h3>
+              <h3 className = "text-center">
                 Breakdown of Regions, Subregions, and Countries of Cuisines
               </h3>
 
@@ -106,7 +106,7 @@ function Visualizations() {
           {value === 1 && (
             <>
               {" "}
-              <h3>Number of Restaurants in Cities</h3>
+              <h3 className = "text-center">Number of Restaurants in Cities</h3>
               <Row>
                 <BubbleMap class="animation"></BubbleMap>
               </Row>
@@ -114,7 +114,7 @@ function Visualizations() {
           )}
           {value === 2 && (
             <>
-              <h3>
+              <h3 className = "text-center">
                 Quality of Life Scores for {currentCity.name},{" "}
                 {currentCity.state}
               </h3>

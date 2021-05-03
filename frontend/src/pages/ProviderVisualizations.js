@@ -31,7 +31,7 @@ function ProviderVisualizations() {
         <Paper>
           {value === 0 && (
             <>
-              <h3>Total Launches per Agency</h3>
+              <h3 className = "text-center">Total Launches Per Agency</h3>
               <div class="center">
                 <BubbleChart
                   width={900}
@@ -43,7 +43,7 @@ function ProviderVisualizations() {
           )}
           {value === 1 && (
             <>
-              <h3>Space Expeditions per Country</h3>
+              <h3 className = "text-center">Space Expeditions Per Country</h3>
               <Row>
                 <BarChart
                   data={expeditionsPerCountry}
@@ -57,7 +57,7 @@ function ProviderVisualizations() {
           )}
           {value === 2 && (
             <>
-              <h3>News Stories per Publisher</h3>
+              <h3 className = "text-center">News Stories Per Publisher</h3>
               <div class="center">
                 <BubbleChart
                   width={900}
