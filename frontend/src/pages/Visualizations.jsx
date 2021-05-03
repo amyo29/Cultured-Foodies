@@ -5,55 +5,16 @@ import "../styles/Visualizations.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Tabs, Tab, Paper } from "@material-ui/core";
 import Radar from "react-d3-radar";
-import Grid from "@material-ui/core/Grid";
 import qualityOfLifeScoresPerCity from "../visualizationData/ourData/qualityOfLifeScoresPerCity.json";
 import BubbleMap from "../components/Visualizations/BubbleMap";
 import cuisinesSunburst from "../visualizationData/ourData/cuisinesBreakdown.json";
 import Sunburst from "react-d3-zoomable-sunburst";
-import { grey } from "@material-ui/core/colors";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 function Visualizations() {
   const [value, setValue] = useState(0);
   const handleChange = (event, value) => {
     setValue(value);
   };
-
-  // const headerImgStyle: CSS.Properties = {
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   objectFit: "cover",
-  //   width: "100%",
-  //   height: "450px",
-  //   marginBottom: "0px",
-  //   marginTop: "0px",
-  //   display: "block",
-  //   opacity: "0.7",
-  // };
-
-  // const headerTextStyle: CSS.Properties = {
-  //   textShadow: "1px 1px 3px black",
-  //   fontSize: "11rem",
-  //   color: "white",
-  //   width: "100%",
-  // };
-
-  // const headerCardStyle: CSS.Properties = {
-  //   width: "100%",
-  //   height: "auto",
-  // };
-
-  // const rowStyle: CSS.Properties = {
-  //   textAlign: "center",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  // };
-
-  // const subtitleTextStyle: CSS.Properties = {
-  //   textShadow: "1px 1px 3px black",
-  //   color: "white",
-  //   width: "100%",
-  // };
 
   const cities = qualityOfLifeScoresPerCity;
   const [currentCity, setCity] = useState(cities[0]);
@@ -83,11 +44,9 @@ function Visualizations() {
               <h3 className="text-center pt-2">
                 Breakdown of Regions, Subregions, and Countries of Cuisines
               </h3>
-              <div
+              <p
                 style={{
-                  position: "relative",
-                  width: "100%",
-                  display: "flex",
+                  position: "relative"
                 }}
               >
                 <Sunburst
@@ -106,7 +65,7 @@ function Visualizations() {
                   value="minSize"
                   height={window.innerHeight * 0.8}
                 />
-              </div>
+              </p>
             </>
           )}
 
