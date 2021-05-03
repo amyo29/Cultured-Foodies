@@ -57,6 +57,7 @@ export default function App() {
               path="/search/query=:q"
               render={(props) => <Search q={props.match.params.q} />}
             />
+            <Route path="/search/query=" render={(props) => <Search q={""} />} />
           </Switch>
         </div>
       </Router>
