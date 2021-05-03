@@ -122,17 +122,6 @@
   width: 100%;
 }
 
-.card {
-  margin: 16px auto !important;
-  width: 95%;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  /* text-align: center; */
-}
-
 .cardImage {
   /* margin: 25px 0; */
   object-fit: contain;
@@ -159,11 +148,6 @@
     font-size: 4.5em !important;
     margin: 32px auto;
   }
-}
-
-h3 {
-  font-size: 50px;
-  text-align: center;
 }
 
 .image {

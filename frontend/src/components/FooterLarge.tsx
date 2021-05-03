@@ -4,7 +4,7 @@ function FooterLarge() {
 	return (
 		<footer className="footer">
 			{/* Container with 3 columns */}
-			<div className='container'>
+			<div className='container-footer'>
 				{/* Long column with site name and description */}
 				<div className='footerDataLong'>
 					<h1 className='header1'>Cultured Foodies</h1>
