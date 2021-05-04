@@ -20,7 +20,7 @@ Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journ
 | Phase I   | 4bde46bdaf4329e224efc4b3a8db9f7eacb8aeed |
 | Phase II  | 4fbf2dfd585fa3c90df9ae846b13d681cebb804c |
 | Phase III | 067ca5f0e1b8ce2f25978eee9b6b45c6b62ac681 |
-| Phase IV  |                                          |
+| Phase IV  | ab3d0e0a1c086279ced9ddb4dbda83267992fca3 |
 
 ## Project leader
 
@@ -87,11 +87,11 @@ https://www.youtube.com/watch?v=L6nQpZWKnzU
 
 | Name              | Estimated Completion time | Actual Completion time |
 | ----------------- | ------------------------- | ---------------------- |
-| Joshua Arrojado   | XX hours                  | XX hours               |
-| Siddhesh Krishnan | XX hours                  | XX hours               |
-| Lucinda Nguyen    | XX hours                  | XX hours               |
-| Tim Nguyen        | XX hours                  | XX hours               |
-| Amy Ouyang        | XX hours                  | XX hours               |
-| Vishal Tak        | XX hours                  | XX hours               |
+| Joshua Arrojado   | 10 hours                  | 10 hours               |
+| Siddhesh Krishnan | 10 hours                  | 10 hours               |
+| Lucinda Nguyen    | 20 hours                  | 25 hours               |
+| Tim Nguyen        | 15 hours                  | 20 hours               |
+| Amy Ouyang        | 10 hours                  | 10 hours               |
+| Vishal Tak        | 5 hours                   | 10 hours               |
 
 ## Comments
