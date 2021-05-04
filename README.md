@@ -44,6 +44,10 @@ https://documenter.getpostman.com/view/15165948/TzJrBeeW
 
 https://www.culturedfoodies.me
 
+## Link to Presentation
+
+https://www.youtube.com/watch?v=L6nQpZWKnzU
+
 ## Completion times for each member
 
 ### Phase I
