@@ -141,7 +141,7 @@ exports[`<Navigation /> renders a Navigation Bar 1`] = `
 
 exports[`Render views About Page 1`] = `
 <div
-  className="font-style center pageStyle"
+  className="font-style center"
 >
   <NavBarSolid />
   <h1
@@ -773,8 +773,36 @@ exports[`Render views About Page 1`] = `
         link="https://documenter.getpostman.com/view/15165948/TzJrBeeW"
         title="Postman API"
       />
+      <InfoCard
+        img={
+          Object {
+            "roots": Array [
+              "<rootDir>/src",
+            ],
+            "setupFilesAfterEnv": Array [
+              "<rootDir>/src/setupEnzyme.ts",
+            ],
+            "snapshotSerializers": Array [
+              "enzyme-to-json/serializer",
+            ],
+            "testMatch": Array [
+              "**/__tests__/**/*.+(ts|tsx|js)",
+              "**/?(*.)+(spec|test).+(ts|tsx|js)",
+            ],
+            "transform": Object {
+              "\\\\.(jpg|jpeg|png|gif|eot|otf)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+              "\\\\.(webp|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/assetsTransformer.js",
+              "^.+\\\\.(ts|tsx)$": "ts-jest",
+            },
+          }
+        }
+        link="https://www.youtube.com/watch?v=L6nQpZWKnzU"
+        title="Presentation"
+      />
     </div>
   </Container>
+  <FooterLarge />
 </div>
 `;
 

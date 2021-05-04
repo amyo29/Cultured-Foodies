@@ -20,6 +20,8 @@ function ProviderVisualizations() {
         href="https://www.aboveearth.me/"
         className="text-center"
         style={{ color: "black" }}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <h2 style={{ paddingTop: "10px"}}>Above Earth</h2>
       </a>
