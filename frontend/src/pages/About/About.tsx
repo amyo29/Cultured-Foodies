@@ -14,6 +14,7 @@ import { Container } from "react-bootstrap";
 import { MDBIcon } from "mdbreact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import FooterLarge from "../../components/FooterLarge";
+import YoutubeLogo from "../../static_resources/about/tools/YoutubeLogo.png";
 
 function About() {
   useEffect(() => {
@@ -265,6 +266,11 @@ function About() {
             title="Postman API"
             img={TOOLS_INFO[2].img}
             link="https://documenter.getpostman.com/view/15165948/TzJrBeeW"
+          />
+           <InfoCard
+            title="Presentation"
+            img={YoutubeLogo}
+            link="https://www.youtube.com/watch?v=L6nQpZWKnzU"
           />
         </div>
       </Container>
