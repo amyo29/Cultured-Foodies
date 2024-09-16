@@ -2,6 +2,12 @@
 
 Hong Kong's dim sum? Italy's lasagna? Or UK's fish 'n' chips? Join us on a journey of culinary and cultural discovery that stretches through the ages and across the seas. With information on delectable cuisines from around the world and where you can experience them in your city, as well as highlights on worldwide countries and U.S cities, Cultured Foodies makes it easy for you to feast to your mind and stomach's content.
 
+## Links
+- Gitlab repo: https://gitlab.com/cs373-group-11/cultured-foodies
+- Final Presentation demo: https://www.youtube.com/watch?v=L6nQpZWKnzU
+- Final Presentation demo 2: https://www.youtube.com/watch?v=yZuFgwfJ1lA
+- Final Presentation slide deck: https://docs.google.com/presentation/d/1wObyMUzj4kTVAmnqk8gC464YDAfKBK14BAdCwoCQXgQ/edit#slide=id.gd14764a389_3_420
+
 ## Group members
 
 | Name              | EID     | Gitlab ID          |
